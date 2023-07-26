@@ -46,13 +46,13 @@ Contributions to Dev Gallery are always welcome, whether it be improvements to t
 
 1. Fork the project.
 2. Create your feature branch:
-`git switch -c my-new-feature`
+<br>`git switch -c my-new-feature`
 3. Add your changes:
-`git add files-that-you-changed`
+<br>`git add files-that-you-changed`
 4. Commit your changes:
-`git commit -m 'Add some feature'`
+<br>`git commit -m 'Add some feature'`
 5. Push to the branch:
-`git push -u origin my-new-feature`
+<br>`git push -u origin my-new-feature`
 6. Submit a pull request.
 
 ## License
