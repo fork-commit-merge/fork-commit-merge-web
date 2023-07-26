@@ -1,6 +1,11 @@
 <div align="center">
 
 ![Dev Gallery Screenshot](/public/devgallerybanner.png)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version 1.1.3](https://img.shields.io/badge/Version-1.1.3-brightgreen.svg)](https://github.com/nikohoffren/hunajaholisti/pulls)
+[![PR:s Welcome](https://img.shields.io/badge/PR:s-Welcome-purple.svg)](https://github.com/nikohoffren/hunajaholisti/pulls)
+[![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-purple.svg)](https://github.com/nikohoffren/hunajaholisti/pulls)
+![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/hunajaholisti-homepage)
 
 devgallery.io serves as a platform where talented developers can spotlight their projects. It allows developers to not only feature their works but also create personal profiles for added visibility.
 
