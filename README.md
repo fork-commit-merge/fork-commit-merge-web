@@ -25,13 +25,13 @@ Follow these steps to run the application in your local environment:
 1. Clone this repository.
 
     ```bash
-    git clone https://github.com/yourusername/dev-gallery.git
+    git clone https://github.com/yourusername/devgallery.io.git
     ```
 
 2. Install the project dependencies.
 
     ```bash
-    cd dev-gallery
+    cd devgallery.io
     npm install
     ```
 
