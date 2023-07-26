@@ -1,10 +1,17 @@
 /* eslint-disable @next/next/no-sync-scripts */
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Coffee from "./Coffee";
 import styles from "../styles/Coffee.module.css";
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleSideNav = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <>
             <nav className="bg-slate-950 text-slate-50 backdrop-blur">
@@ -22,7 +29,16 @@ const Header = () => {
                                 </div>
                             </Link>
                         </div>
-                        <nav>
+                        <div className="md:hidden">
+                            <button onClick={toggleSideNav}>
+                                {isOpen ? (
+                                    <XIcon className="h-6 w-6" />
+                                ) : (
+                                    <MenuIcon className="h-6 w-6" />
+                                )}
+                            </button>
+                        </div>
+                        <nav className="hidden md:block">
                             <ul className="md:flex items-center space-x-1">
                                 <li>
                                     <Link href="/getting-started">
@@ -49,8 +65,50 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            <header className="bg-slate-950 text-slate-50 sticky top-0 z-10">
-                <div className="container mx-auto px-6 py-3 pb-6">
+            {isOpen && (
+                <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 bg-slate-900 overflow-auto z-20 md:hidden">
+                    <div className="ml-6 mb-6">
+                        <div className={styles.buyButton}>
+                            <Coffee />
+                        </div>
+                    </div>
+                    <Link href="/getting-started">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            Getting Started
+                        </div>
+                    </Link>
+                    <Link
+                        href="https://github.com/nikohoffren/devgallery.io"
+                        target="blank"
+                    >
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            Contribute in GitHub
+                        </div>
+                    </Link>
+                    <Link href="/projects">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            Projects
+                        </div>
+                    </Link>
+                    <Link href="/developers">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            Developers
+                        </div>
+                    </Link>
+                    <Link href="/about">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            About
+                        </div>
+                    </Link>
+                    <Link href="/contact">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            Contact
+                        </div>
+                    </Link>
+                </div>
+            )}
+            <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block">
+                <div className="container mx-auto px-6 py-1 pb-6">
                     <div className="mt-3 md:flex items-center space-x-1 justify-end">
                         <Link href="/projects">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
