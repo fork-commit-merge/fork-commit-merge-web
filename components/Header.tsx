@@ -1,15 +1,42 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Coffee from "./Coffee";
 import styles from "../styles/Coffee.module.css";
+import React from "react";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const node = React.useRef<HTMLDivElement | null>(null);
+
+    const handleClickOutside = (e: MouseEvent) => {
+        if (node.current?.contains(e.target as Node)) {
+            return;
+        }
+        setDropdownOpen(false);
+    };
+
+    useEffect(() => {
+        if (isDropdownOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isDropdownOpen]);
+
     const toggleSideNav = () => {
         setIsOpen(!isOpen);
+    };
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!isDropdownOpen);
     };
 
     return (
@@ -85,11 +112,36 @@ const Header = () => {
                             Contribute in GitHub
                         </div>
                     </Link>
-                    <Link href="/projects">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                    <div className="relative" ref={node}>
+                        <button
+                            onClick={toggleDropdown}
+                            className="py-2 px-6 block text-sm cursor-pointer hover:underline"
+                        >
                             Projects
-                        </div>
-                    </Link>
+                        </button>
+                        {isDropdownOpen && (
+                            <div className="absolute left-0 w-48 py-2 mt-2 bg-slate-900 rounded-lg shadow-xl">
+                                <Link
+                                    href="/projects/websites"
+                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                >
+                                    Websites
+                                </Link>
+                                <Link
+                                    href="/projects/mobile-apps"
+                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                >
+                                    Mobile Apps
+                                </Link>
+                                <Link
+                                    href="/projects/desktop-apps"
+                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                >
+                                    Desktop Apps
+                                </Link>
+                            </div>
+                        )}
+                    </div>
                     <Link href="/developers">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
                             Developers
@@ -110,11 +162,36 @@ const Header = () => {
             <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block">
                 <div className="container mx-auto px-6 py-1 pb-6">
                     <div className="mt-3 md:flex items-center space-x-1 justify-end">
-                        <Link href="/projects">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                        <div className="relative" ref={node}>
+                            <button
+                                onClick={toggleDropdown}
+                                className="py-2 px-6 block text-sm cursor-pointer hover:underline"
+                            >
                                 Projects
-                            </div>
-                        </Link>
+                            </button>
+                            {isDropdownOpen && (
+                                <div className="absolute left-0 w-48 py-2 mt-2 bg-slate-900 rounded-lg shadow-xl">
+                                    <Link
+                                        href="/projects/websites"
+                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                    >
+                                        Websites
+                                    </Link>
+                                    <Link
+                                        href="/projects/mobile-apps"
+                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                    >
+                                        Mobile Apps
+                                    </Link>
+                                    <Link
+                                        href="/projects/desktop-apps"
+                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                    >
+                                        Desktop Apps
+                                    </Link>
+                                </div>
+                            )}
+                        </div>
                         <Link href="/developers">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
                                 Developers
