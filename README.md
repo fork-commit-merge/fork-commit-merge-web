@@ -2,7 +2,7 @@
 
 ![Dev Gallery Screenshot](/public/devgallerybanner.png)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version 1.1.3](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
+[![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
 [![PR:s Welcome](https://img.shields.io/badge/PR:s-Welcome-purple.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
 [![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-purple.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/devgallery.io)
