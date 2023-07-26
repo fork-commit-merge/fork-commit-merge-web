@@ -2,7 +2,7 @@
 
 ![Dev Gallery Screenshot](/public/dev-gallery-screenshot.png)
 
-Dev Gallery serves as a platform where talented developers can spotlight their projects. It allows developers to not only feature their works but also create personal profiles for added visibility.
+devgallery.io serves as a platform where talented developers can spotlight their projects. It allows developers to not only feature their works but also create personal profiles for added visibility.
 
 </div>
 
