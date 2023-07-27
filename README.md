@@ -4,8 +4,8 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
 [![Issues](https://img.shields.io/github/issues/nikohoffren/devgallery.io.svg?style=flat)](https://github.com/nikohoffren/devgallery.io/issues)
-[![PR:s Welcome](https://img.shields.io/badge/PR:s-Welcome-purple.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
-[![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-purple.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
+[![PR:s Welcome](https://img.shields.io/badge/PR:s-Welcome-green.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
+[![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-green.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/devgallery.io)
 
 devgallery.io serves as a platform where talented developers can spotlight their projects. It allows developers to not only feature their works but also create personal profiles for added visibility.
