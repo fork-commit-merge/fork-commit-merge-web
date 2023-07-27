@@ -22,7 +22,7 @@ export default async (req, res) => {
         const params = {
             Bucket: process.env.AWS_BUCKET_NAME,
             Key: `${projectName}-${Date.now()}`,
-            Expires: 60, // this is the time in seconds till expiration
+            Expires: 60,
             ContentType: fileType,
         };
 

@@ -22,8 +22,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     <Image
                         src={imageUrl}
                         alt={`${projectName} Image`}
-                        layout="fill"
-                        objectFit="cover"
+                        layout="responsive"
+                        width="400"
+                        height="400"
                     />
                 </div>
             </div>
@@ -32,7 +33,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     {projectName}
                 </h2>
                 <h3 className="text-lg text-gray-300">by {developerName}</h3>
-                <p className="text-md text-gray-400 mt-4">{projectDescription}</p>
+                <p className="text-md text-gray-400 mt-4">
+                    {projectDescription}
+                </p>
             </div>
             <div className="mt-6">
                 <a
