@@ -2,10 +2,11 @@ import { MongoClient } from "mongodb";
 
 let uri = process.env.MONGODB_URI;
 let cachedClient = null;
+let cachedDb = null;
 
-export async function connectToDatabase() {
-  if (cachedClient) {
-    return cachedClient;
+export async function connectToDB() {
+  if (cachedClient && cachedDb) {
+    return { client: cachedClient, db: cachedDb };
   }
 
   const client = await MongoClient.connect(uri, {
@@ -13,6 +14,9 @@ export async function connectToDatabase() {
     useUnifiedTopology: true,
   });
 
+  const db = client.db("devgallery_db");
+
   cachedClient = client;
-  return cachedClient;
+  cachedDb = db;
+  return { client, db };
 }

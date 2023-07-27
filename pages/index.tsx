@@ -1,6 +1,7 @@
 // pages/index.tsx
 import Image from "next/image";
 import ProjectCard from "../components/ProjectCard";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -41,10 +42,14 @@ export default function Home() {
                         vibrant and supportive community. Register and upload
                         your projects now. Let the world see your capabilities!
                     </div>
-
-                    <button className="text-3xl text-white bg-slate-950 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider">
-                        GET STARTED
-                    </button>
+                    <div className="my-10">
+                        <Link
+                            href="/add-project"
+                            className="text-3xl text-white bg-slate-950 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider"
+                        >
+                            GET STARTED
+                        </Link>
+                    </div>
                 </div>
             </div>
 
