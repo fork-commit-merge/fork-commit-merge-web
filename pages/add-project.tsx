@@ -1,3 +1,4 @@
+import router from "next/router";
 import React, { useRef } from "react";
 
 export default function AddProject() {
@@ -12,9 +13,7 @@ export default function AddProject() {
             const projectData = {
                 projectName: formData.get("projectName") as string,
                 developerName: formData.get("developerName") as string,
-                projectDescription: formData.get(
-                    "projectDescription"
-                ) as string,
+                projectDescription: formData.get("projectDescription") as string,
                 projectLink: formData.get("projectLink") as string,
             };
 
@@ -22,9 +21,7 @@ export default function AddProject() {
 
             if (file instanceof File) {
                 const preSignedResponse = await fetch(
-                    `/api/getPreSignedUrl?projectName=${encodeURIComponent(
-                        projectData.projectName
-                    )}&fileType=${file.type}`,
+                    `/api/getPreSignedUrl?projectName=${encodeURIComponent(projectData.projectName)}&fileType=${file.type}`,
                     { method: "GET" }
                 );
 
@@ -51,7 +48,9 @@ export default function AddProject() {
                             },
                         });
 
-                        if (!response.ok) {
+                        if (response.ok) {
+                            router.push('/success');
+                        } else {
                             console.log("Project data submission failed.");
                         }
                     } else {
@@ -65,6 +64,7 @@ export default function AddProject() {
             }
         }
     };
+
 
     return (
         <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center">
