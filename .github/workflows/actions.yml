@@ -1,48 +1,49 @@
 name: Actions
 
 on:
-    pull_request_target:
-        types:
-            - closed
+  pull_request_target:
+    types:
+      - closed
 
 jobs:
-    comment:
-        runs-on: ubuntu-latest
-        if: github.event.pull_request.merged == true
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
-              with:
-                  token: ${{ secrets.DEVGALLERY_BOT }}
 
-            - name: Setup GitHub CLI
-              run: |
-                  gh auth login --with-token <<< "${{ secrets.DEVGALLERY_BOT }}"
+  comment:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.DEVGALLERY_BOT }}
 
-            - name: Add contributor to README
-              run: |
-                  if ! grep -q "${{ github.event.pull_request.user.login }}" README.md
-                  then
-                    sed -i "/Massive thanks to all of the these fine individuals who contributed to this project!/a \n[${{ github.event.pull_request.user.login }}](https://github.com/${{ github.event.pull_request.user.login }})" README.md
-                    git config --local user.email "action@github.com"
-                    git config --local user.name "GitHub Action"
-                    git add README.md
-                    git commit -m "Add ${{ github.event.pull_request.user.login }} to contributors list"
-                    git push
-                  fi
+      - name: Setup GitHub CLI
+        run: |
+          gh auth login --with-token <<< "${{ secrets.DEVGALLERY_BOT }}"
 
-            - name: Comment on PR
-              run: |
-                  gh pr comment "${{ github.event.pull_request.number }}" --body "## Pull request merged
+      - name: Add contributor to README
+        run: |
+          if ! grep -q "${{ github.event.pull_request.user.login }}" README.md
+          then
+            sed -i "/Massive thanks to all of the these fine individuals who contributed to this project!/a \n<a href=\"https://github.com/${{ github.event.pull_request.user.login }}\"><img src=\"https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/${{ github.event.pull_request.user.id }}?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d\" width=\"120px\"/></a>" README.md
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add README.md
+            git commit -m "Add ${{ github.event.pull_request.user.login }} to contributors list"
+            git push
+          fi
 
-                  > This is an automated message from devgallery.io [BOT].
+      - name: Comment on PR
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" --body "## Pull request merged
 
-                  Thank you for your contribution! Your pull request has been merged and your name has been added to the List of Contributors in README.md.
-                  Please leave a star if you enjoyed working on this project.
+          > This is an automated message from devgallery.io [BOT].
 
-                  ### What's next?
+          Thank you for your contribution! Your pull request has been merged and your name has been added to the List of Contributors in README.md.
+          Please leave a star if you enjoyed working on this project.
 
-                  If you're looking for more ways to contribute, I invite you to check out my other projects [here](https://github.com/nikohoffren?tab=repositories)."
-              env:
-                  GH_TOKEN: ${{ secrets.DEVGALLERY_BOT }}
-                  GH_REPO: ${{ github.repository }}
+          ### What's next?
+
+          If you're looking for more ways to contribute, I invite you to check out my other projects [here](https://github.com/nikohoffren?tab=repositories)."
+        env:
+          GH_TOKEN: ${{ secrets.DEVGALLERY_BOT }}
+          GH_REPO: ${{ github.repository }}
