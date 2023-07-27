@@ -209,12 +209,12 @@ const Header = () => {
                         </Link>
                         <Link href="/login">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
-                                Login
+                                LOGIN
                             </div>
                         </Link>
                         <Link href="/sign-up">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
-                                Sign up
+                                SIGN UP
                             </div>
                         </Link>
                     </div>
