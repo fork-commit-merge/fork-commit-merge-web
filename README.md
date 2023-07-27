@@ -19,6 +19,7 @@ devgallery.io serves as a platform where talented developers can spotlight their
 -   [Contributing](#contributing)
 -   [Questions](#questions)
 -   [License](#license)
+-   [List of Contributors](#list-of-contributors)
 
 ## Features
 
@@ -143,3 +144,7 @@ If you have any questions about the repo, open an issue or contact me directly a
 ## License
 
 This project is licensed under the MIT License.
+
+## List of Contributors
+
+Massive thanks to all of the these fine individuals who contributed to this project!
