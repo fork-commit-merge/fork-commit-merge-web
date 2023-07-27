@@ -61,9 +61,9 @@ Follow these steps to run the application in your local environment:
 
     You will need to replace the placeholder values in this file with your actual credentials.
 
-    - For MongoDB Atlas, you will need to replace `MONGODB_URI` with your MongoDB connection string. You can get this from the MongoDB Atlas dashboard.
+    - For [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), you will need to replace `MONGODB_URI` with your MongoDB connection string. You can get this from the MongoDB Atlas dashboard.
 
-    - For AWS S3, you will need to replace `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_BUCKET_NAME` with your actual AWS S3 credentials and bucket name. You can get these from the AWS Management Console.
+    - For [AWS S3](https://aws.amazon.com/s3/), you will need to replace `AWS_BUCKET_NAME`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` with your actual bucket name and AWS S3 credentials. You can get these from the AWS Management Console.
 
 4. Run the development server.
     ```bash
