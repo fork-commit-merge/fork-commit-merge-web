@@ -148,6 +148,7 @@ This project is licensed under the MIT License.
 ## List of Contributors
 
 Massive thanks to all of the these fine individuals who contributed to this project!
+
 [Luega](https://github.com/Luega)
 
 [Josepi161](https://github.com/Josepi161)
