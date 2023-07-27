@@ -9,8 +9,12 @@ export default function AddProject() {
         if (formRef.current) {
             const formData = new FormData(formRef.current);
 
+            const projectName = (formData.get("projectName") as string).replace(
+                / /g,
+                "-"
+            );
             const projectData = {
-                projectName: formData.get("projectName") as string,
+                projectName,
                 developerName: formData.get("developerName") as string,
                 projectDescription: formData.get(
                     "projectDescription"
@@ -21,27 +25,25 @@ export default function AddProject() {
             const file = formData.get("image");
 
             if (file instanceof File) {
-                // request a pre-signed URL from your server
                 const preSignedResponse = await fetch(
-                    `/api/getPreSignedUrl?projectName=${projectData.projectName}&fileType=${file.type}`,
+                    `/api/getPreSignedUrl?projectName=${encodeURIComponent(
+                        projectData.projectName
+                    )}&fileType=${file.type}`,
                     { method: "GET" }
                 );
 
                 if (preSignedResponse.ok) {
                     const { url, key } = await preSignedResponse.json();
 
-                    // upload the file to S3 using the pre-signed URL
                     const uploadResponse = await fetch(url, {
                         method: "PUT",
                         body: file,
                         headers: {
-                            "Content-Type": file.type, // use the actual type of the image file
+                            "Content-Type": file.type,
                         },
                     });
 
                     if (uploadResponse.ok) {
-                        // if the upload was successful, save the rest of the project data
-                        // to your MongoDB database, including the S3 key of the uploaded file
                         const response = await fetch("/api/addProject", {
                             method: "POST",
                             body: JSON.stringify({

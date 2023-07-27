@@ -65,7 +65,7 @@ export default function Home({ projects }: { projects: Project[] }) {
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-                {/* {projects.map((project) => (
+                {projects.map((project) => (
                     <ProjectCard
                         key={project._id}
                         projectName={project.projectName}
@@ -74,7 +74,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         projectDescription={project.projectDescription}
                         projectLink={project.projectLink}
                     />
-                ))} */}
+                ))}
             </div>
         </main>
     );
