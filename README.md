@@ -51,7 +51,21 @@ Follow these steps to run the application in your local environment:
     npm i
     ```
 
-3. Run the development server.
+3. Set up your environment variables. You will need to create a MongoDB Atlas cluster and an AWS S3 bucket for your local development environment.
+
+    First, make a copy of the `.env.local-example` file and rename it to `.env.local`.
+
+    ```bash
+    cp .env.local-example .env.local
+    ```
+
+    You will need to replace the placeholder values in this file with your actual credentials.
+
+    - For MongoDB Atlas, you will need to replace `MONGODB_URI` with your MongoDB connection string. You can get this from the MongoDB Atlas dashboard.
+
+    - For AWS S3, you will need to replace `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_BUCKET_NAME` with your actual AWS S3 credentials and bucket name. You can get these from the AWS Management Console.
+
+4. Run the development server.
     ```bash
     npm run dev
     ```
@@ -71,10 +85,9 @@ Contributions to Dev Gallery are always welcome, whether it be improvements to t
 <br>`git push -u origin my-new-feature`
 6. Submit a pull request.
 
-
 We kindly request that you express your interest in working on a particular issue by leaving a message on the respective issue thread. This will allow us to assign the issue to you directly, thereby preventing multiple individuals from simultaneously working on the same problem.
 
-If you have some small bug, feature or fix to make, that is not currently on Issues, feel free to submit a pull request.
+If you have some small bug, feature, or fix to make, that is not currently on Issues, feel free to submit a pull request.
 
 For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
