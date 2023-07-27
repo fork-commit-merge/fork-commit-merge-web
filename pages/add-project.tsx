@@ -9,12 +9,8 @@ export default function AddProject() {
         if (formRef.current) {
             const formData = new FormData(formRef.current);
 
-            const projectName = (formData.get("projectName") as string).replace(
-                / /g,
-                "-"
-            );
             const projectData = {
-                projectName,
+                projectName: formData.get("projectName") as string,
                 developerName: formData.get("developerName") as string,
                 projectDescription: formData.get(
                     "projectDescription"
