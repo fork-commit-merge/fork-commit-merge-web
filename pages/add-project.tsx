@@ -1,58 +1,142 @@
-import React from 'react'
+import React, { useRef } from "react";
 
 export default function AddProject() {
+    const formRef = useRef<HTMLFormElement>(null);
+
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-        const data = Object.fromEntries(formData);
-        const response = await fetch("/api/addProject", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        });
-        if (!response.ok) {
-            console.log("Project data submission failed.");
+
+        if (formRef.current) {
+            const formData = new FormData(formRef.current);
+
+            const projectData = {
+                projectName: formData.get("projectName") as string,
+                developerName: formData.get("developerName") as string,
+                projectDescription: formData.get(
+                    "projectDescription"
+                ) as string,
+                projectLink: formData.get("projectLink") as string,
+            };
+
+            const file = formData.get("image");
+
+            if (file instanceof File) {
+                // request a pre-signed URL from your server
+                const preSignedResponse = await fetch(
+                    `/api/getPreSignedUrl?projectName=${projectData.projectName}&fileType=${file.type}`,
+                    { method: "GET" }
+                );
+
+                if (preSignedResponse.ok) {
+                    const { url, key } = await preSignedResponse.json();
+
+                    // upload the file to S3 using the pre-signed URL
+                    const uploadResponse = await fetch(url, {
+                        method: "PUT",
+                        body: file,
+                        headers: {
+                            "Content-Type": file.type, // use the actual type of the image file
+                        },
+                    });
+
+                    if (uploadResponse.ok) {
+                        // if the upload was successful, save the rest of the project data
+                        // to your MongoDB database, including the S3 key of the uploaded file
+                        const response = await fetch("/api/addProject", {
+                            method: "POST",
+                            body: JSON.stringify({
+                                ...projectData,
+                                imageUrl: key,
+                            }),
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                        });
+
+                        if (!response.ok) {
+                            console.log("Project data submission failed.");
+                        }
+                    } else {
+                        console.log("File upload failed.");
+                    }
+                } else {
+                    console.log("Failed to get pre-signed URL.");
+                }
+            } else {
+                console.log("No file was uploaded.");
+            }
         }
     };
 
     return (
         <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center">
-            <form onSubmit={handleSubmit} className="w-full max-w-lg">
+            <form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="w-full max-w-lg"
+                encType="multipart/form-data"
+            >
                 <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full md:w-full px-3 mb-6">
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            Project Image URL
+                            Project Image
                         </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="url" name="imageUrl" required />
+                        <input
+                            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            required
+                        />
                     </div>
                     <div className="w-full md:w-full px-3">
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Project Name
                         </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" name="projectName" required />
+                        <input
+                            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            type="text"
+                            name="projectName"
+                            required
+                        />
                     </div>
                     <div className="w-full md:w-full px-3 mb-6">
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Developer Name
                         </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" name="developerName" required />
+                        <input
+                            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            type="text"
+                            name="developerName"
+                            required
+                        />
                     </div>
                     <div className="w-full md:w-full px-3 mb-6">
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Project Description
                         </label>
-                        <textarea className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-48 resize-none" name="projectDescription" required />
+                        <textarea
+                            className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-48 resize-none"
+                            name="projectDescription"
+                            required
+                        />
                     </div>
                     <div className="w-full md:w-full px-3 mb-6">
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Project Links
                         </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="url" name="projectLink" required />
+                        <input
+                            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            type="url"
+                            name="projectLink"
+                            required
+                        />
                     </div>
                     <div className="w-full md:w-full px-3">
-                        <button className="shadow bg-slate-500 hover:bg-slate-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+                        <button
+                            className="shadow bg-slate-500 hover:bg-slate-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                            type="submit"
+                        >
                             Submit
                         </button>
                     </div>

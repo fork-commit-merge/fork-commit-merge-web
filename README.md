@@ -31,7 +31,8 @@ devgallery.io serves as a platform where talented developers can spotlight their
 -   Next.js
 -   TypeScript
 -   Tailwind CSS
--   MongoDB Atlas / AWS Cloud
+-   MongoDB Atlas
+-   AWS S3
 
 ## Local Development
 

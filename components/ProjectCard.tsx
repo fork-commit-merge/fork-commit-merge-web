@@ -4,7 +4,7 @@ interface ProjectCardProps {
     projectName: string;
     developerName: string;
     imageUrl: string;
-    content: string;
+    projectDescription: string;
     projectLink: string;
 }
 
@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     projectName,
     developerName,
     imageUrl,
-    content,
+    projectDescription,
     projectLink,
 }) => {
     return (
@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     {projectName}
                 </h2>
                 <h3 className="text-lg text-gray-300">by {developerName}</h3>
-                <p className="text-md text-gray-400 mt-4">{content}</p>
+                <p className="text-md text-gray-400 mt-4">{projectDescription}</p>
             </div>
             <div className="mt-6">
                 <a

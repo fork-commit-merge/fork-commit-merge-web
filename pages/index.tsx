@@ -1,9 +1,20 @@
 // pages/index.tsx
+import { GetServerSideProps } from "next";
+import { connectToDB } from "../utils/db";
 import Image from "next/image";
 import ProjectCard from "../components/ProjectCard";
 import Link from "next/link";
 
-export default function Home() {
+interface Project {
+    _id: string;
+    projectName: string;
+    developerName: string;
+    imageUrl: string;
+    projectDescription: string;
+    projectLink: string;
+}
+
+export default function Home({ projects }: { projects: Project[] }) {
     return (
         <main className="min-h-screen flex flex-col items-center justify-center text-center bg-slate-950">
             <div className="my-20 min-w-full">
@@ -54,91 +65,29 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
-                <ProjectCard
-                    projectName="Hunajaholisti - e-commerce website"
-                    developerName="Niko Hoffrén"
-                    imageUrl="/HHlahja.jpg"
-                    content="Hunajaholistin Hunaja - Honey products e-commerce website made using Vite, React, TypeScript, Tailwind CSS, Firebase, Netlify Functions and Stripe. "
-                    projectLink="https://hunajaholisti.fi"
-                />
+                {projects.map((project) => (
+                    <ProjectCard
+                        key={project._id}
+                        projectName={project.projectName}
+                        developerName={project.developerName}
+                        imageUrl={project.imageUrl}
+                        projectDescription={project.projectDescription}
+                        projectLink={project.projectLink}
+                    />
+                ))}
             </div>
         </main>
     );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+    const { db } = await connectToDB();
+    const projects = await db.collection("projects").find().toArray();
+
+    return {
+        props: {
+            //* convert BSON to JSON
+            projects: JSON.parse(JSON.stringify(projects)),
+        },
+    };
+};
