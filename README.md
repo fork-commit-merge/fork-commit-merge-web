@@ -20,7 +20,6 @@ devgallery.io serves as a platform where talented developers can spotlight their
 -   [Questions](#questions)
 -   [License](#license)
 
-
 ## Features
 
 -   Browse various development projects
@@ -32,6 +31,7 @@ devgallery.io serves as a platform where talented developers can spotlight their
 -   Next.js
 -   TypeScript
 -   Tailwind CSS
+-   MongoDB Atlas / AWS Cloud
 
 ## Local Development
 
@@ -86,6 +86,3 @@ If you have any questions about the repo, open an issue or contact me directly a
 ## License
 
 This project is licensed under the MIT License.
-
-
-
