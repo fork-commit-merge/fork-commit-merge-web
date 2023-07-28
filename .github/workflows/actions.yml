@@ -20,11 +20,20 @@ jobs:
         run: |
           gh auth login --with-token <<< "${{ secrets.DEVGALLERY_BOT }}"
 
+      - name: Add newline to README
+        run: |
+          echo "" >> README.md
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Add newline"
+          git push
+
       - name: Add contributor to README
         run: |
           if ! grep -q "${{ github.event.pull_request.user.login }}" README.md
           then
-            sed -i "/Massive thanks to all of the these fine individuals who contributed to this project!/a \n<a href=\"https://github.com/${{ github.event.pull_request.user.login }}\"><img src=\"https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/${{ github.event.pull_request.user.id }}?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d\" width=\"120px\"/></a>" README.md
+            sed -i "/Massive thanks to all of the these fine individuals who contributed to this project!/a <a href=\"https://github.com/${{ github.event.pull_request.user.login }}\"><img src=\"https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/${{ github.event.pull_request.user.id }}?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d\" width=\"120px\"/></a>" README.md
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add README.md
