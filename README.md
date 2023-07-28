@@ -92,19 +92,9 @@ Follow these steps to run the application in your local environment:
     ```json
     [
         {
-            "AllowedHeaders": [
-                "*"
-            ],
-            "AllowedMethods": [
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE",
-                "HEAD"
-            ],
-            "AllowedOrigins": [
-                "*"
-            ],
+            "AllowedHeaders": ["*"],
+            "AllowedMethods": ["GET", "POST", "PUT", "DELETE", "HEAD"],
+            "AllowedOrigins": ["*"],
             "ExposeHeaders": []
         }
     ]
@@ -115,19 +105,21 @@ Follow these steps to run the application in your local environment:
     npm run dev
     ```
 
+<a id="contributing"></a>
+
 ## Contributing
 
 Contributions to Dev Gallery are always welcome, whether it be improvements to the documentation, new features, bug fixes, or even feedback on the project.
 
 1. Fork the project.
 2. Create your feature branch:
-<br>`git switch -c my-new-feature`
+   <br>`git switch -c my-new-feature`
 3. Add your changes:
-<br>`git add files-that-you-changed`
+   <br>`git add files-that-you-changed`
 4. Commit your changes:
-<br>`git commit -m 'Add some feature'`
+   <br>`git commit -m 'Add some feature'`
 5. Push to the branch:
-<br>`git push -u origin my-new-feature`
+   <br>`git push -u origin my-new-feature`
 6. Submit a pull request.
 
 We kindly request that you express your interest in working on a particular issue by leaving a message on the respective issue thread. This will allow us to assign the issue to you directly, thereby preventing multiple individuals from simultaneously working on the same problem.
@@ -137,6 +129,18 @@ If you have some small bug, feature, or fix to make, that is not currently on Is
 For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
 Also, please read our [Contributing Guidelines](CONTRIBUTING.md) for more information.
+
+## Roadmap
+
+The following are some of the enhancements and features planned for future releases of this project. We welcome any feedback or contributions to help make these plans a reality.
+
+1. User Authentication: We plan to add user registration and login functionality. This will allow users to have personalized experiences and save their projects on the platform.
+
+2. Pro Membership: We're considering a paid membership tier. Pro members would receive certain benefits, such as a special 'Pro' badge and early access to new features. More details about the cost and specific benefits will be provided at a later date.
+
+3. Integration with GitHub API: To make project management easier, we're planning on adding the ability to pull project information directly from GitHub. This would streamline the process of adding new projects to the site.
+
+These roadmap items are subject to change based on user feedback and development resources. If you have any suggestions or if you want to contribute to the project, please see the [Contributing](#contributing) section.
 
 ## Questions
 
