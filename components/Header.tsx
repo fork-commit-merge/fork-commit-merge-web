@@ -69,7 +69,7 @@ const Header = () => {
                             <ul className="md:flex items-center space-x-1">
                                 <li>
                                     <Link href="/getting-started">
-                                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                             Getting Started
                                         </div>
                                     </Link>
@@ -79,7 +79,7 @@ const Header = () => {
                                         href="https://github.com/nikohoffren/devgallery.io"
                                         target="blank"
                                     >
-                                        <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline">
+                                        <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                             Contribute in GitHub
                                         </div>
                                     </Link>
@@ -100,7 +100,7 @@ const Header = () => {
                         </div>
                     </div>
                     <Link href="/getting-started">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Getting Started
                         </div>
                     </Link>
@@ -108,14 +108,14 @@ const Header = () => {
                         href="https://github.com/nikohoffren/devgallery.io"
                         target="blank"
                     >
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Contribute in GitHub
                         </div>
                     </Link>
                     <div className="relative" ref={node}>
                         <button
                             onClick={toggleDropdown}
-                            className="py-2 px-6 block text-sm cursor-pointer hover:underline"
+                            className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
                         >
                             Projects
                         </button>
@@ -123,19 +123,19 @@ const Header = () => {
                             <div className="absolute left-0 w-48 py-2 mt-2 bg-slate-900 rounded-lg shadow-xl">
                                 <Link
                                     href="/projects/websites"
-                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
                                 >
                                     Websites
                                 </Link>
                                 <Link
                                     href="/projects/mobile-apps"
-                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
                                 >
                                     Mobile Apps
                                 </Link>
                                 <Link
                                     href="/projects/desktop-apps"
-                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
                                 >
                                     Desktop Apps
                                 </Link>
@@ -143,17 +143,17 @@ const Header = () => {
                         )}
                     </div>
                     <Link href="/developers">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Developers
                         </div>
                     </Link>
                     <Link href="/about">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             About
                         </div>
                     </Link>
                     <Link href="/contact">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Contact
                         </div>
                     </Link>
@@ -165,7 +165,7 @@ const Header = () => {
                         <div className="relative" ref={node}>
                             <button
                                 onClick={toggleDropdown}
-                                className="py-2 px-6 block text-sm cursor-pointer hover:underline"
+                                className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
                             >
                                 Projects
                             </button>
@@ -173,19 +173,19 @@ const Header = () => {
                                 <div className="absolute left-0 w-48 py-2 mt-2 bg-slate-900 rounded-lg shadow-xl">
                                     <Link
                                         href="/projects/websites"
-                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
                                     >
                                         Websites
                                     </Link>
                                     <Link
                                         href="/projects/mobile-apps"
-                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
                                     >
                                         Mobile Apps
                                     </Link>
                                     <Link
                                         href="/projects/desktop-apps"
-                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline"
+                                        className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
                                     >
                                         Desktop Apps
                                     </Link>
@@ -193,27 +193,27 @@ const Header = () => {
                             )}
                         </div>
                         <Link href="/developers">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 Developers
                             </div>
                         </Link>
                         <Link href="/about">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 About
                             </div>
                         </Link>
                         <Link href="/contact">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 Contact
                             </div>
                         </Link>
                         <Link href="/login">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 LOGIN
                             </div>
                         </Link>
                         <Link href="/sign-up">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline">
+                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 SIGN UP
                             </div>
                         </Link>
