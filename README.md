@@ -144,7 +144,7 @@ These roadmap items are subject to change based on user feedback and development
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at niko.hoffren@gmail.com.
+If you have any questions about the repo, open an issue or contact us directly at devgallery.io@gmail.com
 
 ## License
 
