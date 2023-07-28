@@ -105,6 +105,8 @@ Follow these steps to run the application in your local environment:
     npm run dev
     ```
 
+<a id="contributing"></a>
+
 ## Contributing
 
 Contributions to Dev Gallery are always welcome, whether it be improvements to the documentation, new features, bug fixes, or even feedback on the project.
@@ -138,7 +140,7 @@ The following are some of the enhancements and features planned for future relea
 
 3. Integration with GitHub API: To make project management easier, we're planning on adding the ability to pull project information directly from GitHub. This would streamline the process of adding new projects to the site.
 
-These roadmap items are subject to change based on user feedback and development resources. If you have any suggestions or if you want to contribute to the project, please see the [Contributing](https://github.com/nikohoffren/devgallery.io/issues/8#Contributing) section.
+These roadmap items are subject to change based on user feedback and development resources. If you have any suggestions or if you want to contribute to the project, please see the [Contributing](#contributing) section.
 
 ## Questions
 
