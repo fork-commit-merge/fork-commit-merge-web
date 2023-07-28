@@ -132,7 +132,8 @@ Also, please read our [Contributing Guidelines](CONTRIBUTING.md) for more inform
 
 ## Roadmap
 
-The following are some of the enhancements and features planned for future releases of this project. We welcome any feedback or contributions to help make these plans a reality.
+The following are some of the enhancements and features planned for future releases of this project.
+We welcome any feedback or contributions to help make these plans a reality.
 
 1. User Authentication: We plan to add user registration and login functionality. This will allow users to have personalized experiences and save their projects on the platform.
 
