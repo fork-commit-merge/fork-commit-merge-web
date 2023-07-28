@@ -20,15 +20,6 @@ jobs:
         run: |
           gh auth login --with-token <<< "${{ secrets.DEVGALLERY_BOT }}"
 
-      - name: Append newline to README
-        run: |
-          printf "\n" >> README.md
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "Add newline"
-          git push
-
       - name: Add contributor to README
         run: |
           if ! grep -q "${{ github.event.pull_request.user.login }}" README.md
