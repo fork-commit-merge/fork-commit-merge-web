@@ -68,7 +68,7 @@ const Header = () => {
                         <nav className="hidden md:block">
                             <ul className="md:flex items-center space-x-1">
                                 <li>
-                                    <Link href="/getting-started">
+                                    <Link href="//add-project">
                                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                             Getting Started
                                         </div>
