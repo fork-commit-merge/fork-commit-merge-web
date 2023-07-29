@@ -6,12 +6,13 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Coffee from "./Coffee";
 import styles from "../styles/Coffee.module.css";
 import React from "react";
+import { useSession } from "next-auth/react";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const node = React.useRef<HTMLDivElement | null>(null);
-
+    const { data: session } = useSession();
     const handleClickOutside = (e: MouseEvent) => {
         if (node.current?.contains(e.target as Node)) {
             return;
@@ -68,7 +69,7 @@ const Header = () => {
                         <nav className="hidden md:block">
                             <ul className="md:flex items-center space-x-1">
                                 <li>
-                                    <Link href="/getting-started">
+                                    <Link href={session?.user ? "/add-project" : "/login"}>
                                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                             Getting Started
                                         </div>
@@ -99,7 +100,7 @@ const Header = () => {
                             <Coffee />
                         </div>
                     </div>
-                    <Link href="/getting-started">
+                    <Link href="/add-project">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Getting Started
                         </div>
@@ -207,16 +208,20 @@ const Header = () => {
                                 Contact
                             </div>
                         </Link>
-                        <Link href="/login">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                LOGIN
-                            </div>
-                        </Link>
-                        {/* <Link href="/sign-up">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                SIGN UP
-                            </div>
-                        </Link> */}
+                        {session?.user ? (
+                            <Link href="/login">
+                                <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
+                                    {session.user.name}
+                                </div>
+                            </Link>
+                        ) : (
+                            <Link href="/login">
+                                <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
+                                    LOGIN
+                                </div>
+                            </Link>
+                        )}
+
                     </div>
                 </div>
             </header>

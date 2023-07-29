@@ -6,12 +6,6 @@ export default function AddProject() {
     const formRef = useRef<HTMLFormElement>(null);
     const { data: session, status } = useSession();
 
-    useEffect(() => {
-        if (status === "authenticated" && !session) {
-            router.push("/login");
-        }
-    }, [session, status]);
-
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
@@ -20,7 +14,7 @@ export default function AddProject() {
 
             const projectData = {
                 projectName: formData.get("projectName") as string,
-                developerName: formData.get("developerName") as string,
+                developerName: session?.user?.name,
                 projectDescription: formData.get(
                     "projectDescription"
                 ) as string,
@@ -118,15 +112,16 @@ export default function AddProject() {
                             required
                         />
                     </div>
-                    <div className="w-full md:w-full px-3 mb-6">
+                    <div className="w-full md:w-full px-3 py-6">
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Developer Name
                         </label>
                         <input
-                            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            className="appearance-none block w-full bg-gray-200 text-gray-900 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                             type="text"
                             name="developerName"
-                            required
+                            placeholder={session?.user?.name ?? ''}
+                            readOnly
                         />
                     </div>
                     <div className="w-full md:w-full px-3 mb-6">

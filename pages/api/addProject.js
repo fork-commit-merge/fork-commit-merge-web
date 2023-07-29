@@ -13,11 +13,11 @@ export default async (req, res) => {
             const projectData = req.body;
             projectData.imageUrl = `https://${process.env.AWS_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${projectData.imageUrl}`;
 
-            // Get the session information
             const session = await getSession({ req });
+            console.log("session: ", session);
+
 
             if (session) {
-                // If the user is logged in, add their ID to the project data
                 projectData.userId = session.user.id;
             } else {
                 res.status(401).json({
