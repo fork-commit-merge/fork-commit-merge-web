@@ -212,11 +212,11 @@ const Header = () => {
                                 LOGIN
                             </div>
                         </Link>
-                        <Link href="/sign-up">
+                        {/* <Link href="/sign-up">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 SIGN UP
                             </div>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </header>

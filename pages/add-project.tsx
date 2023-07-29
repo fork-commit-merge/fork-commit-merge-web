@@ -1,8 +1,16 @@
+import { useRef, useEffect } from "react";
 import router from "next/router";
-import React, { useRef } from "react";
+import { useSession } from "next-auth/react";
 
 export default function AddProject() {
     const formRef = useRef<HTMLFormElement>(null);
+    const { data: session, status } = useSession();
+
+    useEffect(() => {
+        if (status === "authenticated" && !session) {
+            router.push("/login");
+        }
+    }, [session, status]);
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -13,15 +21,20 @@ export default function AddProject() {
             const projectData = {
                 projectName: formData.get("projectName") as string,
                 developerName: formData.get("developerName") as string,
-                projectDescription: formData.get("projectDescription") as string,
+                projectDescription: formData.get(
+                    "projectDescription"
+                ) as string,
                 projectLink: formData.get("projectLink") as string,
+                userEmail: session?.user?.email,
             };
 
             const file = formData.get("image");
 
             if (file instanceof File) {
                 const preSignedResponse = await fetch(
-                    `/api/getPreSignedUrl?projectName=${encodeURIComponent(projectData.projectName)}&fileType=${file.type}`,
+                    `/api/getPreSignedUrl?projectName=${encodeURIComponent(
+                        projectData.projectName
+                    )}&fileType=${file.type}`,
                     { method: "GET" }
                 );
 
@@ -49,7 +62,7 @@ export default function AddProject() {
                         });
 
                         if (response.ok) {
-                            router.push('/success');
+                            router.push("/success");
                         } else {
                             console.log("Project data submission failed.");
                         }
@@ -65,6 +78,13 @@ export default function AddProject() {
         }
     };
 
+    if (status === "loading") {
+        return <div>Loading...</div>;
+    }
+
+    if (!session) {
+        return null;
+    }
 
     return (
         <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center">
