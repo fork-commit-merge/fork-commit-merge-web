@@ -30,11 +30,12 @@ devgallery.io serves as a platform where talented developers can spotlight their
 
 ## Tech Stack
 
+-   React
 -   Next.js
 -   TypeScript
 -   Tailwind CSS
--   MongoDB Atlas - For user/product data
--   AWS S3 - For images
+-   MongoDB Atlas
+-   AWS S3
 
 ## Local Development
 
