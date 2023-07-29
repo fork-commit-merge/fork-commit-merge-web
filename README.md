@@ -109,7 +109,7 @@ Follow these steps to run the application in your local environment:
 
 ## Contributing
 
-Contributions to Dev Gallery are always welcome, whether it be improvements to the documentation, new features, bug fixes, or even feedback on the project.
+Contributions to devgallery.io are always welcome, whether it be improvements to the documentation, new features, bug fixes, or even feedback on the project.
 
 **1.** Fork the project.
 
