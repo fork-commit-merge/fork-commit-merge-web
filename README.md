@@ -25,7 +25,7 @@ devgallery.io serves as a platform where talented developers can spotlight their
 ## Features
 
 -   Browse various development projects
--   Add your own project
+-   Add your own projects
 -   Create personal profiles
 
 ## Tech Stack
