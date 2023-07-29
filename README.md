@@ -112,19 +112,20 @@ Follow these steps to run the application in your local environment:
 Contributions to Dev Gallery are always welcome, whether it be improvements to the documentation, new features, bug fixes, or even feedback on the project.
 
 **1.** Fork the project.
-**2.** Add a reference(remote) to the original repository.
+
+**2.** Add a reference to the original repository:
 
 ```bash
-git remote add upstream https://github.com/sazamansari/node.js-_microservices.git
+git remote add upstream https://github.com/nikohoffren/devgallery.io.git
 ```
 
-**3.** Check the remotes for this repository.
+**3.** Check the remotes for this repository:
 
 ```bash
 git remote -v
 ```
 
-**4.** Take a pull from the upstream repository to your main branch to keep it at par with the main project.
+**4.** Take a pull from the upstream repository to your main branch to keep it at par with the main project:
 
 ```bash
 git pull upstream main
