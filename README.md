@@ -111,16 +111,50 @@ Follow these steps to run the application in your local environment:
 
 Contributions to Dev Gallery are always welcome, whether it be improvements to the documentation, new features, bug fixes, or even feedback on the project.
 
-1. Fork the project.
-2. Create your feature branch:
-   <br>`git switch -c my-new-feature`
-3. Add your changes:
-   <br>`git add files-that-you-changed`
-4. Commit your changes:
-   <br>`git commit -m 'Add some feature'`
-5. Push to the branch:
-   <br>`git push -u origin my-new-feature`
-6. Submit a pull request.
+**1.** Fork the project.
+**2.** Add a reference(remote) to the original repository.
+
+```bash
+git remote add upstream https://github.com/sazamansari/node.js-_microservices.git
+```
+
+**3.** Check the remotes for this repository.
+
+```bash
+git remote -v
+```
+
+**4.** Take a pull from the upstream repository to your main branch to keep it at par with the main project.
+
+```bash
+git pull upstream main
+```
+
+**5.** Create your feature branch:
+
+```bash
+git switch -c my-new-feature
+```
+
+**6.** Add your changes:
+
+```bash
+git add files-that-you-changed
+```
+
+**7.** Commit your changes:
+
+```bash
+git commit -m 'Add some feature'
+```
+
+**8.** Push to the branch:
+
+```bash
+git push -u origin my-new-feature
+```
+
+**9.** Submit a pull request.
 
 We kindly request that you express your interest in working on a particular issue by leaving a message on the respective issue thread. This will allow us to assign the issue to you directly, thereby preventing multiple individuals from simultaneously working on the same problem.
 
@@ -132,8 +166,7 @@ Also, please read our [Contributing Guidelines](CONTRIBUTING.md) for more inform
 
 ## Roadmap
 
-The following are some of the enhancements and features planned for future releases of this project.
-We welcome any feedback or contributions to help make these plans a reality.
+The following are some of the enhancements and features planned for future releases of this project. We welcome any feedback or contributions to help make these plans a reality.
 
 1. User Authentication: We plan to add user registration and login functionality. This will allow users to have personalized experiences and save their projects on the platform.
 
