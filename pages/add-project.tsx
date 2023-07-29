@@ -1,8 +1,10 @@
+import { useRef, useEffect } from "react";
 import router from "next/router";
-import React, { useRef } from "react";
+import { useSession } from "next-auth/react";
 
 export default function AddProject() {
     const formRef = useRef<HTMLFormElement>(null);
+    const { data: session, status } = useSession();
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -12,16 +14,21 @@ export default function AddProject() {
 
             const projectData = {
                 projectName: formData.get("projectName") as string,
-                developerName: formData.get("developerName") as string,
-                projectDescription: formData.get("projectDescription") as string,
+                developerName: session?.user?.name,
+                projectDescription: formData.get(
+                    "projectDescription"
+                ) as string,
                 projectLink: formData.get("projectLink") as string,
+                userEmail: session?.user?.email,
             };
 
             const file = formData.get("image");
 
             if (file instanceof File) {
                 const preSignedResponse = await fetch(
-                    `/api/getPreSignedUrl?projectName=${encodeURIComponent(projectData.projectName)}&fileType=${file.type}`,
+                    `/api/getPreSignedUrl?projectName=${encodeURIComponent(
+                        projectData.projectName
+                    )}&fileType=${file.type}`,
                     { method: "GET" }
                 );
 
@@ -49,7 +56,7 @@ export default function AddProject() {
                         });
 
                         if (response.ok) {
-                            router.push('/success');
+                            router.push("/success");
                         } else {
                             console.log("Project data submission failed.");
                         }
@@ -65,6 +72,13 @@ export default function AddProject() {
         }
     };
 
+    if (status === "loading") {
+        return <div>Loading...</div>;
+    }
+
+    if (!session) {
+        return null;
+    }
 
     return (
         <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center">
@@ -98,15 +112,16 @@ export default function AddProject() {
                             required
                         />
                     </div>
-                    <div className="w-full md:w-full px-3 mb-6">
+                    <div className="w-full md:w-full px-3 py-6">
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Developer Name
                         </label>
                         <input
-                            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            className="appearance-none block w-full bg-gray-200 text-gray-900 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                             type="text"
                             name="developerName"
-                            required
+                            placeholder={session?.user?.name ?? ''}
+                            readOnly
                         />
                     </div>
                     <div className="w-full md:w-full px-3 mb-6">

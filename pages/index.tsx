@@ -4,6 +4,7 @@ import { connectToDB } from "../utils/db";
 import Image from "next/image";
 import ProjectCard from "../components/ProjectCard";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 interface Project {
     _id: string;
@@ -15,6 +16,8 @@ interface Project {
 }
 
 export default function Home({ projects }: { projects: Project[] }) {
+    const { data: session } = useSession();
+
     return (
         <main className="min-h-screen flex flex-col items-center justify-center text-center bg-slate-950">
             <div className="my-20 min-w-full">
@@ -55,7 +58,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                     </div>
                     <div className="my-10">
                         <Link
-                            href="/add-project"
+                            href={session?.user ? "/add-project" : "/login"}
                             className="text-3xl text-white bg-slate-950 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider"
                         >
                             GET STARTED
