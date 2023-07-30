@@ -1,14 +1,14 @@
 <div align="center">
 
-![Dev Gallery Screenshot](/public/devgallerybanner.png)
+![Dev Gallery Screenshot](/public/fork-commit-merge-web-banner.png)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
-[![Issues](https://img.shields.io/github/issues/nikohoffren/devgallery.io.svg?style=flat)](https://github.com/nikohoffren/devgallery.io/issues)
-[![PR:s Welcome](https://img.shields.io/badge/PR:s-Welcome-green.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
-[![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-green.svg)](https://github.com/nikohoffren/devgallery.io/pulls)
-![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/devgallery.io)
+[![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
+[![Issues](https://img.shields.io/github/issues/nikohoffren/fork-commit-merge-web.svg?style=flat)](https://github.com/nikohoffren/fork-commit-merge-web/issues)
+[![PR:s Welcome](https://img.shields.io/badge/PR:s-Welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
+[![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
+![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/fork-commit-merge-web)
 
-devgallery.io serves as a platform where talented developers can spotlight their projects. It allows developers to not only feature their works but also create personal profiles for added visibility.
+Welcome to Fork Commit Merge, your one-stop resource hub for mastering GitHub contributions! Whether you're a novice coder or an experienced developer, our comprehensive guides are designed to streamline your GitHub journey. We delve into everything from basic Git commands to intricate pull request processes, making collaboration seamless and efficient. Learn the ins and outs of forking, committing, and merging with our easy-to-follow tutorials and expert advice. At Fork Commit Merge, we're passionate about empowering you to contribute confidently and effectively to the open-source world. Let's code, collaborate, and create together!
 
 </div>
 
@@ -24,9 +24,21 @@ devgallery.io serves as a platform where talented developers can spotlight their
 
 ## Features
 
--   Browse various development projects
--   Add your own projects
--   Create personal profiles
+-   **Comprehensive Guides**: Easy to follow step-by-step guides for various GitHub processes, from creating a repository to managing pull requests.
+
+-   **Command Tutorials**: Detailed tutorials on Git commands to enhance your productivity and workflow efficiency.
+
+-   **Best Practices**: Recommendations on Git and GitHub best practices to promote high-quality code and effective collaboration.
+
+-   **Contribution Guidelines**: Detailed guides on how to properly contribute to open-source projects, including etiquette and effective communication with project maintainers.
+
+-   **FAQs and Troubleshooting**: A comprehensive section dedicated to frequently asked questions and common issues users face while contributing on GitHub.
+
+-   **Community Forum**: A dedicated space for users to interact, share their experiences, ask questions, and learn from each other.
+
+-   **Resource Library**: An extensive collection of external resources such as books, blog posts, and video tutorials on Git and GitHub.
+
+-   **Regular Updates**: Stay up-to-date with the latest features and changes in GitHub's dynamic ecosystem with our regular update notifications.
 
 ## Tech Stack
 
@@ -44,13 +56,13 @@ Follow these steps to run the application in your local environment:
 1. Clone this repository.
 
     ```bash
-    git clone https://github.com/yourusername/devgallery.io.git
+    git clone https://github.com/yourusername/fork-commit-merge-web.git
     ```
 
 2. Install the project dependencies.
 
     ```bash
-    cd devgallery.io
+    cd fork-commit-merge-web
     npm i
     ```
 
@@ -110,14 +122,14 @@ Follow these steps to run the application in your local environment:
 
 ## Contributing
 
-Contributions to devgallery.io are always welcome, whether it be improvements to the documentation, new features, bug fixes, or even feedback on the project.
+Contributions to fork-commit-merge-web are always welcome, whether it be improvements to the documentation, new features, bug fixes, or even feedback on the project.
 
 **1.** Fork the project.
 
 **2.** Add a reference to the original repository:
 
 ```bash
-git remote add upstream https://github.com/nikohoffren/devgallery.io.git
+git remote add upstream https://github.com/nikohoffren/fork-commit-merge-web.git
 ```
 
 **3.** Check the remotes for this repository:
@@ -180,7 +192,7 @@ These roadmap items are subject to change based on user feedback and development
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact us directly at devgallery.io@gmail.com
+If you have any questions about the repo, open an issue or contact us directly at niko.hoffren@gmail.com
 
 ## License
 

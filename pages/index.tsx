@@ -26,35 +26,35 @@ export default function Home({ projects }: { projects: Project[] }) {
                     style={{ width: 180, height: 180 }}
                 >
                     <Image
-                        src="/dev-gallery.png"
-                        alt="Dev Gallery Logo"
+                        src="/fork-commit-merge-logo.jpg"
+                        alt="Fork, Commit, Merge -logo"
                         width={180}
                         height={180}
                         priority
                     />
                 </div>
                 <h1 className="mt-5 text-5xl font-bold text-slate-50">
-                    Welcome to devgallery.io
+                    Welcome to Fork, Commit, Merge
                 </h1>
-                <p className="mt-2 mb-20 text-lg font-light text-gray-100">
-                    Explore amazing projects developed by talented developers
+                <p className="mt-4 mb-20 text-lg font-light text-gray-100">
+                    Your one-stop resource hub for mastering GitHub
+                    contributions
                 </p>
                 <div className="bg-slate-900 w-full py-2">
                     <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
-                        <code>devgallery.io</code> is a platform for showcasing
-                        and discovering amazing projects created by talented
-                        developers around the globe.
-                        <br />
-                        <br />
-                        By joining our community and adding your projects and
-                        profiles, you&apos;re not just increasing your
-                        visibility but also inspiring and motivating other
-                        developers.
-                        <br />
-                        <br />
-                        Don&apos;t miss out on this chance to be a part of a
-                        vibrant and supportive community. Register and upload
-                        your projects now. Let the world see your capabilities!
+                        <code>Fork, Commit, Merge</code> is your one-stop
+                        resource hub for mastering GitHub contributions! Whether
+                        you&apos;re a novice coder or an experienced developer,
+                        our comprehensive guides are designed to streamline your
+                        GitHub journey. We delve into everything from basic Git
+                        commands to intricate pull request processes, making
+                        collaboration seamless and efficient. Learn the ins and
+                        outs of forking, committing, and merging with our
+                        easy-to-follow tutorials and expert advice. At Fork
+                        Commit Merge, we&apos;re passionate about empowering you
+                        to contribute confidently and effectively to the
+                        open-source world. Let&apos;s code, collaborate, and
+                        create together!
                     </div>
                     <div className="my-10">
                         <Link

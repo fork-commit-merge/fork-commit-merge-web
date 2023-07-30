@@ -1,4 +1,4 @@
-# Contributing to devgallery.io repository
+# Contributing to Fork, Commit, Merge web repository
 
 First off, thanks for taking the time to contribute!
 
@@ -6,7 +6,7 @@ The following is a set of guidelines for contributing to this project. These are
 
 ## Code of Conduct
 
-This project and everyone participating in it are governed by the [devgallery.io Code of Conduct](code_of_conduct.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [niko.hoffren@gmail.com](mailto:niko.hoffren@gmail.com).
+This project and everyone participating in it are governed by the [Fork, Commit, Merge Code of Conduct](code_of_conduct.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [niko.hoffren@gmail.com](mailto:niko.hoffren@gmail.com).
 
 ## How Can I Contribute?
 
