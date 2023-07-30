@@ -36,7 +36,7 @@ jobs:
         run: |
           gh pr comment "${{ github.event.pull_request.number }}" --body "## Pull request merged
 
-          > This is an automated message from devgallery.io [BOT].
+          > This is an automated message from Fork, Commit, Merge - web [BOT].
 
           Thank you for your contribution! Your pull request has been merged and your name has been added to the List of Contributors in README.md.
           Please leave a star if you enjoyed working on this project.
