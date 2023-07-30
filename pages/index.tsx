@@ -1,4 +1,3 @@
-// pages/index.tsx
 import { GetServerSideProps } from "next";
 import { connectToDB } from "../utils/db";
 import Image from "next/image";

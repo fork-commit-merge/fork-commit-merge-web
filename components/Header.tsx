@@ -83,7 +83,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="https://github.com/nikohoffren/devgallery.io"
+                                        href="https://github.com/nikohoffren/fork-commit-merge"
                                         target="blank"
                                     >
                                         <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
@@ -112,7 +112,7 @@ const Header = () => {
                         </div>
                     </Link>
                     <Link
-                        href="https://github.com/nikohoffren/devgallery.io"
+                        href="https://github.com/nikohoffren/fork-commit-merge"
                         target="blank"
                     >
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
@@ -149,14 +149,9 @@ const Header = () => {
                             </div>
                         )}
                     </div>
-                    <Link href="/developers">
+                    <Link href="/resources">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Developers
-                        </div>
-                    </Link>
-                    <Link href="/about">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            About
+                            Resources
                         </div>
                     </Link>
                     <Link href="/contact">
@@ -199,14 +194,10 @@ const Header = () => {
                                 </div>
                             )}
                         </div>
-                        <Link href="/developers">
+
+                        <Link href="/resources">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                Developers
-                            </div>
-                        </Link>
-                        <Link href="/about">
-                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                About
+                                Resources
                             </div>
                         </Link>
                         <Link href="/contact">

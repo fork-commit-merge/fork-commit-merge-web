@@ -8,7 +8,7 @@
 [![Contributors Welcome](https://img.shields.io/badge/Contributors-Welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/fork-commit-merge-web)
 
-Welcome to Fork Commit Merge, your one-stop resource hub for mastering GitHub contributions! Whether you're a novice coder or an experienced developer, our comprehensive guides are designed to streamline your GitHub journey. We delve into everything from basic Git commands to intricate pull request processes, making collaboration seamless and efficient. Learn the ins and outs of forking, committing, and merging with our easy-to-follow tutorials and expert advice. At Fork Commit Merge, we're passionate about empowering you to contribute confidently and effectively to the open-source world. Let's code, collaborate, and create together!
+Welcome to Fork, Commit, Merge, your one-stop resource hub for mastering GitHub contributions! Whether you're a novice coder or an experienced developer, our comprehensive guides are designed to streamline your GitHub journey. We delve into everything from basic Git commands to intricate pull request processes, making collaboration seamless and efficient. Learn the ins and outs of forking, committing, and merging with our easy-to-follow tutorials and expert advice. At Fork, Commit, Merge, we're passionate about empowering you to contribute confidently and effectively to the open-source world. Let's code, collaborate, and create together!
 
 </div>
 
