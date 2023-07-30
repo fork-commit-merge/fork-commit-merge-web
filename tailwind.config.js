@@ -16,6 +16,9 @@ module.exports = {
         'blur-xl': 'blur(8px)',
         'blur-2xl': 'blur(12px)',
         'blur-3xl': 'blur(16px)',
+      },
+      boxShadow: {
+        'bottom': '0 15px 10px -10px rgba(1, 1, 1, 1)'
       }
     },
   },

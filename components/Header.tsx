@@ -167,7 +167,7 @@ const Header = () => {
                 </div>
             )}
             <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block">
-                <div className="container mx-auto px-6 py-1 pb-6">
+                <div className="container mx-auto px-6 py-1 pb-6 shadow-bottom">
                     <div className="mt-3 md:flex items-center space-x-1 justify-end">
                         <div className="relative" ref={node}>
                             <button
@@ -199,7 +199,7 @@ const Header = () => {
                                 </div>
                             )}
                         </div>
-                        <Link href="/developers">
+                        <Link href="/developers" className="hover:text-slate-100">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 Developers
                             </div>
