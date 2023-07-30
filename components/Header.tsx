@@ -199,7 +199,7 @@ const Header = () => {
                                 </div>
                             )}
                         </div>
-                        <Link href="/developers" className="hover:text-slate-100">
+                        <Link href="/developers">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 Developers
                             </div>
