@@ -78,8 +78,8 @@ export default function Home({ projects }: { projects: Project[] }) {
                     <h2 className="text-3xl font-bold my-4">
                         About the Fork, Commit, Merge project
                     </h2>
-                    <p className="text-lg leading-7">
-                        &Quot;Fork, Commit, Merge&Quot; is an educational and
+                    <p className="text-lg leading-7 pt-8">
+                        &quot;Fork, Commit, Merge&quot; is an educational and
                         practical project aimed at helping developers - both
                         newcomers and seasoned - improve their skills in
                         open-source contribution, problem-solving, finding bugs,
@@ -87,6 +87,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         repository that make it unique and enriching for every
                         developer:
                     </p>
+                    <hr className="my-6" />
                     <h3 className="text-2xl font-semibold my-3 mt-10">
                         Learn and Improve Problem Solving Skills
                     </h3>
@@ -98,6 +99,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         contributors sharpen their problem-solving abilities - a
                         critical skill for every developer.
                     </p>
+                    <hr className="my-6" />
                     <h3 className="text-2xl font-semibold my-3 mt-10">
                         Learn and Practice Testing
                     </h3>
@@ -109,6 +111,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         opportunity to understand how testing works, how to
                         write efficient tests, and how to debug them.
                     </p>
+                    <hr className="my-6" />
                     <h3 className="text-2xl font-semibold my-3 mt-10">
                         Understand and Work with Types
                     </h3>
@@ -120,6 +123,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         importance of types in programming, thus enhancing their
                         TypeScript skills.
                     </p>
+                    <hr className="my-6" />
                     <h3 className="text-2xl font-semibold my-3 mt-10">
                         Polish Debugging Skills
                     </h3>
@@ -129,6 +133,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         to find and fix bugs in the codebase, thus polishing
                         their debugging skills.
                     </p>
+                    <hr className="my-6" />
                     <h3 className="text-2xl font-semibold my-3 mt-10">
                         Experience the Real-world Development Workflow
                     </h3>
@@ -140,6 +145,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         is the workflow most open-source projects follow, making
                         it a valuable learning experience.
                     </p>
+                    <hr className="my-6" />
                     <h3 className="text-2xl font-semibold my-3 mt-10">
                         Community Contribution and Recognition
                     </h3>
@@ -150,8 +156,9 @@ export default function Home({ projects }: { projects: Project[] }) {
                         to our List of Contributors along with their profile
                         picture, recognizing their efforts.
                     </p>
-                    <p className="text-lg leading-7 mt-10">
-                        In summary, &Quot;Fork, Commit, Merge&Quot; offers an
+                    <hr className="my-6" />
+                    <p className="text-lg leading-7 my-10">
+                        In summary, &quot;Fork, Commit, Merge&quot; offers an
                         all-around, hands-on learning experience that mirrors
                         real-world development practices, making it a valuable
                         project for every developer looking to level up their
@@ -160,10 +167,10 @@ export default function Home({ projects }: { projects: Project[] }) {
                 </div>
                 <div className="bg-slate-900 w-full py-2">
                     <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
-                        <h2 className="text-xl font-semibold my-3 mt-10">
+                        <h2 className="text-3xl font-semibold my-3 mt-10">
                             List of Contributors
                         </h2>
-                        <p className="text-lg leading-7 mt-10">
+                        <p className="text-lg leading-7 mt-8 mb-4">
                             Massive thanks to all of these fine individuals for
                             contributing to this project!
                         </p>
