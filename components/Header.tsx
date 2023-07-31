@@ -72,7 +72,7 @@ const Header = () => {
                                     <Link
                                         href={
                                             session?.user
-                                                ? "/add-project"
+                                                ? "/"
                                                 : "/login"
                                         }
                                     >
@@ -106,7 +106,7 @@ const Header = () => {
                             <Coffee />
                         </div>
                     </div>
-                    <Link href="/add-project">
+                    <Link href="/login">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Getting Started
                         </div>
@@ -162,7 +162,7 @@ const Header = () => {
                 </div>
             )}
             <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block">
-                <div className="mx-auto px-12 py-1 pb-6 shadow-bottom">
+                <div className="mx-auto px-12 py-1 pb-6 shadow-top">
                     <div className="mt-3 md:flex items-center space-x-1 justify-end">
                         <div className="relative" ref={node}>
                             <button

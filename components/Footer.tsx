@@ -9,24 +9,27 @@ const Footer = () => {
                     <div className="flex justify-between items-center">
                         <div className="flex items-center">
                             <p className="text-sm mr-2">Deployed with</p>
-                            <Image
-                                src="/vercel.svg"
-                                alt="Vercel Logo"
-                                width={50}
-                                height={50}
-                            />
+                            <Link href="https://vercel.com" target="blank">
+                                <Image
+                                    className="bg-white py-1 px-1 rounded-md shadow-lg"
+                                    src="/vercel.svg"
+                                    alt="Vercel Logo"
+                                    width={50}
+                                    height={50}
+                                />
+                            </Link>
                         </div>
-                        <div>
-                            <p className="text-sm">
-                                Copyright © 2023
+                        <div className="flex items-center">
+                            <p className="text-sm pr-1">
+                                Copyright © 2023</p>
                                 <Link
                                     href="https://nikohoffren.com"
-                                    className="hover:underline"
+                                    className="hover:underline text-sm text-red-100"
                                     target="blank"
                                 >
                                     Niko Hoffrén
                                 </Link>
-                            </p>
+
                         </div>
                         <div className="flex space-x-4">
                             <Link

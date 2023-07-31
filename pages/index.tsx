@@ -1,9 +1,8 @@
-import { GetServerSideProps } from "next";
-import { connectToDB } from "../utils/db";
 import Image from "next/image";
-import ProjectCard from "../components/ProjectCard";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+import { Contributors } from "../components/Contributors";
+import { contributorData } from "../components/contributorData";
 
 interface Project {
     _id: string;
@@ -47,49 +46,131 @@ export default function Home({ projects }: { projects: Project[] }) {
                         our comprehensive guides are designed to streamline your
                         GitHub journey. We delve into everything from basic Git
                         commands to intricate pull request processes, making
-                        collaboration seamless and efficient. Learn the ins and
-                        outs of forking, committing, and merging with our
-                        easy-to-follow tutorials and expert advice. At Fork
-                        Commit Merge, we&apos;re passionate about empowering you
-                        to contribute confidently and effectively to the
-                        open-source world. Let&apos;s code, collaborate, and
-                        create together!
+                        collaboration seamless and efficient.
+                        <br />
+                        <br />
+                        Learn the ins and outs of forking, committing, and
+                        merging with our easy-to-follow tutorials and expert
+                        advice. At Fork Commit Merge, we&apos;re passionate
+                        about empowering you to contribute confidently and
+                        effectively to the open-source world.
+                        <br />
+                        <br />
+                        Let&apos;s code, collaborate, and create together!
                     </div>
                     <div className="my-10">
+                        {/* <Link
+                            href={session?.user ? "/" : "/login"}
+                            className="text-3xl text-white bg-slate-950 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider"
+                        >
+                            GET STARTED
+                        </Link> */}
                         <Link
-                            href={session?.user ? "/add-project" : "/login"}
+                            href="https://github.com/nikohoffren/fork-commit-merge"
+                            target="blank"
                             className="text-3xl text-white bg-slate-950 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider"
                         >
                             GET STARTED
                         </Link>
                     </div>
                 </div>
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-                {projects.map((project) => (
-                    <ProjectCard
-                        key={project._id}
-                        projectName={project.projectName}
-                        developerName={project.developerName}
-                        imageUrl={project.imageUrl}
-                        projectDescription={project.projectDescription}
-                        projectLink={project.projectLink}
-                    />
-                ))}
+                <div className="text-slate-50 mx-auto max-w-2xl mt-20">
+                    <h2 className="text-3xl font-bold my-4">
+                        About the Fork, Commit, Merge project
+                    </h2>
+                    <p className="text-lg leading-7">
+                        &Quot;Fork, Commit, Merge&Quot; is an educational and
+                        practical project aimed at helping developers - both
+                        newcomers and seasoned - improve their skills in
+                        open-source contribution, problem-solving, finding bugs,
+                        testing, and much more. Here are some key aspects of the
+                        repository that make it unique and enriching for every
+                        developer:
+                    </p>
+                    <h3 className="text-2xl font-semibold my-3 mt-10">
+                        Learn and Improve Problem Solving Skills
+                    </h3>
+                    <p className="text-lg leading-7">
+                        The repository hosts a range of tasks with varying
+                        difficulties (easy, medium, and hard) in different
+                        languages (HTML, CSS, JavaScript, and TypeScript). Each
+                        task is a problem that needs to be solved, which helps
+                        contributors sharpen their problem-solving abilities - a
+                        critical skill for every developer.
+                    </p>
+                    <h3 className="text-2xl font-semibold my-3 mt-10">
+                        Learn and Practice Testing
+                    </h3>
+                    <p className="text-lg leading-7">
+                        Testing is an integral part of software development.
+                        Within the JavaScript issues of this project,
+                        contributors will find Jest tests that need to pass for
+                        the solution to be accepted. This provides an
+                        opportunity to understand how testing works, how to
+                        write efficient tests, and how to debug them.
+                    </p>
+                    <h3 className="text-2xl font-semibold my-3 mt-10">
+                        Understand and Work with Types
+                    </h3>
+                    <p className="text-lg leading-7">
+                        TypeScript, a statically-typed superset of JavaScript,
+                        is quickly gaining popularity in the development
+                        community. This repository includes TypeScript issues
+                        that allow contributors to understand and appreciate the
+                        importance of types in programming, thus enhancing their
+                        TypeScript skills.
+                    </p>
+                    <h3 className="text-2xl font-semibold my-3 mt-10">
+                        Polish Debugging Skills
+                    </h3>
+                    <p className="text-lg leading-7">
+                        Debugging is an art, and mastering it can save a lot of
+                        time and effort. This repository encourages contributors
+                        to find and fix bugs in the codebase, thus polishing
+                        their debugging skills.
+                    </p>
+                    <h3 className="text-2xl font-semibold my-3 mt-10">
+                        Experience the Real-world Development Workflow
+                    </h3>
+                    <p className="text-lg leading-7">
+                        Contributors get to experience the actual development
+                        workflow - forking the repository, cloning it locally,
+                        creating a branch, committing changes, pushing them to
+                        the remote repository, and creating a pull request. This
+                        is the workflow most open-source projects follow, making
+                        it a valuable learning experience.
+                    </p>
+                    <h3 className="text-2xl font-semibold my-3 mt-10">
+                        Community Contribution and Recognition
+                    </h3>
+                    <p className="text-lg leading-7">
+                        We strongly believe in the power of open-source and
+                        community contribution. That&apos;s why every
+                        contributor who gets their changes merged will be added
+                        to our List of Contributors along with their profile
+                        picture, recognizing their efforts.
+                    </p>
+                    <p className="text-lg leading-7 mt-10">
+                        In summary, &Quot;Fork, Commit, Merge&Quot; offers an
+                        all-around, hands-on learning experience that mirrors
+                        real-world development practices, making it a valuable
+                        project for every developer looking to level up their
+                        skills. Happy contributing!
+                    </p>
+                </div>
+                <div className="bg-slate-900 w-full py-2">
+                    <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
+                        <h2 className="text-xl font-semibold my-3 mt-10">
+                            List of Contributors
+                        </h2>
+                        <p className="text-lg leading-7 mt-10">
+                            Massive thanks to all of these fine individuals for
+                            contributing to this project!
+                        </p>
+                        <Contributors contributors={contributorData} />
+                    </div>
+                </div>
             </div>
         </main>
     );
 }
-
-export const getServerSideProps: GetServerSideProps = async () => {
-    const { db } = await connectToDB();
-    const projects = await db.collection("projects").find().toArray();
-
-    return {
-        props: {
-            //* convert BSON to JSON
-            projects: JSON.parse(JSON.stringify(projects)),
-        },
-    };
-};
