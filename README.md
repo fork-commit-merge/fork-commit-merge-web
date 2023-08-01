@@ -14,6 +14,8 @@ Welcome to Fork, Commit, Merge, your one-stop resource hub for mastering GitHub 
 
 ## Table of Contents
 
+This project is the repo of [Fork, Commit, Merge -website](https://forkcommitmerge.io).
+
 -   [Features](#features)
 -   [Tech Stack](#tech-stack)
 -   [Local Development](#local-development)
@@ -208,4 +210,3 @@ Massive thanks to all of the these fine individuals who contributed to this proj
 <a href="https://github.com/dependabot[bot]"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/49699333?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
 <a href="https://github.com/adeelFeroz77"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/73684141?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
 <a href="https://github.com/jmorofsky"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/80358703?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
-
