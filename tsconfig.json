@@ -26,3 +26,4 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/LoginButton.jsx"],
   "exclude": ["node_modules"]
 }
+
