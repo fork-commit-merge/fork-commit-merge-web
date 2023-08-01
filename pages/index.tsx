@@ -70,7 +70,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                             <Link
                                 href="https://github.com/nikohoffren/fork-commit-merge"
                                 target="blank"
-                                className="text-3xl text-white bg-slate-950 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider"
+                                className="text-2xl text-white bg-slate-950 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider"
                             >
                                 GET STARTED
                             </Link>

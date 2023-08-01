@@ -1,4 +1,3 @@
-// tailwind.config.js
 module.exports = {
     content: [
         "./pages/**/*.{js,ts,jsx,tsx}",
@@ -10,6 +9,9 @@ module.exports = {
                 slate: {
                     960: "#191730",
                 },
+            },
+            padding: {
+                '25': '7.3rem',
             },
             backdropBlur: {
                 none: "0",
