@@ -145,12 +145,12 @@ export default function Home({ projects }: { projects: Project[] }) {
                     </div>
                 </div>
             </div>
-            <div className="bg-slate-900 w-full pt-4 pb-16">
+            <div className="bg-slate-900 w-full pt-4 pb-16 text-center">
                 <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
                     <h2 className="text-3xl font-semibold my-3 mt-10">
                         List of Contributors
                     </h2>
-                    <p className="text-lg leading-7 mt-8 mb-4">
+                    <p className="text-lg leading-7 mt-8 mb-6">
                         Massive thanks to all of these fine individuals for
                         contributing to this project!
                     </p>

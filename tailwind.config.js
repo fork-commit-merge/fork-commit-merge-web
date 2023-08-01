@@ -20,7 +20,7 @@ module.exports = {
                 "blur-3xl": "blur(16px)",
             },
             boxShadow: {
-                bottom: "0 13px 10px -10px rgba(0.8, 0.8, 0.8, 0.8)",
+                bottom: "0 13px 10px -10px rgba(0.8, 0.8, 0.8, 0.8)"
             },
         },
     },
