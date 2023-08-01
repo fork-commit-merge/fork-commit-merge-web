@@ -54,7 +54,7 @@ const Footer = () => {
                                 Code of Conduct
                             </Link>
                             <Link
-                                href="/contact"
+                                href="https://github.com/nikohoffren"
                                 className="text-sm text-slate-50 hover:underline"
                             >
                                 Contact

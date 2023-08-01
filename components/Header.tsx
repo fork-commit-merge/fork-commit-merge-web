@@ -68,19 +68,13 @@ const Header = () => {
                         </div>
                         <nav className="hidden md:block">
                             <ul className="md:flex items-center space-x-1">
-                                <li>
-                                    <Link
-                                        href={
-                                            session?.user
-                                                ? "/"
-                                                : "/login"
-                                        }
-                                    >
+                                {/* <li>
+                                    <Link href={session?.user ? "/" : "/login"}>
                                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                             Getting Started
                                         </div>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link
                                         href="https://github.com/nikohoffren/fork-commit-merge"
@@ -106,11 +100,11 @@ const Header = () => {
                             <Coffee />
                         </div>
                     </div>
-                    <Link href="/login">
+                    {/* <Link href="https://github.com/nikohoffren/fork-commit-merge">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Getting Started
                         </div>
-                    </Link>
+                    </Link> */}
                     <Link
                         href="https://github.com/nikohoffren/fork-commit-merge"
                         target="blank"
@@ -119,7 +113,7 @@ const Header = () => {
                             Contribute in GitHub
                         </div>
                     </Link>
-                    <div className="relative" ref={node}>
+                    {/* <div className="relative" ref={node}>
                         <button
                             onClick={toggleDropdown}
                             className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
@@ -148,13 +142,18 @@ const Header = () => {
                                 </Link>
                             </div>
                         )}
-                    </div>
+                    </div> */}
+                    <Link href="/projects">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            Projects
+                        </div>
+                    </Link>
                     <Link href="/resources">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Resources
                         </div>
                     </Link>
-                    <Link href="/contact">
+                    <Link href="https://github.com/nikohoffren">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Contact
                         </div>
@@ -164,7 +163,7 @@ const Header = () => {
             <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block">
                 <div className="mx-auto px-12 py-1 pb-6 shadow-top">
                     <div className="mt-3 md:flex items-center space-x-1 justify-end">
-                        <div className="relative" ref={node}>
+                        {/* <div className="relative" ref={node}>
                             <button
                                 onClick={toggleDropdown}
                                 className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
@@ -193,14 +192,19 @@ const Header = () => {
                                     </Link>
                                 </div>
                             )}
-                        </div>
+                        </div> */}
 
+                        <Link href="/projects">
+                            <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                Projects
+                            </div>
+                        </Link>
                         <Link href="/resources">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 Resources
                             </div>
                         </Link>
-                        <Link href="/contact">
+                        <Link href="https://github.com/nikohoffren">
                             <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                 Contact
                             </div>

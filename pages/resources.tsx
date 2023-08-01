@@ -10,13 +10,37 @@ export default function Resources() {
                         </h2>
                         <ul className="list-disc pl-5">
                             <li>
-                                <a href="#" className="underline text-blue-400">
-                                    Tutorial 1
+                                <a
+                                    href="https://www.youtube.com/watch?v=yzeVMecydCE"
+                                    className="underline text-blue-400"
+                                >
+                                    Complete Guide to Open Source - How to
+                                    Contribute (freeCodeCamp.org)
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="underline text-blue-400">
-                                    Tutorial 2
+                                <a
+                                    href="https://www.youtube.com/watch?v=c6b6B9oN4Vg"
+                                    className="underline text-blue-400"
+                                >
+                                    Contributing to Open Source for the first
+                                    time (Meta Open Source)
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/watch?v=2L0sxPx4C18"
+                                    className="underline text-blue-400"
+                                >
+                                    How to contribute to open source (strager)
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/watch?v=LxdyX9p0wrM"
+                                    className="underline text-blue-400"
+                                >
+                                    How to Contribute to Open Source Projects? (Tiff In Tech)
                                 </a>
                             </li>
                         </ul>
