@@ -101,9 +101,10 @@ export default function Home({ projects }: { projects: Project[] }) {
                         <p className="text-lg leading-7">
                             The repository hosts a range of tasks with varying
                             difficulties (easy, medium, and hard) in different
-                            languages and frameworks (HTML, CSS, JavaScript, TypeScript, Python, Ruby, PHP, SQL, JSON and Markdown).
-                            Each task is a problem that needs to be solved,
-                            which helps contributors sharpen their
+                            languages and frameworks (HTML, CSS, JavaScript,
+                            TypeScript, Python, Ruby, PHP, SQL, JSON and
+                            Markdown). Each task is a problem that needs to be
+                            solved, which helps contributors sharpen their
                             problem-solving abilities - a critical skill for
                             every developer.
                         </p>
@@ -118,6 +119,28 @@ export default function Home({ projects }: { projects: Project[] }) {
                             for the solution to be accepted. This provides an
                             opportunity to understand how testing works, how to
                             write efficient tests, and how to debug them.
+                        </p>
+                        <hr className="my-6" />
+                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                            Learn and Work with Python
+                        </h3>
+                        <p className="text-lg leading-7">
+                            Python is a high-level, interpreted language known
+                            for its ease of use and simplicity. With Python
+                            issues in the repository, contributors can develop a
+                            solid understanding of Python, and improve their
+                            skills in writing cleaner, more efficient code.
+                        </p>
+                        <hr className="my-6" />
+                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                            Explore Ruby and Its Frameworks
+                        </h3>
+                        <p className="text-lg leading-7">
+                            Ruby is a dynamic, open-source programming language
+                            with a focus on simplicity. Ruby issues in this
+                            repository will help contributors understand the
+                            syntax, features, and powerful frameworks like Ruby
+                            on Rails.
                         </p>
                     </div>
                     <div className="mb-8 px-4">
@@ -141,6 +164,39 @@ export default function Home({ projects }: { projects: Project[] }) {
                             of time and effort. This repository encourages
                             contributors to find and fix bugs in the codebase,
                             thus polishing their debugging skills.
+                        </p>
+                        <hr className="my-6" />
+                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                            Dive Into PHP and Web Development
+                        </h3>
+                        <p className="text-lg leading-7">
+                            PHP is a popular server-side scripting language
+                            especially suited to web development. Through the
+                            PHP issues in this repository, contributors can
+                            practice PHP concepts and get a grasp of web
+                            development intricacies.
+                        </p>
+                        <hr className="my-6" />
+                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                            Master Data Manipulation with SQL
+                        </h3>
+                        <p className="text-lg leading-7">
+                            SQL is a standard language for managing data held in
+                            relational databases. SQL issues within the
+                            repository offer contributors an opportunity to work
+                            with databases, write queries, and understand how
+                            data is manipulated and retrieved.
+                        </p>
+                        <hr className="my-6" />
+                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                            Become Proficient with Markdown
+                        </h3>
+                        <p className="text-lg leading-7">
+                            Markdown is a lightweight markup language used to
+                            create formatted text. Markdown issues in this
+                            repository allow contributors to practice and master
+                            the art of writing clean, readable, and
+                            well-structured documentation.
                         </p>
                     </div>
                 </div>
