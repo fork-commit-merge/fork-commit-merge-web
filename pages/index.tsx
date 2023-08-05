@@ -101,7 +101,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         <p className="text-lg leading-7">
                             The repository hosts a range of tasks with varying
                             difficulties (easy, medium, and hard) in different
-                            languages (HTML, CSS, JavaScript, and TypeScript).
+                            languages and frameworks (HTML, CSS, JavaScript, TypeScript, Python, Ruby, PHP, SQL, JSON and Markdown).
                             Each task is a problem that needs to be solved,
                             which helps contributors sharpen their
                             problem-solving abilities - a critical skill for
