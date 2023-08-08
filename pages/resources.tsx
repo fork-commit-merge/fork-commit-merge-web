@@ -6,7 +6,7 @@ export default function Resources() {
                 <div className="w-full md:w-1/2 mb-20">
                     <div className="max-w-md mx-auto">
                         <h2 className="text-2xl font-semibold mb-2">
-                            Video Tutorials
+                            Contributing Video Tutorials
                         </h2>
                         <p className="mb-4 max-w-prose">
                             Here you&apos;ll find a collection of video
@@ -51,6 +51,118 @@ export default function Resources() {
                                     How to Contribute to Open Source Projects?
                                     (Tiff In Tech)
                                 </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/watch?v=CML6vfKjQss"
+                                    className="hover:underline text-blue-400"
+                                >
+                                    Contributing to Open Source Can Change Your
+                                    Life - Here’s How to Do It (Ask Cloud
+                                    Architech)
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/watch?v=RGd5cOXpCQw"
+                                    className="hover:underline text-blue-400"
+                                >
+                                    How to Get Started with Contributing to Open
+                                    Source (AssemblyAI)
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/watch?v=MT6M_sqAuZo"
+                                    className="hover:underline text-blue-400"
+                                >
+                                    How to Open Source Like a Pro (Ben Awad)
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/watch?v=GbqSvJs-6W4"
+                                    className="hover:underline text-blue-400"
+                                >
+                                    How To Get Started With Open Source (Web Dev
+                                    Simplified)
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/watch?v=uQLNFRviB6Q"
+                                    className="hover:underline text-blue-400"
+                                >
+                                    How To Get Started With Open Source | Make
+                                    Your First Contribution. (Zero To Mastery)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="w-full md:w-1/2 mb-20">
+                    <div className="max-w-md mx-auto">
+                        <h2 className="text-2xl font-semibold mb-2">
+                            Programming Video Tutorials
+                        </h2>
+                        <p className="mb-4 max-w-prose">
+                            Here you&apos;ll find a collection of
+                            Youtube-channels on a wide range of topics related
+                            to programming languages, libraries, frameworks and
+                            software development in general.
+                        </p>
+                        <ul className="list-disc pl-5">
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/@WebDevSimplified"
+                                    className="hover:underline text-blue-400"
+                                >
+                                    Web Dev Simplified
+                                </a>
+                                <p>
+                                    Web Dev Simplified is all about teaching web
+                                    development skills and techniques in an
+                                    efficient and practical manner. If you are
+                                    just getting started in web development Web
+                                    Dev Simplified has all the tools you need to
+                                    learn the newest and most popular
+                                    technologies to convert you from a no stack
+                                    to full stack developer. Web Dev Simplified
+                                    also deep dives into advanced topics using
+                                    the latest best practices for you seasoned
+                                    web developers.
+                                </p>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/@NetNinja"
+                                    className="hover:underline text-blue-400"
+                                >
+                                    The Net Ninja
+                                </a>
+                                <p>
+                                    Black-belt your web development skills. Over
+                                    2000 free programming tutorial videos about:
+                                    - Modern JavaScript (beginner to advanced) -
+                                    Node.js - React - Vue.js - Firebase -
+                                    MongoDB - HTML & CSS - PHP & MySQL - Laravel
+                                    - React Native - Flutter - Open AI - SolidJS
+                                    ...And many more topics as well
+                                </p>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/@JamesQQuick"
+                                    className="hover:underline text-blue-400"
+                                >
+                                    James Q Quick
+                                </a>
+                                <p>
+                                    I publish weekly videos about Web
+                                    Development! I am constantly learning the
+                                    latest and greatest in Web Development and
+                                    am excited to help you do the same.
+                                </p>
                             </li>
                         </ul>
                     </div>

@@ -102,11 +102,11 @@ export default function Home({ projects }: { projects: Project[] }) {
                             The repository hosts a range of tasks with varying
                             difficulties (easy, medium, and hard) in different
                             languages and frameworks (HTML, CSS, JavaScript,
-                            TypeScript, Python, Ruby, PHP, SQL, JSON and
-                            Markdown). Each task is a problem that needs to be
-                            solved, which helps contributors sharpen their
-                            problem-solving abilities - a critical skill for
-                            every developer.
+                            TypeScript, Python, Ruby, PHP, SQL, JSON, YAML,
+                            Tailwind CSS and Markdown). Each task is a problem
+                            that needs to be solved, which helps contributors
+                            sharpen their problem-solving abilities - a critical
+                            skill for every developer.
                         </p>
                         <hr className="my-6" />
                         <h3 className="text-2xl font-semibold my-3 mt-10">
@@ -141,6 +141,31 @@ export default function Home({ projects }: { projects: Project[] }) {
                             repository will help contributors understand the
                             syntax, features, and powerful frameworks like Ruby
                             on Rails.
+                        </p>
+                        <hr className="my-6" />
+                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                            Work with Tailwind CSS
+                        </h3>
+                        <p className="text-lg leading-7">
+                            Tailwind CSS is a highly customizable, low-level CSS
+                            framework that gives you all of the building blocks
+                            you need to build bespoke designs without any
+                            annoying opinionated styles you have to fight to
+                            override. Through the Tailwind CSS issues in this
+                            repository, contributors can practice and understand
+                            the utility-first principle in designing web
+                            applications.
+                        </p>
+                        <hr className="my-6" />
+                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                            Become Proficient with Markdown
+                        </h3>
+                        <p className="text-lg leading-7">
+                            Markdown is a lightweight markup language used to
+                            create formatted text. Markdown issues in this
+                            repository allow contributors to practice and master
+                            the art of writing clean, readable, and
+                            well-structured documentation.
                         </p>
                     </div>
                     <div className="mb-8 px-4">
@@ -189,18 +214,33 @@ export default function Home({ projects }: { projects: Project[] }) {
                         </p>
                         <hr className="my-6" />
                         <h3 className="text-2xl font-semibold my-3 mt-10">
-                            Become Proficient with Markdown
+                            Understand and Use JSON
                         </h3>
                         <p className="text-lg leading-7">
-                            Markdown is a lightweight markup language used to
-                            create formatted text. Markdown issues in this
-                            repository allow contributors to practice and master
-                            the art of writing clean, readable, and
-                            well-structured documentation.
+                            JSON (JavaScript Object Notation) is a lightweight
+                            data-interchange format that is easy for humans to
+                            read and write and easy for machines to parse and
+                            generate. JSON issues in this repository allow
+                            contributors to understand how JSON works, how to
+                            generate JSON objects, and how to parse them.
+                        </p>
+                        <hr className="my-6" />
+                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                            Work with YAML
+                        </h3>
+                        <p className="text-lg leading-7">
+                            YAML (YAML Ain&apos;t Markup Language) is a
+                            human-friendly data serialization standard for all
+                            programming languages. YAML issues in this
+                            repository allow contributors to understand how to
+                            write YAML files and use them for configuration and
+                            data sharing between languages with different data
+                            structures.
                         </p>
                     </div>
                 </div>
             </div>
+
             <div className="bg-slate-900 w-full pt-4 pb-16 text-center">
                 <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
                     <h2 className="text-3xl font-semibold my-3 mt-10">
