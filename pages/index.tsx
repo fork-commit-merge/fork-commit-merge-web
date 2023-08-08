@@ -95,7 +95,7 @@ export default function Home({ projects }: { projects: Project[] }) {
             <div className="bg-slate-950 pb-10">
                 <div className="grid md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50">
                     <div className="mb-8 px-4">
-                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                        <h3 className="text-2xl font-semibold my-3 mt-2">
                             Learn and Improve Problem Solving Skills
                         </h3>
                         <p className="text-lg leading-7">
@@ -169,7 +169,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         </p>
                     </div>
                     <div className="mb-8 px-4">
-                        <h3 className="text-2xl font-semibold my-3 mt-10">
+                        <h3 className="text-2xl font-semibold my-3 mt-2">
                             Understand and Work with Types
                         </h3>
                         <p className="text-lg leading-7">
