@@ -172,5 +172,53 @@ export const contributorData = [
         url: "https://github.com/Fulosophy",
         avatar: "https://avatars.githubusercontent.com/u/76975743?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         name: "Fulosophy",
-    }
+    },
+    {
+        id: "Shahzaib-Iqbal-1057",
+        url: "https://github.com/Shahzaib-Iqbal-1057",
+        avatar: "https://avatars.githubusercontent.com/u/98122801?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Shahzaib-Iqbal-1057",
+    },
+    {
+        id: "robgric3",
+        url: "https://github.com/robgric3",
+        avatar: "https://avatars.githubusercontent.com/u/49682982?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "robgric3",
+    },
+    {
+        id: "dork7",
+        url: "https://github.com/dork7",
+        avatar: "https://avatars.githubusercontent.com/u/54894721?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "dork7",
+    },
+    {
+        id: "avivk9",
+        url: "https://github.com/avivk9",
+        avatar: "https://avatars.githubusercontent.com/u/67284525?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "avivk9",
+    },
+    {
+        id: "Broderick-Westrope",
+        url: "https://github.com/Broderick-Westrope",
+        avatar: "https://avatars.githubusercontent.com/u/55474351?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Broderick-Westrope",
+    },
+    {
+        id: "CodingLady22",
+        url: "https://github.com/CodingLady22",
+        avatar: "https://avatars.githubusercontent.com/u/99496129?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "CodingLady22",
+    },
+    {
+        id: "SeaBebop",
+        url: "https://github.com/SeaBebop",
+        avatar: "https://avatars.githubusercontent.com/u/54507045?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "SeaBebop",
+    },
+    {
+        id: "ht-l1",
+        url: "https://github.com/ht-l1",
+        avatar: "https://avatars.githubusercontent.com/u/106502799?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "ht-l1",
+    },
 ];
