@@ -17,7 +17,7 @@
     "autoprefixer": "10.4.14",
     "aws-sdk": "^2.1436.0",
     "eslint": "8.45.0",
-    "eslint-config-next": "13.4.12",
+    "eslint-config-next": "13.4.15",
     "formidable": "^3.5.0",
     "mongodb": "^5.7.0",
     "multer": "^1.4.5-lts.1",
