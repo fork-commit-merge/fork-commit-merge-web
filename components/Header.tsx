@@ -57,13 +57,6 @@ const Header = () => {
                         </div>
                         <nav className="hidden md:block">
                             <ul className="md:flex items-center space-x-1">
-                                {/* <li>
-                                    <Link href={session?.user ? "/" : "/login"}>
-                                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                            Getting Started
-                                        </div>
-                                    </Link>
-                                </li> */}
                                 <li>
                                     <Link
                                         href="https://github.com/nikohoffren/fork-commit-merge"
@@ -91,15 +84,15 @@ const Header = () => {
                     </div>
 
                     <Link href="/">
-                                <div className="px-6 mb-2 block text-sm cursor-pointer hover:scale-105">
-                                    <Image
-                                        src="/fork-commit-merge-logo.jpg"
-                                        alt="Fork, Commit, Merge -logo"
-                                        width={40}
-                                        height={40}
-                                    />
-                                </div>
-                            </Link>
+                        <div className="px-6 mb-2 block text-sm cursor-pointer hover:scale-105">
+                            <Image
+                                src="/fork-commit-merge-logo.jpg"
+                                alt="Fork, Commit, Merge -logo"
+                                width={40}
+                                height={40}
+                            />
+                        </div>
+                    </Link>
                     <Link
                         href="https://github.com/nikohoffren/fork-commit-merge"
                         target="blank"
@@ -108,42 +101,9 @@ const Header = () => {
                             Contribute in GitHub
                         </div>
                     </Link>
-
-
-
-                    {/* <div className="relative" ref={node}>
-                        <button
-                            onClick={toggleDropdown}
-                            className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
-                        >
-                            Projects
-                        </button>
-                        {isDropdownOpen && (
-                            <div className="absolute left-0 w-48 py-2 mt-2 bg-slate-900 rounded-lg shadow-xl">
-                                <Link
-                                    href="/projects/websites"
-                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
-                                >
-                                    Websites
-                                </Link>
-                                <Link
-                                    href="/projects/mobile-apps"
-                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
-                                >
-                                    Mobile Apps
-                                </Link>
-                                <Link
-                                    href="/projects/desktop-apps"
-                                    className="block px-4 py-2 text-sm cursor-pointer hover:underline hover:text-slate-100"
-                                >
-                                    Desktop Apps
-                                </Link>
-                            </div>
-                        )}
-                    </div> */}
-                    {/* <Link href="/projects">
+                    {/* <Link href="/adventures">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Projects
+                            Adventures
                         </div>
                     </Link> */}
                     <Link href="/resources">
@@ -174,6 +134,11 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="flex items-center space-x-1">
+                            {/* <Link href="/adventures">
+                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    Adventures
+                                </div>
+                            </Link> */}
                             <Link href="/resources">
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     Resources
