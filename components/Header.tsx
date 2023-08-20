@@ -106,6 +106,11 @@ const Header = () => {
                             Adventures
                         </div>
                     </Link>
+                    <Link href="/ide">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            IDE:s
+                        </div>
+                    </Link>
                     <Link href="/resources">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Resources
@@ -137,6 +142,11 @@ const Header = () => {
                             <Link href="/adventures">
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     Adventures
+                                </div>
+                            </Link>
+                            <Link href="/ide">
+                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    IDE:s
                                 </div>
                             </Link>
                             <Link href="/resources">
