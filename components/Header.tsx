@@ -101,11 +101,11 @@ const Header = () => {
                             Contribute in GitHub
                         </div>
                     </Link>
-                    {/* <Link href="/adventures">
+                    <Link href="/adventures">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Adventures
                         </div>
-                    </Link> */}
+                    </Link>
                     <Link href="/resources">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Resources
@@ -134,11 +134,11 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="flex items-center space-x-1">
-                            {/* <Link href="/adventures">
+                            <Link href="/adventures">
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     Adventures
                                 </div>
-                            </Link> */}
+                            </Link>
                             <Link href="/resources">
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     Resources

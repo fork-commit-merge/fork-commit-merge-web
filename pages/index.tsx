@@ -18,7 +18,8 @@ export default function Home({ projects }: { projects: Project[] }) {
 
     return (
         <>
-            <main className="min-h-screen flex flex-col items-center justify-center text-center bg-slate-950">
+            <main className="min-h-screen flex flex-col items-center justify-center text-center bg-slate-950 px-4 sm:px-6 md:px-0">
+
                 <div className="my-20 min-w-full">
                     <div
                         className="mx-auto rounded-md overflow-hidden"
@@ -93,7 +94,8 @@ export default function Home({ projects }: { projects: Project[] }) {
                 </div>
             </main>
             <div className="bg-slate-950 pb-10">
-                <div className="grid md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50">
+
                     <div className="mb-8 px-4">
                         <h3 className="text-2xl font-semibold my-3 mt-2">
                             Learn and Improve Problem Solving Skills

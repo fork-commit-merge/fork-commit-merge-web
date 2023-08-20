@@ -448,5 +448,47 @@ export const contributorData = [
         "url": "https://github.com/rain2003",
         "avatar": "https://avatars.githubusercontent.com/u/90201071?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "rain2003"
+    },
+    {
+        "id": "shibuk3",
+        "url": "https://github.com/shibuk3",
+        "avatar": "https://avatars.githubusercontent.com/u/89289293?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "shibuk3"
+    },
+    {
+        "id": "yv2003",
+        "url": "https://github.com/yv2003",
+        "avatar": "https://avatars.githubusercontent.com/u/106039839?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "yv2003"
+    },
+    {
+        "id": "gauravgangwarweb",
+        "url": "https://github.com/gauravgangwarweb",
+        "avatar": "https://avatars.githubusercontent.com/u/68365169?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "gauravgangwarweb"
+    },
+    {
+        "id": "madjed-hue",
+        "url": "https://github.com/madjed-hue",
+        "avatar": "https://avatars.githubusercontent.com/u/62912697?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "madjed-hue"
+    },
+    {
+        "id": "nipanko",
+        "url": "https://github.com/nipanko",
+        "avatar": "https://avatars.githubusercontent.com/u/134130981?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "nipanko"
+    },
+    {
+        "id": "sree-hari-s",
+        "url": "https://github.com/sree-hari-s",
+        "avatar": "https://avatars.githubusercontent.com/u/48482060?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "sree-hari-s"
+    },
+    {
+        "id": "Omanshu209",
+        "url": "https://github.com/Omanshu209",
+        "avatar": "https://avatars.githubusercontent.com/u/114089324?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Omanshu209"
     }
 ];
