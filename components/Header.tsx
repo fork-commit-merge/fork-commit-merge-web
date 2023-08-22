@@ -58,6 +58,20 @@ const Header = () => {
                         <nav className="hidden md:block">
                             <ul className="md:flex items-center space-x-1">
                                 <li>
+                                    <Link href="/adventures">
+                                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                            Adventures
+                                        </div>
+                                    </Link>
+                                </li>
+                                 <li>
+                                 <Link href="https://github.com/nikohoffren">
+                                <div className="py-2 pl-6 pr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    Contact
+                                </div>
+                            </Link>
+                            </li>
+                                <li>
                                     <Link
                                         href="https://github.com/nikohoffren/fork-commit-merge-web"
                                         target="blank"
@@ -106,6 +120,16 @@ const Header = () => {
                             Adventures
                         </div>
                     </Link>
+                    <Link href="https://github.com/nikohoffren">
+                                <div className="py-2 pl-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    Contact
+                                </div>
+                            </Link>
+                     <Link href="/howtocontribute">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            How to Contribute?
+                        </div>
+                    </Link>
                     <Link href="/ide">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             IDE:s
@@ -116,11 +140,7 @@ const Header = () => {
                             Resources
                         </div>
                     </Link>
-                    <Link href="https://github.com/nikohoffren">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Contact
-                        </div>
-                    </Link>
+
                 </div>
             )}
             <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block shadow-bottom pr-25">
@@ -139,26 +159,22 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="flex items-center space-x-1">
-                            <Link href="/adventures">
-                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                    Adventures
-                                </div>
-                            </Link>
+                        <Link href="/howtocontribute">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            How to Contribute?
+                        </div>
+                    </Link>
                             <Link href="/ide">
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     IDE:s
                                 </div>
                             </Link>
                             <Link href="/resources">
-                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                <div className="py-2 px-6 mr-11 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     Resources
                                 </div>
                             </Link>
-                            <Link href="https://github.com/nikohoffren">
-                                <div className="py-2 pl-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                    Contact
-                                </div>
-                            </Link>
+
                             {session?.user ? (
                                 <Link href="/login">
                                     <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
