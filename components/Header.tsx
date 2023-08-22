@@ -59,11 +59,11 @@ const Header = () => {
                             <ul className="md:flex items-center space-x-1">
                                 <li>
                                     <Link
-                                        href="https://github.com/nikohoffren/fork-commit-merge"
+                                        href="https://github.com/nikohoffren/fork-commit-merge-web"
                                         target="blank"
                                     >
                                         <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                            Contribute in GitHub
+                                            GitHub Repo of this Website
                                         </div>
                                     </Link>
                                 </li>

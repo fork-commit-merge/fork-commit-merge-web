@@ -490,5 +490,59 @@ export const contributorData = [
         "url": "https://github.com/Omanshu209",
         "avatar": "https://avatars.githubusercontent.com/u/114089324?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "Omanshu209"
+    },
+    {
+        "id": "Aloneking789",
+        "url": "https://github.com/Aloneking789",
+        "avatar": "https://avatars.githubusercontent.com/u/116704975?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Aloneking789"
+    },
+    {
+        "id": "PranshuBasak",
+        "url": "https://github.com/PranshuBasak",
+        "avatar": "https://avatars.githubusercontent.com/u/75575986?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "PranshuBasak"
+    },
+    {
+        "id": "NanduNanduz",
+        "url": "https://github.com/NanduNanduz",
+        "avatar": "https://avatars.githubusercontent.com/u/115874551?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "NanduNanduz"
+    },
+    {
+        "id": "NereidaRondon",
+        "url": "https://github.com/NereidaRondon",
+        "avatar": "https://avatars.githubusercontent.com/u/97356401?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "NereidaRondon"
+    },
+    {
+        "id": "MasabBinZia",
+        "url": "https://github.com/MasabBinZia",
+        "avatar": "https://avatars.githubusercontent.com/u/94193065?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "MasabBinZia"
+    },
+    {
+        "id": "FreakWolf",
+        "url": "https://github.com/FreakWolf",
+        "avatar": "https://avatars.githubusercontent.com/u/100259763?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "FreakWolf"
+    },
+    {
+        "id": "PlasticPath",
+        "url": "https://github.com/PlasticPath",
+        "avatar": "https://avatars.githubusercontent.com/u/126716491?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "PlasticPath"
+    },
+    {
+        "id": "Hello-Utkarsh",
+        "url": "https://github.com/Hello-Utkarsh",
+        "avatar": "https://avatars.githubusercontent.com/u/106660104?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Hello-Utkarsh"
+    },
+    {
+        "id": "alxhal",
+        "url": "https://github.com/alxhal",
+        "avatar": "https://avatars.githubusercontent.com/u/57196291?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "alxhal"
     }
 ];
