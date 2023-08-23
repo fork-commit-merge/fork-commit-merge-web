@@ -299,6 +299,7 @@ const RustContent = (
         >
             Rust Programming Language - Official Documentation
         </a>
+        <br />
         <a
             href="https://doc.rust-lang.org/book/"
             className="text-xl font-bold underline hover:text-blue-400"
@@ -326,5 +327,6 @@ const RustContent = (
         >
             Rust Playground
         </a>
+        <br />
     </>
 );
