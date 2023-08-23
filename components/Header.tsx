@@ -64,13 +64,13 @@ const Header = () => {
                                         </div>
                                     </Link>
                                 </li>
-                                 <li>
-                                 <Link href="https://github.com/nikohoffren">
-                                <div className="py-2 pl-6 pr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                    Contact
-                                </div>
-                            </Link>
-                            </li>
+                                <li>
+                                    <Link href="https://github.com/nikohoffren">
+                                        <div className="py-2 pl-6 pr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                            Contact
+                                        </div>
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link
                                         href="https://github.com/nikohoffren/fork-commit-merge-web"
@@ -121,13 +121,18 @@ const Header = () => {
                         </div>
                     </Link>
                     <Link href="https://github.com/nikohoffren">
-                                <div className="py-2 pl-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                    Contact
-                                </div>
-                            </Link>
-                     <Link href="/howtocontribute">
+                        <div className="py-2 pl-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            Contact
+                        </div>
+                    </Link>
+                    <Link href="/howtocontribute">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             How to Contribute?
+                        </div>
+                    </Link>
+                    <Link href="/best-practices">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            Best Practices
                         </div>
                     </Link>
                     <Link href="/ide">
@@ -140,7 +145,6 @@ const Header = () => {
                             Resources
                         </div>
                     </Link>
-
                 </div>
             )}
             <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block shadow-bottom pr-25">
@@ -159,11 +163,16 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="flex items-center space-x-1">
-                        <Link href="/howtocontribute">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            How to Contribute?
-                        </div>
-                    </Link>
+                            <Link href="/howtocontribute">
+                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    How to Contribute?
+                                </div>
+                            </Link>
+                            <Link href="/best-practices">
+                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    Best Practices
+                                </div>
+                            </Link>
                             <Link href="/ide">
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     IDE:s
