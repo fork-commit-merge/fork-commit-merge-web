@@ -51,7 +51,6 @@ export default function Home({ projects }: { projects: Project[] }) {
                             </p>
                             <Contributors contributors={contributorData} />
                         </div>
-                        B
                     </div>
                     <div className="bg-slate-950 w-full py-6">
                         <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
