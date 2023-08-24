@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { Contributors } from "../components/Contributors";
 import { contributorData } from "../components/contributorData";
 import Descriptions from "../components/Descriptions";
+import Badges from "../components/Badges";
 
 interface Project {
     _id: string;
@@ -20,7 +22,7 @@ export default function Home({ projects }: { projects: Project[] }) {
     return (
         <>
             <main className="min-h-screen flex flex-col items-center justify-center text-center bg-slate-950 px-4 sm:px-6 md:px-0">
-                <div className="my-10 min-w-full">
+                <div className="my-6 min-w-full">
                     <div
                         className="mx-auto rounded-md overflow-hidden"
                         style={{ width: 180, height: 180 }}
@@ -36,18 +38,20 @@ export default function Home({ projects }: { projects: Project[] }) {
                     <h1 className="mt-5 text-5xl font-bold text-slate-50">
                         Welcome to Fork, Commit, Merge
                     </h1>
-                    <p className="mt-4 mb-20 text-xl font-light text-gray-100">
+                    <p className="mt-4 mb-7 text-xl font-light text-gray-100">
                         Your one-stop resource hub for mastering GitHub
                         contributions
                     </p>
+                    <Badges />
                     <div className="bg-slate-900 w-full pt-4 pb-16 text-center">
                         <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-4xl">
                             <p className="text-2xl leading-8 mt-8 mb-8">
-                                Join us with over 100 developers who have already
-                                contributed to this project!
+                                Join us with over 100 developers who have
+                                already contributed to this project!
                             </p>
                             <Contributors contributors={contributorData} />
                         </div>
+                        B
                     </div>
                     <div className="bg-slate-950 w-full py-6">
                         <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
@@ -96,7 +100,9 @@ export default function Home({ projects }: { projects: Project[] }) {
                         practical project aimed at helping developers - both
                         newcomers and seasoned - improve their skills in
                         open-source contribution, problem-solving, finding bugs,
-                        testing, and much more in over 50 individual issues encompassing various programming languages, libraries and frameworks. Here are some key aspects of the
+                        testing, and much more in over 50 individual issues
+                        encompassing various programming languages, libraries
+                        and frameworks. Here are some key aspects of the
                         repository that make it unique and enriching for every
                         developer.
                     </p>
