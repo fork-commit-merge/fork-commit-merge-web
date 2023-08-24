@@ -96,7 +96,7 @@ export default function Home({ projects }: { projects: Project[] }) {
                         practical project aimed at helping developers - both
                         newcomers and seasoned - improve their skills in
                         open-source contribution, problem-solving, finding bugs,
-                        testing, and much more. Here are some key aspects of the
+                        testing, and much more in over 50 individual issues encompassing various programming languages, libraries and frameworks. Here are some key aspects of the
                         repository that make it unique and enriching for every
                         developer.
                     </p>
