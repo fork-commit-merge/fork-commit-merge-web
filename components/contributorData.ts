@@ -641,4 +641,22 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/112074200?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "tanay-nagde"
     },
+    {
+        "id": "iamabir04",
+        "url": "https://github.com/iamabir04",
+        "avatar": "https://avatars.githubusercontent.com/u/108453813?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "iamabir04"
+    },
+    {
+        "id": "LurieK",
+        "url": "https://github.com/LurieK",
+        "avatar": "https://avatars.githubusercontent.com/u/115917829?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "LurieK"
+    },
+    {
+        "id": "ezinneanne",
+        "url": "https://github.com/ezinneanne",
+        "avatar": "https://avatars.githubusercontent.com/u/79814820?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "ezinneanne"
+    },
 ];
