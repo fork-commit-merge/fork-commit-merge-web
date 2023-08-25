@@ -91,7 +91,20 @@ const Header = () => {
             </nav>
             {isOpen && (
                 <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 bg-slate-900 overflow-auto z-20 md:hidden">
-                    <div className="ml-6 mb-6">
+{session?.user ? (
+                                <Link href="/login">
+                                    <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
+                                        {session.user.name}
+                                    </div>
+                                </Link>
+                            ) : (
+                                <Link href="/login">
+                                    <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
+                                        LOGIN
+                                    </div>
+                                </Link>
+                            )}
+                    <div className="ml-6 mb-6 mt-2">
                         <div className={styles.buyButton}>
                             <Coffee />
                         </div>
@@ -108,6 +121,14 @@ const Header = () => {
                         </div>
                     </Link>
                     <Link
+                                        href="https://github.com/nikohoffren/fork-commit-merge-web"
+                                        target="blank"
+                                    >
+                                        <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                            GitHub Repo of this Website
+                                        </div>
+                                    </Link>
+                    <Link
                         href="https://github.com/nikohoffren/fork-commit-merge"
                         target="blank"
                     >
@@ -116,7 +137,7 @@ const Header = () => {
                         </div>
                     </Link>
                     <Link href="/adventures">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                        <div className="py-2 pt-10 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Adventures
                         </div>
                     </Link>
