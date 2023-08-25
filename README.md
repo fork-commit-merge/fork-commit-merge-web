@@ -72,12 +72,12 @@ Follow these steps to run the application in your local environment:
     npm i
     ```
 
-3. Set up your environment variables. You will need to create a MongoDB Atlas cluster and an AWS S3 bucket for your local development environment.
+3. Set up your environment variables. You will need to create a Github MongoDB Atlas cluster and an AWS S3 bucket for your local development environment.
 
     First, make a copy of the `.env.local-example` file and rename it to `.env.local`.
 
     ```bash
-    cp .env.local-example .env.local
+    cp .env.local.example .env.local
     ```
 
     You will need to replace the placeholder values in this file with your actual credentials.
@@ -118,6 +118,25 @@ Follow these steps to run the application in your local environment:
         }
     ]
     ```
+
+    - For Github you need to replace `GITHUB_ID` and `GITHUB_SECRET` with your on credentials by creating a GitHub OAuth Application:
+
+        -   Go to your GitHub account settings.
+        -   Navigate to "Developer settings" > "OAuth Apps" > "New OAuth App."
+        -   Fill in the application name, homepage URL (use NEXTAUTH_URL value), and set the authorization callback URL as <NEXTAUTH_URL>/api/auth/callback/github.
+
+    After registering the application, you will receive a client ID and client secret.
+
+
+    -   You also need to replace NEXTAUTH_SECRET with a random string. You can generate one simply in terminal:
+
+        -   On Linux and macOS:
+
+            -   You can use the openssl command to generate a random string. Open your terminal and run `openssl rand -base64 32`. This will generate a 32-byte random string encoded in base64. You can copy this string and use it as the value for NEXTAUTH_SECRET.
+
+        -   On Windows:
+
+            -   If you're using Windows, you can use PowerShell to generate a random string. Open PowerShell and run `[System.Text.Encoding]::UTF8.GetString((1..32 | ForEach-Object { Get-Random -Minimum 0 -Maximum 255 })) | Out-Clipboard`. This will generate a 32-character random string and copy it to your clipboard.
 
 4. Run the development server.
     ```bash
