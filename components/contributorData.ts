@@ -689,4 +689,16 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/120788538?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "ayushsgithub"
     },
+    {
+        "id": "Rabbok",
+        "url": "https://github.com/Rabbok",
+        "avatar": "https://avatars.githubusercontent.com/u/110905099?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Rabbok"
+    },
+    {
+        "id": "Saloni581",
+        "url": "https://github.com/Saloni581",
+        "avatar": "https://avatars.githubusercontent.com/u/125601277?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Saloni581"
+    },
 ];
