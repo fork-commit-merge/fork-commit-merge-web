@@ -8,6 +8,24 @@ export default function GitCommands() {
                     <h1 className="text-2xl font-bold mb-4">
                         Important Git Commands
                     </h1>
+                    <p className="mb-4">
+                        Git is a distributed version control system created by
+                        Linus Torvalds in 2005. It enables teams to collaborate
+                        on code, maintaining a complete history of changes made
+                        to a codebase. Git tracks the changes made to files,
+                        allowing multiple developers to work on the same project
+                        simultaneously without overwriting each other&apos;s
+                        changes. It provides features like branching, merging,
+                        and conflict resolution, making the development process
+                        more efficient and flexible.
+                    </p>
+                    <p className="mb-4">
+                        Used by many open-source and commercial projects, Git
+                        helps teams manage changes to code over time. Whether
+                        you&apos;re working on a solo project or contributing to
+                        a large codebase, understanding Git commands is crucial
+                        for modern software development.
+                    </p>
                     <p className="mb-6">
                         Here are some essential Git commands that you may find
                         useful:
