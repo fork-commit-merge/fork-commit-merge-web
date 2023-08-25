@@ -1,8 +1,10 @@
+import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function LoginButton() {
     const { data: session } = useSession();
     if (session?.user) {
+        const size = 300;
         return (
             <>
                 <div className="text-slate-50 text-center">
@@ -12,7 +14,23 @@ export default function LoginButton() {
                     <p className="my-5">
                         Signed in as {session.user.name || "User"}
                     </p>
-                    <p>{session.user.email}</p>
+                    <p className="my-5">{session.user.email}</p>
+                    <div
+                        style={{
+                            borderRadius: "50%",
+                            overflow: "hidden",
+                            width: size,
+                            height: size,
+                        }}
+                    >
+                        <Image
+                            src={session.user.image}
+                            alt="User avatar"
+                            width={size}
+                            height={size}
+                        />
+                    </div>
+
                     <button
                         onClick={() => signOut()}
                         className="py-2 px-4 my-6 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"

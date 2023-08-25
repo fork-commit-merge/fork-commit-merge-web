@@ -4,7 +4,10 @@ const nextConfig = {
         domains: [
             "devgallery-db-bucket.s3.eu-north-1.amazonaws.com",
             "avatars.githubusercontent.com",
-            "img.shields.io"
+            "img.shields.io",
+            "www.gravatar.com",
+            "ui-avatars.com",
+            "robohash.org"
         ],
     },
 }
