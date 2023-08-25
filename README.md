@@ -54,6 +54,7 @@ This project is the repo of [Fork, Commit, Merge -website](https://forkcommitmer
 -   Tailwind CSS
 -   MongoDB Atlas
 -   AWS S3
+-   GitHub OAuth
 
 ## Local Development
 
@@ -74,7 +75,7 @@ Follow these steps to run the application in your local environment:
 
 3. Set up your environment variables. You will need to create a Github MongoDB Atlas cluster and an AWS S3 bucket for your local development environment.
 
-    First, make a copy of the `.env.local-example` file and rename it to `.env.local`.
+    First, make a copy of the `.env.local.example` file and rename it to `.env.local`.
 
     ```bash
     cp .env.local.example .env.local
