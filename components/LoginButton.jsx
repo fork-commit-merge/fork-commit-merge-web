@@ -1,8 +1,23 @@
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
+import {
+    fetchGitHubUsername,
+    fetchClosedPullRequests,
+} from "../pages/api/fetchClosedPullRequests";
 
 export default function LoginButton() {
     const { data: session } = useSession();
+    const [pullRequests, setPullRequests] = useState([]);
+
+    useEffect(() => {
+        if (session?.user?.email) {
+            fetchGitHubUsername(session.user.email)
+                .then((username) => fetchClosedPullRequests(username))
+                .then((prs) => setPullRequests(prs));
+        }
+    }, [session]);
+
     if (session?.user) {
         const size = 300;
         return (
@@ -30,7 +45,21 @@ export default function LoginButton() {
                             height={size}
                         />
                     </div>
-
+                    {pullRequests.length > 0 && (
+                        <div className="py-4">
+                            <h3 className="text-2xl pb-2">
+                                Successfully Merged Pull Requests:
+                            </h3>
+                            <ul>
+                                {pullRequests.map((pr, index) => (
+                                    <li key={index}>
+                                        <strong>Title:</strong> {pr.title} |{" "}
+                                        <strong>Issue:</strong> {pr.issue}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
                     <button
                         onClick={() => signOut()}
                         className="py-2 px-4 my-6 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
