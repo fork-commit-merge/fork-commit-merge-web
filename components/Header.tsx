@@ -130,6 +130,11 @@ const Header = () => {
                             How to Contribute?
                         </div>
                     </Link>
+                    <Link href="/git-commands">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            Git Commands
+                        </div>
+                    </Link>
                     <Link href="/best-practices">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Best Practices
@@ -166,6 +171,11 @@ const Header = () => {
                             <Link href="/howtocontribute">
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     How to Contribute?
+                                </div>
+                            </Link>
+                            <Link href="/git-commands">
+                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    Git Commands
                                 </div>
                             </Link>
                             <Link href="/best-practices">

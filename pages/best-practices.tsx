@@ -5,7 +5,7 @@ export default function BestPractices() {
                 <h3 className="text-3xl font-bold my-4">
                     Best Practices and Coding Style Guide
                 </h3>
-                <p className="text-xl leading-9 pt-8">
+                <p className="text-xl leading-7 pt-8">
                     Programming languages, despite their diverse syntax and
                     underlying paradigms, universally emphasize the importance
                     of adhering to best practices. These practices evolve over
@@ -20,7 +20,7 @@ export default function BestPractices() {
                 <h4 className="text-2xl font-bold mt-10">
                     Why Follow Best Practices?
                 </h4>
-                <p className="text-xl leading-9 pt-8">
+                <p className="text-xl leading-7 pt-8">
                     - Readability: Code is read more often than it&apos;s
                     written. Adopting best practices ensures your code remains
                     accessible and comprehensible to other developers, or even

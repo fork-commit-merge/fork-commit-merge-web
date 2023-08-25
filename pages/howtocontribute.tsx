@@ -2,10 +2,10 @@ export default function HowToContribute() {
     return (
         <div className="bg-slate-950 text-white py-10 px-5 flex flex-col justify-center items-center">
             <div className="text-slate-50 mx-auto max-w-2xl pb-10">
-                <h2 className="text-4xl font-bold my-4">
+                <h2 className="text-3xl font-bold my-4">
                     How to make an Open Source Contribution?
                 </h2>
-                <p className="text-xl leading-9 pt-8">
+                <p className="text-xl leading-6 pt-8">
                     Contributing to open-source projects is a collaborative
                     effort that offers the opportunity to learn, grow, and
                     engage with the community.
