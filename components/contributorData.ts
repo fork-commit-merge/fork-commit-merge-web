@@ -701,4 +701,58 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/125601277?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "Saloni581"
     },
+    {
+        "id": "subhajit60",
+        "url": "https://github.com/subhajit60",
+        "avatar": "https://avatars.githubusercontent.com/u/92869501?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "subhajit60"
+    },
+    {
+        "id": "rameshvoodi",
+        "url": "https://github.com/rameshvoodi",
+        "avatar": "https://avatars.githubusercontent.com/u/53528683?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "rameshvoodi"
+    },
+    {
+        "id": "vktr-r2",
+        "url": "https://github.com/vktr-r2",
+        "avatar": "https://avatars.githubusercontent.com/u/122321007?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "vktr-r2"
+    },
+    {
+        "id": "ZLinden",
+        "url": "https://github.com/ZLinden",
+        "avatar": "https://avatars.githubusercontent.com/u/143120057?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "ZLinden"
+    },
+    {
+        "id": "Haitham-ghaida",
+        "url": "https://github.com/Haitham-ghaida",
+        "avatar": "https://avatars.githubusercontent.com/u/108552334?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Haitham-ghaida"
+    },
+    {
+        "id": "luke-lite",
+        "url": "https://github.com/luke-lite",
+        "avatar": "https://avatars.githubusercontent.com/u/105479902?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "luke-lite"
+    },
+    {
+        "id": "usmangdeveloper",
+        "url": "https://github.com/usmangdeveloper",
+        "avatar": "https://avatars.githubusercontent.com/u/138635923?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "usmangdeveloper"
+    },
+    {
+        "id": "Sravani-Charugundla",
+        "url": "https://github.com/Sravani-Charugundla",
+        "avatar": "https://avatars.githubusercontent.com/u/130554651?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Sravani-Charugundla"
+    },
+    {
+        "id": "fanmadestudio",
+        "url": "https://github.com/fanmadestudio",
+        "avatar": "https://avatars.githubusercontent.com/u/110520844?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "fanmadestudio"
+    },
 ];
