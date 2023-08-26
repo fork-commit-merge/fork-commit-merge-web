@@ -58,3 +58,4 @@ export const LeaderBoard: React.FC = () => {
         </div>
     );
 };
+
