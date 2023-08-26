@@ -74,12 +74,6 @@ export default function Home({ projects }: { projects: Project[] }) {
                             Let&apos;s code, collaborate, and create together!
                         </div>
                         <div className="my-10">
-                            {/* <Link
-                            href={session?.user ? "/" : "/login"}
-                            className="text-3xl text-white bg-slate-950 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider"
-                        >
-                            GET STARTED
-                        </Link> */}
                             <Link
                                 href="https://github.com/nikohoffren/fork-commit-merge"
                                 target="blank"
@@ -94,6 +88,20 @@ export default function Home({ projects }: { projects: Project[] }) {
                     <h2 className="text-4xl font-bold my-4">
                         About the Fork, Commit, Merge project
                     </h2>
+
+                    <p className="text-xl leading-9 pt-8">
+                        If you have already made some contributions to our Fork,
+                        Commit, Merge repo, you can{" "}
+                        <Link
+                            href="/login"
+                            className="underline hover:text-blue-500"
+                        >
+                            Login
+                        </Link>{" "}
+                        to see all of your contributions and which issues you
+                        have already solved. It makes it easier to keep track of
+                        your progress and see how you have improved your skills.
+                    </p>
                     <p className="text-xl leading-9 pt-8">
                         &quot;Fork, Commit, Merge&quot; is an educational and
                         practical project aimed at helping developers - both
@@ -101,9 +109,11 @@ export default function Home({ projects }: { projects: Project[] }) {
                         open-source contribution, problem-solving, finding bugs,
                         testing, and much more in over 50 individual issues
                         encompassing various programming languages, libraries
-                        and frameworks. Here are some key aspects of the
-                        repository that make it unique and enriching for every
-                        developer.
+                        and frameworks.
+                        <br />
+                        <br />
+                        Here are some key aspects of the repository that make it
+                        unique and enriching for every developer:
                     </p>
                 </div>
             </main>

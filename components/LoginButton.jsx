@@ -1,35 +1,40 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
-import {
-    fetchGitHubUsername,
-    fetchClosedPullRequests,
-} from "../pages/api/fetchClosedPullRequests";
+import { fetchGitHubUsername, fetchClosedPullRequests } from "../pages/api/fetchClosedPullRequests";
 
 export default function LoginButton() {
     const { data: session } = useSession();
     const [pullRequests, setPullRequests] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         if (session?.user?.email) {
+            setIsLoading(true);
             fetchGitHubUsername(session.user.email)
                 .then((username) => fetchClosedPullRequests(username))
-                .then((prs) => setPullRequests(prs));
+                .then((prs) => {
+                    setPullRequests(prs);
+                    setIsLoading(false);
+                })
+                .catch((error) => {
+                    console.error("Error fetching data:", error);
+                    setIsLoading(false);
+                });
         }
     }, [session]);
 
+    const size = 200;
+
     if (session?.user) {
-        const size = 300;
         return (
-            <>
-                <div className="text-slate-50 text-center">
-                    <h2 className="mt-6 mb-10 text-3xl font-extrabold">
-                        ACCOUNT
-                    </h2>
-                    <p className="my-5">
-                        Signed in as {session.user.name || "User"}
-                    </p>
-                    <p className="my-5">{session.user.email}</p>
+            <div className="text-slate-50 text-center">
+                <div className="flex justify-between items-center">
+                    <div className="mr-10">
+                        <h2 className="mt-6 mb-10 text-3xl font-extrabold">ACCOUNT</h2>
+                        <p className="my-5">Signed in as {session.user.name || "User"}</p>
+                        <p className="my-5">{session.user.email}</p>
+                    </div>
                     <div
                         style={{
                             borderRadius: "50%",
@@ -45,29 +50,26 @@ export default function LoginButton() {
                             height={size}
                         />
                     </div>
-                    {pullRequests.length > 0 && (
-                        <div className="py-4">
-                            <h3 className="text-2xl pb-2">
-                                Successfully Merged Pull Requests:
-                            </h3>
-                            <ul>
-                                {pullRequests.map((pr, index) => (
-                                    <li key={index}>
-                                        <strong>Title:</strong> {pr.title} |{" "}
-                                        <strong>Issue:</strong> {pr.issue}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    )}
-                    <button
-                        onClick={() => signOut()}
-                        className="py-2 px-4 my-6 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    >
-                        Sign out
-                    </button>
                 </div>
-            </>
+                {isLoading && <p>Loading data...</p>}
+                {pullRequests.length > 0 && (
+                    <div className="py-4">
+                        <hr className="my-6" />
+                        <h3 className="text-2xl py-6">Successfully Merged Pull Requests:</h3>
+                        <ul>
+                            {pullRequests.map((pr, index) => (
+                                <li key={index}><strong>Title:</strong> {pr.title} | <strong>Issue:</strong> {pr.issue}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+                <button
+                    onClick={() => signOut()}
+                    className="py-2 px-4 my-6 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                    Sign out
+                </button>
+            </div>
         );
     }
 
