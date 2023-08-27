@@ -36,21 +36,21 @@ export const TopThreeContributors: FC<TopThreeContributorsProps> = ({ contributo
                         <img
                             src="../golden_star.png"
                             alt="Golden Star"
-                            className="absolute top-0 right-0 w-6 h-6"
+                            className="absolute top-0 right-0 w-7 h-7 rounded-full"
                         />
                     )}
                     {contributor.rank === 2 && (
                         <img
                             src="../silver_star.png"
                             alt="Silver Star"
-                            className="absolute top-0 right-0 w-6 h-6"
+                            className="absolute top-0 right-0 w-7 h-7 rounded-full"
                         />
                     )}
                     {contributor.rank === 3 && (
                         <img
                             src="../bronze_star.png"
                             alt="Bronze Star"
-                            className="absolute top-0 right-0 w-6 h-6"
+                            className="absolute top-0 right-0 w-7 h-7 rounded-full"
                         />
                     )}
                 </div>

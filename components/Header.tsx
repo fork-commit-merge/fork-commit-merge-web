@@ -65,6 +65,13 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link href="/stars">
+                                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                            Stars
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link href="/adventures">
                                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                             Adventures
@@ -146,6 +153,11 @@ const Header = () => {
                     <Link href="/leaderboard">
                         <div className="py-2 pt-10 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Leaderboard
+                        </div>
+                    </Link>
+                    <Link href="/stars">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            Stars
                         </div>
                     </Link>
                     <Link href="/adventures">

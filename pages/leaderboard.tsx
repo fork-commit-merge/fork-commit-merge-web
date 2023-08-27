@@ -1,4 +1,3 @@
-// pages/leaderboard.tsx
 import React from "react";
 import { LeaderBoard } from "../components/LeaderBoard";
 
