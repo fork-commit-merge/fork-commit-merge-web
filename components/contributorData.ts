@@ -773,4 +773,10 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/117533373?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "HadassaAvimor"
     },
+    {
+        "id": "bilalmirza74",
+        "url": "https://github.com/bilalmirza74",
+        "avatar": "https://avatars.githubusercontent.com/u/84387676?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "bilalmirza74"
+    },
 ];
