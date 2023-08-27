@@ -33,18 +33,19 @@ export const TopThreeContributors: FC<TopThreeContributorsProps> = ({
                         >
                             <Image
                                 src={contributor.avatar}
-                                width={150}
-                                height={150}
+                                width={180}
+                                height={180}
                                 alt={contributor.name}
+                                className="px-1"
                             />
                         </a>
                         {contributor.rank === 1 && (
                             <StarFilled
                                 style={{
                                     position: "absolute",
-                                    top: 0,
-                                    right: 0,
-                                    fontSize: 28,
+                                    top: 7,
+                                    right: 7,
+                                    fontSize: 30,
                                     color: "gold",
                                 }}
                             />
@@ -53,9 +54,9 @@ export const TopThreeContributors: FC<TopThreeContributorsProps> = ({
                             <StarFilled
                                 style={{
                                     position: "absolute",
-                                    top: 0,
-                                    right: 0,
-                                    fontSize: 28,
+                                    top: 7,
+                                    right: 7,
+                                    fontSize: 30,
                                     color: "silver",
                                 }}
                             />
@@ -64,9 +65,9 @@ export const TopThreeContributors: FC<TopThreeContributorsProps> = ({
                             <StarFilled
                                 style={{
                                     position: "absolute",
-                                    top: 0,
-                                    right: 0,
-                                    fontSize: 28,
+                                    top: 7,
+                                    right: 7,
+                                    fontSize: 30,
                                     color: "var(--color-bronze)",
                                 }}
                             />

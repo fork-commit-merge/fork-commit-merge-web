@@ -115,6 +115,11 @@ const Badges: React.FC = () => {
                     alt="Flask"
                     className="mr-1 mb-1"
                 />
+                <img
+                    src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"
+                    alt="Django"
+                    className="mr-1 mb-1"
+                />
 
                 <img
                     src="https://img.shields.io/badge/ruby-%23E32F26.svg?style=for-the-badge&logo=ruby&logoColor=white"

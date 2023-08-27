@@ -30,6 +30,7 @@ const Stars: React.FC = () => {
                         section, you can see the top 20 contributors by the
                         number of merged pull requests.
                     </p>
+                    <hr className="my-6" />
                     <div className="flex justify-center my-6">
                         <StarFilled
                             style={{
