@@ -755,4 +755,22 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/110520844?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "fanmadestudio"
     },
+    {
+        "id": "Tanishavats19",
+        "url": "https://github.com/Tanishavats19",
+        "avatar": "https://avatars.githubusercontent.com/u/63641969?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Tanishavats19"
+    },
+    {
+        "id": "tapacko88",
+        "url": "https://github.com/tapacko88",
+        "avatar": "https://avatars.githubusercontent.com/u/41149420?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "tapacko88"
+    },
+    {
+        "id": "HadassaAvimor",
+        "url": "https://github.com/HadassaAvimor",
+        "avatar": "https://avatars.githubusercontent.com/u/117533373?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "HadassaAvimor"
+    },
 ];
