@@ -779,4 +779,34 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/84387676?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "bilalmirza74"
     },
+    {
+        "id": "sjadhav07",
+        "url": "https://github.com/sjadhav07",
+        "avatar": "https://avatars.githubusercontent.com/u/117652787?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "sjadhav07"
+    },
+    {
+        "id": "bezalel-7",
+        "url": "https://github.com/bezalel-7",
+        "avatar": "https://avatars.githubusercontent.com/u/94173498?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "bezalel-7"
+    },
+    {
+        "id": "Discimu657",
+        "url": "https://github.com/Discimu657",
+        "avatar": "https://avatars.githubusercontent.com/u/142803519?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Discimu657"
+    },
+    {
+        "id": "MrAs07",
+        "url": "https://github.com/MrAs07",
+        "avatar": "https://avatars.githubusercontent.com/u/114384168?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "MrAs07"
+    },
+    {
+        "id": "Rajeevjewar",
+        "url": "https://github.com/Rajeevjewar",
+        "avatar": "https://avatars.githubusercontent.com/u/97542658?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Rajeevjewar"
+    },
 ];
