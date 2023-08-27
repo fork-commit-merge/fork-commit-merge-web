@@ -6,7 +6,7 @@ interface UserStat {
   avatarUrl: string;
 }
 
-export const fetchTopUsersByPullRequests = async (repo: string): Promise<UserStat[]> => {
+export const fetchTopThreeUsersByPullRequests = async (repo: string): Promise<UserStat[]> => {
   const url = `https://api.github.com/repos/${repo}/pulls?state=closed&per_page=100`;
 
   const response = await axios.get(url);
@@ -26,7 +26,7 @@ export const fetchTopUsersByPullRequests = async (repo: string): Promise<UserSta
 
   const sortedUsers: UserStat[] = Object.entries(userStats)
     .sort(([, a], [, b]) => b.prCount - a.prCount)
-    .slice(0, 20)
+    .slice(0, 3)
     .map(([username, { prCount, avatarUrl }]) => ({ username, prCount, avatarUrl }));
 
   return sortedUsers;

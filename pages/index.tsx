@@ -1,23 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
-import { useSession } from "next-auth/react";
 import { Contributors } from "../components/Contributors";
+import {
+    TopThreeContributors,
+    Contributor,
+} from "../components/TopThreeContributors";
 import { contributorData } from "../components/contributorData";
 import Descriptions from "../components/Descriptions";
 import Badges from "../components/Badges";
+import { useEffect, useState } from "react";
+import { fetchTopThreeUsersByPullRequests } from "./api/fetchTopThreeUsersByPullRequests";
 
-interface Project {
-    _id: string;
-    projectName: string;
-    developerName: string;
-    imageUrl: string;
-    projectDescription: string;
-    projectLink: string;
-}
+export default function Home() {
+    const [contributors, setContributors] = useState<Contributor[]>([]);
 
-export default function Home({ projects }: { projects: Project[] }) {
-    const { data: session } = useSession();
+    useEffect(() => {
+        const fetchData = async () => {
+            const repo = "nikohoffren/fork-commit-merge";
+            const userStats = await fetchTopThreeUsersByPullRequests(repo);
+            const contributorsData = userStats.map((user, index) => ({
+                id: user.username,
+                url: `https://github.com/${user.username}`,
+                avatar: user.avatarUrl,
+                name: user.username,
+                rank: index + 1,
+            }));
+
+            setContributors(contributorsData);
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <>
@@ -44,11 +58,15 @@ export default function Home({ projects }: { projects: Project[] }) {
                     </p>
                     <Badges />
                     <div className="bg-slate-900 w-full pt-4 pb-16 text-center">
-                        <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-4xl">
+                        <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
                             <p className="text-2xl leading-8 mt-8 mb-8">
                                 Join us with over 100 developers who have
                                 already contributed to this project!
                             </p>
+                        </div>
+                        <TopThreeContributors contributors={contributors} />
+
+                        <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-4xl">
                             <Contributors contributors={contributorData} />
                         </div>
                     </div>
