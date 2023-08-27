@@ -53,8 +53,7 @@ This project is the repo of [Fork, Commit, Merge -website](https://forkcommitmer
 -   TypeScript
 -   Tailwind CSS
 -   MongoDB Atlas
--   AWS S3
--   GitHub OAuth
+-   GitHub OAuth/API
 
 ## Local Development
 
@@ -84,41 +83,6 @@ Follow these steps to run the application in your local environment:
     You will need to replace the placeholder values in this file with your actual credentials.
 
     - For [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), you will need to replace `MONGODB_URI` with your MongoDB connection string. You can get this from the MongoDB Atlas dashboard. Also, remember to add `0.0.0.0/0` to the Network Access to allow connections from all IP addresses.
-
-    - For [AWS S3](https://aws.amazon.com/s3/), you will need to replace `AWS_BUCKET_NAME`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` with your actual bucket name and AWS S3 credentials. You can get these from the AWS Management Console. For the Permissions overview, make sure to set the access to public and turn "Block all public access" off. Add the following to the Bucket policy (replace "your-bucket-name" with your actual bucket name):
-
-    ```json
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "PublicReadGet",
-                "Effect": "Allow",
-                "Principal": "*",
-                "Action": [
-                    "s3:PutObject",
-                    "s3:PutObjectAcl",
-                    "s3:GetObject",
-                    "s3:GetObjectVersion"
-                ],
-                "Resource": "arn:aws:s3:::your-bucket-name/*"
-            }
-        ]
-    }
-    ```
-
-    And add the following to CORS:
-
-    ```json
-    [
-        {
-            "AllowedHeaders": ["*"],
-            "AllowedMethods": ["GET", "POST", "PUT", "DELETE", "HEAD"],
-            "AllowedOrigins": ["*"],
-            "ExposeHeaders": []
-        }
-    ]
-    ```
 
     - For Github you need to replace `GITHUB_ID` and `GITHUB_SECRET` with your on credentials by creating a GitHub OAuth Application:
 
