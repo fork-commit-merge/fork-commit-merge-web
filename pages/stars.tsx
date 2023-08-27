@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { StarFilled } from "@ant-design/icons";
 import React from "react";
 
 const Stars: React.FC = () => {
@@ -30,20 +31,25 @@ const Stars: React.FC = () => {
                         number of merged pull requests.
                     </p>
                     <div className="flex justify-center my-6">
-                        <img
-                            src="../golden_star.png"
-                            alt="Golden Star"
-                            className="w-20 h-20 rounded-full mx-4"
+                        <StarFilled
+                            style={{
+                                fontSize: 100,
+                                color: "gold",
+                            }}
                         />
-                        <img
-                            src="../silver_star.png"
-                            alt="Silver Star"
-                            className="w-20 h-20 rounded-full mx-4"
+
+                        <StarFilled
+                            style={{
+                                fontSize: 100,
+                                color: "silver",
+                            }}
                         />
-                        <img
-                            src="../bronze_star.png"
-                            alt="Bronze Star"
-                            className="w-20 h-20 rounded-full mx-4"
+
+                        <StarFilled
+                            style={{
+                                fontSize: 100,
+                                color: "var(--color-bronze)",
+                            }}
                         />
                     </div>
                 </div>
