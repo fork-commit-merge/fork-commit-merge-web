@@ -809,4 +809,22 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/97542658?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "Rajeevjewar"
     },
+    {
+        "id": "akshayh123",
+        "url": "https://github.com/akshayh123",
+        "avatar": "https://avatars.githubusercontent.com/u/43759514?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "akshayh123"
+    },
+    {
+        "id": "Alexpeain",
+        "url": "https://github.com/Alexpeain",
+        "avatar": "https://avatars.githubusercontent.com/u/69345995?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Alexpeain"
+    },
+    {
+        "id": "MrAalu",
+        "url": "https://github.com/MrAalu",
+        "avatar": "https://avatars.githubusercontent.com/u/97379300?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "MrAalu"
+    },
 ];
