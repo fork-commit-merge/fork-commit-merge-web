@@ -857,4 +857,28 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/101893656?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "nayangoyal"
     },
+    {
+        "id": "DanielssonThomas",
+        "url": "https://github.com/DanielssonThomas",
+        "avatar": "https://avatars.githubusercontent.com/u/69715206?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "DanielssonThomas"
+    },
+    {
+        "id": "jaken92",
+        "url": "https://github.com/jaken92",
+        "avatar": "https://avatars.githubusercontent.com/u/83927759?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "jaken92"
+    },
+    {
+        "id": "jonassonfilip",
+        "url": "https://github.com/jonassonfilip",
+        "avatar": "https://avatars.githubusercontent.com/u/112830006?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "jonassonfilip"
+    },
+    {
+        "id": "geekananya",
+        "url": "https://github.com/geekananya",
+        "avatar": "https://avatars.githubusercontent.com/u/98533437?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "geekananya"
+    },
 ];
