@@ -39,6 +39,30 @@ const JobSearchingÅPlatforms: React.FC = () => {
                                 Dice
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="https://www.upwork.com/work/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Upwork
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://builtin.com/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Built In
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.hiretechladies.com/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Tech Ladies
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
