@@ -4,7 +4,7 @@ import React from "react";
 const Badges: React.FC = () => {
     return (
         <>
-            <div className="flex flex-wrap justify-center items-center mb-6 max-w-2xl mx-auto">
+            <div className="flex flex-wrap justify-center items-center mb-6 max-w-3xl mx-auto">
                 <img
                     src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
                     alt="HTML5"
