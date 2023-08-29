@@ -95,6 +95,30 @@ const ContributingResources: React.FC = () => {
                                 First Contribution. (Zero To Mastery)
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/watch?v=dLRA1lffWBw"
+                                className="hover:underline text-blue-400"
+                            >
+                                How to Contribute to Open Source Projects (Web Dev Cody)
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/watch?v=nkuYH40cjo4"
+                                className="hover:underline text-blue-400"
+                            >
+                                How to Do Your First Pull Request (DigitalOcean)
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/watch?v=RzYJvSnzlMk"
+                                className="hover:underline text-blue-400"
+                            >
+                                Teamwork & Git (Computerphile)
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
