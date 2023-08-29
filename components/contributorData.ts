@@ -845,4 +845,16 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/52318783?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "Akashsingh310"
     },
+    {
+        "id": "KaushikKundu",
+        "url": "https://github.com/KaushikKundu",
+        "avatar": "https://avatars.githubusercontent.com/u/105000989?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "KaushikKundu"
+    },
+    {
+        "id": "nayangoyal",
+        "url": "https://github.com/nayangoyal",
+        "avatar": "https://avatars.githubusercontent.com/u/101893656?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "nayangoyal"
+    },
 ];
