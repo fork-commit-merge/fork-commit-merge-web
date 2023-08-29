@@ -39,6 +39,30 @@ const CommunityAndNetworking: React.FC = () => {
                                 Reddit Programming
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="https://codeandcoffee.org/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Code and Coffee
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://discord.me/coding"
+                                className="hover:underline text-blue-400"
+                            >
+                                The Programmer's Hangout
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://hashnode.com/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Hash Node
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
