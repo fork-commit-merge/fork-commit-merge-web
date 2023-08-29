@@ -40,6 +40,22 @@ const InteractiveLearningPlatforms: React.FC = () => {
                                 Coursera
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="https://brilliant.org/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Brilliant
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://teamtreehouse.com/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Treehouse
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
