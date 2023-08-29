@@ -48,12 +48,6 @@ export const contributorData = [
         name: "Rajdeep1311",
     },
     {
-        id: "dependabot[bot]",
-        url: "https://github.com/dependabot[bot]",
-        avatar: "https://avatars.githubusercontent.com/u/49699333?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        name: "dependabot[bot]",
-    },
-    {
         id: "DarshanDixit05",
         url: "https://github.com/DarshanDixit05",
         avatar: "https://avatars.githubusercontent.com/u/76871537?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
