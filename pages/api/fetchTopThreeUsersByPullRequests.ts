@@ -21,7 +21,11 @@ export const fetchTopThreeUsersByPullRequests = async (
             const username = pr.user.login;
 
             //* Ignore dependabot PRs
-            if (username === "dependabot" || username === "dependabot[bot]") {
+            if (
+                username === "dependabot" ||
+                username === "dependabot[bot]" ||
+                username === "nikohoffren"
+            ) {
                 return;
             }
 
