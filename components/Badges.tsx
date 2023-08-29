@@ -120,7 +120,6 @@ const Badges: React.FC = () => {
                     alt="Django"
                     className="mr-1 mb-1"
                 />
-
                 <img
                     src="https://img.shields.io/badge/ruby-%23E32F26.svg?style=for-the-badge&logo=ruby&logoColor=white"
                     alt="Ruby"
@@ -139,7 +138,7 @@ const Badges: React.FC = () => {
 
                 <img
                     src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white"
-                    alt="PHP"
+                    alt="Laravel"
                     className="mr-1 mb-1"
                 />
                 <img
