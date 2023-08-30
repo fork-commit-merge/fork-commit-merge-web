@@ -40,6 +40,22 @@ const GitAndGitHubDocumentation: React.FC = () => {
                                 Atlassian Git Tutorial
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github"
+                                className="hover:underline text-blue-400"
+                            >
+                                W3Schools GitHub Tutorial
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.w3schools.com/git/"
+                                className="hover:underline text-blue-400"
+                            >
+                                W3Schools Git Tutorial
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -49,6 +49,23 @@ const OpenSourceDocumentation: React.FC = () => {
                                 Open Source Initiative Resources
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="https://stackoverflow.blog/2020/08/03/getting-started-with-contributing-to-open-source/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Getting Started With Contributing to Open Source
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.makeuseof.com/how-to-contribute-to-open-source-projects//"
+                                className="hover:underline text-blue-400"
+                            >
+                                How to Contribute to Open Source Projects
+                            </a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>

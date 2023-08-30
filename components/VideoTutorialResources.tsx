@@ -73,6 +73,22 @@ const VideoTutorialResources: React.FC = () => {
                                 the same.
                             </p>
                         </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/c/Freecodecamp"
+                                className="hover:underline text-blue-400"
+                            >
+                                freeCodeCamp
+                            </a>
+                            <p>
+                                Learn to code for free. freeCodeCamp is a
+                                community of people from all around the world
+                                who are learning to code together. You will
+                                learn to code by building dozens of projects,
+                                step-by-step, right in your browser, code
+                                editor, or mobile app.
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>

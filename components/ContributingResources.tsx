@@ -57,7 +57,7 @@ const ContributingResources: React.FC = () => {
                                 className="hover:underline text-blue-400"
                             >
                                 Contributing to Open Source Can Change Your Life
-                                - Here’s How to Do It (Ask Cloud Architech)
+                                - Here&apos;s How to Do It (Ask Cloud Architech)
                             </a>
                         </li>
                         <li>
@@ -93,6 +93,30 @@ const ContributingResources: React.FC = () => {
                             >
                                 How To Get Started With Open Source | Make Your
                                 First Contribution. (Zero To Mastery)
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/watch?v=dLRA1lffWBw"
+                                className="hover:underline text-blue-400"
+                            >
+                                How to Contribute to Open Source Projects (Web Dev Cody)
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/watch?v=nkuYH40cjo4"
+                                className="hover:underline text-blue-400"
+                            >
+                                How to Do Your First Pull Request (DigitalOcean)
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/watch?v=RzYJvSnzlMk"
+                                className="hover:underline text-blue-400"
+                            >
+                                Teamwork & Git (Computerphile)
                             </a>
                         </li>
                     </ul>

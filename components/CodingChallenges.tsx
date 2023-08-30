@@ -39,6 +39,14 @@ const CodingChallenges: React.FC = () => {
                                 CodeWars
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="https://www.codechef.com/"
+                                className="hover:underline text-blue-400"
+                            >
+                                CodeChef
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
