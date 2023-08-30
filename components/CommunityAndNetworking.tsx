@@ -52,7 +52,7 @@ const CommunityAndNetworking: React.FC = () => {
                                 href="https://discord.me/coding"
                                 className="hover:underline text-blue-400"
                             >
-                                The Programmer's Hangout
+                                The Programmer&apos;s Hangout
                             </a>
                         </li>
                         <li>

@@ -57,7 +57,7 @@ const ContributingResources: React.FC = () => {
                                 className="hover:underline text-blue-400"
                             >
                                 Contributing to Open Source Can Change Your Life
-                                - Here’s How to Do It (Ask Cloud Architech)
+                                - Here&apos;s How to Do It (Ask Cloud Architech)
                             </a>
                         </li>
                         <li>
