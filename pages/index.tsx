@@ -61,7 +61,7 @@ export default function Home() {
                         <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
                             <p className="text-2xl leading-8 mt-8 mb-8">
                                 Become a part of our thriving community of over
-                                100 developers who have already contributed to
+                                150 developers who have already contributed to
                                 this project!
                             </p>
                         </div>
