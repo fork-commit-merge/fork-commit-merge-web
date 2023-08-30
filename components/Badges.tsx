@@ -252,13 +252,23 @@ const Badges: React.FC = () => {
                     className="mr-1 mb-1"
                 />
                 <img
+                    src="https://img.shields.io/badge/csv-%23239120.svg?style=for-the-badge&logo=csv&logoColor=white"
+                    alt="CSV"
+                    className="mr-1 mb-1"
+                />
+                <img
                     src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"
                     alt="Markdown"
                     className="mr-1 mb-1"
                 />
                 <img
                     src="https://img.shields.io/badge/git-%23000000.svg?style=for-the-badge&logo=git&logoColor=white"
-                    alt="Markdown"
+                    alt="Git"
+                    className="mr-1 mb-1"
+                />
+                <img
+                    src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+                    alt="GitHub"
                     className="mr-1 mb-1"
                 />
             </div>
