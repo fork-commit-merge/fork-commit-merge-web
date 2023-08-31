@@ -40,7 +40,6 @@ const Footer = () => {
                             <Link
                                 href="/privacy-policy"
                                 className="text-sm text-slate-50 hover:underline"
-                                target="blank"
                             >
                                 Privacy Policy
                             </Link>
