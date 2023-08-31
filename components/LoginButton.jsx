@@ -11,6 +11,7 @@ export default function LoginButton() {
     const [pullRequests, setPullRequests] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [isSigningIn, setIsSigningIn] = useState(false);
+    const [isConsentGiven, setConsentGiven] = useState(false); // Consent state
 
     useEffect(() => {
         if (session?.user?.email) {
@@ -28,7 +29,16 @@ export default function LoginButton() {
         }
     }, [session]);
 
+    const handleConsentChange = () => {
+        setConsentGiven(!isConsentGiven);
+    };
+
     const handleSignIn = async () => {
+        if (!isConsentGiven) {
+            alert("You must agree to the Privacy Policy to proceed.");
+            return;
+        }
+
         setIsSigningIn(true);
         try {
             await signIn("github");
@@ -38,7 +48,6 @@ export default function LoginButton() {
             setIsSigningIn(false);
         }
     };
-
 
     const size = 200;
 
@@ -130,9 +139,28 @@ export default function LoginButton() {
                         Sign in with GitHub
                     </h2>
                 </div>
+                <div className="consent-checkbox">
+                    <input
+                        type="checkbox"
+                        id="consentCheckbox"
+                        checked={isConsentGiven}
+                        onChange={handleConsentChange}
+                    />
+                    <label htmlFor="consentCheckbox" className="pl-2">
+                        I agree to the{" "}
+                        <a
+                            href="/privacy-policy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-400 hover:underline"
+                        >
+                            Privacy Policy
+                        </a>
+                    </label>
+                </div>
                 <button
                     onClick={handleSignIn}
-                    className="py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                    className="py-2 px-4 my-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                 >
                     {isSigningIn ? (
                         <div className="spinner"></div>
