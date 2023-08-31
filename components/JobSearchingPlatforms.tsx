@@ -1,6 +1,6 @@
 import React from "react";
 
-const JobSearchingÅPlatforms: React.FC = () => {
+const JobSearchingPlatforms: React.FC = () => {
     return (
         <>
             <div className="w-full md:w-1/2 mb-8">
@@ -70,4 +70,4 @@ const JobSearchingÅPlatforms: React.FC = () => {
     );
 };
 
-export default JobSearchingÅPlatforms;
+export default JobSearchingPlatforms;

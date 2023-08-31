@@ -3,7 +3,7 @@ import CommunityAndNetworking from "../components/CommunityAndNetworking";
 import ContributingResources from "../components/ContributingResources";
 import GitAndGitHubDocumentation from "../components/GitAndGitHubDocumentation";
 import InteractiveLearningPlatforms from "../components/InteractiveLearningPlatforms";
-import JobSearchingÅPlatforms from "../components/JobSearchingPlatforms";
+import JobSearchingPlatforms from "../components/JobSearchingPlatforms";
 import OnlineCodingBootcamps from "../components/OnlineCodingBootcamps";
 import OpenSourceDocumentation from "../components/OpenSourceDocumentation";
 import VideoTutorialResources from "../components/VideoTutorialResources";
@@ -20,7 +20,7 @@ export default function Resources() {
                 <InteractiveLearningPlatforms />
                 <CodingChallenges />
                 <CommunityAndNetworking />
-                <JobSearchingÅPlatforms />
+                <JobSearchingPlatforms />
                 <OnlineCodingBootcamps />
             </div>
         </div>
