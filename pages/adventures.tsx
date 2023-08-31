@@ -14,7 +14,7 @@ export default function Adventures() {
                         relate to the
                         <span className="mr-2"></span>
                         <Link
-                            href="https://github.com/nikohoffren/fork-commit-merge/issues/56"
+                            href="https://github.com/nikohoffren/fork-commit-merge/issues/372"
                             target="blank"
                             className="underline hover:text-blue-300"
                         >
