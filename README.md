@@ -2,7 +2,7 @@
 
 ![Fork, Commit, Merge - screenshot](/public/fork-commit-merge-web-banner.png)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
+[![Version 1.1.3](https://img.shields.io/badge/Version-1.1.3-brightgreen.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
 [![Issues](https://img.shields.io/github/issues/nikohoffren/fork-commit-merge-web.svg?style=flat)](https://github.com/nikohoffren/fork-commit-merge-web/issues)
 [![PR:s Welcome](https://img.shields.io/badge/PR:s-welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
 [![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
