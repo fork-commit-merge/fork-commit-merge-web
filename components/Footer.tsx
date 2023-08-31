@@ -4,58 +4,84 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <>
-            <footer className="bg-slate-950 text-slate-50 pb-6 pt-10 inset-x-0 bottom-0 h-auto md:h-16 flex flex-col md:flex-row items-center justify-center">
-                <div className="container mx-auto px-6">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <div className="flex items-center">
-                            <p className="text-sm mr-2">Deployed with</p>
-                            <Link href="https://vercel.com" target="blank">
-                                <Image
-                                    className="bg-white py-1 px-1 rounded-md shadow-lg"
-                                    src="/vercel.svg"
-                                    alt="Vercel Logo"
-                                    width={50}
-                                    height={50}
-                                />
-                            </Link>
+            <footer className="bg-slate-950 text-slate-50 py-8">
+                <div className="container mx-auto px-6 md:px-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+                        <div className="text-center w-full">
+                            <div className="flex justify-center items-center w-full space-x-2 mb-1">
+                                <p className="text-base font-semibold text-slate-100">
+                                    Deployed with
+                                </p>
+                                <a
+                                    href="https://vercel.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Image
+                                        className="bg-white p-2 rounded-full shadow-lg"
+                                        src="/vercel.svg"
+                                        alt="Vercel Logo"
+                                        width={62}
+                                        height={62}
+                                    />
+                                </a>
+                            </div>
+                            <p className="text-base font-semibold text-slate-100">
+                                Copyright © 2023
+                                <a
+                                    href="https://nikohoffren.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline text-red-100 pl-1"
+                                >
+                                    Niko Hoffrén
+                                </a>
+                            </p>
                         </div>
-                        <div className="flex items-center">
-                            <p className="text-sm pr-1">Copyright © 2023</p>
-                            <Link
-                                href="https://nikohoffren.com"
-                                className="hover:underline text-sm text-red-100"
-                                target="blank"
-                            >
-                                Niko Hoffrén
-                            </Link>
+                        <div className="text-center w-full">
+                            <ul className="list-none mt-2 text-base text-slate-50">
+                                <li className="hover:underline">
+                                    <Link
+                                        href="https://github.com/nikohoffren/fork-commit-merge/blob/main/CONTRIBUTING.md"
+                                        target="blank"
+                                    >
+                                        Contributing
+                                    </Link>
+                                </li>
+                                <li className="hover:underline">
+                                    <Link href="/privacy-policy">
+                                        Privacy Policy
+                                    </Link>
+                                </li>
+                                <li className="hover:underline">
+                                    <Link
+                                        href="https://github.com/nikohoffren/fork-commit-merge/blob/main/code_of_conduct.md"
+                                        target="blank"
+                                    >
+                                        Code of Conduct
+                                    </Link>
+                                </li>
+                                <li className="hover:underline">
+                                    <Link href="https://github.com/nikohoffren">
+                                        Contact
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
-                        <div className="flex flex-col md:flex-row space-y-2 md:space-x-4">
-                            <Link
-                                href="https://github.com/nikohoffren/fork-commit-merge/blob/main/CONTRIBUTING.md"
-                                className="text-sm text-slate-50 hover:underline pt-2"
-                                target="blank"
-                            >
-                                Contributing
-                            </Link>
-                            <Link
-                                href="/privacy-policy"
-                                className="text-sm text-slate-50 hover:underline"
-                            >
-                                Privacy Policy
-                            </Link>
-                            <Link
-                                href="https://github.com/nikohoffren/fork-commit-merge/blob/main/code_of_conduct.md"
-                                className="text-sm text-slate-50 hover:underline"
-                                target="blank"
-                            >
-                                Code of Conduct
-                            </Link>
-                            <Link
-                                href="https://github.com/nikohoffren"
-                                className="text-sm text-slate-50 hover:underline"
-                            >
-                                Contact
-                            </Link>
+                        <div className="text-center w-full">
+                            <p className="text-base text-slate-50 mt-2">
+                                Email: niko.hoffren@gmail.com
+                            </p>
+                            <p className="text-base text-slate-50">
+                                <a
+                                    href="https://nikohoffren.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline text-red-100 pl-1"
+                                >
+                                    GitHub Repo of this Website
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
