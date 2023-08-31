@@ -18,7 +18,7 @@ const Footer = () => {
                                     rel="noopener noreferrer"
                                 >
                                     <Image
-                                        className="bg-white p-2 rounded-full shadow-lg"
+                                        className="bg-white p-1.5 rounded-md shadow-lg"
                                         src="/vercel.svg"
                                         alt="Vercel Logo"
                                         width={62}

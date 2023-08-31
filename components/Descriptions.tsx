@@ -3,8 +3,8 @@ import React from "react";
 const Descriptions: React.FC = () => {
     return (
         <>
-            <div className="mb-8 px-4">
-                <h3 className="text-2xl font-semibold my-3 mt-2">
+            <div className="px-4">
+                <h3 className="text-2xl font-semibold my-3">
                     Learn and Improve Problem Solving Skills
                 </h3>
                 <p className="text-lg leading-7">
@@ -91,7 +91,7 @@ const Descriptions: React.FC = () => {
                 </p>
                 <hr className="my-6" />
 
-                <h3 className="text-2xl font-semibold my-3 mt-10">
+                <h3 className="text-2xl font-semibold my-3">
                     Work with Legacy Languages: Fortran and Erlang
                 </h3>
                 <p className="text-lg leading-7">
@@ -102,9 +102,11 @@ const Descriptions: React.FC = () => {
                     can explore these languages and their applications through
                     related issues in the repository.
                 </p>
+                <hr className="my-6" />
             </div>
+
             <div className="mb-8 px-4">
-                <h3 className="text-2xl font-semibold my-3 mt-2">
+                <h3 className="text-2xl font-semibold my-3">
                     Understand and Work with Types
                 </h3>
                 <p className="text-lg leading-7">
