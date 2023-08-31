@@ -126,7 +126,7 @@ export default function Home() {
                         practical project aimed at helping developers - both
                         newcomers and seasoned - improve their skills in
                         open-source contribution, problem-solving, finding bugs,
-                        testing, and much more in over 50 individual issues
+                        testing, and much more in over 60 individual issues
                         encompassing various programming languages, libraries
                         and frameworks.
                         <br />
