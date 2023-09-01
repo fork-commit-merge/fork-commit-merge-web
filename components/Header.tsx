@@ -10,6 +10,9 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 
 const languageList = [
+    { name: "HTML", link: "/languages/html" },
+    { name: "CSS", link: "/languages/css"},
+    { name: "CoffeeScript", link: "/languages/coffeescript" },
     { name: "JavaScript", link: "/languages/javascript" },
     { name: "TypeScript", link: "/languages/typescript" },
     { name: "Python", link: "/languages/python" },
