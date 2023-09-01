@@ -7,16 +7,32 @@ import Coffee from "./Coffee";
 import styles from "../styles/Coffee.module.css";
 import React from "react";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/router";
+
+const languageList = [
+    { name: "JavaScript", link: "/languages/javascript" },
+    { name: "TypeScript", link: "/languages/typescript" },
+    { name: "Python", link: "/languages/python" },
+    { name: "Java", link: "/languages/java" },
+];
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
-    const node = React.useRef<HTMLDivElement | null>(null);
+    const node = useRef<HTMLLIElement | null>(null);
+
     const { data: session } = useSession();
+    const router = useRouter();
+
     const handleClickOutside = (e: MouseEvent) => {
         if (node.current?.contains(e.target as Node)) {
             return;
         }
+        setDropdownOpen(false);
+    };
+
+    const navigateToLanguage = (link: string) => {
+        router.push(link);
         setDropdownOpen(false);
     };
 
@@ -180,11 +196,31 @@ const Header = () => {
                             Git Commands
                         </div>
                     </Link>
-                    <Link href="/best-practices">
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Best Practices
+                    <li ref={node} className="list-none">
+                        <div
+                            className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                            onClick={toggleDropdown}
+                        >
+                            Languages
                         </div>
-                    </Link>
+                        {isDropdownOpen && (
+                            <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-900 text-slate-50">
+                                {languageList.map((lang, index) => (
+                                    <li
+                                        key={index}
+                                        onClick={() =>
+                                            navigateToLanguage(lang.link)
+                                        }
+                                    >
+                                        <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                            {lang.name}
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+
                     <Link href="/ide">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             IDE:s
@@ -223,11 +259,33 @@ const Header = () => {
                                     Git Commands
                                 </div>
                             </Link>
-                            <Link href="/best-practices">
-                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                    Best Practices
+
+                            <li ref={node} className="list-none">
+                                <div
+                                    className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                                    onClick={toggleDropdown}
+                                >
+                                    Languages
                                 </div>
-                            </Link>
+                                {isDropdownOpen && (
+                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-900 text-slate-50">
+                                        {languageList.map((lang, index) => (
+                                            <li
+                                                key={index}
+                                                onClick={() =>
+                                                    navigateToLanguage(
+                                                        lang.link
+                                                    )
+                                                }
+                                            >
+                                                <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                                    {lang.name}
+                                                </div>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </li>
                             <Link href="/ide">
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     IDE:s
