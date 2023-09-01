@@ -11,7 +11,7 @@ export default function LoginButton() {
     const [pullRequests, setPullRequests] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [isSigningIn, setIsSigningIn] = useState(false);
-    const [isConsentGiven, setConsentGiven] = useState(false); // Consent state
+    const [isConsentGiven, setConsentGiven] = useState(false);
 
     useEffect(() => {
         if (session?.user?.email) {
@@ -81,7 +81,13 @@ export default function LoginButton() {
                         />
                     </div>
                 </div>
-                {isLoading && <div className="spinner"></div>}
+
+                {isLoading && (
+                    <div className="flex justify-center items-center h-[200px]">
+                        <div className="spinner"></div>
+                    </div>
+                )}
+
                 {pullRequests.length > 0 && (
                     <div className="py-4">
                         <hr className="my-6" />
@@ -123,7 +129,7 @@ export default function LoginButton() {
                 )}
                 <button
                     onClick={() => signOut()}
-                    className="py-2 px-4 my-6 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="py-4 px-6 my-8 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                     Sign out
                 </button>
@@ -160,7 +166,7 @@ export default function LoginButton() {
                 </div>
                 <button
                     onClick={handleSignIn}
-                    className="py-2 px-4 my-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                    className="py-4 px-6 my-6 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                 >
                     {isSigningIn ? (
                         <div className="spinner"></div>

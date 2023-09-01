@@ -28,7 +28,10 @@ export const LeaderBoard: React.FC = () => {
     return (
         <div className="text-center">
             {isLoading ? (
-                <div className="spinner"></div>
+
+                <div className="flex justify-center items-center h-[200px]">
+    <div className="spinner"></div>
+  </div>
             ) : (
                 <table className="mx-auto">
                     <thead>
