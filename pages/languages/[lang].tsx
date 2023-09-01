@@ -14,6 +14,12 @@ import KotlinLanguage from "../../components/languageComponents/KotlinLanguage";
 import ScalaLanguage from "../../components/languageComponents/ScalaLanguage";
 import RubyLanguage from "../../components/languageComponents/RubyLanguage";
 import ElixirLanguage from "../../components/languageComponents/ElixirLanguage";
+import PHPLanguage from "../../components/languageComponents/PHPLanguage";
+import GoLanguage from "../../components/languageComponents/GoLanguage";
+import DartLanguage from "../../components/languageComponents/DartLanguage";
+import SwiftLanguage from "../../components/languageComponents/RustLanguage";
+import JuliaLanguage from "../../components/languageComponents/JuliaLanguage";
+import RustLanguage from "../../components/languageComponents/RustLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -49,6 +55,18 @@ const LanguagePage = () => {
                 return <RubyLanguage />;
             case "elixir":
                 return <ElixirLanguage />;
+            case "php":
+                return <PHPLanguage />;
+            case "go":
+                return <GoLanguage />;
+            case "dart":
+                return <DartLanguage />;
+            case "swift":
+                return <SwiftLanguage />;
+            case "julia":
+                return <JuliaLanguage />;
+            case "rust":
+                return <RustLanguage />;
             default:
                 return <LanguageNotSupported />;
         }

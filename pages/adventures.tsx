@@ -4,10 +4,10 @@ export default function Adventures() {
     return (
         <>
             <div className="bg-slate-900 text-white py-10 px-5 flex flex-col justify-center items-center min-h-screen">
-                <h1 className="text-4xl font-bold mb-16">
+                <h1 className="text-3xl font-bold mb-16">
                     Adventure Games in Markdown
                 </h1>
-                <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
+                <div className="my-5 font-light text-gray-100 mx-auto max-w-2xl">
                     <p className="mb-6">
                         This page contains a collection of adventure games
                         written in Markdown by our contributors. The games

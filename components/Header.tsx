@@ -23,6 +23,12 @@ const languageList = [
     { name: "Python", link: "/languages/python" },
     { name: "Ruby", link: "/languages/ruby" },
     { name: "Elixir", link: "/languages/elixir" },
+    { name: "PHP", link: "/languages/php" },
+    { name: "Go", link: "/languages/go" },
+    { name: "Dart", link: "/languages/dart" },
+    { name: "Swift", link: "/languages/swift" },
+    { name: "Julia", link: "/languages/julia" },
+    { name: "Rust", link: "/languages/rust" },
 ];
 
 const Header = () => {
