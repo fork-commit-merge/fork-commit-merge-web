@@ -267,7 +267,7 @@ const Header = () => {
                                     Languages
                                 </div>
                                 {isDropdownOpen && (
-                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-900 text-slate-50">
+                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-900 text-slate-50 scrollable-dropdown">
                                         {languageList.map((lang, index) => (
                                             <li
                                                 key={index}
