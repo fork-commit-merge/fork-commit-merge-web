@@ -28,10 +28,9 @@ export const LeaderBoard: React.FC = () => {
     return (
         <div className="text-center">
             {isLoading ? (
-
                 <div className="flex justify-center items-center h-[200px]">
-    <div className="spinner"></div>
-  </div>
+                    <div className="spinner"></div>
+                </div>
             ) : (
                 <table className="mx-auto">
                     <thead>
@@ -46,7 +45,7 @@ export const LeaderBoard: React.FC = () => {
                             <tr key={index}>
                                 <td className="flex px-4 py-2">
                                     <img
-                                        className="rounded-full w-10 h-10 mr-4"
+                                        className="rounded-full w-16 h-16 mr-4"
                                         src={user.avatarUrl}
                                         alt={`${user.username}'s avatar`}
                                     />
@@ -61,4 +60,3 @@ export const LeaderBoard: React.FC = () => {
         </div>
     );
 };
-
