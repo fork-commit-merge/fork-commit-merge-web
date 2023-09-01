@@ -29,6 +29,17 @@ const languageList = [
     { name: "Swift", link: "/languages/swift" },
     { name: "Julia", link: "/languages/julia" },
     { name: "Rust", link: "/languages/rust" },
+    { name: "Haskell", link: "/languages/haskell" },
+    { name: "Lua", link: "/languages/lua"},
+    { name: "Clojure", link: "/languages/clojure" },
+    { name: "Lisp", link: "/languages/lisp" },
+    { name: "Fortran", link: "/languages/fortran" },
+    { name: "Erlang", link: "/languages/erlang" },
+    { name: "Zig", link: "/languages/zig" },
+    { name: "R", link: "/languages/r" },
+    { name: "SQL", link: "/languages/sql" },
+    { name: "Bash", link: "/languages/bash" },
+    { name: "Perl", link: "/languages/perl" },
 ];
 
 const Header = () => {

@@ -20,6 +20,17 @@ import DartLanguage from "../../components/languageComponents/DartLanguage";
 import SwiftLanguage from "../../components/languageComponents/RustLanguage";
 import JuliaLanguage from "../../components/languageComponents/JuliaLanguage";
 import RustLanguage from "../../components/languageComponents/RustLanguage";
+import HaskellLanguage from "../../components/languageComponents/HaskellLanguage";
+import LuaLanguage from "../../components/languageComponents/LuaLanguage";
+import ClojureLanguage from "../../components/languageComponents/ClojureLanguage";
+import LispLanguage from "../../components/languageComponents/LispLanguage";
+import FortranLanguage from "../../components/languageComponents/FortranLanguage";
+import ErlangLanguage from "../../components/languageComponents/ErlangLanguage";
+import ZigLanguage from "../../components/languageComponents/ZigLanguage";
+import RLanguage from "../../components/languageComponents/RLanguage";
+import SQLLanguage from "../../components/languageComponents/SQLLanguage";
+import BashLanguage from "../../components/languageComponents/BashLanguage";
+import PerlLanguage from "../../components/languageComponents/PerlLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -67,6 +78,28 @@ const LanguagePage = () => {
                 return <JuliaLanguage />;
             case "rust":
                 return <RustLanguage />;
+            case "haskell":
+                return <HaskellLanguage />;
+            case "lua":
+                return <LuaLanguage />;
+            case "clojure":
+                return <ClojureLanguage />;
+            case "lisp":
+                return <LispLanguage />;
+            case "fortran":
+                return <FortranLanguage />;
+            case "erlang":
+                return <ErlangLanguage />;
+            case "zig":
+                return <ZigLanguage />;
+            case "r":
+                return <RLanguage />;
+            case "sql":
+                return <SQLLanguage />;
+            case "bash":
+                return <BashLanguage />;
+            case "perl":
+                return <PerlLanguage />;
             default:
                 return <LanguageNotSupported />;
         }
