@@ -4,6 +4,7 @@
 
 :root {
     --ff-primary: "Ysabeau Infant", sans-serif;
+    --ff-secondary: "Ubuntu", sans-serif;
     --color-bronze: #bb752e;
 }
 
@@ -12,6 +13,10 @@ body {
     line-height: 1.4;
     font-size: 1.1rem;
     scroll-behavior: smooth;
+    font-family: var(--ff-secondary);
+}
+
+.font-primary {
     font-family: var(--ff-primary);
 }
 

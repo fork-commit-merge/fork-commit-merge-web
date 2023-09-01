@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                         <div className="text-center w-full">
                             <div className="flex justify-center items-center w-full space-x-2 mb-1">
-                                <p className="text-base font-semibold text-slate-100">
+                                <p className="text-base text-slate-100">
                                     Deployed with
                                 </p>
                                 <a
@@ -26,7 +26,7 @@ const Footer = () => {
                                     />
                                 </a>
                             </div>
-                            <p className="text-base font-semibold text-slate-100">
+                            <p className="text-base text-slate-100">
                                 Copyright © 2023
                                 <a
                                     href="https://nikohoffren.com"

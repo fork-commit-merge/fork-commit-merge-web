@@ -49,17 +49,17 @@ export default function Home() {
                             priority
                         />
                     </div>
-                    <h1 className="mt-5 text-5xl font-bold text-slate-50">
+                    <h1 className="mt-5 text-5xl font-bold font-primary text-slate-50">
                         Welcome to Fork, Commit, Merge
                     </h1>
-                    <p className="mt-4 mb-7 text-xl font-light text-gray-100">
+                    <p className="mt-4 mb-7 text-2xl font-primary text-gray-100">
                         Your one-stop resource hub for mastering GitHub
                         contributions
                     </p>
                     <Badges />
                     <div className="bg-slate-900 w-full pt-4 pb-16 text-center">
                         <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
-                            <p className="text-2xl leading-8 mt-8 mb-8">
+                            <p className="text-2xl leading-8 mt-8 mb-8 font-primary">
                                 Become a part of our thriving community of over
                                 150 developers who have already contributed to
                                 this project!
@@ -96,7 +96,7 @@ export default function Home() {
                             <Link
                                 href="https://github.com/nikohoffren/fork-commit-merge"
                                 target="blank"
-                                className="text-2xl text-white bg-slate-900 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider"
+                                className="text-2xl text-white bg-slate-900 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider font-primary"
                             >
                                 GET STARTED
                             </Link>
