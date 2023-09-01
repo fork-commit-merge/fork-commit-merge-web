@@ -50,9 +50,9 @@ const LanguagePage = () => {
                 return <TypeScriptLanguage />;
             case "c":
                 return <CLanguage />;
-            case "c++":
+            case "cpp":
                 return <CPPLanguage />;
-            case "c#":
+            case "csharp":
                 return <CSharpLanguage />;
             case "java":
                 return <JavaLanguage />;

@@ -4,7 +4,7 @@ import React from "react";
 
 const Stars: React.FC = () => {
     return (
-        <div className="bg-slate-900 text-slate-50 flex flex-col min-h-screen">
+        <div className="bg-slate-900 text-slate-50 flex flex-col min-h-screen px-10">
             <div className="text-center flex items-center justify-center max-w-2xl mx-auto">
                 <div className="pb-6">
                     <h1 className="text-4xl py-10">Star Badges</h1>
