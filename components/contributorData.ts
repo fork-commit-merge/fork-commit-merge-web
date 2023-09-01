@@ -953,4 +953,34 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/114185947?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "irohanrajput"
     },
+    {
+        "id": "iamsirenstorm",
+        "url": "https://github.com/iamsirenstorm",
+        "avatar": "https://avatars.githubusercontent.com/u/120330118?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "iamsirenstorm"
+    },
+    {
+        "id": "Sweetdevil144",
+        "url": "https://github.com/Sweetdevil144",
+        "avatar": "https://avatars.githubusercontent.com/u/117591942?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Sweetdevil144"
+    },
+    {
+        "id": "Rohit-Yadavv",
+        "url": "https://github.com/Rohit-Yadavv",
+        "avatar": "https://avatars.githubusercontent.com/u/126584837?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Rohit-Yadavv"
+    },
+    {
+        "id": "AadiNir",
+        "url": "https://github.com/AadiNir",
+        "avatar": "https://avatars.githubusercontent.com/u/96436873?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "AadiNir"
+    },
+    {
+        "id": "thamesblanq",
+        "url": "https://github.com/thamesblanq",
+        "avatar": "https://avatars.githubusercontent.com/u/105714822?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "thamesblanq"
+    },
 ];
