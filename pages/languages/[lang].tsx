@@ -7,6 +7,13 @@ import LanguageNotSupported from "../../components/languageComponents/LanguageNo
 import HTMLLanguage from "../../components/languageComponents/HTMLLanguage";
 import CSSLanguage from "../../components/languageComponents/CSSLanguage";
 import CoffeeScriptLanguage from "../../components/languageComponents/CoffeeScriptLanguage";
+import CLanguage from "../../components/languageComponents/CLanguage";
+import CPPLanguage from "../../components/languageComponents/CPPLanguage";
+import CSharpLanguage from "../../components/languageComponents/CSharpLanguage";
+import KotlinLanguage from "../../components/languageComponents/KotlinLanguage";
+import ScalaLanguage from "../../components/languageComponents/ScalaLanguage";
+import RubyLanguage from "../../components/languageComponents/RubyLanguage";
+import ElixirLanguage from "../../components/languageComponents/ElixirLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -24,10 +31,24 @@ const LanguagePage = () => {
                 return <JavaScriptLanguage />;
             case "typescript":
                 return <TypeScriptLanguage />;
-            case "python":
-                return <PythonLanguage />;
+            case "c":
+                return <CLanguage />;
+            case "c++":
+                return <CPPLanguage />;
+            case "c#":
+                return <CSharpLanguage />;
             case "java":
                 return <JavaLanguage />;
+            case "kotlin":
+                return <KotlinLanguage />;
+            case "scala":
+                return <ScalaLanguage />;
+            case "python":
+                return <PythonLanguage />;
+            case "ruby":
+                return <RubyLanguage />;
+            case "elixir":
+                return <ElixirLanguage />;
             default:
                 return <LanguageNotSupported />;
         }
@@ -35,7 +56,7 @@ const LanguagePage = () => {
 
     return (
         <>
-            <div className="bg-slate-950 py-10">{renderContent()}</div>
+            <div className="bg-slate-900 py-10">{renderContent()}</div>
         </>
     );
 };

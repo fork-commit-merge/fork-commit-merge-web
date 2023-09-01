@@ -3,7 +3,7 @@ import { ides } from "../components/IDEInfo";
 
 export default function IDE() {
     return (
-        <div className="bg-slate-950 text-white min-h-screen">
+        <div className="bg-slate-900 text-white min-h-screen">
             <div className="py-10 px-5 flex flex-col justify-center items-center">
                 <h1 className="text-4xl font-bold mb-6">
                     IDEs: Integrated Development Environments

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HowToContribute() {
     return (
-        <div className="bg-slate-950 text-white py-10 px-5 flex flex-col justify-center items-center">
+        <div className="bg-slate-900 text-white py-10 px-5 flex flex-col justify-center items-center">
             <div className="text-slate-50 mx-auto max-w-3xl pb-10">
                 <h2 className="text-3xl font-bold my-4">
                     How to make an Open Source Contribution?

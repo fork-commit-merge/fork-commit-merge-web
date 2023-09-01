@@ -3,7 +3,7 @@ import { gitCommands } from "../components/GitCommands";
 export default function GitCommands() {
     return (
         <>
-            <div className="bg-slate-950 min-h-screen">
+            <div className="bg-slate-900 min-h-screen">
                 <div className="max-w-4xl mx-auto pt-8 p-6 text-white shadow-lg rounded-lg">
                     <h1 className="text-2xl font-bold mb-4">
                         Important Git Commands

@@ -15,8 +15,14 @@ const languageList = [
     { name: "CoffeeScript", link: "/languages/coffeescript" },
     { name: "JavaScript", link: "/languages/javascript" },
     { name: "TypeScript", link: "/languages/typescript" },
-    { name: "Python", link: "/languages/python" },
+    { name: "C", link: "/languages/c" },
+    { name: "C++", link: "/languages/cpp" },
     { name: "Java", link: "/languages/java" },
+    { name: "Kotlin", link: "/languages/kotlin" },
+    { name: "Scala", link: "/languages/scala" },
+    { name: "Python", link: "/languages/python" },
+    { name: "Ruby", link: "/languages/ruby" },
+    { name: "Elixir", link: "/languages/elixir" },
 ];
 
 const Header = () => {
@@ -92,28 +98,12 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link href="/adventures">
-                                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                        <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                             Adventures
                                         </div>
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="https://github.com/nikohoffren">
-                                        <div className="py-2 pl-6 pr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                            Contact
-                                        </div>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href="https://github.com/nikohoffren/fork-commit-merge-web"
-                                        target="blank"
-                                    >
-                                        <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                            GitHub Repo of this Website
-                                        </div>
-                                    </Link>
-                                </li>
+
                                 <li className={styles.buyButton}>
                                     <Coffee />
                                 </li>
@@ -153,14 +143,7 @@ const Header = () => {
                             />
                         </div>
                     </Link>
-                    <Link
-                        href="https://github.com/nikohoffren/fork-commit-merge-web"
-                        target="blank"
-                    >
-                        <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            GitHub Repo of this Website
-                        </div>
-                    </Link>
+
                     <Link
                         href="https://github.com/nikohoffren/fork-commit-merge"
                         target="blank"
@@ -170,7 +153,7 @@ const Header = () => {
                         </div>
                     </Link>
                     <Link href="/leaderboard">
-                        <div className="py-2 pt-10 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Leaderboard
                         </div>
                     </Link>
@@ -184,11 +167,7 @@ const Header = () => {
                             Adventures
                         </div>
                     </Link>
-                    <Link href="https://github.com/nikohoffren">
-                        <div className="py-2 pl-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Contact
-                        </div>
-                    </Link>
+
                     <Link href="/howtocontribute">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             How to Contribute?
