@@ -1,12 +1,12 @@
-import CodingChallenges from "../components/CodingChallenges";
-import CommunityAndNetworking from "../components/CommunityAndNetworking";
-import ContributingResources from "../components/ContributingResources";
-import GitAndGitHubDocumentation from "../components/GitAndGitHubDocumentation";
-import InteractiveLearningPlatforms from "../components/InteractiveLearningPlatforms";
-import JobSearchingPlatforms from "../components/JobSearchingPlatforms";
-import OnlineCodingBootcamps from "../components/OnlineCodingBootcamps";
-import OpenSourceDocumentation from "../components/OpenSourceDocumentation";
-import VideoTutorialResources from "../components/VideoTutorialResources";
+import CodingChallenges from "../components/resources/CodingChallenges";
+import CommunityAndNetworking from "../components/resources/CommunityAndNetworking";
+import ContributingResources from "../components/resources/ContributingResources";
+import GitAndGitHubDocumentation from "../components/resources/GitAndGitHubDocumentation";
+import InteractiveLearningPlatforms from "../components/resources/InteractiveLearningPlatforms";
+import JobSearchingPlatforms from "../components/resources/JobSearchingPlatforms";
+import OnlineCodingBootcamps from "../components/resources/OnlineCodingBootcamps";
+import OpenSourceDocumentation from "../components/resources/OpenSourceDocumentation";
+import VideoTutorialResources from "../components/resources/VideoTutorialResources";
 
 export default function Resources() {
     return (
