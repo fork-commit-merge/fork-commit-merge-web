@@ -1001,4 +1001,10 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/83905525?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "suyogschavan"
     },
+    {
+        "id": "sahilpannu",
+        "url": "https://github.com/sahilpannu",
+        "avatar": "https://avatars.githubusercontent.com/u/81547349?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "sahilpannu"
+    },
 ];
