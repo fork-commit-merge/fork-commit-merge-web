@@ -983,4 +983,16 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/105714822?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "thamesblanq"
     },
+    {
+        "id": "ronitsharma03",
+        "url": "https://github.com/ronitsharma03",
+        "avatar": "https://avatars.githubusercontent.com/u/94978319?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "ronitsharma03"
+    },
+    {
+        "id": "aditya-garg-09-01-2002",
+        "url": "https://github.com/aditya-garg-09-01-2002",
+        "avatar": "https://avatars.githubusercontent.com/u/105518662?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "aditya-garg-09-01-2002"
+    },
 ];
