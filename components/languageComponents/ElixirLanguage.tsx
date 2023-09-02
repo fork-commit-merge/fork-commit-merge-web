@@ -1,8 +1,15 @@
+/* eslint-disable @next/next/no-img-element */
 const ElixirLanguage = () => {
     return (
         <div className="flex justify-center items-center bg-slate-900">
             <div className="text-center text-slate-50 max-w-2xl">
-                <h1 className="text-3xl font-bold mb-10">Elixir</h1>
+                <div className="flex flex-wrap justify-center items-center">
+                    <img
+                        src="https://img.shields.io/badge/elixir-%239B30FF.svg?style=for-the-badge&logo=elixir&logoColor=white"
+                        alt="Elixir"
+                        className="mb-10 h-16 rounded-sm"
+                    />
+                </div>
 
                 <h2 className="text-2xl font-bold mb-4">What is Elixir?</h2>
                 <p className="mb-4">

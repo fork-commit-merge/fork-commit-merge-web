@@ -228,7 +228,7 @@ const Header = () => {
                             className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
                             onClick={toggleFrameworkDropdown}
                         >
-                            Frameworks
+                            Frameworks | Libraries
                         </div>
                         {isFrameworkDropdownOpen && (
                             <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
@@ -317,7 +317,7 @@ const Header = () => {
                                     className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
                                     onClick={toggleFrameworkDropdown}
                                 >
-                                    Frameworks
+                                    Frameworks | Libraries
                                 </div>
                                 {isFrameworkDropdownOpen && (
                                     <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">

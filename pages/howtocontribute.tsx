@@ -92,7 +92,7 @@ export default function HowToContribute() {
                     request. You can also subscribe to the repository to get
                     notifications about new issues and pull requests.
                     <br />
-                    Also, i recommend downloading the GitHub mobile app to your
+                    Also, we recommend downloading the GitHub mobile app to your
                     phone.
                     <br />
                     <a

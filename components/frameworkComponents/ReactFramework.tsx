@@ -1,17 +1,23 @@
+/* eslint-disable @next/next/no-img-element */
 const ReactFramework = () => {
     return (
         <div className="flex justify-center items-center bg-slate-900">
             <div className="text-center text-slate-50 max-w-2xl">
-                <h1 className="text-3xl font-bold mb-10">React</h1>
+                <div className="flex flex-wrap justify-center items-center">
+                    <img
+                        src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                        alt="React"
+                        className="mb-10 h-16 rounded-sm"
+                    />
+                </div>
 
                 <h2 className="text-2xl font-bold mb-4">What is React?</h2>
                 <p className="mb-4">
-                    React (or React.js) is a JavaScript library (not actually a framework but
-                    usually referred as one) for building user interfaces.
-                    Created and maintained by Facebook, it allows developers to
-                    create complex UIs from isolated and reusable components.
-                    React uses a virtual DOM to optimize rendering and improve
-                    performance.
+                    React (or React.js) is a JavaScript library for building
+                    user interfaces. Created and maintained by Facebook, it
+                    allows developers to create complex UIs from isolated and
+                    reusable components. React uses a virtual DOM to optimize
+                    rendering and improve performance.
                 </p>
 
                 <h2 className="text-2xl font-bold mb-4">Why Use React?</h2>

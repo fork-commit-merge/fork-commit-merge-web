@@ -17,7 +17,7 @@ import ElixirLanguage from "../../components/languageComponents/ElixirLanguage";
 import PHPLanguage from "../../components/languageComponents/PHPLanguage";
 import GoLanguage from "../../components/languageComponents/GoLanguage";
 import DartLanguage from "../../components/languageComponents/DartLanguage";
-import SwiftLanguage from "../../components/languageComponents/RustLanguage";
+import SwiftLanguage from "../../components/languageComponents/SwiftLanguage";
 import JuliaLanguage from "../../components/languageComponents/JuliaLanguage";
 import RustLanguage from "../../components/languageComponents/RustLanguage";
 import HaskellLanguage from "../../components/languageComponents/HaskellLanguage";

@@ -1,8 +1,15 @@
+/* eslint-disable @next/next/no-img-element */
 const JavaScriptLanguage = () => {
     return (
         <div className="flex justify-center items-center bg-slate-900">
             <div className="text-center text-slate-50 max-w-2xl">
-                <h1 className="text-3xl font-bold mb-10">JavaScript</h1>
+                <div className="flex flex-wrap justify-center items-center">
+                    <img
+                        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1Ee"
+                        alt="JavaScript"
+                        className="mb-10 h-16 rounded-sm"
+                    />
+                </div>
 
                 <h2 className="text-2xl font-bold mb-4">What is JavaScript?</h2>
                 <p className="mb-4">
