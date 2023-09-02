@@ -995,4 +995,10 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/105518662?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "aditya-garg-09-01-2002"
     },
+    {
+        "id": "suyogschavan",
+        "url": "https://github.com/suyogschavan",
+        "avatar": "https://avatars.githubusercontent.com/u/83905525?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "suyogschavan"
+    },
 ];
