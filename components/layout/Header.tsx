@@ -44,13 +44,20 @@ const languageList = [
 ];
 
 const frameworkList = [
+    { name: "Express", link: "/frameworks/express" },
     { name: "React", link: "/frameworks/react" },
-    { name: "Next.js", link: "/frameworks/nextjs" },
+    { name: "Next", link: "/frameworks/next" },
     { name: "Vite", link: "/frameworks/vite"},
     { name: "Vue", link: "/frameworks/vue" },
     { name: "Angular", link: "/frameworks/angular" },
     { name: "Svelte", link: "/frameworks/svelte" },
+    { name: "Gatsby", link: "/frameworks/gatsby" },
     { name: "Flask", link: "/frameworks/flask" },
+    { name: "Django", link: "/frameworks/django" },
+    { name: "Rails", link: "/frameworks/rails" },
+    { name: "Laravel", link: "/frameworks/laravel" },
+    { name: "Flutter", link: "/frameworks/flutter" },
+    { name: "React Native", link: "/frameworks/reactnative" },
 ];
 
 const Header = () => {
@@ -320,7 +327,7 @@ const Header = () => {
                                     Frameworks | Libraries
                                 </div>
                                 {isFrameworkDropdownOpen && (
-                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50 scrollable-dropdown">
                                         {frameworkList.map(
                                             (framework, index) => (
                                                 <li
