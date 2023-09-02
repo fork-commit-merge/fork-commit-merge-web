@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 
 const languageList = [
     { name: "HTML", link: "/languages/html" },
-    { name: "CSS", link: "/languages/css"},
+    { name: "CSS", link: "/languages/css" },
     { name: "CoffeeScript", link: "/languages/coffeescript" },
     { name: "JavaScript", link: "/languages/javascript" },
     { name: "TypeScript", link: "/languages/typescript" },
@@ -31,7 +31,7 @@ const languageList = [
     { name: "Julia", link: "/languages/julia" },
     { name: "Rust", link: "/languages/rust" },
     { name: "Haskell", link: "/languages/haskell" },
-    { name: "Lua", link: "/languages/lua"},
+    { name: "Lua", link: "/languages/lua" },
     { name: "Clojure", link: "/languages/clojure" },
     { name: "Lisp", link: "/languages/lisp" },
     { name: "Fortran", link: "/languages/fortran" },
@@ -43,44 +43,47 @@ const languageList = [
     { name: "Perl", link: "/languages/perl" },
 ];
 
+const frameworkList = [
+    { name: "React", link: "/frameworks/react" },
+    { name: "Next.js", link: "/frameworks/nextjs" },
+    { name: "Vite", link: "/frameworks/vite"},
+    { name: "Vue", link: "/frameworks/vue" },
+    { name: "Angular", link: "/frameworks/angular" },
+    { name: "Svelte", link: "/frameworks/svelte" },
+    { name: "Flask", link: "/frameworks/flask" },
+];
+
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [isLanguageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+    const [isFrameworkDropdownOpen, setFrameworkDropdownOpen] = useState(false);
     const node = useRef<HTMLLIElement | null>(null);
-
+    const frameworkNode = useRef<HTMLLIElement | null>(null);
     const { data: session } = useSession();
     const router = useRouter();
 
-    const handleClickOutside = (e: MouseEvent) => {
-        if (node.current?.contains(e.target as Node)) {
-            return;
-        }
-        setDropdownOpen(false);
-    };
-
     const navigateToLanguage = (link: string) => {
         router.push(link);
-        setDropdownOpen(false);
+        setLanguageDropdownOpen(false);
     };
 
-    useEffect(() => {
-        if (isDropdownOpen) {
-            document.addEventListener("mousedown", handleClickOutside);
-        } else {
-            document.removeEventListener("mousedown", handleClickOutside);
-        }
-
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [isDropdownOpen]);
+    const navigateToFramework = (link: string) => {
+        router.push(link);
+        setFrameworkDropdownOpen(false);
+    };
 
     const toggleSideNav = () => {
         setIsOpen(!isOpen);
     };
 
-    const toggleDropdown = () => {
-        setDropdownOpen(!isDropdownOpen);
+    const toggleLanguageDropdown = () => {
+        setLanguageDropdownOpen(!isLanguageDropdownOpen);
+        setFrameworkDropdownOpen(false);
+    };
+
+    const toggleFrameworkDropdown = () => {
+        setFrameworkDropdownOpen(!isFrameworkDropdownOpen);
+        setLanguageDropdownOpen(false);
     };
 
     return (
@@ -199,12 +202,12 @@ const Header = () => {
                     <li ref={node} className="list-none">
                         <div
                             className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
-                            onClick={toggleDropdown}
+                            onClick={toggleLanguageDropdown}
                         >
                             Languages
                         </div>
-                        {isDropdownOpen && (
-                            <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-900 text-slate-50">
+                        {isLanguageDropdownOpen && (
+                            <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
                                 {languageList.map((lang, index) => (
                                     <li
                                         key={index}
@@ -220,7 +223,30 @@ const Header = () => {
                             </ul>
                         )}
                     </li>
-
+                    <li ref={frameworkNode} className="list-none">
+                        <div
+                            className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                            onClick={toggleFrameworkDropdown}
+                        >
+                            Frameworks
+                        </div>
+                        {isFrameworkDropdownOpen && (
+                            <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                {frameworkList.map((framework, index) => (
+                                    <li
+                                        key={index}
+                                        onClick={() =>
+                                            navigateToFramework(framework.link)
+                                        }
+                                    >
+                                        <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                            {framework.name}
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
                     <Link href="/ide">
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             IDE:s
@@ -263,12 +289,12 @@ const Header = () => {
                             <li ref={node} className="list-none">
                                 <div
                                     className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
-                                    onClick={toggleDropdown}
+                                    onClick={toggleLanguageDropdown}
                                 >
                                     Languages
                                 </div>
-                                {isDropdownOpen && (
-                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-900 text-slate-50 scrollable-dropdown">
+                                {isLanguageDropdownOpen && (
+                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50 scrollable-dropdown">
                                         {languageList.map((lang, index) => (
                                             <li
                                                 key={index}
@@ -283,6 +309,34 @@ const Header = () => {
                                                 </div>
                                             </li>
                                         ))}
+                                    </ul>
+                                )}
+                            </li>
+                            <li ref={frameworkNode} className="list-none">
+                                <div
+                                    className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                                    onClick={toggleFrameworkDropdown}
+                                >
+                                    Frameworks
+                                </div>
+                                {isFrameworkDropdownOpen && (
+                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                        {frameworkList.map(
+                                            (framework, index) => (
+                                                <li
+                                                    key={index}
+                                                    onClick={() =>
+                                                        navigateToFramework(
+                                                            framework.link
+                                                        )
+                                                    }
+                                                >
+                                                    <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                                        {framework.name}
+                                                    </div>
+                                                </li>
+                                            )
+                                        )}
                                     </ul>
                                 )}
                             </li>
