@@ -18,6 +18,7 @@ const languageList = [
     { name: "C", link: "/languages/c" },
     { name: "C++", link: "/languages/cpp" },
     { name: "C#", link: "/languages/csharp" },
+    { name: "F#", link: "/languages/fsharp" },
     { name: "Java", link: "/languages/java" },
     { name: "Kotlin", link: "/languages/kotlin" },
     { name: "Scala", link: "/languages/scala" },

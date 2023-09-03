@@ -31,6 +31,7 @@ import RLanguage from "../../components/languageComponents/RLanguage";
 import SQLLanguage from "../../components/languageComponents/SQLLanguage";
 import BashLanguage from "../../components/languageComponents/BashLanguage";
 import PerlLanguage from "../../components/languageComponents/PerlLanguage";
+import FSharpLanguage from "../../components/languageComponents/FSharpLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -54,6 +55,8 @@ const LanguagePage = () => {
                 return <CPPLanguage />;
             case "csharp":
                 return <CSharpLanguage />;
+            case "fsharp":
+                return <FSharpLanguage />;
             case "java":
                 return <JavaLanguage />;
             case "kotlin":

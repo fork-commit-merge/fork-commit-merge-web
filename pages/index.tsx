@@ -39,13 +39,13 @@ export default function Home() {
                 <div className="my-6 min-w-full">
                     <div
                         className="mx-auto rounded-md overflow-hidden"
-                        style={{ width: 180, height: 180 }}
+                        style={{ width: 170, height: 170 }}
                     >
                         <Image
                             src="/fork-commit-merge-logo.jpg"
                             alt="Fork, Commit, Merge -logo"
-                            width={180}
-                            height={180}
+                            width={170}
+                            height={170}
                             priority
                         />
                     </div>

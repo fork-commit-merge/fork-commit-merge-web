@@ -12,12 +12,12 @@ const Descriptions: React.FC = () => {
                     difficulties (easy, medium, and hard) in different
                     languages, libraries and frameworks (HTML, CSS, Tailwind,
                     Bootstrap, CoffeeScript, JavaScript, TypeScript, React,
-                    NextJS, Vue, C, C++, C#, Java, Kotlin, Scala, Python, Flask,
-                    Django, Ruby, Elixir, PHP, Laravel, Go, Dart, Flutter,
-                    Swift, Rust, Haskell, Lua, Clojure, Lisp, Fortran, Erlang,
-                    Zig, R, SQL, TLA+, Bash, Perl, JSON, YAML, TOML, CSV, XML
-                    and Markdown). Each task is a problem that needs to be
-                    solved, which helps you to sharpen your problem-solving
+                    NextJS, Vue, C, C++, C#, F#, Java, Kotlin, Scala, Python,
+                    Flask, Django, Ruby, Elixir, PHP, Laravel, Go, Dart,
+                    Flutter, Swift, Rust, Haskell, Lua, Clojure, Lisp, Fortran,
+                    Erlang, Zig, R, SQL, TLA+, Bash, Perl, JSON, YAML, TOML,
+                    CSV, XML and Markdown). Each task is a problem that needs to
+                    be solved, which helps you to sharpen your problem-solving
                     abilities - a critical skill for every developer.
                 </p>
                 <hr className="my-6" />
