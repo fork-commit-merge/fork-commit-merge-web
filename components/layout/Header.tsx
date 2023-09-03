@@ -47,7 +47,7 @@ const frameworkList = [
     { name: "Express", link: "/frameworks/express" },
     { name: "React", link: "/frameworks/react" },
     { name: "Next", link: "/frameworks/next" },
-    { name: "Vite", link: "/frameworks/vite"},
+    { name: "Vite", link: "/frameworks/vite" },
     { name: "Vue", link: "/frameworks/vue" },
     { name: "Angular", link: "/frameworks/angular" },
     { name: "Svelte", link: "/frameworks/svelte" },
@@ -131,6 +131,29 @@ const Header = () => {
                                         </div>
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link
+                                        className="py-2 px-3 mr-10 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                                        href={
+                                            "https://github.com/nikohoffren/fork-commit-merge"
+                                        }
+                                        target="blank"
+                                    >
+                                        <svg
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor"
+                                            width="20"
+                                            height="20"
+                                            className="mr-2"
+                                        >
+                                            <title>GitHub icon</title>
+                                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.6-.015 2.885-.015 3.285 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                        </svg>
+                                        Star us in GitHub
+                                    </Link>
+                                </li>
 
                                 <li className={styles.buyButton}>
                                     <Coffee />
@@ -144,25 +167,47 @@ const Header = () => {
                 <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 bg-slate-900 overflow-auto z-20 md:hidden">
                     {session?.user ? (
                         <Link href="/login">
-                            <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
+                            <div className="bg-gray-800 hover:bg-gray-700 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium">
                                 {session.user.name}
                             </div>
                         </Link>
                     ) : (
                         <Link href="/login">
-                            <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
+                            <div className="py-2 px-7 block text-sm cursor-pointer bg-gray-800 hover:bg-gray-700 hover:text-slate-100 border border-transparent font-medium">
                                 LOGIN
                             </div>
                         </Link>
                     )}
-                    <div className="ml-6 mb-6 mt-2">
+                    <Link
+                        className="py-2 px-6 mt-2 w-full border border-transparent text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                        href={
+                            "https://github.com/nikohoffren/fork-commit-merge"
+                        }
+                        target="blank"
+                    >
+                        <svg
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            width="20"
+                            height="20"
+                            className="mr-2"
+                        >
+                            <title>GitHub icon</title>
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.6-.015 2.885-.015 3.285 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                        Star us in GitHub
+                    </Link>
+
+                    <div className="ml-6 mb-10 mt-2">
                         <div className={styles.buyButton}>
                             <Coffee />
                         </div>
                     </div>
 
                     <Link href="/">
-                        <div className="px-6 mb-2 block text-sm cursor-pointer hover:scale-105">
+                        <div className="px-6 mb-3 block text-sm cursor-pointer hover:scale-105">
                             <Image
                                 src="/fork-commit-merge-logo.jpg"
                                 alt="Fork, Commit, Merge -logo"
@@ -360,13 +405,13 @@ const Header = () => {
 
                             {session?.user ? (
                                 <Link href="/login">
-                                    <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
+                                    <div className="bg-gray-800 hover:bg-gray-700 py-2 px-6 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium rounded-md">
                                         {session.user.name}
                                     </div>
                                 </Link>
                             ) : (
                                 <Link href="/login">
-                                    <div className="bg-slate-900 py-2 px-6 block text-sm cursor-pointer hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium rounded-md">
+                                    <div className="bg-gray-800 hover:bg-gray-700 py-2 px-6 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium rounded-md">
                                         LOGIN
                                     </div>
                                 </Link>
