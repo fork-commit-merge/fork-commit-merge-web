@@ -32,6 +32,8 @@ import SQLLanguage from "../../components/languageComponents/SQLLanguage";
 import BashLanguage from "../../components/languageComponents/BashLanguage";
 import PerlLanguage from "../../components/languageComponents/PerlLanguage";
 import FSharpLanguage from "../../components/languageComponents/FSharpLanguage";
+import SolidityLanguage from "../../components/languageComponents/SolidityLanguage";
+import VyperLanguage from "../../components/languageComponents/VyperLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -97,6 +99,10 @@ const LanguagePage = () => {
                 return <ZigLanguage />;
             case "r":
                 return <RLanguage />;
+            case "solidity":
+                return <SolidityLanguage />;
+            case "vyper":
+                return <VyperLanguage />;
             case "sql":
                 return <SQLLanguage />;
             case "bash":

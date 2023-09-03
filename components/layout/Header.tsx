@@ -39,6 +39,8 @@ const languageList = [
     { name: "Erlang", link: "/languages/erlang" },
     { name: "Zig", link: "/languages/zig" },
     { name: "R", link: "/languages/r" },
+    { name: "Solidity", link: "/languages/solidity" },
+    { name: "Vyper", link: "/languages/vyper" },
     { name: "SQL", link: "/languages/sql" },
     { name: "Bash", link: "/languages/bash" },
     { name: "Perl", link: "/languages/perl" },
