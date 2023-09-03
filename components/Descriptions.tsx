@@ -207,6 +207,19 @@ const Descriptions: React.FC = () => {
                     memory safety, concurrency, and the principles of modern
                     systems development.
                 </p>
+
+                <hr className="my-6" />
+
+                <h3 className="text-2xl font-semibold my-3 mt-10">
+                    Solidity and Vyper: A Dual Approach to Blockchain Development
+                </h3>
+                <p className="text-lg leading-7">
+                    Dive into the world of blockchain development with Solidity 
+                    and Vyper.Learn to build smart contracts and DApps on 
+                    diverse blockchain platforms,whether you're a pro or just
+                    starting out. Unleash the potential of these languages for
+                    secure and innovative solutions.
+                </p>
             </div>
         </>
     );
