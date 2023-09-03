@@ -169,13 +169,13 @@ const Header = () => {
             {isOpen && (
                 <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 bg-slate-900 overflow-auto z-20 md:hidden">
                     {session?.user ? (
-                        <Link href="/login">
+                        <Link href="/login" onClick={() => setIsOpen(false)}>
                             <div className="bg-gray-800 hover:bg-gray-700 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium">
                                 {session.user.name}
                             </div>
                         </Link>
                     ) : (
-                        <Link href="/login">
+                        <Link href="/login" onClick={() => setIsOpen(false)}>
                             <div className="py-2 px-7 block text-sm cursor-pointer bg-gray-800 hover:bg-gray-700 hover:text-slate-100 border border-transparent font-medium">
                                 LOGIN
                             </div>
@@ -186,7 +186,7 @@ const Header = () => {
                         href={
                             "https://github.com/nikohoffren/fork-commit-merge"
                         }
-                        target="blank"
+                        target="blank" onClick={() => setIsOpen(false)}
                     >
                         <svg
                             role="img"
@@ -209,7 +209,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <Link href="/">
+                    <Link href="/" onClick={() => setIsOpen(false)}>
                         <div className="px-6 mb-3 block text-sm cursor-pointer hover:scale-105">
                             <Image
                                 src="/fork-commit-merge-logo.jpg"
@@ -228,12 +228,12 @@ const Header = () => {
                             Contribute in GitHub
                         </div>
                     </Link>
-                    <Link href="/leaderboard">
+                    <Link href="/leaderboard" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Leaderboard
                         </div>
                     </Link>
-                    <Link href="/stars">
+                    <Link href="/stars" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Stars
                         </div>
@@ -244,12 +244,12 @@ const Header = () => {
                         </div>
                     </Link>
 
-                    <Link href="/howtocontribute">
+                    <Link href="/howtocontribute" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             How to Contribute?
                         </div>
                     </Link>
-                    <Link href="/git-commands">
+                    <Link href="/git-commands" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Git Commands
                         </div>
@@ -266,8 +266,10 @@ const Header = () => {
                                 {languageList.map((lang, index) => (
                                     <li
                                         key={index}
-                                        onClick={() =>
-                                            navigateToLanguage(lang.link)
+                                        onClick={() => {
+                                            navigateToLanguage(lang.link);
+                                            setIsOpen(false)
+                                        }
                                         }
                                     >
                                         <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
@@ -290,8 +292,10 @@ const Header = () => {
                                 {frameworkList.map((framework, index) => (
                                     <li
                                         key={index}
-                                        onClick={() =>
-                                            navigateToFramework(framework.link)
+                                        onClick={() => {
+                                            navigateToFramework(framework.link);
+                                            setIsOpen(false)
+                                        }
                                         }
                                     >
                                         <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
@@ -302,12 +306,12 @@ const Header = () => {
                             </ul>
                         )}
                     </li>
-                    <Link href="/ide">
+                    <Link href="/ide" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             IDE:s
                         </div>
                     </Link>
-                    <Link href="/resources">
+                    <Link href="/resources" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Resources
                         </div>
@@ -318,7 +322,7 @@ const Header = () => {
                 <div className="mx-auto px-12 py-1 pb-6 pr-20 shadow-top">
                     <div className="mt-3 md:flex items-center justify-between">
                         <div className="flex items-center space-x-1">
-                            <Link href="/">
+                            <Link href="/" onClick={() => setIsOpen(false)}>
                                 <div className="pl-25 px-6 block text-sm cursor-pointer hover:scale-105">
                                     <Image
                                         src="/fork-commit-merge-logo.jpg"
@@ -330,12 +334,12 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="flex items-center space-x-1">
-                            <Link href="/howtocontribute">
+                            <Link href="/howtocontribute" onClick={() => setIsOpen(false)}>
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     How to Contribute?
                                 </div>
                             </Link>
-                            <Link href="/git-commands">
+                            <Link href="/git-commands" onClick={() => setIsOpen(false)}>
                                 <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     Git Commands
                                 </div>
@@ -395,25 +399,25 @@ const Header = () => {
                                     </ul>
                                 )}
                             </li>
-                            <Link href="/ide">
-                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            <Link href="/ide" onClick={() => setIsOpen(false)}>
+                                <div className={"py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"}>
                                     IDE:s
                                 </div>
                             </Link>
-                            <Link href="/resources">
+                            <Link href="/resources" onClick={() => setIsOpen(false)}>
                                 <div className="py-2 px-6 mr-11 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                                     Resources
                                 </div>
                             </Link>
 
                             {session?.user ? (
-                                <Link href="/login">
+                                <Link href="/login" onClick={() => setIsOpen(false)}>
                                     <div className="bg-gray-800 hover:bg-gray-700 py-2 px-6 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium rounded-md">
                                         {session.user.name}
                                     </div>
                                 </Link>
                             ) : (
-                                <Link href="/login">
+                                <Link href="/login" onClick={() => setIsOpen(false)}>
                                     <div className="bg-gray-800 hover:bg-gray-700 py-2 px-6 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium rounded-md">
                                         LOGIN
                                     </div>
