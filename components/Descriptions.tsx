@@ -216,7 +216,7 @@ const Descriptions: React.FC = () => {
                 <p className="text-lg leading-7">
                     Dive into the world of blockchain development with Solidity 
                     and Vyper.Learn to build smart contracts and DApps on 
-                    diverse blockchain platforms,whether you're a pro or just
+                    diverse blockchain platforms,whether you&aposre a pro or just
                     starting out. Unleash the potential of these languages for
                     secure and innovative solutions.
                 </p>
