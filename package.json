@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.2.5",
+    "@ant-design/icons": "^5.2.6",
     "@heroicons/react": "^1.0.6",
     "@mui/icons-material": "^5.14.6",
     "@next-auth/mongodb-adapter": "^1.1.3",
