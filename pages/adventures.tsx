@@ -4,11 +4,11 @@ export default function Adventures() {
     return (
         <>
             <div className="bg-slate-900 text-white px-10 py-10 flex flex-col justify-center items-center min-h-screen">
-                <h1 className="text-3xl font-bold mb-16">
+                <h1 className="text-3xl font-bold mb-4">
                     Adventure Games in Markdown
                 </h1>
                 <div className="my-5 font-light text-gray-100 mx-auto max-w-2xl">
-                    <p className="mb-6">
+                    <p className="mb-4">
                         This page contains a collection of adventure games
                         written in Markdown by our contributors. The games
                         relate to the
@@ -21,9 +21,40 @@ export default function Adventures() {
                             Markdown - Hard issue
                         </Link>
                         <span className="mr-2"></span>
-                        in the Fork, Commit, Merge repository.
+                        in the Fork, Commit, Merge repository. Below you can
+                        find some description of the task.
                     </p>
-                    <h3 className="mt-10 mb-6 text-2xl">List of games:</h3>
+                    <p className="mb-6">
+                        The goal is to create a text-based adventure game that
+                        is entirely navigable through hyperlinks in different
+                        Markdown files. Each Markdown file represents a
+                        &quot;room&quot; or &quot;event&quot;, and options for
+                        players are presented as hyperlinks to other Markdown
+                        files. There is a folder called `adventure` in
+                        `tasks/markdown/hard` directory, in which you can create
+                        various of Markdown files representing different stages
+                        or events in the game. First you have to Write a brief
+                        description of the scenario and provide options to the
+                        player (as links pointing to other Markdown files). For
+                        instance, you could have options like Go north and Go
+                        south which point to `north.md` and `south.md`,
+                        respectively. Create the Markdown files for all possible
+                        paths in the game. Each file should describe the current
+                        situation and provide further options to the player.
+                        Make sure to include a way to win and a way to lose the
+                        game. Expected outcome is fully playable text-based
+                        adventure game made entirely of linked Markdown files.
+                        The game should be complex enough to provide some level
+                        of challenge to the player, with a variety of different
+                        paths, outcomes, and choices. Creating this game might be quite complex, as it requires planning the
+                        game&apos;s structure, writing engaging text, and
+                        managing many interconnected Markdown files. However, it
+                        will be a great exercise for you to learn advanced Markdown
+                        usage. <br />
+                        Markdown code can be tested in a editor like
+                        [this](https://stackedit.io/).
+                    </p>
+                    <h3 className="mt-10 mb-6 text-2xl">List of finished games:</h3>
                     <ul className="list-disc list-inside">
                         <li>
                             <Link

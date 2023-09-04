@@ -12,7 +12,7 @@ export default function Resources() {
     return (
         <div className="bg-slate-900 text-white py-10 px-5 flex flex-col justify-center items-center">
             <h1 className="text-4xl font-bold mb-16">Resources</h1>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center max-w-7xl">
                 <ContributingResources />
                 <VideoTutorialResources />
                 <OpenSourceDocumentation />
