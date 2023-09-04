@@ -33,8 +33,8 @@ export const TopThreeContributors: FC<TopThreeContributorsProps> = ({
                         >
                             <Image
                                 src={contributor.avatar}
-                                width={180}
-                                height={180}
+                                width={155}
+                                height={155}
                                 alt={contributor.name}
                                 className="px-1"
                             />

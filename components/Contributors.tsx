@@ -23,8 +23,8 @@ export const Contributors: FC<ContributorsProps> = ({ contributors }) => (
             >
                 <Image
                     src={contributor.avatar}
-                    width={150}
-                    height={150}
+                    width={130}
+                    height={130}
                     alt={contributor.name}
                 />
             </a>
