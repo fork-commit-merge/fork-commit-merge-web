@@ -9,65 +9,9 @@ import React from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { StarFilled } from "@ant-design/icons";
-
-const languageList = [
-    { name: "HTML", link: "/languages/html" },
-    { name: "CSS", link: "/languages/css" },
-    { name: "CoffeeScript", link: "/languages/coffeescript" },
-    { name: "JavaScript", link: "/languages/javascript" },
-    { name: "TypeScript", link: "/languages/typescript" },
-    { name: "C", link: "/languages/c" },
-    { name: "C++", link: "/languages/cpp" },
-    { name: "C#", link: "/languages/csharp" },
-    { name: "F#", link: "/languages/fsharp" },
-    { name: "Java", link: "/languages/java" },
-    { name: "Kotlin", link: "/languages/kotlin" },
-    { name: "Scala", link: "/languages/scala" },
-    { name: "Python", link: "/languages/python" },
-    { name: "Ruby", link: "/languages/ruby" },
-    { name: "Elixir", link: "/languages/elixir" },
-    { name: "PHP", link: "/languages/php" },
-    { name: "Go", link: "/languages/go" },
-    { name: "Dart", link: "/languages/dart" },
-    { name: "Swift", link: "/languages/swift" },
-    { name: "Julia", link: "/languages/julia" },
-    { name: "Rust", link: "/languages/rust" },
-    { name: "Haskell", link: "/languages/haskell" },
-    { name: "Lua", link: "/languages/lua" },
-    { name: "Clojure", link: "/languages/clojure" },
-    { name: "Lisp", link: "/languages/lisp" },
-    { name: "Fortran", link: "/languages/fortran" },
-    { name: "Erlang", link: "/languages/erlang" },
-    { name: "Zig", link: "/languages/zig" },
-    { name: "R", link: "/languages/r" },
-    { name: "Solidity", link: "/languages/solidity" },
-    { name: "Vyper", link: "/languages/vyper" },
-    { name: "SQL", link: "/languages/sql" },
-    { name: "Bash", link: "/languages/bash" },
-    { name: "Perl", link: "/languages/perl" },
-];
-
-const frameworkList = [
-    { name: "Express", link: "/frameworks/express" },
-    { name: "React", link: "/frameworks/react" },
-    { name: "Next", link: "/frameworks/next" },
-    { name: "Vite", link: "/frameworks/vite" },
-    { name: "Vue", link: "/frameworks/vue" },
-    { name: "Angular", link: "/frameworks/angular" },
-    { name: "Svelte", link: "/frameworks/svelte" },
-    { name: "Gatsby", link: "/frameworks/gatsby" },
-    { name: "Flask", link: "/frameworks/flask" },
-    { name: "Django", link: "/frameworks/django" },
-    { name: "Rails", link: "/frameworks/rails" },
-    { name: "Laravel", link: "/frameworks/laravel" },
-    { name: "Flutter", link: "/frameworks/flutter" },
-    { name: "React Native", link: "/frameworks/reactnative" },
-];
-
-const gitList = [
-    { name: "Git Commands", link: "/git/gitcommands" },
-    { name: "Git Branching", link: "/git/gitbranching" },
-];
+import { languageList } from "../data/languageList";
+import { frameworkList } from "../data/frameworkList";
+import { gitList } from "../data/gitList";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -180,7 +124,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        className="py-1 px-3 mr-10 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                                        className="py-0.5 px-3 mr-10 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                                         href={
                                             "https://github.com/nikohoffren/fork-commit-merge"
                                         }
@@ -208,7 +152,7 @@ const Header = () => {
                                                 >
                                                     <StarFilled
                                                         style={{
-                                                            fontSize: "2.5rem",
+                                                            fontSize: "2.1rem",
                                                             color: "gold",
                                                         }}
                                                     />
@@ -220,7 +164,7 @@ const Header = () => {
                                                             left: "50%",
                                                             transform:
                                                                 "translate(-50%, -50%)",
-                                                            fontSize: "12px",
+                                                            fontSize: "9px",
                                                             fontWeight: "bold",
                                                             color: "black",
                                                         }}
@@ -259,7 +203,7 @@ const Header = () => {
                         </Link>
                     )}
                     <Link
-                        className="w-full my-2 py-1 px-3 mr-10 border border-transparent text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                        className="w-full my-1 py-0.5 px-3 mr-10 border border-transparent text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                         href={
                             "https://github.com/nikohoffren/fork-commit-merge"
                         }
@@ -287,7 +231,7 @@ const Header = () => {
                                 >
                                     <StarFilled
                                         style={{
-                                            fontSize: "2.5rem",
+                                            fontSize: "2.1rem",
                                             color: "gold",
                                         }}
                                     />
@@ -297,7 +241,7 @@ const Header = () => {
                                             top: "50%",
                                             left: "50%",
                                             transform: "translate(-50%, -50%)",
-                                            fontSize: "12px",
+                                            fontSize: "9px",
                                             fontWeight: "bold",
                                             color: "black",
                                         }}

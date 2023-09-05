@@ -6,7 +6,7 @@ import {
     TopThreeContributors,
     Contributor,
 } from "../components/TopThreeContributors";
-import { contributorData } from "../components/contributorData";
+import { contributorData } from "../components/data/contributorData";
 import Descriptions from "../components/Descriptions";
 import Badges from "../components/Badges";
 import { useEffect, useState } from "react";

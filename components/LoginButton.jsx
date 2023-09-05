@@ -56,12 +56,10 @@ export default function LoginButton() {
             <div className="text-slate-50 text-center">
                 <div className="flex flex-col-reverse md:flex-row justify-between items-center">
                     <div className="md:mr-10">
-                        <h2 className="mt-6 mb-10 text-3xl font-extrabold">
-                            ACCOUNT
+                        <h2 className="mt-6 mb-10 text-4xl font-extrabold">
+                        {session.user.name || "User"}
                         </h2>
-                        <p className="my-5">
-                            Signed in as {session.user.name || "User"}
-                        </p>
+
                         <p className="my-5">{session.user.email}</p>
                     </div>
                     <div
