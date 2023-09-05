@@ -49,12 +49,13 @@ export default function LoginButton() {
         }
     };
 
-    const size = 200;
+    const size = 190;
 
     if (session?.user) {
         return (
             <div className="text-slate-50 text-center">
-                <div className="flex flex-col-reverse md:flex-row justify-between items-center">
+                <div className="flex flex-col-reverse md:flex-row justify-between items-center border rounded-lg shadow-lg bg-slate-950 px-4 py-2">
+
                     <div className="md:mr-10">
                         <h2 className="mt-6 mb-10 text-4xl font-extrabold">
                         {session.user.name || "User"}
@@ -77,6 +78,7 @@ export default function LoginButton() {
                             width={size}
                             height={size}
                         />
+
                     </div>
                 </div>
 
