@@ -63,14 +63,26 @@ const frameworkList = [
     { name: "React Native", link: "/frameworks/reactnative" },
 ];
 
+const gitList = [
+    { name: "Git Commands", link: "/git/gitcommands" },
+    { name: "Git Branching", link: "/git/gitbranching" },
+];
+
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isLanguageDropdownOpen, setLanguageDropdownOpen] = useState(false);
     const [isFrameworkDropdownOpen, setFrameworkDropdownOpen] = useState(false);
+    const [isGitSelectionDropdownOpen, setGitSelectionDropdownOpen] =
+        useState(false);
     const node = useRef<HTMLLIElement | null>(null);
     const frameworkNode = useRef<HTMLLIElement | null>(null);
+    const gitSelectionNode = useRef<HTMLLIElement | null>(null);
     const { data: session } = useSession();
     const router = useRouter();
+
+    const toggleSideNav = () => {
+        setIsOpen(!isOpen);
+    };
 
     const navigateToLanguage = (link: string) => {
         router.push(link);
@@ -82,18 +94,27 @@ const Header = () => {
         setFrameworkDropdownOpen(false);
     };
 
-    const toggleSideNav = () => {
-        setIsOpen(!isOpen);
+    const navigateToGitSelection = (link: string) => {
+        router.push(link);
+        setGitSelectionDropdownOpen(false);
     };
 
     const toggleLanguageDropdown = () => {
         setLanguageDropdownOpen(!isLanguageDropdownOpen);
         setFrameworkDropdownOpen(false);
+        setGitSelectionDropdownOpen(false);
     };
 
     const toggleFrameworkDropdown = () => {
         setFrameworkDropdownOpen(!isFrameworkDropdownOpen);
         setLanguageDropdownOpen(false);
+        setGitSelectionDropdownOpen(false);
+    };
+
+    const toggleGitSelectionDropdown = () => {
+        setGitSelectionDropdownOpen(!isGitSelectionDropdownOpen);
+        setLanguageDropdownOpen(false);
+        setFrameworkDropdownOpen(false);
     };
 
     return (
@@ -114,15 +135,15 @@ const Header = () => {
                         <nav className="hidden md:block">
                             <ul className="md:flex items-center space-x-1">
                                 <li>
-                            <Link
-                                href="/howtocontribute"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                    How to Contribute?
-                                </div>
-                            </Link>
-                            </li>
+                                    <Link
+                                        href="/howtocontribute"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                            How to Contribute?
+                                        </div>
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link href="/leaderboard">
                                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
@@ -231,35 +252,8 @@ const Header = () => {
                         </div>
                     </Link>
 
-                    <Link href="/leaderboard" onClick={() => setIsOpen(false)}>
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Leaderboard
-                        </div>
-                    </Link>
-                    <Link href="/stars" onClick={() => setIsOpen(false)}>
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Stars
-                        </div>
-                    </Link>
-                    <Link href="/adventures" onClick={() => setIsOpen(false)}>
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Adventures
-                        </div>
-                    </Link>
 
-                    <Link
-                        href="/howtocontribute"
-                        onClick={() => setIsOpen(false)}
-                    >
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            How to Contribute?
-                        </div>
-                    </Link>
-                    <Link href="/git-commands" onClick={() => setIsOpen(false)}>
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Git
-                        </div>
-                    </Link>
+
                     <li ref={node} className="list-none">
                         <div
                             className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
@@ -310,6 +304,32 @@ const Header = () => {
                             </ul>
                         )}
                     </li>
+                    <li ref={gitSelectionNode} className="list-none">
+                        <div
+                            className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                            onClick={toggleGitSelectionDropdown}
+                        >
+                            Git
+                        </div>
+                        {isGitSelectionDropdownOpen && (
+                            <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                {gitList.map((git, index) => (
+                                    <li
+                                        key={index}
+                                        onClick={() => {
+                                            navigateToGitSelection(git.link);
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                            {git.name}
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+
                     <Link href="/ide" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             IDE:s
@@ -318,6 +338,30 @@ const Header = () => {
                     <Link href="/resources" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Resources
+                        </div>
+                    </Link>
+                     <Link href="/leaderboard" onClick={() => setIsOpen(false)}>
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            Leaderboard
+                        </div>
+                    </Link>
+                    <Link href="/stars" onClick={() => setIsOpen(false)}>
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            Stars
+                        </div>
+                    </Link>
+                    <Link href="/adventures" onClick={() => setIsOpen(false)}>
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            Adventures
+                        </div>
+                    </Link>
+
+                    <Link
+                        href="/howtocontribute"
+                        onClick={() => setIsOpen(false)}
+                    >
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            How to Contribute?
                         </div>
                     </Link>
                 </div>
@@ -338,16 +382,6 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="flex items-center space-x-1">
-
-                            <Link
-                                href="/git-commands"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                    Git
-                                </div>
-                            </Link>
-
                             <li ref={node} className="list-none">
                                 <div
                                     className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
@@ -399,6 +433,33 @@ const Header = () => {
                                                 </li>
                                             )
                                         )}
+                                    </ul>
+                                )}
+                            </li>
+                            <li ref={gitSelectionNode} className="list-none">
+                                <div
+                                    className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                                    onClick={toggleGitSelectionDropdown}
+                                >
+                                    Git
+                                </div>
+                                {isGitSelectionDropdownOpen && (
+                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                        {gitList.map((git, index) => (
+                                            <li
+                                                key={index}
+                                                onClick={() => {
+                                                    navigateToGitSelection(
+                                                        git.link
+                                                    );
+                                                    setIsOpen(false);
+                                                }}
+                                            >
+                                                <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                                    {git.name}
+                                                </div>
+                                            </li>
+                                        ))}
                                     </ul>
                                 )}
                             </li>

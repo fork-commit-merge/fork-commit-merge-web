@@ -55,11 +55,10 @@ body {
     overflow-y: auto;
 }
 
-@layer components {
-    /* main */
-    .header-list-items {
-      @apply py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100;
-    }
-  
-
+code {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    background-color: #0e0e0e;
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
 }
