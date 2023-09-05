@@ -32,26 +32,34 @@ export const LeaderBoard: React.FC = () => {
                     <div className="spinner"></div>
                 </div>
             ) : (
-                <table className="mx-auto">
+                <table className="min-w-full bg-slate-950 border rounded-lg shadow-lg mx-auto text-slate-300">
                     <thead>
-                        <tr>
-                            <th className="pb-6">Contributor</th>
-                            <th className="pb-6">Issues</th>
+                        <tr className="bg-gray-700 text-white">
+                            <th className="py-4 px-6 border-b border-gray-300">
+                                Contributor
+                            </th>
+                            <th className="py-4 px-6 border-b border-gray-300">
+                                Solved Issues
+                            </th>
                         </tr>
                     </thead>
 
                     <tbody>
                         {leaderBoardData.map((user, index) => (
-                            <tr key={index}>
-                                <td className="flex px-4 py-2">
+                            <tr key={index} className="text-center">
+                                <td className="flex px-6 py-4 border-b">
                                     <img
                                         className="rounded-full w-16 h-16 mr-4"
                                         src={user.avatarUrl}
                                         alt={`${user.username}'s avatar`}
                                     />
-                                    {user.username}
+                                    <div className="flex items-center justify-center">
+                                        {user.username}
+                                    </div>
                                 </td>
-                                <td>{user.prCount}</td>
+                                <td className="py-4 px-6 border-b">
+                                    {user.prCount}
+                                </td>
                             </tr>
                         ))}
                     </tbody>
