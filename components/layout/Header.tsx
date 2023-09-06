@@ -79,9 +79,7 @@ const Header = () => {
             <nav className="bg-slate-950 text-slate-50 backdrop-blur">
                 <div className="container mx-auto px-6 py-3">
                     <div className="flex items-center justify-between">
-                        <div>
-
-                        </div>
+                        <div></div>
                         <div className="md:hidden">
                             <button onClick={toggleSideNav}>
                                 {isOpen ? (
@@ -146,7 +144,6 @@ const Header = () => {
                                         </svg>
                                         {starCount !== null ? (
                                             <>
-                                                Star us in GitHub{" "}
                                                 <div
                                                     style={{
                                                         position: "relative",
@@ -154,7 +151,7 @@ const Header = () => {
                                                 >
                                                     <StarFilled
                                                         style={{
-                                                            fontSize: "2.1rem",
+                                                            fontSize: "2rem",
                                                             color: "gold",
                                                         }}
                                                     />
@@ -176,9 +173,17 @@ const Header = () => {
                                                 </div>
                                             </>
                                         ) : (
-                                            "Star us in GitHub"
+                                            ""
                                         )}
                                     </Link>
+                                </li>
+                                <li className="pr-8">
+                                    <iframe
+                                        src="https://github.com/sponsors/nikohoffren/button"
+                                        title="Sponsor nikohoffren"
+                                        height="32"
+                                        width="114"
+                                    ></iframe>
                                 </li>
 
                                 <li className={styles.buyButton}>
@@ -205,7 +210,7 @@ const Header = () => {
                         </Link>
                     )}
                     <Link
-                        className="w-full my-1 py-1 px-3 border border-transparent text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                        className="w-full my-2 py-1 px-3 border border-transparent text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                         href={
                             "https://github.com/nikohoffren/fork-commit-merge"
                         }
@@ -257,14 +262,9 @@ const Header = () => {
                         )}
                     </Link>
 
-                    <div className="ml-6 mb-10 mt-2">
-                        <div className={styles.buyButton}>
-                            <Coffee />
-                        </div>
-                    </div>
 
                     <Link href="/" onClick={() => setIsOpen(false)}>
-                        <div className="px-6 mb-3 block text-sm cursor-pointer hover:scale-105">
+                        <div className="px-6 mb-3 mt-4 block text-sm cursor-pointer hover:scale-105">
                             <Image
                                 src="/fork-commit-merge-logo.jpg"
                                 alt="Fork, Commit, Merge -logo"
@@ -384,6 +384,19 @@ const Header = () => {
                             How to Contribute?
                         </div>
                     </Link>
+                     <div className="ml-6 mt-3">
+                        <iframe
+                            src="https://github.com/sponsors/nikohoffren/button"
+                            title="Sponsor nikohoffren"
+                            height="32"
+                            width="114"
+                        ></iframe>
+                    </div>
+                    <div className="ml-6 mb-10 mt-4">
+                        <div className={styles.buyButton}>
+                            <Coffee />
+                        </div>
+                    </div>
                 </div>
             )}
             <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block shadow-bottom pr-25">
