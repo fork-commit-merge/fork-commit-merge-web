@@ -17,7 +17,7 @@ const ThreeJSLibrary = () => {
 
 
                     ThreeJS is a 3D library which leverages and expands the canvas API, webgl among other tools to create a rich library for creating and interacting with 3D designs and animations on websites.
-                    This library is rich with versatile tools for working with 3d and is widely accepted for creating 3d interfaces by developers.
+                    This library is rich with versatile tools for working with 3D and is widely accepted for creating 3d interfaces by developers.
                     This project was first released on the 24th of April, 2010 and has been contributed to by different developers since then to make the program better. This library also embraces the latest ES modules to improve the software and improve developer experience.
                 </p>
 
