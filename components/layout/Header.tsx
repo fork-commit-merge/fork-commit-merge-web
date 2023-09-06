@@ -122,9 +122,18 @@ const Header = () => {
                                         </div>
                                     </Link>
                                 </li>
+
+                                <li className="pr-8">
+                                    <iframe
+                                        src="https://github.com/sponsors/nikohoffren/button"
+                                        title="Sponsor nikohoffren"
+                                        height="32"
+                                        width="114"
+                                    ></iframe>
+                                </li>
                                 <li>
                                     <Link
-                                        className="py-0.5 px-3 mr-10 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                                        className="py-0.2 px-3 mr-9 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                                         href={
                                             "https://github.com/nikohoffren/fork-commit-merge"
                                         }
@@ -135,8 +144,8 @@ const Header = () => {
                                             viewBox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="currentColor"
-                                            width="24"
-                                            height="24"
+                                            width="23"
+                                            height="23"
                                             className="mr-2"
                                         >
                                             <title>GitHub icon</title>
@@ -177,15 +186,6 @@ const Header = () => {
                                         )}
                                     </Link>
                                 </li>
-                                <li className="pr-8">
-                                    <iframe
-                                        src="https://github.com/sponsors/nikohoffren/button"
-                                        title="Sponsor nikohoffren"
-                                        height="32"
-                                        width="114"
-                                    ></iframe>
-                                </li>
-
                                 <li className={styles.buyButton}>
                                     <Coffee />
                                 </li>
@@ -261,7 +261,6 @@ const Header = () => {
                             "Star us in GitHub"
                         )}
                     </Link>
-
 
                     <Link href="/" onClick={() => setIsOpen(false)}>
                         <div className="px-6 mb-3 mt-4 block text-sm cursor-pointer hover:scale-105">
@@ -384,7 +383,7 @@ const Header = () => {
                             How to Contribute?
                         </div>
                     </Link>
-                     <div className="ml-6 mt-3">
+                    <div className="ml-6 mt-3">
                         <iframe
                             src="https://github.com/sponsors/nikohoffren/button"
                             title="Sponsor nikohoffren"
