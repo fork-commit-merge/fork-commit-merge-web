@@ -15,6 +15,7 @@ import FlutterFramework from "../../components/frameworkComponents/FlutterFramew
 import ExpressFramework from "../../components/frameworkComponents/ExpressFramework";
 import ReactNativeFramework from "../../components/frameworkComponents/ReactNativeFramework";
 import GatsbyFramework from "../../components/frameworkComponents/GatsbyFramework";
+import ThreeJSLibrary from "../../components/frameworkComponents/ThreeJSLibrary";
 
 const FrameworkPage = () => {
     const router = useRouter();
@@ -46,6 +47,8 @@ const FrameworkPage = () => {
                 return <RailsFramework />;
             case "laravel":
                 return <LaravelFramework />;
+            case "threejs":
+                return <ThreeJSLibrary/>;
             case "flutter":
                 return <FlutterFramework />;
             case "reactnative":
