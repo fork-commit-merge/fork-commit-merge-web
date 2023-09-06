@@ -1067,4 +1067,28 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/113237020?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "trisid12"
     },
+    {
+        "id": "rudra1ghosh",
+        "url": "https://github.com/rudra1ghosh",
+        "avatar": "https://avatars.githubusercontent.com/u/134212273?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "rudra1ghosh"
+    },
+    {
+        "id": "pradeeptosarkar",
+        "url": "https://github.com/pradeeptosarkar",
+        "avatar": "https://avatars.githubusercontent.com/u/50446690?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "pradeeptosarkar"
+    },
+    {
+        "id": "AyoubKaz07",
+        "url": "https://github.com/AyoubKaz07",
+        "avatar": "https://avatars.githubusercontent.com/u/110729074?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "AyoubKaz07"
+    },
+    {
+        "id": "samba2001",
+        "url": "https://github.com/samba2001",
+        "avatar": "https://avatars.githubusercontent.com/u/107132036?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "samba2001"
+    },
 ];

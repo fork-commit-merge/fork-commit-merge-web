@@ -86,7 +86,7 @@ const Footer = () => {
                         <div className="text-center w-full">
                             <p className="text-base text-slate-50">
                                 <Link
-                                    className="py-1 px-3 mr-10 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                                    className="py-1 px-3 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                                     href={
                                         "https://github.com/nikohoffren/fork-commit-merge"
                                     }
@@ -97,8 +97,8 @@ const Footer = () => {
                                         viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor"
-                                        width="20"
-                                        height="20"
+                                        width="24"
+                                        height="24"
                                         className="mr-2"
                                     >
                                         <title>GitHub icon</title>
