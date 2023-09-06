@@ -1091,4 +1091,16 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/107132036?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "samba2001"
     },
+    {
+        "id": "swampholyten",
+        "url": "https://github.com/swampholyten",
+        "avatar": "https://avatars.githubusercontent.com/u/98195504?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "swampholyten"
+    },
+    {
+        "id": "Dhananjayshukla1",
+        "url": "https://github.com/Dhananjayshukla1",
+        "avatar": "https://avatars.githubusercontent.com/u/84383454?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Dhananjayshukla1"
+    },
 ];
