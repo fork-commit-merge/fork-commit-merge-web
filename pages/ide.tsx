@@ -5,7 +5,7 @@ export default function IDE() {
     return (
         <div className="bg-slate-900 text-white min-h-screen">
             <div className="py-10 px-5 flex flex-col justify-center items-center">
-                <h1 className="text-4xl font-bold mb-6">
+                <h1 className="text-4xl font-bold mb-6 text-center">
                     IDEs: Integrated Development Environments
                 </h1>
                 <h2 className="text-3xl font-bold mb-6">What is an IDE?</h2>
