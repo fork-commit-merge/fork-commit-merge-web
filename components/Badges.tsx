@@ -50,7 +50,7 @@ const Badges: React.FC = () => {
                     alt="NextJS"
                     className="mr-1 mb-1"
                 />
-                 <img
+                <img
                     src="https://img.shields.io/badge/three-black?style=for-the-badge&logo=three.js&logoColor=white"
                     alt="ThreeJS"
                     className="mr-1 mb-1"
@@ -138,6 +138,11 @@ const Badges: React.FC = () => {
                 <img
                     src="https://img.shields.io/badge/ruby-%23E32F26.svg?style=for-the-badge&logo=ruby&logoColor=white"
                     alt="Ruby"
+                    className="mr-1 mb-1"
+                />
+                <img
+                    src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white"
+                    alt="Ruby on Rails"
                     className="mr-1 mb-1"
                 />
                 <img
