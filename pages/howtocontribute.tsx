@@ -29,7 +29,7 @@ export default function HowToContribute() {
                         target="blank"
                     >
                         goodfirstissues.com.
-                    </a>{" "}
+                    </a>
                     <br />
                     <br />
                     However, you don&apos;t necessary have to start looking for
