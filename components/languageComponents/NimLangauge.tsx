@@ -51,7 +51,7 @@ const NimLanguage = () => {
                     </li>
                     <li>
                         - When defining exception and error types, add the
-                        "Error" or "Defect" suffix to their names.
+                        &quot;Error&quot; or &quot;Defect&quot; suffix to their names.
                     </li>
                     <li>
                         - Begin comments in Nim with the hash character (#). For
