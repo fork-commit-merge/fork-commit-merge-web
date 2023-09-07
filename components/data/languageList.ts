@@ -33,4 +33,12 @@ export const languageList = [
     { name: "SQL", link: "/languages/sql" },
     { name: "Bash", link: "/languages/bash" },
     { name: "Perl", link: "/languages/perl" },
+    { name: "Crystal", link: "/languages/crystal" },
+    { name: "Groovy", link: "/languages/groovy" },
+    { name: "D", link: "/languages/d" },
+    { name: "Elm", link: "/languages/elm" },
+    { name: "Nim", link: "/languages/nim" },
+    { name: "Octave", link: "/languages/octave" },
+    { name: "Rescript", link: "/languages/rescript" },
+    { name: "Scratch", link: "/languages/scratch" },
 ];
