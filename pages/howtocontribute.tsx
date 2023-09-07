@@ -19,14 +19,25 @@ export default function HowToContribute() {
                     <br />
                     <br />
                     Identify a project that interests you. Many projects
-                    specifically mark issues as &quot;good for beginners&quot;
-                    or similar to that to help you find a starting point. You
-                    don&apos;t necessary have to start looking for issues, you
-                    can also start really small with just finding typos or
-                    broken links in the documentation such as in the README or
-                    CONTRIBUTING files on different repositories and making a
-                    pull request. This is a great way to get started with open
-                    source contributions.
+                    specifically mark issues as &quot;good for beginners&quot;,
+                    &quot;good first issue&quot; or similar to that to help you
+                    find a starting point. One good website for looking these
+                    kind of issues is{" "}
+                    <a
+                        href="https://goodfirstissues.com"
+                        className="hover:underline text-blue-400"
+                        target="blank"
+                    >
+                        goodfirstissues.com.
+                    </a>{" "}
+                    <br />
+                    <br />
+                    However, you don&apos;t necessary have to start looking for
+                    issues, you can also start really small with just finding
+                    typos or broken links in the documentation such as in the
+                    README or CONTRIBUTING files on different repositories and
+                    making a pull request. This is a great way to get started
+                    with open source contributions.
                     <br />
                     <br />
                     <strong>
@@ -134,7 +145,7 @@ export default function HowToContribute() {
                         Submitting Your Changes
                     </a>
                     <span className="mr-2"></span>
-                    sections. You can also check out the {" "}
+                    sections. You can also check out the{" "}
                     <Link
                         href="/resources"
                         className="hover:underline text-blue-400"
