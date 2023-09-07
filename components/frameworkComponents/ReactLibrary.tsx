@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-const ReactFramework = () => {
+const ReactLibrary = () => {
     return (
         <div className="flex justify-center items-center bg-slate-900">
             <div className="text-center text-slate-50 max-w-2xl">
@@ -65,4 +65,4 @@ const ReactFramework = () => {
     );
 };
 
-export default ReactFramework;
+export default ReactLibrary;

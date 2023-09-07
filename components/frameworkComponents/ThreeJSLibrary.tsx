@@ -13,27 +13,25 @@ const ThreeJSLibrary = () => {
 
                 <h2 className="text-2xl font-bold mb-4">What is ThreeJS?</h2>
                 <p className="mb-4">
-                    ThreeJS is a 3D library which leverages and expands the
-                    canvas API, webgl among other tools to create a rich library
-                    for creating and interacting with 3D designs and animations
-                    on websites. This library is rich with versatile tools for
-                    working with 3D and is widely accepted for creating 3d
-                    interfaces by developers. This project was first released on
-                    the 24th of April, 2010 and has been contributed to by
-                    different developers since then to make the program better.
-                    This library also embraces the latest ES modules to improve
-                    the software and improve developer experience.
+                    Three (or ThreeJS) is a 3D library that extends the Canvas API and
+                    WebGL. It offers a comprehensive set of features for
+                    creating and interacting with 3D designs and animations in
+                    web applications. First released on April 24, 2010, the
+                    library has received contributions from various developers
+                    to enhance its capabilities. It also utilizes the latest ES
+                    modules to improve both the library and the developer
+                    experience.
                 </p>
 
                 <h2 className="text-2xl font-bold mb-4">Why Use ThreeJS?</h2>
                 <p className="mb-6">
-                    ThreeJS delivers a rich set of tools to deliver rich
-                    animations with its ready to use tools like Mesh, Geometry,
-                    Materials among others. It also supports different model
-                    types like GLB, GLTF, OBJ and many more and also provides
-                    APIs to help load and interact with them. This library also
-                    has a rich support by other developers and a forum for
-                    helping people use it.
+                    ThreeJS comes with a robust set of features for delivering
+                    high-quality animations. It includes ready-to-use tools such
+                    as Mesh, Geometry, and Materials. The library supports
+                    various model types like GLB, GLTF, and OBJ and provides
+                    APIs for easy loading and interaction. Additionally, it has
+                    a strong community backing and a dedicated forum for
+                    support.
                 </p>
 
                 <h4 className="text-2xl font-bold my-4">
@@ -41,23 +39,20 @@ const ThreeJSLibrary = () => {
                 </h4>
                 <ul>
                     <li>
-                        - Always check the browser console for error messages.
+                        Always check the browser console for error messages.
                     </li>
                     <li>
-                        - Make sure you have light on your scene to help you
-                        work on your scene. Your scene may not show if the light
-                        is not there.
+                        Ensure you add light to your scene; otherwise, your
+                        objects may not be visible.
                     </li>
                     <li>
-                        - Always set your camera to help you see what you are
-                        working on. A project may load but be out of view of the
-                        camera hence will not show.
+                        Properly set up your camera to ensure all elements are
+                        within view.
                     </li>
                     <li>
-                        - The best way to keep your project responsive is to get
-                        the window height and width divided by 2. This should be
-                        in your resize event listener to help whenever browser
-                        is resized.
+                        To keep your project responsive, adjust the window
+                        height and width by dividing them by 2. Add this logic
+                        to your resize event listener.
                     </li>
                 </ul>
 

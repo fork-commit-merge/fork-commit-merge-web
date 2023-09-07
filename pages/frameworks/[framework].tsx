@@ -4,7 +4,6 @@ import AngularFramework from "../../components/frameworkComponents/AngularFramew
 import FrameworkNotSupported from "../../components/frameworkComponents/FrameworkNotSupported";
 import SvelteFramework from "../../components/frameworkComponents/SvelteFramework";
 import React from "react";
-import ReactFramework from "../../components/frameworkComponents/ReactFramework";
 import FlaskFramework from "../../components/frameworkComponents/FlaskFramework";
 import NextJSFramework from "../../components/frameworkComponents/NextJSFramework";
 import ViteFramework from "../../components/frameworkComponents/ViteFramework";
@@ -16,6 +15,7 @@ import ExpressFramework from "../../components/frameworkComponents/ExpressFramew
 import ReactNativeFramework from "../../components/frameworkComponents/ReactNativeFramework";
 import GatsbyFramework from "../../components/frameworkComponents/GatsbyFramework";
 import ThreeJSLibrary from "../../components/frameworkComponents/ThreeJSLibrary";
+import ReactLibrary from "../../components/frameworkComponents/ReactLibrary";
 
 const FrameworkPage = () => {
     const router = useRouter();
@@ -26,7 +26,7 @@ const FrameworkPage = () => {
             case "express":
                 return <ExpressFramework />;
             case "react":
-                return <ReactFramework />;
+                return <ReactLibrary />;
             case "next":
                 return <NextJSFramework />;
             case "three":
