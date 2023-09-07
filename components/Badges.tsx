@@ -222,6 +222,11 @@ const Badges: React.FC = () => {
                     className="mr-1 mb-1"
                 />
                 <img
+                    src="https://img.shields.io/badge/smalltalk-%231572B6.svg?style=for-the-badge&logo=smalltalk&logoColor=%23F7DF1E"
+                    alt="Smalltalk"
+                    className="mr-1 mb-1"
+                />
+                <img
                     src="https://img.shields.io/badge/Zig-%23F7A41D.svg?style=for-the-badge&logo=zig&logoColor=white"
                     alt="Zig"
                     className="mr-1 mb-1"
