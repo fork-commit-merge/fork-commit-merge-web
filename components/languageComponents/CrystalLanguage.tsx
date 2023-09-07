@@ -50,7 +50,7 @@ const CrystalLanguage = () => {
                     <li>- Constants should use SCREAMING_SNAKE_CASE.</li>
                     <li>
                         - When crafting exception messages, follow sentence
-                        case, but it's acceptable to begin with lowercase
+                        case, but it&apos;s acceptable to begin with lowercase
                         letters for code-related terms or acronyms.
                     </li>
                 </ul>

@@ -29,9 +29,10 @@ const OctaveLanguage = () => {
                     Octave is chosen for its capabilities in numerical
                     computing, data analysis, and scientific research. Its
                     open-source nature makes it an affordable option for
-                    individuals and organizations. Octave's compatibility with
-                    MATLAB simplifies code migration, and its extensive library
-                    of mathematical functions streamlines complex calculations.
+                    individuals and organizations. Octave&apos;s compatibility
+                    with MATLAB simplifies code migration, and its extensive
+                    library of mathematical functions streamlines complex
+                    calculations.
                 </p>
 
                 <h4 className="text-2xl font-bold my-4">

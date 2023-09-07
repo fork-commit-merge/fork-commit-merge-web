@@ -27,11 +27,11 @@ const ElmLanguage = () => {
                     Elm is chosen for web development due to its reliability,
                     maintainability, and safety features. Its strict typing
                     catches errors early, ensuring a stable and bug-free
-                    application. Elm's architecture simplifies code organization
-                    and state management, making it easier to maintain and
-                    extend. It also integrates seamlessly with JavaScript,
-                    making it a practical choice for web development while
-                    prioritizing developer productivity and safety.
+                    application. Elm&apos;s architecture simplifies code
+                    organization and state management, making it easier to
+                    maintain and extend. It also integrates seamlessly with
+                    JavaScript, making it a practical choice for web development
+                    while prioritizing developer productivity and safety.
                 </p>
 
                 <h4 className="text-2xl font-bold my-4">

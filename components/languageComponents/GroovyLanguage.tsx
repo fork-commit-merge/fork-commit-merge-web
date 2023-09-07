@@ -16,9 +16,9 @@ const GroovyLanguage = () => {
                 </h2>
                 <p className="mb-4">
                     Apache Groovy is a dynamic, optionally typed language
-                    running on the Java Virtual Machine (JVM). It's concise,
-                    Java-compatible, and often used for scripting, offering
-                    features like dynamic typing, metaprogramming, and
+                    running on the Java Virtual Machine (JVM). It&apos;s
+                    concise, Java-compatible, and often used for scripting,
+                    offering features like dynamic typing, metaprogramming, and
                     integration with Java libraries.
                 </p>
 
@@ -40,8 +40,8 @@ const GroovyLanguage = () => {
                 </h4>
                 <ul>
                     <li>
-                        - Semicolons are optional, and it's more idiomatic to
-                        omit them.
+                        - Semicolons are optional, and it&apos;s more idiomatic
+                        to omit them.
                     </li>
                     <li>
                         - The last expression in a method body is automatically
@@ -52,8 +52,8 @@ const GroovyLanguage = () => {
                         - By default, classes and methods are considered public.
                     </li>
                     <li>
-                        - In Groovy, == corresponds to Java's equals(), and is()
-                        is used for reference equality comparisons.
+                        - In Groovy, == corresponds to Java&apos;s equals(), and
+                        is() is used for reference equality comparisons.
                     </li>
                 </ul>
                 <br />

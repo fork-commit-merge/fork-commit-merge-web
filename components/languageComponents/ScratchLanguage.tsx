@@ -59,8 +59,8 @@ const ScratchLanguage = () => {
                         event-driven interactivity.
                     </li>
                     <li>
-                        - Scratch's design encourages creativity and learning
-                        through innovative project development.
+                        - Scratch&apos;s design encourages creativity and
+                        learning through innovative project development.
                     </li>
                 </ul>
                 <br />

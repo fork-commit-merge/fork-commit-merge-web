@@ -16,9 +16,9 @@ const NimLanguage = () => {
                     Nim is a versatile and efficient language known for its
                     performance, safety, and clean syntax. It offers static
                     typing and powerful metaprogramming tools. Developers can
-                    choose between manual and automatic memory management. Nim's
-                    active community and interoperability with other languages
-                    make it a valuable choice for various tasks. Its
+                    choose between manual and automatic memory management.
+                    Nim&apos;s active community and interoperability with other
+                    languages make it a valuable choice for various tasks. Its
                     cross-platform support and extensive standard library
                     further enhance its appeal.
                 </p>
