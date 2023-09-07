@@ -50,6 +50,11 @@ const Badges: React.FC = () => {
                     alt="NextJS"
                     className="mr-1 mb-1"
                 />
+                 <img
+                    src="https://img.shields.io/badge/three-black?style=for-the-badge&logo=three.js&logoColor=white"
+                    alt="ThreeJS"
+                    className="mr-1 mb-1"
+                />
                 <img
                     src="https://img.shields.io/badge/vite-%239B30FF.svg?style=for-the-badge&logo=vite&logoColor=yellow"
                     alt="Vite"

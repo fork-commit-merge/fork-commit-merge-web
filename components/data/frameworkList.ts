@@ -2,6 +2,7 @@ export const frameworkList = [
     { name: "Express", link: "/frameworks/express" },
     { name: "React", link: "/frameworks/react" },
     { name: "Next", link: "/frameworks/next" },
+    { name: "Three", link: "/frameworks/three" },
     { name: "Vite", link: "/frameworks/vite" },
     { name: "Vue", link: "/frameworks/vue" },
     { name: "Angular", link: "/frameworks/angular" },
@@ -13,6 +14,4 @@ export const frameworkList = [
     { name: "Laravel", link: "/frameworks/laravel" },
     { name: "Flutter", link: "/frameworks/flutter" },
     { name: "React Native", link: "/frameworks/reactnative" },
-    {name:'ThreeJS', link:"/frameworks/threejs"}
 ];
-

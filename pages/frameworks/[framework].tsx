@@ -29,6 +29,8 @@ const FrameworkPage = () => {
                 return <ReactFramework />;
             case "next":
                 return <NextJSFramework />;
+            case "three":
+                return <ThreeJSLibrary />;
             case "vite":
                 return <ViteFramework />;
             case "vue":
@@ -47,8 +49,6 @@ const FrameworkPage = () => {
                 return <RailsFramework />;
             case "laravel":
                 return <LaravelFramework />;
-            case "threejs":
-                return <ThreeJSLibrary/>;
             case "flutter":
                 return <FlutterFramework />;
             case "reactnative":
