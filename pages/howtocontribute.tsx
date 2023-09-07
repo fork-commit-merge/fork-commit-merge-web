@@ -21,7 +21,7 @@ export default function HowToContribute() {
                     Identify a project that interests you. Many projects
                     specifically mark issues as &quot;good for beginners&quot;,
                     &quot;good first issue&quot; or similar to that to help you
-                    find a starting point. One good website for looking these
+                    find a starting point. One excellent website for looking these
                     kind of issues is{" "}
                     <a
                         href="https://goodfirstissues.com"
