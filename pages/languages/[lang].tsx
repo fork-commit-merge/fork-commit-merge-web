@@ -34,6 +34,14 @@ import PerlLanguage from "../../components/languageComponents/PerlLanguage";
 import FSharpLanguage from "../../components/languageComponents/FSharpLanguage";
 import SolidityLanguage from "../../components/languageComponents/SolidityLanguage";
 import VyperLanguage from "../../components/languageComponents/VyperLanguage";
+import CrystalLanguage from "../../components/languageComponents/CrystalLanguage";
+import GroovyLanguage from "../../components/languageComponents/GroovyLanguage";
+import DLanguage from "../../components/languageComponents/DLanguage";
+import ElmLanguage from "../../components/languageComponents/ElmLanguage";
+import NimLanguage from "../../components/languageComponents/NimLangauge";
+import OctaveLanguage from "../../components/languageComponents/OctaveLanguage";
+import RescriptLanguage from "../../components/languageComponents/RescriptLanguage";
+import ScratchLanguage from "../../components/languageComponents/ScratchLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -109,6 +117,22 @@ const LanguagePage = () => {
                 return <BashLanguage />;
             case "perl":
                 return <PerlLanguage />;
+            case "crystal":
+                return <CrystalLanguage />;
+            case "groovy":
+                return <GroovyLanguage />;
+            case "d":
+                return <DLanguage />;
+            case "elm":
+                return <ElmLanguage />;
+            case "nim":
+                return <NimLanguage />;
+            case "octave":
+                return <OctaveLanguage />;
+            case "rescript":
+                return <RescriptLanguage />;
+            case "scratch":
+                return <ScratchLanguage />;
             default:
                 return <LanguageNotSupported />;
         }
