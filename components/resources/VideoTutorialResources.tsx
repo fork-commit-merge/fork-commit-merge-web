@@ -55,8 +55,7 @@ const VideoTutorialResources: React.FC = () => {
                             <p>
                                 This channel is dedicated to providing free
                                 education to those that can&apos;t afford
-                                college, bootcamps, and whatever crap coding
-                                gurus try to sell you.
+                                college or bootcamps.
                             </p>
                         </li>
                         <li>
