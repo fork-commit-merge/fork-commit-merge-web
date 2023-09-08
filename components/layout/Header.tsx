@@ -108,13 +108,7 @@ const Header = () => {
                                         </div>
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/stars">
-                                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                            Stars
-                                        </div>
-                                    </Link>
-                                </li>
+
                                 <li>
                                     <Link href="/adventures">
                                         <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
@@ -362,11 +356,6 @@ const Header = () => {
                     <Link href="/leaderboard" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Leaderboard
-                        </div>
-                    </Link>
-                    <Link href="/stars" onClick={() => setIsOpen(false)}>
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Stars
                         </div>
                     </Link>
                     <Link href="/adventures" onClick={() => setIsOpen(false)}>

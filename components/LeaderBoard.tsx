@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import { fetchTopUsersByPullRequests } from "../pages/api/fetchTopUsersByPullRequests";
+import { StarFilled } from "@ant-design/icons";
 
 interface UserStat {
     username: string;
@@ -29,6 +30,34 @@ export const LeaderBoard: React.FC = () => {
             });
     }, []);
 
+    const renderStar = (rank: number) => {
+        let color = "";
+        switch (rank) {
+            case 0:
+                color = "gold";
+                break;
+            case 1:
+                color = "silver";
+                break;
+            case 2:
+                color = "var(--color-bronze)";
+                break;
+            default:
+                return null;
+        }
+        return (
+            <StarFilled
+                style={{
+                    position: "absolute",
+                    top: 28,
+                    right: 0,
+                    fontSize: 50,
+                    color: color,
+                }}
+            />
+        );
+    };
+
     return (
         <div className="text-center">
             {isLoading ? (
@@ -56,7 +85,8 @@ export const LeaderBoard: React.FC = () => {
                         {leaderBoardData && leaderBoardData.length > 0 ? (
                             leaderBoardData.map((user, index) => (
                                 <tr key={index} className="text-center">
-                                    <td className="flex px-6 py-4 border-b">
+                                    <td className="flex px-6 py-4 border-b relative">
+                                        {renderStar(index)}
                                         <img
                                             className="rounded-full w-16 h-16 mr-4"
                                             src={user.avatarUrl}

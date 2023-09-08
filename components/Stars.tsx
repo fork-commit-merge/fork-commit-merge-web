@@ -4,15 +4,13 @@ import React from "react";
 
 const Stars: React.FC = () => {
     return (
-        <div className="bg-slate-900 text-slate-50 flex flex-col min-h-screen px-10">
+        <div className="bg-slate-900 text-slate-50 flex flex-col px-10">
             <div className="text-center flex items-center justify-center max-w-2xl mx-auto">
                 <div className="pb-6">
                     <h1 className="text-4xl py-10">Star Badges</h1>
                     <p className="my-4">
-                        In the List of Contributors section of the home page,
-                        you can see all the users that have contributed to the
-                        Fork, Commit, Merge project. The top 3 contributors are
-                        awarded with a star badge.
+                        The top 3 contributors for Fork, Commit, Merge
+                        repository are awarded with a star badge.
                     </p>
                     <p className="my-4">
                         The contributors are ranked by the number of merged pull
@@ -24,12 +22,7 @@ const Stars: React.FC = () => {
                         contributor with the third most merged pull requests is
                         awarded with a bronze star badge.
                     </p>
-                    <p>
-                        If you login with your GitHub account, you can see your
-                        own Merged pull requests history. In the Leaderboard
-                        section, you can see the top 20 contributors by the
-                        number of merged pull requests.
-                    </p>
+
                     <hr className="my-6" />
                     <div className="flex justify-center my-6">
                         <StarFilled

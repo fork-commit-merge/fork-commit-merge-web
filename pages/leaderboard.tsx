@@ -1,5 +1,6 @@
 import React from "react";
 import { LeaderBoard } from "../components/LeaderBoard";
+import Stars from "../components/Stars";
 
 const LeaderBoardPage: React.FC = () => {
     return (
@@ -11,7 +12,9 @@ const LeaderBoardPage: React.FC = () => {
                         Top 20 Contributors by Solved Issues
                     </h2>
                     <LeaderBoard />
+                    <Stars />
                 </div>
+
             </div>
         </div>
     );
