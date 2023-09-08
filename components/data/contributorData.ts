@@ -1103,4 +1103,28 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/84383454?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "Dhananjayshukla1"
     },
+    {
+        "id": "LloydAAmaranto",
+        "url": "https://github.com/LloydAAmaranto",
+        "avatar": "https://avatars.githubusercontent.com/u/77998199?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "LloydAAmaranto"
+    },
+    {
+        "id": "mdhvg",
+        "url": "https://github.com/mdhvg",
+        "avatar": "https://avatars.githubusercontent.com/u/57744109?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "mdhvg"
+    },
+    {
+        "id": "RaiZiStyle",
+        "url": "https://github.com/RaiZiStyle",
+        "avatar": "https://avatars.githubusercontent.com/u/37843125?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "RaiZiStyle"
+    },
+    {
+        "id": "Faisalhs51",
+        "url": "https://github.com/Faisalhs51",
+        "avatar": "https://avatars.githubusercontent.com/u/89152237?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Faisalhs51"
+    },
 ];
