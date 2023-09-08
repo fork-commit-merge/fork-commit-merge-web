@@ -106,6 +106,11 @@ const Badges: React.FC = () => {
                     className="mr-1 mb-1"
                 />
                 <img
+                    src="https://img.shields.io/badge/D-CC342D?style=for-the-badge&logo=d&logoColor=white"
+                    alt="D"
+                    className="mr-1 mb-1"
+                />
+                <img
                     src="https://img.shields.io/badge/F%23-378BBA.svg?style=for-the-badge&logo=fsharp&logoColor=fff"
                     alt="F#"
                     className="mr-1 mb-1"
