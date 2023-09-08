@@ -33,28 +33,45 @@ export default function Adventures() {
                         files. There is a folder called `adventure` in
                         `tasks/markdown/hard` directory, in which you can create
                         various of Markdown files representing different stages
-                        or events in the game. First you have to Write a brief
-                        description of the scenario and provide options to the
-                        player (as links pointing to other Markdown files). For
-                        instance, you could have options like Go north and Go
-                        south which point to `north.md` and `south.md`,
-                        respectively. Create the Markdown files for all possible
-                        paths in the game. Each file should describe the current
-                        situation and provide further options to the player.
-                        Make sure to include a way to win and a way to lose the
-                        game. Expected outcome is fully playable text-based
-                        adventure game made entirely of linked Markdown files.
+                        or events in the game.
+                        <br />
+                        <br />
+                        First you have to Write a brief description of the
+                        scenario and provide options to the player (as links
+                        pointing to other Markdown files). For instance, you
+                        could have options like Go north and Go south which
+                        point to `north.md` and `south.md`, respectively. Create
+                        the Markdown files for all possible paths in the game.
+                        Each file should describe the current situation and
+                        provide further options to the player. Make sure to
+                        include a way to win and a way to lose the game.
+                        Expected outcome is fully playable text-based adventure
+                        game made entirely of linked Markdown files.
+                        <br />
+                        <br />
                         The game should be complex enough to provide some level
                         of challenge to the player, with a variety of different
-                        paths, outcomes, and choices. Creating this game might be quite complex, as it requires planning the
+                        paths, outcomes, and choices. Creating this game might
+                        be quite complex, as it requires planning the
                         game&apos;s structure, writing engaging text, and
                         managing many interconnected Markdown files. However, it
-                        will be a great exercise for you to learn advanced Markdown
-                        usage. <br />
-                        Markdown code can be tested in a editor like
-                        [this](https://stackedit.io/).
+                        will be a great exercise for you to learn advanced
+                        Markdown usage.
+                        <br />
+                        <br />
+                        Markdown code can be tested in a editor like{" "}
+                        <a
+                            href="https://stackedit.io/"
+                            target="blank"
+                            className="underline hover:text-blue-300"
+                        >
+                            https://stackedit.io
+                        </a>
+                        .
                     </p>
-                    <h3 className="mt-10 mb-6 text-2xl">List of finished games:</h3>
+                    <h3 className="mt-10 mb-6 text-2xl">
+                        List of finished games:
+                    </h3>
                     <ul className="list-disc list-inside">
                         <li>
                             <Link

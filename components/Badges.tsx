@@ -4,7 +4,7 @@ import React from "react";
 const Badges: React.FC = () => {
     return (
         <>
-            <div className="flex flex-wrap justify-center items-center mb-6 max-w-3xl mx-auto">
+            <div className="flex flex-wrap justify-center items-center mb-6 max-w-4xl mx-auto">
                 <img
                     src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
                     alt="HTML5"
@@ -28,6 +28,11 @@ const Badges: React.FC = () => {
                 <img
                     src="https://img.shields.io/badge/CoffeeScript-2F2625?style=for-the-badge&logo=CoffeeScript&logoColor=white"
                     alt="CoffeeScript"
+                    className="mr-1 mb-1"
+                />
+                <img
+                    src="https://img.shields.io/badge/rescript-%2314162c?style=for-the-badge&logo=rescript&logoColor=e34c4c"
+                    alt="ReScript"
                     className="mr-1 mb-1"
                 />
                 <img
@@ -116,6 +121,11 @@ const Badges: React.FC = () => {
                     className="mr-1 mb-1"
                 />
                 <img
+                    src="https://img.shields.io/badge/Groovy-4298B8?style=for-the-badge&logo=apachegroovy&logoColor=white"
+                    alt="Groovy"
+                    className="mr-1 mb-1"
+                />
+                <img
                     src="https://img.shields.io/badge/scala-%23E32F26.svg?style=for-the-badge&logo=scala&logoColor=white"
                     alt="Scala"
                     className="mr-1 mb-1"
@@ -150,6 +160,12 @@ const Badges: React.FC = () => {
                     alt="Elixir"
                     className="mr-1 mb-1"
                 />
+                <img
+                    src="https://img.shields.io/badge/Crystal-000000?style=for-the-badge&logo=crystal&logoColor=white"
+                    alt="Crystal"
+                    className="mr-1 mb-1"
+                />
+
                 <img
                     src="https://img.shields.io/badge/php-%23007BCC.svg?style=for-the-badge&logo=php&logoColor=white"
                     alt="PHP"
@@ -234,6 +250,21 @@ const Badges: React.FC = () => {
                 <img
                     src="https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white"
                     alt="R"
+                    className="mr-1 mb-1"
+                />
+                <img
+                    src="https://img.shields.io/badge/nim-%23FFE953.svg?style=for-the-badge&logo=nim&logoColor=white"
+                    alt="Nim"
+                    className="mr-1 mb-1"
+                />
+                <img
+                    src="https://img.shields.io/badge/OCTAVE-darkblue?style=for-the-badge&logo=octave&logoColor=fcd683"
+                    alt="Octave"
+                    className="mr-1 mb-1"
+                />
+                <img
+                    src="https://img.shields.io/badge/Scratch-4D97FF?style=for-the-badge&logo=Scratch&logoColor=white"
+                    alt="Scratch"
                     className="mr-1 mb-1"
                 />
                 <img

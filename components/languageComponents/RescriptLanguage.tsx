@@ -6,12 +6,12 @@ const RescriptLanguage = () => {
                 <div className="flex flex-wrap justify-center items-center">
                     <img
                         src="https://img.shields.io/badge/rescript-%2314162c?style=for-the-badge&logo=rescript&logoColor=e34c4c"
-                        alt="Rescript"
+                        alt="ReScript"
                         className="mb-10 h-16 rounded-sm"
                     />
                 </div>
 
-                <h2 className="text-2xl font-bold mb-4">What is Rescript?</h2>
+                <h2 className="text-2xl font-bold mb-4">What is ReScript?</h2>
                 <p className="mb-4">
                     ReScript is a modern, statically typed programming language
                     and development toolchain designed for building web
@@ -23,7 +23,7 @@ const RescriptLanguage = () => {
                     ecosystems.
                 </p>
 
-                <h2 className="text-2xl font-bold mb-4">Why Use Rescript?</h2>
+                <h2 className="text-2xl font-bold mb-4">Why Use ReScript?</h2>
                 <p className="mb-6">
                     ReScript is chosen for web development due to its strong
                     typing, seamless JavaScript integration, and functional
@@ -35,7 +35,7 @@ const RescriptLanguage = () => {
                 </p>
 
                 <h4 className="text-2xl font-bold my-4">
-                    Rescript Best Practices and Coding Style Guide
+                    ReScript Best Practices and Coding Style Guide
                 </h4>
                 <ul>
                     <li>
@@ -60,7 +60,7 @@ const RescriptLanguage = () => {
                     href="https://rescript-lang.org/docs/manual/latest/introduction"
                     className="text-xl font-bold underline hover:text-blue-400"
                 >
-                    Rescript - Official Documentation
+                    ReScript - Official Documentation
                 </a>
             </div>
         </div>
