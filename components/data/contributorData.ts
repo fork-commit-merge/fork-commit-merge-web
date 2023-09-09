@@ -1127,4 +1127,46 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/89152237?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "Faisalhs51"
     },
+    {
+        "id": "boialok",
+        "url": "https://github.com/boialok",
+        "avatar": "https://avatars.githubusercontent.com/u/143185228?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "boialok"
+    },
+    {
+        "id": "BernEsports",
+        "url": "https://github.com/BernEsports",
+        "avatar": "https://avatars.githubusercontent.com/u/72928553?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "BernEsports"
+    },
+    {
+        "id": "sanjay14073",
+        "url": "https://github.com/sanjay14073",
+        "avatar": "https://avatars.githubusercontent.com/u/103362239?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "sanjay14073"
+    },
+    {
+        "id": "waddlesmcsqueezy",
+        "url": "https://github.com/waddlesmcsqueezy",
+        "avatar": "https://avatars.githubusercontent.com/u/19556279?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "waddlesmcsqueezy"
+    },
+    {
+        "id": "sohaildotcss",
+        "url": "https://github.com/sohaildotcss",
+        "avatar": "https://avatars.githubusercontent.com/u/89704607?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "sohaildotcss"
+    },
+    {
+        "id": "mokshanirugutti",
+        "url": "https://github.com/mokshanirugutti",
+        "avatar": "https://avatars.githubusercontent.com/u/62692898?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "mokshanirugutti"
+    },
+    {
+        "id": "cmsamaaa",
+        "url": "https://github.com/cmsamaaa",
+        "avatar": "https://avatars.githubusercontent.com/u/102757707?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "cmsamaaa"
+    },
 ];

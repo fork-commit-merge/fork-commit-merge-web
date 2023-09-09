@@ -20,7 +20,7 @@ export const renderStar = (rank: number) => {
             style={{
                 position: "absolute",
                 top: 28,
-                right: 0,
+                right: -50,
                 fontSize: 50,
                 color: color,
             }}
