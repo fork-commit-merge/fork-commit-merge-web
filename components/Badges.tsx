@@ -151,6 +151,16 @@ const Badges: React.FC = () => {
                     className="mr-1 mb-1"
                 />
                 <img
+                    src="https://img.shields.io/badge/Vyper-%23363636.svg?style=for-the-badge&logo=vyper&logoColor=white"
+                    alt="Vyper"
+                    className="mr-1 mb-1"
+                />
+                <img
+                    src="https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white"
+                    alt="Solidity"
+                    className="mr-1 mb-1"
+                />
+                <img
                     src="https://img.shields.io/badge/ruby-%23E32F26.svg?style=for-the-badge&logo=ruby&logoColor=white"
                     alt="Ruby"
                     className="mr-1 mb-1"
@@ -272,12 +282,6 @@ const Badges: React.FC = () => {
                     alt="Scratch"
                     className="mr-1 mb-1"
                 />
-                <img
-                    src="https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white"
-                    alt="Solidity"
-                    className="mr-1 mb-1"
-                />
-
                 <img
                     src="https://img.shields.io/badge/sql-%23FF4500.svg?style=for-the-badge&logo=sqlite&logoColor=white"
                     alt="SQL"
