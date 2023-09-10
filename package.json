@@ -28,7 +28,7 @@
     "next": "13.4.18",
     "next-auth": "^4.22.3",
     "next-connect": "^1.0.0",
-    "postcss": "8.4.27",
+    "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-loader-spinner": "^5.4.5",
