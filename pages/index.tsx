@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import IndexIntro from "../components/IndexIntro";
-import Descriptions from "../components/Descriptions";
-import IndexMain from "../components/IndexMain";
+import IndexIntro from "../components/index/IndexIntro";
+import Descriptions from "../components/index/Descriptions";
+import IndexMain from "../components/index/IndexMain";
 
 export default function Home() {
     return (

@@ -4,8 +4,8 @@ import { Contributors } from "./Contributors";
 import { Contributor, TopThreeContributors } from "./TopThreeContributors";
 import Badges from "./Badges";
 import { useEffect, useState } from "react";
-import { fetchTopThreeUsersByPullRequests } from "../pages/api/fetchTopThreeUsersByPullRequests";
-import { contributorData } from "./data/contributorData";
+import { fetchTopThreeUsersByPullRequests } from "../../pages/api/fetchTopThreeUsersByPullRequests";
+import { contributorData } from "../data/contributorData";
 
 const IndexMain: React.FC = () => {
     const [contributors, setContributors] = useState<Contributor[]>([]);
