@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Coffee from "../Coffee";
+import Coffee from "../buttons/Coffee";
 import styles from "../../styles/Coffee.module.css";
 import React from "react";
 import { useSession } from "next-auth/react";

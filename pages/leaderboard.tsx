@@ -1,6 +1,6 @@
 import React from "react";
-import { LeaderBoard } from "../components/LeaderBoard";
-import Stars from "../components/Stars";
+import { LeaderBoard } from "../components/leaderboard/LeaderBoard";
+import Stars from "../components/leaderboard/Stars";
 
 const LeaderBoardPage: React.FC = () => {
     return (
