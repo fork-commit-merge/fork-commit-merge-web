@@ -75,6 +75,10 @@ const LanguagePage = () => {
                 return <ScalaLanguage />;
             case "python":
                 return <PythonLanguage />;
+            case "solidity":
+                return <SolidityLanguage />;
+            case "vyper":
+                return <VyperLanguage />;
             case "ruby":
                 return <RubyLanguage />;
             case "elixir":
@@ -107,10 +111,6 @@ const LanguagePage = () => {
                 return <ZigLanguage />;
             case "r":
                 return <RLanguage />;
-            case "solidity":
-                return <SolidityLanguage />;
-            case "vyper":
-                return <VyperLanguage />;
             case "sql":
                 return <SQLLanguage />;
             case "bash":
