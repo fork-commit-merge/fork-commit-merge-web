@@ -1169,4 +1169,22 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/102757707?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "cmsamaaa"
     },
+    {
+        "id": "7nimor",
+        "url": "https://github.com/7nimor",
+        "avatar": "https://avatars.githubusercontent.com/u/123732222?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "7nimor"
+    },
+    {
+        "id": "Clint-Mathews",
+        "url": "https://github.com/Clint-Mathews",
+        "avatar": "https://avatars.githubusercontent.com/u/19289251?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Clint-Mathews"
+    },
+    {
+        "id": "Atorretti",
+        "url": "https://github.com/Atorretti",
+        "avatar": "https://avatars.githubusercontent.com/u/98433038?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Atorretti"
+    },
 ];
