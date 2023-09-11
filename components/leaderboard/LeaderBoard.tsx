@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import { fetchTopUsersByPullRequests } from "../../pages/api/fetchTopUsersByPullRequests";
-import { StarFilled } from "@ant-design/icons";
 import { renderStar } from "../../utils/helpers/RenderStar";
 
 interface UserStat {
