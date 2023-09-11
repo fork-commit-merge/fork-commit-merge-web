@@ -26,13 +26,13 @@ const Badges: React.FC = () => {
                     className="mr-1 mb-1"
                 />
                 <img
-                    src="https://img.shields.io/badge/CoffeeScript-2F2625?style=for-the-badge&logo=CoffeeScript&logoColor=white"
-                    alt="CoffeeScript"
+                    src="https://img.shields.io/badge/rescript-%2314162c?style=for-the-badge&logo=rescript&logoColor=e34c4c"
+                    alt="ReScript"
                     className="mr-1 mb-1"
                 />
                 <img
-                    src="https://img.shields.io/badge/rescript-%2314162c?style=for-the-badge&logo=rescript&logoColor=e34c4c"
-                    alt="ReScript"
+                    src="https://img.shields.io/badge/CoffeeScript-2F2625?style=for-the-badge&logo=CoffeeScript&logoColor=white"
+                    alt="CoffeeScript"
                     className="mr-1 mb-1"
                 />
                 <img
