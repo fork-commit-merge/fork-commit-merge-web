@@ -2,6 +2,7 @@ export const languageList = [
     { name: "HTML", link: "/languages/html" },
     { name: "CSS", link: "/languages/css" },
     { name: "CoffeeScript", link: "/languages/coffeescript" },
+    { name: "ReScript", link: "/languages/rescript" },
     { name: "JavaScript", link: "/languages/javascript" },
     { name: "TypeScript", link: "/languages/typescript" },
     { name: "C", link: "/languages/c" },
@@ -39,6 +40,5 @@ export const languageList = [
     { name: "Elm", link: "/languages/elm" },
     { name: "Nim", link: "/languages/nim" },
     { name: "Octave", link: "/languages/octave" },
-    { name: "Rescript", link: "/languages/rescript" },
     { name: "Scratch", link: "/languages/scratch" },
 ];
