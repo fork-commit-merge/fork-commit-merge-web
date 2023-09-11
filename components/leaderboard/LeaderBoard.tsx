@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
-import { fetchTopUsersByPullRequests } from "../../pages/api/fetchTopUsersByPullRequests";
+import { fetchTopUsersByPullRequests } from "../../utils/fetchTopUsersByPullRequests";
 import { renderStar } from "../../utils/helpers/RenderStar";
+import { getTopUsersFromDb, storeTopUsersInDb } from "../../utils/fetchTopUsersFromDb";
+import axios from "axios";
 
 interface UserStat {
     username: string;
@@ -18,17 +20,19 @@ export const LeaderBoard: React.FC = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetchTopUsersByPullRequests("nikohoffren/fork-commit-merge")
-            .then((data) => {
-                setLeaderBoardData(data);
-                setIsLoading(false);
-            })
-            .catch((error) => {
-                console.error("Error fetching data:", error);
-                setIsError(true);
-                setIsLoading(false);
-            });
-    }, []);
+
+        axios.get('/api/topUsers')
+          .then(response => {
+            setLeaderBoardData(response.data);
+            setIsLoading(false);
+          })
+          .catch(error => {
+            console.error("Error fetching data:", error);
+            setIsError(true);
+            setIsLoading(false);
+          });
+      }, []);
+
 
     return (
         <div className="text-center">
