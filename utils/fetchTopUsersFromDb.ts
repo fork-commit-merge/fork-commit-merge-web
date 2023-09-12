@@ -26,3 +26,15 @@ export async function getTopUsersFromDb(): Promise<UserStat[]> {
     const { db } = await connectToDB();
     return await db.collection("topUsers").find().toArray();
 }
+
+export async function storeTopThreeUsersInDb(users: UserStat[]) {
+    const { db } = await connectToDB();
+    await db.collection('topThreeUsers').deleteMany({});
+    await db.collection('topThreeUsers').insertMany(users);
+}
+
+export async function getTopThreeUsersFromDb(): Promise<UserStat[]> {
+    const { db } = await connectToDB();
+    return await db.collection('topThreeUsers').find().toArray();
+}
+

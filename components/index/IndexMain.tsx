@@ -1,32 +1,11 @@
 /* eslint-disable react/jsx-no-undef */
 import Link from "next/link";
 import { Contributors } from "./Contributors";
-import { Contributor, TopThreeContributors } from "./TopThreeContributors";
+import { TopThreeContributors } from "./TopThreeContributors";
 import Badges from "./Badges";
-import { useEffect, useState } from "react";
-import { fetchTopThreeUsersByPullRequests } from "../../pages/api/fetchTopThreeUsersByPullRequests";
 import { contributorData } from "../data/contributorData";
 
 const IndexMain: React.FC = () => {
-    const [contributors, setContributors] = useState<Contributor[]>([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const repo = "nikohoffren/fork-commit-merge";
-            const userStats = await fetchTopThreeUsersByPullRequests(repo);
-            const contributorsData = userStats.map((user, index) => ({
-                id: user.username,
-                url: `https://github.com/${user.username}`,
-                avatar: user.avatarUrl,
-                name: user.username,
-                rank: index + 1,
-            }));
-
-            setContributors(contributorsData);
-        };
-
-        fetchData();
-    }, []);
     return (
         <>
             <div className="my-6 min-w-full">
@@ -46,7 +25,7 @@ const IndexMain: React.FC = () => {
                             project!
                         </p>
                     </div>
-                    <TopThreeContributors contributors={contributors} />
+                    <TopThreeContributors />
 
                     <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-4xl">
                         <Contributors contributors={contributorData} />
