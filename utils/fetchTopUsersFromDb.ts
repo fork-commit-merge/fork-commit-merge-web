@@ -2,13 +2,19 @@ import { connectToDB } from "./db";
 import mongoose from "mongoose";
 import { UserStat } from "../types";
 
-const userStatSchema = new mongoose.Schema({
-    username: String,
-    prCount: Number,
-    avatarUrl: String,
-});
+let UserStatModel;
+if (mongoose.models.UserStat) {
+    UserStatModel = mongoose.model("UserStat");
+} else {
+    const userStatSchema = new mongoose.Schema({
+        username: String,
+        prCount: Number,
+        avatarUrl: String,
+    });
+    UserStatModel = mongoose.model("UserStat", userStatSchema);
+}
 
-export const UserStatModel = mongoose.model("UserStat", userStatSchema);
+export { UserStatModel };
 
 export async function storeTopUsersInDb(users: UserStat[]) {
     const { db } = await connectToDB();

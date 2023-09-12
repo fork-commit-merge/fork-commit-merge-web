@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
-import { fetchTopUsersByPullRequests } from "../../utils/fetchTopUsersByPullRequests";
 import { renderStar } from "../../utils/helpers/RenderStar";
-import { getTopUsersFromDb, storeTopUsersInDb } from "../../utils/fetchTopUsersFromDb";
 import axios from "axios";
 
 interface UserStat {
@@ -21,7 +19,7 @@ export const LeaderBoard: React.FC = () => {
     useEffect(() => {
         setIsLoading(true);
 
-        axios.get('/api/topUsers')
+        axios.get('api/topUsers')
           .then(response => {
             setLeaderBoardData(response.data);
             setIsLoading(false);
