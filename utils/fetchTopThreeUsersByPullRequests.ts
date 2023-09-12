@@ -21,7 +21,7 @@ export const fetchTopThreeUsersByPullRequests = async (
             if (pr.merged_at) {
                 const username = pr.user.login;
 
-                //* Ignore dependabot PRs
+                //* Ignore dependabot and nikohoffren PRs
                 if (
                     username === "dependabot" ||
                     username === "dependabot[bot]" ||
