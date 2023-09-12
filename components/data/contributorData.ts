@@ -1229,4 +1229,16 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/2422719?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "xikaojr"
     },
+    {
+        "id": "vishal-phoenix",
+        "url": "https://github.com/vishal-phoenix",
+        "avatar": "https://avatars.githubusercontent.com/u/100995024?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "vishal-phoenix"
+    },
+    {
+        "id": "ignaszd",
+        "url": "https://github.com/ignaszd",
+        "avatar": "https://avatars.githubusercontent.com/u/61277691?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "ignaszd"
+    },
 ];
