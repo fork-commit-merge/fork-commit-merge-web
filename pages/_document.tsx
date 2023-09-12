@@ -9,6 +9,9 @@ import Document, {
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
         const initialProps = await Document.getInitialProps(ctx);
+
+        ctx.res?.setHeader("Content-Security-Policy", "script-src 'self' https://googleads.g.doubleclick.net; connect-src 'self' https://googleads.g.doubleclick.net;");
+
         return { ...initialProps };
     }
 
