@@ -32,8 +32,6 @@ export async function fetchClosedPullRequests(username) {
         (pr) => pr.user.login === username
     );
 
-    console.log("Filtered Pull Requests:", filteredPullRequests);
-
     return filteredPullRequests.map((pr) => ({
         title: pr.title,
         issue: pr.body,

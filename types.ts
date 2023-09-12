@@ -3,3 +3,10 @@ export interface UserStat {
     prCount: number;
     avatarUrl: string;
 }
+
+export interface ClosedPullRequest {
+    username: string;
+    title: string;
+    issue: string;
+    repository: string;
+}
