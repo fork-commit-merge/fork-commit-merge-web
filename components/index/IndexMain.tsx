@@ -20,7 +20,7 @@ const IndexMain: React.FC = () => {
                 <div className="bg-slate-900 w-full pt-4 pb-16 text-center">
                     <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
                         <p className="text-2xl leading-8 mt-8 mb-8 font-primary">
-                            Become a part of our thriving community of over 190
+                            Become a part of our thriving community of over 200
                             developers who have already contributed to this
                             project!
                         </p>
