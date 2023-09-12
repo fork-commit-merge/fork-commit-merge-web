@@ -1,10 +1,15 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
-import {
-    fetchGitHubUsername,
-    fetchClosedPullRequests,
-} from "../../pages/api/fetchClosedPullRequests";
+import { fetchGitHubUsername } from "../../utils/fetchClosedPullRequests";
+
+async function fetchStoredPullRequests(username) {
+    const res = await fetch(`/api/getStoredPullRequests?username=${username}`);
+    const data = await res.json();
+
+    return data;
+}
 
 export default function LoginButton() {
     const { data: session } = useSession();
@@ -16,16 +21,38 @@ export default function LoginButton() {
     useEffect(() => {
         if (session?.user?.email) {
             setIsLoading(true);
-            fetchGitHubUsername(session.user.email)
-                .then((username) => fetchClosedPullRequests(username))
-                .then((prs) => {
-                    setPullRequests(prs);
-                    setIsLoading(false);
-                })
-                .catch((error) => {
-                    console.error("Error fetching data:", error);
-                    setIsLoading(false);
-                });
+            fetchGitHubUsername(session.user.email).then((username) => {
+                fetchStoredPullRequests(username)
+                    .then((data) => {
+                        if (data) {
+                            setPullRequests(data.pullRequests || []);
+                            setIsLoading(false);
+                        } else {
+                            axios
+                                .get(
+                                    `/api/closedPullRequests?username=${username}`
+                                )
+                                .then((response) => {
+                                    setPullRequests(response.data);
+                                    setIsLoading(false);
+                                })
+                                .catch((error) => {
+                                    console.error(
+                                        "Error fetching data:",
+                                        error
+                                    );
+                                    setIsLoading(false);
+                                });
+                        }
+                    })
+                    .catch((err) => {
+                        console.error(
+                            "Error fetching stored pull requests:",
+                            err
+                        );
+                        setIsLoading(false);
+                    });
+            });
         }
     }, [session]);
 
@@ -55,10 +82,9 @@ export default function LoginButton() {
         return (
             <div className="text-slate-50 text-center">
                 <div className="flex flex-col-reverse md:flex-row justify-between items-center border rounded-lg shadow-lg bg-slate-950 px-4 py-2">
-
                     <div className="md:mr-10">
                         <h2 className="mt-6 mb-10 text-4xl font-extrabold">
-                        {session.user.name || "User"}
+                            {session.user.name || "User"}
                         </h2>
 
                         <p className="my-5">{session.user.email}</p>
@@ -78,7 +104,6 @@ export default function LoginButton() {
                             width={size}
                             height={size}
                         />
-
                     </div>
                 </div>
 

@@ -1,5 +1,4 @@
 /* eslint-disable import/no-anonymous-default-export */
-// pages/api/topUsers.js
 import {
     getTopUsersFromDb,
     storeTopUsersInDb,
