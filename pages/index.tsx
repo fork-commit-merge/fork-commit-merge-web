@@ -3,10 +3,12 @@ import Image from "next/image";
 import IndexIntro from "../components/index/IndexIntro";
 import Descriptions from "../components/index/Descriptions";
 import IndexMain from "../components/index/IndexMain";
+import Testimonials from "../components/index/Testimonials";
+import { testimonials } from "../components/data/testimonials";
 
 export default function Home() {
     return (
-        <>
+        <div>
             <main className="min-h-screen flex flex-col items-center justify-center text-center bg-slate-950 px-4 sm:px-6 md:px-0">
                 <div
                     className="mx-auto rounded-md overflow-hidden mt-6"
@@ -23,11 +25,15 @@ export default function Home() {
                 <IndexMain />
                 <IndexIntro />
             </main>
-            <div className="bg-slate-900 pb-10 pt-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50">
+            <div className="bg-slate-950 pt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50 pb-6">
                     <Descriptions />
                 </div>
+                {testimonials.map((testimonial, index) => (
+                    <Testimonials key={index} testimonial={testimonial} />
+                ))}
             </div>
-        </>
+            <div className="bg-slate-900 pb-10" />
+        </div>
     );
 }

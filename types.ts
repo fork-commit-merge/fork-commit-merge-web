@@ -10,3 +10,10 @@ export interface ClosedPullRequest {
     issue: string;
     repository: string;
 }
+
+export type Testimonial = {
+    text: string;
+    name: string;
+    imageUrl: string;
+    url: string;
+};
