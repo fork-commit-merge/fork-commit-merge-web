@@ -17,10 +17,10 @@ const JobSearchingPlatforms: React.FC = () => {
                     <ul className="list-disc pl-5">
                         <li>
                             <a
-                                href="https://angel.co/jobs"
+                                href="https://wellfound.com/jobs"
                                 className="hover:underline text-blue-400"
                             >
-                                AngelList Jobs
+                                Wellfound Jobs
                             </a>
                         </li>
                         <li>
@@ -61,6 +61,14 @@ const JobSearchingPlatforms: React.FC = () => {
                                 className="hover:underline text-blue-400"
                             >
                                 Tech Ladies
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.outreachy.org/"
+                                className="hover:underline text-blue-400"
+                            >
+                                Outreachy
                             </a>
                         </li>
                     </ul>
