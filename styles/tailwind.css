@@ -50,6 +50,17 @@ body {
     }
 }
 
+@keyframes waveScale {
+    0%,
+    20%,
+    100% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+}
+
 .scrollable-dropdown {
     max-height: 400px;
     overflow-y: auto;
