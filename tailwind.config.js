@@ -43,6 +43,9 @@ module.exports = {
             font: {
                 primary: "Ysabeau Infant, sans-serif",
             },
+            fontSize: {
+                'xxs': '0.55rem',
+            },
         },
     },
     variants: {

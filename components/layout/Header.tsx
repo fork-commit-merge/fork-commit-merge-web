@@ -154,23 +154,11 @@ const Header = () => {
                                                 >
                                                     <StarFilled
                                                         style={{
-                                                            fontSize: "2rem",
+                                                            fontSize: "2.1rem",
                                                             color: "gold",
                                                         }}
                                                     />
-                                                    <span
-                                                        style={{
-                                                            position:
-                                                                "absolute",
-                                                            top: "50%",
-                                                            left: "50%",
-                                                            transform:
-                                                                "translate(-50%, -50%)",
-                                                            fontSize: "9px",
-                                                            fontWeight: "bold",
-                                                            color: "black",
-                                                        }}
-                                                    >
+                                                    <span className="absolute top-1/2 left-1/2 transform -translate-x-[calc(50%+1.2px)] -translate-y-[calc(50%)] text-black text-xxs font-extrabold">
                                                         {starCount}
                                                     </span>
                                                 </div>

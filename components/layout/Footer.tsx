@@ -25,6 +25,24 @@ const Footer = () => {
                         <div className="text-center w-full">
                             <div className="flex justify-center items-center w-full space-x-2 mb-1">
                                 <p className="text-base text-slate-100">
+                                    Created with
+                                </p>
+                                <a
+                                    href="https://nextjs.org/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Image
+                                        className="bg-white p-1.5 rounded-md shadow-lg"
+                                        src="/next.svg"
+                                        alt="NextJS Logo"
+                                        width={62}
+                                        height={62}
+                                    />
+                                </a>
+                            </div>
+                            <div className="flex justify-center items-center w-full space-x-2 mb-1">
+                                <p className="text-base text-slate-100">
                                     Deployed with
                                 </p>
                                 <a
@@ -114,22 +132,11 @@ const Footer = () => {
                                             >
                                                 <StarFilled
                                                     style={{
-                                                        fontSize: "2.5rem",
+                                                        fontSize: "2.9rem",
                                                         color: "gold",
                                                     }}
                                                 />
-                                                <span
-                                                    style={{
-                                                        position: "absolute",
-                                                        top: "50%",
-                                                        left: "50%",
-                                                        transform:
-                                                            "translate(-50%, -50%)",
-                                                        fontSize: "12px",
-                                                        fontWeight: "bold",
-                                                        color: "black",
-                                                    }}
-                                                >
+                                                <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-xs font-extrabold">
                                                     {starCount}
                                                 </span>
                                             </div>
