@@ -29,9 +29,16 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50 pb-6">
                     <Descriptions />
                 </div>
-                {testimonials.map((testimonial, index) => (
-                    <Testimonials key={index} testimonial={testimonial} />
-                ))}
+                <div className="bg-slate-900">
+                    <div className="mx-4">
+                        {testimonials.map((testimonial, index) => (
+                            <Testimonials
+                                key={index}
+                                testimonial={testimonial}
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
             <div className="bg-slate-900 pb-10" />
         </div>

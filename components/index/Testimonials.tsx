@@ -10,7 +10,7 @@ const Testimonial: React.FC<{ testimonial: TestimonialType }> = ({
             <div className="flex items-center justify-center">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-52 text-gray-400"
+                    className="h-40 text-gray-400"
                     fill="none"
                     viewBox="0 0 20 14"
                     stroke="currentColor"
@@ -24,7 +24,7 @@ const Testimonial: React.FC<{ testimonial: TestimonialType }> = ({
                 </svg>
             </div>
             <div className="flex items-center justify-center">
-                <p className="mb-4 text-center text-gray-200 max-w-xl text-2xl font-primary">
+                <p className="mb-4 text-center text-gray-200 max-w-xl text-xl font-primary">
                     {testimonial.text}
                 </p>
             </div>
@@ -35,13 +35,13 @@ const Testimonial: React.FC<{ testimonial: TestimonialType }> = ({
                     rel="noopener noreferrer"
                 >
                     <img
-                        className="w-36 mr-8 mt-4 rounded-full border border-gray-200"
+                        className="w-28 mr-8 mt-4 rounded-full border border-gray-200"
                         src={testimonial.imageUrl}
                         alt={testimonial.name}
                     />
                 </a>
 
-                <span className="text-gray-400 text-3xl">
+                <span className="text-gray-400 text-2xl">
                     {testimonial.name}
                 </span>
             </div>
