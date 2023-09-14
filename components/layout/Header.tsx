@@ -12,6 +12,7 @@ import { StarFilled } from "@ant-design/icons";
 import { languageList } from "../data/languageList";
 import { frameworkList } from "../data/frameworkList";
 import { gitList } from "../data/gitList";
+import { roadmapList } from "../data/roadmapList";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +20,11 @@ const Header = () => {
     const [isFrameworkDropdownOpen, setFrameworkDropdownOpen] = useState(false);
     const [isGitSelectionDropdownOpen, setGitSelectionDropdownOpen] =
         useState(false);
+    const [isRoadmapDropdownOpen, setRoadmapDropdownOpen] = useState(false);
     const node = useRef<HTMLLIElement | null>(null);
     const frameworkNode = useRef<HTMLLIElement | null>(null);
     const gitSelectionNode = useRef<HTMLLIElement | null>(null);
+    const roadmapNode = useRef<HTMLLIElement | null>(null);
     const { data: session } = useSession();
     const router = useRouter();
     const [starCount, setStarCount] = useState<number | null>(null);
@@ -56,22 +59,37 @@ const Header = () => {
         setGitSelectionDropdownOpen(false);
     };
 
+    const navigateToRoadmap = (link: string) => {
+        router.push(link);
+        setRoadmapDropdownOpen(false);
+    };
+
     const toggleLanguageDropdown = () => {
         setLanguageDropdownOpen(!isLanguageDropdownOpen);
         setFrameworkDropdownOpen(false);
         setGitSelectionDropdownOpen(false);
+        setRoadmapDropdownOpen(false);
     };
 
     const toggleFrameworkDropdown = () => {
         setFrameworkDropdownOpen(!isFrameworkDropdownOpen);
         setLanguageDropdownOpen(false);
         setGitSelectionDropdownOpen(false);
+        setRoadmapDropdownOpen(false);
     };
 
     const toggleGitSelectionDropdown = () => {
         setGitSelectionDropdownOpen(!isGitSelectionDropdownOpen);
         setLanguageDropdownOpen(false);
         setFrameworkDropdownOpen(false);
+        setRoadmapDropdownOpen(false);
+    };
+
+    const toggleRoadmapDropdown = () => {
+        setRoadmapDropdownOpen(!isRoadmapDropdownOpen);
+        setLanguageDropdownOpen(false);
+        setFrameworkDropdownOpen(false);
+        setGitSelectionDropdownOpen(false);
     };
 
     return (
@@ -330,6 +348,31 @@ const Header = () => {
                             </ul>
                         )}
                     </li>
+                    <li ref={roadmapNode} className="list-none">
+                        <div
+                            className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                            onClick={toggleRoadmapDropdown}
+                        >
+                            Roadmaps
+                        </div>
+                        {isRoadmapDropdownOpen && (
+                            <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                {roadmapList.map((roadmap, index) => (
+                                    <li
+                                        key={index}
+                                        onClick={() => {
+                                            navigateToRoadmap(roadmap.link);
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                            {roadmap.name}
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
 
                     <Link href="/ide" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
@@ -466,6 +509,33 @@ const Header = () => {
                                             >
                                                 <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
                                                     {git.name}
+                                                </div>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </li>
+                            <li ref={roadmapNode} className="list-none">
+                                <div
+                                    className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                                    onClick={toggleRoadmapDropdown}
+                                >
+                                    Roadmaps
+                                </div>
+                                {isRoadmapDropdownOpen && (
+                                    <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                        {roadmapList.map((roadmap, index) => (
+                                            <li
+                                                key={index}
+                                                onClick={() => {
+                                                    navigateToRoadmap(
+                                                        roadmap.link
+                                                    );
+                                                    setIsOpen(false);
+                                                }}
+                                            >
+                                                <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                                    {roadmap.name}
                                                 </div>
                                             </li>
                                         ))}
