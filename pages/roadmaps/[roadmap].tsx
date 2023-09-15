@@ -3,6 +3,7 @@ import RoadmapNotSupported from "../../components/roadmapComponents/RoadmapNotSu
 import OpenSourcePhilosophy from "../../components/roadmapComponents/OpenSourcePhilosophy";
 import OpenSourceLicenses from "../../components/roadmapComponents/OpenSourceLicenses";
 import HowToContribute from "../../components/roadmapComponents/HowToContribute";
+import DocumentationOverview from "../../components/roadmapComponents/DocumentationOverview";
 
 const RoadmapPage = () => {
     const router = useRouter();
@@ -16,6 +17,8 @@ const RoadmapPage = () => {
                 return <OpenSourcePhilosophy />;
             case "opensourcelicenses":
                 return <OpenSourceLicenses />;
+            case "overviewofdocumentation":
+                return <DocumentationOverview />;
             default:
                 return <RoadmapNotSupported />;
         }
