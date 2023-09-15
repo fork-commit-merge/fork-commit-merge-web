@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function HowToContribute() {
+const HowToContribute = () => {
     return (
         <div className="bg-slate-900 text-white py-10 px-5 flex flex-col justify-center items-center">
-            <div className="text-slate-50 mx-auto max-w-3xl pb-10">
+            <div className="text-slate-50 mx-auto max-w-2xl pb-10">
                 <h2 className="text-3xl font-bold my-4 text-center">
                     How to make an Open Source Contribution?
                 </h2>
@@ -21,8 +21,8 @@ export default function HowToContribute() {
                     Identify a project that interests you. Many projects
                     specifically mark issues as &quot;good for beginners&quot;,
                     &quot;good first issue&quot; or similar to that to help you
-                    find a starting point. One excellent website for looking these
-                    kind of issues is{" "}
+                    find a starting point. One excellent website for looking
+                    these kind of issues is{" "}
                     <a
                         href="https://goodfirstissues.com"
                         className="hover:underline text-blue-400"
@@ -164,4 +164,6 @@ export default function HowToContribute() {
             </div>
         </div>
     );
-}
+};
+
+export default HowToContribute;

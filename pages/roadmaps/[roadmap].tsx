@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import RoadmapNotSupported from "../../components/roadmapComponents/RoadmapNotSupported";
 import OpenSourcePhilosophy from "../../components/roadmapComponents/OpenSourcePhilosophy";
 import OpenSourceLicenses from "../../components/roadmapComponents/OpenSourceLicenses";
+import HowToContribute from "../../components/roadmapComponents/HowToContribute";
 
 const RoadmapPage = () => {
     const router = useRouter();
@@ -9,6 +10,8 @@ const RoadmapPage = () => {
 
     const renderContent = () => {
         switch (roadmap) {
+            case "howtocontribute":
+                return <HowToContribute />;
             case "opensourcephilosophy":
                 return <OpenSourcePhilosophy />;
             case "opensourcelicenses":
