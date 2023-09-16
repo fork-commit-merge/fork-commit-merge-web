@@ -4,6 +4,8 @@ import OpenSourcePhilosophy from "../../components/roadmapComponents/OpenSourceP
 import OpenSourceLicenses from "../../components/roadmapComponents/OpenSourceLicenses";
 import HowToContribute from "../../components/roadmapComponents/HowToContribute";
 import DocumentationOverview from "../../components/roadmapComponents/DocumentationOverview";
+import ContributionManagement from "../../components/roadmapComponents/ContributionManagement";
+import LegalEthicalConsiderations from "../../components/roadmapComponents/LegalEthicalConsiderations";
 
 const RoadmapPage = () => {
     const router = useRouter();
@@ -13,12 +15,16 @@ const RoadmapPage = () => {
         switch (roadmap) {
             case "howtocontribute":
                 return <HowToContribute />;
+            case "contributionmanagement":
+                return <ContributionManagement />;
             case "opensourcephilosophy":
                 return <OpenSourcePhilosophy />;
             case "opensourcelicenses":
                 return <OpenSourceLicenses />;
             case "overviewofdocumentation":
                 return <DocumentationOverview />;
+            case "legalandethicalconsiderations":
+                return <LegalEthicalConsiderations />;
             default:
                 return <RoadmapNotSupported />;
         }
