@@ -95,7 +95,7 @@ const Header = () => {
     return (
         <>
             <nav className="bg-slate-950 text-slate-50 backdrop-blur">
-                <div className="container mx-auto px-6 py-3">
+                <div className="container mx-auto pr-20 py-3">
                     <div className="flex items-center justify-between">
                         <div></div>
                         <div className="md:hidden">
@@ -411,7 +411,7 @@ const Header = () => {
                     </div>
                 </div>
             )}
-            <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block shadow-bottom pr-25">
+            <header className="bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block shadow-bottom ">
                 <div className="mx-auto px-12 py-1 pb-6 pr-20 shadow-top">
                     <div className="mt-3 md:flex items-center justify-between">
                         <div className="flex items-center space-x-1">
