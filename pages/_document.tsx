@@ -26,7 +26,11 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap"
                         rel="stylesheet"
                     />
-                    <link rel="icon" type="image/png" href="/fork-commit-merge-logo-favicon.png" />
+                    <link
+                        rel="icon"
+                        type="image/png"
+                        href="/fork-commit-merge-logo-favicon.png"
+                    />
                     <link
                         href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
                         rel="stylesheet"
