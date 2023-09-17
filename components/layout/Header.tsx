@@ -416,7 +416,7 @@ const Header = () => {
                     <div className="mt-3 md:flex items-center justify-between">
                         <div className="flex items-center space-x-1">
                             <Link href="/" onClick={() => setIsOpen(false)}>
-                                <div className="pl-25 px-6 block text-sm cursor-pointer hover:scale-105">
+                                <div className="pl-15 px-6 block text-sm cursor-pointer hover:scale-105">
                                     <Image
                                         src="/fork-commit-merge-logo.jpg"
                                         alt="Fork, Commit, Merge -logo"
