@@ -1302,39 +1302,75 @@ export const contributorData = [
         name: "Rohit-Sharmaa",
     },
     {
-        "id": "StephCurry07",
-        "url": "https://github.com/StephCurry07",
-        "avatar": "https://avatars.githubusercontent.com/u/76783882?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "StephCurry07"
+        id: "StephCurry07",
+        url: "https://github.com/StephCurry07",
+        avatar: "https://avatars.githubusercontent.com/u/76783882?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "StephCurry07",
     },
     {
-        "id": "Shambhavi2302",
-        "url": "https://github.com/Shambhavi2302",
-        "avatar": "https://avatars.githubusercontent.com/u/99818052?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "Shambhavi2302"
+        id: "Shambhavi2302",
+        url: "https://github.com/Shambhavi2302",
+        avatar: "https://avatars.githubusercontent.com/u/99818052?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Shambhavi2302",
     },
     {
-        "id": "sedna08",
-        "url": "https://github.com/sedna08",
-        "avatar": "https://avatars.githubusercontent.com/u/109507870?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "sedna08"
+        id: "sedna08",
+        url: "https://github.com/sedna08",
+        avatar: "https://avatars.githubusercontent.com/u/109507870?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "sedna08",
     },
     {
-        "id": "JulianToppo",
-        "url": "https://github.com/JulianToppo",
-        "avatar": "https://avatars.githubusercontent.com/u/51400577?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "JulianToppo"
+        id: "JulianToppo",
+        url: "https://github.com/JulianToppo",
+        avatar: "https://avatars.githubusercontent.com/u/51400577?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "JulianToppo",
     },
     {
-        "id": "NotSooShariff",
-        "url": "https://github.com/NotSooShariff",
-        "avatar": "https://avatars.githubusercontent.com/u/93514938?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "NotSooShariff"
+        id: "NotSooShariff",
+        url: "https://github.com/NotSooShariff",
+        avatar: "https://avatars.githubusercontent.com/u/93514938?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "NotSooShariff",
     },
     {
-        "id": "tarzann419",
-        "url": "https://github.com/tarzann419",
-        "avatar": "https://avatars.githubusercontent.com/u/108550261?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "tarzann419"
+        id: "tarzann419",
+        url: "https://github.com/tarzann419",
+        avatar: "https://avatars.githubusercontent.com/u/108550261?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "tarzann419",
+    },
+    {
+        id: "Matrix-Mesh",
+        url: "https://github.com/Matrix-Mesh",
+        avatar: "https://avatars.githubusercontent.com/u/118289247?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Matrix-Mesh",
+    },
+    {
+        id: "Ahlyab",
+        url: "https://github.com/Ahlyab",
+        avatar: "https://avatars.githubusercontent.com/u/44720995?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Ahlyab",
+    },
+    {
+        id: "aryansri-19",
+        url: "https://github.com/aryansri-19",
+        avatar: "https://avatars.githubusercontent.com/u/75990590?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "aryansri-19",
+    },
+    {
+        id: "pranita28Dane",
+        url: "https://github.com/pranita28Dane",
+        avatar: "https://avatars.githubusercontent.com/u/80359682?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "pranita28Dane",
+    },
+    {
+        id: "mag4no10",
+        url: "https://github.com/mag4no10",
+        avatar: "https://avatars.githubusercontent.com/u/90365667?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "mag4no10",
+    },
+    {
+        id: "Plktz",
+        url: "https://github.com/Plktz",
+        avatar: "https://avatars.githubusercontent.com/u/87687425?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Plktz",
     },
 ];
