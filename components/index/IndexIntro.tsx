@@ -4,7 +4,7 @@ import React from "react";
 const IndexIntro: React.FC = () => {
     return (
         <>
-            <div className="text-slate-50 bg-slate-900 pb-10 w-full pt-6">
+            <div className="text-slate-50 bg-slate-950 pb-10 w-full pt-6">
                 <div className="mx-auto max-w-2xl">
                     <h2 className="text-4xl font-bold my-4">
                         About the Fork, Commit, Merge project

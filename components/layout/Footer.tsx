@@ -19,7 +19,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="bg-slate-950 text-slate-50 py-8">
+            <footer className="bg-secondary text-slate-50 py-8">
                 <div className="container mx-auto px-6 md:px-12">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                         <div className="text-center w-full">

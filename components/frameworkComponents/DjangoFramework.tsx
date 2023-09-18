@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const DjangoFramework = () => {
     return (
-        <div className="flex justify-center items-center bg-slate-900">
+        <div className="flex justify-center items-center bg-slate-950">
             <div className="text-center text-slate-50 max-w-2xl">
                 <div className="flex flex-wrap justify-center items-center">
                     <img

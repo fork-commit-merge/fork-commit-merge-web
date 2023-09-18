@@ -9,7 +9,7 @@ import { testimonials } from "../components/data/testimonials";
 export default function Home() {
     return (
         <div>
-            <main className="min-h-screen flex flex-col items-center justify-center text-center bg-slate-950 px-4 sm:px-6 md:px-0">
+            <main className="min-h-screen flex flex-col items-center justify-center text-center bg-secondary px-4 sm:px-6 md:px-0">
                 <div
                     className="mx-auto rounded-md overflow-hidden mt-6"
                     style={{ width: 100, height: 100 }}
@@ -25,11 +25,11 @@ export default function Home() {
                 <IndexMain />
                 <IndexIntro />
             </main>
-            <div className="bg-slate-950 pt-10">
+            <div className="bg-secondary pt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50 pb-6">
                     <Descriptions />
                 </div>
-                <div className="bg-slate-900">
+                <div className="bg-slate-950">
                     <div className="mx-4">
                         {testimonials.map((testimonial, index) => (
                             <Testimonials
@@ -40,7 +40,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="bg-slate-900 pb-10" />
+            <div className="bg-slate-950 pb-10" />
         </div>
     );
 }

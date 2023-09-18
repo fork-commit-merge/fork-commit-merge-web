@@ -94,7 +94,7 @@ const Header = () => {
 
     return (
         <>
-            <nav className="bg-slate-950 text-slate-50">
+            <nav className="bg-secondary text-slate-50">
                 <div className="container mx-auto pr-20 py-3">
                     <div className="flex items-center justify-between ">
                         <div></div>
@@ -196,7 +196,7 @@ const Header = () => {
                 </div>
             </nav>
             {isOpen && (
-                <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 bg-slate-900 overflow-auto z-20 md:hidden bg-transparent backdrop-blur">
+                <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 bg-secondary overflow-auto z-20 md:hidden bg-transparent backdrop-blur">
                     {session?.user ? (
                         <Link href="/login" onClick={() => setIsOpen(false)}>
                             <div className="bg-gray-800 hover:bg-gray-700 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium">
@@ -413,7 +413,7 @@ const Header = () => {
             )}
 
 
-            <header className="bg-transparent backdrop-blur bg-slate-950 text-slate-50 sticky top-0 z-10 hidden md:block shadow-bottom">
+            <header className="bg-transparent backdrop-blur text-slate-50 sticky top-0 z-10 hidden md:block shadow-bottom">
                 <div className="mx-auto px-12 py-1 pb-6 pr-20 shadow-top">
                     <div className="mt-3 md:flex items-center justify-between">
                         <div className="flex items-center space-x-1">

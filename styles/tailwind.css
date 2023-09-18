@@ -7,6 +7,11 @@
     --ff-secondary: "Ubuntu", sans-serif;
     --color-bronze: #bb752e;
     --bg-primary: #060418;
+    --bg-secondary: #06010f;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary);
 }
 
 html,
@@ -15,7 +20,7 @@ body {
     font-size: 1.1rem;
     scroll-behavior: smooth;
     font-family: var(--ff-secondary);
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
 }
 
 .font-primary {
