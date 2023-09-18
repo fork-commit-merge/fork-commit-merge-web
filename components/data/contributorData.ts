@@ -1415,4 +1415,10 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/58794740?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "matthewvrban2000"
     },
+    {
+        "id": "Nasirahamad88",
+        "url": "https://github.com/Nasirahamad88",
+        "avatar": "https://avatars.githubusercontent.com/u/116346415?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Nasirahamad88"
+    },
 ];

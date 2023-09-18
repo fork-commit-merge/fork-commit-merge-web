@@ -38,6 +38,13 @@ export const testimonials: TestimonialType[] = [
         url: "https://github.com/kajalverma0101",
     },
     {
+        text: "Great experiences.",
+        name: "Nasirahamad88",
+        imageUrl:
+            "https://avatars.githubusercontent.com/u/116346415?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        url: "https://github.com/Nasirahamad88",
+    },
+    {
         text: "Thanks for making this, such a lovely 1st time experience contributing.",
         name: "Gourav2609",
         imageUrl: "https://avatars.githubusercontent.com/u/115522947?v=4",
