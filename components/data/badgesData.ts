@@ -212,7 +212,7 @@ export const badgesData = [
         alt: "Nim",
     },
     {
-        src: "https://img.shields.io/badge/MATLAB-darkblue?style=for-the-badge&logo=MATLAB&logoColor=fcd683",
+        src: "https://img.shields.io/badge/MATLAB-%23ED8B00?style=for-the-badge&logo=MATLAB&logoColor=fcd683",
         alt: "MATLAB",
     },
     {
