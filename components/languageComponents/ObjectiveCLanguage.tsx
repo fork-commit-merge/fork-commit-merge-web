@@ -13,12 +13,12 @@ const ObjectiveCLanguage = () => {
 
                 <h2 className="text-2xl font-bold mb-4">What is Objective-C?</h2>
                 <p className="mb-4">
-                    Objective-C is an object-oriented, class-based programming language primarily used for developing software applications on Apple's macOS and iOS platforms. Originally created in the early 1980s, Objective-C has evolved to support modern development practices while maintaining compatibility with Apple's ecosystem.
+                    Objective-C is an object-oriented, class-based programming language primarily used for developing software applications on Apple's macOS and iOS platforms. Originally created in the early 1980s, Objective-C has evolved to support modern development practices while maintaining compatibility with Apple&apos;s ecosystem.
                 </p>
 
                 <h2 className="text-2xl font-bold mb-4">Why Use Objective?</h2>
                 <p className="mb-6">
-                    Many existing macOS and iOS applications are written in Objective-C. Maintaining and extending these projects requires knowledge of the language.  Objective-C can be mixed with Swift in the same project, allowing developers to leverage both languages' strengths and gradually transition to Swift when necessary. Objective-C benefits from a rich ecosystem of libraries, frameworks, and tools built over decades of development.  Objective-C can achieve high performance, especially when working closely with C or C++ code, making it suitable for resource-intensive tasks.
+                    Many existing macOS and iOS applications are written in Objective-C. Maintaining and extending these projects requires knowledge of the language.  Objective-C can be mixed with Swift in the same project, allowing developers to leverage both language&apos;s strengths and gradually transition to Swift when necessary. Objective-C benefits from a rich ecosystem of libraries, frameworks, and tools built over decades of development.  Objective-C can achieve high performance, especially when working closely with C or C++ code, making it suitable for resource-intensive tasks.
                 </p>
 
                 <h4 className="text-2xl font-bold my-4">
@@ -26,7 +26,7 @@ const ObjectiveCLanguage = () => {
                 </h4>
                 <ul>
                     <li>
-                        - Follow Apple's official Objective-C coding guidelines.
+                        - Follow Apple&apos;s official Objective-C coding guidelines.
                     </li>
                     <li>
                         - Master memory management, including object retention and release with manual or ARC.

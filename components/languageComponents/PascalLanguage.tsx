@@ -18,7 +18,7 @@ const PascalLanguage = () => {
 
                 <h2 className="text-2xl font-bold mb-4">Why Use Pascal?</h2>
                 <p className="mb-6">
-                Pascal's clear and concise syntax makes it easy to read and understand code. This readability is particularly beneficial when working on collaborative projects or maintaining legacy code. Pascal was one of the first languages to promote structured programming principles, such as modularization and the use of procedures and functions. This approach encourages code organization and reusability.
+                Pascal&apos;s clear and concise syntax makes it easy to read and understand code. This readability is particularly beneficial when working on collaborative projects or maintaining legacy code. Pascal was one of the first languages to promote structured programming principles, such as modularization and the use of procedures and functions. This approach encourages code organization and reusability.
                 </p>
 
                 <h4 className="text-2xl font-bold my-4">
@@ -26,13 +26,13 @@ const PascalLanguage = () => {
                 </h4>
                 <ul>
                     <li>
-                        - Keep a uniform naming, indentation, and structure for better code maintainability..
+                        - Keep a uniform naming, indentation, and structure for better code maintainability.
                     </li>
                     <li>
                         - Decompose code into reusable functions for better organization and efficiency.
                     </li>
                     <li>
-                        - Use Pascal's strong typing to detect type errors early in development.
+                        - Use Pascal&apos;s strong typing to detect type errors early in development.
                     </li>
                     <li>
                         - Thoroughly comment and use clear names for self-explanatory code.
