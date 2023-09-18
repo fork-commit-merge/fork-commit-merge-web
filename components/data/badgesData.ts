@@ -96,12 +96,12 @@ export const badgesData = [
         alt: "Kotlin",
     },
     {
-        src: "https://img.shields.io/badge/Groovy-4298B8?style=for-the-badge&logo=apachegroovy&logoColor=white",
-        alt: "Groovy",
-    },
-    {
         src: "https://img.shields.io/badge/scala-%23E32F26.svg?style=for-the-badge&logo=scala&logoColor=white",
         alt: "Scala",
+    },
+    {
+        src: "https://img.shields.io/badge/Groovy-4298B8?style=for-the-badge&logo=apachegroovy&logoColor=white",
+        alt: "Groovy",
     },
     {
         src: "https://img.shields.io/badge/python-%23007ACC.svg?style=for-the-badge&logo=python&logoColor=yellow",
@@ -210,6 +210,10 @@ export const badgesData = [
     {
         src: "https://img.shields.io/badge/nim-%23FFE953.svg?style=for-the-badge&logo=nim&logoColor=white",
         alt: "Nim",
+    },
+    {
+        src: "https://img.shields.io/badge/MATLAB-%23ED8B00?style=for-the-badge&logo=MATLAB&logoColor=fcd683",
+        alt: "MATLAB",
     },
     {
         src: "https://img.shields.io/badge/OCTAVE-darkblue?style=for-the-badge&logo=octave&logoColor=fcd683",

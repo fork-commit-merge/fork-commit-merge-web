@@ -1403,4 +1403,16 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/98116507?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "gayatriagarwal19"
     },
+    {
+        "id": "Vedant91827",
+        "url": "https://github.com/Vedant91827",
+        "avatar": "https://avatars.githubusercontent.com/u/83276177?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Vedant91827"
+    },
+    {
+        "id": "matthewvrban2000",
+        "url": "https://github.com/matthewvrban2000",
+        "avatar": "https://avatars.githubusercontent.com/u/58794740?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "matthewvrban2000"
+    },
 ];
