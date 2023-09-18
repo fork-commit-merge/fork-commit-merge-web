@@ -44,6 +44,7 @@ import RescriptLanguage from "../../components/languageComponents/RescriptLangua
 import ScratchLanguage from "../../components/languageComponents/ScratchLanguage";
 import PascalLanguage from "../../components/languageComponents/PascalLanguage";
 import ObjectiveCLanguage from "../../components/languageComponents/ObjectiveCLanguage";
+import MATLABLanguage from "../../components/languageComponents/MATLABLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -139,6 +140,8 @@ const LanguagePage = () => {
                 return <PascalLanguage />;
             case "objective-c":
                 return <ObjectiveCLanguage />;
+            case "matlab":
+                return <MATLABLanguage />;
             default:
                 return <LanguageNotSupported />;
         }
