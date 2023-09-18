@@ -13,7 +13,7 @@ const ObjectiveCLanguage = () => {
 
                 <h2 className="text-2xl font-bold mb-4">What is Objective-C?</h2>
                 <p className="mb-4">
-                    Objective-C is an object-oriented, class-based programming language primarily used for developing software applications on Apple's macOS and iOS platforms. Originally created in the early 1980s, Objective-C has evolved to support modern development practices while maintaining compatibility with Apple&apos;s ecosystem.
+                    Objective-C is an object-oriented, class-based programming language primarily used for developing software applications on Apple&apos;s macOS and iOS platforms. Originally created in the early 1980s, Objective-C has evolved to support modern development practices while maintaining compatibility with Apple&apos;s ecosystem.
                 </p>
 
                 <h2 className="text-2xl font-bold mb-4">Why Use Objective?</h2>
