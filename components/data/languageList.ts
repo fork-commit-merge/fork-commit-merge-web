@@ -41,4 +41,6 @@ export const languageList = [
     { name: "Nim", link: "/languages/nim" },
     { name: "Octave", link: "/languages/octave" },
     { name: "Scratch", link: "/languages/scratch" },
+    { name: "Pascal", link: "/languages/pascal" },
+    { name: "Objective-c", link: "/languages/objective-c" },
 ];

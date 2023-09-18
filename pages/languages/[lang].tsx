@@ -42,6 +42,8 @@ import NimLanguage from "../../components/languageComponents/NimLangauge";
 import OctaveLanguage from "../../components/languageComponents/OctaveLanguage";
 import RescriptLanguage from "../../components/languageComponents/RescriptLanguage";
 import ScratchLanguage from "../../components/languageComponents/ScratchLanguage";
+import PascalLanguage from "../../components/languageComponents/PascalLanguage";
+import ObjectiveCLanguage from "../../components/languageComponents/ObjectiveCLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -133,6 +135,10 @@ const LanguagePage = () => {
                 return <RescriptLanguage />;
             case "scratch":
                 return <ScratchLanguage />;
+            case "pascal":
+                return <PascalLanguage />;
+            case "objective-c":
+                return <ObjectiveCLanguage />;
             default:
                 return <LanguageNotSupported />;
         }
