@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Image from "next/image";
 import { StarFilled } from "@ant-design/icons";
@@ -102,8 +103,8 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="text-center w-full">
-                            <div className="text-base text-slate-50">
-                                <Link
+    <div className="text-base text-slate-50 flex flex-col items-center space-y-2">
+        <Link
                                     className="py-1 px-3 border border-transparent text-sm font-medium rounded-md text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                                     href={
                                         "https://github.com/nikohoffren/fork-commit-merge"
@@ -115,8 +116,8 @@ const Footer = () => {
                                         viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor"
-                                        width="24"
-                                        height="24"
+                                        width="22"
+                                        height="22"
                                         className="mr-2"
                                     >
                                         <title>GitHub icon</title>
@@ -144,6 +145,22 @@ const Footer = () => {
                                     ) : (
                                         "Star us in GitHub"
                                     )}
+                                </Link>
+
+                                <Link
+                                    href="https://www.producthunt.com/posts/fork-commit-merge?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-fork&#0045;commit&#0045;merge"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=415196&theme=dark"
+                                        alt="Fork, Commit, Merge - Resource hub for mastering GitHub contributions | Product Hunt"
+                                        style={{
+                                            width: "249px",
+                                            height: "51px",
+                                        }}
+                                        width="249"
+                                        height="51"
+                                    />
                                 </Link>
                             </div>
                         </div>
