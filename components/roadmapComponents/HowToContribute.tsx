@@ -21,15 +21,24 @@ const HowToContribute = () => {
                     Identify a project that interests you. Many projects
                     specifically mark issues as &quot;good for beginners&quot;,
                     &quot;good first issue&quot; or similar to that to help you
-                    find a starting point. One excellent website for looking
-                    these kind of issues is{" "}
+                    find a starting point. Some excellent places for looking these kind of
+                    issues are for example{" "}
                     <a
                         href="https://goodfirstissues.com"
                         className="hover:underline text-blue-400"
                         target="blank"
                     >
                         goodfirstissues.com.
+                    </a>{" "}
+                    and{" "}
+                    <a
+                        href="https://github.com/MunGell/awesome-for-beginners"
+                        className="hover:underline text-blue-400"
+                        target="blank"
+                    >
+                        Awesome for Beginners - GitHub repository
                     </a>
+                    .
                     <br />
                     <br />
                     However, you don&apos;t necessary have to start looking for

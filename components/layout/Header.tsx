@@ -148,7 +148,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        className="py-0.2 px-3 ml-9 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                                        className="py-0.2 px-3 ml-9 border border-transparent text-sm font-medium rounded-md text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                                         href={
                                             "https://github.com/nikohoffren/fork-commit-merge"
                                         }
@@ -199,19 +199,19 @@ const Header = () => {
                 <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 overflow-auto z-20 md:hidden bg-transparent backdrop-blur">
                     {session?.user ? (
                         <Link href="/login" onClick={() => setIsOpen(false)}>
-                            <div className="bg-gray-800 hover:bg-gray-700 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium">
+                            <div className="bg-slate-900 hover:bg-slate-800 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium">
                                 {session.user.name}
                             </div>
                         </Link>
                     ) : (
                         <Link href="/login" onClick={() => setIsOpen(false)}>
-                            <div className="py-2 px-7 block text-sm cursor-pointer bg-gray-800 hover:bg-gray-700 hover:text-slate-100 border border-transparent font-medium">
+                            <div className="py-2 px-7 block text-sm cursor-pointer bg-slate-900 hover:bg-slate-800 hover:text-slate-100 border border-transparent font-medium">
                                 LOGIN
                             </div>
                         </Link>
                     )}
                     <Link
-                        className="w-full my-2 py-1 px-3 border border-transparent text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                        className="w-full my-2 py-1 px-3 border border-transparent text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                         href={
                             "https://github.com/nikohoffren/fork-commit-merge"
                         }
@@ -552,7 +552,7 @@ const Header = () => {
                                     href="/login"
                                     onClick={() => setIsOpen(false)}
                                 >
-                                    <div className="bg-gray-800 hover:bg-gray-700 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium rounded-md">
+                                    <div className="bg-slate-900 hover:bg-slate-800 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium rounded-md">
                                         {session.user.name}
                                     </div>
                                 </Link>
@@ -561,7 +561,7 @@ const Header = () => {
                                     href="/login"
                                     onClick={() => setIsOpen(false)}
                                 >
-                                    <div className="bg-gray-800 hover:bg-gray-700 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium rounded-md">
+                                    <div className="bg-slate-900 hover:bg-slate-800 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium rounded-md">
                                         LOGIN
                                     </div>
                                 </Link>

@@ -104,7 +104,7 @@ const Footer = () => {
                         <div className="text-center w-full">
                             <div className="text-base text-slate-50">
                                 <Link
-                                    className="py-1 px-3 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
+                                    className="py-1 px-3 border border-transparent text-sm font-medium rounded-md text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
                                     href={
                                         "https://github.com/nikohoffren/fork-commit-merge"
                                     }
