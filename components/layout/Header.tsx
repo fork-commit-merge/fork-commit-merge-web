@@ -196,7 +196,7 @@ const Header = () => {
                 </div>
             </nav>
             {isOpen && (
-                <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 bg-secondary overflow-auto z-20 md:hidden bg-transparent backdrop-blur">
+                <div className="fixed top-0 left-0 w-64 h-full pt-6 text-slate-50 overflow-auto z-20 md:hidden bg-transparent backdrop-blur">
                     {session?.user ? (
                         <Link href="/login" onClick={() => setIsOpen(false)}>
                             <div className="bg-gray-800 hover:bg-gray-700 py-2 px-7 block text-sm cursor-pointer hover:text-slate-100 border border-transparent font-medium">
