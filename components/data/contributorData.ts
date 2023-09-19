@@ -1451,4 +1451,10 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/43003421?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "ratishjain12"
     },
+    {
+        "id": "ykpyck",
+        "url": "https://github.com/ykpyck",
+        "avatar": "https://avatars.githubusercontent.com/u/73302122?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "ykpyck"
+    },
 ];
