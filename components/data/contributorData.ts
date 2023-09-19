@@ -1457,4 +1457,10 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/73302122?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "ykpyck"
     },
+    {
+        "id": "GasparBonari",
+        "url": "https://github.com/GasparBonari",
+        "avatar": "https://avatars.githubusercontent.com/u/89667053?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "GasparBonari"
+    },
 ];
