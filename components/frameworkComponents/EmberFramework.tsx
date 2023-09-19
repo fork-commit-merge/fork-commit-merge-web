@@ -16,14 +16,14 @@ const EmberFramework = () => {
                     Ember.js is a productive, battle-tested JavaScript framework
                     for building modern web applications. It includes everything
                     you need to build rich UIs that work on any device. With
-                    scalable UI architecture baked-in from the start, you'll be
+                    scalable UI architecture baked-in from the start, you&apos;ll be
                     working with the same patterns these organizations use every
                     step of the way.
                 </p>
 
                 <h2 className="mb-4 text-2xl font-bold">Why Use Ember?</h2>
                 <p className="mb-6">
-                    Ember’s out-of-the-box experience has everything you need to
+                    Ember&apos;s out-of-the-box experience has everything you need to
                     start building on day one and keep shipping for years.
                     Benefit from our years of experience to help your team be
                     productive—faster. Ember CLI streamlines Ember app
@@ -31,7 +31,7 @@ const EmberFramework = () => {
                     tools, and easy production deployment. Its powerful router
                     supports dynamic URLs and async data loading. Ember Data
                     simplifies data access, while comprehensive testing tools
-                    ensure code quality. Ember's Glimmer rendering engine
+                    ensure code quality. Ember&apos;s Glimmer rendering engine
                     ensures top-notch performance, with seamless version
                     upgrades and a supportive community.
                 </p>
@@ -46,12 +46,12 @@ const EmberFramework = () => {
                         maintains data consistency effectively.
                     </li>
                     <li>
-                        - Make it a point to follow Ember's established naming
+                        - Make it a point to follow Ember&apos;s established naming
                         and coding conventions. This practice will make your
                         code more understandable and easier to maintain.
                     </li>
                     <li>
-                        - Embrace Ember's component-based architecture. It
+                        - Embrace Ember&apos;s component-based architecture. It
                         allows you to create modular and reusable UI elements,
                         making your development process more efficient.
                     </li>
