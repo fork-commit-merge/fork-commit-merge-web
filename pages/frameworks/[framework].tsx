@@ -16,6 +16,7 @@ import ReactNativeFramework from "../../components/frameworkComponents/ReactNati
 import GatsbyFramework from "../../components/frameworkComponents/GatsbyFramework";
 import ThreeJSLibrary from "../../components/frameworkComponents/ThreeJSLibrary";
 import ReactLibrary from "../../components/frameworkComponents/ReactLibrary";
+import EmberFramework from "../../components/frameworkComponents/EmberFramework";
 
 const FrameworkPage = () => {
     const router = useRouter();
@@ -53,6 +54,8 @@ const FrameworkPage = () => {
                 return <FlutterFramework />;
             case "reactnative":
                 return <ReactNativeFramework />;
+            case "ember":
+                return <EmberFramework />;
             default:
                 return <FrameworkNotSupported />;
         }
