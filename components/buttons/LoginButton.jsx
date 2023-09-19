@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
@@ -181,7 +182,6 @@ export default function LoginButton() {
                         I agree to the{" "}
                         <a
                             href="/privacy-policy"
-                            target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-400 hover:underline"
                         >

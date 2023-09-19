@@ -89,7 +89,7 @@ const Footer = () => {
                                 </li>
                                 <li className="hover:underline">
                                     <Link
-                                        href="https://github.com/nikohoffren/fork-commit-merge/blob/main/code_of_conduct.md"
+                                        href="https://github.com/nikohoffren/fork-commit-merge/blob/main/CODE_OF_CONDUCT.md"
                                         target="blank"
                                     >
                                         Code of Conduct
