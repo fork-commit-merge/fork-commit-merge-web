@@ -1463,4 +1463,52 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/89667053?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "GasparBonari"
     },
+    {
+        "id": "Josepi161",
+        "url": "https://github.com/Josepi161",
+        "avatar": "https://avatars.githubusercontent.com/u/120115165?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Josepi161"
+    },
+    {
+        "id": "Luega",
+        "url": "https://github.com/Luega",
+        "avatar": "https://avatars.githubusercontent.com/u/90217066?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Luega"
+    },
+    {
+        "id": "ducksblock",
+        "url": "https://github.com/ducksblock",
+        "avatar": "https://avatars.githubusercontent.com/u/105146670?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "ducksblock"
+    },
+    {
+        "id": "adeelFeroz77",
+        "url": "https://github.com/adeelFeroz77",
+        "avatar": "https://avatars.githubusercontent.com/u/73684141?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "adeelFeroz77"
+    },
+    {
+        "id": "jmorofsky",
+        "url": "https://github.com/jmorofsky",
+        "avatar": "https://avatars.githubusercontent.com/u/80358703?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "jmorofsky"
+    },
+    {
+        "id": "govindvarma1",
+        "url": "https://github.com/govindvarma1",
+        "avatar": "https://avatars.githubusercontent.com/u/98372421?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "govindvarma1"
+    },
+    {
+        "id": "igorsantos13",
+        "url": "https://github.com/igorsantos13",
+        "avatar": "https://avatars.githubusercontent.com/u/86027825?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "igorsantos13"
+    },
+    {
+        "id": "sourav091",
+        "url": "https://github.com/sourav091",
+        "avatar": "https://avatars.githubusercontent.com/u/103144387?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "sourav091"
+    },
 ];
