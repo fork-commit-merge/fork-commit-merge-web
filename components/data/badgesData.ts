@@ -52,6 +52,18 @@ export const badgesData = [
         alt: "Vue",
     },
     {
+        src: "https://img.shields.io/badge/Astro-5A67D8?style=for-the-badge&logo=astro&logoColor=white",
+        alt: "Astro",
+    },
+    {
+        src: "https://img.shields.io/badge/Angular-5A67D8?style=for-the-badge&logo=Angular&logoColor=white",
+        alt: "Angular",
+    },
+     {
+        src: "https://img.shields.io/badge/Svelte-5A67D8?style=for-the-badge&logo=Svelte&logoColor=white",
+        alt: "Svelte",
+    },
+    {
         src: "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
         alt: "NodeJS",
     },
