@@ -4,6 +4,7 @@ import { Contributors } from "./Contributors";
 import { TopThreeContributors } from "./TopThreeContributors";
 import Badges from "./Badges";
 import { contributorData } from "../data/contributorData";
+import React from "react";
 
 const IndexMain: React.FC = () => {
     return (
@@ -27,9 +28,11 @@ const IndexMain: React.FC = () => {
                     </div>
                     <TopThreeContributors />
 
-                    <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-4xl">
-                        <Contributors contributors={contributorData} />
-                    </div>
+                    <React.Suspense>
+                        <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-4xl">
+                            <Contributors contributors={contributorData} />
+                        </div>
+                    </React.Suspense>
                 </div>
                 <div className="bg-secondary w-full py-6">
                     <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">

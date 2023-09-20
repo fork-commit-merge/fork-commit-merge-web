@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { FC } from 'react';
+// Contributors.tsx
+import LazyImage from "./LazyImage";
 
 interface Contributor {
     id: string;
@@ -12,20 +12,20 @@ interface ContributorsProps {
     contributors: Contributor[];
 }
 
-export const Contributors: FC<ContributorsProps> = ({ contributors }) => (
+export const Contributors: React.FC<ContributorsProps> = ({ contributors }) => (
     <div className="contributor-images">
-        {contributors.map(contributor => (
+        {contributors.map((contributor) => (
             <a
                 key={contributor.id}
                 href={contributor.url}
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <Image
+                <LazyImage
                     src={contributor.avatar}
+                    alt={contributor.name}
                     width={130}
                     height={130}
-                    alt={contributor.name}
                 />
             </a>
         ))}
