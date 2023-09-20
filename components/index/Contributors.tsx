@@ -1,4 +1,3 @@
-// Contributors.tsx
 import LazyImage from "./LazyImage";
 
 interface Contributor {

@@ -16,6 +16,8 @@ import ReactNativeFramework from "../../components/frameworkComponents/ReactNati
 import GatsbyFramework from "../../components/frameworkComponents/GatsbyFramework";
 import ThreeJSLibrary from "../../components/frameworkComponents/ThreeJSLibrary";
 import ReactLibrary from "../../components/frameworkComponents/ReactLibrary";
+import EmberFramework from "../../components/frameworkComponents/EmberFramework";
+import AstroFramework from "../../components/frameworkComponents/AstroFramework";
 
 const FrameworkPage = () => {
     const router = useRouter();
@@ -25,6 +27,8 @@ const FrameworkPage = () => {
         switch (framework) {
             case "express":
                 return <ExpressFramework />;
+            case "emberjs":
+                return <EmberFramework />;
             case "react":
                 return <ReactLibrary />;
             case "next":
@@ -35,10 +39,12 @@ const FrameworkPage = () => {
                 return <ViteFramework />;
             case "vue":
                 return <VueFramework />;
-            case "angular":
-                return <AngularFramework />;
             case "svelte":
                 return <SvelteFramework />;
+            case "astro":
+                return <AstroFramework />;
+            case "angular":
+                return <AngularFramework />;
             case "gatsby":
                 return <GatsbyFramework />;
             case "flask":
