@@ -38,11 +38,11 @@ export const languageList = [
     { name: "R", link: "/languages/r" },
     { name: "Elm", link: "/languages/elm" },
     { name: "Nim", link: "/languages/nim" },
-    { name: "Nix", link: "/languages/nix" },
     { name: "MATLAB", link: "/languages/matlab" },
     { name: "Octave", link: "/languages/octave" },
     { name: "SQL", link: "/languages/sql" },
     { name: "Bash", link: "/languages/bash" },
     { name: "Perl", link: "/languages/perl" },
+    { name: "Nix", link: "/languages/nix" },
     { name: "Scratch", link: "/languages/scratch" },
 ];

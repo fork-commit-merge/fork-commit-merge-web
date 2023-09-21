@@ -224,10 +224,6 @@ export const badgesData = [
         alt: "Nim",
     },
     {
-        src: "https://img.shields.io/badge/NIX-5277C3.svg?style=for-the-badge&logo=NixOS&logoColor=white",
-        alt: "Nix",
-    },
-    {
         src: "https://img.shields.io/badge/MATLAB-%23ED8B00?style=for-the-badge&logo=MATLAB&logoColor=fcd683",
         alt: "MATLAB",
     },
@@ -254,6 +250,10 @@ export const badgesData = [
     {
         src: "https://img.shields.io/badge/perl-%230D467A.svg?style=for-the-badge&logo=perl&logoColor=white",
         alt: "Perl",
+    },
+        {
+        src: "https://img.shields.io/badge/NIX-5277C3.svg?style=for-the-badge&logo=NixOS&logoColor=white",
+        alt: "Nix",
     },
     {
         src: "https://img.shields.io/badge/json-%23000000.svg?style=for-the-badge&logo=json&logoColor=blue",
