@@ -56,11 +56,11 @@ export const badgesData = [
         alt: "Astro",
     },
     {
-        src: "https://img.shields.io/badge/Angular-5A67D8?style=for-the-badge&logo=Angular&logoColor=white",
+        src: "https://img.shields.io/badge/Angular-%23E32F26?style=for-the-badge&logo=Angular&logoColor=white",
         alt: "Angular",
     },
-     {
-        src: "https://img.shields.io/badge/Svelte-5A67D8?style=for-the-badge&logo=Svelte&logoColor=white",
+    {
+        src: "https://img.shields.io/badge/Svelte-%23E32F26?style=for-the-badge&logo=Svelte&logoColor=white",
         alt: "Svelte",
     },
     {
@@ -222,6 +222,10 @@ export const badgesData = [
     {
         src: "https://img.shields.io/badge/nim-%23FFE953.svg?style=for-the-badge&logo=nim&logoColor=white",
         alt: "Nim",
+    },
+    {
+        src: "https://img.shields.io/badge/NIX-5277C3.svg?style=for-the-badge&logo=NixOS&logoColor=white",
+        alt: "Nix",
     },
     {
         src: "https://img.shields.io/badge/MATLAB-%23ED8B00?style=for-the-badge&logo=MATLAB&logoColor=fcd683",

@@ -45,6 +45,7 @@ import ScratchLanguage from "../../components/languageComponents/ScratchLanguage
 import PascalLanguage from "../../components/languageComponents/PascalLanguage";
 import ObjectiveCLanguage from "../../components/languageComponents/ObjectiveCLanguage";
 import MATLABLanguage from "../../components/languageComponents/MATLABLanguage";
+import NixLanguage from "../../components/languageComponents/NixLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -130,6 +131,8 @@ const LanguagePage = () => {
                 return <ElmLanguage />;
             case "nim":
                 return <NimLanguage />;
+            case "nix":
+                return <NixLanguage />;
             case "octave":
                 return <OctaveLanguage />;
             case "rescript":
