@@ -1,14 +1,18 @@
 export const badgesData = [
     {
-        src: "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
-        alt: "HTML5",
+        src: "https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
+        alt: "HTML",
     },
     {
-        src: "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
-        alt: "CSS3",
+        src: "https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
+        alt: "CSS",
     },
     {
-        src: "https://img.shields.io/badge/tailwindcss-%231572B6.svg?style=for-the-badge&logo=tailwindcss&logoColor=%23F7DF1E",
+        src: "https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white",
+        alt: "SASS",
+    },
+    {
+        src: "https://img.shields.io/badge/tailwind-%231572B6.svg?style=for-the-badge&logo=tailwindcss&logoColor=%23F7DF1E",
         alt: "Tailwind CSS",
     },
     {
