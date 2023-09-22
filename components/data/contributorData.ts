@@ -1374,165 +1374,183 @@ export const contributorData = [
         name: "Plktz",
     },
     {
-        "id": "afobaje",
-        "url": "https://github.com/afobaje",
-        "avatar": "https://avatars.githubusercontent.com/u/34343091?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "afobaje"
+        id: "afobaje",
+        url: "https://github.com/afobaje",
+        avatar: "https://avatars.githubusercontent.com/u/34343091?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "afobaje",
     },
     {
-        "id": "deeksharungta",
-        "url": "https://github.com/deeksharungta",
-        "avatar": "https://avatars.githubusercontent.com/u/79518532?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "deeksharungta"
+        id: "deeksharungta",
+        url: "https://github.com/deeksharungta",
+        avatar: "https://avatars.githubusercontent.com/u/79518532?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "deeksharungta",
     },
     {
-        "id": "sruthikkoneti",
-        "url": "https://github.com/sruthikkoneti",
-        "avatar": "https://avatars.githubusercontent.com/u/97946223?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "sruthikkoneti"
+        id: "sruthikkoneti",
+        url: "https://github.com/sruthikkoneti",
+        avatar: "https://avatars.githubusercontent.com/u/97946223?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "sruthikkoneti",
     },
     {
-        "id": "ivanosquis10",
-        "url": "https://github.com/ivanosquis10",
-        "avatar": "https://avatars.githubusercontent.com/u/83567373?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "ivanosquis10"
+        id: "ivanosquis10",
+        url: "https://github.com/ivanosquis10",
+        avatar: "https://avatars.githubusercontent.com/u/83567373?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "ivanosquis10",
     },
     {
-        "id": "gayatriagarwal19",
-        "url": "https://github.com/gayatriagarwal19",
-        "avatar": "https://avatars.githubusercontent.com/u/98116507?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "gayatriagarwal19"
+        id: "gayatriagarwal19",
+        url: "https://github.com/gayatriagarwal19",
+        avatar: "https://avatars.githubusercontent.com/u/98116507?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "gayatriagarwal19",
     },
     {
-        "id": "Vedant91827",
-        "url": "https://github.com/Vedant91827",
-        "avatar": "https://avatars.githubusercontent.com/u/83276177?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "Vedant91827"
+        id: "Vedant91827",
+        url: "https://github.com/Vedant91827",
+        avatar: "https://avatars.githubusercontent.com/u/83276177?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Vedant91827",
     },
     {
-        "id": "matthewvrban2000",
-        "url": "https://github.com/matthewvrban2000",
-        "avatar": "https://avatars.githubusercontent.com/u/58794740?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "matthewvrban2000"
+        id: "matthewvrban2000",
+        url: "https://github.com/matthewvrban2000",
+        avatar: "https://avatars.githubusercontent.com/u/58794740?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "matthewvrban2000",
     },
     {
-        "id": "Nasirahamad88",
-        "url": "https://github.com/Nasirahamad88",
-        "avatar": "https://avatars.githubusercontent.com/u/116346415?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "Nasirahamad88"
+        id: "Nasirahamad88",
+        url: "https://github.com/Nasirahamad88",
+        avatar: "https://avatars.githubusercontent.com/u/116346415?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Nasirahamad88",
     },
     {
-        "id": "david6304",
-        "url": "https://github.com/david6304",
-        "avatar": "https://avatars.githubusercontent.com/u/73233418?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "david6304"
+        id: "david6304",
+        url: "https://github.com/david6304",
+        avatar: "https://avatars.githubusercontent.com/u/73233418?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "david6304",
     },
     {
-        "id": "kaushal1717",
-        "url": "https://github.com/kaushal1717",
-        "avatar": "https://avatars.githubusercontent.com/u/121810303?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "kaushal1717"
+        id: "kaushal1717",
+        url: "https://github.com/kaushal1717",
+        avatar: "https://avatars.githubusercontent.com/u/121810303?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "kaushal1717",
     },
     {
-        "id": "aditya-adhane",
-        "url": "https://github.com/aditya-adhane",
-        "avatar": "https://avatars.githubusercontent.com/u/92790396?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "aditya-adhane"
+        id: "aditya-adhane",
+        url: "https://github.com/aditya-adhane",
+        avatar: "https://avatars.githubusercontent.com/u/92790396?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "aditya-adhane",
     },
     {
-        "id": "ARYAN105",
-        "url": "https://github.com/ARYAN105",
-        "avatar": "https://avatars.githubusercontent.com/u/106956005?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "ARYAN105"
+        id: "ARYAN105",
+        url: "https://github.com/ARYAN105",
+        avatar: "https://avatars.githubusercontent.com/u/106956005?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "ARYAN105",
     },
     {
-        "id": "ratishjain12",
-        "url": "https://github.com/ratishjain12",
-        "avatar": "https://avatars.githubusercontent.com/u/43003421?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "ratishjain12"
+        id: "ratishjain12",
+        url: "https://github.com/ratishjain12",
+        avatar: "https://avatars.githubusercontent.com/u/43003421?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "ratishjain12",
     },
     {
-        "id": "ykpyck",
-        "url": "https://github.com/ykpyck",
-        "avatar": "https://avatars.githubusercontent.com/u/73302122?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "ykpyck"
+        id: "ykpyck",
+        url: "https://github.com/ykpyck",
+        avatar: "https://avatars.githubusercontent.com/u/73302122?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "ykpyck",
     },
     {
-        "id": "GasparBonari",
-        "url": "https://github.com/GasparBonari",
-        "avatar": "https://avatars.githubusercontent.com/u/89667053?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "GasparBonari"
+        id: "GasparBonari",
+        url: "https://github.com/GasparBonari",
+        avatar: "https://avatars.githubusercontent.com/u/89667053?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "GasparBonari",
     },
     {
-        "id": "Josepi161",
-        "url": "https://github.com/Josepi161",
-        "avatar": "https://avatars.githubusercontent.com/u/120115165?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "Josepi161"
+        id: "Josepi161",
+        url: "https://github.com/Josepi161",
+        avatar: "https://avatars.githubusercontent.com/u/120115165?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Josepi161",
     },
     {
-        "id": "Luega",
-        "url": "https://github.com/Luega",
-        "avatar": "https://avatars.githubusercontent.com/u/90217066?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "Luega"
+        id: "Luega",
+        url: "https://github.com/Luega",
+        avatar: "https://avatars.githubusercontent.com/u/90217066?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Luega",
     },
     {
-        "id": "ducksblock",
-        "url": "https://github.com/ducksblock",
-        "avatar": "https://avatars.githubusercontent.com/u/105146670?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "ducksblock"
+        id: "ducksblock",
+        url: "https://github.com/ducksblock",
+        avatar: "https://avatars.githubusercontent.com/u/105146670?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "ducksblock",
     },
     {
-        "id": "adeelFeroz77",
-        "url": "https://github.com/adeelFeroz77",
-        "avatar": "https://avatars.githubusercontent.com/u/73684141?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "adeelFeroz77"
+        id: "adeelFeroz77",
+        url: "https://github.com/adeelFeroz77",
+        avatar: "https://avatars.githubusercontent.com/u/73684141?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "adeelFeroz77",
     },
     {
-        "id": "jmorofsky",
-        "url": "https://github.com/jmorofsky",
-        "avatar": "https://avatars.githubusercontent.com/u/80358703?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "jmorofsky"
+        id: "jmorofsky",
+        url: "https://github.com/jmorofsky",
+        avatar: "https://avatars.githubusercontent.com/u/80358703?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "jmorofsky",
     },
     {
-        "id": "govindvarma1",
-        "url": "https://github.com/govindvarma1",
-        "avatar": "https://avatars.githubusercontent.com/u/98372421?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "govindvarma1"
+        id: "govindvarma1",
+        url: "https://github.com/govindvarma1",
+        avatar: "https://avatars.githubusercontent.com/u/98372421?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "govindvarma1",
     },
     {
-        "id": "igorsantos13",
-        "url": "https://github.com/igorsantos13",
-        "avatar": "https://avatars.githubusercontent.com/u/86027825?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "igorsantos13"
+        id: "igorsantos13",
+        url: "https://github.com/igorsantos13",
+        avatar: "https://avatars.githubusercontent.com/u/86027825?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "igorsantos13",
     },
     {
-        "id": "sourav091",
-        "url": "https://github.com/sourav091",
-        "avatar": "https://avatars.githubusercontent.com/u/103144387?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "sourav091"
+        id: "sourav091",
+        url: "https://github.com/sourav091",
+        avatar: "https://avatars.githubusercontent.com/u/103144387?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "sourav091",
     },
     {
-        "id": "vanshgarg21",
-        "url": "https://github.com/vanshgarg21",
-        "avatar": "https://avatars.githubusercontent.com/u/110455977?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "vanshgarg21"
+        id: "vanshgarg21",
+        url: "https://github.com/vanshgarg21",
+        avatar: "https://avatars.githubusercontent.com/u/110455977?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "vanshgarg21",
     },
     {
-        "id": "blackdreamer15",
-        "url": "https://github.com/blackdreamer15",
-        "avatar": "https://avatars.githubusercontent.com/u/99067120?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "blackdreamer15"
+        id: "blackdreamer15",
+        url: "https://github.com/blackdreamer15",
+        avatar: "https://avatars.githubusercontent.com/u/99067120?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "blackdreamer15",
     },
     {
-        "id": "Costa0910",
-        "url": "https://github.com/Costa0910",
-        "avatar": "https://avatars.githubusercontent.com/u/83301015?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "Costa0910"
+        id: "Costa0910",
+        url: "https://github.com/Costa0910",
+        avatar: "https://avatars.githubusercontent.com/u/83301015?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "Costa0910",
     },
     {
-        "id": "FazlOmar9",
-        "url": "https://github.com/FazlOmar9",
-        "avatar": "https://avatars.githubusercontent.com/u/127670431?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
-        "name": "FazlOmar9"
+        id: "FazlOmar9",
+        url: "https://github.com/FazlOmar9",
+        avatar: "https://avatars.githubusercontent.com/u/127670431?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "FazlOmar9",
+    },
+    {
+        id: "aryastark08",
+        url: "https://github.com/aryastark08",
+        avatar: "https://avatars.githubusercontent.com/u/104924847?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "aryastark08",
+    },
+    {
+        id: "ivan-rm",
+        url: "https://github.com/ivan-rm",
+        avatar: "https://avatars.githubusercontent.com/u/84288932?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "ivan-rm",
+    },
+    {
+        id: "shubh-is-coding",
+        url: "https://github.com/shubh-is-coding",
+        avatar: "https://avatars.githubusercontent.com/u/117469903?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        name: "shubh-is-coding",
     },
 ];

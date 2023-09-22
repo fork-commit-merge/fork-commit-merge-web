@@ -76,8 +76,16 @@ export const badgesData = [
         alt: "Yarn",
     },
     {
+        src: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
+        alt: "ExpressJS",
+    },
+    {
         src: "https://img.shields.io/badge/jest-%23E34F26.svg?style=for-the-badge&logo=jest&logoColor=white",
         alt: "Jest",
+    },
+    {
+        src: "https://img.shields.io/badge/jasmine-%238A4182.svg?style=for-the-badge&logo=jasmine&logoColor=white",
+        alt: "Jasmine",
     },
     {
         src: "https://img.shields.io/badge/c-%231572B6.svg?style=for-the-badge&logo=c&logoColor=%23F7DF1E",
@@ -251,7 +259,7 @@ export const badgesData = [
         src: "https://img.shields.io/badge/perl-%230D467A.svg?style=for-the-badge&logo=perl&logoColor=white",
         alt: "Perl",
     },
-        {
+    {
         src: "https://img.shields.io/badge/NIX-5277C3.svg?style=for-the-badge&logo=NixOS&logoColor=white",
         alt: "Nix",
     },
