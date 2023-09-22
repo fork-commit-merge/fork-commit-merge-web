@@ -15,12 +15,14 @@ const Descriptions: React.FC = () => {
                     <br />
                     At the moment the repository has issues for HTML, CSS,
                     Tailwind, Bootstrap, ReScript, CoffeeScript, JavaScript,
-                    TypeScript, React, NextJS, ThreeJS, Vue, C, C++, C#, D, F#,
-                    Java, Kotlin, Scala, Python, Flask, Django, Ruby, Rails,
-                    Elixir, PHP, Laravel, Go, Dart, Flutter, Swift, Rust,
-                    Haskell, Lua, Clojure, Lisp, Fortran, Erlang, Smalltalk,
-                    Zig, R, Solidity, Vyper, SQL, TLA+, Bash, Perl, JSON, YAML,
-                    TOML, CSV, XML and Markdown.
+                    TypeScript, React, NextJS, ThreeJS, Vue, Svelte, Astro,
+                    Angular, NodeJS, ExpressJS, Jest, Jasmine, C, C++, C#, D,
+                    F#, Java, Kotlin, Scala, Groovy, Python, Flask, Django,
+                    Ruby, Rails, Elixir, Crystal, PHP, Laravel, Go, Dart,
+                    Flutter, Swift, Rust, Haskell, Lua, Clojure, Lisp, Fortran,
+                    Erlang, Smalltalk, Zig, R, Nim, MATLAB, Octave, Solidity,
+                    Vyper, SQL, TLA+, Bash, Perl, JSON, YAML, TOML, CSV, XML and
+                    Markdown.
                     <br />
                     <br />
                     Each task is a problem that needs to be solved, which helps
