@@ -1577,4 +1577,22 @@ export const contributorData = [
         avatar: "https://avatars.githubusercontent.com/u/57508905?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         name: "vaqueraoscar0",
     },
+    {
+        "id": "robertlent",
+        "url": "https://github.com/robertlent",
+        "avatar": "https://avatars.githubusercontent.com/u/7595802?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "robertlent"
+    },
+    {
+        "id": "chauhansumitdev",
+        "url": "https://github.com/chauhansumitdev",
+        "avatar": "https://avatars.githubusercontent.com/u/103536827?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "chauhansumitdev"
+    },
+    {
+        "id": "OrganicBeetle",
+        "url": "https://github.com/OrganicBeetle",
+        "avatar": "https://avatars.githubusercontent.com/u/130658581?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "OrganicBeetle"
+    },
 ];
