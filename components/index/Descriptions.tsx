@@ -13,7 +13,7 @@ const Descriptions: React.FC = () => {
                     languages, libraries and frameworks.
                     <br />
                     <br />
-                    At the moment the repository has issues for HTML, CSS,
+                    At the moment the repository has issues for HTML, HTMX, CSS,
                     Tailwind, Bootstrap, ReScript, CoffeeScript, JavaScript,
                     TypeScript, React, NextJS, ThreeJS, Vue, Svelte, Astro,
                     Angular, NodeJS, ExpressJS, Jest, Jasmine, C, C++, C#, D,
