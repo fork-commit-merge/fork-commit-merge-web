@@ -92,6 +92,10 @@ export const badgesData = [
         alt: "Jasmine",
     },
     {
+        src: "https://img.shields.io/badge/Vitest-%23646CFF.svg?style=for-the-badge&logo=Vitest&logoColor=white",
+        alt: "Vitest",
+    },
+    {
         src: "https://img.shields.io/badge/c-%231572B6.svg?style=for-the-badge&logo=c&logoColor=%23F7DF1E",
         alt: "C",
     },
