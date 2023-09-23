@@ -2,7 +2,7 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-interface LazyImageProps {
+type LazyImageProps = {
     src: string;
     alt: string;
     width: number;

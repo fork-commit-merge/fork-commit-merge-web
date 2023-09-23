@@ -3,7 +3,7 @@ import axios from "axios";
 import Image from "next/image";
 import { StarFilled } from "@ant-design/icons";
 
-export interface Contributor {
+export type Contributor = {
     id: string;
     url: string;
     avatar: string;

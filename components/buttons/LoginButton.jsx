@@ -20,42 +20,30 @@ export default function LoginButton() {
     const [isConsentGiven, setConsentGiven] = useState(false);
 
     useEffect(() => {
-        if (session?.user?.email) {
-            setIsLoading(true);
-            fetchGitHubUsername(session.user.email).then((username) => {
-                fetchStoredPullRequests(username)
-                    .then((data) => {
-                        if (data) {
-                            setPullRequests(data.pullRequests || []);
-                            setIsLoading(false);
-                        } else {
-                            axios
-                                .get(
-                                    `/api/closedPullRequests?username=${username}`
-                                )
-                                .then((response) => {
-                                    setPullRequests(response.data);
-                                    setIsLoading(false);
-                                })
-                                .catch((error) => {
-                                    console.error(
-                                        "Error fetching data:",
-                                        error
-                                    );
-                                    setIsLoading(false);
-                                });
-                        }
-                    })
-                    .catch((err) => {
-                        console.error(
-                            "Error fetching stored pull requests:",
-                            err
-                        );
-                        setIsLoading(false);
-                    });
-            });
-        }
+        const fetchData = async () => {
+            if (session?.user?.email) {
+                setIsLoading(true);
+                try {
+                    const username = await fetchGitHubUsername(session.user.email);
+                    const storedPRs = await fetchStoredPullRequests(username);
+
+                    if (storedPRs) {
+                        setPullRequests(storedPRs.pullRequests || []);
+                    } else {
+                        console.log("Making Axios call to fetch closed PRs");
+                        const response = await axios.get(`/api/closedPullRequests?username=${username}`);
+                        setPullRequests(response.data);
+                    }
+                } catch (error) {
+                    console.error("Error:", error);
+                } finally {
+                    setIsLoading(false);
+                }
+            }
+        };
+        fetchData();
     }, [session]);
+
 
     const handleConsentChange = () => {
         setConsentGiven(!isConsentGiven);

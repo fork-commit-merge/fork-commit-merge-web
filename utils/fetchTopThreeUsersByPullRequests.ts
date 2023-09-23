@@ -1,6 +1,6 @@
 import axios from "axios";
 
-interface UserStat {
+type UserStat = {
     username: string;
     prCount: number;
     avatarUrl: string;

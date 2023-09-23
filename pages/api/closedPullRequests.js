@@ -6,7 +6,7 @@ import {
 import { fetchClosedPullRequests } from '../../utils/fetchClosedPullRequests';
 export default async (req, res) => {
     const username = req.query.username;
-
+    console.log(username);
     try {
         let prs = await getClosedPullRequestsFromDb(username);
 

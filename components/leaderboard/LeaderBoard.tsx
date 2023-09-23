@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { renderStar } from "../../utils/helpers/RenderStar";
 import axios from "axios";
 
-interface UserStat {
+type UserStat = {
     username: string;
     prCount: number;
     avatarUrl: string;

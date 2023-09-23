@@ -1,13 +1,13 @@
 import LazyImage from "./LazyImage";
 
-interface Contributor {
+type Contributor = {
     id: string;
     url: string;
     avatar: string;
     name: string;
 }
 
-interface ContributorsProps {
+type ContributorsProps = {
     contributors: Contributor[];
 }
 
