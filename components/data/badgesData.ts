@@ -4,6 +4,10 @@ export const badgesData = [
         alt: "HTML",
     },
     {
+        src: "https://img.shields.io/badge/htmx-%2302569B.svg?style=for-the-badge&logo=htmx&logoColor=white",
+        alt: "HTMX",
+    },
+    {
         src: "https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
         alt: "CSS",
     },
