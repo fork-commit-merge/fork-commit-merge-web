@@ -26,9 +26,7 @@ export async function storeClosedPullRequestsInDb(
     const { db } = await connectToDB();
     const prsWithUsername = prs.map((pr) => ({ ...pr, username }));
     await db.collection("closedPullRequests").deleteMany({ username });
-    console.log("Deleted old closed pull requests");
     await db.collection("closedPullRequests").insertMany(prsWithUsername);
-    console.log("Inserted new closed pull requests");
 }
 
 export async function getClosedPullRequestsFromDb(

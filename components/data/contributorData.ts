@@ -1631,4 +1631,22 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/85685112?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "p1kalys"
     },
+    {
+        "id": "jeremyhuang035",
+        "url": "https://github.com/jeremyhuang035",
+        "avatar": "https://avatars.githubusercontent.com/u/119722002?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "jeremyhuang035"
+    },
+    {
+        "id": "vivek-650",
+        "url": "https://github.com/vivek-650",
+        "avatar": "https://avatars.githubusercontent.com/u/140919993?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "vivek-650"
+    },
+    {
+        "id": "kani-29",
+        "url": "https://github.com/kani-29",
+        "avatar": "https://avatars.githubusercontent.com/u/92940669?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "kani-29"
+    },
 ];
