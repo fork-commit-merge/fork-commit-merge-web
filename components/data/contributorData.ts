@@ -1595,4 +1595,40 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/130658581?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "OrganicBeetle"
     },
+    {
+        "id": "antonisapostoloudis",
+        "url": "https://github.com/antonisapostoloudis",
+        "avatar": "https://avatars.githubusercontent.com/u/74070585?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "antonisapostoloudis"
+    },
+    {
+        "id": "mithilesh-patel",
+        "url": "https://github.com/mithilesh-patel",
+        "avatar": "https://avatars.githubusercontent.com/u/113581405?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "mithilesh-patel"
+    },
+    {
+        "id": "AlexVCS",
+        "url": "https://github.com/AlexVCS",
+        "avatar": "https://avatars.githubusercontent.com/u/49458917?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "AlexVCS"
+    },
+    {
+        "id": "davidumoru",
+        "url": "https://github.com/davidumoru",
+        "avatar": "https://avatars.githubusercontent.com/u/92310163?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "davidumoru"
+    },
+    {
+        "id": "Crimson-Muffin",
+        "url": "https://github.com/Crimson-Muffin",
+        "avatar": "https://avatars.githubusercontent.com/u/117987615?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Crimson-Muffin"
+    },
+    {
+        "id": "p1kalys",
+        "url": "https://github.com/p1kalys",
+        "avatar": "https://avatars.githubusercontent.com/u/85685112?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "p1kalys"
+    },
 ];
