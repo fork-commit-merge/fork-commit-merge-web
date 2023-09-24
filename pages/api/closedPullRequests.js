@@ -2,8 +2,8 @@
 import {
     getClosedPullRequestsFromDb,
     storeClosedPullRequestsInDb,
-} from '../../utils/fetchClosedPullRequestsFromDb';
-import { fetchClosedPullRequests } from '../../utils/fetchClosedPullRequests';
+} from "../../utils/fetchClosedPullRequestsFromDb";
+import { fetchClosedPullRequests } from "../../utils/fetchClosedPullRequests";
 export default async (req, res) => {
     const username = req.query.username;
     console.log(username);
@@ -17,7 +17,7 @@ export default async (req, res) => {
 
         return res.status(200).json(prs);
     } catch (error) {
-        console.error('API Error:', error);
-        return res.status(500).json({ error: 'Internal Server Error' });
+        console.error("API Error:", error);
+        return res.status(500).json({ error: "Internal Server Error" });
     }
 };
