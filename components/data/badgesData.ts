@@ -236,6 +236,14 @@ export const badgesData = [
         alt: "Clojure",
     },
     {
+        src: "https://img.shields.io/badge/ocaml-%23ED8B00.svg?style=for-the-badge&logo=ocaml&logoColor=white",
+        alt: "OCaml",
+    },
+    {
+        src: "https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white",
+        alt: "LaTeX",
+    },
+    {
         src: "https://img.shields.io/badge/lisp-%23000000.svg?style=for-the-badge&logo=lisp&logoColor=red",
         alt: "Lisp",
     },
