@@ -25,19 +25,19 @@ const FrameworkPage = () => {
 
     const renderContent = () => {
         switch (framework) {
-            case "express":
+            case "expressjs":
                 return <ExpressFramework />;
             case "emberjs":
                 return <EmberFramework />;
             case "react":
                 return <ReactLibrary />;
-            case "next":
+            case "nextjs":
                 return <NextJSFramework />;
-            case "three":
+            case "threejs":
                 return <ThreeJSLibrary />;
             case "vite":
                 return <ViteFramework />;
-            case "vue":
+            case "vuejs":
                 return <VueFramework />;
             case "svelte":
                 return <SvelteFramework />;

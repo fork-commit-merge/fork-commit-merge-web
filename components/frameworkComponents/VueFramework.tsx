@@ -5,7 +5,7 @@ const VueFramework = () => {
             <div className="text-center text-slate-50 max-w-2xl">
                 <div className="flex flex-wrap justify-center items-center">
                     <img
-                        src="https://img.shields.io/badge/vue-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D"
+                        src="https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D"
                         alt="Vue"
                         className="mb-10 h-16 rounded-sm"
                     />
@@ -13,12 +13,12 @@ const VueFramework = () => {
 
                 <h2 className="text-2xl font-bold mb-4">What is Vue.js?</h2>
                 <p className="mb-4">
-                    Vue.js is a progressive JavaScript framework for building
-                    user interfaces. Unlike monolithic frameworks, Vue is
-                    designed from the ground up to be incrementally adoptable.
-                    This makes it easy to integrate with projects using other
-                    technologies or to be used for standalone complex Single
-                    Page Applications.
+                    Vue (or Vue.js) is a progressive JavaScript framework for
+                    building user interfaces. Unlike monolithic frameworks, Vue
+                    is designed from the ground up to be incrementally
+                    adoptable. This makes it easy to integrate with projects
+                    using other technologies or to be used for standalone
+                    complex Single Page Applications.
                 </p>
 
                 <h2 className="text-2xl font-bold mb-4">Why Use Vue.js?</h2>

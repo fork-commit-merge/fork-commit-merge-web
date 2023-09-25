@@ -5,15 +5,15 @@ const ThreeJSLibrary = () => {
             <div className="text-center text-slate-50 max-w-2xl">
                 <div className="flex flex-wrap justify-center items-center">
                     <img
-                        src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white"
+                        src="https://img.shields.io/badge/three.js-black?style=for-the-badge&logo=three.js&logoColor=white"
                         alt="ThreeJS"
                         className="mb-10 h-16 rounded-sm"
                     />
                 </div>
 
-                <h2 className="text-2xl font-bold mb-4">What is ThreeJS?</h2>
+                <h2 className="text-2xl font-bold mb-4">What is Three.js?</h2>
                 <p className="mb-4">
-                    Three (or ThreeJS) is a 3D library that extends the Canvas API and
+                    Three (or Three.js) is a 3D library that extends the Canvas API and
                     WebGL. It offers a comprehensive set of features for
                     creating and interacting with 3D designs and animations in
                     web applications. First released on April 24, 2010, the
@@ -23,9 +23,9 @@ const ThreeJSLibrary = () => {
                     experience.
                 </p>
 
-                <h2 className="text-2xl font-bold mb-4">Why Use ThreeJS?</h2>
+                <h2 className="text-2xl font-bold mb-4">Why Use Three.js?</h2>
                 <p className="mb-6">
-                    ThreeJS comes with a robust set of features for delivering
+                    Three.js comes with a robust set of features for delivering
                     high-quality animations. It includes ready-to-use tools such
                     as Mesh, Geometry, and Materials. The library supports
                     various model types like GLB, GLTF, and OBJ and provides
@@ -35,7 +35,7 @@ const ThreeJSLibrary = () => {
                 </p>
 
                 <h4 className="text-2xl font-bold my-4">
-                    ThreeJS Best Practices and Coding Style Guide
+                    Three.js Best Practices and Coding Style Guide
                 </h4>
                 <ul>
                     <li>
@@ -61,7 +61,7 @@ const ThreeJSLibrary = () => {
                     href="https://threejs.org/docs/"
                     className="text-xl font-bold underline hover:text-blue-400"
                 >
-                    ThreeJS - Official Documentation
+                    Three.js - Official Documentation
                 </a>
             </div>
         </div>

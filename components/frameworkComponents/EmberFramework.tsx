@@ -5,23 +5,23 @@ const EmberFramework = () => {
             <div className="max-w-2xl text-center text-slate-50">
                 <div className="flex flex-wrap items-center justify-center">
                     <img
-                        src="https://img.shields.io/badge/ember-1C1E24?style=for-the-badge&logo=ember.js&logoColor=#D04A37"
+                        src="https://img.shields.io/badge/ember.js-1C1E24?style=for-the-badge&logo=ember.js&logoColor=#D04A37"
                         alt="Ember"
                         className="h-16 mb-10 rounded-sm"
                     />
                 </div>
 
-                <h2 className="mb-4 text-2xl font-bold">What is Ember?</h2>
+                <h2 className="mb-4 text-2xl font-bold">What is Ember.js?</h2>
                 <p className="mb-4">
-                    Ember.js is a productive, battle-tested JavaScript framework
-                    for building modern web applications. It includes everything
-                    you need to build rich UIs that work on any device. With
-                    scalable UI architecture baked-in from the start,
-                    you&apos;ll be working with the same patterns these
-                    organizations use every step of the way.
+                    Ember (or Ember.js) is a productive, battle-tested
+                    JavaScript framework for building modern web applications.
+                    It includes everything you need to build rich UIs that work
+                    on any device. With scalable UI architecture baked-in from
+                    the start, you&apos;ll be working with the same patterns
+                    these organizations use every step of the way.
                 </p>
 
-                <h2 className="mb-4 text-2xl font-bold">Why Use Ember?</h2>
+                <h2 className="mb-4 text-2xl font-bold">Why Use Ember.js?</h2>
                 <p className="mb-6">
                     Ember&apos;s out-of-the-box experience has everything you
                     need to start building on day one and keep shipping for
@@ -37,7 +37,7 @@ const EmberFramework = () => {
                 </p>
 
                 <h4 className="my-4 text-2xl font-bold">
-                    Ember Best Practices
+                    Ember.js Best Practices
                 </h4>
                 <ul>
                     <li>
@@ -66,7 +66,7 @@ const EmberFramework = () => {
                     href="https://guides.emberjs.com/release/tutorial/part-1/"
                     className="text-xl font-bold underline hover:text-blue-400"
                 >
-                    Ember - Official Documentation
+                    Ember.js - Official Documentation
                 </a>
             </div>
         </div>
