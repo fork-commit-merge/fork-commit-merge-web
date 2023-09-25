@@ -1,4 +1,6 @@
-const html = ``;
+const html = `<a href="https://github.com/yaralviana"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/69833210?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
+<a href="https://github.com/karthikchalla7"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/76682351?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
+`;
 
 const parser = new DOMParser();
 const doc = parser.parseFromString(html, 'text/html');
