@@ -1,5 +1,6 @@
 export const languageList = [
     { name: "HTML", link: "/languages/html" },
+    { name: "HTMX", link: "/languages/htmx" },
     { name: "CSS", link: "/languages/css" },
     { name: "CoffeeScript", link: "/languages/coffeescript" },
     { name: "ReScript", link: "/languages/rescript" },

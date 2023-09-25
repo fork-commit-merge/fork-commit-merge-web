@@ -46,6 +46,7 @@ import PascalLanguage from "../../components/languageComponents/PascalLanguage";
 import ObjectiveCLanguage from "../../components/languageComponents/ObjectiveCLanguage";
 import MATLABLanguage from "../../components/languageComponents/MATLABLanguage";
 import NixLanguage from "../../components/languageComponents/NixLanguage";
+import HTMXLanguage from "../../components/languageComponents/HTMXLanguage";
 
 const LanguagePage = () => {
     const router = useRouter();
@@ -55,6 +56,8 @@ const LanguagePage = () => {
         switch (lang) {
             case "html":
                 return <HTMLLanguage />;
+            case "htmx":
+                return <HTMXLanguage />;
             case "css":
                 return <CSSLanguage />;
             case "coffeescript":
