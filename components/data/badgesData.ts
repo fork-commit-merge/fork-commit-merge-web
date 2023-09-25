@@ -68,6 +68,10 @@ export const badgesData = [
         alt: "Angular",
     },
     {
+        src: "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white",
+        alt: "GraphQL",
+    },
+    {
         src: "https://img.shields.io/badge/Svelte-%23E32F26?style=for-the-badge&logo=Svelte&logoColor=white",
         alt: "Svelte",
     },
@@ -82,6 +86,10 @@ export const badgesData = [
     {
         src: "https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white",
         alt: "Yarn",
+    },
+    {
+        src: "https://img.shields.io/badge/-apollo-311C87?style=for-the-badge&logo=apollo-graphql",
+        alt: "Apollo",
     },
     {
         src: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
