@@ -40,15 +40,15 @@ export const badgesData = [
         alt: "TypeScript",
     },
     {
-        src: "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+        src: "https://img.shields.io/badge/react.js-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
         alt: "React",
     },
     {
-        src: "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
+        src: "https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white",
         alt: "NextJS",
     },
     {
-        src: "https://img.shields.io/badge/three-black?style=for-the-badge&logo=three.js&logoColor=white",
+        src: "https://img.shields.io/badge/three.js-black?style=for-the-badge&logo=three.js&logoColor=white",
         alt: "ThreeJS",
     },
     {
@@ -56,7 +56,7 @@ export const badgesData = [
         alt: "Vite",
     },
     {
-        src: "https://img.shields.io/badge/vue-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D",
+        src: "https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D",
         alt: "Vue",
     },
     {
@@ -85,7 +85,11 @@ export const badgesData = [
     },
     {
         src: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
-        alt: "ExpressJS",
+        alt: "Express.js",
+    },
+    {
+        src: "https://img.shields.io/badge/electron.js-191970?style=for-the-badge&logo=Electron&logoColor=white",
+        alt: "Electron.js",
     },
     {
         src: "https://img.shields.io/badge/jest-%23E34F26.svg?style=for-the-badge&logo=jest&logoColor=white",
