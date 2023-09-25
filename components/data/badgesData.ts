@@ -67,6 +67,10 @@ export const badgesData = [
         src: "https://img.shields.io/badge/Angular-%23E32F26?style=for-the-badge&logo=Angular&logoColor=white",
         alt: "Angular",
     },
+     {
+        src: "https://img.shields.io/badge/ember.js-1C1E24?style=for-the-badge&logo=ember.js&logoColor=#D04A37",
+        alt: "Ember.js",
+    },
     {
         src: "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white",
         alt: "GraphQL",
