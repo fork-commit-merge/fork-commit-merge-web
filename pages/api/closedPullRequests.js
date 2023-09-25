@@ -9,7 +9,6 @@ export default async (req, res) => {
 
     try {
         let prs = await getClosedPullRequestsFromDb(username);
-        console.log(prs);
         if (!prs || prs.length === 0) {
             prs = await fetchClosedPullRequests(username);
             await storeClosedPullRequestsInDb(username, prs);

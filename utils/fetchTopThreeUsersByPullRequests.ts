@@ -4,7 +4,7 @@ type UserStat = {
     username: string;
     prCount: number;
     avatarUrl: string;
-}
+};
 
 export const fetchTopThreeUsersByPullRequests = async (
     repo: string

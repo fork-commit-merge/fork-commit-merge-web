@@ -22,7 +22,6 @@ export async function fetchClosedPullRequests(username) {
         const response = await fetch(url, { headers });
         const data = await response.json();
         allPullRequests = allPullRequests.concat(data);
-        console.log(data);
         const linkHeader = response.headers.get("Link");
         const match = linkHeader?.match(/<([^>]+)>;\s*rel="next"/);
         url = match ? match[1] : null;
