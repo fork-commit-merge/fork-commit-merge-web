@@ -67,7 +67,7 @@ export const badgesData = [
         src: "https://img.shields.io/badge/Angular-%23E32F26?style=for-the-badge&logo=Angular&logoColor=white",
         alt: "Angular",
     },
-     {
+    {
         src: "https://img.shields.io/badge/ember.js-1C1E24?style=for-the-badge&logo=ember.js&logoColor=#D04A37",
         alt: "Ember.js",
     },
@@ -158,6 +158,10 @@ export const badgesData = [
     {
         src: "https://img.shields.io/badge/python-%23007ACC.svg?style=for-the-badge&logo=python&logoColor=yellow",
         alt: "Python",
+    },
+    {
+        src: "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+        alt: "NumPy",
     },
     {
         src: "https://img.shields.io/badge/flask-%23000000.svg?style=for-the-badge&logo=flask&logoColor=white",
