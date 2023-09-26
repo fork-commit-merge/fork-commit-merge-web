@@ -13,6 +13,7 @@ import { languageList } from "../data/languageList";
 import { frameworkList } from "../data/frameworkList";
 import { gitList } from "../data/gitList";
 import { roadmapList } from "../data/roadmapList";
+import { communityList } from "../data/communityList";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +22,12 @@ const Header = () => {
     const [isGitSelectionDropdownOpen, setGitSelectionDropdownOpen] =
         useState(false);
     const [isRoadmapDropdownOpen, setRoadmapDropdownOpen] = useState(false);
+    const [isCommunityDropdownOpen, setCommunityDropdownOpen] = useState(false);
     const node = useRef<HTMLLIElement | null>(null);
     const frameworkNode = useRef<HTMLLIElement | null>(null);
     const gitSelectionNode = useRef<HTMLLIElement | null>(null);
     const roadmapNode = useRef<HTMLLIElement | null>(null);
+    const communityNode = useRef<HTMLLIElement | null>(null);
     const { data: session } = useSession();
     const router = useRouter();
     const [starCount, setStarCount] = useState<number | null>(null);
@@ -64,11 +67,17 @@ const Header = () => {
         setRoadmapDropdownOpen(false);
     };
 
+    const navigateToCommunity = (link: string) => {
+        router.push(link);
+        setCommunityDropdownOpen(false);
+    };
+
     const toggleLanguageDropdown = () => {
         setLanguageDropdownOpen(!isLanguageDropdownOpen);
         setFrameworkDropdownOpen(false);
         setGitSelectionDropdownOpen(false);
         setRoadmapDropdownOpen(false);
+        setCommunityDropdownOpen(false);
     };
 
     const toggleFrameworkDropdown = () => {
@@ -76,6 +85,7 @@ const Header = () => {
         setLanguageDropdownOpen(false);
         setGitSelectionDropdownOpen(false);
         setRoadmapDropdownOpen(false);
+        setCommunityDropdownOpen(false);
     };
 
     const toggleGitSelectionDropdown = () => {
@@ -83,6 +93,7 @@ const Header = () => {
         setLanguageDropdownOpen(false);
         setFrameworkDropdownOpen(false);
         setRoadmapDropdownOpen(false);
+        setCommunityDropdownOpen(false);
     };
 
     const toggleRoadmapDropdown = () => {
@@ -90,6 +101,15 @@ const Header = () => {
         setLanguageDropdownOpen(false);
         setFrameworkDropdownOpen(false);
         setGitSelectionDropdownOpen(false);
+        setCommunityDropdownOpen(false);
+    };
+
+    const toggleCommunityDropdown = () => {
+        setCommunityDropdownOpen(!isCommunityDropdownOpen);
+        setLanguageDropdownOpen(false);
+        setFrameworkDropdownOpen(false);
+        setGitSelectionDropdownOpen(false);
+        setRoadmapDropdownOpen(false);
     };
 
     return (
@@ -126,14 +146,12 @@ const Header = () => {
                                         </div>
                                     </Link>
                                 </li>
+                                <Link href="/faq" onClick={() => setIsOpen(false)}>
+                                <div className="py-2 px-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    FAQ
+                                </div>
+                            </Link>
 
-                                <li>
-                                    <Link href="/adventures">
-                                        <div className="py-2 px-6 mr-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                            Adventures
-                                        </div>
-                                    </Link>
-                                </li>
 
                                 <li className="pr-8">
                                     <iframe
@@ -374,6 +392,35 @@ const Header = () => {
                             </ul>
                         )}
                     </li>
+                    <li ref={communityNode} className="list-none">
+                                    <div
+                                        className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                                        onClick={toggleCommunityDropdown}
+                                    >
+                                        Community
+                                    </div>
+                                    {isCommunityDropdownOpen && (
+                                        <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                            {communityList.map(
+                                                (community, index) => (
+                                                    <li
+                                                        key={index}
+                                                        onClick={() => {
+                                                            navigateToCommunity(
+                                                                community.link
+                                                            );
+                                                            setIsOpen(false);
+                                                        }}
+                                                    >
+                                                        <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                                            {community.name}
+                                                        </div>
+                                                    </li>
+                                                )
+                                            )}
+                                        </ul>
+                                    )}
+                                </li>
 
                     <Link href="/ide" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
@@ -395,11 +442,7 @@ const Header = () => {
                             Leaderboard
                         </div>
                     </Link>
-                    <Link href="/adventures" onClick={() => setIsOpen(false)}>
-                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                            Adventures
-                        </div>
-                    </Link>
+
 
                     <div className="ml-6 mt-3">
                         <iframe
@@ -541,20 +584,41 @@ const Header = () => {
                                     </ul>
                                 )}
                             </li>
+                            <li ref={communityNode} className="list-none">
+                        <div
+                            className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                            onClick={toggleCommunityDropdown}
+                        >
+                            Community
+                        </div>
+                        {isCommunityDropdownOpen && (
+                            <ul className="absolute mt-2 py-1 w-48 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                                {communityList.map((community, index) => (
+                                    <li
+                                        key={index}
+                                        onClick={() => {
+                                            navigateToCommunity(community.link);
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        <div className="text-sm cursor-pointer hover:bg-slate-800 px-4 py-2">
+                                            {community.name}
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
                             <Link href="/ide" onClick={() => setIsOpen(false)}>
                                 <div
                                     className={
-                                        "py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                                        "py-2 px-6 pr-10 block text-sm cursor-pointer hover:underline hover:text-slate-100"
                                     }
                                 >
                                     IDE:s
                                 </div>
                             </Link>
-                            <Link href="/faq" onClick={() => setIsOpen(false)}>
-                                <div className="py-2 px-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100">
-                                    FAQ
-                                </div>
-                            </Link>
+
 
                             {session?.user ? (
                                 <Link
