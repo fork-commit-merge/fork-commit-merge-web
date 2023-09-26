@@ -61,9 +61,13 @@ const Discussions = () => {
                     <Link
                         href="https://github.com/nikohoffren/fork-commit-merge/discussions"
                         target="blank"
-                        className="text-2xl text-white bg-slate-900 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider font-primary"
+                        className="text-sm text-white bg-slate-900 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider font-primary"
+                        style={{
+                            wordWrap: "break-word",
+                            display: "inline-block",
+                        }}
                     >
-                        FORK, COMMIT, MERGE DISCUSSIONS
+                        TAKE A PART IN FORK, COMMIT, MERGE DISCUSSIONS
                     </Link>
                 </div>
             </div>
