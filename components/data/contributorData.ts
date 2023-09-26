@@ -1685,4 +1685,10 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/107080531?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "A-Altemara"
     },
+    {
+        "id": "sreejasaha19",
+        "url": "https://github.com/sreejasaha19",
+        "avatar": "https://avatars.githubusercontent.com/u/105979237?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "sreejasaha19"
+    },
 ];
