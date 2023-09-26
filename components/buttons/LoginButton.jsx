@@ -19,31 +19,6 @@ export default function LoginButton() {
     const [isSigningIn, setIsSigningIn] = useState(false);
     const [isConsentGiven, setConsentGiven] = useState(false);
 
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         if (session?.user?.email) {
-    //             setIsLoading(true);
-    //             try {
-    //                 const username = await fetchGitHubUsername(session.user.email);
-    //                 const storedPRs = await fetchStoredPullRequests(username);
-
-    //                 if (storedPRs) {
-    //                     setPullRequests(storedPRs.pullRequests || []);
-    //                 } else {
-    //                     console.log("Making Axios call to fetch closed PRs");
-    //                     const response = await axios.get(`/api/closedPullRequests?username=${username}`);
-    //                     setPullRequests(response.data);
-    //                 }
-    //             } catch (error) {
-    //                 console.error("Error:", error);
-    //             } finally {
-    //                 setIsLoading(false);
-    //             }
-    //         }
-    //     };
-    //     fetchData();
-    // }, [session]);
-
     useEffect(() => {
         const fetchData = async () => {
             if (session?.user?.email) {
