@@ -57,7 +57,7 @@ const FrameworkPage = () => {
                 return <LaravelFramework />;
             case "flutter":
                 return <FlutterFramework />;
-            case "reactnative":
+            case "react-native":
                 return <ReactNativeFramework />;
             default:
                 return <FrameworkNotSupported />;

@@ -13,17 +13,17 @@ const RoadmapPage = () => {
 
     const renderContent = () => {
         switch (roadmap) {
-            case "howtocontribute":
+            case "how-to-contribute":
                 return <HowToContribute />;
-            case "contributionmanagement":
+            case "contribution-management":
                 return <ContributionManagement />;
-            case "opensourcephilosophy":
+            case "open-source-philosophy":
                 return <OpenSourcePhilosophy />;
-            case "opensourcelicenses":
+            case "open-source-licenses":
                 return <OpenSourceLicenses />;
-            case "overviewofdocumentation":
+            case "overview-of-documentation":
                 return <DocumentationOverview />;
-            case "legalandethicalconsiderations":
+            case "legal-and-ethical-considerations":
                 return <LegalEthicalConsiderations />;
             default:
                 return <RoadmapNotSupported />;

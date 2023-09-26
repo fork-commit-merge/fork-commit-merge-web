@@ -1,7 +1,7 @@
 export const gitList = [
-    { name: "Git Commands", link: "/git/gitcommands" },
-    { name: "Git Branching", link: "/git/gitbranching" },
-    { name: "Git Conflicts", link: "/git/gitconflicts" },
-    { name: "Git Configuration", link: "/git/gitconfiguration" },
-    { name: "Git Workflow", link: "/git/gitworkflow" },
+    { name: "Git Commands", link: "/git/git-commands" },
+    { name: "Git Branching", link: "/git/git-branching" },
+    { name: "Git Conflicts", link: "/git/git-conflicts" },
+    { name: "Git Configuration", link: "/git/git-configuration" },
+    { name: "Git Workflow", link: "/git/git-workflow" },
 ];

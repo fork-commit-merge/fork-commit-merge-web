@@ -12,15 +12,15 @@ const Git = () => {
 
     const renderContent = () => {
         switch (git) {
-            case "gitcommands":
+            case "git-commands":
                 return <GitCommandsSelection />;
-            case "gitbranching":
+            case "git-branching":
                 return <GitBranchingSelection />;
-            case "gitconflicts":
+            case "git-conflicts":
                 return <GitConflicts />;
-            case "gitconfiguration":
+            case "git-configuration":
                 return <GitConfiguration />;
-            case "gitworkflow":
+            case "git-workflow":
                 return <GitWorkflow />;
             default:
                 return <SelectionNotSupported />;
