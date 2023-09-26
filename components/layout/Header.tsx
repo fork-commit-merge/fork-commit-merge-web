@@ -380,6 +380,11 @@ const Header = () => {
                             IDE:s
                         </div>
                     </Link>
+                    <Link href="/faq" onClick={() => setIsOpen(false)}>
+                        <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                            FAQ
+                        </div>
+                    </Link>
                     <Link href="/resources" onClick={() => setIsOpen(false)}>
                         <div className="py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100">
                             Resources
@@ -411,7 +416,6 @@ const Header = () => {
                     </div>
                 </div>
             )}
-
 
             <header className="bg-transparent backdrop-blur text-slate-50 sticky top-0 z-10 hidden md:block shadow-bottom">
                 <div className="mx-auto px-12 py-1 pb-6 pr-20 shadow-top">
@@ -540,10 +544,15 @@ const Header = () => {
                             <Link href="/ide" onClick={() => setIsOpen(false)}>
                                 <div
                                     className={
-                                        "py-2 pl-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100"
+                                        "py-2 px-6 block text-sm cursor-pointer hover:underline hover:text-slate-100"
                                     }
                                 >
                                     IDE:s
+                                </div>
+                            </Link>
+                            <Link href="/faq" onClick={() => setIsOpen(false)}>
+                                <div className="py-2 px-6 pr-12 block text-sm cursor-pointer hover:underline hover:text-slate-100">
+                                    FAQ
                                 </div>
                             </Link>
 
@@ -569,9 +578,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-
             </header>
-
         </>
     );
 };

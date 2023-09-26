@@ -6,6 +6,7 @@ import HowToContribute from "../../components/roadmapComponents/HowToContribute"
 import DocumentationOverview from "../../components/roadmapComponents/DocumentationOverview";
 import ContributionManagement from "../../components/roadmapComponents/ContributionManagement";
 import LegalEthicalConsiderations from "../../components/roadmapComponents/LegalEthicalConsiderations";
+import OpenSourceTerminology from "../../components/roadmapComponents/OpenSourceTerminology";
 
 const RoadmapPage = () => {
     const router = useRouter();
@@ -25,6 +26,8 @@ const RoadmapPage = () => {
                 return <DocumentationOverview />;
             case "legal-and-ethical-considerations":
                 return <LegalEthicalConsiderations />;
+            case "open-source-terminology":
+                return <OpenSourceTerminology />;
             default:
                 return <RoadmapNotSupported />;
         }

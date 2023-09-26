@@ -11,4 +11,5 @@ export const roadmapList = [
         link: "/roadmaps/overview-of-documentation",
     },
     { name: "Legal And Ethical Considerations", link: "/roadmaps/legal-and-ethical-considerations" },
+    { name: "Open Source Terminology", link: "/roadmaps/open-source-terminology" },
 ];
