@@ -70,6 +70,15 @@ const Footer = () => {
                                 >
                                     Niko Hoffrén
                                 </a>
+                                {" &"}
+                                <a
+                                    href="https://github.com/nikohoffren/fork-commit-merge#list-of-contributors"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline text-red-100 pl-1"
+                                >
+                                    GitHub community
+                                </a>
                             </p>
                         </div>
                         <div className="text-center w-full">
@@ -146,22 +155,6 @@ const Footer = () => {
                                         "Star us in GitHub"
                                     )}
                                 </Link>
-
-                                {/* <Link
-                                    href="https://www.producthunt.com/posts/fork-commit-merge?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-fork&#0045;commit&#0045;merge"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=415196&theme=dark"
-                                        alt="Fork, Commit, Merge - Resource hub for mastering GitHub contributions | Product Hunt"
-                                        style={{
-                                            width: "249px",
-                                            height: "51px",
-                                        }}
-                                        width="249"
-                                        height="51"
-                                    />
-                                </Link> */}
                             </div>
                         </div>
                     </div>
