@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const FAQs = () => {
     return (
-        <div className="flex justify-center items-center bg-slate-950 py-10">
+        <div className="flex justify-center items-center bg-slate-950 py-10 px-10">
             <div className="text-center text-slate-50 max-w-2xl">
                 <h1 className="text-3xl font-bold mb-6">
                     Frequently Asked Questions about Open Source
@@ -113,6 +113,64 @@ const FAQs = () => {
                     project on your account. This allows you to freely
                     experiment with changes without affecting the original
                     project.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">
+                    What is a Pull Request?
+                </h2>
+                <p className="mb-4">
+                    A Pull Request (PR) is a method of submitting contributions
+                    to an open-source project. It is a way to let maintainers
+                    know that you have code that you&apos;d like to be reviewed
+                    and added to the project.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">
+                    How is Open Source Different from Closed Source?
+                </h2>
+                <p className="mb-4">
+                    Open source software is software whose source code is
+                    available for modification or enhancement by anyone. Closed
+                    source is proprietary software whose source code is not
+                    available to the public.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">
+                    What Does ‘Upstream’ and ‘Downstream’ Mean?
+                </h2>
+                <p className="mb-4">
+                    &quot;Upstream&quot; refers to the original project or
+                    source that you have forked or cloned.
+                    &quot;Downstream&quot; refers to any project that is based
+                    on that upstream source.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">
+                    How Do I Report Bugs or Request Features?
+                </h2>
+                <p className="mb-4">
+                    Many projects use issue trackers for this. After confirming
+                    that the bug or feature hasn&apos;t already been reported or
+                    requested, you can open a new issue in the project&apos;s
+                    issue tracker.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">
+                    Is Open Source Software Always Free?
+                </h2>
+                <p className="mb-4">
+                    While open source software is generally free to use, modify,
+                    and distribute, this is not always the case. Always check
+                    the project’s license for specific terms.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">
+                    What is Version Control?
+                </h2>
+                <p className="mb-6">
+                    Version control systems are tools that help manage changes
+                    to source code over time. They let you keep track of
+                    versions, roll back changes, and work collaboratively.
                 </p>
                 <hr className="my-6" />
                 <p>

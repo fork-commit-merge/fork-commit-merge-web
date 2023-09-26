@@ -59,6 +59,84 @@ const OpenSourceTerminology = () => {
                     code, and guiding contributors.
                 </p>
                 <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Clone</h2>
+                <p className="mb-4">
+                    Making a complete copy of a repository onto your local
+                    machine.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Master</h2>
+                <p className="mb-4">
+                    The default development branch. Note: Some communities are
+                    moving away from this term for inclusivity.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Upstream</h2>
+                <p className="mb-4">
+                    The original repository from which you forked.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Downstream</h2>
+                <p className="mb-4">
+                    A project that incorporates your project into its codebase.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Push</h2>
+                <p className="mb-4">
+                    The action of updating a remote repository with local
+                    changes.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Fetch</h2>
+                <p className="mb-4">
+                    Downloading changes from a remote repository without merging
+                    them.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Rebase</h2>
+                <p className="mb-4">
+                    Modifying commits to apply on top of another branch.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Staging</h2>
+                <p className="mb-4">
+                    Preparing changes for a commit by marking them for
+                    inclusion.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Tag</h2>
+                <p className="mb-4">
+                    A marker or label to indicate a specific version of a
+                    codebase.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Pull</h2>
+                <p className="mb-4">
+                    The action of fetching and merging changes from a remote
+                    repository.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Patch</h2>
+                <p className="mb-4">
+                    A set of changes to a codebase, often provided as a file.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Release</h2>
+                <p className="mb-4">
+                    The distribution of a specific version of the project.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Contributor</h2>
+                <p className="mb-4">
+                    Anyone who contributes to a project, not necessarily with
+                    code.
+                </p>
+                <hr className="my-6" />
+                <h2 className="text-2xl font-semibold mb-4">Changelog</h2>
+                <p className="mb-6">
+                    A log or record of changes made to a project over time.
+                </p>
+                <hr className="my-6" />
                 <p>
                     Familiarizing yourself with these terms will make your
                     open-source journey smoother and more rewarding.
