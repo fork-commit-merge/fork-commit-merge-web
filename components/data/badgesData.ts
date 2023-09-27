@@ -256,6 +256,10 @@ export const badgesData = [
         alt: "Fortran",
     },
     {
+        src: "https://img.shields.io/badge/pascal-%23007ACC.svg?style=for-the-badge&logo=pascal&logoColor=yellow",
+        alt: "Pascal",
+    },
+    {
         src: "https://img.shields.io/badge/Erlang-white.svg?style=for-the-badge&logo=erlang&logoColor=a90533",
         alt: "Erlang",
     },
