@@ -260,6 +260,10 @@ export const badgesData = [
         alt: "Pascal",
     },
     {
+        src: "https://img.shields.io/badge/COBOL-%232C2D72.svg?style=for-the-badge&logo=COBOL&logoColor=white",
+        alt: "COBOL",
+    },
+    {
         src: "https://img.shields.io/badge/Erlang-white.svg?style=for-the-badge&logo=erlang&logoColor=a90533",
         alt: "Erlang",
     },
