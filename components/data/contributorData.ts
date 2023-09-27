@@ -1691,4 +1691,22 @@ export const contributorData = [
         "avatar": "https://avatars.githubusercontent.com/u/105979237?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
         "name": "sreejasaha19"
     },
+    {
+        "id": "g-ptasinski",
+        "url": "https://github.com/g-ptasinski",
+        "avatar": "https://avatars.githubusercontent.com/u/39106050?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "g-ptasinski"
+    },
+    {
+        "id": "shubhamraj01",
+        "url": "https://github.com/shubhamraj01",
+        "avatar": "https://avatars.githubusercontent.com/u/72144322?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "shubhamraj01"
+    },
+    {
+        "id": "Egnodia",
+        "url": "https://github.com/Egnodia",
+        "avatar": "https://avatars.githubusercontent.com/u/91768036?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+        "name": "Egnodia"
+    },
 ];

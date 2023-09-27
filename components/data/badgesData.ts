@@ -304,6 +304,10 @@ export const badgesData = [
         alt: "Perl",
     },
     {
+        src: "https://img.shields.io/badge/asm-%23121011.svg?style=for-the-badge&logo=asm&logoColor=white",
+        alt: "ASM",
+    },
+    {
         src: "https://img.shields.io/badge/NIX-5277C3.svg?style=for-the-badge&logo=NixOS&logoColor=white",
         alt: "Nix",
     },
