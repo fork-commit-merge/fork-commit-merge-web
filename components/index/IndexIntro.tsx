@@ -28,7 +28,7 @@ const IndexIntro: React.FC = () => {
                         practical project aimed at helping developers - both
                         newcomers and seasoned - improve their skills in
                         open-source contribution, problem-solving, finding bugs,
-                        testing, and much more in over 90 individual issues
+                        testing, and much more in over 100 individual issues
                         encompassing various programming languages, libraries
                         and frameworks.
                         <br />
