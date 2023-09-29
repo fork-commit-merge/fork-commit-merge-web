@@ -2054,4 +2054,10 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/15178905?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "karprabha"
   },
+  {
+    "id": "gyanavardhana",
+    "url": "https://github.com/gyanavardhana",
+    "avatar": "https://avatars.githubusercontent.com/u/89439095?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "gyanavardhana"
+  },
 ];
