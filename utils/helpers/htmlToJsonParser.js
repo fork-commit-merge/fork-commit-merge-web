@@ -19,4 +19,4 @@ const result = Array.from(anchors).map((a) => {
   };
 });
 
-console.log(JSON.stringify(result, null, 4));
+console.log(JSON.stringify(result, null, 2));
