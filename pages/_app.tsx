@@ -5,13 +5,13 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
-    return (
-        <SessionProvider session={session}>
-            <Header />
-            <Component {...pageProps} />
-            <Footer />
-        </SessionProvider>
-    );
+  return (
+    <SessionProvider session={session}>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+    </SessionProvider>
+  );
 }
 
 export default MyApp;

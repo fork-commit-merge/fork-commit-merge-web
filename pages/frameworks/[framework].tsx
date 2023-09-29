@@ -20,55 +20,55 @@ import EmberFramework from "../../components/frameworkComponents/EmberFramework"
 import AstroFramework from "../../components/frameworkComponents/AstroFramework";
 
 const FrameworkPage = () => {
-    const router = useRouter();
-    const { framework } = router.query;
+  const router = useRouter();
+  const { framework } = router.query;
 
-    const renderContent = () => {
-        switch (framework) {
-            case "expressjs":
-                return <ExpressFramework />;
-            case "emberjs":
-                return <EmberFramework />;
-            case "react":
-                return <ReactLibrary />;
-            case "nextjs":
-                return <NextJSFramework />;
-            case "threejs":
-                return <ThreeJSLibrary />;
-            case "vite":
-                return <ViteFramework />;
-            case "vuejs":
-                return <VueFramework />;
-            case "svelte":
-                return <SvelteFramework />;
-            case "astro":
-                return <AstroFramework />;
-            case "angular":
-                return <AngularFramework />;
-            case "gatsby":
-                return <GatsbyFramework />;
-            case "flask":
-                return <FlaskFramework />;
-            case "django":
-                return <DjangoFramework />;
-            case "rails":
-                return <RailsFramework />;
-            case "laravel":
-                return <LaravelFramework />;
-            case "flutter":
-                return <FlutterFramework />;
-            case "react-native":
-                return <ReactNativeFramework />;
-            default:
-                return <FrameworkNotSupported />;
-        }
-    };
+  const renderContent = () => {
+    switch (framework) {
+      case "expressjs":
+        return <ExpressFramework />;
+      case "emberjs":
+        return <EmberFramework />;
+      case "react":
+        return <ReactLibrary />;
+      case "nextjs":
+        return <NextJSFramework />;
+      case "threejs":
+        return <ThreeJSLibrary />;
+      case "vite":
+        return <ViteFramework />;
+      case "vuejs":
+        return <VueFramework />;
+      case "svelte":
+        return <SvelteFramework />;
+      case "astro":
+        return <AstroFramework />;
+      case "angular":
+        return <AngularFramework />;
+      case "gatsby":
+        return <GatsbyFramework />;
+      case "flask":
+        return <FlaskFramework />;
+      case "django":
+        return <DjangoFramework />;
+      case "rails":
+        return <RailsFramework />;
+      case "laravel":
+        return <LaravelFramework />;
+      case "flutter":
+        return <FlutterFramework />;
+      case "react-native":
+        return <ReactNativeFramework />;
+      default:
+        return <FrameworkNotSupported />;
+    }
+  };
 
-    return (
-        <>
-            <div className="bg-slate-950 py-10 px-6">{renderContent()}</div>
-        </>
-    );
+  return (
+    <>
+      <div className="bg-slate-950 py-10 px-6">{renderContent()}</div>
+    </>
+  );
 };
 
 export default FrameworkPage;

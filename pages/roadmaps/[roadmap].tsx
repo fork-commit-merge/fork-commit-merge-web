@@ -9,35 +9,35 @@ import LegalEthicalConsiderations from "../../components/roadmapComponents/Legal
 import OpenSourceTerminology from "../../components/roadmapComponents/OpenSourceTerminology";
 
 const RoadmapPage = () => {
-    const router = useRouter();
-    const { roadmap } = router.query;
+  const router = useRouter();
+  const { roadmap } = router.query;
 
-    const renderContent = () => {
-        switch (roadmap) {
-            case "how-to-contribute":
-                return <HowToContribute />;
-            case "contribution-management":
-                return <ContributionManagement />;
-            case "open-source-philosophy":
-                return <OpenSourcePhilosophy />;
-            case "open-source-licenses":
-                return <OpenSourceLicenses />;
-            case "overview-of-documentation":
-                return <DocumentationOverview />;
-            case "legal-and-ethical-considerations":
-                return <LegalEthicalConsiderations />;
-            case "open-source-terminology":
-                return <OpenSourceTerminology />;
-            default:
-                return <RoadmapNotSupported />;
-        }
-    };
+  const renderContent = () => {
+    switch (roadmap) {
+      case "how-to-contribute":
+        return <HowToContribute />;
+      case "contribution-management":
+        return <ContributionManagement />;
+      case "open-source-philosophy":
+        return <OpenSourcePhilosophy />;
+      case "open-source-licenses":
+        return <OpenSourceLicenses />;
+      case "overview-of-documentation":
+        return <DocumentationOverview />;
+      case "legal-and-ethical-considerations":
+        return <LegalEthicalConsiderations />;
+      case "open-source-terminology":
+        return <OpenSourceTerminology />;
+      default:
+        return <RoadmapNotSupported />;
+    }
+  };
 
-    return (
-        <>
-            <div className="bg-slate-950 py-10 px-6">{renderContent()}</div>
-        </>
-    );
+  return (
+    <>
+      <div className="bg-slate-950 py-10 px-6">{renderContent()}</div>
+    </>
+  );
 };
 
 export default RoadmapPage;

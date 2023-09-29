@@ -1,60 +1,58 @@
 import axios from "axios";
 
 type UserStat = {
-    username: string;
-    prCount: number;
-    avatarUrl: string;
+  username: string;
+  prCount: number;
+  avatarUrl: string;
 };
 
 export const fetchTopThreeUsersByPullRequests = async (
-    repo: string
+  repo: string
 ): Promise<UserStat[]> => {
-    let url = `https://api.github.com/repos/${repo}/pulls?state=closed&per_page=100`;
-    const userStats: { [key: string]: { prCount: number; avatarUrl: string } } =
-        {};
+  let url = `https://api.github.com/repos/${repo}/pulls?state=closed&per_page=100`;
+  const userStats: { [key: string]: { prCount: number; avatarUrl: string } } =
+    {};
 
-    while (url) {
-        const response = await axios.get(url);
-        const prData = response.data;
+  while (url) {
+    const response = await axios.get(url);
+    const prData = response.data;
 
-        prData.forEach((pr: any) => {
-            if (pr.merged_at) {
-                const username = pr.user.login;
+    prData.forEach((pr: any) => {
+      if (pr.merged_at) {
+        const username = pr.user.login;
 
-                //* Ignore dependabot and nikohoffren PRs
-                if (
-                    username === "dependabot" ||
-                    username === "dependabot[bot]" ||
-                    username === "nikohoffren"
-                ) {
-                    return;
-                }
+        //* Ignore dependabot and nikohoffren PRs
+        if (
+          username === "dependabot" ||
+          username === "dependabot[bot]" ||
+          username === "nikohoffren"
+        ) {
+          return;
+        }
 
-                const avatarUrl = pr.user.avatar_url;
-                userStats[username] = {
-                    prCount: (userStats[username]?.prCount || 0) + 1,
-                    avatarUrl,
-                };
-            }
-        });
+        const avatarUrl = pr.user.avatar_url;
+        userStats[username] = {
+          prCount: (userStats[username]?.prCount || 0) + 1,
+          avatarUrl,
+        };
+      }
+    });
 
-        const linkHeader = response.headers.link;
-        const nextLink = linkHeader
-            ? linkHeader
-                  .split(",")
-                  .find((s: string) => s.includes('rel="next"'))
-            : null;
-        url = nextLink ? nextLink.match(/<(.*)>/)?.[1] : null;
-    }
+    const linkHeader = response.headers.link;
+    const nextLink = linkHeader
+      ? linkHeader.split(",").find((s: string) => s.includes('rel="next"'))
+      : null;
+    url = nextLink ? nextLink.match(/<(.*)>/)?.[1] : null;
+  }
 
-    const sortedUsers: UserStat[] = Object.entries(userStats)
-        .sort(([, a], [, b]) => b.prCount - a.prCount)
-        .slice(0, 3)
-        .map(([username, { prCount, avatarUrl }]) => ({
-            username,
-            prCount,
-            avatarUrl,
-        }));
+  const sortedUsers: UserStat[] = Object.entries(userStats)
+    .sort(([, a], [, b]) => b.prCount - a.prCount)
+    .slice(0, 3)
+    .map(([username, { prCount, avatarUrl }]) => ({
+      username,
+      prCount,
+      avatarUrl,
+    }));
 
-    return sortedUsers;
+  return sortedUsers;
 };
