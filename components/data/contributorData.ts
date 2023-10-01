@@ -2060,4 +2060,118 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/89439095?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "gyanavardhana"
   },
+  {
+    "id": "vidhan63-soe",
+    "url": "https://github.com/vidhan63-soe",
+    "avatar": "https://avatars.githubusercontent.com/u/134678855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "vidhan63-soe"
+  },
+  {
+    "id": "Faiznurullah",
+    "url": "https://github.com/Faiznurullah",
+    "avatar": "https://avatars.githubusercontent.com/u/59213454?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Faiznurullah"
+  },
+  {
+    "id": "shreyansh1410",
+    "url": "https://github.com/shreyansh1410",
+    "avatar": "https://avatars.githubusercontent.com/u/109788335?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "shreyansh1410"
+  },
+  {
+    "id": "sunny7712",
+    "url": "https://github.com/sunny7712",
+    "avatar": "https://avatars.githubusercontent.com/u/85883639?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sunny7712"
+  },
+  {
+    "id": "crazybee69",
+    "url": "https://github.com/crazybee69",
+    "avatar": "https://avatars.githubusercontent.com/u/32307323?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "crazybee69"
+  },
+  {
+    "id": "hussainshaikh12",
+    "url": "https://github.com/hussainshaikh12",
+    "avatar": "https://avatars.githubusercontent.com/u/46746707?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "hussainshaikh12"
+  },
+  {
+    "id": "yashwanthvarma18",
+    "url": "https://github.com/yashwanthvarma18",
+    "avatar": "https://avatars.githubusercontent.com/u/138887882?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "yashwanthvarma18"
+  },
+  {
+    "id": "Hekt000r",
+    "url": "https://github.com/Hekt000r",
+    "avatar": "https://avatars.githubusercontent.com/u/128101580?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Hekt000r"
+  },
+  {
+    "id": "praptisharma28",
+    "url": "https://github.com/praptisharma28",
+    "avatar": "https://avatars.githubusercontent.com/u/123169861?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "praptisharma28"
+  },
+  {
+    "id": "sagnik3788",
+    "url": "https://github.com/sagnik3788",
+    "avatar": "https://avatars.githubusercontent.com/u/116512372?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sagnik3788"
+  },
+  {
+    "id": "manelk",
+    "url": "https://github.com/manelk",
+    "avatar": "https://avatars.githubusercontent.com/u/50639782?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "manelk"
+  },
+  {
+    "id": "AdityaRanjanJha",
+    "url": "https://github.com/AdityaRanjanJha",
+    "avatar": "https://avatars.githubusercontent.com/u/114846698?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "AdityaRanjanJha"
+  },
+  {
+    "id": "dm16147",
+    "url": "https://github.com/dm16147",
+    "avatar": "https://avatars.githubusercontent.com/u/124406797?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "dm16147"
+  },
+  {
+    "id": "joel2607",
+    "url": "https://github.com/joel2607",
+    "avatar": "https://avatars.githubusercontent.com/u/64684370?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "joel2607"
+  },
+  {
+    "id": "kom-senapati",
+    "url": "https://github.com/kom-senapati",
+    "avatar": "https://avatars.githubusercontent.com/u/92045934?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "kom-senapati"
+  },
+  {
+    "id": "vedantsrivastava42",
+    "url": "https://github.com/vedantsrivastava42",
+    "avatar": "https://avatars.githubusercontent.com/u/111370211?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "vedantsrivastava42"
+  },
+  {
+    "id": "tiago154",
+    "url": "https://github.com/tiago154",
+    "avatar": "https://avatars.githubusercontent.com/u/10531605?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "tiago154"
+  },
+  {
+    "id": "suprabhatdas",
+    "url": "https://github.com/suprabhatdas",
+    "avatar": "https://avatars.githubusercontent.com/u/98036987?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "suprabhatdas"
+  },
+  {
+    "id": "anushabhat2001",
+    "url": "https://github.com/anushabhat2001",
+    "avatar": "https://avatars.githubusercontent.com/u/74108011?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "anushabhat2001"
+  },
 ];
