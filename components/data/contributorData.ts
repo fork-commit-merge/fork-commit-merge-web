@@ -2174,4 +2174,10 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/74108011?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "anushabhat2001"
   },
+  {
+    "id": "shrey141102",
+    "url": "https://github.com/shrey141102",
+    "avatar": "https://avatars.githubusercontent.com/u/90243443?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "shrey141102"
+  },
 ];
