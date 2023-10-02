@@ -31,7 +31,7 @@
     "next-auth": "^4.22.3",
     "next-connect": "^1.0.0",
     "next-secure-headers": "^2.2.0",
-    "postcss": "8.4.29",
+    "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.5.2",
