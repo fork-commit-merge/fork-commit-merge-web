@@ -2342,4 +2342,22 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/28830195?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "sonvir249"
   },
+  {
+    "id": "coder-pink",
+    "url": "https://github.com/coder-pink",
+    "avatar": "https://avatars.githubusercontent.com/u/78805055?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "coder-pink"
+  },
+  {
+    "id": "satyamrathirar",
+    "url": "https://github.com/satyamrathirar",
+    "avatar": "https://avatars.githubusercontent.com/u/115553431?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "satyamrathirar"
+  },
+  {
+    "id": "MahraibFatima",
+    "url": "https://github.com/MahraibFatima",
+    "avatar": "https://avatars.githubusercontent.com/u/122329300?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "MahraibFatima"
+  },
 ];
