@@ -19,7 +19,7 @@
     "autoprefixer": "10.4.16",
     "aws-sdk": "^2.1463.0",
     "axios": "^1.5.1",
-    "eslint": "8.49.0",
+    "eslint": "8.50.0",
     "eslint-config-next": "13.5.3",
     "formidable": "^3.5.1",
     "framer-motion": "^10.16.4",
