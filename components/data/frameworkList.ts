@@ -16,4 +16,7 @@ export const frameworkList = [
   { name: "Laravel", link: "/frameworks/laravel" },
   { name: "Flutter", link: "/frameworks/flutter" },
   { name: "React Native", link: "/frameworks/react-native" },
+  { name: "ASP.NET Core", link: "/frameworks/aspnet-core" },
+  { name: "Tailwind CSS", link: "/frameworks/tailwindcss" },
+  { name: "Spring", link: "/frameworks/spring" },
 ];
