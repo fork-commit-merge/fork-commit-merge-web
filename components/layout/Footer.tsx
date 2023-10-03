@@ -155,7 +155,7 @@ const Footer = () => {
         <div className="pt-6 mt-12 border-t border-gray-800">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
             <p className="text-sm text-gray-400">
-              <span className="block sm:inline">All rights reserved.</span>
+              <span className="block sm:inline">All rights reserved</span>
             </p>
 
             <p
