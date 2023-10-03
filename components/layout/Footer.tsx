@@ -19,138 +19,154 @@ const Footer = () => {
   }, []);
 
   return (
-    <>
-      <footer className="bg-secondary text-slate-50 py-8">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-            <div className="text-center w-full">
-              <div className="flex justify-center items-center w-full space-x-2 mb-1">
-                <p className="text-base text-slate-100">Created with</p>
-                <a
-                  href="https://nextjs.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    className="bg-white p-1.5 rounded-md shadow-lg"
-                    src="/next.svg"
-                    alt="NextJS Logo"
-                    width={62}
-                    height={62}
-                  />
-                </a>
-              </div>
-              <div className="flex justify-center items-center w-full space-x-2 mb-1">
-                <p className="text-base text-slate-100">Deployed with</p>
-                <a
-                  href="https://vercel.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    className="bg-white p-1.5 rounded-md shadow-lg"
-                    src="/vercel.svg"
-                    alt="Vercel Logo"
-                    width={62}
-                    height={62}
-                  />
-                </a>
-              </div>
-              <p className="text-base text-slate-100">
-                Copyright © 2023
-                <a
-                  href="https://nikohoffren.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline text-red-100 pl-1"
-                >
-                  Niko Hoffrén
-                </a>
-                {" &"}
-                <a
-                  href="https://github.com/nikohoffren/fork-commit-merge#list-of-contributors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline text-red-100 pl-1"
-                >
-                  GitHub community
-                </a>
-              </p>
+    <footer className="bg-secondary text-slate-50" >
+      <div className="max-w-5xl px-4 py-8 pb-6 mx-auto sm:px-0">
+        <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:px-0">
+          <div>
+            <p className="mb-1 font-medium">
+              We wish you the best by <span className='font-bold'>Fork, Commit, Merge</span>
+            </p>
+
+            <div
+              className="max-w-md mt-6 space-y-2 leading-relaxed text-center text-black sm:max-w-xs sm:text-left"
+            >
+              <a
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='flex items-center gap-2 bg-slate-100 rounded shadow-lg w-fit text-sm font-bold p-1.5'
+              >
+                Created with
+                <Image
+                  src="/next.svg"
+                  alt="NextJS Logo"
+                  title='created with NextJS'
+                  width={62}
+                  height={62}
+                />
+              </a>
+
+              <a
+                href="https://vercel.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='flex items-center gap-2 bg-slate-100 rounded shadow-lg w-fit text-sm font-bold p-1.5'
+              >
+                Deployed with
+                <Image
+                  src="/vercel.svg"
+                  alt="Vercel Logo"
+                  title='deployed with Vercel'
+                  width={62}
+                  height={62}
+                />
+              </a>
+              <a
+                href="https://github.com/nikohoffren/fork-commit-merge"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='flex items-center bg-slate-100 transition-all hover:bg-slate-300 rounded shadow-lg w-fit text-sm font-bold p-1.5 space-x-2'
+              >
+                <span>Github Stars</span>
+                {starCount !== null ? (
+                  <>
+                    <StarFilled color='currentColor' width={62} height={62} />
+                    {starCount}
+                  </>
+                ) : ''}
+              </a>
             </div>
-            <div className="text-center w-full">
-              <ul className="list-none mt-2 text-base text-slate-50">
-                <li className="hover:underline">
+          </div>
+
+          <div
+            className="grid grid-cols-2 gap-2 mt-5 sm:grid-cols-2 md:mt-0"
+          >
+            <div className="text-center sm:text-end">
+              <p className="text-lg font-bold text-white">
+                Information
+              </p>
+
+              <ul className="mt-4 space-y-4 text-sm [&>li>a]:transition-all">
+                <li>
                   <Link
+                    className="text-sm font-medium text-white transition hover:text-white/75 hover:underline"
                     href="https://github.com/nikohoffren/fork-commit-merge/blob/main/CONTRIBUTING.md"
-                    target="blank"
+                    target='_blank'
+                    rel="noopener noreferrer"
                   >
                     Contributing
                   </Link>
                 </li>
-                <li className="hover:underline">
-                  <Link href="/privacy-policy">Privacy Policy</Link>
-                </li>
-                <li className="hover:underline">
+
+                <li>
                   <Link
+                    className="text-sm font-medium text-white transition hover:text-white/75 hover:underline"
+                    href="/privacy-policy"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    className="text-sm font-medium text-white transition hover:text-white/75 hover:underline"
+                    href="https://github.com/nikohoffren"
+                    target='_blank'
+                    rel="noopener noreferrer"
+                  >
+                    Contact
+                  </Link>
+                </li>
+
+
+              </ul>
+            </div>
+
+            <div className="text-center sm:text-end">
+              <p className="text-lg font-bold text-white">
+                Helpful Links
+              </p>
+
+              <ul className="mt-4 space-y-4 text-sm [&>li>a]:transition-all">
+                <li>
+                  <Link
+                    className="text-sm font-medium text-white hover:text-white/75 hover:underline"
+                    href="/faq"
+                  >
+                    FAQs
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    className="text-sm font-medium text-white hover:text-white/75 hover:underline"
                     href="https://github.com/nikohoffren/fork-commit-merge/blob/main/CODE_OF_CONDUCT.md"
-                    target="blank"
+                    target='_blank'
+                    rel="noopener noreferrer"
                   >
                     Code of Conduct
                   </Link>
                 </li>
-                <li className="hover:underline">
-                  <Link href="https://github.com/nikohoffren">Contact</Link>
-                </li>
               </ul>
-            </div>
-            <div className="text-center w-full">
-              <div className="text-base text-slate-50 flex flex-col items-center space-y-2">
-                <Link
-                  className="py-1 px-3 border border-transparent text-sm font-medium rounded-md text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 inline-flex items-center space-x-2"
-                  href={"https://github.com/nikohoffren/fork-commit-merge"}
-                  target="blank"
-                >
-                  <svg
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    width="22"
-                    height="22"
-                    className="mr-2"
-                  >
-                    <title>GitHub icon</title>
-                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.6-.015 2.885-.015 3.285 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
-                  </svg>
-                  {starCount !== null ? (
-                    <>
-                      Star us in GitHub{" "}
-                      <div
-                        style={{
-                          position: "relative",
-                        }}
-                      >
-                        <StarFilled
-                          style={{
-                            fontSize: "2.9rem",
-                            color: "gold",
-                          }}
-                        />
-                        <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-xs font-extrabold">
-                          {starCount}
-                        </span>
-                      </div>
-                    </>
-                  ) : (
-                    "Star us in GitHub"
-                  )}
-                </Link>
-              </div>
             </div>
           </div>
         </div>
-      </footer>
-    </>
+
+        <div className="pt-6 mt-12 border-t border-gray-800">
+          <div className="text-center sm:flex sm:justify-between sm:text-left">
+            <p className="text-sm text-gray-400">
+              <span className="block sm:inline">All rights reserved.</span>
+            </p>
+
+            <p
+              className="mt-4 text-sm text-gray-400 sm:order-first sm:mt-0 [&>a]:underline"
+            >
+              &copy; {new Date().getFullYear()} <Link href="https://nikohoffren.com/" target="_blank" rel="noopener noreferrer">Niko Hoffrén</Link> & <Link href="https://github.com/nikohoffren/fork-commit-merge#list-of-contributors" target="_blank" rel="noopener noreferrer">GitHub community</Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 
