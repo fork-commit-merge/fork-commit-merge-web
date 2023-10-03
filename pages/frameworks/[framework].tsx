@@ -18,6 +18,9 @@ import ThreeJSLibrary from "../../components/frameworkComponents/ThreeJSLibrary"
 import ReactLibrary from "../../components/frameworkComponents/ReactLibrary";
 import EmberFramework from "../../components/frameworkComponents/EmberFramework";
 import AstroFramework from "../../components/frameworkComponents/AstroFramework";
+import AspNetCoreFramework from "../../components/frameworkComponents/AspNetCoreFramework";
+import SpringFramework from "../../components/frameworkComponents/SpringFramework";
+import TailwindCSSFramework from "../../components/frameworkComponents/TailwindCSSFramework";
 
 const FrameworkPage = () => {
   const router = useRouter();
@@ -59,6 +62,12 @@ const FrameworkPage = () => {
         return <FlutterFramework />;
       case "react-native":
         return <ReactNativeFramework />;
+      case "aspnet-core":
+        return <AspNetCoreFramework />;
+      case "tailwindcss":
+        return <TailwindCSSFramework/>;
+      case "spring":
+        return <SpringFramework />;
       default:
         return <FrameworkNotSupported />;
     }
