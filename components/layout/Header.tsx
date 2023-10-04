@@ -134,7 +134,7 @@ const Header = () => {
                   <Link
                     href="/resources"
                     onClick={() => setIsOpen(false)}
-                    className="block py-2 text-sm font-medium cursor-pointer hover:underline hover:text-white/75"
+                    className="block py-2 text-sm font-medium cursor-pointer hover:text-white/75"
                   >
                     Resources
                   </Link>
@@ -142,7 +142,7 @@ const Header = () => {
                 <li>
                   <Link
                     href="/leaderboard"
-                    className="block py-2 text-sm font-medium cursor-pointer hover:underline hover:text-white/75"
+                    className="block py-2 text-sm font-medium cursor-pointer hover:text-white/75"
                   >
                     Leaderboard
                   </Link>
@@ -151,7 +151,7 @@ const Header = () => {
                   <Link
                     href="/faq"
                     onClick={() => setIsOpen(false)}
-                    className="block py-2 text-sm font-medium cursor-pointer hover:underline hover:text-white/75"
+                    className="block py-2 text-sm font-medium cursor-pointer hover:text-white/75"
                   >
                     FAQ
                   </Link>
@@ -283,7 +283,7 @@ const Header = () => {
 
           <li ref={node} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
               onClick={toggleLanguageDropdown}
             >
               Languages
@@ -308,7 +308,7 @@ const Header = () => {
           </li>
           <li ref={frameworkNode} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
               onClick={toggleFrameworkDropdown}
             >
               Frameworks | Libraries
@@ -333,7 +333,7 @@ const Header = () => {
           </li>
           <li ref={gitSelectionNode} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
               onClick={toggleGitSelectionDropdown}
             >
               Git
@@ -358,7 +358,7 @@ const Header = () => {
           </li>
           <li ref={roadmapNode} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointerhover:text-white/75"
               onClick={toggleRoadmapDropdown}
             >
               Roadmaps
@@ -383,7 +383,7 @@ const Header = () => {
           </li>
           <li ref={communityNode} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
               onClick={toggleCommunityDropdown}
             >
               Community
@@ -408,91 +408,91 @@ const Header = () => {
           </li>
 
           <Link href="/ide" onClick={() => setIsOpen(false)}>
-            <div className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75">
+            <div className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75">
               IDE:s
             </div>
           </Link>
           <Link href="/faq" onClick={() => setIsOpen(false)}>
-            <div className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75">
+            <div className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75">
               FAQ
             </div>
           </Link>
           <Link href="/resources" onClick={() => setIsOpen(false)}>
-            <div className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75">
+            <div className="block px-6 py-2 text-sm cursor-pointer  hover:text-white/75">
               Resources
             </div>
           </Link>
           <Link href="/leaderboard" onClick={() => setIsOpen(false)}>
-            <div className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75">
+            <div className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75">
               Leaderboard
             </div>
           </Link>
 
           <li className="inline-flex overflow-hidden bg-white rounded-md shadow-sm ml-6 mt-4">
-                  <div className="inline-block px-2 py-0.5 text-sm font-medium text-gray-700 border-e hover:bg-gray-50 focus:relative">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="icon icon-tabler icon-tabler-brand-github"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                    </svg>
-                    <span className="sr-only">github icon</span>
-                  </div>
+            <div className="inline-block px-2 py-0.5 text-sm font-medium text-gray-700 border-e hover:bg-gray-50 focus:relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon icon-tabler icon-tabler-brand-github"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+              </svg>
+              <span className="sr-only">github icon</span>
+            </div>
 
-                  <Link
-                    href={"https://github.com/nikohoffren/fork-commit-merge"}
-                    target="blank"
-                    className="flex items-center gap-x-1 px-2 py-0.5 text-sm font-bold text-black hover:bg-gray-200 focus:relative"
-                  >
-                    {starCount !== null ? (
-                      <>
-                        {starCount}
-                        <StarFilled color="currentColor" />
-                      </>
-                    ) : (
-                      ""
-                    )}
-                  </Link>
-                </li>
-<div className="flex-column mt-2">
-                <li className="inline-flex overflow-hidden bg-white rounded-md shadow-sm ml-6">
-                  <div className="inline-block px-2 py-1 text-sm font-medium text-black border-e hover:bg-gray-50 focus:relative">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="icon icon-tabler icon-tabler-heart"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
-                    </svg>
-                    <span className="sr-only">heart icon</span>
-                  </div>
+            <Link
+              href={"https://github.com/nikohoffren/fork-commit-merge"}
+              target="blank"
+              className="flex items-center gap-x-1 px-2 py-0.5 text-sm font-bold text-black hover:bg-gray-200 focus:relative"
+            >
+              {starCount !== null ? (
+                <>
+                  {starCount}
+                  <StarFilled color="currentColor" />
+                </>
+              ) : (
+                ""
+              )}
+            </Link>
+          </li>
+          <div className="flex-column mt-2">
+            <li className="inline-flex overflow-hidden bg-white rounded-md shadow-sm ml-6">
+              <div className="inline-block px-2 py-1 text-sm font-medium text-black border-e hover:bg-gray-50 focus:relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="icon icon-tabler icon-tabler-heart"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                </svg>
+                <span className="sr-only">heart icon</span>
+              </div>
 
-                  <Link
-                    href={"https://github.com/sponsors/nikohoffren?o=esb"}
-                    target="blank"
-                    className="flex items-center px-2 py-1 text-sm font-bold text-black gap-x-1 hover:bg-gray-200 focus:relative"
-                  >
-                    Sponsor
-                  </Link>
-                </li>
-                </div>
+              <Link
+                href={"https://github.com/sponsors/nikohoffren?o=esb"}
+                target="blank"
+                className="flex items-center px-2 py-1 text-sm font-bold text-black gap-x-1 hover:bg-gray-200 focus:relative"
+              >
+                Sponsor
+              </Link>
+            </li>
+          </div>
           <div className="mt-2 mb-10 ml-6">
             <div className={styles.buyButton}>
               <Coffee />
@@ -523,7 +523,7 @@ const Header = () => {
             <div className="flex items-center space-x-1 [&>li>div]:font-semibold [&>li>div]:transition-all ">
               <li ref={node} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm transition-all cursor-pointer hover:underline hover:text-white/75"
+                  className="block px-6 py-2 text-sm transition-all cursor-pointer hover:text-white/75"
                   onClick={toggleLanguageDropdown}
                 >
                   Languages
@@ -545,7 +545,7 @@ const Header = () => {
               </li>
               <li ref={frameworkNode} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+                  className="block px-6 py-2 text-sm cursor-pointer  hover:text-white/75"
                   onClick={toggleFrameworkDropdown}
                 >
                   Frameworks | Libraries
@@ -567,7 +567,7 @@ const Header = () => {
               </li>
               <li ref={gitSelectionNode} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+                  className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
                   onClick={toggleGitSelectionDropdown}
                 >
                   Git
@@ -592,7 +592,7 @@ const Header = () => {
               </li>
               <li ref={roadmapNode} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+                  className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
                   onClick={toggleRoadmapDropdown}
                 >
                   Roadmaps
@@ -617,7 +617,7 @@ const Header = () => {
               </li>
               <li ref={communityNode} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm cursor-pointer hover:underline hover:text-white/75"
+                  className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
                   onClick={toggleCommunityDropdown}
                 >
                   Community
@@ -641,7 +641,7 @@ const Header = () => {
                 )}
               </li>
               <Link href="/ide" onClick={() => setIsOpen(false)}>
-                <div className="block px-6 py-2 pr-10 text-sm font-bold cursor-pointer hover:underline hover:text-white/75">
+                <div className="block px-6 py-2 pr-10 text-sm font-bold cursor-pointer hover:text-white/75">
                   IDE:s
                 </div>
               </Link>
