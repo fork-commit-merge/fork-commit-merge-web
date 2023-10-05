@@ -2458,4 +2458,46 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/60851943?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "jurijsb"
   },
+  {
+    "id": "vivekvr1",
+    "url": "https://github.com/vivekvr1",
+    "avatar": "https://avatars.githubusercontent.com/u/99336923?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "vivekvr1"
+  },
+  {
+    "id": "NsCracker",
+    "url": "https://github.com/NsCracker",
+    "avatar": "https://avatars.githubusercontent.com/u/115659007?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "NsCracker"
+  },
+  {
+    "id": "Dis-ease-20",
+    "url": "https://github.com/Dis-ease-20",
+    "avatar": "https://avatars.githubusercontent.com/u/59063747?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Dis-ease-20"
+  },
+  {
+    "id": "alpharosto",
+    "url": "https://github.com/alpharosto",
+    "avatar": "https://avatars.githubusercontent.com/u/121320004?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "alpharosto"
+  },
+  {
+    "id": "Mahendra5495",
+    "url": "https://github.com/Mahendra5495",
+    "avatar": "https://avatars.githubusercontent.com/u/82939327?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Mahendra5495"
+  },
+  {
+    "id": "kurayami07734",
+    "url": "https://github.com/kurayami07734",
+    "avatar": "https://avatars.githubusercontent.com/u/60501848?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "kurayami07734"
+  },
+  {
+    "id": "aecuto",
+    "url": "https://github.com/aecuto",
+    "avatar": "https://avatars.githubusercontent.com/u/16747081?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "aecuto"
+  },
 ];
