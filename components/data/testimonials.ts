@@ -50,4 +50,10 @@ export const testimonials: TestimonialType[] = [
     imageUrl: "https://avatars.githubusercontent.com/u/115522947?v=4",
     url: "https://github.com/Gourav2609",
   },
+  {
+    text: "Thank you for creating such a great way for new contributors to get used to making open source commits. I am a TS/React developer trying to relearn the Python I learned in college a while ago and this is such an easy and fun way to practice that! Kudos to you and everyone else involved in making this repo!",
+    name: "DustyDogCodex",
+    imageUrl: "https://avatars.githubusercontent.com/u/72352123?v=4",
+    url: "https://github.com/DustyDogCodex",
+  },
 ];
