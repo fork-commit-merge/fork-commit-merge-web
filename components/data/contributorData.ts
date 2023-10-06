@@ -2500,4 +2500,28 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/16747081?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "aecuto"
   },
+  {
+    "id": "mrudang-vora",
+    "url": "https://github.com/mrudang-vora",
+    "avatar": "https://avatars.githubusercontent.com/u/6066608?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "mrudang-vora"
+  },
+  {
+    "id": "jhonDoe15",
+    "url": "https://github.com/jhonDoe15",
+    "avatar": "https://avatars.githubusercontent.com/u/62393042?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "jhonDoe15"
+  },
+  {
+    "id": "DustyDogCodex",
+    "url": "https://github.com/DustyDogCodex",
+    "avatar": "https://avatars.githubusercontent.com/u/72352123?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "DustyDogCodex"
+  },
+  {
+    "id": "ClearlyHere",
+    "url": "https://github.com/ClearlyHere",
+    "avatar": "https://avatars.githubusercontent.com/u/133259204?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ClearlyHere"
+  },
 ];
