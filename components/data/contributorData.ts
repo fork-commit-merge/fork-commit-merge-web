@@ -2524,4 +2524,58 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/133259204?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "ClearlyHere"
   },
+  {
+    "id": "Vasunayak262",
+    "url": "https://github.com/Vasunayak262",
+    "avatar": "https://avatars.githubusercontent.com/u/146729744?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Vasunayak262"
+  },
+  {
+    "id": "MaEdAlpha",
+    "url": "https://github.com/MaEdAlpha",
+    "avatar": "https://avatars.githubusercontent.com/u/72553021?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "MaEdAlpha"
+  },
+  {
+    "id": "DevRyJa",
+    "url": "https://github.com/DevRyJa",
+    "avatar": "https://avatars.githubusercontent.com/u/121892692?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "DevRyJa"
+  },
+  {
+    "id": "GD0910",
+    "url": "https://github.com/GD0910",
+    "avatar": "https://avatars.githubusercontent.com/u/88530462?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "GD0910"
+  },
+  {
+    "id": "AnnaKondrDeveloper",
+    "url": "https://github.com/AnnaKondrDeveloper",
+    "avatar": "https://avatars.githubusercontent.com/u/85047120?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "AnnaKondrDeveloper"
+  },
+  {
+    "id": "Lagaress",
+    "url": "https://github.com/Lagaress",
+    "avatar": "https://avatars.githubusercontent.com/u/48330849?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Lagaress"
+  },
+  {
+    "id": "elciosato",
+    "url": "https://github.com/elciosato",
+    "avatar": "https://avatars.githubusercontent.com/u/8830095?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "elciosato"
+  },
+  {
+    "id": "zachgentner",
+    "url": "https://github.com/zachgentner",
+    "avatar": "https://avatars.githubusercontent.com/u/17534268?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "zachgentner"
+  },
+  {
+    "id": "iamsravya",
+    "url": "https://github.com/iamsravya",
+    "avatar": "https://avatars.githubusercontent.com/u/113273665?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "iamsravya"
+  },
 ];
