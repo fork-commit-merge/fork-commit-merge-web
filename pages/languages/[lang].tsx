@@ -155,7 +155,7 @@ const LanguagePage = () => {
 
   return (
     <>
-      <div className="bg-slate-950 py-10 px-6">{renderContent()}</div>
+      <div className="bg-primary py-10 px-6">{renderContent()}</div>
     </>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <div className="bg-slate-950 text-slate-50 flex flex-col">
+    <div className="bg-primary text-slate-50 flex flex-col">
       <div className="min-h-screen mx-auto max-w-4xl">
         <div className="flex-grow text-center flex items-center justify-center">
           <div className="pb-6">

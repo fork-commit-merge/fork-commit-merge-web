@@ -39,11 +39,11 @@ export const LeaderBoard: React.FC = () => {
           <div className="spinner"></div>
         </div>
       ) : isError ? (
-        <div className="min-w-full bg-slate-950 border rounded-lg shadow-lg mx-auto text-slate-300 py-4">
+        <div className="min-w-full bg-primary border rounded-lg shadow-lg mx-auto text-slate-300 py-4">
           <p>No data available, try again later!</p>
         </div>
       ) : (
-        <table className="min-w-full bg-slate-950 border rounded-lg shadow-lg mx-auto text-slate-300">
+        <table className="min-w-full bg-primary border rounded-lg shadow-lg mx-auto text-slate-300">
           <thead>
             <tr className="bg-gray-700 text-white">
               <th className="py-4 px-6 border-b border-gray-300">

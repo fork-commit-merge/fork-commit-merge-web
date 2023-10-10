@@ -17,7 +17,7 @@ const IndexMain: React.FC = () => {
           Your one-stop resource hub for mastering GitHub contributions
         </p>
         <Badges />
-        <div className="bg-slate-950 w-full pt-4 pb-16 text-center">
+        <div className="bg-primary w-full pt-4 pb-16 text-center">
           <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
             <p className="text-2xl leading-8 mt-8 mb-8 font-primary">
               Become a part of our thriving community of over 350 developers who

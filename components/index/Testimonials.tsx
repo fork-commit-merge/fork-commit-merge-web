@@ -6,7 +6,7 @@ const Testimonial: React.FC<{ testimonial: TestimonialType }> = ({
   testimonial,
 }) => {
   return (
-    <div className="bg-slate-950">
+    <div className="bg-primary">
       <div className="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"

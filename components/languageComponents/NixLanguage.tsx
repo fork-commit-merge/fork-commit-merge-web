@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const NixLanguage = () => {
   return (
-    <div className="flex justify-center items-center bg-slate-950">
+    <div className="flex justify-center items-center bg-primary">
       <div className="text-center text-gray-50 max-w-2xl">
         <div className="flex flex-wrap justify-center items-center">
           <img

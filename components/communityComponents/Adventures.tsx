@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Adventures() {
   return (
     <>
-      <div className="bg-slate-950 text-white px-10 py-10 flex flex-col justify-center items-center min-h-screen">
+      <div className="bg-primary text-white px-10 py-10 flex flex-col justify-center items-center min-h-screen">
         <h1 className="text-3xl font-bold mb-4">Adventure Games in Markdown</h1>
         <div className="my-5 font-light text-gray-100 mx-auto max-w-2xl">
           <p className="mb-4">

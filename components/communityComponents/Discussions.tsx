@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Discussions = () => {
   return (
-    <div className="flex justify-center items-center bg-slate-950 py-10 px-10">
+    <div className="flex justify-center items-center bg-primary py-10 px-10">
       <div className="text-center text-slate-50 max-w-2xl">
         <h1 className="text-3xl font-bold mb-6">
           GitHub Discussions: An Overview

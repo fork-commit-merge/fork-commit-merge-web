@@ -29,7 +29,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50 pb-6">
           <Descriptions />
         </div>
-        <div className="bg-slate-950">
+        <div className="bg-primary">
           <div className="mx-4">
             {testimonials.map((testimonial, index) => (
               <Testimonials key={index} testimonial={testimonial} />
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-slate-950 pb-10" />
+      <div className="bg-primary pb-10" />
     </div>
   );
 }

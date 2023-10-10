@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const EmberFramework = () => {
   return (
-    <div className="flex items-center justify-center bg-slate-950">
+    <div className="flex items-center justify-center bg-primary">
       <div className="max-w-2xl text-center text-slate-50">
         <div className="flex flex-wrap items-center justify-center">
           <img
