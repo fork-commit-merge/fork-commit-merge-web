@@ -2608,4 +2608,40 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/87604491?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "ARCHITABHATTAD"
   },
+  {
+    "id": "Udosaint",
+    "url": "https://github.com/Udosaint",
+    "avatar": "https://avatars.githubusercontent.com/u/28763685?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Udosaint"
+  },
+  {
+    "id": "ModEraNoah",
+    "url": "https://github.com/ModEraNoah",
+    "avatar": "https://avatars.githubusercontent.com/u/96735923?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ModEraNoah"
+  },
+  {
+    "id": "VAIBHAVPANT07",
+    "url": "https://github.com/VAIBHAVPANT07",
+    "avatar": "https://avatars.githubusercontent.com/u/140806599?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "VAIBHAVPANT07"
+  },
+  {
+    "id": "hoalasama",
+    "url": "https://github.com/hoalasama",
+    "avatar": "https://avatars.githubusercontent.com/u/122216450?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "hoalasama"
+  },
+  {
+    "id": "hardik96",
+    "url": "https://github.com/hardik96",
+    "avatar": "https://avatars.githubusercontent.com/u/29126231?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "hardik96"
+  },
+  {
+    "id": "pick-cee",
+    "url": "https://github.com/pick-cee",
+    "avatar": "https://avatars.githubusercontent.com/u/80953110?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "pick-cee"
+  },
 ];
