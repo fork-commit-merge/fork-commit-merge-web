@@ -46,11 +46,11 @@ This project is the repo of [Fork, Commit, Merge -website](https://forkcommitmer
 
 ## Tech Stack
 
--   React
--   Next.js
--   TypeScript
--   Tailwind CSS
--   MongoDB Atlas
+-   React 18.2.0
+-   Next.js 13.5.4
+-   TypeScript 5.2.2
+-   Tailwind CSS 3.3.3
+-   MongoDB Atlas ^5.9.0
 -   GitHub OAuth/API
 
 ## Local Development
