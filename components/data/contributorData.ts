@@ -2656,4 +2656,40 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/146029313?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "tkmunir"
   },
+  {
+    "id": "thezeeshanhassan",
+    "url": "https://github.com/thezeeshanhassan",
+    "avatar": "https://avatars.githubusercontent.com/u/111036501?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "thezeeshanhassan"
+  },
+  {
+    "id": "swaroop-2021",
+    "url": "https://github.com/swaroop-2021",
+    "avatar": "https://avatars.githubusercontent.com/u/83859431?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "swaroop-2021"
+  },
+  {
+    "id": "nik-6174",
+    "url": "https://github.com/nik-6174",
+    "avatar": "https://avatars.githubusercontent.com/u/78644716?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "nik-6174"
+  },
+  {
+    "id": "niushay",
+    "url": "https://github.com/niushay",
+    "avatar": "https://avatars.githubusercontent.com/u/48344449?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "niushay"
+  },
+  {
+    "id": "aarunvignesh",
+    "url": "https://github.com/aarunvignesh",
+    "avatar": "https://avatars.githubusercontent.com/u/11308342?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "aarunvignesh"
+  },
+  {
+    "id": "Milagre10",
+    "url": "https://github.com/Milagre10",
+    "avatar": "https://avatars.githubusercontent.com/u/124932410?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Milagre10"
+  },
 ];
