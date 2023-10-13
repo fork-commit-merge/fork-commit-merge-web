@@ -47,6 +47,8 @@ import ObjectiveCLanguage from "../../components/languageComponents/ObjectiveCLa
 import MATLABLanguage from "../../components/languageComponents/MATLABLanguage";
 import NixLanguage from "../../components/languageComponents/NixLanguage";
 import HTMXLanguage from "../../components/languageComponents/HTMXLanguage";
+import YAMLLanguage from "../../components/languageComponents/YAMLLanguage";
+import ZSHLanguage from "../../components/languageComponents/ZSHLanguage";
 
 const LanguagePage = () => {
   const router = useRouter();
@@ -148,6 +150,10 @@ const LanguagePage = () => {
         return <ObjectiveCLanguage />;
       case "matlab":
         return <MATLABLanguage />;
+      case "yaml":
+        return <YAMLLanguage />;
+      case "zsh":
+        return <ZSHLanguage />;
       default:
         return <LanguageNotSupported />;
     }
