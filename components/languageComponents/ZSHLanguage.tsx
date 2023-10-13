@@ -52,9 +52,9 @@ const ZSHLanguage = () => {
         </ul>
         <br />
         <a
-          href="https://yaml.org/"
+          href="https://zsh.sourceforge.io/Doc/"
           className="text-xl font-bold underline hover:text-blue-400">
-          YAML - Official Documentation
+          ZSH - Official Documentation
         </a>
       </div>
     </div>
