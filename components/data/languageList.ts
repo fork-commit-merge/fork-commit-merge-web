@@ -46,4 +46,6 @@ export const languageList = [
   { name: "Perl", link: "/languages/perl" },
   { name: "Nix", link: "/languages/nix" },
   { name: "Scratch", link: "/languages/scratch" },
+  { name: "YAML", link: "/languages/yaml" },
+  { name: "ZSH", link: "/languages/zsh" },
 ];
