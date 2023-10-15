@@ -2716,4 +2716,16 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/144167611?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "BiswaPrakash237"
   },
+  {
+    "id": "WhiteNight110",
+    "url": "https://github.com/WhiteNight110",
+    "avatar": "https://avatars.githubusercontent.com/u/133510177?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "WhiteNight110"
+  },
+  {
+    "id": "div02-afk",
+    "url": "https://github.com/div02-afk",
+    "avatar": "https://avatars.githubusercontent.com/u/113417008?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "div02-afk"
+  },
 ];
