@@ -2704,4 +2704,16 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/121305448?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "SAndStorm002"
   },
+  {
+    "id": "mademoiselle-chantal",
+    "url": "https://github.com/mademoiselle-chantal",
+    "avatar": "https://avatars.githubusercontent.com/u/120084609?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "mademoiselle-chantal"
+  },
+  {
+    "id": "BiswaPrakash237",
+    "url": "https://github.com/BiswaPrakash237",
+    "avatar": "https://avatars.githubusercontent.com/u/144167611?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "BiswaPrakash237"
+  },
 ];
