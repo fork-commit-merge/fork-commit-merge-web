@@ -344,11 +344,11 @@ export const badgesData = [
     alt: "Markdown",
   },
   {
-    src: "https://img.shields.io/badge/git-%23000000.svg?style=for-the-badge&logo=git&logoColor=white",
-    alt: "Git",
+    src: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
+    alt: "Docker",
   },
   {
-    src: "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
-    alt: "GitHub",
+    src: "https://img.shields.io/badge/git-%23000000.svg?style=for-the-badge&logo=git&logoColor=white",
+    alt: "Git",
   },
 ];
