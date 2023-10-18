@@ -4,9 +4,18 @@ import { Contributors } from "./Contributors";
 import { TopThreeContributors } from "./TopThreeContributors";
 import Badges from "./Badges";
 import { contributorData } from "../data/contributorData";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { fetchContributorsCount } from "../../utils/fetchContributorsCount";
+
 
 const IndexMain: React.FC = () => {
+  const [contributorsCount, setContributorsCount] = useState<number | null>(
+    null
+  );
+
+  useEffect(() => {
+    fetchContributorsCount().then((count) => setContributorsCount(count));
+  }, []);
   return (
     <>
       <div className="my-6 min-w-full">
@@ -20,8 +29,9 @@ const IndexMain: React.FC = () => {
         <div className="bg-primary w-full pt-4 pb-16 text-center">
           <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
             <p className="text-2xl leading-8 mt-8 mb-8 font-primary">
-              Become a part of our thriving community of over 380 developers who
-              have already contributed to this project!
+              Become a part of our thriving community of{" "}
+              {contributorsCount ?? "several"} developers who have already contributed
+              to this project!
             </p>
           </div>
           <TopThreeContributors />
