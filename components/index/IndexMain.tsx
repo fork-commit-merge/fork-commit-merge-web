@@ -1,49 +1,48 @@
 /* eslint-disable react/jsx-no-undef */
-import Link from "next/link";
-import { Contributors } from "./Contributors";
-import { TopThreeContributors } from "./TopThreeContributors";
-import Badges from "./Badges";
-import { contributorData } from "../data/contributorData";
-import React, { useEffect, useState } from "react";
-import { fetchContributorsCount } from "../../utils/fetchContributorsCount";
-
+import Link from 'next/link'
+import { Contributors } from './Contributors'
+import { TopThreeContributors } from './TopThreeContributors'
+import Badges from './Badges'
+import { contributorData } from '../data/contributorData'
+import React, { useEffect, useState } from 'react'
+import { fetchContributorsCount } from '../../utils/fetchContributorsCount'
 
 const IndexMain: React.FC = () => {
   const [contributorsCount, setContributorsCount] = useState<number | null>(
     null
-  );
+  )
 
   useEffect(() => {
-    fetchContributorsCount().then((count) => setContributorsCount(count));
-  }, []);
+    fetchContributorsCount().then(count => setContributorsCount(count))
+  }, [])
   return (
     <>
-      <div className="my-6 min-w-full">
-        <h1 className="text-5xl font-bold font-primary text-slate-50">
+      <div className='my-6 min-w-full'>
+        <h1 className='font-primary text-5xl font-bold text-slate-50'>
           Welcome to Fork, Commit, Merge
         </h1>
-        <p className="mt-4 mb-7 text-2xl font-primary text-gray-100">
+        <p className='font-primary mb-7 mt-4 text-2xl text-gray-100'>
           Your one-stop resource hub for mastering GitHub contributions
         </p>
         <Badges />
-        <div className="bg-primary w-full pt-4 pb-16 text-center">
-          <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
-            <p className="text-2xl leading-8 mt-8 mb-8 font-primary">
-              Become a part of our thriving community of{" "}
-              {contributorsCount ?? "several"} developers who have already contributed
-              to this project!
+        <div className='bg-primary w-full pb-16 pt-4 text-center'>
+          <div className='mx-auto my-5 max-w-2xl text-xl font-light text-gray-100'>
+            <p className='font-primary mb-8 mt-8 text-2xl leading-8'>
+              Become a part of our thriving community of{' '}
+              {contributorsCount ?? 'several'} inspiring developers who have
+              already contributed to this project!
             </p>
           </div>
           <TopThreeContributors />
 
           <React.Suspense>
-            <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-4xl">
+            <div className='mx-auto my-5 max-w-4xl text-xl font-light text-gray-100'>
               <Contributors contributors={contributorData} />
             </div>
           </React.Suspense>
         </div>
-        <div className="bg-secondary w-full py-6">
-          <div className="my-5 text-xl font-light text-gray-100 mx-auto max-w-2xl">
+        <div className='bg-secondary w-full py-6'>
+          <div className='mx-auto my-5 max-w-2xl text-xl font-light text-gray-100'>
             <code>Fork, Commit, Merge</code> is your one-stop resource hub for
             mastering GitHub contributions! Whether you&apos;re a novice coder
             or an experienced developer, our comprehensive guides are designed
@@ -60,11 +59,11 @@ const IndexMain: React.FC = () => {
             <br />
             Let&apos;s code, collaborate, and create together!
           </div>
-          <div className="mt-10 mb-3">
+          <div className='mb-3 mt-10'>
             <Link
-              href="https://github.com/nikohoffren/fork-commit-merge"
-              target="blank"
-              className="text-2xl text-white bg-slate-900 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider font-primary"
+              href='https://github.com/nikohoffren/fork-commit-merge'
+              target='blank'
+              className='font-primary my-8 transform rounded-md bg-slate-900 px-8 pb-5 pt-4 text-2xl font-semibold tracking-wider text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-800'
             >
               GET STARTED
             </Link>
@@ -72,7 +71,7 @@ const IndexMain: React.FC = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default IndexMain;
+export default IndexMain
