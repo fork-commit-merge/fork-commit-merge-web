@@ -64,7 +64,7 @@ export const testimonials: TestimonialType[] = [
   },
   {
     text: "Starting my journey with Node.js and open source – gaining confidence, one contribution at a time. Thanks to this awesome community!",
-    name: "ClearlyHere",
+    name: "Dhanesh539",
     imageUrl: "https://avatars.githubusercontent.com/u/100354896?v=4",
     url: "https://github.com/Dhanesh539",
   },
