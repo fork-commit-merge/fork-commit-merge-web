@@ -2788,4 +2788,34 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/134627612?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Spooky0ps"
   },
+  {
+    "id": "naotarian",
+    "url": "https://github.com/naotarian",
+    "avatar": "https://avatars.githubusercontent.com/u/59650885?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "naotarian"
+  },
+  {
+    "id": "AnnieDebbie",
+    "url": "https://github.com/AnnieDebbie",
+    "avatar": "https://avatars.githubusercontent.com/u/32017636?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "AnnieDebbie"
+  },
+  {
+    "id": "Devanshukoli",
+    "url": "https://github.com/Devanshukoli",
+    "avatar": "https://avatars.githubusercontent.com/u/99028806?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Devanshukoli"
+  },
+  {
+    "id": "Dhanesh539",
+    "url": "https://github.com/Dhanesh539",
+    "avatar": "https://avatars.githubusercontent.com/u/100354896?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Dhanesh539"
+  },
+  {
+    "id": "seharbat00l",
+    "url": "https://github.com/seharbat00l",
+    "avatar": "https://avatars.githubusercontent.com/u/97355349?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "seharbat00l"
+  },
 ];
