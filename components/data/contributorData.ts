@@ -2818,4 +2818,10 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/97355349?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "seharbat00l"
   },
+  {
+    "id": "sivangbagri",
+    "url": "https://github.com/sivangbagri",
+    "avatar": "https://avatars.githubusercontent.com/u/61118650?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sivangbagri"
+  },
 ];
