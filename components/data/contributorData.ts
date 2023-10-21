@@ -2824,4 +2824,22 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/61118650?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "sivangbagri"
   },
+  {
+    "id": "maheshchandra10",
+    "url": "https://github.com/maheshchandra10",
+    "avatar": "https://avatars.githubusercontent.com/u/148360659?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "maheshchandra10"
+  },
+  {
+    "id": "PrajwalGraj",
+    "url": "https://github.com/PrajwalGraj",
+    "avatar": "https://avatars.githubusercontent.com/u/113518358?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "PrajwalGraj"
+  },
+  {
+    "id": "Bratajit-03",
+    "url": "https://github.com/Bratajit-03",
+    "avatar": "https://avatars.githubusercontent.com/u/106532791?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Bratajit-03"
+  },
 ];
