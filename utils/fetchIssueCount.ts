@@ -17,7 +17,7 @@ export async function fetchIssueCount(): Promise<number> {
       url = match ? match[1] : null;
     }
 
-    return issueCount -1;
+    return issueCount -2;
   } catch (error) {
     console.error("Failed to fetch issues:", error);
     return 0;
