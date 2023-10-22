@@ -3,7 +3,7 @@ export async function fetchIssueCount(): Promise<number> {
     let url: string | null =
       "https://api.github.com/repos/nikohoffren/fork-commit-merge/issues?per_page=100";
 
-    let issueCount = 0;
+    let issueCount = -3;
 
     while (url) {
       const response: Response = await fetch(url);
@@ -17,7 +17,7 @@ export async function fetchIssueCount(): Promise<number> {
       url = match ? match[1] : null;
     }
 
-    return issueCount -2;
+    return issueCount;
   } catch (error) {
     console.error("Failed to fetch issues:", error);
     return 0;
