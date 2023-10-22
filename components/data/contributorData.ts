@@ -2842,4 +2842,40 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/106532791?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Bratajit-03"
   },
+  {
+    "id": "ayushrakesh",
+    "url": "https://github.com/ayushrakesh",
+    "avatar": "https://avatars.githubusercontent.com/u/115995339?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ayushrakesh"
+  },
+  {
+    "id": "Kunal-sharma05",
+    "url": "https://github.com/Kunal-sharma05",
+    "avatar": "https://avatars.githubusercontent.com/u/91633726?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Kunal-sharma05"
+  },
+  {
+    "id": "FarukhS52",
+    "url": "https://github.com/FarukhS52",
+    "avatar": "https://avatars.githubusercontent.com/u/129654632?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "FarukhS52"
+  },
+  {
+    "id": "RS-labhub",
+    "url": "https://github.com/RS-labhub",
+    "avatar": "https://avatars.githubusercontent.com/u/117426013?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "RS-labhub"
+  },
+  {
+    "id": "amandeep-singh-parihar",
+    "url": "https://github.com/amandeep-singh-parihar",
+    "avatar": "https://avatars.githubusercontent.com/u/123322298?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "amandeep-singh-parihar"
+  },
+  {
+    "id": "0Armaan025",
+    "url": "https://github.com/0Armaan025",
+    "avatar": "https://avatars.githubusercontent.com/u/104704093?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "0Armaan025"
+  },
 ];
