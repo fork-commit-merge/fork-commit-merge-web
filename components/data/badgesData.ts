@@ -92,6 +92,10 @@ export const badgesData = [
     alt: "Yarn",
   },
   {
+    src: "https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white",
+    alt: "NGINX",
+  },
+  {
     src: "https://img.shields.io/badge/-apollo-311C87?style=for-the-badge&logo=apollo-graphql",
     alt: "Apollo",
   },
