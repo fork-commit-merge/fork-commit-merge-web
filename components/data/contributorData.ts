@@ -2902,4 +2902,10 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/64682801?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "shashankx86"
   },
+  {
+    "id": "romitp4l",
+    "url": "https://github.com/romitp4l",
+    "avatar": "https://avatars.githubusercontent.com/u/85341342?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "romitp4l"
+  },
 ];
