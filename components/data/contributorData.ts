@@ -2908,4 +2908,16 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/85341342?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "romitp4l"
   },
+  {
+    "id": "tmsagarofficial",
+    "url": "https://github.com/tmsagarofficial",
+    "avatar": "https://avatars.githubusercontent.com/u/110724849?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "tmsagarofficial"
+  },
+  {
+    "id": "Daoist-Ye",
+    "url": "https://github.com/Daoist-Ye",
+    "avatar": "https://avatars.githubusercontent.com/u/82318525?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Daoist-Ye"
+  },
 ];
