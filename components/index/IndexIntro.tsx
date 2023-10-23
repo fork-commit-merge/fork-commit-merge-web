@@ -9,6 +9,13 @@ const IndexIntro: React.FC = () => {
     fetchIssueCount().then(count => setIssueCount(count))
   }, [])
 
+  const displayIssueCount = () => {
+    if (issueCount === null || isNaN(issueCount)) {
+      return 'several'
+    }
+    return issueCount;
+  }
+
   return (
     <>
       <div className='bg-primary w-full pb-10 pt-6 text-slate-50'>
@@ -31,7 +38,7 @@ const IndexIntro: React.FC = () => {
             &quot;Fork, Commit, Merge&quot; is an educational and practical
             project aimed at helping developers - both newcomers and seasoned -
             improve their skills in open-source contribution, problem-solving,
-            finding bugs, testing, and much more in {issueCount ?? 'several'}{' '}
+            finding bugs, testing, and much more in {displayIssueCount()}{' '}
             individual issues encompassing various programming languages,
             libraries and frameworks.
             <br />

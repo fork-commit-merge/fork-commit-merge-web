@@ -15,6 +15,14 @@ const IndexMain: React.FC = () => {
   useEffect(() => {
     fetchContributorsCount().then(count => setContributorsCount(count))
   }, [])
+
+  const displayContributorsCount = () => {
+    if (contributorsCount === null || isNaN(contributorsCount)) {
+      return 'several'
+    }
+    return contributorsCount;
+  }
+
   return (
     <>
       <div className='my-6 min-w-full'>
@@ -29,8 +37,8 @@ const IndexMain: React.FC = () => {
           <div className='mx-auto my-5 max-w-2xl text-xl font-light text-gray-100'>
             <p className='font-primary mb-8 mt-8 text-2xl leading-8'>
               Become a part of our thriving community of{' '}
-              {contributorsCount ?? 'several'} inspiring developers who have
-              already contributed to this project!
+              {displayContributorsCount()} inspiring developers who have already
+              contributed to this project!
             </p>
           </div>
           <TopThreeContributors />
