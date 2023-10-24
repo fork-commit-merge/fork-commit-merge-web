@@ -2938,4 +2938,46 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/99666524?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Parth4git"
   },
+  {
+    "id": "SoulNikhar",
+    "url": "https://github.com/SoulNikhar",
+    "avatar": "https://avatars.githubusercontent.com/u/111144948?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "SoulNikhar"
+  },
+  {
+    "id": "daulatojha17",
+    "url": "https://github.com/daulatojha17",
+    "avatar": "https://avatars.githubusercontent.com/u/117494705?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "daulatojha17"
+  },
+  {
+    "id": "sujallimje",
+    "url": "https://github.com/sujallimje",
+    "avatar": "https://avatars.githubusercontent.com/u/118969955?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sujallimje"
+  },
+  {
+    "id": "kishanrajput23",
+    "url": "https://github.com/kishanrajput23",
+    "avatar": "https://avatars.githubusercontent.com/u/70385488?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "kishanrajput23"
+  },
+  {
+    "id": "Killer2OP",
+    "url": "https://github.com/Killer2OP",
+    "avatar": "https://avatars.githubusercontent.com/u/111378171?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Killer2OP"
+  },
+  {
+    "id": "imperial-chief",
+    "url": "https://github.com/imperial-chief",
+    "avatar": "https://avatars.githubusercontent.com/u/117163483?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "imperial-chief"
+  },
+  {
+    "id": "Shubhamkashyap1601",
+    "url": "https://github.com/Shubhamkashyap1601",
+    "avatar": "https://avatars.githubusercontent.com/u/110350667?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Shubhamkashyap1601"
+  },
 ];
