@@ -2920,4 +2920,22 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/82318525?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Daoist-Ye"
   },
+  {
+    "id": "krishvsoni",
+    "url": "https://github.com/krishvsoni",
+    "avatar": "https://avatars.githubusercontent.com/u/67964054?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "krishvsoni"
+  },
+  {
+    "id": "ShamimShahraeini",
+    "url": "https://github.com/ShamimShahraeini",
+    "avatar": "https://avatars.githubusercontent.com/u/50511017?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ShamimShahraeini"
+  },
+  {
+    "id": "Parth4git",
+    "url": "https://github.com/Parth4git",
+    "avatar": "https://avatars.githubusercontent.com/u/99666524?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Parth4git"
+  },
 ];
