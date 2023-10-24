@@ -13,7 +13,7 @@ const IndexIntro: React.FC = () => {
     if (issueCount === null || isNaN(issueCount)) {
       return 'several'
     }
-    return issueCount
+    return issueCount;
   }
 
   return (
