@@ -1,23 +1,25 @@
-import React from "react";
-import { LeaderBoard } from "../components/leaderboard/LeaderBoard";
-import Stars from "../components/leaderboard/Stars";
+import React from 'react'
+import { LeaderBoard } from '../components/leaderboard/LeaderBoard'
+import Stars from '../components/leaderboard/Stars'
 
 const LeaderBoardPage: React.FC = () => {
   return (
-    <div className="bg-primary  flex flex-col min-h-screen">
-      <div className="flex-grow text-center flex items-center justify-center">
-        <div className="pb-6 max">
-          <h1 className="text-4xl pt-10">Leaderboard</h1>
-          <h2 className="text-2xl pt-10">
+    <div className='bg-primary  flex min-h-screen flex-col'>
+      <div className='flex flex-grow items-center justify-center text-center'>
+        <div className='max pb-6'>
+          <h1 className='pt-10 text-4xl'>Leaderboard</h1>
+          <h2 className='pt-10 text-2xl'>
             Top 20 Contributors by Solved Issues
           </h2>
-          <p className="text-gray-300 pt-2 pb-10">Bot will update this list once in every 24 hours</p>
+          <p className='pb-10 pt-2 text-gray-300'>
+            Bot will update this list once in every 24 hours
+          </p>
           <LeaderBoard />
           <Stars />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LeaderBoardPage;
+export default LeaderBoardPage
