@@ -8,9 +8,10 @@ const LeaderBoardPage: React.FC = () => {
       <div className="flex-grow text-center flex items-center justify-center">
         <div className="pb-6 max">
           <h1 className="text-4xl pt-10">Leaderboard</h1>
-          <h2 className="text-2xl py-10">
+          <h2 className="text-2xl pt-10">
             Top 20 Contributors by Solved Issues
           </h2>
+          <p className="text-gray-300 pt-2 pb-10">Bot will update this list once in every 24 hours</p>
           <LeaderBoard />
           <Stars />
         </div>
