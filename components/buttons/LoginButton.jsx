@@ -65,7 +65,7 @@ export default function LoginButton() {
 
   if (session?.user) {
     return (
-      <div className='text-center text-slate-50'>
+      <div className='text-center -50'>
         <div className='bg-primary flex flex-col-reverse items-center justify-between rounded-lg border px-4 py-2 shadow-lg md:flex-row'>
           <div className='md:mr-10'>
             <h2 className='mb-10 mt-6 text-4xl font-extrabold'>
@@ -107,10 +107,10 @@ export default function LoginButton() {
             <table className='min-w-full bg-slate-900'>
               <thead>
                 <tr>
-                  <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider text-gray-100'>
+                  <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider '>
                     Title
                   </th>
-                  <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider text-gray-100'>
+                  <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider '>
                     Issue
                   </th>
                 </tr>
@@ -121,10 +121,10 @@ export default function LoginButton() {
                     key={index}
                     className={index % 2 === 0 ? 'bg-gray-900' : 'bg-gray-800'}
                   >
-                    <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5 text-gray-100'>
+                    <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5 '>
                       {pr.title}
                     </td>
-                    <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5 text-gray-100'>
+                    <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5 '>
                       {pr.issue}
                     </td>
                   </tr>
@@ -135,7 +135,7 @@ export default function LoginButton() {
         )}
         <button
           onClick={() => signOut()}
-          className='my-8 rounded-md border border-transparent bg-gray-800 px-6 py-4 text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+          className='my-8 rounded-md border border-transparent bg-gray-800 px-6 py-4 text-sm font-medium  hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
         >
           Sign out
         </button>
@@ -145,9 +145,9 @@ export default function LoginButton() {
 
   return (
     <>
-      <div className='text-center text-slate-50'>
+      <div className='text-center '>
         <div>
-          <h2 className='mb-10 mt-6 text-center text-3xl font-extrabold text-slate-50'>
+          <h2 className='mb-10 mt-6 text-center text-3xl font-extrabold '>
             Sign in with GitHub
           </h2>
         </div>
@@ -171,7 +171,7 @@ export default function LoginButton() {
         </div>
         <button
           onClick={handleSignIn}
-          className='my-6 inline-flex items-center space-x-2 rounded-md border border-transparent bg-gray-800 px-6 py-4 text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2'
+          className='my-6 inline-flex items-center space-x-2 rounded-md border border-transparent bg-gray-800 px-6 py-4 text-sm font-medium  hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2'
         >
           {isSigningIn ? (
             <div className='spinner'></div>

@@ -2,7 +2,7 @@
 const NixLanguage = () => {
   return (
     <div className="flex justify-center items-center bg-primary">
-      <div className="text-center text-gray-50 max-w-2xl">
+      <div className="text-center  max-w-2xl">
         <div className="flex flex-wrap justify-center items-center">
           <img
             src="https://img.shields.io/badge/-Nix-7FDBFF?style=for-the-badge&logo=nixos&logoColor=white"

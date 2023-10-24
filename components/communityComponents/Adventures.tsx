@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Adventures() {
   return (
     <>
-      <div className="bg-primary text-white px-10 py-10 flex flex-col justify-center items-center min-h-screen">
+      <div className="bg-primary  px-10 py-10 flex flex-col justify-center items-center min-h-screen">
         <h1 className="text-3xl font-bold mb-4">Adventure Games in Markdown</h1>
-        <div className="my-5 font-light text-gray-100 mx-auto max-w-2xl">
+        <div className="my-5 font-light  mx-auto max-w-2xl">
           <p className="mb-4">
             This page contains a collection of adventure games written in
             Markdown by our contributors. The games relate to the

@@ -2,7 +2,7 @@
 const RescriptLanguage = () => {
   return (
     <div className="flex justify-center items-center bg-primary">
-      <div className="text-center text-slate-50 max-w-2xl">
+      <div className="text-center  max-w-2xl">
         <div className="flex flex-wrap justify-center items-center">
           <img
             src="https://img.shields.io/badge/rescript-%2314162c?style=for-the-badge&logo=rescript&logoColor=e34c4c"

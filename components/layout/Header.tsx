@@ -115,9 +115,9 @@ const Header = () => {
 
   return (
     <>
-      <nav className="bg-secondary text-slate-50">
+      <nav className="bg-secondary ">
         <div className="max-w-5xl py-3 mx-auto">
-          <div className="flex items-center justify-between ">
+          <div className="flex items-center justify-between">
             <div></div>
             <div className="md:hidden mr-6">
               <button onClick={toggleSideNav}>
@@ -134,7 +134,7 @@ const Header = () => {
                   <Link
                     href="/resources"
                     onClick={() => setIsOpen(false)}
-                    className="block py-2 text-sm font-medium cursor-pointer hover:text-white/75"
+                    className="block py-2 text-sm font-medium cursor-pointer hover:/75 hover:text-gray-300"
                   >
                     Resources
                   </Link>
@@ -142,7 +142,7 @@ const Header = () => {
                 <li>
                   <Link
                     href="/leaderboard"
-                    className="block py-2 text-sm font-medium cursor-pointer hover:text-white/75"
+                    className="hover:text-gray-300 block py-2 text-sm font-medium cursor-pointer hover:/75"
                   >
                     Leaderboard
                   </Link>
@@ -151,7 +151,7 @@ const Header = () => {
                   <Link
                     href="/faq"
                     onClick={() => setIsOpen(false)}
-                    className="block py-2 text-sm font-medium cursor-pointer hover:text-white/75"
+                    className="hover:text-gray-300 block py-2 text-sm font-medium cursor-pointer hover:/75"
                   >
                     FAQ
                   </Link>
@@ -247,7 +247,7 @@ const Header = () => {
       </nav>
 
       {isOpen && (
-        <div className="fixed top-0 left-0 z-20 w-64 h-full pt-6 px-1 overflow-auto bg-transparent text-slate-50 md:hidden backdrop-blur-md [&>li>div]:font-bold [&>li>div]:transition-all [&>a>div]:font-bold">
+        <div className="fixed top-0 left-0 z-20 w-64 h-full pt-6 px-1 overflow-auto bg-transparent  md:hidden backdrop-blur-md [&>li>div]:font-bold [&>li>div]:transition-all [&>a>div]:font-bold">
           {session?.user ? (
             <Link
               href="/login"
@@ -283,13 +283,13 @@ const Header = () => {
 
           <li ref={node} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointer hover:/75"
               onClick={toggleLanguageDropdown}
             >
               Languages
             </div>
             {isLanguageDropdownOpen && (
-              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50">
+              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 ">
                 {languageList.map((lang, index) => (
                   <li
                     key={index}
@@ -308,13 +308,13 @@ const Header = () => {
           </li>
           <li ref={frameworkNode} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointer hover:/75"
               onClick={toggleFrameworkDropdown}
             >
               Frameworks | Libraries
             </div>
             {isFrameworkDropdownOpen && (
-              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50">
+              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 ">
                 {frameworkList.map((framework, index) => (
                   <li
                     key={index}
@@ -333,13 +333,13 @@ const Header = () => {
           </li>
           <li ref={gitSelectionNode} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointer hover:/75"
               onClick={toggleGitSelectionDropdown}
             >
               Git
             </div>
             {isGitSelectionDropdownOpen && (
-              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50">
+              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 ">
                 {gitList.map((git, index) => (
                   <li
                     key={index}
@@ -358,13 +358,13 @@ const Header = () => {
           </li>
           <li ref={roadmapNode} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointerhover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointerhover:/75"
               onClick={toggleRoadmapDropdown}
             >
               Roadmaps
             </div>
             {isRoadmapDropdownOpen && (
-              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50">
+              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 ">
                 {roadmapList.map((roadmap, index) => (
                   <li
                     key={index}
@@ -383,13 +383,13 @@ const Header = () => {
           </li>
           <li ref={communityNode} className="list-none">
             <div
-              className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
+              className="block px-6 py-2 text-sm cursor-pointer hover:/75"
               onClick={toggleCommunityDropdown}
             >
               Community
             </div>
             {isCommunityDropdownOpen && (
-              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50">
+              <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 ">
                 {communityList.map((community, index) => (
                   <li
                     key={index}
@@ -408,22 +408,22 @@ const Header = () => {
           </li>
 
           <Link href="/ide" onClick={() => setIsOpen(false)}>
-            <div className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75">
+            <div className="block px-6 py-2 text-sm cursor-pointer hover:/75">
               IDE:s
             </div>
           </Link>
           <Link href="/faq" onClick={() => setIsOpen(false)}>
-            <div className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75">
+            <div className="block px-6 py-2 text-sm cursor-pointer hover:/75">
               FAQ
             </div>
           </Link>
           <Link href="/resources" onClick={() => setIsOpen(false)}>
-            <div className="block px-6 py-2 text-sm cursor-pointer  hover:text-white/75">
+            <div className="block px-6 py-2 text-sm cursor-pointer  hover:/75">
               Resources
             </div>
           </Link>
           <Link href="/leaderboard" onClick={() => setIsOpen(false)}>
-            <div className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75">
+            <div className="block px-6 py-2 text-sm cursor-pointer hover:/75">
               Leaderboard
             </div>
           </Link>
@@ -501,7 +501,7 @@ const Header = () => {
         </div>
       )}
 
-      <header className="sticky top-0 z-10 hidden w-full bg-transparent backdrop-blur text-slate-50 md:block shadow-bottom">
+      <header className="sticky top-0 z-10 hidden w-full bg-transparent backdrop-blur  md:block shadow-bottom">
         <div className="max-w-5xl py-2 mx-auto shadow-top">
           <div className="items-center justify-between md:flex">
             <div className="flex items-center flex-1 space-x-1">
@@ -523,13 +523,13 @@ const Header = () => {
             <div className="flex items-center space-x-1 [&>li>div]:font-semibold [&>li>div]:transition-all ">
               <li ref={node} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm transition-all cursor-pointer hover:text-white/75"
+                  className="block px-6 py-2 text-sm transition-all cursor-pointer hover:/75 hover:text-gray-300"
                   onClick={toggleLanguageDropdown}
                 >
                   Languages
                 </div>
                 {isLanguageDropdownOpen && (
-                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 backdrop-blur-lg text-slate-50 scrollable-dropdown">
+                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 backdrop-blur-lg  scrollable-dropdown">
                     {languageList.map((lang, index) => (
                       <li
                         key={index}
@@ -545,13 +545,13 @@ const Header = () => {
               </li>
               <li ref={frameworkNode} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm cursor-pointer  hover:text-white/75"
+                  className="block px-6 py-2 text-sm cursor-pointer hover:/75 hover:text-gray-300"
                   onClick={toggleFrameworkDropdown}
                 >
                   Frameworks | Libraries
                 </div>
                 {isFrameworkDropdownOpen && (
-                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50 scrollable-dropdown">
+                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920  scrollable-dropdown">
                     {frameworkList.map((framework, index) => (
                       <li
                         key={index}
@@ -567,13 +567,13 @@ const Header = () => {
               </li>
               <li ref={gitSelectionNode} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
+                  className="block px-6 py-2 text-sm cursor-pointer hover:/75 hover:text-gray-300"
                   onClick={toggleGitSelectionDropdown}
                 >
                   Git
                 </div>
                 {isGitSelectionDropdownOpen && (
-                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 ">
                     {gitList.map((git, index) => (
                       <li
                         key={index}
@@ -592,13 +592,13 @@ const Header = () => {
               </li>
               <li ref={roadmapNode} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
+                  className="block px-6 py-2 text-sm cursor-pointer hover:/75 hover:text-gray-300"
                   onClick={toggleRoadmapDropdown}
                 >
                   Roadmaps
                 </div>
                 {isRoadmapDropdownOpen && (
-                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 ">
                     {roadmapList.map((roadmap, index) => (
                       <li
                         key={index}
@@ -617,13 +617,13 @@ const Header = () => {
               </li>
               <li ref={communityNode} className="list-none">
                 <div
-                  className="block px-6 py-2 text-sm cursor-pointer hover:text-white/75"
+                  className="block px-6 py-2 text-sm cursor-pointer hover:/75 hover:text-gray-300"
                   onClick={toggleCommunityDropdown}
                 >
                   Community
                 </div>
                 {isCommunityDropdownOpen && (
-                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 text-slate-50">
+                  <ul className="absolute w-48 py-1 mt-2 rounded-md shadow-lg bg-slate-920 ">
                     {communityList.map((community, index) => (
                       <li
                         key={index}
@@ -641,7 +641,7 @@ const Header = () => {
                 )}
               </li>
               <Link href="/ide" onClick={() => setIsOpen(false)}>
-                <div className="block px-6 py-2 pr-10 text-sm font-bold cursor-pointer hover:text-white/75">
+                <div className="block px-6 py-2 pr-10 text-sm font-bold cursor-pointer hover:/75 hover:text-gray-300">
                   IDE:s
                 </div>
               </Link>

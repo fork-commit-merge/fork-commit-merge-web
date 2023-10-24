@@ -2,7 +2,7 @@
 const AspNetCoreFramework = () => {
   return (
     <div className="flex justify-center items-center bg-primary">
-      <div className="text-center text-slate-50 max-w-2xl">
+      <div className="text-center  max-w-2xl">
         <div className="flex flex-wrap justify-center items-center">
           <img
             src="https://img.shields.io/badge/ASP.NET%20Core-%2523DB0031.svg?logo=dotnet&logoColor=rgb(202,112,213)&color=rgb(9,31,44)"

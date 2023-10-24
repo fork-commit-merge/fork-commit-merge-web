@@ -2,7 +2,7 @@
 const EmberFramework = () => {
   return (
     <div className="flex items-center justify-center bg-primary">
-      <div className="max-w-2xl text-center text-slate-50">
+      <div className="max-w-2xl text-center ">
         <div className="flex flex-wrap items-center justify-center">
           <img
             src="https://img.shields.io/badge/ember.js-1C1E24?style=for-the-badge&logo=ember.js&logoColor=#D04A37"

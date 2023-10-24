@@ -2,7 +2,7 @@
 const TailwindCSSFramework = () => {
   return (
     <div className="flex justify-center items-center bg-primary">
-      <div className="text-center text-slate-50 max-w-2xl">
+      <div className="text-center  max-w-2xl">
         <div className="flex flex-wrap justify-center items-center">
           <img
             src="https://img.shields.io/badge/Tailwind%20CSS-%2523DB0031.svg?logo=tailwindcss&logoColor=%20rgb(56%20189%20248)&color=rgb(30%2041%2059)"

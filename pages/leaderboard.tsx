@@ -4,7 +4,7 @@ import Stars from "../components/leaderboard/Stars";
 
 const LeaderBoardPage: React.FC = () => {
   return (
-    <div className="bg-primary text-slate-50 flex flex-col min-h-screen">
+    <div className="bg-primary  flex flex-col min-h-screen">
       <div className="flex-grow text-center flex items-center justify-center">
         <div className="pb-6 max">
           <h1 className="text-4xl pt-10">Leaderboard</h1>

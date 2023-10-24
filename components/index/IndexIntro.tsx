@@ -13,12 +13,12 @@ const IndexIntro: React.FC = () => {
     if (issueCount === null || isNaN(issueCount)) {
       return 'several'
     }
-    return issueCount;
+    return issueCount
   }
 
   return (
     <>
-      <div className='bg-primary w-full pb-10 pt-6 text-slate-50'>
+      <div className='bg-primary w-full pb-10 pt-6 '>
         <div className='mx-auto max-w-2xl'>
           <h2 className='my-4 text-4xl font-bold'>
             About the Fork, Commit, Merge project

@@ -26,7 +26,7 @@ export default function Home() {
         <IndexIntro />
       </main>
       <div className="bg-secondary pt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto text-slate-50 pb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-5xl mx-auto  pb-6">
           <Descriptions />
         </div>
         <div className="bg-primary">

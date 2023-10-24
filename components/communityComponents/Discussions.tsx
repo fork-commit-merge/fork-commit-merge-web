@@ -3,7 +3,7 @@ import Link from "next/link";
 const Discussions = () => {
   return (
     <div className="flex justify-center items-center bg-primary py-10 px-10">
-      <div className="text-center text-slate-50 max-w-2xl">
+      <div className="text-center  max-w-2xl">
         <h1 className="text-3xl font-bold mb-6">
           GitHub Discussions: An Overview
         </h1>
@@ -56,7 +56,7 @@ const Discussions = () => {
           <Link
             href="https://github.com/nikohoffren/fork-commit-merge/discussions"
             target="blank"
-            className="text-sm text-white bg-slate-900 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider font-primary"
+            className="text-sm  bg-slate-900 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider font-primary"
             style={{
               wordWrap: "break-word",
               display: "inline-block",

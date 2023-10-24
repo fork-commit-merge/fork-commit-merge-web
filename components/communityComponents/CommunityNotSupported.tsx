@@ -1,7 +1,7 @@
 const CommunityNotSupported = () => {
   return (
     <div className="flex justify-center items-center bg-primary">
-      <div className="text-center text-slate-50 max-w-2xl">
+      <div className="text-center  max-w-2xl">
         <h1 className="text-3xl font-bold mb-10">Community not supported</h1>
       </div>
     </div>

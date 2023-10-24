@@ -4,7 +4,7 @@ import { gitCommands } from "../data/GitCommands";
 const GitCommandsSelection = () => {
   return (
     <div className="flex justify-center items-center bg-primary">
-      <div className="text-center text-slate-50 max-w-2xl">
+      <div className="text-center  max-w-2xl">
         <h1 className="text-3xl font-bold mb-6">Important Git Commands</h1>
         <p className="mb-4">
           Git is a distributed version control system created by Linus Torvalds
@@ -27,10 +27,10 @@ const GitCommandsSelection = () => {
         <table className="min-w-full bg-slate-900">
           <thead>
             <tr>
-              <th className="py-2 px-4 border-b border-gray-200 bg-gray-900 text-left text-xs leading-4 font-medium text-gray-100 uppercase tracking-wider">
+              <th className="py-2 px-4 border-b border-gray-200 bg-gray-900 text-left text-xs leading-4 font-medium  uppercase tracking-wider">
                 Command
               </th>
-              <th className="py-2 px-4 border-b border-gray-200 bg-gray-900 text-left text-xs leading-4 font-medium text-gray-100 uppercase tracking-wider">
+              <th className="py-2 px-4 border-b border-gray-200 bg-gray-900 text-left text-xs leading-4 font-medium  uppercase tracking-wider">
                 Description
               </th>
             </tr>
@@ -41,10 +41,10 @@ const GitCommandsSelection = () => {
                 key={index}
                 className={index % 2 === 0 ? "bg-gray-900" : "bg-gray-800"}
               >
-                <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 text-gray-100">
+                <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 ">
                   {cmd.command}
                 </td>
-                <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 text-gray-100">
+                <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 ">
                   {cmd.description}
                 </td>
               </tr>

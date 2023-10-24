@@ -5,9 +5,10 @@
 :root {
   --ff-primary: "Ysabeau Infant", sans-serif;
   --ff-secondary: "Ubuntu", sans-serif;
+  --fc-primary: #fcfbff;
   --color-bronze: #bb752e;
-  --bg-primary: #03010a;
-  --bg-secondary: #010108;
+  --bg-primary: #03010c;
+  --bg-secondary: #00000a;
 }
 
 .bg-primary {
@@ -24,6 +25,7 @@ body {
   font-size: 1.1rem;
   scroll-behavior: smooth;
   font-family: var(--ff-secondary);
+  color: var(--fc-primary);
   background-color: var(--bg-secondary);
 }
 

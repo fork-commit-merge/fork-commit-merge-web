@@ -2,7 +2,7 @@
 const ObjectiveCLanguage = () => {
   return (
     <div className="flex justify-center items-center bg-primary">
-      <div className="text-center text-slate-50 max-w-2xl">
+      <div className="text-center  max-w-2xl">
         <div className="flex flex-wrap justify-center items-center">
           <img
             src="https://seeklogo.com/images/O/objective-c-logo-81746870EF-seeklogo.com.png"

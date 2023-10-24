@@ -1,19 +1,19 @@
-import { useInView } from "react-intersection-observer";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 type LazyImageProps = {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-};
+  src: string
+  alt: string
+  width: number
+  height: number
+}
 
 const LazyImage: React.FC<LazyImageProps> = ({ src, alt, width, height }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    rootMargin: "200px 0px",
-  });
+    rootMargin: '200px 0px'
+  })
 
   return (
     <motion.div
@@ -23,7 +23,7 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, alt, width, height }) => {
     >
       {inView && <Image src={src} alt={alt} width={width} height={height} />}
     </motion.div>
-  );
-};
+  )
+}
 
-export default LazyImage;
+export default LazyImage
