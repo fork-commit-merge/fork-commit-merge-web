@@ -2980,4 +2980,70 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/110350667?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Shubhamkashyap1601"
   },
+  {
+    "id": "shraddha761",
+    "url": "https://github.com/shraddha761",
+    "avatar": "https://avatars.githubusercontent.com/u/106100728?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "shraddha761"
+  },
+  {
+    "id": "Ruhi14",
+    "url": "https://github.com/Ruhi14",
+    "avatar": "https://avatars.githubusercontent.com/u/138304656?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Ruhi14"
+  },
+  {
+    "id": "hazemkataie",
+    "url": "https://github.com/hazemkataie",
+    "avatar": "https://avatars.githubusercontent.com/u/101126660?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "hazemkataie"
+  },
+  {
+    "id": "Abhishek19-dev",
+    "url": "https://github.com/Abhishek19-dev",
+    "avatar": "https://avatars.githubusercontent.com/u/145835714?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Abhishek19-dev"
+  },
+  {
+    "id": "DicoderRG",
+    "url": "https://github.com/DicoderRG",
+    "avatar": "https://avatars.githubusercontent.com/u/44315090?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "DicoderRG"
+  },
+  {
+    "id": "predator3813",
+    "url": "https://github.com/predator3813",
+    "avatar": "https://avatars.githubusercontent.com/u/107420043?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "predator3813"
+  },
+  {
+    "id": "Ayaan49",
+    "url": "https://github.com/Ayaan49",
+    "avatar": "https://avatars.githubusercontent.com/u/64208057?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Ayaan49"
+  },
+  {
+    "id": "Ranjana761",
+    "url": "https://github.com/Ranjana761",
+    "avatar": "https://avatars.githubusercontent.com/u/129291313?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Ranjana761"
+  },
+  {
+    "id": "ivikashgorai",
+    "url": "https://github.com/ivikashgorai",
+    "avatar": "https://avatars.githubusercontent.com/u/114097162?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ivikashgorai"
+  },
+  {
+    "id": "VivekGuruduttK28",
+    "url": "https://github.com/VivekGuruduttK28",
+    "avatar": "https://avatars.githubusercontent.com/u/127002789?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "VivekGuruduttK28"
+  },
+  {
+    "id": "FarookhNITAP",
+    "url": "https://github.com/FarookhNITAP",
+    "avatar": "https://avatars.githubusercontent.com/u/148432978?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "FarookhNITAP"
+  },
 ];
