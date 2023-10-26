@@ -11,8 +11,8 @@ const LeaderBoardPage: React.FC = () => {
           <h2 className='pt-10 text-2xl'>
             Top 20 Contributors by Solved Issues
           </h2>
-          <p className='pb-10 pt-2 text-gray-300'>
-            Bot will update this list once in every 24 hours
+          <p className='pb-10 pt-2 text-gray-400 italic'>
+            Bot will update this list once in every 24 hours.
           </p>
           <LeaderBoard />
           <Stars />
