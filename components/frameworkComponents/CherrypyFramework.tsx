@@ -13,7 +13,7 @@ const CherrypyFramework = () => {
   
           <h2 className="text-2xl font-bold mb-4">What is Cherrypy Framework?</h2>
           <p className="mb-4">
-            CherryPy is an object-oriented web application framework for the Python programming language. It is designed to be both powerful and easy to use. CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. It provides the necessary tools to create web applications without getting in the way of the developer's workflow.
+            CherryPy is an object-oriented web application framework for the Python programming language. It is designed to be both powerful and easy to use. CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. It provides the necessary tools to create web applications without getting in the way of the developer&apos;s workflow.
           </p>
   
           <h2 className="text-2xl font-bold mb-4">Why Use Flask?</h2>
@@ -33,7 +33,7 @@ const CherrypyFramework = () => {
               - Descriptive Naming: Use descriptive names for variables, functions, and classes to enhance code understandability. Follow the Python naming conventions, like using lowercase letters for variable names and underscores for improved readability.
             </li>
             <li>- Separation of Concerns: Follow the principle of separation of concerns to keep different parts of your application modular and maintainable. Separate business logic from presentation logic, and use the CherryPy framework for handling web-related tasks.</li>
-            <li>- Use of CherryPy Features: Make the most of CherryPy's features for URL routing, request handling, and serving static files to ensure efficient and effective development.</li>
+            <li>- Use of CherryPy Features: Make the most of CherryPy&apos;s features for URL routing, request handling, and serving static files to ensure efficient and effective development.</li>
           </ul>
   
           <br />

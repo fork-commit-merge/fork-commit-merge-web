@@ -19,4 +19,5 @@ export const frameworkList = [
   { name: "ASP.NET Core", link: "/frameworks/aspnet-core" },
   { name: "Tailwind CSS", link: "/frameworks/tailwindcss" },
   { name: "Spring", link: "/frameworks/spring" },
+  { name: "Cherrypy", link: "/frameworks/cherrypy" },
 ];
