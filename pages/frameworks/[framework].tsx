@@ -21,6 +21,7 @@ import AstroFramework from "../../components/frameworkComponents/AstroFramework"
 import AspNetCoreFramework from "../../components/frameworkComponents/AspNetCoreFramework";
 import SpringFramework from "../../components/frameworkComponents/SpringFramework";
 import TailwindCSSFramework from "../../components/frameworkComponents/TailwindCSSFramework";
+import CherrypyFramework from "../../components/frameworkComponents/CherrypyFramework";
 
 const FrameworkPage = () => {
   const router = useRouter();
@@ -68,6 +69,8 @@ const FrameworkPage = () => {
         return <TailwindCSSFramework/>;
       case "spring":
         return <SpringFramework />;
+      case "cherrypy":
+        return <CherrypyFramework />;
       default:
         return <FrameworkNotSupported />;
     }
