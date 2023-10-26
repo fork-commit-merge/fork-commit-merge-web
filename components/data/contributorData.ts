@@ -3046,4 +3046,58 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/148432978?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "FarookhNITAP"
   },
+  {
+    "id": "1LAV1",
+    "url": "https://github.com/1LAV1",
+    "avatar": "https://avatars.githubusercontent.com/u/143288298?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "1LAV1"
+  },
+  {
+    "id": "Adidem23",
+    "url": "https://github.com/Adidem23",
+    "avatar": "https://avatars.githubusercontent.com/u/124609794?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Adidem23"
+  },
+  {
+    "id": "vidyaa18",
+    "url": "https://github.com/vidyaa18",
+    "avatar": "https://avatars.githubusercontent.com/u/87689661?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "vidyaa18"
+  },
+  {
+    "id": "tvermaashutosh",
+    "url": "https://github.com/tvermaashutosh",
+    "avatar": "https://avatars.githubusercontent.com/u/96707067?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "tvermaashutosh"
+  },
+  {
+    "id": "Abhishekgupta204",
+    "url": "https://github.com/Abhishekgupta204",
+    "avatar": "https://avatars.githubusercontent.com/u/116148980?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Abhishekgupta204"
+  },
+  {
+    "id": "paman6415",
+    "url": "https://github.com/paman6415",
+    "avatar": "https://avatars.githubusercontent.com/u/114017588?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "paman6415"
+  },
+  {
+    "id": "abhishek213-alb",
+    "url": "https://github.com/abhishek213-alb",
+    "avatar": "https://avatars.githubusercontent.com/u/76660005?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "abhishek213-alb"
+  },
+  {
+    "id": "sudhanshu-77",
+    "url": "https://github.com/sudhanshu-77",
+    "avatar": "https://avatars.githubusercontent.com/u/97780892?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sudhanshu-77"
+  },
+  {
+    "id": "JatinPhogat",
+    "url": "https://github.com/JatinPhogat",
+    "avatar": "https://avatars.githubusercontent.com/u/113964811?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "JatinPhogat"
+  },
 ];
