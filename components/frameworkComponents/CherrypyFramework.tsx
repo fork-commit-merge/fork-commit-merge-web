@@ -5,7 +5,7 @@ const CherrypyFramework = () => {
       <div className='max-w-2xl  text-center'>
         <div className='flex flex-wrap items-center justify-center'>
           <img
-            src='https://img.shields.io/badge/cherrypy-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white'
+            src='https://img.shields.io/badge/cherrypy-%23E34F26.svg?style=for-the-badge&logo=cherrypy&logoColor=white'
             alt='CherryPy'
             className='mb-10 h-16 rounded-sm'
           />
