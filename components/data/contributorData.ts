@@ -3124,4 +3124,46 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/121039395?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "ahmod001"
   },
+  {
+    "id": "uhdf823f",
+    "url": "https://github.com/uhdf823f",
+    "avatar": "https://avatars.githubusercontent.com/u/143468270?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "uhdf823f"
+  },
+  {
+    "id": "ManyaJain246",
+    "url": "https://github.com/ManyaJain246",
+    "avatar": "https://avatars.githubusercontent.com/u/137194912?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ManyaJain246"
+  },
+  {
+    "id": "DhanushNehru",
+    "url": "https://github.com/DhanushNehru",
+    "avatar": "https://avatars.githubusercontent.com/u/22955675?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "DhanushNehru"
+  },
+  {
+    "id": "Yachika9925",
+    "url": "https://github.com/Yachika9925",
+    "avatar": "https://avatars.githubusercontent.com/u/147185379?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Yachika9925"
+  },
+  {
+    "id": "CrypticRevenger",
+    "url": "https://github.com/CrypticRevenger",
+    "avatar": "https://avatars.githubusercontent.com/u/128175097?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "CrypticRevenger"
+  },
+  {
+    "id": "rexmitis",
+    "url": "https://github.com/rexmitis",
+    "avatar": "https://avatars.githubusercontent.com/u/149018508?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "rexmitis"
+  },
+  {
+    "id": "Acacia55",
+    "url": "https://github.com/Acacia55",
+    "avatar": "https://avatars.githubusercontent.com/u/135031075?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Acacia55"
+  },
 ];
