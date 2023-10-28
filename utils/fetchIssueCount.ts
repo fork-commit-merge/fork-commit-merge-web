@@ -4,7 +4,7 @@ export async function fetchIssueCount(): Promise<number> {
       'https://api.github.com/repos/nikohoffren/fork-commit-merge/issues?per_page=100'
 
     //* Offset issueCount
-    let issueCount = -8
+    let issueCount = -4
 
     while (url) {
       const response: Response = await fetch(url)
