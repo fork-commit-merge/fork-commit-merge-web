@@ -3166,4 +3166,28 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/135031075?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Acacia55"
   },
+  {
+    "id": "dolyanhthu",
+    "url": "https://github.com/dolyanhthu",
+    "avatar": "https://avatars.githubusercontent.com/u/122217592?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "dolyanhthu"
+  },
+  {
+    "id": "DawmosTomie",
+    "url": "https://github.com/DawmosTomie",
+    "avatar": "https://avatars.githubusercontent.com/u/88043739?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "DawmosTomie"
+  },
+  {
+    "id": "oceanSimple",
+    "url": "https://github.com/oceanSimple",
+    "avatar": "https://avatars.githubusercontent.com/u/128461911?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "oceanSimple"
+  },
+  {
+    "id": "R4Rohit23",
+    "url": "https://github.com/R4Rohit23",
+    "avatar": "https://avatars.githubusercontent.com/u/80148306?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "R4Rohit23"
+  },
 ];
