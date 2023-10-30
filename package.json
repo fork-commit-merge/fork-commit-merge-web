@@ -19,7 +19,7 @@
     "autoprefixer": "10.4.16",
     "axios": "^1.6.0",
     "eslint": "8.52.0",
-    "eslint-config-next": "13.5.5",
+    "eslint-config-next": "14.0.0",
     "formidable": "^3.5.1",
     "framer-motion": "^10.16.4",
     "md5": "^2.3.0",
