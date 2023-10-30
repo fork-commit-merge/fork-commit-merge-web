@@ -11,17 +11,6 @@ const Descriptions: React.FC = () => {
           The repository hosts a range of tasks with varying difficulties (easy,
           medium, and hard) in different languages, libraries and frameworks.
           <br />
-          <br />
-          At the moment the repository has issues for HTML, HTMX, CSS, Tailwind,
-          Bootstrap, ReScript, CoffeeScript, JavaScript, TypeScript, React,
-          NextJS, ThreeJS, Vue, Svelte, Astro, Angular, NodeJS, ExpressJS, Jest,
-          Jasmine, C, C++, C#, D, F#, Java, Kotlin, Scala, Groovy, Python,
-          Flask, Django, Ruby, Rails, Elixir, Crystal, PHP, Laravel, Go, Dart,
-          Flutter, Swift, Rust, Haskell, Lua, Clojure, Lisp, Fortran, Erlang,
-          Smalltalk, Zig, R, Nim, MATLAB, Octave, Solidity, Vyper, SQL, TLA+,
-          Bash, Perl, JSON, YAML, TOML, CSV, XML and Markdown.
-          <br />
-          <br />
           Each task is a problem that needs to be solved, which helps you to
           sharpen your problem-solving abilities - a critical skill for every
           developer.
@@ -71,13 +60,21 @@ const Descriptions: React.FC = () => {
         </p>
         <hr className='my-6' />
         <h3 className='my-3 mt-10 text-2xl font-semibold'>
-          Become Proficient with Markdown
+          Become Proficient with Markup
         </h3>
+        <h4 className='mt-5 text-xl font-medium'>Markdown</h4>
         <p className='text-lg leading-7'>
           Markdown is a lightweight markup language used to create formatted
           text. Markdown issues in this repository allow contributors to
           practice and master the art of writing clean, readable, and
           well-structured documentation.
+        </p>
+        <h4 className='mt-5 text-xl font-medium'>XML</h4>
+        <p className='text-lg leading-7'>
+          XML (eXtensible Markup Language) is a markup language that defines a
+          set of rules for encoding documents in a format that is both
+          human-readable and machine-readable. It is commonly used for data
+          exchange, web services, and document storage.
         </p>
         <hr className='my-6' />
         <h3 className='my-3 mt-10 text-2xl font-semibold'>
@@ -103,6 +100,25 @@ const Descriptions: React.FC = () => {
           applications through related issues in the repository.
         </p>
         <hr className='my-6' />
+        <h3 className='my-3 mt-10 text-2xl font-semibold'>
+          Learn web development with React and Next.js
+        </h3>
+
+        <h4 className='mt-5 text-xl font-medium'>React</h4>
+        <p className='text-lg leading-7'>
+          React is a popular JavaScript library for building user interfaces,
+          particularly for single-page applications. Developed and maintained by
+          Facebook, React allows developers to create reusable UI components and
+          manage the state of an application more efficiently.
+        </p>
+
+        <h4 className='mt-5 text-xl font-medium'>Next.js</h4>
+        <p className='text-lg leading-7'>
+          Next.js is a React framework that enables functionalities such as
+          server-side rendering and static site generation. Created by Vercel,
+          Next.js aims to make the development of performant and SEO-friendly
+          web applications easier and more streamlined.
+        </p>
       </div>
 
       <div className='mb-8 px-4'>
@@ -157,7 +173,11 @@ const Descriptions: React.FC = () => {
           objects, and how to parse them.
         </p>
         <hr className='my-6' />
-        <h3 className='my-3 mt-10 text-2xl font-semibold'>Work with YAML</h3>
+        <h3 className='my-3 mt-10 text-2xl font-semibold'>
+          Work with Data Serialization
+        </h3>
+
+        <h4 className='mt-5 text-xl font-medium'>YAML</h4>
         <p className='text-lg leading-7'>
           YAML (YAML Ain&apos;t Markup Language) is a human-friendly data
           serialization standard for all programming languages. YAML issues in
@@ -165,6 +185,15 @@ const Descriptions: React.FC = () => {
           files and use them for configuration and data sharing between
           languages with different data structures.
         </p>
+
+        <h4 className='mt-5 text-xl font-medium'>TOML</h4>
+        <p className='text-lg leading-7'>
+          TOML (Tom&apos;s Obvious, Minimal Language) is a configuration file
+          format that is easy to read due to its clear semantics. TOML files are
+          often used for configuration files in various projects and can
+          represent complex data structures in a comprehensible way.
+        </p>
+
         <hr className='my-6' />
         <h3 className='my-3 mt-10 text-2xl font-semibold'>Explore C and C++</h3>
         <p className='text-lg leading-7'>
