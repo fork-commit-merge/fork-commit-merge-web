@@ -49,6 +49,7 @@ import NixLanguage from "../../components/languageComponents/NixLanguage";
 import HTMXLanguage from "../../components/languageComponents/HTMXLanguage";
 import YAMLLanguage from "../../components/languageComponents/YAMLLanguage";
 import ZSHLanguage from "../../components/languageComponents/ZSHLanguage";
+import DelphiLanguage from "../../components/languageComponents/DelphiLanguage";
 
 const LanguagePage = () => {
   const router = useRouter();
@@ -154,6 +155,8 @@ const LanguagePage = () => {
         return <YAMLLanguage />;
       case "zsh":
         return <ZSHLanguage />;
+      case "delphi":
+        return <DelphiLanguage />;
       default:
         return <LanguageNotSupported />;
     }
