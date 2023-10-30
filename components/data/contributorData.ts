@@ -3190,4 +3190,16 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/80148306?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "R4Rohit23"
   },
+  {
+    "id": "DevanshKyada27",
+    "url": "https://github.com/DevanshKyada27",
+    "avatar": "https://avatars.githubusercontent.com/u/143169520?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "DevanshKyada27"
+  },
+  {
+    "id": "locdeptraihehe",
+    "url": "https://github.com/locdeptraihehe",
+    "avatar": "https://avatars.githubusercontent.com/u/108383726?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "locdeptraihehe"
+  },
 ];
