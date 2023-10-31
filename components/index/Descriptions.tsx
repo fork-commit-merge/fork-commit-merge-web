@@ -119,6 +119,7 @@ const Descriptions: React.FC = () => {
           Next.js aims to make the development of performant and SEO-friendly
           web applications easier and more streamlined.
         </p>
+        <hr className='my-6' />
       </div>
 
       <div className='mb-8 px-4'>
@@ -237,6 +238,7 @@ const Descriptions: React.FC = () => {
           platforms, whether you&apos;re a pro or just starting out. Unleash the
           potential of these languages for secure and innovative solutions.
         </p>
+        <hr className='my-6' />
       </div>
     </>
   )
