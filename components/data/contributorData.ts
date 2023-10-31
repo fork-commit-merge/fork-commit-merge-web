@@ -3203,9 +3203,51 @@ export const contributorData = [
     "name": "locdeptraihehe"
   },
   {
+    "id": "Gauravtb2253",
+    "url": "https://github.com/Gauravtb2253",
+    "avatar": "https://avatars.githubusercontent.com/u/114927759?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Gauravtb2253"
+  },
+  {
+    "id": "auth-02",
+    "url": "https://github.com/auth-02",
+    "avatar": "https://avatars.githubusercontent.com/u/146264364?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "auth-02"
+  },
+  {
+    "id": "psqaure11",
+    "url": "https://github.com/psqaure11",
+    "avatar": "https://avatars.githubusercontent.com/u/108622923?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "psqaure11"
+  },
+  {
+    "id": "wwwsyi",
+    "url": "https://github.com/wwwsyi",
+    "avatar": "https://avatars.githubusercontent.com/u/143729394?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "wwwsyi"
+  },
+  {
+    "id": "piyushw0203",
+    "url": "https://github.com/piyushw0203",
+    "avatar": "https://avatars.githubusercontent.com/u/111994172?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "piyushw0203"
+  },
+  {
     "id": "AlexHoop140",
     "url": "https://github.com/AlexHoop140",
     "avatar": "https://avatars.githubusercontent.com/u/30748832?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "AlexHoop140"
+  },
+  {
+    "id": "ihgazi",
+    "url": "https://github.com/ihgazi",
+    "avatar": "https://avatars.githubusercontent.com/u/44411308?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ihgazi"
+  },
+  {
+    "id": "Ceekay1607",
+    "url": "https://github.com/Ceekay1607",
+    "avatar": "https://avatars.githubusercontent.com/u/88470967?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Ceekay1607"
   },
 ];
