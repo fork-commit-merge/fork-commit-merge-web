@@ -3316,4 +3316,34 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/141981128?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "trungtinblpl"
   },
+  {
+    "id": "nothung983",
+    "url": "https://github.com/nothung983",
+    "avatar": "https://avatars.githubusercontent.com/u/124388314?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "nothung983"
+  },
+  {
+    "id": "B2111933",
+    "url": "https://github.com/B2111933",
+    "avatar": "https://avatars.githubusercontent.com/u/145697417?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "B2111933"
+  },
+  {
+    "id": "williebonavente",
+    "url": "https://github.com/williebonavente",
+    "avatar": "https://avatars.githubusercontent.com/u/76456752?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "williebonavente"
+  },
+  {
+    "id": "toanb2005897",
+    "url": "https://github.com/toanb2005897",
+    "avatar": "https://avatars.githubusercontent.com/u/144480508?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "toanb2005897"
+  },
+  {
+    "id": "KatoAkikaze",
+    "url": "https://github.com/KatoAkikaze",
+    "avatar": "https://avatars.githubusercontent.com/u/134664311?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "KatoAkikaze"
+  },
 ];
