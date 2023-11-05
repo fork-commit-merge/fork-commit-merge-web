@@ -3346,4 +3346,28 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/134664311?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "KatoAkikaze"
   },
+  {
+    "id": "GauravSamanta",
+    "url": "https://github.com/GauravSamanta",
+    "avatar": "https://avatars.githubusercontent.com/u/83856198?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "GauravSamanta"
+  },
+  {
+    "id": "sourabh-pisal",
+    "url": "https://github.com/sourabh-pisal",
+    "avatar": "https://avatars.githubusercontent.com/u/26631581?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sourabh-pisal"
+  },
+  {
+    "id": "prakharagrawal10",
+    "url": "https://github.com/prakharagrawal10",
+    "avatar": "https://avatars.githubusercontent.com/u/90237784?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "prakharagrawal10"
+  },
+  {
+    "id": "sushant0709",
+    "url": "https://github.com/sushant0709",
+    "avatar": "https://avatars.githubusercontent.com/u/40301987?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sushant0709"
+  },
 ];
