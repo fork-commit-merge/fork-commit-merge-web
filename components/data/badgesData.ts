@@ -224,6 +224,10 @@ export const badgesData = [
     alt: "Swift",
   },
   {
+    src: "https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+    alt: "React Native",
+  },
+  {
     src: "https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white",
     alt: "Julia",
   },
