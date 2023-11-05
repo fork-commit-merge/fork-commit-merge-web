@@ -49,8 +49,8 @@ const TopThreeContributors: FC = () => {
           <a href={contributor.url} target='_blank' rel='noopener noreferrer'>
             <Image
               src={contributor.avatar}
-              width={145}
-              height={145}
+              width={110}
+              height={110}
               alt={contributor.name}
               className='px-1'
             />
@@ -60,7 +60,7 @@ const TopThreeContributors: FC = () => {
               style={{
                 position: 'absolute',
                 top: 7,
-                right: 7,
+                right: 1,
                 fontSize: 30,
                 color: 'gold'
               }}
@@ -71,7 +71,7 @@ const TopThreeContributors: FC = () => {
               style={{
                 position: 'absolute',
                 top: 7,
-                right: 7,
+                right: 1,
                 fontSize: 30,
                 color: 'silver'
               }}
@@ -82,7 +82,7 @@ const TopThreeContributors: FC = () => {
               style={{
                 position: 'absolute',
                 top: 7,
-                right: 7,
+                right: 1,
                 fontSize: 30,
                 color: 'var(--color-bronze)'
               }}

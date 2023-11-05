@@ -25,19 +25,6 @@ const IndexIntro: React.FC = () => {
           About the Fork, Commit, Merge project
         </h2>
 
-        <p className='pt-8 text-xl leading-7'>
-          If you have already made some contributions to our Fork, Commit, Merge
-          repo, you can{' '}
-          <Link
-            href='/login'
-            className='text-blue-300 underline hover:text-blue-500'
-          >
-            Login
-          </Link>{' '}
-          to see all of your contributions and which issues you have already
-          solved. It makes it easier to keep track of your progress and see how
-          you have improved your skills.
-        </p>
         <p className='py-8 text-xl leading-7'>
           &quot;Fork, Commit, Merge&quot; is an educational and practical
           project aimed at helping developers - both newcomers and seasoned -
@@ -83,6 +70,20 @@ const IndexIntro: React.FC = () => {
           made to the repository so the issue is ready for the next contributor.
           You will also be added to the list of contributors in both, the README
           of the repository, and this website.
+        </p>
+        <hr className='my-6' />
+        <p className='pt-2 text-xl leading-7'>
+          If you have already made some contributions to our Fork, Commit, Merge
+          repo, you can{' '}
+          <Link
+            href='/login'
+            className='text-blue-300 underline hover:text-blue-500'
+          >
+            Login
+          </Link>{' '}
+          to see all of your contributions and which issues you have already
+          solved. It makes it easier to keep track of your progress and see how
+          you have improved your skills.
         </p>
         <p className='pt-4 text-xl leading-7'>
           If you want, instead of the educational repository, you can also

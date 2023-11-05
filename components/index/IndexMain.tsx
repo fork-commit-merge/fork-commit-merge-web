@@ -69,7 +69,7 @@ const IndexMain: React.FC = () => {
           and effectively to the open-source world.
           <br />
           <br />
-          Let&apos;s code, collaborate, and create together!
+          Let&apos;s <span className="text-green-500">code</span>, <span className="text-blue-500">collaborate</span>, and <span className="text-orange-500">create</span> together!
         </div>
         <div className='mb-3 mt-10'>
           <Link
