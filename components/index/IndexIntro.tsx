@@ -54,11 +54,12 @@ const IndexIntro: React.FC = () => {
 
         <Image
           src='/typescript-easy.png'
-          alt='User avatar'
-          width='900'
-          height='900'
-          className='rounded-xl'
+          alt='TypeScript - Easy issue example'
+          width='600'
+          height='600'
+          className='mx-auto rounded-xl'
         />
+
         <p className='pt-4 text-xl leading-7'>
           Here, the task is to add the necessary return statement to the greet
           function so that it returns a greeting message. After you are done,
