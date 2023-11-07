@@ -21,10 +21,10 @@ const Descriptions: React.FC = () => {
         </h3>
         <p className='text-lg leading-7'>
           Testing is an integral part of software development. Within the
-          JavaScript issues of this project, contributors will find Jest tests
-          that need to pass for the solution to be accepted. This provides an
-          opportunity to understand how testing works, how to write efficient
-          tests, and how to debug them.
+          JavaScript/TypeScript issues of this project, contributors will find
+          Jest, Jasmine and Vitest tests that need to pass for the solution to
+          be accepted. This provides an opportunity to understand how testing
+          works, how to write efficient tests, and how to debug them.
         </p>
         <hr className='my-6' />
         <h3 className='my-3 mt-10 text-2xl font-semibold'>
@@ -101,14 +101,14 @@ const Descriptions: React.FC = () => {
         </p>
         <hr className='my-6' />
         <h3 className='my-3 mt-10 text-2xl font-semibold'>
-          Learn web development with React and Next.js
+          Learn web development with React.js and Next.js
         </h3>
 
         <h4 className='mt-5 text-xl font-medium'>React</h4>
         <p className='text-lg leading-7'>
-          React is a popular JavaScript library for building user interfaces,
+          React.js is a popular JavaScript library for building user interfaces,
           particularly for single-page applications. Developed and maintained by
-          Facebook, React allows developers to create reusable UI components and
+          Meta, React allows developers to create reusable UI components and
           manage the state of an application more efficiently.
         </p>
 
@@ -144,13 +144,13 @@ const Descriptions: React.FC = () => {
         </p>
         <hr className='my-6' />
         <h3 className='my-3 mt-10 text-2xl font-semibold'>
-          Dive Into PHP and Web Development
+          Dive Into PHP, Laravel, Django, Flask and Web Development
         </h3>
         <p className='text-lg leading-7'>
           PHP is a popular server-side scripting language especially suited to
           web development. Through the PHP issues in this repository,
-          contributors can practice PHP concepts and get a grasp of web
-          development intricacies.
+          contributors can practice PHP concepts, its frameworks and get a grasp
+          of web development intricacies.
         </p>
         <hr className='my-6' />
         <h3 className='my-3 mt-10 text-2xl font-semibold'>
