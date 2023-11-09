@@ -3502,4 +3502,40 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/54092835?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "maxirios"
   },
+  {
+    "id": "Andre118",
+    "url": "https://github.com/Andre118",
+    "avatar": "https://avatars.githubusercontent.com/u/101457336?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Andre118"
+  },
+  {
+    "id": "HHongVu",
+    "url": "https://github.com/HHongVu",
+    "avatar": "https://avatars.githubusercontent.com/u/89300841?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "HHongVu"
+  },
+  {
+    "id": "satyam-mishra-07",
+    "url": "https://github.com/satyam-mishra-07",
+    "avatar": "https://avatars.githubusercontent.com/u/112871870?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "satyam-mishra-07"
+  },
+  {
+    "id": "HoanB2014976",
+    "url": "https://github.com/HoanB2014976",
+    "avatar": "https://avatars.githubusercontent.com/u/141981735?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "HoanB2014976"
+  },
+  {
+    "id": "Bishalsingh153",
+    "url": "https://github.com/Bishalsingh153",
+    "avatar": "https://avatars.githubusercontent.com/u/139632789?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Bishalsingh153"
+  },
+  {
+    "id": "Phuc-B2015003",
+    "url": "https://github.com/Phuc-B2015003",
+    "avatar": "https://avatars.githubusercontent.com/u/141889452?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Phuc-B2015003"
+  },
 ];
