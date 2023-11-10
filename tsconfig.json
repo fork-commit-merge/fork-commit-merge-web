@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/buttons/LoginButton.jsx"
+    "components/Dashboard.jsx"
   ],
   "exclude": ["node_modules"]
 }
