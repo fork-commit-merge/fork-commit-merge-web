@@ -49,8 +49,8 @@ const TopThreeContributors: FC = () => {
           <a href={contributor.url} target='_blank' rel='noopener noreferrer'>
             <Image
               src={contributor.avatar}
-              width={110}
-              height={110}
+              width={80}
+              height={80}
               alt={contributor.name}
               className='px-1'
             />
@@ -59,8 +59,8 @@ const TopThreeContributors: FC = () => {
             <StarFilled
               style={{
                 position: 'absolute',
-                top: 7,
-                right: 1,
+                top: 1,
+                right: -5,
                 fontSize: 30,
                 color: 'gold'
               }}
@@ -70,8 +70,8 @@ const TopThreeContributors: FC = () => {
             <StarFilled
               style={{
                 position: 'absolute',
-                top: 7,
-                right: 1,
+                top: 1,
+                right: -5,
                 fontSize: 30,
                 color: 'silver'
               }}
@@ -81,8 +81,8 @@ const TopThreeContributors: FC = () => {
             <StarFilled
               style={{
                 position: 'absolute',
-                top: 7,
-                right: 1,
+                top: 1,
+                right: -5,
                 fontSize: 30,
                 color: 'var(--color-bronze)'
               }}
