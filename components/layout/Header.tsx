@@ -193,11 +193,11 @@ const Header = () => {
                       width='24'
                       height='24'
                       viewBox='0 0 24 24'
-                      stroke-width='2'
+                      strokeWidth='2'
                       stroke='currentColor'
                       fill='none'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     >
                       <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
                       <path d='M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572'></path>
@@ -222,11 +222,11 @@ const Header = () => {
                       width='28'
                       height='28'
                       viewBox='0 0 24 24'
-                      stroke-width='2'
+                      strokeWidth='2'
                       stroke='currentColor'
                       fill='none'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     >
                       <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
                       <path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5'></path>
@@ -257,7 +257,7 @@ const Header = () => {
 
       {isOpen && (
         <div className='fixed left-0 top-0 z-20 h-full w-64 overflow-auto bg-transparent px-1 pt-6  backdrop-blur-md md:hidden [&>a>div]:font-bold [&>li>div]:font-bold [&>li>div]:transition-all'>
-          {/* <Link
+          <Link
             href='/dashboard'
             onClick={() => setIsOpen(false)}
             className='group relative mb-2 block rounded-md px-6 text-sm font-medium text-black focus:outline-none'
@@ -265,7 +265,7 @@ const Header = () => {
             <span className='relative block rounded bg-slate-100 px-4 py-2 text-sm font-semibold transition-colors hover:bg-slate-300'>
               Dashboard
             </span>
-          </Link> */}
+          </Link>
           <div className='ml-6 pt-2'>
             {isLoaded && user && <UserButton afterSignOutUrl='/' />}
           </div>
@@ -436,11 +436,11 @@ const Header = () => {
                 width='28'
                 height='28'
                 viewBox='0 0 24 24'
-                stroke-width='2'
+                strokeWidth='2'
                 stroke='currentColor'
                 fill='none'
-                stroke-linecap='round'
-                stroke-linejoin='round'
+                strokeLinecap='round'
+                strokeLinejoin='round'
               >
                 <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
                 <path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5'></path>
@@ -472,11 +472,11 @@ const Header = () => {
                   width='24'
                   height='24'
                   viewBox='0 0 24 24'
-                  stroke-width='2'
+                  strokeWidth='2'
                   stroke='currentColor'
                   fill='none'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 >
                   <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
                   <path d='M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572'></path>
@@ -640,7 +640,7 @@ const Header = () => {
                   </ul>
                 )}
               </li>
-              {/* <Link
+              <Link
                 href='/dashboard'
                 onClick={() => setIsOpen(false)}
                 className='group relative block rounded-md pl-4 text-sm font-medium text-black focus:outline-none'
@@ -648,7 +648,7 @@ const Header = () => {
                 <span className='relative block rounded bg-slate-100 px-4 py-1 text-sm font-semibold transition-colors hover:bg-slate-300'>
                   Dashboard
                 </span>
-              </Link> */}
+              </Link>
               {isLoaded && user && (
                 <div className='pl-4'>
                   <UserButton afterSignOutUrl='/' />

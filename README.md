@@ -51,7 +51,8 @@ This project is the repo of [Fork, Commit, Merge -website](https://forkcommitmer
 -   TypeScript
 -   Tailwind CSS
 -   MongoDB Atlas
--   GitHub OAuth/API
+-   Clerk (Authentication)
+-   GitHub API
 
 ## Local Development
 

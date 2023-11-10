@@ -11,6 +11,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@clerk/nextjs": "^4.27.1",
+    "@clerk/themes": "^1.7.9",
     "@heroicons/react": "^1.0.6",
     "@mui/icons-material": "^5.14.16",
     "@next-auth/mongodb-adapter": "^1.1.3",

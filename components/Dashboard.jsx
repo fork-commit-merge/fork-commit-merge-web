@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useUser } from '@clerk/nextjs'
@@ -20,7 +21,7 @@ export default function Dashboard() {
       if (user) {
         setIsLoading(true)
         try {
-          const username = await fetchGitHubUsername(user.emailAddress)
+          const username = await fetchGitHubUsername(user.user.emailAddresses)
           const storedPRs = await fetchStoredPullRequests(username)
           setPullRequests(storedPRs.pullRequests || [])
           const response = await axios.get(
@@ -48,7 +49,7 @@ export default function Dashboard() {
 
         {pullRequests.length > 0 && (
           <div className='py-4'>
-            <hr className='my-6' />
+
             <h3 className='py-6 text-2xl'>
               Successfully Merged Pull Requests:
             </h3>

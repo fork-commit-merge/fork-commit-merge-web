@@ -73,19 +73,19 @@ const IndexIntro: React.FC = () => {
           of the repository, and this website.
         </p>
         <hr className='my-6' />
-        {/* <p className='pt-2 text-xl leading-7'>
+        <p className='pt-2 text-xl leading-7'>
           If you have already made some contributions to our Fork, Commit, Merge
-          repo, you can{' '}
+          repo, you can check out the{' '}
           <Link
-            href='/login'
+            href='/dashboard'
             className='text-blue-300 underline hover:text-blue-500'
           >
-            Login
+            Dashboard
           </Link>{' '}
           to see all of your contributions and which issues you have already
           solved. It makes it easier to keep track of your progress and see how
           you have improved your skills.
-        </p> */}
+        </p>
         <p className='pt-4 text-xl leading-7'>
           If you want, instead of the educational repository, you can also
           contribute to this actual website by adding new issues, fixing typos,
