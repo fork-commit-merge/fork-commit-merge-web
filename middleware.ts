@@ -4,7 +4,6 @@ export default authMiddleware({
   publicRoutes: [
     "/",
     "/resources",
-    "/leaderboard",
     "/faq",
     "/community/discussions",
     "/community/events",
