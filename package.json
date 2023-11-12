@@ -25,7 +25,7 @@
     "formidable": "^3.5.1",
     "framer-motion": "^10.16.4",
     "md5": "^2.3.0",
-    "mongodb": "^5.9.0",
+    "mongodb": "^5.9.1",
     "mongoose": "^8.0.0",
     "multer": "^1.4.5-lts.1",
     "next": "13.5.6",
