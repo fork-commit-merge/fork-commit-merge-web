@@ -22,8 +22,12 @@ jobs:
 
       - name: Add contributor to README
         run: |
-          if ! grep -q "${{ github.event.pull_request.user.login }}" README.md
-          then
+          if [ "${{ github.event.pull_request.user.login }}" = "dependabot[bot]" ] || [ "${{ github.event.pull_request.user.login }}" = "dependabot" ]; then
+            echo "Skipping dependabot"
+            exit 0
+          fi
+
+          if ! grep -q "${{ github.event.pull_request.user.login }}" README.md; then
             echo "<a href=\"https://github.com/${{ github.event.pull_request.user.login }}\"><img src=\"https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/${{ github.event.pull_request.user.id }}?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d\" width=\"80px\"/></a>" >> README.md
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
