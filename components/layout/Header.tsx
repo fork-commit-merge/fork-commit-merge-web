@@ -7,7 +7,6 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Coffee from '../buttons/Coffee'
 import styles from '../../styles/Coffee.module.css'
 import React from 'react'
-import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import { StarFilled } from '@ant-design/icons'
 import { languageList } from '../data/languageList'
@@ -30,7 +29,6 @@ const Header = () => {
   const gitSelectionNode = useRef<HTMLLIElement | null>(null)
   const roadmapNode = useRef<HTMLLIElement | null>(null)
   const communityNode = useRef<HTMLLIElement | null>(null)
-  const { data: session } = useSession()
   const router = useRouter()
   const [starCount, setStarCount] = useState<number | null>(null)
   const { user, isLoaded } = useUser()

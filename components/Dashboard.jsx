@@ -40,49 +40,54 @@ export default function Dashboard() {
 
   if (user) {
     return (
-      <div className='-50 text-center'>
-        {isLoading && (
-          <div className='flex h-[200px] items-center justify-center'>
-            <div className='spinner'></div>
-          </div>
-        )}
+      <>
+        <div className='py-4 text-center'>
+          <h2 className='py-4 text-3xl'>DASHBOARD</h2>
 
-        {pullRequests.length > 0 && (
-          <div className='py-4'>
+          <h3 className='py-6 text-2xl'>Successfully Merged Pull Requests:</h3>
+        </div>
+        <div className='-50 text-center'>
+          {isLoading && (
+            <div className='flex h-[200px] items-center justify-center'>
+              <div className='spinner'></div>
+            </div>
+          )}
 
-            <h3 className='py-6 text-2xl'>
-              Successfully Merged Pull Requests:
-            </h3>
-            <table className='min-w-full bg-slate-900'>
-              <thead>
-                <tr>
-                  <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider '>
-                    Title
-                  </th>
-                  <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider '>
-                    Issue
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {pullRequests.map((pr, index) => (
-                  <tr
-                    key={index}
-                    className={index % 2 === 0 ? 'bg-gray-900' : 'bg-gray-800'}
-                  >
-                    <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5 '>
-                      {pr.title}
-                    </td>
-                    <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5 '>
-                      {pr.issue}
-                    </td>
+          {pullRequests.length > 0 && (
+            <div className='py-4 text-center'>
+              <table className='min-w-full bg-slate-900'>
+                <thead>
+                  <tr>
+                    <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider '>
+                      Title
+                    </th>
+                    <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider '>
+                      Issue
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-      </div>
+                </thead>
+                <tbody>
+                  {pullRequests.map((pr, index) => (
+                    <tr
+                      key={index}
+                      className={
+                        index % 2 === 0 ? 'bg-gray-900' : 'bg-gray-800'
+                      }
+                    >
+                      <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5 '>
+                        {pr.title}
+                      </td>
+                      <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5 '>
+                        {pr.issue}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      </>
     )
   }
 }
