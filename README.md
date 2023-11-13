@@ -117,7 +117,7 @@ Contributions to fork-commit-merge-web are always welcome, whether it be improve
 **2.** Add a reference to the original repository:
 
 ```bash
-git remote add upstream https://github.com/nikohoffren/fork-commit-merge-web.git
+git remote add upstream https://github.com/fork-commit-merge/fork-commit-merge-web.git
 ```
 
 **3.** Check the remotes for this repository:
@@ -196,7 +196,3 @@ Massive thanks to all of the these fine individuals who contributed to this proj
 <a href="https://github.com/arbiasgjoshi"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/24274793?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
 <a href="https://github.com/vidyaa18"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/87689661?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
 <a href="https://github.com/AlexHoop140"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/30748832?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
-<a href="https://github.com/dependabot[bot]"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/49699333?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
-<a href="https://github.com/dependabot[bot]"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/49699333?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
-<a href="https://github.com/dependabot[bot]"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/49699333?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
-<a href="https://github.com/dependabot[bot]"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/49699333?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
