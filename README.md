@@ -9,6 +9,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/fork-commit-merge-web)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=nikohoffren_fork-commit-merge-web&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=nikohoffren_fork-commit-merge-web)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nikohoffren_fork-commit-merge-web&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nikohoffren_fork-commit-merge-web)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a11704db-7bda-4da5-bf65-d4f5718746bc/deploy-status)](https://app.netlify.com/sites/forkcommitmerge/deploys)
 
 Welcome to Fork, Commit, Merge, your one-stop resource hub for mastering GitHub contributions! Whether you're a novice coder or an experienced developer, our comprehensive guides are designed to streamline your GitHub journey. We delve into everything from basic Git commands to intricate pull request processes, making collaboration seamless and efficient. Learn the ins and outs of forking, committing, and merging with our easy-to-follow tutorials and expert advice. At Fork, Commit, Merge, we're passionate about empowering you to contribute confidently and effectively to the open-source world. Let's code, collaborate, and create together!
 
