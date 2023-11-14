@@ -10,7 +10,7 @@ export default async (req, res) => {
     let data = await getTopUsersFromDb();
 
     if (!data || data.length === 0) {
-      data = await fetchTopUsersByPullRequests("nikohoffren/fork-commit-merge");
+      data = await fetchTopUsersByPullRequests("fork-commit-merge/fork-commit-merge");
       await storeTopUsersInDb(data);
     }
 
