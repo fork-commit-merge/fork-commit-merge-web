@@ -46,16 +46,16 @@ const Footer = () => {
               </a>
 
               <a
-                href='https://vercel.com/'
+                href='https://netlify.com/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex w-fit items-center gap-2 rounded bg-slate-100 p-1.5 text-sm font-bold shadow-lg'
               >
                 Deployed with
                 <Image
-                  src='/vercel.svg'
-                  alt='Vercel Logo'
-                  title='deployed with Vercel'
+                  src='/netlify.png'
+                  alt='Netlify Logo'
+                  title='deployed with Netlify'
                   width={62}
                   height={62}
                 />
@@ -70,7 +70,9 @@ const Footer = () => {
                 {starCount !== null ? (
                   <>
                     <StarFilled color='currentColor' width={62} height={62} />
+                    <div>
                     {starCount}
+                    </div>
                   </>
                 ) : (
                   ''
