@@ -46,19 +46,19 @@ const Footer = () => {
               </a>
 
               <a
-                href='https://netlify.com/'
+                href='https://vercel.com/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex w-fit items-center gap-2 rounded bg-slate-100 p-1.5 text-sm font-bold shadow-lg'
               >
                 Deployed with
-                {/* <Image
-                  src='/netlify.png'
-                  alt='Netlify Logo'
-                  title='deployed with Netlify'
+                <Image
+                  src='/vercel.svg'
+                  alt='Vercel Logo'
+                  title='deployed with Vercel'
                   width={62}
                   height={62}
-                /> */}
+                />
               </a>
               <a
                 href='https://github.com/nikohoffren/fork-commit-merge'
