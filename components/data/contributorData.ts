@@ -3555,5 +3555,28 @@ export const contributorData = [
     "url": "https://github.com/tusharkc",
     "avatar": "https://avatars.githubusercontent.com/u/83814197?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "tusharkc"
+  },{
+    "id": "VinayakWaghmode7",
+    "url": "https://github.com/VinayakWaghmode7",
+    "avatar": "https://avatars.githubusercontent.com/u/122003889?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "VinayakWaghmode7"
+  },
+  {
+    "id": "noah-delacruz",
+    "url": "https://github.com/noah-delacruz",
+    "avatar": "https://avatars.githubusercontent.com/u/43018893?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "noah-delacruz"
+  },
+  {
+    "id": "naturalneuralnet",
+    "url": "https://github.com/naturalneuralnet",
+    "avatar": "https://avatars.githubusercontent.com/u/145875606?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "naturalneuralnet"
+  },
+  {
+    "id": "qmohitsingh",
+    "url": "https://github.com/qmohitsingh",
+    "avatar": "https://avatars.githubusercontent.com/u/30595867?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "qmohitsingh"
   },
 ];
