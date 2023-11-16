@@ -50,5 +50,6 @@ export const languageList = [
   { name: "ZSH", link: "/languages/zsh" },
   { name: "Delphi", link: "/languages/delphi" },
   { name: "Pony", link: "/languages/pony" },
-  { name: "Reason", link:"/languages/reason"}
+  { name: "Reason", link: "/languages/reason"},
+  { name: "PureScript", link: "/languages/purescript"}
 ];

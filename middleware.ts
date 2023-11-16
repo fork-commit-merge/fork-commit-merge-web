@@ -83,6 +83,7 @@ export default authMiddleware({
     '/languages/delphi',
     '/langauges/pony',
     '/languages/reason',
+    '/languages/purescript',
     '/roadmaps/how-to-contribute',
     '/roadmaps/contribution-management',
     '/roadmaps/open-source-philosophy',

@@ -52,6 +52,7 @@ import ZSHLanguage from "../../components/languageComponents/ZSHLanguage";
 import DelphiLanguage from "../../components/languageComponents/DelphiLanguage";
 import PonyLanguage from "../../components/languageComponents/PonyLanguage";
 import ReasonLanguage from "../../components/languageComponents/ReasonLanguage"
+import PureScriptLanguage from "../../components/languageComponents/PureScriptLanguage"
 
 const LanguagePage = () => {
   const router = useRouter();
@@ -163,6 +164,8 @@ const LanguagePage = () => {
         return <PonyLanguage />;
       case "reason":
         return <ReasonLanguage />;
+      case "purescript":
+        return <PureScriptLanguage />;
       default:
         return <LanguageNotSupported />;
     }
