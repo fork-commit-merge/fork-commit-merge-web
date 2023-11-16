@@ -50,6 +50,7 @@ import HTMXLanguage from "../../components/languageComponents/HTMXLanguage";
 import YAMLLanguage from "../../components/languageComponents/YAMLLanguage";
 import ZSHLanguage from "../../components/languageComponents/ZSHLanguage";
 import DelphiLanguage from "../../components/languageComponents/DelphiLanguage";
+import PonyLanguage from "../../components/languageComponents/PonyLanguage"
 
 const LanguagePage = () => {
   const router = useRouter();
@@ -157,6 +158,8 @@ const LanguagePage = () => {
         return <ZSHLanguage />;
       case "delphi":
         return <DelphiLanguage />;
+      case "pony":
+        return <PonyLanguage />;
       default:
         return <LanguageNotSupported />;
     }
