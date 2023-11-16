@@ -82,6 +82,7 @@ export default authMiddleware({
     '/languages/zsh',
     '/languages/delphi',
     '/langauges/pony',
+    '/languages/reason',
     '/roadmaps/how-to-contribute',
     '/roadmaps/contribution-management',
     '/roadmaps/open-source-philosophy',
