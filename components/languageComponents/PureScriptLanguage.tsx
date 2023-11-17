@@ -26,15 +26,15 @@ const PureScriptLanguage = () => {
   
           <h2 className="text-2xl font-bold mb-4">Why Use PureScript?</h2>
           <p className="mb-6">
-          PureScript offers straightforward installation and build processes, helping 
-          developers create either simple or complex front-facing applications that are 
-          easy to refactor, debug and test. PureScript is strongly typed and purely 
-          functional. Also, it compiles to JavaScript and offers type classes that 
-          enable programmers to create reusable code. PureScript tends to find more 
-          favor among developers looking to learn functional paradigm concepts within 
-          the safety of easier installation and build processes. The high granularity 
-          of PureScript's type classes also eliminates the need for many of the language 
-          extensions JavaScript developers typically rely on, such as TypeScript, Flow and JSDoc.
+            PureScript offers straightforward installation and build processes, helping 
+            developers create either simple or complex front-facing applications that are 
+            easy to refactor, debug and test. PureScript is strongly typed and purely 
+            functional. Also, it compiles to JavaScript and offers type classes that 
+            enable programmers to create reusable code. PureScript tends to find more 
+            favor among developers looking to learn functional paradigm concepts within 
+            the safety of easier installation and build processes. The high granularity 
+            of PureScript&apos;s type classes also eliminates the need for many of the language 
+            extensions JavaScript developers typically rely on, such as TypeScript, Flow and JSDoc.
           </p>
   
           <h4 className="text-2xl font-bold">

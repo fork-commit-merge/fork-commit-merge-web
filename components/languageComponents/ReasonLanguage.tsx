@@ -13,7 +13,7 @@ const ReasonLanguage = () => {
   
           <h2 className="text-2xl font-bold mb-4">What is Reason?</h2>
           <p className="mb-4">
-            Reason is a programming language powered by OCaml's strong type system, 
+            Reason is a programming language powered by OCaml&apos;s strong type system, 
             and has a syntax designed to feel familiar to people coming from JavaScript 
             or C-family languages.
           </p>
@@ -36,7 +36,7 @@ const ReasonLanguage = () => {
               - Expressions need not be terminated with a semicolon, but it is best practice;
             </li>
             <li>
-              - All of Reason's types and structures have modules in the standard library. 
+              - All of Reason&apos;s types and structures have modules in the standard library. 
               In general, it is best to interface with your data via these modules
             </li>
           </ul>

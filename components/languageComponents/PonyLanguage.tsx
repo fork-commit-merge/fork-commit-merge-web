@@ -25,7 +25,7 @@ const PonyLanguage = () => {
             “reference capabilities”. Reference capabilities allow you to label different 
             bits of data based on how that data can be shared. The Pony compiler will then 
             verify that you are in fact correctly using the data based on the labels you 
-            provide. Reference capabilities combined with Pony’s actor model of concurrency 
+            provide. Reference capabilities combined with Pony&apos;s actor model of concurrency 
             makes for a powerful pairing
           </p>
   
