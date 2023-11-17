@@ -3639,4 +3639,34 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/130953480?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "ctojot"
   },
+  {
+    "id": "juanfrank77",
+    "url": "https://github.com/juanfrank77",
+    "avatar": "https://avatars.githubusercontent.com/u/12146882?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "juanfrank77"
+  },
+  {
+    "id": "GajendraR",
+    "url": "https://github.com/GajendraR",
+    "avatar": "https://avatars.githubusercontent.com/u/76901180?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "GajendraR"
+  },
+  {
+    "id": "Subhi-c",
+    "url": "https://github.com/Subhi-c",
+    "avatar": "https://avatars.githubusercontent.com/u/99975184?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Subhi-c"
+  },
+  {
+    "id": "MysteryAchievement",
+    "url": "https://github.com/MysteryAchievement",
+    "avatar": "https://avatars.githubusercontent.com/u/24849526?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "MysteryAchievement"
+  },
+  {
+    "id": "Tomkndn",
+    "url": "https://github.com/Tomkndn",
+    "avatar": "https://avatars.githubusercontent.com/u/105445488?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Tomkndn"
+  },
 ];
