@@ -44,7 +44,6 @@ const Footer = () => {
                   height={62}
                 />
               </a>
-
               <a
                 href='https://vercel.com/'
                 target='_blank'
@@ -70,9 +69,7 @@ const Footer = () => {
                 {starCount !== null ? (
                   <>
                     <StarFilled color='currentColor' width={62} height={62} />
-                    <div>
-                    {starCount}
-                    </div>
+                    <div>{starCount}</div>
                   </>
                 ) : (
                   ''
