@@ -3,7 +3,7 @@ import { openSourceLicenses } from "../data/openSourceLicenses";
 
 const OpenSourceLicenses = () => {
   return (
-    <div className="flex justify-center items-center bg-primary py-10">
+    <div className="flex justify-center items-center bg-primary py-2">
       <div className="text-center  w-full max-w-2xl">
         <h1 className="text-3xl font-bold mb-6">
           Importance of Licenses in Open Source
