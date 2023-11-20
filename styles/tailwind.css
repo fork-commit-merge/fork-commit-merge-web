@@ -45,15 +45,6 @@ body {
   object-fit: cover;
 }
 
-.spinner {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border-top-color: #7362ff;
-  animation: spin 1s ease-in-out infinite;
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);

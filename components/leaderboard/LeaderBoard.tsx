@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { renderStar } from "../../utils/helpers/RenderStar";
 import axios from "axios";
+import Spinner from "../../components/Spinner";
 
 type UserStat = {
   username: string;
@@ -36,7 +37,7 @@ export const LeaderBoard: React.FC = () => {
     <div className="text-center">
       {isLoading ? (
         <div className="flex justify-center items-center h-[200px]">
-          <div className="spinner"></div>
+          <Spinner />
         </div>
       ) : isError ? (
         <div className="min-w-full bg-primary border rounded-lg shadow-lg mx-auto  py-4">

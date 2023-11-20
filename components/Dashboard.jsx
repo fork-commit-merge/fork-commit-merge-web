@@ -3,6 +3,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useUser } from '@clerk/nextjs'
 import { fetchGitHubUsername } from '../utils/fetchClosedPullRequests'
+import Spinner from "../components/Spinner";
 
 async function fetchStoredPullRequests(username) {
   const res = await fetch(`/api/getStoredPullRequests?username=${username}`)
@@ -47,7 +48,7 @@ export default function Dashboard() {
         <div className='-50 text-center'>
           {isLoading && (
             <div className='flex h-[200px] items-center justify-center'>
-              <div className='spinner'></div>
+              <Spinner />
             </div>
           )}
 
