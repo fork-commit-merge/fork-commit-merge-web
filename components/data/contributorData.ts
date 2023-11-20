@@ -3699,4 +3699,16 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/138502602?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "PratikMore55"
   },
+  {
+    "id": "AtharvaKitkaru",
+    "url": "https://github.com/AtharvaKitkaru",
+    "avatar": "https://avatars.githubusercontent.com/u/54904845?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "AtharvaKitkaru"
+  },
+  {
+    "id": "DilushaHesaranga",
+    "url": "https://github.com/DilushaHesaranga",
+    "avatar": "https://avatars.githubusercontent.com/u/132726753?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "DilushaHesaranga"
+  },
 ];
