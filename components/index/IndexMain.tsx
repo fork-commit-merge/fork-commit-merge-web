@@ -20,7 +20,7 @@ const IndexMain: React.FC = () => {
     if (contributorsCount === null || isNaN(contributorsCount)) {
       return 'several'
     }
-    return contributorsCount
+    return contributorsCount;
   }
 
   return (

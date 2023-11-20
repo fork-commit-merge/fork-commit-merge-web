@@ -41,10 +41,8 @@ export default function Dashboard() {
   if (user) {
     return (
       <>
-        <div className='py-4 text-center'>
-          <h2 className='py-4 text-3xl'>DASHBOARD</h2>
-
-          <h3 className='py-6 text-2xl'>Successfully Merged Pull Requests:</h3>
+        <div className='pb-4 text-center'>
+          <h3 className='pb-6 text-2xl'>Successfully Merged Pull Requests:</h3>
         </div>
         <div className='-50 text-center'>
           {isLoading && (

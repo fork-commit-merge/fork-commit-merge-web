@@ -115,7 +115,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className='bg-secondary '>
+      <nav className='bg-secondary'>
         <div className='mx-auto max-w-5xl py-3'>
           <div className='flex items-center justify-between'>
             <div></div>
@@ -499,7 +499,7 @@ const Header = () => {
         </div>
       )}
 
-      <header className='sticky top-0 z-10 hidden w-full bg-transparent shadow-bottom  backdrop-blur md:block'>
+      <header className='sticky top-0 z-10 mb-6 hidden w-full bg-transparent  shadow-bottom backdrop-blur md:block'>
         <div className='shadow-top mx-auto max-w-5xl py-2'>
           <div className='items-center justify-between md:flex'>
             <div className='flex flex-1 items-center space-x-1'>

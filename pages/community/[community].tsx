@@ -11,16 +11,42 @@ const CommunityPage = () => {
   const renderContent = () => {
     switch (community) {
       case 'discussions':
-        return <Discussions />
+        return (
+          <div className='bg-primary min-h-screen'>
+            <div
+              className='w-full bg-cover bg-center'
+              style={{ backgroundImage: "url('/community.png')" }}
+            >
+              <div className='flex flex-col items-center justify-center p-24 text-center text-white'>
+                <h1 className='mb-6 text-center text-4xl font-bold'>
+                  Discussions
+                </h1>
+              </div>
+            </div>
+            <Discussions />
+          </div>
+        )
       case 'events':
-        return <Events />
+        return (
+          <div className='bg-primary min-h-screen'>
+            <div
+              className='w-full bg-cover bg-center'
+              style={{ backgroundImage: "url('/community.png')" }}
+            >
+              <div className='flex flex-col items-center justify-center p-24 text-center text-white'>
+                <h1 className='mb-6 text-center text-4xl font-bold'>Events</h1>
+              </div>
+            </div>
+            <Events />
+          </div>
+        )
 
       default:
         return <CommunityNotSupported />
     }
   }
 
-  return <div className='bg-primary px-6 py-10'>{renderContent()}</div>
+  return <div className='bg-primary'>{renderContent()}</div>
 }
 
 export default CommunityPage
