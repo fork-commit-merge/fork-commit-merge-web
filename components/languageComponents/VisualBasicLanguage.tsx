@@ -15,8 +15,8 @@ const VisualBasicLanguage = () => {
           <p className="mb-4">
             Visual Basic (VB) is an object-oriented programming language (OOP) 
             introduced by Microsoft in 1991. It derives from an earlier programming 
-            language called BASIC, which stands for “Beginners" All-purpose Symbolic 
-            Instruction Code.” VB was designed to enable rapid application development 
+            language called BASIC, which stands for &quot;Beginners All-purpose Symbolic 
+            Instruction Code&quot;. VB was designed to enable rapid application development 
             (RAD) of graphical-user interface-based (GUI-based) applications and access 
             to local and remote databases.
           </p>
@@ -27,7 +27,7 @@ const VisualBasicLanguage = () => {
             Developers and Full-Stack Developers can use VB to create customized applications 
             that run in Windows or web applications. Plus, it can run from any browser or device.
             VB is still one of the quickest and easiest ways to create applications that rely 
-            on forms, selections, and inputs. It&aposs also a popular choice for developing console 
+            on forms, selections, and inputs. It&apos;s also a popular choice for developing console 
             applications — applications that run using only a command line rather than a GUI.
           </p>
   
@@ -36,14 +36,14 @@ const VisualBasicLanguage = () => {
           </h4>
           <ul>
             <li>
-              - Do not use "My" or "my" as part of a variable name. This practice creates confusion 
-                with the My objects.
+              - Do not use &quot;My&quot; or &quot;my&apos; as part of a variable name. This 
+                practice creates confusion with the My objects.
             </li>
             <li>
               - Insert tabs as spaces, and use smart indenting with four-space indents.
             </li>
             <li>
-              - Insert one space between the comment delimiter (&apos) and the comment text.
+              - Insert one space between the comment delimiter (&apos;) and the comment text.
             </li>
             <li>
               - Use string interpolation to concatenate short strings.
