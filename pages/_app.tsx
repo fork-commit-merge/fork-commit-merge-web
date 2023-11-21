@@ -13,11 +13,9 @@ function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
         baseTheme: dark
       }}
     >
-
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
-
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
     </ClerkProvider>
   )
 }
