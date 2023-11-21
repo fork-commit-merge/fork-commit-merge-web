@@ -23,12 +23,7 @@ const Footer = () => {
       <div className='mx-auto max-w-5xl px-4 py-8 pb-6 sm:px-0'>
         <div className='grid grid-cols-1 px-4 sm:grid-cols-2 lg:px-0'>
           <div>
-            <p className='mb-1 font-medium'>
-              We wish you all the best by{' '}
-              <span className='font-bold'>Fork, Commit, Merge</span>
-            </p>
-
-            <div className='mt-6 max-w-md space-y-2 text-center leading-relaxed text-black sm:max-w-xs sm:text-left'>
+            <div className='mt-3 max-w-md space-y-2 text-center leading-relaxed text-black sm:max-w-xs sm:text-left'>
               <a
                 href='https://nextjs.org/'
                 target='_blank'
@@ -55,6 +50,21 @@ const Footer = () => {
                   src='/vercel.svg'
                   alt='Vercel Logo'
                   title='deployed with Vercel'
+                  width={62}
+                  height={62}
+                />
+              </a>
+              <a
+                href='https://mongodb.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex w-fit items-center gap-2 rounded bg-slate-100 p-1.5 text-sm font-bold shadow-lg'
+              >
+                Data stored with
+                <Image
+                  src='/mongodb.png'
+                  alt='MongoDB Logo'
+                  title='Data stored with MongoDB'
                   width={62}
                   height={62}
                 />
@@ -137,6 +147,16 @@ const Footer = () => {
                     rel='noopener noreferrer'
                   >
                     Code of Conduct
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className='hover:/75 text-sm  font-medium hover:text-gray-300'
+                    href='https://opensource.org/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    opensource.org
                   </Link>
                 </li>
               </ul>
