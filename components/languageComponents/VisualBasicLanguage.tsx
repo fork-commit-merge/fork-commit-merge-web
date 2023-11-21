@@ -36,7 +36,7 @@ const VisualBasicLanguage = () => {
           </h4>
           <ul>
             <li>
-              - Do not use &quot;My&quot; or &quot;my&apos; as part of a variable name. This 
+              - Do not use &quot;My&quot; or &quot;my&quot as part of a variable name. This 
                 practice creates confusion with the My objects.
             </li>
             <li>
