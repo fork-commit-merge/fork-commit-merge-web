@@ -49,4 +49,9 @@ export const languageList = [
   { name: "YAML", link: "/languages/yaml" },
   { name: "ZSH", link: "/languages/zsh" },
   { name: "Delphi", link: "/languages/delphi" },
+  { name: "Pony", link: "/languages/pony" },
+  { name: "Reason", link: "/languages/reason"},
+  { name: "PureScript", link: "/languages/purescript"},
+  { name: "ActionScript", link: "/languages/actionscript"},
+  { name: "VisualBasic", link: "/languages/visualbasic"}
 ];
