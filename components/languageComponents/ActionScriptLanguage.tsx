@@ -47,7 +47,7 @@ const ActionScriptLanguage = () => {
               - Do not use &apos;with&apos; statements inside functions. This operator turns off optimizations.
             </li>
             <li>
-              - Use the “var” keyword whenever possible.
+              - Use the &quot;var&quot; keyword whenever possible.
             </li>
           </ul>
           <br />
