@@ -81,7 +81,7 @@ export default authMiddleware({
     '/languages/scratch',
     '/languages/zsh',
     '/languages/delphi',
-    '/langauges/pony',
+    '/languages/pony',
     '/languages/reason',
     '/languages/purescript',
     '/languages/actioncript',
