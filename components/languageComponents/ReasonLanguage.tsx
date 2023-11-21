@@ -6,7 +6,7 @@ const ReasonLanguage = () => {
           <div className="flex flex-wrap justify-center items-center">
             <img
               src="https://reasonml.github.io/img/reason.svg"
-              alt="ReScript"
+              alt="Reason"
               className="mb-10 h-16 rounded-sm"
             />
           </div>

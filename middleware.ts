@@ -84,6 +84,8 @@ export default authMiddleware({
     '/langauges/pony',
     '/languages/reason',
     '/languages/purescript',
+    '/languages/actioncript',
+    '/languages/visualbasic',
     '/roadmaps/how-to-contribute',
     '/roadmaps/contribution-management',
     '/roadmaps/open-source-philosophy',

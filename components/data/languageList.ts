@@ -51,5 +51,7 @@ export const languageList = [
   { name: "Delphi", link: "/languages/delphi" },
   { name: "Pony", link: "/languages/pony" },
   { name: "Reason", link: "/languages/reason"},
-  { name: "PureScript", link: "/languages/purescript"}
+  { name: "PureScript", link: "/languages/purescript"},
+  { name: "ActionScript", link: "/languages/actionscript"},
+  { name: "VisualBasic", link: "/languages/visualbasic"}
 ];

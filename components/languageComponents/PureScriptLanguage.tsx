@@ -6,7 +6,7 @@ const PureScriptLanguage = () => {
           <div className="flex flex-wrap justify-center items-center">
             <img
               src="https://raw.githubusercontent.com/purescript/purescript/master/logo.png"
-              alt="JavaScript"
+              alt="PureScript"
               className="mb-10 h-16 rounded-sm"
             />
           </div>

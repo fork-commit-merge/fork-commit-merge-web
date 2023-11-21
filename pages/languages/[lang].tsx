@@ -53,6 +53,8 @@ import DelphiLanguage from "../../components/languageComponents/DelphiLanguage";
 import PonyLanguage from "../../components/languageComponents/PonyLanguage";
 import ReasonLanguage from "../../components/languageComponents/ReasonLanguage"
 import PureScriptLanguage from "../../components/languageComponents/PureScriptLanguage"
+import ActionScriptLanguage from "../../components/languageComponents/ActionScriptLanguage"
+import VisualBasicLanguage from "../../components/languageComponents/VisualBasicLanguage"
 
 const LanguagePage = () => {
   const router = useRouter();
@@ -166,6 +168,10 @@ const LanguagePage = () => {
         return <ReasonLanguage />;
       case "purescript":
         return <PureScriptLanguage />;
+      case "actionscript":
+        return <ActionScriptLanguage />;
+      case "visualbasic":
+        return <VisualBasicLanguage />;
       default:
         return <LanguageNotSupported />;
     }
