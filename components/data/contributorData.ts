@@ -3747,4 +3747,10 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/95184328?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "pat8901"
   },
+  {
+    "id": "NasifAhmed",
+    "url": "https://github.com/NasifAhmed",
+    "avatar": "https://avatars.githubusercontent.com/u/33228097?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "NasifAhmed"
+  },
 ];
