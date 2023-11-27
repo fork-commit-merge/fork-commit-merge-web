@@ -3783,4 +3783,16 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/107802163?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "rubalsxngh"
   },
+  {
+    "id": "Harshini-Gaddam",
+    "url": "https://github.com/Harshini-Gaddam",
+    "avatar": "https://avatars.githubusercontent.com/u/123286604?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Harshini-Gaddam"
+  },
+  {
+    "id": "mani1soni",
+    "url": "https://github.com/mani1soni",
+    "avatar": "https://avatars.githubusercontent.com/u/30206849?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "mani1soni"
+  },
 ];
