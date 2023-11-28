@@ -3795,4 +3795,28 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/30206849?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "mani1soni"
   },
+  {
+    "id": "kogura1995",
+    "url": "https://github.com/kogura1995",
+    "avatar": "https://avatars.githubusercontent.com/u/151586180?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "kogura1995"
+  },
+  {
+    "id": "Govinda04",
+    "url": "https://github.com/Govinda04",
+    "avatar": "https://avatars.githubusercontent.com/u/50038172?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Govinda04"
+  },
+  {
+    "id": "mac-Git1",
+    "url": "https://github.com/mac-Git1",
+    "avatar": "https://avatars.githubusercontent.com/u/78551358?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "mac-Git1"
+  },
+  {
+    "id": "HarikaB11",
+    "url": "https://github.com/HarikaB11",
+    "avatar": "https://avatars.githubusercontent.com/u/115938888?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "HarikaB11"
+  },
 ];
