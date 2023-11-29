@@ -3819,4 +3819,22 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/115938888?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "HarikaB11"
   },
+  {
+    "id": "Fshahnaj",
+    "url": "https://github.com/Fshahnaj",
+    "avatar": "https://avatars.githubusercontent.com/u/147937685?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Fshahnaj"
+  },
+  {
+    "id": "HemanthVasireddy",
+    "url": "https://github.com/HemanthVasireddy",
+    "avatar": "https://avatars.githubusercontent.com/u/137654272?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "HemanthVasireddy"
+  },
+  {
+    "id": "LakshmiGayathri19",
+    "url": "https://github.com/LakshmiGayathri19",
+    "avatar": "https://avatars.githubusercontent.com/u/55054579?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "LakshmiGayathri19"
+  },
 ];
