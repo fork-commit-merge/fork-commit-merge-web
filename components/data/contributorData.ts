@@ -3837,4 +3837,22 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/55054579?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "LakshmiGayathri19"
   },
+  {
+    "id": "BuzzCrafted",
+    "url": "https://github.com/BuzzCrafted",
+    "avatar": "https://avatars.githubusercontent.com/u/114644299?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "BuzzCrafted"
+  },
+  {
+    "id": "pravintargaryen",
+    "url": "https://github.com/pravintargaryen",
+    "avatar": "https://avatars.githubusercontent.com/u/96950453?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "pravintargaryen"
+  },
+  {
+    "id": "Varshitha0",
+    "url": "https://github.com/Varshitha0",
+    "avatar": "https://avatars.githubusercontent.com/u/87432071?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Varshitha0"
+  },
 ];
