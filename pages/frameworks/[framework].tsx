@@ -22,6 +22,7 @@ import AspNetCoreFramework from "../../components/frameworkComponents/AspNetCore
 import SpringFramework from "../../components/frameworkComponents/SpringFramework";
 import TailwindCSSFramework from "../../components/frameworkComponents/TailwindCSSFramework";
 import CherrypyFramework from "../../components/frameworkComponents/CherrypyFramework";
+import D3JSLibrary from "../../components/frameworkComponents/D3JS";
 
 const FrameworkPage = () => {
   const router = useRouter();
@@ -71,6 +72,8 @@ const FrameworkPage = () => {
         return <SpringFramework />;
       case "cherrypy":
         return <CherrypyFramework />;
+      case "d3js":
+        return <D3JSLibrary />;
       default:
         return <FrameworkNotSupported />;
     }
