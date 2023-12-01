@@ -29,6 +29,7 @@ export default authMiddleware({
     '/frameworks/tailwindcss',
     '/frameworks/spring',
     '/frameworks/cherrypy',
+    '/frameworks/d3js',
     '/git/git-commands',
     '/git/git-branching',
     '/git/git-conflicts',

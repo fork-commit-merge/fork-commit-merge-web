@@ -20,4 +20,5 @@ export const frameworkList = [
   { name: "Tailwind CSS", link: "/frameworks/tailwindcss" },
   { name: "Spring", link: "/frameworks/spring" },
   { name: "CherryPy", link: "/frameworks/cherrypy" },
+  { name: "D3.js", link: "/frameworks/d3js" },
 ];
