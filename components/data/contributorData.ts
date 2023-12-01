@@ -3855,4 +3855,10 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/87432071?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Varshitha0"
   },
+  {
+    "id": "ruchikamuddinagiri",
+    "url": "https://github.com/ruchikamuddinagiri",
+    "avatar": "https://avatars.githubusercontent.com/u/52284361?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ruchikamuddinagiri"
+  },
 ];
