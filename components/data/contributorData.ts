@@ -3933,4 +3933,40 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/13705025?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "sejal-bansal"
   },
+  {
+    "id": "solvman",
+    "url": "https://github.com/solvman",
+    "avatar": "https://avatars.githubusercontent.com/u/4379350?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "solvman"
+  },
+  {
+    "id": "hsmanik",
+    "url": "https://github.com/hsmanik",
+    "avatar": "https://avatars.githubusercontent.com/u/103379363?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "hsmanik"
+  },
+  {
+    "id": "manoj633",
+    "url": "https://github.com/manoj633",
+    "avatar": "https://avatars.githubusercontent.com/u/42727681?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "manoj633"
+  },
+  {
+    "id": "HIT0638",
+    "url": "https://github.com/HIT0638",
+    "avatar": "https://avatars.githubusercontent.com/u/93414071?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "HIT0638"
+  },
+  {
+    "id": "Shubham-2110",
+    "url": "https://github.com/Shubham-2110",
+    "avatar": "https://avatars.githubusercontent.com/u/117958847?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Shubham-2110"
+  },
+  {
+    "id": "OliverChen12",
+    "url": "https://github.com/OliverChen12",
+    "avatar": "https://avatars.githubusercontent.com/u/92090510?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "OliverChen12"
+  },
 ];
