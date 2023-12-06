@@ -13,7 +13,7 @@ const GamemakerLanguage = () => {
   
           <h2 className="text-2xl font-bold mb-4">What is Gamemaker?</h2>
           <p className="mb-4">
-          GameMaker Language is used to program games in two different ways: by placing blocks to "write" code visually, or by writing code manually. The first option, GML Visual, is best suited for beginners and hobbyists who want to get started making their own games quickly. The second option, GML Code, allows you to harness the full power of GameMaker Language by writing your code manually. While GML Visual is easier to start with, GML Code is still an easy-to-use programming language with powerful features (Functions, Methods, Structs & Constructors, etc.).
+          GameMaker Language is used to program games in two different ways: by placing blocks to &quot;write&quot; code visually, or by writing code manually. The first option, GML Visual, is best suited for beginners and hobbyists who want to get started making their own games quickly. The second option, GML Code, allows you to harness the full power of GameMaker Language by writing your code manually. While GML Visual is easier to start with, GML Code is still an easy-to-use programming language with powerful features (Functions, Methods, Structs & Constructors, etc.).
           </p>
   
           <h2 className="text-2xl font-bold mb-4">Why Use Gamemaker?</h2>
