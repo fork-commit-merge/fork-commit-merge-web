@@ -371,4 +371,8 @@ export const badgesData = [
     src: "https://img.shields.io/badge/git-%23000000.svg?style=for-the-badge&logo=git&logoColor=white",
     alt: "Git",
   },
+  {
+    src: "https://img.shields.io/badge/Gamemaker-%50C878.svg?style=for-the-badge&logo=gamemaker&logoColor=white",
+    alt: "Gamemaker",
+  },
 ];

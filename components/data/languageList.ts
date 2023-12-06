@@ -53,5 +53,6 @@ export const languageList = [
   { name: "Reason", link: "/languages/reason"},
   { name: "PureScript", link: "/languages/purescript"},
   { name: "ActionScript", link: "/languages/actionscript"},
-  { name: "VisualBasic", link: "/languages/visualbasic"}
+  { name: "VisualBasic", link: "/languages/visualbasic"},
+  { name: "Gamemaker", link: "/languages/gamemaker"}
 ];

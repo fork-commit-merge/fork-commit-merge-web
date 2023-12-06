@@ -55,6 +55,7 @@ import ReasonLanguage from '../../components/languageComponents/ReasonLanguage'
 import PureScriptLanguage from '../../components/languageComponents/PureScriptLanguage'
 import ActionScriptLanguage from '../../components/languageComponents/ActionScriptLanguage'
 import VisualBasicLanguage from '../../components/languageComponents/VisualBasicLanguage'
+import GamemakerLanguage from '../../components/languageComponents/GamemakerLanguage'
 
 const LanguagePage = () => {
   const router = useRouter()
@@ -172,6 +173,8 @@ const LanguagePage = () => {
         return <ActionScriptLanguage />
       case 'visualbasic':
         return <VisualBasicLanguage />
+      case 'gamemaker' :
+        return <GamemakerLanguage />
       default:
         return <LanguageNotSupported />
     }
