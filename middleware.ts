@@ -87,6 +87,7 @@ export default authMiddleware({
     '/languages/purescript',
     '/languages/actioncript',
     '/languages/visualbasic',
+    '/languages/gamemaker',
     '/roadmaps/how-to-contribute',
     '/roadmaps/contribution-management',
     '/roadmaps/open-source-philosophy',
