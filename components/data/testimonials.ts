@@ -74,4 +74,10 @@ export const testimonials: TestimonialType[] = [
     imageUrl: "https://avatars.githubusercontent.com/u/79761726?v=4",
     url: "https://github.com/TheHolyRoller",
   },
+  {
+    text: "Thank you for the support! This is a great community.",
+    name: "harishankarr7",
+    imageUrl: "https://avatars.githubusercontent.com/u/31157448?v=4",
+    url: "https://github.com/harishankarr7",
+  },
 ];
