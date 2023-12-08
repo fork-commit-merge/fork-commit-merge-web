@@ -4035,4 +4035,16 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/52284361?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "ruchikamuddinagiri"
   },
+  {
+    "id": "Rupa-Rd",
+    "url": "https://github.com/Rupa-Rd",
+    "avatar": "https://avatars.githubusercontent.com/u/102663541?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Rupa-Rd"
+  },
+  {
+    "id": "cclypeatus",
+    "url": "https://github.com/cclypeatus",
+    "avatar": "https://avatars.githubusercontent.com/u/106562793?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "cclypeatus"
+  },
 ];
