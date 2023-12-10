@@ -4053,4 +4053,10 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/18229871?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Pavs1605"
   },
+  {
+    "id": "Deepkha",
+    "url": "https://github.com/Deepkha",
+    "avatar": "https://avatars.githubusercontent.com/u/96628370?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Deepkha"
+  },
 ];
