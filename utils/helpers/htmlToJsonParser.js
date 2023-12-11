@@ -1,4 +1,4 @@
-const html = `<a href="https://github.com/Deepkha"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/96628370?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>`;
+const html = ``;
 
 const parser = new DOMParser();
 const doc = parser.parseFromString(html, "text/html");

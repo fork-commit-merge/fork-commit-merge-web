@@ -4059,4 +4059,22 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/96628370?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "Deepkha"
   },
+  {
+    "id": "Ruhifarhath",
+    "url": "https://github.com/Ruhifarhath",
+    "avatar": "https://avatars.githubusercontent.com/u/112181464?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Ruhifarhath"
+  },
+  {
+    "id": "nithamitabh",
+    "url": "https://github.com/nithamitabh",
+    "avatar": "https://avatars.githubusercontent.com/u/96220322?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "nithamitabh"
+  },
+  {
+    "id": "lchauha",
+    "url": "https://github.com/lchauha",
+    "avatar": "https://avatars.githubusercontent.com/u/126190602?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "lchauha"
+  },
 ];
