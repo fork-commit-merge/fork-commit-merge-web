@@ -22,7 +22,7 @@
     "autoprefixer": "10.4.16",
     "axios": "^1.6.1",
     "eslint": "8.55.0",
-    "eslint-config-next": "14.0.0",
+    "eslint-config-next": "14.0.4",
     "formidable": "^3.5.1",
     "framer-motion": "^10.16.12",
     "md5": "^2.3.0",
