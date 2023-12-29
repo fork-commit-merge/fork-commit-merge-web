@@ -204,7 +204,7 @@ const Header = () => {
                   </div>
 
                   <Link
-                    href={'https://github.com/sponsors/nikohoffren?o=esb'}
+                    href={'https://github.com/sponsors/fork-commit-merge?o=esb'}
                     target='blank'
                     className='flex items-center gap-x-1 px-2 py-1 text-sm font-bold text-black hover:bg-gray-200 focus:relative'
                   >

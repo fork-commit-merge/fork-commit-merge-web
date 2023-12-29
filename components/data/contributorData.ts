@@ -4492,5 +4492,17 @@ export const contributorData = [
     avatar:
       'https://avatars.githubusercontent.com/u/129966632?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'LandaRashmi'
-  }
+  },
+  {
+    id: "abcd-aakarsh",
+    url: "https://github.com/abcd-aakarsh",
+    avatar: "https://avatars.githubusercontent.com/u/133818110?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "abcd-aakarsh"
+  },
+  {
+    id: "roberanegussie",
+    url: "https://github.com/roberanegussie",
+    avatar: "https://avatars.githubusercontent.com/u/47657043?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "roberanegussie"
+  },
 ]

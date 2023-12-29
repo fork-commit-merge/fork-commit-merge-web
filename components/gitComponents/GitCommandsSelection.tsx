@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { gitCommands } from "../data/GitCommands";
+import { gitCommands } from "../../GitCommands";
 
 const GitCommandsSelection = () => {
   return (
