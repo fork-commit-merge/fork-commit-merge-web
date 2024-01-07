@@ -1,4 +1,4 @@
-const html = ``;
+const html = ``
 
 const parser = new DOMParser();
 const doc = parser.parseFromString(html, "text/html");

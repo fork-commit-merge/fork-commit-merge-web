@@ -4,7 +4,7 @@ export async function fetchContributorsCount(): Promise<number> {
       "https://api.github.com/repos/nikohoffren/fork-commit-merge/contributors?per_page=100";
 
     //* Offset for contributor counter
-    let contributorsCount = 174;
+    let contributorsCount = 176;
 
     while (url) {
       const response: Response = await fetch(url);
