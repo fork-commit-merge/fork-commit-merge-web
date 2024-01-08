@@ -20,7 +20,7 @@
     "@types/react": "18.2.36",
     "@types/react-dom": "18.2.17",
     "autoprefixer": "10.4.16",
-    "axios": "^1.6.3",
+    "axios": "^1.6.5",
     "eslint": "8.56.0",
     "eslint-config-next": "14.0.4",
     "formidable": "^3.5.1",
