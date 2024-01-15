@@ -4661,4 +4661,70 @@ export const contributorData = [
       'https://avatars.githubusercontent.com/u/123251561?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'joshuasoftdev'
   },
+    {
+    "id": "kishlay42",
+    "url": "https://github.com/kishlay42",
+    "avatar": "https://avatars.githubusercontent.com/u/113373620?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "kishlay42"
+  },
+  {
+    "id": "mroberts0884",
+    "url": "https://github.com/mroberts0884",
+    "avatar": "https://avatars.githubusercontent.com/u/64812700?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "mroberts0884"
+  },
+  {
+    "id": "Vipin-V",
+    "url": "https://github.com/Vipin-V",
+    "avatar": "https://avatars.githubusercontent.com/u/52450894?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Vipin-V"
+  },
+  {
+    "id": "saquib000",
+    "url": "https://github.com/saquib000",
+    "avatar": "https://avatars.githubusercontent.com/u/103306537?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "saquib000"
+  },
+  {
+    "id": "Mortenlost",
+    "url": "https://github.com/Mortenlost",
+    "avatar": "https://avatars.githubusercontent.com/u/73838897?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Mortenlost"
+  },
+  {
+    "id": "SumitDwivedi24X",
+    "url": "https://github.com/SumitDwivedi24X",
+    "avatar": "https://avatars.githubusercontent.com/u/68289271?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "SumitDwivedi24X"
+  },
+  {
+    "id": "Amunoz-1",
+    "url": "https://github.com/Amunoz-1",
+    "avatar": "https://avatars.githubusercontent.com/u/128929439?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Amunoz-1"
+  },
+  {
+    "id": "ameya-6964",
+    "url": "https://github.com/ameya-6964",
+    "avatar": "https://avatars.githubusercontent.com/u/104457295?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ameya-6964"
+  },
+  {
+    "id": "Diald",
+    "url": "https://github.com/Diald",
+    "avatar": "https://avatars.githubusercontent.com/u/114723756?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Diald"
+  },
+  {
+    "id": "Eaglesight02",
+    "url": "https://github.com/Eaglesight02",
+    "avatar": "https://avatars.githubusercontent.com/u/108081278?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Eaglesight02"
+  },
+  {
+    "id": "ATerskin",
+    "url": "https://github.com/ATerskin",
+    "avatar": "https://avatars.githubusercontent.com/u/34988508?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ATerskin"
+  },
 ]
