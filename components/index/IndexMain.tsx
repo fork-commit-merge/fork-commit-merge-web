@@ -20,7 +20,7 @@ const IndexMain: React.FC = () => {
     if (contributorsCount === null || isNaN(contributorsCount)) {
       return 'several'
     }
-    return contributorsCount;
+    return contributorsCount
   }
 
   return (
@@ -35,14 +35,16 @@ const IndexMain: React.FC = () => {
       <div className='bg-primary w-full pb-16 pt-4 text-center'>
         <div className='mx-auto my-5 max-w-2xl text-xl font-light '>
           <p className='font-primary mb-8 mt-8 text-2xl leading-8'>
-            Become a part of our thriving community of{' '}
+            {/* Become a part of our thriving community of{' '}
             <span
               className='text-green-400
             '
             >
               {displayContributorsCount()}
             </span>{' '}
-            inspiring developers who have already contributed to this project!
+            inspiring developers who have already contributed to this project! */}
+            Become a part of our thriving community of over 600 inspiring
+            developers who have already contributed to this project!
           </p>
         </div>
         <TopThreeContributors />

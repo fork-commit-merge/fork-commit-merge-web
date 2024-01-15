@@ -20,7 +20,7 @@ const LeaderBoardPage: React.FC = () => {
               Top 20 Contributors by Solved Issues
             </h2>
             <p className='pb-10 pt-2 italic text-gray-400'>
-              Bot will update this list once in every 24 hours.
+              Bot will update this list once a week.
             </p>
             <LeaderBoard />
             <Stars />
