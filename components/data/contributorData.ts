@@ -4727,4 +4727,40 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/34988508?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "ATerskin"
   },
+    {
+    "id": "B-Anand18",
+    "url": "https://github.com/B-Anand18",
+    "avatar": "https://avatars.githubusercontent.com/u/81760438?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "B-Anand18"
+  },
+  {
+    "id": "echelonnought",
+    "url": "https://github.com/echelonnought",
+    "avatar": "https://avatars.githubusercontent.com/u/50064240?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "echelonnought"
+  },
+  {
+    "id": "anandromy",
+    "url": "https://github.com/anandromy",
+    "avatar": "https://avatars.githubusercontent.com/u/156048389?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "anandromy"
+  },
+  {
+    "id": "rupali199999",
+    "url": "https://github.com/rupali199999",
+    "avatar": "https://avatars.githubusercontent.com/u/86226634?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "rupali199999"
+  },
+  {
+    "id": "HarshadaGirase",
+    "url": "https://github.com/HarshadaGirase",
+    "avatar": "https://avatars.githubusercontent.com/u/128895955?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "HarshadaGirase"
+  },
+  {
+    "id": "aatmaj28",
+    "url": "https://github.com/aatmaj28",
+    "avatar": "https://avatars.githubusercontent.com/u/71608530?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "aatmaj28"
+  },
 ]
