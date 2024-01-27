@@ -4847,4 +4847,10 @@ export const contributorData = [
     "avatar": "https://avatars.githubusercontent.com/u/92500223?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     "name": "DEVANSHUKEJRIWAL"
   },
+  {
+    "id": "RealRajnish",
+    "url": "https://github.com/RealRajnish",
+    "avatar": "https://avatars.githubusercontent.com/u/61611447?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "RealRajnish"
+  },
 ]
