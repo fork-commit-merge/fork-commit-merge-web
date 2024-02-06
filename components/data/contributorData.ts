@@ -4913,4 +4913,34 @@ export const contributorData = [
       'https://avatars.githubusercontent.com/u/67108020?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'andref12'
   },
+    {
+    "id": "YTheLynch",
+    "url": "https://github.com/YTheLynch",
+    "avatar": "https://avatars.githubusercontent.com/u/69767140?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "YTheLynch"
+  },
+  {
+    "id": "JASIM0021",
+    "url": "https://github.com/JASIM0021",
+    "avatar": "https://avatars.githubusercontent.com/u/94641150?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "JASIM0021"
+  },
+  {
+    "id": "DongJu-Na",
+    "url": "https://github.com/DongJu-Na",
+    "avatar": "https://avatars.githubusercontent.com/u/79893048?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "DongJu-Na"
+  },
+  {
+    "id": "ritatanght",
+    "url": "https://github.com/ritatanght",
+    "avatar": "https://avatars.githubusercontent.com/u/111014078?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "ritatanght"
+  },
+  {
+    "id": "sinha-sanchay",
+    "url": "https://github.com/sinha-sanchay",
+    "avatar": "https://avatars.githubusercontent.com/u/140732561?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sinha-sanchay"
+  },
 ]
