@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const HowToContribute = () => {
   return (
-    <div className="bg-primary px-5 flex flex-col justify-center items-center">
-      <div className=" mx-auto max-w-2xl pb-10">
-        <h2 className="text-3xl font-bold my-4 text-center">
+    <div className='bg-primary flex flex-col items-center justify-center px-5'>
+      <div className=' mx-auto max-w-2xl pb-10'>
+        <h2 className='my-4 text-center text-3xl font-bold'>
           How to make an Open Source Contribution?
         </h2>
-        <p className="leading-6 pt-8">
+        <p className='pt-8 leading-6'>
           Contributing to open-source projects is a collaborative effort that
           offers the opportunity to learn, grow, and engage with the community.
           <br />
@@ -20,19 +20,19 @@ const HowToContribute = () => {
           Identify a project that interests you. Many projects specifically mark
           issues as &quot;good for beginners&quot;, &quot;good first issue&quot;
           or similar to that to help you find a starting point. Some excellent
-          places for looking these kind of issues are for example{" "}
+          places for looking these kind of issues are for example{' '}
           <a
-            href="https://goodfirstissues.com"
-            className="hover:underline text-blue-400"
-            target="blank"
+            href='https://goodfirstissues.com'
+            className='text-blue-400 hover:underline'
+            target='blank'
           >
             goodfirstissues.com.
-          </a>{" "}
-          and{" "}
+          </a>{' '}
+          and{' '}
           <a
-            href="https://github.com/MunGell/awesome-for-beginners"
-            className="hover:underline text-blue-400"
-            target="blank"
+            href='https://github.com/MunGell/awesome-for-beginners'
+            className='text-blue-400 hover:underline'
+            target='blank'
           >
             Awesome for Beginners - GitHub repository
           </a>
@@ -44,6 +44,9 @@ const HowToContribute = () => {
           links in the documentation such as in the README or CONTRIBUTING files
           on different repositories and making a pull request. This is a great
           way to get started with open source contributions.
+          <br />
+          <br />
+          Just remember that the contributions should be meaningful and add some value to the project. Don&apos;t just make a pull request for the sake of making a pull request. Make sure that the changes you are making are actually useful and meaningful, and that you are following the guidelines and coding standards of the project. Maintainers of the project are usually very busy and they don&apos;t have time to review pull requests that are not meaningful for the project.
           <br />
           <br />
           <strong>2. Understand the Contribution Process:</strong> <br />
@@ -105,17 +108,17 @@ const HowToContribute = () => {
           Also, we recommend downloading the GitHub mobile app to your phone.
           <br />
           <a
-            href="https://play.google.com/store/apps/details?id=com.github.android&hl=en&gl=US"
-            className="hover:underline text-blue-400"
-            target="blank"
+            href='https://play.google.com/store/apps/details?id=com.github.android&hl=en&gl=US'
+            className='text-blue-400 hover:underline'
+            target='blank'
           >
             Download GitHub app for Android
           </a>
           <br />
           <a
-            href="https://apps.apple.com/us/app/github/id1477376905"
-            className="hover:underline text-blue-400"
-            target="blank"
+            href='https://apps.apple.com/us/app/github/id1477376905'
+            className='text-blue-400 hover:underline'
+            target='blank'
           >
             Download GitHub app for iOS
           </a>
@@ -125,28 +128,28 @@ const HowToContribute = () => {
           go.
           <br />
           <br />
-          <hr className="my-6" />
+          <hr className='my-6' />
           To find more detailed info about the contribution process, check out
           the Fork, Commit, Merge repository README
-          <span className="mr-2"></span>
+          <span className='mr-2'></span>
           <a
-            href="https://github.com/nikohoffren/fork-commit-merge#setup-instructions"
-            className="hover:underline text-blue-400"
+            href='https://github.com/nikohoffren/fork-commit-merge#setup-instructions'
+            className='text-blue-400 hover:underline'
           >
             Setup Instructions
-          </a>{" "}
-          and{" "}
+          </a>{' '}
+          and{' '}
           <a
-            href="https://github.com/nikohoffren/fork-commit-merge#submitting-your-changes"
-            className="hover:underline text-blue-400"
+            href='https://github.com/nikohoffren/fork-commit-merge#submitting-your-changes'
+            className='text-blue-400 hover:underline'
           >
             Submitting Your Changes
           </a>
-          <span className="mr-2"></span>
-          sections. You can also check out the{" "}
-          <Link href="/resources" className="hover:underline text-blue-400">
+          <span className='mr-2'></span>
+          sections. You can also check out the{' '}
+          <Link href='/resources' className='text-blue-400 hover:underline'>
             Resources
-          </Link>{" "}
+          </Link>{' '}
           section in this website for videos and other documentation about open
           source contributions.
           <br />
@@ -158,7 +161,7 @@ const HowToContribute = () => {
         </p>
       </div>
     </div>
-  );
+  )
 };
 
 export default HowToContribute;
