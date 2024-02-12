@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.0",
-    "@clerk/nextjs": "^4.29.3",
+    "@clerk/nextjs": "^4.29.7",
     "@clerk/themes": "^1.7.9",
     "@heroicons/react": "^1.0.6",
     "@mui/icons-material": "^5.15.7",
