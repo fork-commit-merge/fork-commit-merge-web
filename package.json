@@ -18,7 +18,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "20.11.10",
     "@types/react": "18.2.55",
-    "@types/react-dom": "18.2.18",
+    "@types/react-dom": "18.2.19",
     "autoprefixer": "10.4.17",
     "axios": "^1.6.7",
     "eslint": "8.56.0",
