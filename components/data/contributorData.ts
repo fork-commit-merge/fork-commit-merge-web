@@ -4997,4 +4997,18 @@ export const contributorData = [
       'https://avatars.githubusercontent.com/u/92005127?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'w-augustin'
   },
+  {
+    id: 'AnkitAnandMastery',
+    url: 'https://github.com/AnkitAnandMastery',
+    avatar:
+      'https://avatars.githubusercontent.com/u/104755287?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'AnkitAnandMastery'
+  },
+  {
+    id: 'iddrisumohamme1',
+    url: 'https://github.com/iddrisumohamme1',
+    avatar:
+      'https://avatars.githubusercontent.com/u/126844637?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'iddrisumohamme1'
+  },
 ]
