@@ -5011,4 +5011,11 @@ export const contributorData = [
       'https://avatars.githubusercontent.com/u/126844637?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'iddrisumohamme1'
   },
+  {
+    id: 'AmboThom',
+    url: 'https://github.com/AmboThom',
+    avatar:
+      'https://avatars.githubusercontent.com/u/41874659?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'AmboThom'
+  },
 ]
