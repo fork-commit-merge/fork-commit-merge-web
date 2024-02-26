@@ -43,7 +43,7 @@ const IndexMain: React.FC = () => {
               {displayContributorsCount()}
             </span>{' '}
             inspiring developers who have already contributed to this project! */}
-            Become a part of our thriving community of over 600 inspiring
+            Become a part of our thriving community of over 650 inspiring
             developers who have already contributed to this project!
           </p>
         </div>
