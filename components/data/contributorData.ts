@@ -5031,5 +5031,26 @@ export const contributorData = [
     avatar:
       'https://avatars.githubusercontent.com/u/90849260?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'sameer2799'
-  }
+  },
+  {
+    id: 'swaroop489',
+    url: 'https://github.com/swaroop489',
+    avatar:
+      'https://avatars.githubusercontent.com/u/141803751?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'swaroop489'
+  },
+  {
+    id: 'gurjeetsinghvirdee',
+    url: 'https://github.com/gurjeetsinghvirdee',
+    avatar:
+      'https://avatars.githubusercontent.com/u/73753957?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'gurjeetsinghvirdee'
+  },
+  {
+    id: 'carodelafuente',
+    url: 'https://github.com/carodelafuente',
+    avatar:
+      'https://avatars.githubusercontent.com/u/25378135?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'carodelafuente'
+  },
 ]
