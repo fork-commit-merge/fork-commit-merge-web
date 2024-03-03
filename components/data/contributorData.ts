@@ -5053,4 +5053,18 @@ export const contributorData = [
       'https://avatars.githubusercontent.com/u/25378135?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'carodelafuente'
   },
+  {
+    id: 'jaymeklein',
+    url: 'https://github.com/jaymeklein',
+    avatar:
+      'https://avatars.githubusercontent.com/u/18254213?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'jaymeklein'
+  },
+  {
+    id: 'HighEffortMeme',
+    url: 'https://github.com/HighEffortMeme',
+    avatar:
+      'https://avatars.githubusercontent.com/u/161233536?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'HighEffortMeme'
+  }
 ]
