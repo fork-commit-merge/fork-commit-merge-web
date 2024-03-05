@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.3.0",
+    "@ant-design/icons": "^5.3.1",
     "@clerk/nextjs": "^4.29.9",
     "@clerk/themes": "^1.7.9",
     "@heroicons/react": "^1.0.6",
