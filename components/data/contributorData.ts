@@ -5066,5 +5066,47 @@ export const contributorData = [
     avatar:
       'https://avatars.githubusercontent.com/u/161233536?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'HighEffortMeme'
-  }
+  },
+    {
+    "id": "RithikaReddyK",
+    "url": "https://github.com/RithikaReddyK",
+    "avatar": "https://avatars.githubusercontent.com/u/158116898?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "RithikaReddyK"
+  },
+  {
+    "id": "Dovineowuor",
+    "url": "https://github.com/Dovineowuor",
+    "avatar": "https://avatars.githubusercontent.com/u/70941806?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Dovineowuor"
+  },
+  {
+    "id": "uHan2",
+    "url": "https://github.com/uHan2",
+    "avatar": "https://avatars.githubusercontent.com/u/8328839?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "uHan2"
+  },
+  {
+    "id": "sathwika-adimulam",
+    "url": "https://github.com/sathwika-adimulam",
+    "avatar": "https://avatars.githubusercontent.com/u/125170092?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "sathwika-adimulam"
+  },
+  {
+    "id": "k-komati",
+    "url": "https://github.com/k-komati",
+    "avatar": "https://avatars.githubusercontent.com/u/125170456?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "k-komati"
+  },
+  {
+    "id": "psrikha",
+    "url": "https://github.com/psrikha",
+    "avatar": "https://avatars.githubusercontent.com/u/116040520?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "psrikha"
+  },
+  {
+    "id": "Onolax",
+    "url": "https://github.com/Onolax",
+    "avatar": "https://avatars.githubusercontent.com/u/102753837?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    "name": "Onolax"
+  },
 ]
