@@ -20,7 +20,7 @@ _Find awesome badges for your project in this repository: [markdown-badges](http
 
 ## Table of Contents
 
-This project is the repo of [Fork, Commit, Merge -website](https://forkcommitmerge.io).
+This project is the repo of [Fork, Commit, Merge -website](https://forkcommitmerge.vercel.app).
 
 -   [Features](#features)
 -   [Tech Stack](#tech-stack)
