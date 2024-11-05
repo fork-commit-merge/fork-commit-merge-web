@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
-    "@clerk/nextjs": "^4.31.5",
+    "@clerk/nextjs": "^6.2.0",
     "@clerk/themes": "^2.1.37",
     "@heroicons/react": "^1.0.6",
     "@mui/icons-material": "^6.1.1",
@@ -30,7 +30,7 @@
     "mongoose": "^8.8.0",
     "multer": "^1.4.5-lts.1",
     "next": "14.0.3",
-    "next-auth": "^4.24.8",
+    "next-auth": "^4.24.10",
     "next-connect": "^1.0.0",
     "next-secure-headers": "^2.2.0",
     "postcss": "8.4.47",
