@@ -24,7 +24,7 @@
     "eslint": "9.14.0",
     "eslint-config-next": "15.0.3",
     "formidable": "^3.5.2",
-    "framer-motion": "^11.5.6",
+    "framer-motion": "^11.11.17",
     "md5": "^2.3.0",
     "mongodb": "^5.9.1",
     "mongoose": "^8.8.1",
