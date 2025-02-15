@@ -212,7 +212,7 @@ const Header = () => {
                   </Link>
                 </li>
 
-                <li className='inline-flex overflow-hidden rounded-md bg-white shadow-sm '>
+                <li className='inline-flex overflow-hidden rounded-md bg-white shadow-sm'>
                   <div className='inline-block border-e px-2 py-0.5 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:relative'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -254,7 +254,7 @@ const Header = () => {
       </nav>
 
       {isOpen && (
-        <div className='fixed left-0 top-0 z-20 h-full w-64 overflow-auto bg-transparent px-1 pt-6  backdrop-blur-md md:hidden [&>a>div]:font-bold [&>li>div]:font-bold [&>li>div]:transition-all'>
+        <div className='fixed left-0 top-0 z-20 h-full w-64 overflow-auto bg-transparent px-1 pt-6 backdrop-blur-md md:hidden [&>a>div]:font-bold [&>li>div]:font-bold [&>li>div]:transition-all'>
           <Link
             href='/dashboard'
             onClick={() => setIsOpen(false)}
@@ -287,7 +287,7 @@ const Header = () => {
               Languages
             </div>
             {isLanguageDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg '>
+              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                 {languageList.map((lang, index) => (
                   <li
                     key={index}
@@ -312,7 +312,7 @@ const Header = () => {
               Frameworks | Libraries
             </div>
             {isFrameworkDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg '>
+              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                 {frameworkList.map((framework, index) => (
                   <li
                     key={index}
@@ -337,7 +337,7 @@ const Header = () => {
               Git
             </div>
             {isGitSelectionDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg '>
+              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                 {gitList.map((git, index) => (
                   <li
                     key={index}
@@ -362,7 +362,7 @@ const Header = () => {
               Roadmaps
             </div>
             {isRoadmapDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg '>
+              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                 {roadmapList.map((roadmap, index) => (
                   <li
                     key={index}
@@ -387,7 +387,7 @@ const Header = () => {
               Community
             </div>
             {isCommunityDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg '>
+              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                 {communityList.map((community, index) => (
                   <li
                     key={index}
@@ -416,7 +416,7 @@ const Header = () => {
             </div>
           </Link>
           <Link href='/resources' onClick={() => setIsOpen(false)}>
-            <div className='hover:/75 block cursor-pointer px-6 py-2  text-sm'>
+            <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
               Resources
             </div>
           </Link>
@@ -499,7 +499,7 @@ const Header = () => {
         </div>
       )}
 
-      <header className='sticky top-0 z-10 mb-6 hidden w-full bg-transparent  shadow-bottom backdrop-blur md:block'>
+      <header className='sticky top-0 z-10 mb-6 hidden w-full bg-transparent shadow-bottom backdrop-blur md:block'>
         <div className='shadow-top mx-auto max-w-5xl py-2'>
           <div className='items-center justify-between md:flex'>
             <div className='flex flex-1 items-center space-x-1'>
@@ -518,7 +518,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className='flex items-center space-x-1 [&>li>div]:font-semibold [&>li>div]:transition-all '>
+            <div className='flex items-center space-x-1 [&>li>div]:font-semibold [&>li>div]:transition-all'>
               <li ref={node} className='list-none'>
                 <div
                   className='hover:/75 block cursor-pointer px-4 py-2 text-sm transition-all hover:text-gray-300'
@@ -527,7 +527,7 @@ const Header = () => {
                   Languages
                 </div>
                 {isLanguageDropdownOpen && (
-                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg  backdrop-blur-lg'>
+                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg backdrop-blur-lg'>
                     {languageList.map((lang, index) => (
                       <li
                         key={index}
@@ -549,7 +549,7 @@ const Header = () => {
                   Frameworks | Libraries
                 </div>
                 {isFrameworkDropdownOpen && (
-                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-slate-920 py-1  shadow-lg'>
+                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                     {frameworkList.map((framework, index) => (
                       <li
                         key={index}
@@ -571,7 +571,7 @@ const Header = () => {
                   Git
                 </div>
                 {isGitSelectionDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg '>
+                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                     {gitList.map((git, index) => (
                       <li
                         key={index}
@@ -596,7 +596,7 @@ const Header = () => {
                   Roadmaps
                 </div>
                 {isRoadmapDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg '>
+                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                     {roadmapList.map((roadmap, index) => (
                       <li
                         key={index}
@@ -621,7 +621,7 @@ const Header = () => {
                   Community
                 </div>
                 {isCommunityDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg '>
+                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
                     {communityList.map((community, index) => (
                       <li
                         key={index}
@@ -638,15 +638,19 @@ const Header = () => {
                   </ul>
                 )}
               </li>
-              <Link
-                href='/dashboard'
-                onClick={() => setIsOpen(false)}
-                className='group relative block rounded-md pl-4 text-sm font-medium text-black focus:outline-none'
-              >
-                <span className='relative block rounded bg-slate-100 px-4 py-1 text-sm font-semibold transition-colors hover:bg-slate-300'>
-                  Dashboard
-                </span>
-              </Link>
+              {!user && (
+                <Link
+                  href='/dashboard'
+                  onClick={() => setIsOpen(false)}
+                  className='group relative block rounded-md pl-4 text-sm font-medium text-black focus:outline-none'
+                >
+                  <span className='relative block rounded bg-slate-100 px-4 py-1 text-sm font-semibold transition-colors hover:bg-slate-300'>
+                    Login
+                    {/* Replace "Login" text with "Dashboard" after Dashboard is implemented and move it out from the !user condition check to show it always */}
+                  </span>
+                </Link>
+              )}
+
               {isLoaded && user && (
                 <div className='pl-4'>
                   <UserButton afterSignOutUrl='/' />

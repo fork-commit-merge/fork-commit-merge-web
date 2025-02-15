@@ -8,7 +8,7 @@ export default function DashboardPage() {
         style={{ backgroundImage: "url('/dashboard.png')" }}
       >
         <div className='flex flex-col items-center justify-center p-24 text-center text-white'>
-          <h1 className='mb-6 text-center text-4xl font-bold'>Dashboard</h1>
+          <h1 className='mb-6 text-center text-4xl font-bold'>Logging in...</h1>
         </div>
       </div>
       <div className='bg-primary flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-8'>
