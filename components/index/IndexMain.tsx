@@ -43,14 +43,14 @@ const IndexMain: React.FC = () => {
               {displayContributorsCount()}
             </span>{' '}
             inspiring developers who have already contributed to this project! */}
-            Become a part of our thriving community of over 650 inspiring
+            Become a part of our community of over 700 inspiring
             developers who have already contributed to this project!
           </p>
         </div>
         <TopThreeContributors />
 
         <React.Suspense>
-          <div className='mx-auto my-5 max-w-4xl text-xl font-light '>
+          <div className='mx-auto my-5 max-w-5xl text-xl font-light '>
             <Contributors contributors={contributorData} />
           </div>
         </React.Suspense>
