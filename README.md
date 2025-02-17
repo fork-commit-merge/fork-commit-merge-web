@@ -7,8 +7,6 @@
 [![PR:s Welcome](https://img.shields.io/badge/PR:s-welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
 [![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/fork-commit-merge-web)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=nikohoffren_fork-commit-merge-web&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=nikohoffren_fork-commit-merge-web)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nikohoffren_fork-commit-merge-web&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nikohoffren_fork-commit-merge-web)
 
 "Fork, Commit, Merge" serves as a comprehensive resource for mastering GitHub
 contributions, catering to both beginners and seasoned developers. Our detailed
