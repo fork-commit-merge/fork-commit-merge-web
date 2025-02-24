@@ -34,7 +34,7 @@
     "next-auth": "^4.24.11",
     "next-connect": "^1.0.0",
     "next-secure-headers": "^2.2.0",
-    "postcss": "8.5.1",
+    "postcss": "8.5.3",
     "prettier": "^3.5.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "react": "18.3.1",
