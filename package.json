@@ -43,7 +43,7 @@
     "react-loader-spinner": "^6.1.6",
     "react-markdown": "^9.0.3",
     "react-spinners": "^0.15.0",
-    "remark-gfm": "^4.0.0",
+    "remark-gfm": "^4.0.1",
     "sharp": "^0.33.1",
     "tailwindcss": "3.4.15",
     "typescript": "5.7.3"
