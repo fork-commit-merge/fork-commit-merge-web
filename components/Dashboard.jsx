@@ -51,9 +51,9 @@ export default function Dashboard() {
 
   return (
     <>
-      <div className='pb-4 text-center'>
+      {/* <div className='pb-4 text-center'>
         <h3 className='pb-6 text-2xl'>Successfully Merged Pull Requests:</h3>
-      </div>
+      </div> */}
       <div className='-50 text-center'>
         {isLoading && (
           <div className='flex h-[200px] items-center justify-center'>
