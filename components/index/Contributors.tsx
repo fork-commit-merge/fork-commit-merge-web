@@ -23,8 +23,8 @@ export const Contributors: React.FC<ContributorsProps> = ({ contributors }) => (
         <LazyImage
           src={contributor.avatar}
           alt={contributor.name}
-          width={35}
-          height={35}
+          width={20}
+          height={20}
         />
       </a>
     ))}
