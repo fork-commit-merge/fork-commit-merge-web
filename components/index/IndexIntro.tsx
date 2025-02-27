@@ -59,6 +59,7 @@ const IndexIntro: React.FC = () => {
           width='600'
           height='600'
           className='mx-auto rounded-xl'
+          unoptimized
         />
 
         <p className='pt-4 text-xl leading-7'>

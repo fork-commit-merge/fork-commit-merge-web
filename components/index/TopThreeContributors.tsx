@@ -53,6 +53,7 @@ const TopThreeContributors: FC = () => {
               height={80}
               alt={contributor.name}
               className='px-1'
+              unoptimized
             />
           </a>
           {contributor.rank === 1 && (
