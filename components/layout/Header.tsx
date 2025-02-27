@@ -255,15 +255,18 @@ const Header = () => {
 
       {isOpen && (
         <div className='fixed left-0 top-0 z-20 h-full w-64 overflow-auto bg-transparent px-1 pt-6 backdrop-blur-md md:hidden [&>a>div]:font-bold [&>li>div]:font-bold [&>li>div]:transition-all'>
-          <Link
-            href='/dashboard'
-            onClick={() => setIsOpen(false)}
-            className='group relative mb-2 block rounded-md px-6 text-sm font-medium text-black focus:outline-none'
-          >
-            <span className='relative block rounded bg-slate-100 px-4 py-2 text-sm font-semibold transition-colors hover:bg-slate-300'>
-              Dashboard
-            </span>
-          </Link>
+          {!user && (
+            <Link
+              href='/dashboard'
+              onClick={() => setIsOpen(false)}
+              className='group relative mb-2 block rounded-md px-6 text-sm font-medium text-black focus:outline-none'
+            >
+              <span className='relative block rounded bg-slate-100 px-4 py-2 text-sm font-semibold transition-colors hover:bg-slate-300'>
+                Login
+                {/* Replace "Login" text with "Dashboard" after Dashboard is implemented and move it out from the !user condition check to show it always */}
+              </span>
+            </Link>
+          )}
           <div className='ml-6 pt-2'>
             {isLoaded && user && <UserButton afterSignOutUrl='/' />}
           </div>
