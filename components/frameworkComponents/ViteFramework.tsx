@@ -50,6 +50,8 @@ const ViteFramework = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://vitejs.dev/guide/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

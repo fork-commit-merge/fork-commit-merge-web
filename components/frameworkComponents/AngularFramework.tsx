@@ -43,7 +43,9 @@ const AngularFramework = () => {
           </li>
         </ul>
         <br />
-        <a
+        <a 
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://angular.io/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

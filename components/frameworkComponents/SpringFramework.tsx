@@ -57,6 +57,8 @@ const SpringFramework = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://spring.io/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

@@ -49,6 +49,8 @@ const LaravelFramework = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://laravel.com/docs"
           className="text-xl font-bold underline hover:text-blue-400"
         >

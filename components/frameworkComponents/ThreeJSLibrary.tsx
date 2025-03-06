@@ -52,6 +52,8 @@ const ThreeJSLibrary = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://threejs.org/docs/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

@@ -55,6 +55,8 @@ const AspNetCoreFramework = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0"
           className="text-xl font-bold underline hover:text-blue-400"
         >

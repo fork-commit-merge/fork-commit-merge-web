@@ -70,6 +70,8 @@ const CherrypyFramework = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href='https://docs.cherrypy.dev/en/latest/'
           className='text-xl font-bold underline hover:text-blue-400'
         >

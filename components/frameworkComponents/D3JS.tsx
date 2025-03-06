@@ -46,6 +46,8 @@ const D3JSLibrary = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href='https://d3js.org/getting-started'
           className='text-xl font-bold underline hover:text-blue-400'
         >
