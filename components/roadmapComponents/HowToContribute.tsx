@@ -22,17 +22,19 @@ const HowToContribute = () => {
           or similar to that to help you find a starting point. Some excellent
           places for looking these kind of issues are for example{' '}
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href='https://goodfirstissues.com'
             className='text-blue-400 hover:underline'
-            target='blank'
           >
             goodfirstissues.com.
           </a>{' '}
           and{' '}
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href='https://github.com/MunGell/awesome-for-beginners'
             className='text-blue-400 hover:underline'
-            target='blank'
           >
             Awesome for Beginners - GitHub repository
           </a>
@@ -108,17 +110,19 @@ const HowToContribute = () => {
           Also, we recommend downloading the GitHub mobile app to your phone.
           <br />
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href='https://play.google.com/store/apps/details?id=com.github.android&hl=en&gl=US'
             className='text-blue-400 hover:underline'
-            target='blank'
           >
             Download GitHub app for Android
           </a>
           <br />
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href='https://apps.apple.com/us/app/github/id1477376905'
             className='text-blue-400 hover:underline'
-            target='blank'
           >
             Download GitHub app for iOS
           </a>
@@ -133,6 +137,8 @@ const HowToContribute = () => {
           the Fork, Commit, Merge repository README
           <span className='mr-2'></span>
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href='https://github.com/nikohoffren/fork-commit-merge#setup-instructions'
             className='text-blue-400 hover:underline'
           >
@@ -140,6 +146,8 @@ const HowToContribute = () => {
           </a>{' '}
           and{' '}
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href='https://github.com/nikohoffren/fork-commit-merge#submitting-your-changes'
             className='text-blue-400 hover:underline'
           >
