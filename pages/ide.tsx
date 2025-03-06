@@ -81,7 +81,12 @@ export default function IDE() {
                   <li key={idx}>{lang}</li>
                 ))}
               </ul>
-              <Link href={ide.installLink} passHref>
+              <Link
+                target='_blank'
+                rel='noopener noreferrer'
+                href={ide.installLink}
+                passHref
+              >
                 <span className='cursor-pointer text-blue-400 hover:underline'>
                   Install {ide.name}
                 </span>
