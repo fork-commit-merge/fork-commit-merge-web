@@ -84,7 +84,9 @@ const GitBranchingSelection = () => {
         </ul>
 
         <br />
-        <a
+        <a        
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
           className="text-xl font-bold underline hover:text-blue-400"
         >

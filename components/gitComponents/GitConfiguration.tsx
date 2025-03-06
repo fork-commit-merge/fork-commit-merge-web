@@ -71,6 +71,8 @@ const GitConfiguration = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://git-scm.com/docs/git-config"
           className="text-xl font-bold underline hover:text-blue-400"
         >
