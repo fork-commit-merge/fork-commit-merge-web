@@ -40,6 +40,8 @@ const FortranLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.fortran-lang.org/learn/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

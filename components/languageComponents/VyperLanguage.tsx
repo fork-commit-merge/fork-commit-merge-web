@@ -52,6 +52,8 @@ const VyperLanguage = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://vyper.readthedocs.io/en/latest/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

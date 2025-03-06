@@ -152,6 +152,8 @@ const RustLanguage = () => {
         <p>You might also want to check out these sites:</p>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.rust-lang.org/learn"
           className="text-xl font-bold underline hover:text-blue-400"
         >
@@ -159,6 +161,8 @@ const RustLanguage = () => {
         </a>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://doc.rust-lang.org/book/"
           className="text-xl font-bold underline hover:text-blue-400"
         >
@@ -166,6 +170,8 @@ const RustLanguage = () => {
         </a>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://doc.rust-lang.org/rust-by-example/"
           className="text-xl font-bold underline hover:text-blue-400"
         >
@@ -173,6 +179,8 @@ const RustLanguage = () => {
         </a>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://doc.rust-lang.org/std/"
           className="text-xl font-bold underline hover:text-blue-400"
         >
@@ -180,6 +188,8 @@ const RustLanguage = () => {
         </a>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://play.rust-lang.org"
           className="text-xl font-bold underline hover:text-blue-400"
         >

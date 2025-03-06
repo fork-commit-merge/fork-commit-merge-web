@@ -44,6 +44,8 @@ const BashLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href='https://www.gnu.org/software/bash/manual/bash.html'
           className='text-xl font-bold underline hover:text-blue-400'
         >

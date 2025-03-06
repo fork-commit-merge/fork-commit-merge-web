@@ -51,6 +51,8 @@ const JavaScriptLanguage = () => {
           </li>
         </ul>
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://javascript.info/"
           className="font-bold underline hover:text-blue-400"
         >
@@ -58,6 +60,8 @@ const JavaScriptLanguage = () => {
         </a>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           className="font-bold underline hover:text-blue-400"
         >

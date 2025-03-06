@@ -58,6 +58,8 @@ const DLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://dlang.org/spec/spec.html"
           className="text-xl font-bold underline hover:text-blue-400"
         >

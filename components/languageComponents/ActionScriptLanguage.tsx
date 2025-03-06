@@ -52,6 +52,8 @@ const ActionScriptLanguage = () => {
           </ul>
           <br />
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://help.adobe.com/en_US/as3/dev/as3_devguide.pdf"
             className="text-xl font-bold underline hover:text-blue-400"
           >

@@ -38,6 +38,8 @@ const DelphiLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.embarcadero.com/products/delphi"
           className="text-xl font-bold underline hover:text-blue-400"
         >

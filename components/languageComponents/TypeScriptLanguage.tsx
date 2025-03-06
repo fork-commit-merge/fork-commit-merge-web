@@ -47,6 +47,8 @@ const TypeScriptLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.typescriptlang.org/docs/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

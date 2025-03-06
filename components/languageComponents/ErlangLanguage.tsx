@@ -45,6 +45,8 @@ const ErlangLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://erlang.org/doc/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

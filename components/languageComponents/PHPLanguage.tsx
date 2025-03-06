@@ -50,6 +50,8 @@ const PHPLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.php.net/manual/en/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

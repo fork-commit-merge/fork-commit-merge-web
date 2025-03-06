@@ -49,6 +49,8 @@ const ElixirLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://elixir-lang.org/docs.html"
           className="text-xl font-bold underline hover:text-blue-400"
         >

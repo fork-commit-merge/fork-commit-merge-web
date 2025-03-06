@@ -52,6 +52,8 @@ const CrystalLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://crystal-lang.org/reference/1.9/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

@@ -45,6 +45,8 @@ const CPPLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://en.cppreference.com/w/cpp/header"
           className="text-xl font-bold underline hover:text-blue-400"
         >

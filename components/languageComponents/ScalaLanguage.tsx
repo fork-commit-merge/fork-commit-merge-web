@@ -44,6 +44,8 @@ const ScalaLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.scala-lang.org/documentation/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

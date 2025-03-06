@@ -58,6 +58,8 @@ const MATLABLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.mathworks.com/help/matlab/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

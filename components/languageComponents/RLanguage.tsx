@@ -51,6 +51,8 @@ const RLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.r-project.org/docs.html"
           className="text-xl font-bold underline hover:text-blue-400"
         >

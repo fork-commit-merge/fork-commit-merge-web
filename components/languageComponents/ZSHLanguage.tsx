@@ -52,6 +52,8 @@ const ZSHLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://zsh.sourceforge.io/Doc/"
           className="text-xl font-bold underline hover:text-blue-400">
           ZSH - Official Documentation

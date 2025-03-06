@@ -47,6 +47,8 @@ const KotlinLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://kotlinlang.org/docs/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

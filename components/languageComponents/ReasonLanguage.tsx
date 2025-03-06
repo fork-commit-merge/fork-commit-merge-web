@@ -42,6 +42,8 @@ const ReasonLanguage = () => {
           </ul>
           <br />
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://reasonml.github.io/docs/en/what-and-why"
             className="text-xl font-bold underline hover:text-blue-400"
           >
