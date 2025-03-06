@@ -19,7 +19,7 @@ const Footer = () => {
   }, [])
 
   return (
-    <footer className='bg-secondary '>
+    <footer className='bg-secondary'>
       <div className='mx-auto max-w-5xl px-4 py-8 pb-6 sm:px-0'>
         <div className='grid grid-cols-1 px-4 sm:grid-cols-2 lg:px-0'>
           <div>
@@ -37,6 +37,7 @@ const Footer = () => {
                   title='created with NextJS'
                   width={62}
                   height={62}
+                  unoptimized
                 />
               </a>
               <a
@@ -52,6 +53,7 @@ const Footer = () => {
                   title='deployed with Vercel'
                   width={62}
                   height={62}
+                  unoptimized
                 />
               </a>
               <a
@@ -67,6 +69,7 @@ const Footer = () => {
                   title='Data stored with MongoDB'
                   width={62}
                   height={62}
+                  unoptimized
                 />
               </a>
               <a
@@ -90,12 +93,12 @@ const Footer = () => {
 
           <div className='mt-5 grid grid-cols-2 gap-2 sm:grid-cols-2 md:mt-0'>
             <div className='text-center sm:text-end'>
-              <p className='text-lg font-bold '>Information</p>
+              <p className='text-lg font-bold'>Information</p>
 
               <ul className='mt-4 space-y-4 text-sm [&>li>a]:transition-all'>
                 <li>
                   <Link
-                    className='hover:/75 text-sm font-medium  transition hover:text-gray-300'
+                    className='hover:/75 text-sm font-medium transition hover:text-gray-300'
                     href='https://github.com/nikohoffren/fork-commit-merge/blob/main/CONTRIBUTING.md'
                     target='_blank'
                     rel='noopener noreferrer'
@@ -106,7 +109,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                    className='hover:/75 text-sm font-medium  transition hover:text-gray-300'
+                    className='hover:/75 text-sm font-medium transition hover:text-gray-300'
                     href='/privacy-policy'
                   >
                     Privacy Policy
@@ -115,7 +118,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                    className='hover:/75 text-sm font-medium  transition hover:text-gray-300'
+                    className='hover:/75 text-sm font-medium transition hover:text-gray-300'
                     href='https://github.com/nikohoffren'
                     target='_blank'
                     rel='noopener noreferrer'
@@ -141,7 +144,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                    className='hover:/75 text-sm  font-medium hover:text-gray-300'
+                    className='hover:/75 text-sm font-medium hover:text-gray-300'
                     href='https://github.com/nikohoffren/fork-commit-merge/blob/main/CODE_OF_CONDUCT.md'
                     target='_blank'
                     rel='noopener noreferrer'
@@ -151,7 +154,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className='hover:/75 text-sm  font-medium hover:text-gray-300'
+                    className='hover:/75 text-sm font-medium hover:text-gray-300'
                     href='https://opensource.org/'
                     target='_blank'
                     rel='noopener noreferrer'
