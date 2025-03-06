@@ -278,6 +278,7 @@ const Header = () => {
                 alt='Fork, Commit, Merge -logo'
                 width={40}
                 height={40}
+                unoptimized
               />
             </div>
           </Link>
@@ -517,6 +518,7 @@ const Header = () => {
                   alt='Fork, Commit, Merge -logo'
                   width={50}
                   height={50}
+                  unoptimized
                 />
               </Link>
             </div>
