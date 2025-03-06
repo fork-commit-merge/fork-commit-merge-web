@@ -16,6 +16,8 @@ const CommunityAndNetworking: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://stackoverflow.com/"
                 className="hover:underline text-blue-400"
               >
@@ -24,6 +26,8 @@ const CommunityAndNetworking: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://dev.to/"
                 className="hover:underline text-blue-400"
               >
@@ -32,6 +36,8 @@ const CommunityAndNetworking: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.reddit.com/r/programming/"
                 className="hover:underline text-blue-400"
               >
@@ -40,6 +46,8 @@ const CommunityAndNetworking: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://codeandcoffee.org/"
                 className="hover:underline text-blue-400"
               >
@@ -48,6 +56,8 @@ const CommunityAndNetworking: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://discord.me/coding"
                 className="hover:underline text-blue-400"
               >
@@ -56,6 +66,8 @@ const CommunityAndNetworking: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://hashnode.com/"
                 className="hover:underline text-blue-400"
               >

@@ -16,6 +16,8 @@ const VideoTutorialResources: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/@WebDevSimplified"
                 className="hover:underline text-blue-400"
               >
@@ -28,6 +30,8 @@ const VideoTutorialResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/@NetNinja"
                 className="hover:underline text-blue-400"
               >
@@ -43,6 +47,8 @@ const VideoTutorialResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/@BroCodez"
                 className="hover:underline text-blue-400"
               >
@@ -55,6 +61,8 @@ const VideoTutorialResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/@JamesQQuick"
                 className="hover:underline text-blue-400"
               >
@@ -68,6 +76,8 @@ const VideoTutorialResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/c/Freecodecamp"
                 className="hover:underline text-blue-400"
               >

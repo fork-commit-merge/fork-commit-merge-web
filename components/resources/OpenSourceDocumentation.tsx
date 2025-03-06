@@ -18,63 +18,70 @@ const OpenSourceDocumentation: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://opensource.guide/"
                 className="hover:underline text-blue-400"
-                target="blank"
               >
                 Introduction to Open Source
               </a>
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://github.com/firstcontributions/first-contributions"
                 className="hover:underline text-blue-400"
-                target="blank"
               >
                 First Contributions on GitHub
               </a>
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.codecademy.com/articles/what-is-open-source"
                 className="hover:underline text-blue-400"
-                target="blank"
               >
                 What is Open Source?
               </a>
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://opensource.org/resources"
                 className="hover:underline text-blue-400"
-                target="blank"
               >
                 Open Source Initiative Resources
               </a>
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://stackoverflow.blog/2020/08/03/getting-started-with-contributing-to-open-source/"
                 className="hover:underline text-blue-400"
-                target="blank"
               >
                 Getting Started With Contributing to Open Source
               </a>
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.makeuseof.com/how-to-contribute-to-open-source-projects//"
                 className="hover:underline text-blue-400"
-                target="blank"
               >
                 How to Contribute to Open Source Projects
               </a>
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.opensourceagenda.com/"
                 className="hover:underline text-blue-400"
-                target="blank"
               >
                 Open Source Agenda. Discover the best free open source software projects
               </a>
