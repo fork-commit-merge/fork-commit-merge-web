@@ -51,6 +51,8 @@ const JavaLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://docs.oracle.com/en/java/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

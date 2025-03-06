@@ -48,6 +48,8 @@ const GoLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://golang.org/doc/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

@@ -17,6 +17,8 @@ const ContributingResources: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=yzeVMecydCE"
                 className="hover:underline text-blue-400"
               >
@@ -26,6 +28,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=c6b6B9oN4Vg"
                 className="hover:underline text-blue-400"
               >
@@ -35,6 +39,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=2L0sxPx4C18"
                 className="hover:underline text-blue-400"
               >
@@ -43,6 +49,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=LxdyX9p0wrM"
                 className="hover:underline text-blue-400"
               >
@@ -51,6 +59,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=CML6vfKjQss"
                 className="hover:underline text-blue-400"
               >
@@ -60,6 +70,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=RGd5cOXpCQw"
                 className="hover:underline text-blue-400"
               >
@@ -68,6 +80,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=MT6M_sqAuZo"
                 className="hover:underline text-blue-400"
               >
@@ -76,6 +90,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=GbqSvJs-6W4"
                 className="hover:underline text-blue-400"
               >
@@ -84,6 +100,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=uQLNFRviB6Q"
                 className="hover:underline text-blue-400"
               >
@@ -93,6 +111,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=dLRA1lffWBw"
                 className="hover:underline text-blue-400"
               >
@@ -101,6 +121,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=nkuYH40cjo4"
                 className="hover:underline text-blue-400"
               >
@@ -109,6 +131,8 @@ const ContributingResources: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/watch?v=RzYJvSnzlMk"
                 className="hover:underline text-blue-400"
               >

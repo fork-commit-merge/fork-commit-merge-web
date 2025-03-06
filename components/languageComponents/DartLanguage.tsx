@@ -53,6 +53,8 @@ const DartLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://dart.dev/guides"
           className="text-xl font-bold underline hover:text-blue-400"
         >

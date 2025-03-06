@@ -58,6 +58,8 @@ const EmberFramework = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://guides.emberjs.com/release/tutorial/part-1/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

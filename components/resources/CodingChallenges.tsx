@@ -16,6 +16,8 @@ const CodingChallenges: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.hackerrank.com/"
                 className="hover:underline text-blue-400"
               >
@@ -24,6 +26,8 @@ const CodingChallenges: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://leetcode.com/"
                 className="hover:underline text-blue-400"
               >
@@ -32,6 +36,8 @@ const CodingChallenges: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.codewars.com/"
                 className="hover:underline text-blue-400"
               >
@@ -40,6 +46,8 @@ const CodingChallenges: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.codechef.com/"
                 className="hover:underline text-blue-400"
               >

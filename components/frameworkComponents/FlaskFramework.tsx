@@ -46,6 +46,8 @@ const FlaskFramework = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://flask.palletsprojects.com/en/2.0.x/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

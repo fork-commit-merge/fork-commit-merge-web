@@ -47,6 +47,8 @@ const LuaLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.lua.org/manual/5.1/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

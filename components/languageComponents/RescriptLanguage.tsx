@@ -54,6 +54,8 @@ const RescriptLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://rescript-lang.org/docs/manual/latest/introduction"
           className="text-xl font-bold underline hover:text-blue-400"
         >

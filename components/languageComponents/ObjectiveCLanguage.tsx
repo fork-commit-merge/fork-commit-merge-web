@@ -57,6 +57,8 @@ const ObjectiveCLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html"
           className="text-xl font-bold underline hover:text-blue-400"
         >

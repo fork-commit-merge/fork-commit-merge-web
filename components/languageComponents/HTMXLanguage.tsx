@@ -54,6 +54,8 @@ const HTMXLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://htmx.org/docs/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

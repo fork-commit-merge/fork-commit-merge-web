@@ -45,6 +45,8 @@ const SQLLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://dev.mysql.com/doc/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

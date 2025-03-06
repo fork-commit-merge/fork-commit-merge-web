@@ -47,6 +47,8 @@ const PerlLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://perldoc.perl.org/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

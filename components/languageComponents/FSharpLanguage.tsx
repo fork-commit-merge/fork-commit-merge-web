@@ -58,6 +58,8 @@ const FSharpLanguage = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://docs.microsoft.com/en-us/dotnet/fsharp/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

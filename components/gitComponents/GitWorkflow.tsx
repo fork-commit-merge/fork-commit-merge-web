@@ -51,6 +51,8 @@ const GitWorkflow = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.atlassian.com/git/tutorials/comparing-workflows"
           className="text-xl font-bold underline hover:text-blue-400"
         >

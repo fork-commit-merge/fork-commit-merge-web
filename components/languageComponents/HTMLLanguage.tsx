@@ -48,6 +48,8 @@ const HTMLLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://developer.mozilla.org/en-US/docs/Web/HTML"
           className="text-xl font-bold underline hover:text-blue-400"
         >

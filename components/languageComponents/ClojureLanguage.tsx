@@ -42,6 +42,8 @@ const ClojureLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://clojure.org/guides/getting_started"
           className="text-xl font-bold underline hover:text-blue-400"
         >

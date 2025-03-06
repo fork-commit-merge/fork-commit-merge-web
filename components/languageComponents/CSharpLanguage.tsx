@@ -43,6 +43,8 @@ const CSharpLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://docs.microsoft.com/en-us/dotnet/csharp/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

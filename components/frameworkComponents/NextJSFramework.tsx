@@ -50,6 +50,8 @@ const NextJSFramework = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://nextjs.org/docs"
           className="text-xl font-bold underline hover:text-blue-400"
         >

@@ -17,6 +17,8 @@ const OnlineCodingBootcamps: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.appacademy.io/"
                 className="hover:underline text-blue-400"
               >
@@ -25,6 +27,8 @@ const OnlineCodingBootcamps: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://lambdaschool.com/"
                 className="hover:underline text-blue-400"
               >
@@ -33,6 +37,8 @@ const OnlineCodingBootcamps: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://generalassemb.ly/"
                 className="hover:underline text-blue-400"
               >
@@ -41,6 +47,8 @@ const OnlineCodingBootcamps: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://launchschool.com/"
                 className="hover:underline text-blue-400"
               >
@@ -49,6 +57,8 @@ const OnlineCodingBootcamps: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://careerfoundry.com/"
                 className="hover:underline text-blue-400"
               >
@@ -57,6 +67,8 @@ const OnlineCodingBootcamps: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://brainstation.io/"
                 className="hover:underline text-blue-400"
               >

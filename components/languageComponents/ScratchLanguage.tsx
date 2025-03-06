@@ -61,6 +61,8 @@ const ScratchLanguage = () => {
         </ul>
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://scratch.mit.edu/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

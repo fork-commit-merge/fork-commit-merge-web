@@ -17,6 +17,8 @@ const InteractiveLearningPlatforms: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.codecademy.com/"
                 className="hover:underline text-blue-400"
               >
@@ -25,6 +27,8 @@ const InteractiveLearningPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.udemy.com/"
                 className="hover:underline text-blue-400"
               >
@@ -33,6 +37,8 @@ const InteractiveLearningPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.coursera.org/"
                 className="hover:underline text-blue-400"
               >
@@ -41,6 +47,8 @@ const InteractiveLearningPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://brilliant.org/"
                 className="hover:underline text-blue-400"
               >
@@ -49,6 +57,8 @@ const InteractiveLearningPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://teamtreehouse.com/"
                 className="hover:underline text-blue-400"
               >

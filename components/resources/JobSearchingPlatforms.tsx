@@ -16,6 +16,8 @@ const JobSearchingPlatforms: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://wellfound.com/jobs"
                 className="hover:underline text-blue-400"
               >
@@ -24,6 +26,8 @@ const JobSearchingPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.hired.com/"
                 className="hover:underline text-blue-400"
               >
@@ -32,6 +36,8 @@ const JobSearchingPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.dice.com/"
                 className="hover:underline text-blue-400"
               >
@@ -40,6 +46,8 @@ const JobSearchingPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.upwork.com/work/"
                 className="hover:underline text-blue-400"
               >
@@ -48,6 +56,8 @@ const JobSearchingPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://builtin.com/"
                 className="hover:underline text-blue-400"
               >
@@ -56,6 +66,8 @@ const JobSearchingPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.hiretechladies.com/"
                 className="hover:underline text-blue-400"
               >
@@ -64,6 +76,8 @@ const JobSearchingPlatforms: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.outreachy.org/"
                 className="hover:underline text-blue-400"
               >

@@ -53,6 +53,8 @@ const DjangoFramework = () => {
 
         <br />
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://docs.djangoproject.com/en/stable/"
           className="text-xl font-bold underline hover:text-blue-400"
         >

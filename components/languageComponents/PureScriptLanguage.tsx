@@ -50,6 +50,8 @@ const PureScriptLanguage = () => {
             </li>
           </ul>
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/purescript/documentation"
             className="font-bold underline hover:text-blue-400"
           >

@@ -17,6 +17,8 @@ const GitAndGitHubDocumentation: React.FC = () => {
           <ul className="list-disc pl-5">
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://git-scm.com/doc"
                 className="hover:underline text-blue-400"
               >
@@ -25,6 +27,8 @@ const GitAndGitHubDocumentation: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://docs.github.com/en"
                 className="hover:underline text-blue-400"
               >
@@ -33,6 +37,8 @@ const GitAndGitHubDocumentation: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.atlassian.com/git/tutorials"
                 className="hover:underline text-blue-400"
               >
@@ -41,6 +47,8 @@ const GitAndGitHubDocumentation: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github"
                 className="hover:underline text-blue-400"
               >
@@ -49,6 +57,8 @@ const GitAndGitHubDocumentation: React.FC = () => {
             </li>
             <li>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.w3schools.com/git/"
                 className="hover:underline text-blue-400"
               >
