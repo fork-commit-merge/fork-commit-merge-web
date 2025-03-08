@@ -4,6 +4,7 @@ import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import { ClerkProvider } from '@clerk/nextjs'
 import { dark } from '@clerk/themes'
+import BackToTopButton from '../components/buttons/BackToTopButton';
 
 function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
   return (
@@ -16,7 +17,9 @@ function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
       <Header />
       <Component {...pageProps} />
       <Footer />
+      <BackToTopButton/>
     </ClerkProvider>
+    
   )
 }
 
