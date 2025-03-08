@@ -165,7 +165,7 @@ Follow these steps to run the application in your local environment:
 1. Clone this repository.
 
    ```bash
-   git clone https://github.com/yourusername/fork-commit-merge-web.git
+   git clone https://github.com/nikohoffren/fork-commit-merge-web.git
    ```
 
 2. Install the project dependencies.
