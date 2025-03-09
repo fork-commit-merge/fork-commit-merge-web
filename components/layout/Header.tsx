@@ -169,9 +169,9 @@ const Header = () => {
                     href='https://www.buymeacoffee.com/nikohoffren'
                     target='_blank'
                     rel='noopener noreferrer'
-                    title='buy me a coffe'
+                    title='Buy me a coffee'
                   >
-                    <span className='sr-only'>buy me a coffe</span>
+                    <span className='sr-only'>Buy me a coffee</span>
 
                     <img
                       className=''
