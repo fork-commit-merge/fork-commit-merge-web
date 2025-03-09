@@ -165,7 +165,7 @@ Follow these steps to run the application in your local environment:
 1. Clone this repository.
 
    ```bash
-   git clone https://github.com/nikohoffren/fork-commit-merge-web.git
+   git clone https://github.com/fork-commit-merge/fork-commit-merge-web.git
    ```
 
 2. Install the project dependencies.
@@ -175,8 +175,7 @@ Follow these steps to run the application in your local environment:
    npm i
    ```
 
-3. Set up your environment variables. You will need to create a Github MongoDB
-   Atlas cluster and an AWS S3 bucket for your local development environment.
+3. If you're working with features regarding anything database related, you need to set up your environment variables locally and create a Github MongoDB Atlas cluster and an AWS S3 bucket. If you're working with some other features, you can skip this step.
 
    First, make a copy of the `.env.local.example` file and rename it to
    `.env.local`.
