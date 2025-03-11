@@ -19,7 +19,7 @@ const IndexIntro: React.FC = () => {
   }
 
   return (
-    <div className='bg-primary w-full pb-10 pt-6 '>
+    <div className='bg-primary w-full pb-10 pt-6'>
       <div className='mx-auto max-w-2xl'>
         <h2 className='my-4 text-4xl font-bold'>
           About the Fork, Commit, Merge project
@@ -31,7 +31,13 @@ const IndexIntro: React.FC = () => {
           improve their skills in open-source contribution, problem-solving,
           finding bugs, testing, and much more in{' '}
           {/* <span className='text-green-400'>{displayIssueCount()} </span> */}
-          <span className='text-green-400'>134 </span>
+          <Link
+            href='https://github.com/nikohoffren/fork-commit-merge/issues'
+            className='text-green-300 underline hover:text-green-500'
+            target='blank'
+          >
+            134
+          </Link>{' '}
           individual issues encompassing various programming languages,
           libraries and frameworks.
         </p>
