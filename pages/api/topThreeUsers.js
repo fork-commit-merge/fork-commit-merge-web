@@ -16,7 +16,9 @@ export default async (req, res) => {
       await storeTopThreeUsersInDb(data);
     }
 
-    return res.status(200).json(data);
+    const topThreeData = data.slice(0, 3);
+
+    return res.status(200).json(topThreeData);
   } catch (error) {
     console.error("API Error:", error);
     return res.status(500).json({ error: "Internal Server Error" });
