@@ -6,6 +6,7 @@ export default authMiddleware({
     '/resources',
     '/faq',
     '/ide',
+    '/ai',
     '/community/discussions',
     '/community/events',
     '/frameworks/expressjs',

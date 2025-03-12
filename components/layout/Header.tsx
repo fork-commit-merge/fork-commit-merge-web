@@ -139,14 +139,15 @@ const Header = () => {
                     Resources
                   </Link>
                 </li>
-                {/* <li>
+                <li>
                   <Link
-                    href='/leaderboard'
+                    href='/ai'
+                    onClick={() => setIsOpen(false)}
                     className='hover:/75 block cursor-pointer px-4 py-2 text-sm font-medium hover:text-gray-300'
                   >
-                    Leaderboard
+                    AI Tools
                   </Link>
-                </li> */}
+                </li>
                 <li>
                   <Link href='/ide' onClick={() => setIsOpen(false)}>
                     <div className='hover:/75 block cursor-pointer px-4 py-2 text-sm font-medium hover:text-gray-300'>
@@ -424,11 +425,11 @@ const Header = () => {
               Resources
             </div>
           </Link>
-          {/* <Link href='/leaderboard' onClick={() => setIsOpen(false)}>
+          <Link href='/ai' onClick={() => setIsOpen(false)}>
             <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
-              Leaderboard
+              AI Tools
             </div>
-          </Link> */}
+          </Link>
 
           <li className='ml-6 mt-4 inline-flex overflow-hidden rounded-md bg-white shadow-sm'>
             <div className='inline-block border-e px-2 py-0.5 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:relative'>
