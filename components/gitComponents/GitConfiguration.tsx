@@ -1,9 +1,15 @@
 const GitConfiguration = () => {
   return (
-    <div className="flex justify-center items-center bg-primary">
-      <div className="text-center  max-w-2xl">
-        <h1 className="text-3xl font-bold mb-10">Git Configuration</h1>
-
+    <div className="bg-primary min-h-screen">
+      <div className="w-full bg-cover bg-center" style={{ backgroundImage: "url('/git.png')" }}>
+        <div className="mb-10 flex flex-col items-center justify-center p-24 text-center text-white">
+          <h1 className="text-4xl font-bold">Git Configuration</h1>
+          <p className="mt-4 text-xl">
+            Setting up and customizing your Git environment
+          </p>
+        </div>
+      </div>
+      <div className="text-center max-w-2xl mx-auto px-4">
         <h2 className="text-2xl font-bold mb-4">What is Git Configuration?</h2>
         <p className="mb-4">
           Git configuration refers to the settings that define the behavior,

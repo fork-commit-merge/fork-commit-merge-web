@@ -5,6 +5,7 @@ import GitBranchingSelection from '../../components/gitComponents/GitBranchingSe
 import GitConflicts from '../../components/gitComponents/GitConflicts'
 import GitConfiguration from '../../components/gitComponents/GitConfiguration'
 import GitWorkflow from '../../components/gitComponents/GitWorkflow'
+import ConventionalCommits from '../../components/gitComponents/ConventionalCommits'
 
 const Git = () => {
   const router = useRouter()
@@ -13,81 +14,23 @@ const Git = () => {
   const renderContent = () => {
     switch (git) {
       case 'git-commands':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/git.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>Git</h1>
-              </div>
-            </div>
-            <GitCommandsSelection />
-          </div>
-        )
+        return <GitCommandsSelection />
       case 'git-branching':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/git.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>Git</h1>
-              </div>
-            </div>
-            <GitBranchingSelection />
-          </div>
-        )
+        return <GitBranchingSelection />
       case 'git-conflicts':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/git.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>Git</h1>
-              </div>
-            </div>
-            <GitConflicts />
-          </div>
-        )
+        return <GitConflicts />
       case 'git-configuration':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/git.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>Git</h1>
-              </div>
-            </div>
-            <GitConfiguration />
-          </div>
-        )
+        return <GitConfiguration />
       case 'git-workflow':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/git.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>Git</h1>
-              </div>
-            </div>
-            <GitWorkflow />
-          </div>
-        )
+        return <GitWorkflow />
+      case 'conventional-commits':
+        return <ConventionalCommits />
       default:
         return <SelectionNotSupported />
     }
   }
 
-  return <div className='bg-primary pb-10'>{renderContent()}</div>
+  return <>{renderContent()}</>
 }
 
 export default Git
