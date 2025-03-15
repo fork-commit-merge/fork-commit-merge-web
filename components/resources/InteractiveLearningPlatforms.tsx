@@ -14,15 +14,15 @@ const InteractiveLearningPlatforms: React.FC = () => {
             coding or looking to learn a new language or skill, these resources
             can help you on your journey.
           </p>
-          <ul className="list-disc pl-5">
+          <ul className="space-y-2">
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.codecademy.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Codecademy
+                <span className="font-medium">Codecademy</span>
               </a>
             </li>
             <li>
@@ -30,9 +30,9 @@ const InteractiveLearningPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.udemy.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Udemy
+                <span className="font-medium">Udemy</span>
               </a>
             </li>
             <li>
@@ -40,9 +40,9 @@ const InteractiveLearningPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.coursera.org/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Coursera
+                <span className="font-medium">Coursera</span>
               </a>
             </li>
             <li>
@@ -50,9 +50,9 @@ const InteractiveLearningPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://brilliant.org/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Brilliant
+                <span className="font-medium">Brilliant</span>
               </a>
             </li>
             <li>
@@ -60,9 +60,9 @@ const InteractiveLearningPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://teamtreehouse.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Treehouse
+                <span className="font-medium">Treehouse</span>
               </a>
             </li>
           </ul>

@@ -13,15 +13,15 @@ const JobSearchingPlatforms: React.FC = () => {
             there? These job searching platforms are specifically tailored for
             tech roles and can help you find your next opportunity.
           </p>
-          <ul className="list-disc pl-5">
+          <ul className="space-y-2">
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://wellfound.com/jobs"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Wellfound Jobs
+                <span className="font-medium">Wellfound Jobs</span>
               </a>
             </li>
             <li>
@@ -29,9 +29,9 @@ const JobSearchingPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.hired.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Hired
+                <span className="font-medium">Hired</span>
               </a>
             </li>
             <li>
@@ -39,9 +39,9 @@ const JobSearchingPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.dice.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Dice
+                <span className="font-medium">Dice</span>
               </a>
             </li>
             <li>
@@ -49,9 +49,9 @@ const JobSearchingPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.upwork.com/work/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Upwork
+                <span className="font-medium">Upwork</span>
               </a>
             </li>
             <li>
@@ -59,9 +59,9 @@ const JobSearchingPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://builtin.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Built In
+                <span className="font-medium">Built In</span>
               </a>
             </li>
             <li>
@@ -69,9 +69,9 @@ const JobSearchingPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.hiretechladies.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Tech Ladies
+                <span className="font-medium">Tech Ladies</span>
               </a>
             </li>
             <li>
@@ -79,9 +79,9 @@ const JobSearchingPlatforms: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.outreachy.org/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Outreachy
+                <span className="font-medium">Outreachy</span>
               </a>
             </li>
           </ul>

@@ -14,15 +14,15 @@ const GitAndGitHubDocumentation: React.FC = () => {
             using Git and GitHub, including the official documentation and
             additional helpful tutorials.
           </p>
-          <ul className="list-disc pl-5">
+          <ul className="space-y-2">
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://git-scm.com/doc"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Official Git Documentation
+                <span className="font-medium">Official Git Documentation</span>
               </a>
             </li>
             <li>
@@ -30,9 +30,9 @@ const GitAndGitHubDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://docs.github.com/en"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Official GitHub Documentation
+                <span className="font-medium">Official GitHub Documentation</span>
               </a>
             </li>
             <li>
@@ -40,9 +40,9 @@ const GitAndGitHubDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.atlassian.com/git/tutorials"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Atlassian Git Tutorial
+                <span className="font-medium">Atlassian Git Tutorial</span>
               </a>
             </li>
             <li>
@@ -50,9 +50,9 @@ const GitAndGitHubDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                W3Schools GitHub Tutorial
+                <span className="font-medium">W3Schools GitHub Tutorial</span>
               </a>
             </li>
             <li>
@@ -60,9 +60,9 @@ const GitAndGitHubDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.w3schools.com/git/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                W3Schools Git Tutorial
+                <span className="font-medium">W3Schools Git Tutorial</span>
               </a>
             </li>
           </ul>

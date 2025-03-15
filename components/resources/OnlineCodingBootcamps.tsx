@@ -14,15 +14,15 @@ const OnlineCodingBootcamps: React.FC = () => {
             and project-based learning to help you build a solid foundation in
             software development.
           </p>
-          <ul className="list-disc pl-5">
+          <ul className="space-y-2">
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.appacademy.io/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                App Academy
+                <span className="font-medium">App Academy</span>
               </a>
             </li>
             <li>
@@ -30,9 +30,9 @@ const OnlineCodingBootcamps: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://lambdaschool.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Lambda School
+                <span className="font-medium">Lambda School</span>
               </a>
             </li>
             <li>
@@ -40,9 +40,9 @@ const OnlineCodingBootcamps: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://generalassemb.ly/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                General Assembly
+                <span className="font-medium">General Assembly</span>
               </a>
             </li>
             <li>
@@ -50,9 +50,9 @@ const OnlineCodingBootcamps: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://launchschool.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Launch School
+                <span className="font-medium">Launch School</span>
               </a>
             </li>
             <li>
@@ -60,9 +60,9 @@ const OnlineCodingBootcamps: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://careerfoundry.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Career Foundry
+                <span className="font-medium">Career Foundry</span>
               </a>
             </li>
             <li>
@@ -70,9 +70,9 @@ const OnlineCodingBootcamps: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://brainstation.io/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Brain Station
+                <span className="font-medium">Brain Station</span>
               </a>
             </li>
           </ul>

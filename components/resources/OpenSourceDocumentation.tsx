@@ -15,15 +15,15 @@ const OpenSourceDocumentation: React.FC = () => {
             skills, work on real-world projects, and potentially make a
             meaningful impact in the software that people use every day.
           </p>
-          <ul className="list-disc pl-5">
+          <ul className="space-y-2">
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://opensource.guide/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Introduction to Open Source
+                <span className="font-medium">Introduction to Open Source</span>
               </a>
             </li>
             <li>
@@ -31,9 +31,9 @@ const OpenSourceDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/firstcontributions/first-contributions"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                First Contributions on GitHub
+                <span className="font-medium">First Contributions on GitHub</span>
               </a>
             </li>
             <li>
@@ -41,9 +41,9 @@ const OpenSourceDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.codecademy.com/articles/what-is-open-source"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                What is Open Source?
+                <span className="font-medium">What is Open Source?</span>
               </a>
             </li>
             <li>
@@ -51,9 +51,9 @@ const OpenSourceDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://opensource.org/resources"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Open Source Initiative Resources
+                <span className="font-medium">Open Source Initiative Resources</span>
               </a>
             </li>
             <li>
@@ -61,9 +61,9 @@ const OpenSourceDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://stackoverflow.blog/2020/08/03/getting-started-with-contributing-to-open-source/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Getting Started With Contributing to Open Source
+                <span className="font-medium">Getting Started With Contributing to Open Source</span>
               </a>
             </li>
             <li>
@@ -71,9 +71,9 @@ const OpenSourceDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.makeuseof.com/how-to-contribute-to-open-source-projects//"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                How to Contribute to Open Source Projects
+                <span className="font-medium">How to Contribute to Open Source Projects</span>
               </a>
             </li>
             <li>
@@ -81,9 +81,9 @@ const OpenSourceDocumentation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.opensourceagenda.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Open Source Agenda. Discover the best free open source software projects
+                <span className="font-medium">Open Source Agenda. Discover the best free open source software projects</span>
               </a>
             </li>
           </ul>

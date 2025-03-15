@@ -13,15 +13,15 @@ const CodingChallenges: React.FC = () => {
             solving challenges on these platforms. They offer problems of
             various difficulty levels in multiple programming languages.
           </p>
-          <ul className="list-disc pl-5">
+          <ul className="space-y-2">
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.hackerrank.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                HackerRank
+                <span className="font-medium">HackerRank</span>
               </a>
             </li>
             <li>
@@ -29,9 +29,9 @@ const CodingChallenges: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://leetcode.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                LeetCode
+                <span className="font-medium">LeetCode</span>
               </a>
             </li>
             <li>
@@ -39,9 +39,9 @@ const CodingChallenges: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.codewars.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                CodeWars
+                <span className="font-medium">CodeWars</span>
               </a>
             </li>
             <li>
@@ -49,9 +49,9 @@ const CodingChallenges: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.codechef.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                CodeChef
+                <span className="font-medium">CodeChef</span>
               </a>
             </li>
           </ul>

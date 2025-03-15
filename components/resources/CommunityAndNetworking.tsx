@@ -13,15 +13,15 @@ const CommunityAndNetworking: React.FC = () => {
             questions, and find answers to your coding challenges. They are a
             great place to learn and share knowledge.
           </p>
-          <ul className="list-disc pl-5">
+          <ul className="space-y-2">
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://stackoverflow.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Stack Overflow
+                <span className="font-medium">Stack Overflow</span>
               </a>
             </li>
             <li>
@@ -29,9 +29,9 @@ const CommunityAndNetworking: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://dev.to/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Dev.to
+                <span className="font-medium">Dev.to</span>
               </a>
             </li>
             <li>
@@ -39,9 +39,9 @@ const CommunityAndNetworking: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.reddit.com/r/programming/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Reddit Programming
+                <span className="font-medium">Reddit Programming</span>
               </a>
             </li>
             <li>
@@ -49,9 +49,9 @@ const CommunityAndNetworking: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://codeandcoffee.org/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Code and Coffee
+                <span className="font-medium">Code and Coffee</span>
               </a>
             </li>
             <li>
@@ -59,9 +59,9 @@ const CommunityAndNetworking: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://discord.me/coding"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                The Programmer&apos;s Hangout
+                <span className="font-medium">The Programmer&apos;s Hangout</span>
               </a>
             </li>
             <li>
@@ -69,9 +69,9 @@ const CommunityAndNetworking: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://hashnode.com/"
-                className="hover:underline text-blue-400"
+                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
               >
-                Hash Node
+                <span className="font-medium">Hash Node</span>
               </a>
             </li>
           </ul>
