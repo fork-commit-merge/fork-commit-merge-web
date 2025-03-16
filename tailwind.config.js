@@ -22,9 +22,17 @@ module.exports = {
       },
       colors: {
         slate: {
-          920: "#191C3C",
-          960: "#191730",
+          920: "#13111C",
+          960: "#0F0D15",
         },
+        purple: {
+          850: "#2D2B55",
+          900: "#1E1E3F",
+        },
+        accent: {
+          primary: "#6C5CE7",
+          secondary: "#A3A0FB",
+        }
       },
       padding: {
         25: "7.3rem",
