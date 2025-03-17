@@ -75,43 +75,58 @@ const Header = () => {
   }
 
   const toggleLanguageDropdown = () => {
-    setLanguageDropdownOpen(!isLanguageDropdownOpen)
-    setFrameworkDropdownOpen(false)
-    setGitSelectionDropdownOpen(false)
-    setRoadmapDropdownOpen(false)
-    setCommunityDropdownOpen(false)
+    setLanguageDropdownOpen(!isLanguageDropdownOpen);
+    if (!isLanguageDropdownOpen) {
+      window.dispatchEvent(new Event('dropdownOpened'));
+    }
+    setFrameworkDropdownOpen(false);
+    setGitSelectionDropdownOpen(false);
+    setRoadmapDropdownOpen(false);
+    setCommunityDropdownOpen(false);
   }
 
   const toggleFrameworkDropdown = () => {
-    setFrameworkDropdownOpen(!isFrameworkDropdownOpen)
-    setLanguageDropdownOpen(false)
-    setGitSelectionDropdownOpen(false)
-    setRoadmapDropdownOpen(false)
-    setCommunityDropdownOpen(false)
+    setFrameworkDropdownOpen(!isFrameworkDropdownOpen);
+    if (!isFrameworkDropdownOpen) {
+      window.dispatchEvent(new Event('dropdownOpened'));
+    }
+    setLanguageDropdownOpen(false);
+    setGitSelectionDropdownOpen(false);
+    setRoadmapDropdownOpen(false);
+    setCommunityDropdownOpen(false);
   }
 
   const toggleGitSelectionDropdown = () => {
-    setGitSelectionDropdownOpen(!isGitSelectionDropdownOpen)
-    setLanguageDropdownOpen(false)
-    setFrameworkDropdownOpen(false)
-    setRoadmapDropdownOpen(false)
-    setCommunityDropdownOpen(false)
+    setGitSelectionDropdownOpen(!isGitSelectionDropdownOpen);
+    if (!isGitSelectionDropdownOpen) {
+      window.dispatchEvent(new Event('dropdownOpened'));
+    }
+    setLanguageDropdownOpen(false);
+    setFrameworkDropdownOpen(false);
+    setRoadmapDropdownOpen(false);
+    setCommunityDropdownOpen(false);
   }
 
   const toggleRoadmapDropdown = () => {
-    setRoadmapDropdownOpen(!isRoadmapDropdownOpen)
-    setLanguageDropdownOpen(false)
-    setFrameworkDropdownOpen(false)
-    setGitSelectionDropdownOpen(false)
-    setCommunityDropdownOpen(false)
+    setRoadmapDropdownOpen(!isRoadmapDropdownOpen);
+    if (!isRoadmapDropdownOpen) {
+      window.dispatchEvent(new Event('dropdownOpened'));
+    }
+    setLanguageDropdownOpen(false);
+    setFrameworkDropdownOpen(false);
+    setGitSelectionDropdownOpen(false);
+    setCommunityDropdownOpen(false);
   }
 
   const toggleCommunityDropdown = () => {
-    setCommunityDropdownOpen(!isCommunityDropdownOpen)
-    setLanguageDropdownOpen(false)
-    setFrameworkDropdownOpen(false)
-    setGitSelectionDropdownOpen(false)
-    setRoadmapDropdownOpen(false)
+    setCommunityDropdownOpen(!isCommunityDropdownOpen);
+    if (!isCommunityDropdownOpen) {
+      window.dispatchEvent(new Event('dropdownOpened'));
+    }
+    setLanguageDropdownOpen(false);
+    setFrameworkDropdownOpen(false);
+    setGitSelectionDropdownOpen(false);
+    setRoadmapDropdownOpen(false);
   }
 
   return (
@@ -269,10 +284,12 @@ const Header = () => {
               </span>
             </Link>
           )}
-          <div className='ml-6 pt-2 flex items-center gap-2'>
-            <ThemeSelector />
-            {isLoaded && user && <UserButton afterSignOutUrl='/' />}
-          </div>
+          {isLoaded && user && (
+            <div className='ml-6 pt-2 flex flex-col items-start gap-2'>
+              <UserButton afterSignOutUrl='/' />
+              <ThemeSelector />
+            </div>
+          )}
 
           <Link href='/' onClick={() => setIsOpen(false)}>
             <div className='mb-3 mt-4 block cursor-pointer px-6 text-sm transition-transform hover:scale-105'>
@@ -294,7 +311,7 @@ const Header = () => {
               Languages
             </div>
             {isLanguageDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                 {languageList.map((lang, index) => (
                   <li
                     key={index}
@@ -303,7 +320,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                       {lang.name}
                     </div>
                   </li>
@@ -319,7 +336,7 @@ const Header = () => {
               Frameworks | Libraries
             </div>
             {isFrameworkDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                 {frameworkList.map((framework, index) => (
                   <li
                     key={index}
@@ -328,7 +345,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                       {framework.name}
                     </div>
                   </li>
@@ -344,7 +361,7 @@ const Header = () => {
               Git
             </div>
             {isGitSelectionDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                 {gitList.map((git, index) => (
                   <li
                     key={index}
@@ -353,7 +370,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                       {git.name}
                     </div>
                   </li>
@@ -369,7 +386,7 @@ const Header = () => {
               Roadmaps
             </div>
             {isRoadmapDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                 {roadmapList.map((roadmap, index) => (
                   <li
                     key={index}
@@ -378,7 +395,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                       {roadmap.name}
                     </div>
                   </li>
@@ -394,7 +411,7 @@ const Header = () => {
               Community
             </div>
             {isCommunityDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                 {communityList.map((community, index) => (
                   <li
                     key={index}
@@ -403,7 +420,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                       {community.name}
                     </div>
                   </li>
@@ -535,13 +552,13 @@ const Header = () => {
                   Languages
                 </div>
                 {isLanguageDropdownOpen && (
-                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg backdrop-blur-lg'>
+                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg backdrop-blur-lg'>
                     {languageList.map((lang, index) => (
                       <li
                         key={index}
                         onClick={() => navigateToLanguage(lang.link)}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                           {lang.name}
                         </div>
                       </li>
@@ -557,13 +574,13 @@ const Header = () => {
                   Frameworks | Libraries
                 </div>
                 {isFrameworkDropdownOpen && (
-                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                     {frameworkList.map((framework, index) => (
                       <li
                         key={index}
                         onClick={() => navigateToFramework(framework.link)}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                           {framework.name}
                         </div>
                       </li>
@@ -579,7 +596,7 @@ const Header = () => {
                   Git
                 </div>
                 {isGitSelectionDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+                  <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                     {gitList.map((git, index) => (
                       <li
                         key={index}
@@ -588,7 +605,7 @@ const Header = () => {
                           setIsOpen(false)
                         }}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                           {git.name}
                         </div>
                       </li>
@@ -604,7 +621,7 @@ const Header = () => {
                   Roadmaps
                 </div>
                 {isRoadmapDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+                  <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                     {roadmapList.map((roadmap, index) => (
                       <li
                         key={index}
@@ -613,7 +630,7 @@ const Header = () => {
                           setIsOpen(false)
                         }}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                           {roadmap.name}
                         </div>
                       </li>
@@ -629,7 +646,7 @@ const Header = () => {
                   Community
                 </div>
                 {isCommunityDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-slate-920 py-1 shadow-lg'>
+                  <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
                     {communityList.map((community, index) => (
                       <li
                         key={index}
@@ -638,7 +655,7 @@ const Header = () => {
                           setIsOpen(false)
                         }}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm hover:bg-slate-800'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
                           {community.name}
                         </div>
                       </li>

@@ -9,30 +9,35 @@
   --color-bronze: #bb752e;
   --bg-primary: var(--theme-primary, #13111C);
   --bg-secondary: var(--theme-secondary, #0F0D15);
+  --bg-hover: var(--theme-hover, #0a0814);
   --accent-color: var(--theme-accent, #6C5CE7);
 }
 
 .theme-blue {
   --theme-primary: #13111C;
   --theme-secondary: #0F0D15;
+  --theme-hover: #0a0814;
   --theme-accent: #6C5CE7;
 }
 
 .theme-green {
   --theme-primary: #0F1B0F;
   --theme-secondary: #0A140A;
+  --theme-hover: #050a05;
   --theme-accent: #4CAF50;
 }
 
 .theme-red {
   --theme-primary: #1B0F0F;
   --theme-secondary: #140A0A;
+  --theme-hover: #0a0505;
   --theme-accent: #EF4444;
 }
 
 .theme-yellow {
   --theme-primary: #1B1A0F;
   --theme-secondary: #14130A;
+  --theme-hover: #0a0905;
   --theme-accent: #F59E0B;
 }
 
