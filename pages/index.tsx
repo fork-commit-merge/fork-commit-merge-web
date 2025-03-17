@@ -8,8 +8,8 @@ import { testimonials } from '../components/data/testimonials'
 
 export default function Home() {
   return (
-    <div>
-      <main className='bg-secondary flex min-h-screen flex-col items-center justify-center px-4 text-center sm:px-6 md:px-0'>
+    <div className="w-full">
+      <main className='bg-secondary min-h-screen w-full flex flex-col items-center'>
         <div
           className='mx-auto mt-6 overflow-hidden rounded-md'
           style={{ width: 100, height: 100 }}
@@ -25,25 +25,38 @@ export default function Home() {
         <IndexMain />
         <IndexIntro />
       </main>
-      <div className='mx-auto flex max-w-3xl items-center justify-center text-center'>
-        <p className='pt-8 text-2xl leading-7 text-gray-300'>
-          Here are some key aspects of the repository that make it unique and
-          enriching for every developer:
-        </p>
-      </div>
-      <div className='bg-secondary pt-10'>
-        <div className='mx-auto grid max-w-5xl grid-cols-1 gap-20 pb-6  md:grid-cols-2'>
-          <Descriptions />
+
+      <section className='w-full bg-secondary'>
+        <div className='w-full px-4 py-8'>
+          <p className='mx-auto max-w-3xl text-center text-2xl leading-7 text-gray-300'>
+            Here are some key aspects of the repository that make it unique and
+            enriching for every developer:
+          </p>
         </div>
-        <div className='bg-primary'>
-          <div className='mx-4'>
+      </section>
+
+      <section className='w-full bg-secondary'>
+        <div className='w-full px-4 pt-10'>
+          <div className='mx-auto max-w-5xl grid grid-cols-1 gap-20 pb-6 md:grid-cols-2'>
+            <Descriptions />
+          </div>
+        </div>
+      </section>
+
+      <section className='w-full bg-primary'>
+        <div className='w-full px-4'>
+          <div className='mx-auto max-w-7xl'>
             {testimonials.map((testimonial, index) => (
               <Testimonials key={index} testimonial={testimonial} />
             ))}
           </div>
         </div>
-      </div>
-      <div className='bg-primary pb-10' />
+      </section>
+
+      <div className='w-full bg-primary pb-10' />
     </div>
   )
 }
+
+
+

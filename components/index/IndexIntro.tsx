@@ -19,7 +19,7 @@ const IndexIntro: React.FC = () => {
   }
 
   return (
-    <div className='bg-primary w-full pb-10 pt-6'>
+    <div className='bg-primary w-full px-4 pb-10 pt-6'>
       <div className='mx-auto max-w-2xl'>
         <h2 className='my-4 text-4xl font-bold'>
           About the Fork, Commit, Merge project
