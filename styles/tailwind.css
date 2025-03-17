@@ -7,8 +7,33 @@
   --ff-secondary: "Ubuntu", sans-serif;
   --fc-primary: #fcfbff;
   --color-bronze: #bb752e;
-  --bg-primary: #13111C;
-  --bg-secondary: #0F0D15;
+  --bg-primary: var(--theme-primary, #13111C);
+  --bg-secondary: var(--theme-secondary, #0F0D15);
+  --accent-color: var(--theme-accent, #6C5CE7);
+}
+
+.theme-blue {
+  --theme-primary: #13111C;
+  --theme-secondary: #0F0D15;
+  --theme-accent: #6C5CE7;
+}
+
+.theme-green {
+  --theme-primary: #0F1B0F;
+  --theme-secondary: #0A140A;
+  --theme-accent: #4CAF50;
+}
+
+.theme-red {
+  --theme-primary: #1B0F0F;
+  --theme-secondary: #140A0A;
+  --theme-accent: #EF4444;
+}
+
+.theme-yellow {
+  --theme-primary: #1B1A0F;
+  --theme-secondary: #14130A;
+  --theme-accent: #F59E0B;
 }
 
 .bg-primary {

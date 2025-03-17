@@ -15,6 +15,7 @@ import { gitList } from '../data/gitList'
 import { roadmapList } from '../data/roadmapList'
 import { communityList } from '../data/communityList'
 import { UserButton, useUser } from '@clerk/nextjs'
+import ThemeSelector from '../ThemeSelector';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -268,7 +269,8 @@ const Header = () => {
               </span>
             </Link>
           )}
-          <div className='ml-6 pt-2'>
+          <div className='ml-6 pt-2 flex items-center gap-2'>
+            <ThemeSelector />
             {isLoaded && user && <UserButton afterSignOutUrl='/' />}
           </div>
 
@@ -658,7 +660,8 @@ const Header = () => {
               )}
 
               {isLoaded && user && (
-                <div className='pl-4'>
+                <div className='pl-4 flex items-center gap-2'>
+                  <ThemeSelector />
                   <UserButton afterSignOutUrl='/' />
                 </div>
               )}

@@ -21,6 +21,28 @@ module.exports = {
         1000: "1000ms",
       },
       colors: {
+        themes: {
+          blue: {
+            primary: "#13111C",
+            secondary: "#0F0D15",
+            accent: "#6C5CE7",
+          },
+          green: {
+            primary: "#0F1B0F",
+            secondary: "#0A140A",
+            accent: "#4CAF50",
+          },
+          red: {
+            primary: "#1B0F0F",
+            secondary: "#140A0A",
+            accent: "#EF4444",
+          },
+          yellow: {
+            primary: "#1B1A0F",
+            secondary: "#14130A",
+            accent: "#F59E0B",
+          },
+        },
         slate: {
           920: "#13111C",
           960: "#0F0D15",
