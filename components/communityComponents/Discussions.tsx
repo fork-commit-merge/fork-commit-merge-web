@@ -57,7 +57,7 @@ const Discussions = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/nikohoffren/fork-commit-merge/discussions"
-            className="text-sm  bg-slate-900 hover:bg-slate-800 my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider font-primary"
+            className="text-sm my-8 pt-4 px-8 pb-5 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 font-semibold tracking-wider font-primary themed-button"
             style={{
               wordWrap: "break-word",
               display: "inline-block",

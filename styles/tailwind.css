@@ -41,6 +41,16 @@
   --theme-accent: #F59E0B;
 }
 
+.themed-button {
+  background-color: var(--theme-accent);
+  transition: all 0.3s ease-in-out;
+}
+
+.themed-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
 .bg-primary {
   background-color: var(--bg-primary);
 }
@@ -127,3 +137,4 @@ code {
     background-position: -200% 0;
   }
 }
+

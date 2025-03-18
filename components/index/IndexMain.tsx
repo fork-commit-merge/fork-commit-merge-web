@@ -53,9 +53,9 @@ const IndexMain: React.FC = () => {
         </React.Suspense>
       </div>
 
-      <div className='bg-secondary w-full'>
+      <div className='bg-secondary w-full mb-4'>
         <div className='mx-auto max-w-4xl py-6'>
-          <div className='px-4 text-xl font-light text-center'>
+          <div className='px-4 text-center text-xl font-light'>
             <code>Fork, Commit, Merge</code> is your one-stop resource hub for
             mastering GitHub contributions! Whether you&apos;re a novice coder
             or an experienced developer, our comprehensive guides are designed
@@ -76,7 +76,7 @@ const IndexMain: React.FC = () => {
             <Link
               href='https://github.com/nikohoffren/fork-commit-merge'
               target='blank'
-              className='font-primary my-8 transform rounded-md bg-slate-900 px-8 pb-5 pt-4 text-2xl font-semibold tracking-wider shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-800'
+              className='font-primary themed-button my-8 transform rounded-md px-8 pb-5 pt-4 text-2xl font-semibold tracking-wider text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105'
             >
               GET STARTED
             </Link>
@@ -88,6 +88,7 @@ const IndexMain: React.FC = () => {
 }
 
 export default IndexMain
+
 
 
 
