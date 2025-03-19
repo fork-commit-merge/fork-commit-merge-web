@@ -3,8 +3,6 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --ff-primary: "Ysabeau Infant", sans-serif;
-  --ff-secondary: "Ubuntu", sans-serif;
   --fc-primary: #fcfbff;
   --color-bronze: #bb752e;
   --bg-primary: var(--theme-primary, #13111C);
@@ -83,9 +81,11 @@ body {
   background-color: var(--bg-secondary);
 }
 
+/* Remove these since we're using next/font now
 .font-primary {
   font-family: var(--ff-primary);
 }
+*/
 
 .contributor-images {
   display: flex;
@@ -151,5 +151,6 @@ code {
     background-position: -200% 0;
   }
 }
+
 
 

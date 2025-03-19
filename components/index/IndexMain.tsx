@@ -26,7 +26,7 @@ const IndexMain: React.FC = () => {
   return (
     <div className='w-full'>
       <div className='px-4 text-center'>
-        <h1 className='font-primary text-5xl font-bold'>
+        <h1 className='font-primary text-5xl font-bold pt-4'>
           Welcome to Fork, Commit, Merge
         </h1>
         <p className='font-primary mb-7 mt-4 text-2xl'>
@@ -38,8 +38,9 @@ const IndexMain: React.FC = () => {
       <div className='bg-primary w-full'>
         <div className='w-full pt-10 pb-6'>
           <p className='font-primary text-center text-2xl leading-8'>
-            Become a part of our community of over 700 inspiring developers who
-            have already contributed to this project!
+            Become a part of our community of over 700 inspiring developers
+            <span className='hidden md:inline'><br /></span>
+            {' '}who have already contributed to this project!
           </p>
         </div>
         <div className="pb-4">
@@ -90,6 +91,8 @@ const IndexMain: React.FC = () => {
 }
 
 export default IndexMain
+
+
 
 
 

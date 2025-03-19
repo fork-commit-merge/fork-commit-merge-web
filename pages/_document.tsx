@@ -1,33 +1,14 @@
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext
-} from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-class DocumentExtension extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
-  }
-
+export default class DocumentExtension extends Document {
   render() {
     return (
       <Html>
         <Head>
           <link
-            href='https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap'
-            rel='stylesheet'
-          />
-          <link
             rel='icon'
             type='image/png'
             href='/fork-commit-merge-logo-favicon.png'
-          />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'
-            rel='stylesheet'
           />
           <script
             async
@@ -78,4 +59,5 @@ class DocumentExtension extends Document {
   }
 }
 
-export default DocumentExtension
+
+
