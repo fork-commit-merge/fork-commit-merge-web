@@ -5389,4 +5389,42 @@ export const contributorData = [
       'https://avatars.githubusercontent.com/u/96137455?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'amanahsan01'
   },
+  {
+    id: 'VarishSanghvi',
+    url: 'https://github.com/VarishSanghvi',
+    avatar:
+      'https://avatars.githubusercontent.com/u/161422712?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'VarishSanghvi'
+  },
+  {
+    id: 'imShubh03',
+    url: 'https://github.com/imShubh03',
+    avatar:
+      'https://avatars.githubusercontent.com/u/142776806?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'imShubh03'
+  },
+  {
+    id: 'tvyoung',
+    url: 'https://github.com/tvyoung',
+    avatar:
+      'https://avatars.githubusercontent.com/u/81390891?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'tvyoung'
+  },
+  {
+    id: 'fabrinucci',
+    url: 'https://github.com/fabrinucci',
+    avatar:
+      'https://avatars.githubusercontent.com/u/73539314?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'fabrinucci'
+  },
+  {
+    id: 'pkj-web',
+    url: 'https://github.com/pkj-web',
+    avatar:
+      'https://avatars.githubusercontent.com/u/130211933?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
+    name: 'pkj-web'
+  }
 ]
+
+
+
