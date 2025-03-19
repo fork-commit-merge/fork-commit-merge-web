@@ -36,13 +36,15 @@ const IndexMain: React.FC = () => {
       </div>
 
       <div className='bg-primary w-full'>
-        <div className='w-full py-10'>
+        <div className='w-full pt-10 pb-6'>
           <p className='font-primary text-center text-2xl leading-8'>
             Become a part of our community of over 700 inspiring developers who
             have already contributed to this project!
           </p>
         </div>
-        <TopThreeContributors />
+        <div className="pb-4">
+          <TopThreeContributors />
+        </div>
 
         <React.Suspense>
           <div className='hidden md:block'>
@@ -88,6 +90,7 @@ const IndexMain: React.FC = () => {
 }
 
 export default IndexMain
+
 
 
 

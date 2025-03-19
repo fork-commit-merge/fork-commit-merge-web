@@ -37,7 +37,7 @@ export default function Dashboard() {
         )
         setPullRequests(response.data)
       } catch (error) {
-        console.error('Error:', error)
+        // Silent fail
       } finally {
         setIsLoading(false)
       }
@@ -188,3 +188,4 @@ export default function Dashboard() {
 //     )
 //   }
 // }
+

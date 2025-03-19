@@ -1,58 +1,51 @@
-import axios from "axios";
+import axios from 'axios';
 
-type UserStat = {
-  username: string;
-  prCount: number;
-  avatarUrl: string;
-};
+export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
+  try {
+    const headers = {
+      Authorization: `token ${process.env.GITHUB_TOKEN}`,
+      Accept: 'application/vnd.github.v3+json',
+    };
 
-export const fetchTopThreeUsersByPullRequests = async (
-  repo: string
-): Promise<UserStat[]> => {
-  let url = `https://api.github.com/repos/${repo}/pulls?state=closed&per_page=100`;
-  const userStats: { [key: string]: { prCount: number; avatarUrl: string } } =
-    {};
+    const response = await axios.get(
+      `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`,
+      { headers }
+    );
 
-  while (url) {
-    const response = await axios.get(url);
-    const prData = response.data;
+    const pullRequests = response.data;
+    const userContributions = new Map();
 
-    prData.forEach((pr: any) => {
-      if (pr.merged_at) {
-        const username = pr.user.login;
+    pullRequests.forEach((pr: any) => {
+      const username = pr.user.login;
 
-        //* Ignore dependabot and nikohoffren PRs
-        if (
-          username === "dependabot" ||
+      // Skip dependabot contributions
+      if (username === "dependabot" ||
           username === "dependabot[bot]" ||
-          username === "nikohoffren"
-        ) {
-          return;
-        }
+          username === "nikohoffren") {
+        return;
+      }
 
-        const avatarUrl = pr.user.avatar_url;
-        userStats[username] = {
-          prCount: (userStats[username]?.prCount || 0) + 1,
-          avatarUrl,
-        };
+      if (pr.merged_at) { // Only count merged PRs
+        userContributions.set(username, (userContributions.get(username) || 0) + 1);
       }
     });
 
-    const linkHeader = response.headers.link;
-    const nextLink = linkHeader
-      ? linkHeader.split(",").find((s: string) => s.includes('rel="next"'))
-      : null;
-    url = nextLink ? nextLink.match(/<(.*)>/)?.[1] : null;
+    const sortedUsers = Array.from(userContributions.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .map(([username, count]) => ({
+        username,
+        contributions: count,
+        avatarUrl: pullRequests.find((pr: any) => pr.user.login === username).user
+          .avatar_url,
+      }));
+
+    return sortedUsers;
+  } catch (error) {
+    console.error('API Error:', error);
+    return [];
   }
+}
 
-  const sortedUsers: UserStat[] = Object.entries(userStats)
-    .sort(([, a], [, b]) => b.prCount - a.prCount)
-    .slice(0, 3)
-    .map(([username, { prCount, avatarUrl }]) => ({
-      username,
-      prCount,
-      avatarUrl,
-    }));
 
-  return sortedUsers;
-};
+

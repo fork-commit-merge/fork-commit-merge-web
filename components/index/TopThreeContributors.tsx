@@ -21,8 +21,13 @@ const TopThreeContributors: FC = () => {
       .get('/api/topThreeUsers')
       .then(response => {
         const fetchedData = response.data
-        const mappedData: Contributor[] = fetchedData.map(
-          (userStat: { username: any; avatarUrl: any }, index: number) => {
+        const mappedData: Contributor[] = fetchedData
+          .filter((userStat: { username: string }) =>
+            userStat.username !== 'dependabot' &&
+            userStat.username !== 'dependabot[bot]' &&
+            userStat.username !== 'nikohoffren'
+          )
+          .map((userStat: { username: any; avatarUrl: any }, index: number) => {
             return {
               id: userStat.username,
               url: `https://github.com/${userStat.username}`,
@@ -30,8 +35,7 @@ const TopThreeContributors: FC = () => {
               name: userStat.username,
               rank: index + 1
             }
-          }
-        )
+          })
         setContributors(mappedData)
         setIsLoading(false)
       })
@@ -96,3 +100,4 @@ const TopThreeContributors: FC = () => {
 }
 
 export { TopThreeContributors }
+

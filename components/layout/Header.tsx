@@ -35,15 +35,19 @@ const Header = () => {
   const { user, isLoaded } = useUser()
 
   useEffect(() => {
-    fetch('https://api.github.com/repos/nikohoffren/fork-commit-merge')
+    fetch('https://api.github.com/repos/nikohoffren/fork-commit-merge', {
+      headers: {
+        Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+      },
+    })
       .then(response => response.json())
       .then(data => {
-        setStarCount(data.stargazers_count)
+        setStarCount(data.stargazers_count);
       })
       .catch(error => {
-        console.error('Failed fetching star count:', error)
-      })
-  }, [])
+        console.error('Failed fetching star count:', error);
+      });
+  }, []);
 
   const toggleSideNav = () => {
     setIsOpen(!isOpen)
@@ -691,3 +695,4 @@ const Header = () => {
 }
 
 export default Header
+

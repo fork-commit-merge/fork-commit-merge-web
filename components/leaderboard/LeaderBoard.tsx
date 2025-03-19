@@ -26,8 +26,7 @@ export const LeaderBoard: React.FC = () => {
         setLeaderBoardData(response.data);
         setIsLoading(false);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
+      .catch(() => {
         setIsError(true);
         setIsLoading(false);
       });
@@ -87,3 +86,4 @@ export const LeaderBoard: React.FC = () => {
     </div>
   );
 };
+

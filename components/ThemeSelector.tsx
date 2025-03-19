@@ -7,6 +7,7 @@ const themes = [
   { name: 'Red', value: 'red' },
   { name: 'Yellow', value: 'yellow' },
   { name: 'Purple', value: 'purple' },
+  { name: 'Black', value: 'black' },
 ];
 
 const ThemeSelector = () => {

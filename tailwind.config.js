@@ -47,6 +47,11 @@ module.exports = {
             secondary: "#130F1E",
             accent: "#9D4EDD",
           },
+          black: {
+            primary: "#000000",
+            secondary: "#000000",
+            accent: "#000000",
+          },
         },
         slate: {
           920: "#13111C",

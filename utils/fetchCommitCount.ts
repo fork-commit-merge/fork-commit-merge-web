@@ -3,10 +3,14 @@ export async function fetchCommitCount(): Promise<number> {
     let url: string | null =
       "https://api.github.com/repos/nikohoffren/fork-commit-merge/commits?per_page=100";
 
+    const headers = {
+      Authorization: `token ${process.env.GITHUB_TOKEN}`,
+    };
+
     let commitCount = 0;
 
     while (url) {
-      const response: Response = await fetch(url);
+      const response: Response = await fetch(url, { headers });
       const linkHeader: string | null = response.headers.get("Link");
       const data: any[] = await response.json();
       commitCount += data.length;
@@ -23,3 +27,4 @@ export async function fetchCommitCount(): Promise<number> {
     return 0;
   }
 }
+

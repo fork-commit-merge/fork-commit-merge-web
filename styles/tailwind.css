@@ -48,6 +48,13 @@
   --theme-accent: #9D4EDD;
 }
 
+.theme-black {
+  --theme-primary: #0F0F0F;
+  --theme-secondary: #0A0A0A;
+  --theme-hover: #050505;
+  --theme-accent: #000000;
+}
+
 .themed-button {
   background-color: var(--theme-accent);
   transition: all 0.3s ease-in-out;
