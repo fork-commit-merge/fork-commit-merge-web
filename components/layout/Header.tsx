@@ -537,12 +537,14 @@ const Header = () => {
                 className='block cursor-pointer text-sm transition-transform hover:scale-105'
               >
                 <Image
-                  className='rounded'
-                  src='/fork-commit-merge-logo.jpg'
-                  alt='Fork, Commit, Merge -logo'
+                  src="/fork-commit-merge-logo.jpg"
+                  alt="Fork, Commit, Merge Logo"
                   width={50}
                   height={50}
-                  unoptimized
+                  priority={true}
+                  loading="eager"
+                  quality={75}
+                  className="rounded"
                 />
               </Link>
             </div>
@@ -695,4 +697,8 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+
 
