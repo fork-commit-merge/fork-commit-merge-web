@@ -6,6 +6,7 @@ const themes = [
   { name: 'Green', value: 'green' },
   { name: 'Red', value: 'red' },
   { name: 'Yellow', value: 'yellow' },
+  { name: 'Purple', value: 'purple' },
 ];
 
 const ThemeSelector = () => {
@@ -64,3 +65,4 @@ const ThemeSelector = () => {
 };
 
 export default ThemeSelector;
+

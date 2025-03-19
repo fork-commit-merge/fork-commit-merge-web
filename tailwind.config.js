@@ -42,6 +42,11 @@ module.exports = {
             secondary: "#14130A",
             accent: "#F59E0B",
           },
+          purple: {
+            primary: "#1A1625",
+            secondary: "#130F1E",
+            accent: "#9D4EDD",
+          },
         },
         slate: {
           920: "#13111C",
@@ -83,3 +88,4 @@ module.exports = {
   },
   plugins: [],
 };
+

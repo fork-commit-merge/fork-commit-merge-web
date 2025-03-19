@@ -41,6 +41,13 @@
   --theme-accent: #F59E0B;
 }
 
+.theme-purple {
+  --theme-primary: #1A1625;
+  --theme-secondary: #130F1E;
+  --theme-hover: #0a0814;
+  --theme-accent: #9D4EDD;
+}
+
 .themed-button {
   background-color: var(--theme-accent);
   transition: all 0.3s ease-in-out;
@@ -137,4 +144,5 @@ code {
     background-position: -200% 0;
   }
 }
+
 
