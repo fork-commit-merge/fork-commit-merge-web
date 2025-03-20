@@ -16,7 +16,7 @@ const GitCommandsSelection = ({ headerStyle }: GitCommandsSelectionProps) => {
           </p>
         </div>
       </div>
-      <div className="text-center max-w-2xl mx-auto px-4">
+      <div className="text-center max-w-2xl mx-auto px-4 py-10">
         <h1 className="text-3xl font-bold mb-6">Important Git Commands</h1>
         <p className="mb-4">
           Git is a distributed version control system created by Linus Torvalds

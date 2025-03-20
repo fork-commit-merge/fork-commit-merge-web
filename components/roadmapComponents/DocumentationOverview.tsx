@@ -1,11 +1,11 @@
 const DocumentationOverview = () => {
   return (
-    <div className="flex justify-center items-center bg-primary py-2">
-      <div className="text-center  max-w-2xl">
-        <h1 className="text-3xl font-bold mb-6">
+    <div className='bg-primary flex items-center justify-center py-10'>
+      <div className='max-w-2xl text-center'>
+        <h1 className='mb-6 text-3xl font-bold'>
           Overview of Essential Open Source Documentation
         </h1>
-        <p className="mb-4">
+        <p className='mb-4'>
           In the realm of open-source, proper documentation is the bridge
           between developers, contributors, and end users. More than just
           detailing code, documentation lays out the ethos of a project,
@@ -15,8 +15,8 @@ const DocumentationOverview = () => {
           guidelines, and CODE_OF_CONDUCT.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-4">README</h2>
-        <p className="mb-4">
+        <h2 className='mb-4 text-2xl font-semibold'>README</h2>
+        <p className='mb-4'>
           <strong>README</strong> is not just an introduction; it&apos;s a
           handshake, a first impression. Serving as the front page of any
           repository, it provides a clear overview of the project, its purpose,
@@ -27,9 +27,9 @@ const DocumentationOverview = () => {
           project seamlessly.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-4">CONTRIBUTING Guidelines</h2>
-        <p className="mb-4">
-          The heart of open source lies in its community-driven nature.{" "}
+        <h2 className='mb-4 text-2xl font-semibold'>CONTRIBUTING Guidelines</h2>
+        <p className='mb-4'>
+          The heart of open source lies in its community-driven nature.{' '}
           <strong>CONTRIBUTING guidelines</strong> are the compass for this
           community. They chart out the path for those eager to contribute,
           detailing everything from setting up a development environment to the
@@ -40,10 +40,10 @@ const DocumentationOverview = () => {
           project&apos;s direction.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-4">CODE_OF_CONDUCT</h2>
-        <p className="mb-6">
+        <h2 className='mb-4 text-2xl font-semibold'>CODE_OF_CONDUCT</h2>
+        <p className='mb-6'>
           Beyond code and contributions lies the heart and soul of any
-          open-source community: its members. The{" "}
+          open-source community: its members. The{' '}
           <strong>CODE_OF_CONDUCT</strong> ensures this community thrives in a
           positive, inclusive environment. It outlines the behavior expected
           from every community member, from seasoned maintainers to first-time
@@ -60,7 +60,7 @@ const DocumentationOverview = () => {
         </p>
       </div>
     </div>
-  );
+  )
 };
 
 export default DocumentationOverview;

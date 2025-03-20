@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const HowToContribute = () => {
   return (
-    <div className='bg-primary flex flex-col items-center justify-center px-5'>
+    <div className='bg-primary flex flex-col items-center justify-center px-5 py-10'>
       <div className='mx-auto max-w-2xl pb-10'>
         <h2 className='my-4 text-center text-3xl font-bold'>
           How to make an Open Source Contribution?
