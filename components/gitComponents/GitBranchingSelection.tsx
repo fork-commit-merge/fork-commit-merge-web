@@ -1,5 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-const GitBranchingSelection = ({ headerStyle }) => {
+interface GitBranchingSelectionProps {
+  headerStyle: React.CSSProperties;
+}
+
+const GitBranchingSelection = ({ headerStyle }: GitBranchingSelectionProps) => {
   return (
     <div className="bg-primary min-h-screen">
       <div className="page-header-background" style={headerStyle}>
@@ -104,4 +108,5 @@ const GitBranchingSelection = ({ headerStyle }) => {
 };
 
 export default GitBranchingSelection;
+
 

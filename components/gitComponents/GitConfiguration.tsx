@@ -1,4 +1,8 @@
-const GitConfiguration = ({ headerStyle }) => {
+interface GitConfigurationProps {
+  headerStyle: React.CSSProperties;
+}
+
+const GitConfiguration = ({ headerStyle }: GitConfigurationProps) => {
   return (
     <div className="bg-primary min-h-screen">
       <div className="page-header-background" style={headerStyle}>
@@ -90,4 +94,5 @@ const GitConfiguration = ({ headerStyle }) => {
 };
 
 export default GitConfiguration;
+
 

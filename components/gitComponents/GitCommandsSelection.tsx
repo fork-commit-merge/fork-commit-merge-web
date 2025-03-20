@@ -1,7 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import { gitCommands } from "./GitCommands";
 
-const GitCommandsSelection = ({ headerStyle }) => {
+interface GitCommandsSelectionProps {
+  headerStyle: React.CSSProperties;
+}
+
+const GitCommandsSelection = ({ headerStyle }: GitCommandsSelectionProps) => {
   return (
     <div className="bg-primary min-h-screen">
       <div className="page-header-background" style={headerStyle}>
@@ -65,4 +69,5 @@ const GitCommandsSelection = ({ headerStyle }) => {
 };
 
 export default GitCommandsSelection;
+
 

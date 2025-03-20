@@ -1,4 +1,8 @@
-const GitWorkflow = ({ headerStyle }) => {
+interface GitWorkflowProps {
+  headerStyle: React.CSSProperties;
+}
+
+const GitWorkflow = ({ headerStyle }: GitWorkflowProps) => {
   return (
     <div className="bg-primary min-h-screen">
       <div className="page-header-background" style={headerStyle}>
@@ -70,4 +74,5 @@ const GitWorkflow = ({ headerStyle }) => {
 };
 
 export default GitWorkflow;
+
 

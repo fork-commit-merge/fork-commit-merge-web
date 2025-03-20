@@ -1,4 +1,8 @@
-const GitConflicts = ({ headerStyle }) => {
+interface GitConflictsProps {
+  headerStyle: React.CSSProperties;
+}
+
+const GitConflicts = ({ headerStyle }: GitConflictsProps) => {
   return (
     <div className="bg-primary min-h-screen">
       <div className="page-header-background" style={headerStyle}>
@@ -82,4 +86,5 @@ const GitConflicts = ({ headerStyle }) => {
 };
 
 export default GitConflicts;
+
 
