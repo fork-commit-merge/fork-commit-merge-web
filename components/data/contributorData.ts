@@ -5417,22 +5417,4 @@ export const contributorData = [
       'https://avatars.githubusercontent.com/u/130211933?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'pkj-web'
   },
-  {
-    id: "mradul-001",
-    url: "https://github.com/mradul-001",
-    avatar: "https://avatars.githubusercontent.com/u/140724798?v=4  {
-    id: "initialstate86",
-    url: "https://github.com/initialstate86",
-    avatar: "https://avatars.githubusercontent.com/u/204231046?v=4]h=300]w=300]fit=cover]mask=circle]maxage=7d",
-    name: "initialstate86"
-  },
-]h=300]w=300]fit=cover]mask=circle]maxage=7d",
-    name: "mradul-001"
-  },
-  {
-    id: "initialstate86",
-    url: "https://github.com/initialstate86",
-    avatar: "https://avatars.githubusercontent.com/u/204231046?v=4]h=300]w=300]fit=cover]mask=circle]maxage=7d",
-    name: "initialstate86"
-  },
 ]
