@@ -26,19 +26,31 @@ function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
     <ClerkProvider
       {...pageProps}
       appearance={{
-        baseTheme: dark
+        baseTheme: dark,
+        elements: {
+          // Ensure Clerk elements use their default font
+          formButtonPrimary: 'font-sans',
+          card: 'font-sans',
+          navbar: 'font-sans',
+          // Ensure icons are visible in dark mode
+          userButtonPopoverCard: 'text-white [&_svg]:text-white',
+          userButtonPopoverActionButton: '[&_svg]:text-white',
+          userButtonPopoverFooter: '[&_svg]:text-white'
+        }
       }}
     >
-      <div className={`${ysabeau.className} ${ubuntu.className}`}>
+      <main className={`${ysabeau.className} ${ubuntu.className}`}>
         <Header />
         <Component {...pageProps} />
         <Footer />
         <BackToTopButton/>
-      </div>
+      </main>
     </ClerkProvider>
   )
 }
 
 export default MyApp
+
+
 
 
