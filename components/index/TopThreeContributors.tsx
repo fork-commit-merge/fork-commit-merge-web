@@ -31,7 +31,10 @@ const TopThreeContributors: FC = () => {
         const fetchedData = response.data;
 
         if (Array.isArray(fetchedData) && fetchedData.length > 0) {
-          const mappedData: Contributor[] = fetchedData
+          // Sort the data by contributions in descending order
+          const sortedData = [...fetchedData].sort((a, b) => b.contributions - a.contributions);
+
+          const mappedData: Contributor[] = sortedData
             .filter((userStat: { username: string }) => {
               const filtered = userStat.username !== 'dependabot' &&
                 userStat.username !== 'dependabot[bot]' &&
@@ -126,6 +129,7 @@ const TopThreeContributors: FC = () => {
 }
 
 export { TopThreeContributors }
+
 
 
 

@@ -12,24 +12,26 @@ type UserStat = {
 
 export const LeaderBoard: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [leaderBoardData, setLeaderBoardData] = useState<UserStat[] | null>(
-    null
-  );
+  const [leaderBoardData, setLeaderBoardData] = useState<UserStat[] | null>(null);
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
-    setIsLoading(true);
+    const fetchData = async () => {
+      setIsLoading(true);
+      setIsError(false);
 
-    axios
-      .get("api/topUsers")
-      .then((response) => {
+      try {
+        const response = await axios.get("/api/topUsers");
         setLeaderBoardData(response.data);
-        setIsLoading(false);
-      })
-      .catch(() => {
+      } catch (error) {
+        console.error("Failed to fetch leaderboard data:", error);
         setIsError(true);
+      } finally {
         setIsLoading(false);
-      });
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
@@ -39,26 +41,23 @@ export const LeaderBoard: React.FC = () => {
           <Spinner />
         </div>
       ) : isError ? (
-        <div className="min-w-full bg-primary border rounded-lg shadow-lg mx-auto  py-4">
+        <div className="min-w-full bg-primary border rounded-lg shadow-lg mx-auto py-4">
           <p>No data available, try again later!</p>
         </div>
       ) : (
-        <table className="min-w-full bg-primary border rounded-lg shadow-lg mx-auto ">
+        <table className="min-w-full bg-primary border rounded-lg shadow-lg mx-auto">
           <thead>
-            <tr className="bg-gray-700 ">
-              <th className="py-4 px-6 border-b border-gray-300">
-                Contributor
-              </th>
-              <th className="py-4 px-6 border-b border-gray-300">
-                Solved Issues
-              </th>
+            <tr className="bg-gray-700">
+              <th className="py-4 px-6 border-b border-gray-300">Rank</th>
+              <th className="py-4 px-6 border-b border-gray-300">Contributor</th>
+              <th className="py-4 px-6 border-b border-gray-300">Solved Issues</th>
             </tr>
           </thead>
-
           <tbody>
             {leaderBoardData && leaderBoardData.length > 0 ? (
               leaderBoardData.map((user, index) => (
                 <tr key={index} className="text-center">
+                  <td className="py-4 px-6 border-b">{index + 1}</td>
                   <td className="flex px-6 py-4 border-b relative">
                     {renderStar(index)}
                     <img
@@ -75,7 +74,7 @@ export const LeaderBoard: React.FC = () => {
               ))
             ) : (
               <tr>
-                <td colSpan={2} className="text-center py-4">
+                <td colSpan={3} className="text-center py-4">
                   No contributors found.
                 </td>
               </tr>
@@ -86,4 +85,5 @@ export const LeaderBoard: React.FC = () => {
     </div>
   );
 };
+
 
