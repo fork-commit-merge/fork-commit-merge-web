@@ -315,7 +315,7 @@ const Header = () => {
               Languages
             </div>
             {isLanguageDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg z-[100]'>
                 {languageList.map((lang, index) => (
                   <li
                     key={index}
@@ -697,6 +697,7 @@ const Header = () => {
 }
 
 export default Header
+
 
 
 

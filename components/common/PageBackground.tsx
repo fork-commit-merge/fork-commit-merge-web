@@ -5,7 +5,10 @@ interface PageBackgroundProps {
   children: React.ReactNode;
 }
 
-const PageBackground: React.FC<PageBackgroundProps> = ({ imagePath, children }) => {
+const PageBackground: React.FC<PageBackgroundProps> = ({
+  imagePath = '/fcm-background-image.png',
+  children
+}) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
@@ -16,7 +19,7 @@ const PageBackground: React.FC<PageBackgroundProps> = ({ imagePath, children }) 
 
   return (
     <div
-      className={`w-full bg-cover bg-center transition-opacity duration-300 ${
+      className={`page-header-background transition-opacity duration-300 ${
         imageLoaded ? 'opacity-100' : 'opacity-0'
       }`}
       style={{
@@ -30,3 +33,5 @@ const PageBackground: React.FC<PageBackgroundProps> = ({ imagePath, children }) 
 };
 
 export default PageBackground;
+
+

@@ -18,37 +18,10 @@ export default class DocumentExtension extends Document {
           {/* Preload critical background images */}
           <link
             rel='preload'
-            href='/community.png'
+            href='/fcm-background-image.png'
             as='image'
             type='image/png'
           />
-          <link
-            rel='preload'
-            href='/dashboard.png'
-            as='image'
-            type='image/png'
-          />
-          <link
-            rel='preload'
-            href='/roadmaps.png'
-            as='image'
-            type='image/png'
-          />
-          <link rel='preload' href='/git.png' as='image' type='image/png' />
-          <link
-            rel='preload'
-            href='/resources.png'
-            as='image'
-            type='image/png'
-          />
-          <link
-            rel='preload'
-            href='/leaderboard.png'
-            as='image'
-            type='image/png'
-          />
-          <link rel='preload' href='/ide.png' as='image' type='image/png' />
-          <link rel='preload' href='/faq.png' as='image' type='image/png' />
         </Head>
         <body>
           <Main />
@@ -58,6 +31,7 @@ export default class DocumentExtension extends Document {
     )
   }
 }
+
 
 
 

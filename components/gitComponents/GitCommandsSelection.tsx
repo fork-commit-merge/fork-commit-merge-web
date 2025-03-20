@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import { gitCommands } from "./GitCommands";
 
-const GitCommandsSelection = () => {
+const GitCommandsSelection = ({ headerStyle }) => {
   return (
     <div className="bg-primary min-h-screen">
-      <div className="w-full bg-cover bg-center" style={{ backgroundImage: "url('/git.png')" }}>
-        <div className="mb-10 flex flex-col items-center justify-center p-24 text-center text-white">
-          <h1 className="text-4xl font-bold">Important Git Commands</h1>
+      <div className="page-header-background" style={headerStyle}>
+        <div className="page-header-content">
+          <h1 className="text-4xl font-bold">Git Commands</h1>
           <p className="mt-4 text-xl">
-            Essential commands for effective version control with Git
+            Essential Git commands and their usage
           </p>
         </div>
       </div>
@@ -65,3 +65,4 @@ const GitCommandsSelection = () => {
 };
 
 export default GitCommandsSelection;
+

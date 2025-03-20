@@ -1,8 +1,8 @@
-const GitConfiguration = () => {
+const GitConfiguration = ({ headerStyle }) => {
   return (
     <div className="bg-primary min-h-screen">
-      <div className="w-full bg-cover bg-center" style={{ backgroundImage: "url('/git.png')" }}>
-        <div className="mb-10 flex flex-col items-center justify-center p-24 text-center text-white">
+      <div className="page-header-background" style={headerStyle}>
+        <div className="page-header-content">
           <h1 className="text-4xl font-bold">Git Configuration</h1>
           <p className="mt-4 text-xl">
             Setting up and customizing your Git environment
@@ -90,3 +90,4 @@ const GitConfiguration = () => {
 };
 
 export default GitConfiguration;
+

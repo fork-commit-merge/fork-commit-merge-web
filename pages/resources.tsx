@@ -12,10 +12,10 @@ export default function Resources() {
   return (
     <div className='bg-primary min-h-screen'>
       <div
-        className='w-full bg-cover bg-center'
-        style={{ backgroundImage: "url('/resources.png')" }}
+        className='page-header-background'
+        style={{ backgroundImage: "url('/fcm-background-image.png')" }}
       >
-        <div className='flex flex-col items-center justify-center p-24 text-center text-white'>
+        <div className='page-header-content'>
           <h1 className='mb-6 text-center text-4xl font-bold'>Resources</h1>
         </div>
       </div>
@@ -35,3 +35,5 @@ export default function Resources() {
     </div>
   )
 }
+
+

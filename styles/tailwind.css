@@ -81,12 +81,6 @@ body {
   background-color: var(--bg-secondary);
 }
 
-/* Remove these since we're using next/font now
-.font-primary {
-  font-family: var(--ff-primary);
-}
-*/
-
 .contributor-images {
   display: flex;
   flex-wrap: wrap;
@@ -151,6 +145,26 @@ code {
     background-position: -200% 0;
   }
 }
+
+.page-header-background {
+  @apply w-full bg-cover bg-center relative z-[1];
+  &::before {
+    content: '';
+    @apply absolute inset-0 bg-black/80 z-[2];
+  }
+}
+
+.scrollable-dropdown {
+  @apply z-[100];
+}
+
+.page-header-content {
+  @apply relative z-10 flex flex-col items-center justify-center p-24 text-center text-white;
+}
+
+
+
+
 
 
 

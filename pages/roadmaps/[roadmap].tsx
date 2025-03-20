@@ -12,16 +12,17 @@ const RoadmapPage = () => {
   const router = useRouter()
   const { roadmap } = router.query
 
+  const commonHeaderStyle = {
+    backgroundImage: "url('/fcm-background-image.png')",
+  }
+
   const renderContent = () => {
     switch (roadmap) {
       case 'how-to-contribute':
         return (
           <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/roadmaps.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
+            <div className='page-header-background' style={commonHeaderStyle}>
+              <div className='page-header-content'>
                 <h1 className='mb-6 text-center text-4xl font-bold'>
                   Roadmaps
                 </h1>
@@ -33,11 +34,8 @@ const RoadmapPage = () => {
       case 'contribution-management':
         return (
           <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/roadmaps.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
+            <div className='page-header-background' style={commonHeaderStyle}>
+              <div className='page-header-content'>
                 <h1 className='mb-6 text-center text-4xl font-bold'>
                   Roadmaps
                 </h1>
@@ -49,11 +47,8 @@ const RoadmapPage = () => {
       case 'open-source-philosophy':
         return (
           <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/roadmaps.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
+            <div className='page-header-background' style={commonHeaderStyle}>
+              <div className='page-header-content'>
                 <h1 className='mb-6 text-center text-4xl font-bold'>
                   Roadmaps
                 </h1>
@@ -65,11 +60,8 @@ const RoadmapPage = () => {
       case 'open-source-licenses':
         return (
           <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/roadmaps.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
+            <div className='page-header-background' style={commonHeaderStyle}>
+              <div className='page-header-content'>
                 <h1 className='mb-6 text-center text-4xl font-bold'>
                   Roadmaps
                 </h1>
@@ -81,11 +73,8 @@ const RoadmapPage = () => {
       case 'overview-of-documentation':
         return (
           <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/roadmaps.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
+            <div className='page-header-background' style={commonHeaderStyle}>
+              <div className='page-header-content'>
                 <h1 className='mb-6 text-center text-4xl font-bold'>
                   Roadmaps
                 </h1>
@@ -97,11 +86,8 @@ const RoadmapPage = () => {
       case 'legal-and-ethical-considerations':
         return (
           <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/roadmaps.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
+            <div className='page-header-background' style={commonHeaderStyle}>
+              <div className='page-header-content'>
                 <h1 className='mb-6 text-center text-4xl font-bold'>
                   Roadmaps
                 </h1>
@@ -113,11 +99,8 @@ const RoadmapPage = () => {
       case 'open-source-terminology':
         return (
           <div className='bg-primary min-h-screen'>
-            <div
-              className='w-full bg-cover bg-center'
-              style={{ backgroundImage: "url('/roadmaps.png')" }}
-            >
-              <div className='mb-10 flex flex-col items-center justify-center p-24 text-center text-white'>
+            <div className='page-header-background' style={commonHeaderStyle}>
+              <div className='page-header-content'>
                 <h1 className='mb-6 text-center text-4xl font-bold'>
                   Roadmaps
                 </h1>
@@ -135,3 +118,4 @@ const RoadmapPage = () => {
 }
 
 export default RoadmapPage
+

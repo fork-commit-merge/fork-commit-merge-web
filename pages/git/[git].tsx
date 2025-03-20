@@ -12,25 +12,34 @@ const Git = () => {
   const { git } = router.query
 
   const renderContent = () => {
-    switch (git) {
-      case 'git-commands':
-        return <GitCommandsSelection />
-      case 'git-branching':
-        return <GitBranchingSelection />
-      case 'git-conflicts':
-        return <GitConflicts />
-      case 'git-configuration':
-        return <GitConfiguration />
-      case 'git-workflow':
-        return <GitWorkflow />
-      case 'conventional-commits':
-        return <ConventionalCommits />
-      default:
-        return <SelectionNotSupported />
+    const commonHeaderStyle = {
+      backgroundImage: "url('/fcm-background-image.png')",
     }
+
+    const getComponent = () => {
+      switch (git) {
+        case 'git-commands':
+          return <GitCommandsSelection headerStyle={commonHeaderStyle} />
+        case 'git-branching':
+          return <GitBranchingSelection headerStyle={commonHeaderStyle} />
+        case 'git-conflicts':
+          return <GitConflicts headerStyle={commonHeaderStyle} />
+        case 'git-configuration':
+          return <GitConfiguration headerStyle={commonHeaderStyle} />
+        case 'git-workflow':
+          return <GitWorkflow headerStyle={commonHeaderStyle} />
+        case 'conventional-commits':
+          return <ConventionalCommits headerStyle={commonHeaderStyle} />
+        default:
+          return <SelectionNotSupported />
+      }
+    }
+
+    return getComponent()
   }
 
   return <>{renderContent()}</>
 }
 
 export default Git
+
