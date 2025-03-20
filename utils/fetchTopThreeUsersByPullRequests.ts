@@ -7,28 +7,34 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
       Authorization: `token ${process.env.GITHUB_TOKEN}`,
       Accept: 'application/vnd.github.v3+json',
     };
-    console.log('Using GitHub token:', process.env.GITHUB_TOKEN ? 'Token present' : 'Token missing');
 
-    const response = await axios.get(
-      `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`,
-      { headers }
-    );
-    console.log(`Fetched ${response.data.length} pull requests`);
-
-    const pullRequests = response.data;
+    let url = `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`;
     const userContributions = new Map();
 
-    pullRequests.forEach((pr: any) => {
-      const username = pr.user.login;
-      if (username === "dependabot" || username === "dependabot[bot]" || username === "nikohoffren") {
-        console.log(`Skipping contribution from ${username}`);
-        return;
-      }
+    while (url) {
+      const response = await axios.get(url, { headers });
+      console.log(`Fetched ${response.data.length} pull requests`);
 
-      if (pr.merged_at) {
-        userContributions.set(username, (userContributions.get(username) || 0) + 1);
-      }
-    });
+      const pullRequests = response.data;
+      pullRequests.forEach((pr: any) => {
+        const username = pr.user.login;
+        if (username === "dependabot" || username === "dependabot[bot]" || username === "nikohoffren") {
+          console.log(`Skipping contribution from ${username}`);
+          return;
+        }
+
+        if (pr.merged_at) {
+          userContributions.set(username, (userContributions.get(username) || 0) + 1);
+        }
+      });
+
+      // Handle pagination
+      const linkHeader = response.headers.link;
+      const nextLink = linkHeader
+        ? linkHeader.split(",").find((s: string) => s.includes('rel="next"'))
+        : null;
+      url = nextLink ? nextLink.match(/<(.*)>/)?.[1] : null;
+    }
 
     const sortedUsers = Array.from(userContributions.entries())
       .sort((a, b) => b[1] - a[1])
@@ -36,7 +42,7 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
       .map(([username, count]) => ({
         username,
         contributions: count,
-        avatarUrl: pullRequests.find((pr: any) => pr.user.login === username).user.avatar_url,
+        avatarUrl: `https://avatars.githubusercontent.com/${username}`,
       }));
 
     console.log('Final sorted users:', sortedUsers);
@@ -51,6 +57,7 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     return [];
   }
 }
+
 
 
 
