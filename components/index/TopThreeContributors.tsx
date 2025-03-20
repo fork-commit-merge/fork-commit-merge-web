@@ -1,5 +1,5 @@
 import React, { useState, useEffect, FC } from 'react'
-import axios from 'axios'
+import axios, { AxiosError } from 'axios'
 import Image from 'next/image'
 import { StarFilled } from '@ant-design/icons'
 
@@ -24,7 +24,7 @@ const TopThreeContributors: FC = () => {
 
       try {
         const response = await axios.get('/api/topThreeUsers', {
-          timeout: 8000 // 8 second timeout
+          timeout: 8000
         });
 
         console.log('Raw API response:', response.data);
@@ -52,7 +52,11 @@ const TopThreeContributors: FC = () => {
         }
       } catch (error) {
         console.error('Error fetching data:', error);
-        console.error('Error details:', error.response?.data || error.message);
+        if (error instanceof AxiosError) {
+          console.error('Error details:', error.response?.data || error.message);
+        } else {
+          console.error('Error details:', error instanceof Error ? error.message : 'Unknown error');
+        }
         setIsError(true);
       } finally {
         setIsLoading(false);
@@ -61,14 +65,6 @@ const TopThreeContributors: FC = () => {
 
     fetchContributors();
   }, []);
-
-  if (isLoading) {
-    return <div>Loading top contributors...</div>;
-  }
-
-  if (isError) {
-    return <div>Unable to load top contributors</div>;
-  }
 
   if (!contributors.length) {
     return null;
@@ -130,6 +126,7 @@ const TopThreeContributors: FC = () => {
 }
 
 export { TopThreeContributors }
+
 
 
 
