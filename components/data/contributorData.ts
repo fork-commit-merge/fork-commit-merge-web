@@ -5423,9 +5423,5 @@ export const contributorData = [
     avatar:
       'https://avatars.githubusercontent.com/u/130211933?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d',
     name: 'pkj-web'
-  }
+  },
 ]
-
-
-
-<a href="https://github.com/initialstate86"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/204231046?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
