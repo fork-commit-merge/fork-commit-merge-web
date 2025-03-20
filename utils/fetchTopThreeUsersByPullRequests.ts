@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 
 export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
   try {
@@ -43,10 +43,15 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     return sortedUsers;
   } catch (error) {
     console.error('API Error in fetchTopThreeUsersByPullRequests:', error);
-    console.error('Error details:', error.response?.data || error.message);
+    if (error instanceof AxiosError) {
+      console.error('Error details:', error.response?.data || error.message);
+    } else {
+      console.error('Error details:', error);
+    }
     return [];
   }
 }
+
 
 
 
