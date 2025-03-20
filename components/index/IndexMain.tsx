@@ -26,7 +26,7 @@ const IndexMain: React.FC = () => {
   return (
     <div className='w-full'>
       <div className='px-4 text-center'>
-        <h1 className='font-primary text-5xl font-bold pt-4'>
+        <h1 className='font-primary pt-4 text-5xl font-bold'>
           Welcome to Fork, Commit, Merge
         </h1>
         <p className='font-primary mb-7 mt-4 text-2xl'>
@@ -36,14 +36,16 @@ const IndexMain: React.FC = () => {
       </div>
 
       <div className='bg-primary w-full'>
-        <div className='w-full pt-10 pb-6'>
+        <div className='w-full pb-6 pt-10'>
           <p className='font-primary text-center text-2xl leading-8'>
             Become a part of our community of over 700 inspiring developers
-            <span className='hidden md:inline'><br /></span>
-            {' '}who have already contributed to this project!
+            <span className='hidden md:inline'>
+              <br />
+            </span>{' '}
+            who have already contributed to this project!
           </p>
         </div>
-        <div className="pb-4">
+        <div className='pb-4'>
           <TopThreeContributors />
         </div>
 
@@ -56,7 +58,7 @@ const IndexMain: React.FC = () => {
         </React.Suspense>
       </div>
 
-      <div className='bg-secondary w-full mb-4'>
+      <div className='bg-secondary mb-4 w-full'>
         <div className='mx-auto max-w-4xl py-6'>
           <div className='px-4 text-center text-xl font-light'>
             <code>Fork, Commit, Merge</code> is your one-stop resource hub for
@@ -77,7 +79,7 @@ const IndexMain: React.FC = () => {
           </div>
           <div className='mb-3 mt-10 text-center'>
             <Link
-              href='https://github.com/nikohoffren/fork-commit-merge'
+              href='https://github.com/fork-commit-merge/fork-commit-merge'
               target='blank'
               className='font-primary themed-button my-8 transform rounded-md px-8 pb-5 pt-4 text-2xl font-semibold tracking-wider text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105'
             >
@@ -91,10 +93,3 @@ const IndexMain: React.FC = () => {
 }
 
 export default IndexMain
-
-
-
-
-
-
-

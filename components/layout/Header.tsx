@@ -15,7 +15,7 @@ import { gitList } from '../data/gitList'
 import { roadmapList } from '../data/roadmapList'
 import { communityList } from '../data/communityList'
 import { UserButton, useUser } from '@clerk/nextjs'
-import ThemeSelector from '../ThemeSelector';
+import ThemeSelector from '../ThemeSelector'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,19 +35,19 @@ const Header = () => {
   const { user, isLoaded } = useUser()
 
   useEffect(() => {
-    fetch('https://api.github.com/repos/nikohoffren/fork-commit-merge', {
+    fetch('https://api.github.com/repos/fork-commit-merge/fork-commit-merge', {
       headers: {
-        Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
-      },
+        Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`
+      }
     })
       .then(response => response.json())
       .then(data => {
-        setStarCount(data.stargazers_count);
+        setStarCount(data.stargazers_count)
       })
       .catch(error => {
-        console.error('Failed fetching star count:', error);
-      });
-  }, []);
+        console.error('Failed fetching star count:', error)
+      })
+  }, [])
 
   const toggleSideNav = () => {
     setIsOpen(!isOpen)
@@ -79,58 +79,58 @@ const Header = () => {
   }
 
   const toggleLanguageDropdown = () => {
-    setLanguageDropdownOpen(!isLanguageDropdownOpen);
+    setLanguageDropdownOpen(!isLanguageDropdownOpen)
     if (!isLanguageDropdownOpen) {
-      window.dispatchEvent(new Event('dropdownOpened'));
+      window.dispatchEvent(new Event('dropdownOpened'))
     }
-    setFrameworkDropdownOpen(false);
-    setGitSelectionDropdownOpen(false);
-    setRoadmapDropdownOpen(false);
-    setCommunityDropdownOpen(false);
+    setFrameworkDropdownOpen(false)
+    setGitSelectionDropdownOpen(false)
+    setRoadmapDropdownOpen(false)
+    setCommunityDropdownOpen(false)
   }
 
   const toggleFrameworkDropdown = () => {
-    setFrameworkDropdownOpen(!isFrameworkDropdownOpen);
+    setFrameworkDropdownOpen(!isFrameworkDropdownOpen)
     if (!isFrameworkDropdownOpen) {
-      window.dispatchEvent(new Event('dropdownOpened'));
+      window.dispatchEvent(new Event('dropdownOpened'))
     }
-    setLanguageDropdownOpen(false);
-    setGitSelectionDropdownOpen(false);
-    setRoadmapDropdownOpen(false);
-    setCommunityDropdownOpen(false);
+    setLanguageDropdownOpen(false)
+    setGitSelectionDropdownOpen(false)
+    setRoadmapDropdownOpen(false)
+    setCommunityDropdownOpen(false)
   }
 
   const toggleGitSelectionDropdown = () => {
-    setGitSelectionDropdownOpen(!isGitSelectionDropdownOpen);
+    setGitSelectionDropdownOpen(!isGitSelectionDropdownOpen)
     if (!isGitSelectionDropdownOpen) {
-      window.dispatchEvent(new Event('dropdownOpened'));
+      window.dispatchEvent(new Event('dropdownOpened'))
     }
-    setLanguageDropdownOpen(false);
-    setFrameworkDropdownOpen(false);
-    setRoadmapDropdownOpen(false);
-    setCommunityDropdownOpen(false);
+    setLanguageDropdownOpen(false)
+    setFrameworkDropdownOpen(false)
+    setRoadmapDropdownOpen(false)
+    setCommunityDropdownOpen(false)
   }
 
   const toggleRoadmapDropdown = () => {
-    setRoadmapDropdownOpen(!isRoadmapDropdownOpen);
+    setRoadmapDropdownOpen(!isRoadmapDropdownOpen)
     if (!isRoadmapDropdownOpen) {
-      window.dispatchEvent(new Event('dropdownOpened'));
+      window.dispatchEvent(new Event('dropdownOpened'))
     }
-    setLanguageDropdownOpen(false);
-    setFrameworkDropdownOpen(false);
-    setGitSelectionDropdownOpen(false);
-    setCommunityDropdownOpen(false);
+    setLanguageDropdownOpen(false)
+    setFrameworkDropdownOpen(false)
+    setGitSelectionDropdownOpen(false)
+    setCommunityDropdownOpen(false)
   }
 
   const toggleCommunityDropdown = () => {
-    setCommunityDropdownOpen(!isCommunityDropdownOpen);
+    setCommunityDropdownOpen(!isCommunityDropdownOpen)
     if (!isCommunityDropdownOpen) {
-      window.dispatchEvent(new Event('dropdownOpened'));
+      window.dispatchEvent(new Event('dropdownOpened'))
     }
-    setLanguageDropdownOpen(false);
-    setFrameworkDropdownOpen(false);
-    setGitSelectionDropdownOpen(false);
-    setRoadmapDropdownOpen(false);
+    setLanguageDropdownOpen(false)
+    setFrameworkDropdownOpen(false)
+    setGitSelectionDropdownOpen(false)
+    setRoadmapDropdownOpen(false)
   }
 
   return (
@@ -254,7 +254,9 @@ const Header = () => {
                   </div>
 
                   <Link
-                    href={'https://github.com/nikohoffren/fork-commit-merge'}
+                    href={
+                      'https://github.com/fork-commit-merge/fork-commit-merge'
+                    }
                     target='blank'
                     className='flex items-center gap-x-1 px-2 py-0.5 text-sm font-bold text-black hover:bg-gray-200 focus:relative'
                   >
@@ -289,7 +291,7 @@ const Header = () => {
             </Link>
           )}
           {isLoaded && user && (
-            <div className='ml-6 pt-2 flex flex-col items-start gap-2'>
+            <div className='ml-6 flex flex-col items-start gap-2 pt-2'>
               <UserButton afterSignOutUrl='/' />
               <ThemeSelector />
             </div>
@@ -315,7 +317,7 @@ const Header = () => {
               Languages
             </div>
             {isLanguageDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg z-[100]'>
+              <ul className='bg-primary absolute z-[100] mt-2 w-48 rounded-md py-1 shadow-lg'>
                 {languageList.map((lang, index) => (
                   <li
                     key={index}
@@ -324,7 +326,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                       {lang.name}
                     </div>
                   </li>
@@ -340,7 +342,7 @@ const Header = () => {
               Frameworks | Libraries
             </div>
             {isFrameworkDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+              <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
                 {frameworkList.map((framework, index) => (
                   <li
                     key={index}
@@ -349,7 +351,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                       {framework.name}
                     </div>
                   </li>
@@ -365,7 +367,7 @@ const Header = () => {
               Git
             </div>
             {isGitSelectionDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+              <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
                 {gitList.map((git, index) => (
                   <li
                     key={index}
@@ -374,7 +376,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                       {git.name}
                     </div>
                   </li>
@@ -390,7 +392,7 @@ const Header = () => {
               Roadmaps
             </div>
             {isRoadmapDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+              <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
                 {roadmapList.map((roadmap, index) => (
                   <li
                     key={index}
@@ -399,7 +401,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                       {roadmap.name}
                     </div>
                   </li>
@@ -415,7 +417,7 @@ const Header = () => {
               Community
             </div>
             {isCommunityDropdownOpen && (
-              <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+              <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
                 {communityList.map((community, index) => (
                   <li
                     key={index}
@@ -424,7 +426,7 @@ const Header = () => {
                       setIsOpen(false)
                     }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                       {community.name}
                     </div>
                   </li>
@@ -475,7 +477,7 @@ const Header = () => {
             </div>
 
             <Link
-              href={'https://github.com/nikohoffren/fork-commit-merge'}
+              href={'https://github.com/fork-commit-merge/fork-commit-merge'}
               target='blank'
               className='flex items-center gap-x-1 px-2 py-0.5 text-sm font-bold text-black hover:bg-gray-200 focus:relative'
             >
@@ -537,14 +539,14 @@ const Header = () => {
                 className='block cursor-pointer text-sm transition-transform hover:scale-105'
               >
                 <Image
-                  src="/fork-commit-merge-logo.jpg"
-                  alt="Fork, Commit, Merge Logo"
+                  src='/fork-commit-merge-logo.jpg'
+                  alt='Fork, Commit, Merge Logo'
                   width={50}
                   height={50}
                   priority={true}
-                  loading="eager"
+                  loading='eager'
                   quality={75}
-                  className="rounded"
+                  className='rounded'
                 />
               </Link>
             </div>
@@ -558,13 +560,13 @@ const Header = () => {
                   Languages
                 </div>
                 {isLanguageDropdownOpen && (
-                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg backdrop-blur-lg'>
+                  <ul className='scrollable-dropdown bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg backdrop-blur-lg'>
                     {languageList.map((lang, index) => (
                       <li
                         key={index}
                         onClick={() => navigateToLanguage(lang.link)}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                           {lang.name}
                         </div>
                       </li>
@@ -580,13 +582,13 @@ const Header = () => {
                   Frameworks | Libraries
                 </div>
                 {isFrameworkDropdownOpen && (
-                  <ul className='scrollable-dropdown absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+                  <ul className='scrollable-dropdown bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
                     {frameworkList.map((framework, index) => (
                       <li
                         key={index}
                         onClick={() => navigateToFramework(framework.link)}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                           {framework.name}
                         </div>
                       </li>
@@ -602,7 +604,7 @@ const Header = () => {
                   Git
                 </div>
                 {isGitSelectionDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+                  <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
                     {gitList.map((git, index) => (
                       <li
                         key={index}
@@ -611,7 +613,7 @@ const Header = () => {
                           setIsOpen(false)
                         }}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                           {git.name}
                         </div>
                       </li>
@@ -627,7 +629,7 @@ const Header = () => {
                   Roadmaps
                 </div>
                 {isRoadmapDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+                  <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
                     {roadmapList.map((roadmap, index) => (
                       <li
                         key={index}
@@ -636,7 +638,7 @@ const Header = () => {
                           setIsOpen(false)
                         }}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                           {roadmap.name}
                         </div>
                       </li>
@@ -652,7 +654,7 @@ const Header = () => {
                   Community
                 </div>
                 {isCommunityDropdownOpen && (
-                  <ul className='absolute mt-2 w-48 rounded-md bg-primary py-1 shadow-lg'>
+                  <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
                     {communityList.map((community, index) => (
                       <li
                         key={index}
@@ -661,7 +663,7 @@ const Header = () => {
                           setIsOpen(false)
                         }}
                       >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 hover:bg-[#1a1a1a] transition-colors duration-150'>
+                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
                           {community.name}
                         </div>
                       </li>
@@ -683,7 +685,7 @@ const Header = () => {
               )}
 
               {isLoaded && user && (
-                <div className='pl-4 flex items-center gap-2'>
+                <div className='flex items-center gap-2 pl-4'>
                   <ThemeSelector />
                   <UserButton afterSignOutUrl='/' />
                 </div>
@@ -697,9 +699,3 @@ const Header = () => {
 }
 
 export default Header
-
-
-
-
-
-

@@ -8,7 +8,7 @@ const Footer = () => {
   const [starCount, setStarCount] = useState<number | null>(null)
 
   useEffect(() => {
-    fetch('https://api.github.com/repos/nikohoffren/fork-commit-merge')
+    fetch('https://api.github.com/repos/fork-commit-merge/fork-commit-merge')
       .then(response => response.json())
       .then(data => {
         setStarCount(data.stargazers_count)
@@ -73,7 +73,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href='https://github.com/nikohoffren/fork-commit-merge'
+                href='https://github.com/fork-commit-merge/fork-commit-merge'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex w-fit items-center space-x-2 rounded bg-slate-100 p-1.5 text-sm font-bold shadow-lg transition-all hover:bg-slate-300'
@@ -99,7 +99,7 @@ const Footer = () => {
                 <li>
                   <Link
                     className='hover:/75 text-sm font-medium transition hover:text-gray-300'
-                    href='https://github.com/nikohoffren/fork-commit-merge/blob/main/CONTRIBUTING.md'
+                    href='https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CONTRIBUTING.md'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -145,7 +145,7 @@ const Footer = () => {
                 <li>
                   <Link
                     className='hover:/75 text-sm font-medium hover:text-gray-300'
-                    href='https://github.com/nikohoffren/fork-commit-merge/blob/main/CODE_OF_CONDUCT.md'
+                    href='https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CODE_OF_CONDUCT.md'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -185,7 +185,7 @@ const Footer = () => {
               </Link>{' '}
               &{' '}
               <Link
-                href='https://github.com/nikohoffren/fork-commit-merge#list-of-contributors'
+                href='https://github.com/fork-commit-merge/fork-commit-merge#list-of-contributors'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='hover:text-gray-500'

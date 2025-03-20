@@ -2,11 +2,11 @@
 
 ![Fork, Commit, Merge - screenshot](/public/fork-commit-merge-banner2.png)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version 1.1.3](https://img.shields.io/badge/Version-1.1.3-brightgreen.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
-[![Issues](https://img.shields.io/github/issues/nikohoffren/fork-commit-merge-web.svg?style=flat)](https://github.com/nikohoffren/fork-commit-merge-web/issues)
-[![PR:s Welcome](https://img.shields.io/badge/PR:s-welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
-[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-green.svg)](https://github.com/nikohoffren/fork-commit-merge-web/pulls)
-![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/fork-commit-merge-web)
+[![Version 1.1.3](https://img.shields.io/badge/Version-1.1.3-brightgreen.svg)](https://github.com/fork-commit-merge/fork-commit-merge-web/pulls)
+[![Issues](https://img.shields.io/github/issues/fork-commit-merge/fork-commit-merge-web.svg?style=flat)](https://github.com/fork-commit-merge/fork-commit-merge-web/issues)
+[![PR:s Welcome](https://img.shields.io/badge/PR:s-welcome-green.svg)](https://github.com/fork-commit-merge/fork-commit-merge-web/pulls)
+[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-green.svg)](https://github.com/fork-commit-merge/fork-commit-merge-web/pulls)
+![GitHub repo size](https://img.shields.io/github/repo-size/fork-commit-merge/fork-commit-merge-web)
 
 "Fork, Commit, Merge" serves as a comprehensive resource for mastering GitHub
 contributions, catering to both beginners and seasoned developers. Our detailed
@@ -175,7 +175,10 @@ Follow these steps to run the application in your local environment:
    npm i
    ```
 
-3. If you're working with features regarding anything database related, you need to set up your environment variables locally and create a Github MongoDB Atlas cluster and an AWS S3 bucket. If you're working with some other features, you can skip this step.
+3. If you're working with features regarding anything database related, you need
+   to set up your environment variables locally and create a Github MongoDB
+   Atlas cluster and an AWS S3 bucket. If you're working with some other
+   features, you can skip this step.
 
    First, make a copy of the `.env.local.example` file and rename it to
    `.env.local`.
@@ -312,13 +315,21 @@ disabled on this website.
 
 ### Dashboard
 
-The Dashboard feature is currently disabled because it needs more development. It should show all pull requests that the user has merged, but it is not working properly. When user logs in using Clerk, the dashboard will get stuck in a loop and will not show the user's pull requests immidiately. After clicking somewhere else on the website, the dashboard will show the user's pull requests. The pull request table also needs to be styled properly.
+The Dashboard feature is currently disabled because it needs more development.
+It should show all pull requests that the user has merged, but it is not working
+properly. When user logs in using Clerk, the dashboard will get stuck in a loop
+and will not show the user's pull requests immidiately. After clicking somewhere
+else on the website, the dashboard will show the user's pull requests. The pull
+request table also needs to be styled properly.
 
-Currently, when "Dashboard" text is replaced with text "Login" in the navigation bar, the dashboard feature is disabled.
+Currently, when "Dashboard" text is replaced with text "Login" in the navigation
+bar, the dashboard feature is disabled.
 
 ### Leaderboard
 
-The Leaderboard feature is currently disabled because it needs more development. It should show the top contributors of the website, but is not always fetching the data from MongoDB.
+The Leaderboard feature is currently disabled because it needs more development.
+It should show the top contributors of the website, but is not always fetching
+the data from MongoDB.
 
 ## List of Contributors
 

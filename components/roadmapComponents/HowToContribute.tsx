@@ -1,9 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const HowToContribute = () => {
   return (
     <div className='bg-primary flex flex-col items-center justify-center px-5'>
-      <div className=' mx-auto max-w-2xl pb-10'>
+      <div className='mx-auto max-w-2xl pb-10'>
         <h2 className='my-4 text-center text-3xl font-bold'>
           How to make an Open Source Contribution?
         </h2>
@@ -22,8 +22,8 @@ const HowToContribute = () => {
           or similar to that to help you find a starting point. Some excellent
           places for looking these kind of issues are for example{' '}
           <a
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://goodfirstissues.com'
             className='text-blue-400 hover:underline'
           >
@@ -31,8 +31,8 @@ const HowToContribute = () => {
           </a>{' '}
           and{' '}
           <a
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://github.com/MunGell/awesome-for-beginners'
             className='text-blue-400 hover:underline'
           >
@@ -48,7 +48,13 @@ const HowToContribute = () => {
           way to get started with open source contributions.
           <br />
           <br />
-          Just remember that the contributions should be meaningful and add some value to the project. Don&apos;t just make a pull request for the sake of making a pull request. Make sure that the changes you are making are actually useful and meaningful, and that you are following the guidelines and coding standards of the project. Maintainers of the project are usually very busy and they don&apos;t have time to review pull requests that are not meaningful for the project.
+          Just remember that the contributions should be meaningful and add some
+          value to the project. Don&apos;t just make a pull request for the sake
+          of making a pull request. Make sure that the changes you are making
+          are actually useful and meaningful, and that you are following the
+          guidelines and coding standards of the project. Maintainers of the
+          project are usually very busy and they don&apos;t have time to review
+          pull requests that are not meaningful for the project.
           <br />
           <br />
           <strong>2. Understand the Contribution Process:</strong> <br />
@@ -110,8 +116,8 @@ const HowToContribute = () => {
           Also, we recommend downloading the GitHub mobile app to your phone.
           <br />
           <a
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://play.google.com/store/apps/details?id=com.github.android&hl=en&gl=US'
             className='text-blue-400 hover:underline'
           >
@@ -119,8 +125,8 @@ const HowToContribute = () => {
           </a>
           <br />
           <a
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://apps.apple.com/us/app/github/id1477376905'
             className='text-blue-400 hover:underline'
           >
@@ -137,18 +143,18 @@ const HowToContribute = () => {
           the Fork, Commit, Merge repository README
           <span className='mr-2'></span>
           <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href='https://github.com/nikohoffren/fork-commit-merge#setup-instructions'
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://github.com/fork-commit-merge/fork-commit-merge#setup-instructions'
             className='text-blue-400 hover:underline'
           >
             Setup Instructions
           </a>{' '}
           and{' '}
           <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href='https://github.com/nikohoffren/fork-commit-merge#submitting-your-changes'
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://github.com/fork-commit-merge/fork-commit-merge#submitting-your-changes'
             className='text-blue-400 hover:underline'
           >
             Submitting Your Changes
@@ -170,6 +176,6 @@ const HowToContribute = () => {
       </div>
     </div>
   )
-};
+}
 
-export default HowToContribute;
+export default HowToContribute

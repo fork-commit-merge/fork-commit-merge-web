@@ -32,7 +32,7 @@ const IndexIntro: React.FC = () => {
           finding bugs, testing, and much more in{' '}
           {/* <span className='text-green-400'>{displayIssueCount()} </span> */}
           <Link
-            href='https://github.com/nikohoffren/fork-commit-merge/issues'
+            href='https://github.com/fork-commit-merge/fork-commit-merge/issues'
             className='text-green-300 underline hover:text-green-500'
             target='blank'
           >
@@ -48,7 +48,7 @@ const IndexIntro: React.FC = () => {
           guides and resources to help you solve them. You can find the issues
           in the{' '}
           <Link
-            href='https://github.com/nikohoffren/fork-commit-merge/issues'
+            href='https://github.com/fork-commit-merge/fork-commit-merge/issues'
             className='text-blue-300 underline hover:text-blue-500'
             target='blank'
           >
@@ -100,7 +100,7 @@ const IndexIntro: React.FC = () => {
           or adding new features. Feel free to create a new issue or make a pull
           request{' '}
           <Link
-            href='https://github.com/nikohoffren/fork-commit-merge-web'
+            href='https://github.com/fork-commit-merge/fork-commit-merge-web'
             className='text-blue-300 underline hover:text-blue-500'
             target='blank'
           >
