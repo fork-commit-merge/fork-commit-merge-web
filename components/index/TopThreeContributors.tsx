@@ -23,12 +23,15 @@ const TopThreeContributors: FC = () => {
     axios
       .get('/api/topThreeUsers')
       .then(response => {
+        console.log('Raw API response:', response.data);
         const fetchedData = response.data
         const mappedData: Contributor[] = fetchedData
           .filter((userStat: { username: string }) => {
             const filtered = userStat.username !== 'dependabot' &&
               userStat.username !== 'dependabot[bot]' &&
               userStat.username !== 'nikohoffren';
+            console.log(`Filtering ${userStat.username}: ${filtered}`);
+            return filtered;
           })
           .map((userStat: { username: any; avatarUrl: any }, index: number) => {
             return {
@@ -39,6 +42,7 @@ const TopThreeContributors: FC = () => {
               rank: index + 1
             }
           })
+        console.log('Mapped contributors data:', mappedData);
         setContributors(mappedData)
         setIsLoading(false)
       })
@@ -106,6 +110,7 @@ const TopThreeContributors: FC = () => {
 }
 
 export { TopThreeContributors }
+
 
 
 
