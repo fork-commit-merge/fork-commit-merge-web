@@ -21,9 +21,18 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, alt, width, height }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: inView ? 1 : 0 }}
     >
-      {inView && <Image src={src} alt={alt} width={width} height={height} />}
+      {inView && (
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          fetchPriority="auto"
+        />
+      )}
     </motion.div>
   )
 }
 
 export default LazyImage
+
