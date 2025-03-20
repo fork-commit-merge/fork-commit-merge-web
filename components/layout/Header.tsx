@@ -34,6 +34,15 @@ const Header = () => {
   const [starCount, setStarCount] = useState<number | null>(null)
   const { user, isLoaded } = useUser()
 
+  const handleLeaderboardClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    if (user) {
+      router.push('/leaderboard')
+    } else {
+      router.push('/dashboard')
+    }
+  }
+
   useEffect(() => {
     fetch('https://api.github.com/repos/fork-commit-merge/fork-commit-merge', {
       headers: {
@@ -183,6 +192,15 @@ const Header = () => {
                   >
                     FAQ
                   </Link>
+                </li>
+                <li>
+                  <a
+                    href='/leaderboard'
+                    onClick={handleLeaderboardClick}
+                    className='hover:/75 block cursor-pointer px-4 py-2 text-sm font-medium hover:text-gray-300'
+                  >
+                    Leaderboard
+                  </a>
                 </li>
                 <li>
                   <Link
@@ -456,6 +474,12 @@ const Header = () => {
             </div>
           </Link>
 
+          <a href='/leaderboard' onClick={handleLeaderboardClick}>
+            <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
+              Leaderboard
+            </div>
+          </a>
+
           <li className='ml-6 mt-4 inline-flex overflow-hidden rounded-md bg-white shadow-sm'>
             <div className='inline-block border-e px-2 py-0.5 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:relative'>
               <svg
@@ -699,3 +723,4 @@ const Header = () => {
 }
 
 export default Header
+

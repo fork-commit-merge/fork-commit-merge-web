@@ -5,24 +5,42 @@ import {
 import { fetchTopThreeUsersByPullRequests } from "../../utils/fetchTopThreeUsersByPullRequests";
 
 export default async (req, res) => {
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
   try {
-    console.log('API: Checking DB for cached top three users...');
+    const message = 'API: Checking DB for cached top three users...';
+    console.log(message);
+    res.setHeader('X-Debug-Message', message);
+
     let data = await getTopThreeUsersFromDb();
 
     if (!data || data.length === 0) {
-      console.log('API: No cached data found, fetching from GitHub...');
+      const message2 = 'API: No cached data found, fetching from GitHub...';
+      console.log(message2);
+      res.setHeader('X-Debug-Message-2', message2);
+
       data = await fetchTopThreeUsersByPullRequests("fork-commit-merge/fork-commit-merge");
 
       if (data && data.length > 0) {
-        console.log('API: Storing new data in DB...');
+        const message3 = 'API: Storing new data in DB...';
+        console.log(message3);
+        res.setHeader('X-Debug-Message-3', message3);
+
         await storeTopThreeUsersInDb(data);
       }
     } else {
-      console.log('API: Using cached data from DB');
+      const message4 = 'API: Using cached data from DB';
+      console.log(message4);
+      res.setHeader('X-Debug-Message-4', message4);
     }
 
     if (!data || data.length === 0) {
-      console.log('API: No data available');
+      const message5 = 'API: No data available';
+      console.log(message5);
+      res.setHeader('X-Debug-Message-5', message5);
       return res.status(404).json({ error: 'No data available' });
     }
 
@@ -33,4 +51,5 @@ export default async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
+
 

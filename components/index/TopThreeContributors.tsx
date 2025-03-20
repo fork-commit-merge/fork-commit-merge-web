@@ -27,6 +27,14 @@ const TopThreeContributors: FC = () => {
           timeout: 8000
         });
 
+        // Log debug messages from headers
+        for (let i = 1; i <= 5; i++) {
+          const message = response.headers[`x-debug-message${i ? '-' + i : ''}`];
+          if (message) {
+            console.log(message);
+          }
+        }
+
         console.log('Raw API response:', response.data);
         const fetchedData = response.data;
 
@@ -129,6 +137,7 @@ const TopThreeContributors: FC = () => {
 }
 
 export { TopThreeContributors }
+
 
 
 

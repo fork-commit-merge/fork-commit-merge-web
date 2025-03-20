@@ -1,8 +1,24 @@
 import React from 'react'
 import { LeaderBoard } from '../components/leaderboard/LeaderBoard'
 import Stars from '../components/leaderboard/Stars'
+import { useUser } from '@clerk/nextjs'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 const LeaderBoardPage: React.FC = () => {
+  const { user, isLoaded } = useUser()
+  const router = useRouter()
+
+  useEffect(() => {
+    if (isLoaded && !user) {
+      router.push('/dashboard')
+    }
+  }, [isLoaded, user, router])
+
+  if (!isLoaded || !user) {
+    return null
+  }
+
   return (
     <div className='bg-primary min-h-screen'>
       <div
@@ -32,3 +48,4 @@ const LeaderBoardPage: React.FC = () => {
 }
 
 export default LeaderBoardPage
+
