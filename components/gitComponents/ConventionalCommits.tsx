@@ -1,6 +1,10 @@
 import React from 'react';
 
-const ConventionalCommits = ({ headerStyle }) => {
+interface ConventionalCommitsProps {
+  headerStyle: React.CSSProperties;
+}
+
+const ConventionalCommits = ({ headerStyle }: ConventionalCommitsProps) => {
   return (
     <div className="bg-primary min-h-screen">
       <div className="page-header-background" style={headerStyle}>
@@ -110,3 +114,4 @@ Fixes #456`}</code>
 };
 
 export default ConventionalCommits;
+
