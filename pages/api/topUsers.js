@@ -1,5 +1,5 @@
 import { fetchTopUsersByPullRequests } from "../../utils/fetchTopUsersByPullRequests";
-import { getTopUsersFromDb, storeTopUsersInDb } from "../../utils/database";
+import { getTopUsersFromDb, storeTopUsersInDb } from "../../utils/fetchTopUsersFromDb";
 
 export default async function handler(req, res) {
   // Add CORS headers
@@ -50,4 +50,5 @@ async function refreshCache() {
     console.error('Failed to refresh cache:', error);
   }
 }
+
 
