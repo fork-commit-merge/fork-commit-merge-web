@@ -21,7 +21,9 @@ export const LeaderBoard: React.FC = () => {
       setIsError(false);
 
       try {
-        const response = await axios.get("/api/topUsers");
+        const response = await axios.get("/api/topUsers", {
+          timeout: 8000
+        });
         setLeaderBoardData(response.data);
       } catch (error) {
         console.error("Failed to fetch leaderboard data:", error);
@@ -85,5 +87,6 @@ export const LeaderBoard: React.FC = () => {
     </div>
   );
 };
+
 
 
