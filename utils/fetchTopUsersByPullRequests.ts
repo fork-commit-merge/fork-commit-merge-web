@@ -9,12 +9,20 @@ type UserStat = {
 export const fetchTopUsersByPullRequests = async (
   repo: string
 ): Promise<UserStat[]> => {
-  let url = `https://api.github.com/repos/${repo}/pulls?state=closed&per_page=100`;
-  const userStats: { [key: string]: { prCount: number; avatarUrl: string } } =
-    {};
+  //* Limit to first 300 PRs only
+  let url = `https://api.github.com/repos/${repo}/pulls?state=closed&per_page=100&page=1`;
+  const userStats: { [key: string]: { prCount: number; avatarUrl: string } } = {};
+  let pageCount = 0;
+  const MAX_PAGES = 3;
 
-  while (url) {
-    const response = await axios.get(url);
+  while (url && pageCount < MAX_PAGES) {
+    const response = await axios.get(url, {
+      timeout: 5000,
+      headers: {
+        Authorization: `token ${process.env.GITHUB_TOKEN}`,
+      }
+    });
+    pageCount++;
     const prData = response.data;
     prData.forEach((pr: any) => {
       if (pr.merged_at) {
@@ -55,3 +63,4 @@ export const fetchTopUsersByPullRequests = async (
 
   return sortedUsers;
 };
+
