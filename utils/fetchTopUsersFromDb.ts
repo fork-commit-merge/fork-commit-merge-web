@@ -3,10 +3,7 @@ import { connectToDB } from './db';
 export async function getTopUsersFromDb() {
   try {
     const { db } = await connectToDB();
-    const data = await db.collection('topUsers')
-      .find()
-      .maxTimeMS(5000) // 5 second timeout for DB query
-      .toArray();
+    const data = await db.collection('topUsers').find().toArray();
     return data.length > 0 ? data : null;
   } catch (error) {
     console.error('DB Error:', error);
@@ -21,12 +18,11 @@ export async function storeTopUsersInDb(data: any[]) {
     await db.collection('topUsers').insertMany(
       data.map(user => ({
         ...user,
-        timestamp: new Date(),
-        lastUpdated: new Date().toISOString()
+        timestamp: new Date()
       }))
     );
   } catch (error) {
-    console.error('Error storing top users:', error);
+    console.error('DB Storage Error:', error);
     throw error;
   }
 }
@@ -57,8 +53,6 @@ export async function storeTopThreeUsersInDb(data: any[]) {
     throw error;
   }
 }
-
-
 
 
 

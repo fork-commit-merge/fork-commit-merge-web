@@ -1,64 +1,56 @@
+/* eslint-disable import/no-anonymous-default-export */
+import {
+  getTopUsersFromDb,
+  storeTopUsersInDb,
+} from "../../utils/fetchTopUsersFromDb";
 import { fetchTopUsersByPullRequests } from "../../utils/fetchTopUsersByPullRequests";
-import { getTopUsersFromDb, storeTopUsersInDb } from "../../utils/fetchTopUsersFromDb";
 
-export default async function handler(req, res) {
-  // Add CORS headers
-  res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=599');
+export default async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   try {
-    console.log('API: Checking DB for cached top users...');
+    const message = 'API: Checking DB for cached top users...';
+    console.log(message);
+    res.setHeader('X-Debug-Message', message);
+
     let data = await getTopUsersFromDb();
 
-    // If we have cached data, return it immediately
-    if (data && data.length > 0) {
-      console.log('API: Using cached data from DB');
-      res.status(200).json(data);
+    if (!data) {
+      const message2 = 'API: No cached data found, fetching from GitHub...';
+      console.log(message2);
+      res.setHeader('X-Debug-Message-2', message2);
 
-      // Optionally refresh cache in background if data is old
-      const cacheAge = Date.now() - new Date(data[0].timestamp).getTime();
-      if (cacheAge > 3600000) { // 1 hour
-        refreshCache().catch(console.error);
-      }
-      return;
-    }
-
-    // If no cached data, fetch new data with timeout
-    console.log('API: No cached data found, fetching from GitHub...');
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 50000); // 50 second timeout
-
-    try {
       data = await fetchTopUsersByPullRequests("fork-commit-merge/fork-commit-merge");
-      clearTimeout(timeout);
 
       if (data && data.length > 0) {
-        console.log('API: Storing new data in DB...');
+        const message3 = 'API: Storing new data in DB...';
+        console.log(message3);
+        res.setHeader('X-Debug-Message-3', message3);
+
         await storeTopUsersInDb(data);
-        res.status(200).json(data);
-      } else {
-        res.status(404).json({ error: 'No data available' });
       }
-    } catch (error) {
-      clearTimeout(timeout);
-      throw error;
+    } else {
+      const message4 = 'API: Using cached data from DB';
+      console.log(message4);
+      res.setHeader('X-Debug-Message-4', message4);
     }
+
+    if (!data || data.length === 0) {
+      const message5 = 'API: No data available';
+      console.log(message5);
+      res.setHeader('X-Debug-Message-5', message5);
+      return res.status(404).json({ error: 'No data available' });
+    }
+
+    return res.status(200).json(data);
   } catch (error) {
     console.error('API route error:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    console.error('Error details:', error.response?.data || error.message);
+    return res.status(500).json({ error: 'Internal Server Error' });
   }
-}
-
-// Background cache refresh
-async function refreshCache() {
-  try {
-    const data = await fetchTopUsersByPullRequests("fork-commit-merge/fork-commit-merge");
-    if (data && data.length > 0) {
-      await storeTopUsersInDb(data);
-    }
-  } catch (error) {
-    console.error('Failed to refresh cache:', error);
-  }
-}
+};
 
 
 
