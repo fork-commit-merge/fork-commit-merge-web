@@ -325,6 +325,12 @@ request table also needs to be styled properly.
 Currently, when "Dashboard" text is replaced with text "Login" in the navigation
 bar, the dashboard feature is disabled.
 
+### Leaderboard
+
+The Leaderboard feature is currently disabled because it needs more development.
+
+---
+
 ## List of Contributors
 
 Massive thanks to all of these fine individuals who contributed to this project!

@@ -193,7 +193,7 @@ const Header = () => {
                     FAQ
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href='/leaderboard'
                     onClick={handleLeaderboardClick}
@@ -201,7 +201,7 @@ const Header = () => {
                   >
                     Leaderboard
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     className='flex rounded-lg bg-white p-0.5 px-2 transition-transform hover:scale-105'
@@ -474,11 +474,11 @@ const Header = () => {
             </div>
           </Link>
 
-          <a href='/leaderboard' onClick={handleLeaderboardClick}>
+          {/* <a href='/leaderboard' onClick={handleLeaderboardClick}>
             <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
               Leaderboard
             </div>
-          </a>
+          </a> */}
 
           <li className='ml-6 mt-4 inline-flex overflow-hidden rounded-md bg-white shadow-sm'>
             <div className='inline-block border-e px-2 py-0.5 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:relative'>
