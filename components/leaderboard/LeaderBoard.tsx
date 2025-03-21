@@ -14,6 +14,7 @@ export const LeaderBoard: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [leaderBoardData, setLeaderBoardData] = useState<UserStat[] | null>(null);
   const [isError, setIsError] = useState(false);
+  const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,19 +23,26 @@ export const LeaderBoard: React.FC = () => {
 
       try {
         const response = await axios.get("/api/topUsers", {
-          timeout: 8000
+          timeout: 30000, // Increased timeout to 30 seconds
         });
         setLeaderBoardData(response.data);
       } catch (error) {
         console.error("Failed to fetch leaderboard data:", error);
         setIsError(true);
+
+        // Retry logic
+        if (retryCount < 3) {
+          setTimeout(() => {
+            setRetryCount(prev => prev + 1);
+          }, 2000); // Wait 2 seconds before retrying
+        }
       } finally {
         setIsLoading(false);
       }
     };
 
     fetchData();
-  }, []);
+  }, [retryCount]); // Add retryCount as dependency
 
   return (
     <div className="text-center">
@@ -87,6 +95,7 @@ export const LeaderBoard: React.FC = () => {
     </div>
   );
 };
+
 
 
 
