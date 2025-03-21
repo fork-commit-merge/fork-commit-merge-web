@@ -3,7 +3,7 @@ import { getTopUsersFromDb, storeTopUsersInDb } from "../../utils/fetchTopUsersF
 
 export default async function handler(req, res) {
   // Add CORS headers
-  res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate');
+  res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=599');
 
   try {
     console.log('API: Checking DB for cached top users...');
@@ -17,21 +17,30 @@ export default async function handler(req, res) {
       // Optionally refresh cache in background if data is old
       const cacheAge = Date.now() - new Date(data[0].timestamp).getTime();
       if (cacheAge > 3600000) { // 1 hour
-        refreshCache();
+        refreshCache().catch(console.error);
       }
       return;
     }
 
-    // If no cached data, fetch new data
+    // If no cached data, fetch new data with timeout
     console.log('API: No cached data found, fetching from GitHub...');
-    data = await fetchTopUsersByPullRequests("fork-commit-merge/fork-commit-merge");
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 50000); // 50 second timeout
 
-    if (data && data.length > 0) {
-      console.log('API: Storing new data in DB...');
-      await storeTopUsersInDb(data);
-      res.status(200).json(data);
-    } else {
-      res.status(404).json({ error: 'No data available' });
+    try {
+      data = await fetchTopUsersByPullRequests("fork-commit-merge/fork-commit-merge");
+      clearTimeout(timeout);
+
+      if (data && data.length > 0) {
+        console.log('API: Storing new data in DB...');
+        await storeTopUsersInDb(data);
+        res.status(200).json(data);
+      } else {
+        res.status(404).json({ error: 'No data available' });
+      }
+    } catch (error) {
+      clearTimeout(timeout);
+      throw error;
     }
   } catch (error) {
     console.error('API route error:', error);
@@ -50,5 +59,6 @@ async function refreshCache() {
     console.error('Failed to refresh cache:', error);
   }
 }
+
 
 

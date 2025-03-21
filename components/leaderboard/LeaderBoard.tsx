@@ -23,18 +23,24 @@ export const LeaderBoard: React.FC = () => {
 
       try {
         const response = await axios.get("/api/topUsers", {
-          timeout: 30000, // Increased timeout to 30 seconds
+          timeout: 60000, // Increased timeout to 60 seconds
+          headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache',
+            'Expires': '0',
+          }
         });
         setLeaderBoardData(response.data);
       } catch (error) {
         console.error("Failed to fetch leaderboard data:", error);
         setIsError(true);
 
-        // Retry logic
+        // Retry logic with exponential backoff
         if (retryCount < 3) {
+          const backoffTime = Math.pow(2, retryCount) * 2000; // 2s, 4s, 8s
           setTimeout(() => {
             setRetryCount(prev => prev + 1);
-          }, 2000); // Wait 2 seconds before retrying
+          }, backoffTime);
         }
       } finally {
         setIsLoading(false);
@@ -95,6 +101,7 @@ export const LeaderBoard: React.FC = () => {
     </div>
   );
 };
+
 
 
 

@@ -1,16 +1,12 @@
 import { connectToDB } from './db';
 
-interface UserStat {
-  login: string;
-  avatar_url: string;
-  html_url: string;
-  contributions: number;
-}
-
 export async function getTopUsersFromDb() {
   try {
     const { db } = await connectToDB();
-    const data = await db.collection('topUsers').find().toArray();
+    const data = await db.collection('topUsers')
+      .find()
+      .maxTimeMS(5000) // 5 second timeout for DB query
+      .toArray();
     return data.length > 0 ? data : null;
   } catch (error) {
     console.error('DB Error:', error);
@@ -18,7 +14,7 @@ export async function getTopUsersFromDb() {
   }
 }
 
-export async function storeTopUsersInDb(data: UserStat[]) {
+export async function storeTopUsersInDb(data: any[]) {
   try {
     const { db } = await connectToDB();
     await db.collection('topUsers').deleteMany({});
@@ -61,6 +57,7 @@ export async function storeTopThreeUsersInDb(data: any[]) {
     throw error;
   }
 }
+
 
 
 
