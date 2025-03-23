@@ -28,7 +28,6 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
         }
       });
 
-      // Handle pagination
       const linkHeader = response.headers.link;
       const nextLink = linkHeader
         ? linkHeader.split(",").find((s: string) => s.includes('rel="next"'))

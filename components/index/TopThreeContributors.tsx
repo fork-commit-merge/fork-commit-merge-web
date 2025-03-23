@@ -24,10 +24,9 @@ const TopThreeContributors: FC = () => {
 
       try {
         const response = await axios.get('/api/topThreeUsers', {
-          timeout: 8000
+          timeout: 30000
         });
 
-        // Log debug messages from headers
         for (let i = 1; i <= 5; i++) {
           const message = response.headers[`x-debug-message${i ? '-' + i : ''}`];
           if (message) {
@@ -39,7 +38,7 @@ const TopThreeContributors: FC = () => {
         const fetchedData = response.data;
 
         if (Array.isArray(fetchedData) && fetchedData.length > 0) {
-          // Sort the data by contributions in descending order
+          //* Sort the data by contributions in descending order
           const sortedData = [...fetchedData].sort((a, b) => b.contributions - a.contributions);
 
           const mappedData: Contributor[] = sortedData
@@ -137,6 +136,7 @@ const TopThreeContributors: FC = () => {
 }
 
 export { TopThreeContributors }
+
 
 
 
