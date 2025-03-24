@@ -20,67 +20,91 @@ const TopThreeContributors: FC = () => {
     const fetchContributors = async () => {
       setIsLoading(true)
       setIsError(false)
-      console.log('Starting to fetch top three users...');
+      console.log('Starting to fetch top three users...')
 
       try {
+        // Increase timeout to allow full data fetch
         const response = await axios.get('/api/topThreeUsers', {
-          timeout: 30000
-        });
+          timeout: 60000 // 60 seconds
+        })
 
         for (let i = 1; i <= 5; i++) {
-          const message = response.headers[`x-debug-message${i ? '-' + i : ''}`];
+          const message = response.headers[`x-debug-message${i ? '-' + i : ''}`]
           if (message) {
-            console.log(message);
+            console.log(message)
           }
         }
 
-        console.log('Raw API response:', response.data);
-        const fetchedData = response.data;
+        console.log('Raw API response:', response.data)
+        const fetchedData = response.data
 
         if (Array.isArray(fetchedData) && fetchedData.length > 0) {
           //* Sort the data by contributions in descending order
-          const sortedData = [...fetchedData].sort((a, b) => b.contributions - a.contributions);
+          const sortedData = [...fetchedData].sort(
+            (a, b) => b.contributions - a.contributions
+          )
 
           const mappedData: Contributor[] = sortedData
             .filter((userStat: { username: string }) => {
-              const filtered = userStat.username !== 'dependabot' &&
-                userStat.username !== 'dependabot[bot]' &&
-                userStat.username !== 'nikohoffren';
-              console.log(`Filtering ${userStat.username}: ${filtered}`);
-              return filtered;
+              // Only filter out these users if we have enough other contributors
+              const shouldFilter =
+                sortedData.length > 3 &&
+                (userStat.username === 'dependabot' ||
+                  userStat.username === 'dependabot[bot]' ||
+                  userStat.username === 'nikohoffren')
+              console.log(`Filtering ${userStat.username}: ${shouldFilter}`)
+              return !shouldFilter
             })
-            .map((userStat: { username: any; avatarUrl: any }, index: number) => ({
-              id: userStat.username,
-              url: `https://github.com/${userStat.username}`,
-              avatar: userStat.avatarUrl,
-              name: userStat.username,
-              rank: index + 1
-            }));
+            .map(
+              (userStat: { username: any; avatarUrl: any }, index: number) => {
+                // Make sure avatarUrl is valid
+                let avatar = userStat.avatarUrl
+                if (!avatar || !avatar.startsWith('http')) {
+                  avatar = `https://github.com/${userStat.username}.png`
+                }
 
-          console.log('Mapped contributors data:', mappedData);
-          setContributors(mappedData);
+                return {
+                  id: userStat.username,
+                  url: `https://github.com/${userStat.username}`,
+                  avatar,
+                  name: userStat.username,
+                  rank: index + 1
+                }
+              }
+            )
+
+          console.log('Mapped contributors data:', mappedData)
+
+          // Only set contributors if we have valid data
+          if (mappedData.length > 0) {
+            setContributors(mappedData)
+          }
         }
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching data:', error)
         if (error instanceof AxiosError) {
-          console.error('Error details:', error.response?.data || error.message);
+          console.error('Error details:', error.response?.data || error.message)
         } else {
-          console.error('Error details:', error instanceof Error ? error.message : 'Unknown error');
+          console.error(
+            'Error details:',
+            error instanceof Error ? error.message : 'Unknown error'
+          )
         }
-        setIsError(true);
+        setIsError(true)
       } finally {
-        setIsLoading(false);
+        setIsLoading(false)
       }
-    };
+    }
 
-    fetchContributors();
-  }, []);
+    fetchContributors()
+  }, [])
 
+  // Don't render anything if there's no data
   if (!contributors.length) {
-    return null;
+    return null
   }
 
-  console.log('Rendering with contributors:', contributors);
+  console.log('Rendering with contributors:', contributors)
 
   return (
     <div className='flex flex-wrap justify-center'>
@@ -94,6 +118,11 @@ const TopThreeContributors: FC = () => {
               alt={contributor.name}
               className='px-1'
               unoptimized
+              onError={e => {
+                // If image fails to load, replace with default GitHub avatar
+                const imgElement = e.currentTarget as HTMLImageElement
+                imgElement.src = `https://github.com/${contributor.name}.png`
+              }}
             />
           </a>
           {contributor.rank === 1 && (
