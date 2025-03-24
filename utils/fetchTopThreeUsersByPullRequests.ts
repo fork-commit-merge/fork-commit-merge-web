@@ -3,7 +3,6 @@ import axios, { AxiosError } from 'axios'
 export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
   try {
     console.log('Starting fetchTopThreeUsersByPullRequests...')
-    // Only add authorization if GitHub token exists
     const headers: Record<string, string> = {
       Accept: 'application/vnd.github.v3+json'
     }
@@ -26,7 +25,7 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
       try {
         const response = await axios.get(url, {
           headers,
-          timeout: 15000 // Increased timeout to 15 seconds
+          timeout: 15000
         })
         requestCount++
         console.log(
@@ -58,19 +57,16 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
           : null
         url = nextLink ? nextLink.match(/<(.*)>/)?.[1] : null
 
-        // Add delay to avoid rate limiting
         if (url) {
           await new Promise(resolve => setTimeout(resolve, 1000))
         }
       } catch (error) {
-        // If we hit a rate limit, pause and retry
         if (error instanceof AxiosError && error.response?.status === 403) {
           console.log('Rate limit hit, pausing for 10 seconds before retry')
           await new Promise(resolve => setTimeout(resolve, 10000))
-          // Don't increment request count, retry the same URL
         } else {
           console.error('Error fetching pull requests:', error)
-          break // Break the loop on other errors
+          break
         }
       }
     }

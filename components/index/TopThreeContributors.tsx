@@ -23,9 +23,8 @@ const TopThreeContributors: FC = () => {
       console.log('Starting to fetch top three users...')
 
       try {
-        // Increase timeout to allow full data fetch
         const response = await axios.get('/api/topThreeUsers', {
-          timeout: 60000 // 60 seconds
+          timeout: 60000
         })
 
         for (let i = 1; i <= 5; i++) {
@@ -46,7 +45,6 @@ const TopThreeContributors: FC = () => {
 
           const mappedData: Contributor[] = sortedData
             .filter((userStat: { username: string }) => {
-              // Only filter out these users if we have enough other contributors
               const shouldFilter =
                 sortedData.length > 3 &&
                 (userStat.username === 'dependabot' ||
@@ -57,7 +55,6 @@ const TopThreeContributors: FC = () => {
             })
             .map(
               (userStat: { username: any; avatarUrl: any }, index: number) => {
-                // Make sure avatarUrl is valid
                 let avatar = userStat.avatarUrl
                 if (!avatar || !avatar.startsWith('http')) {
                   avatar = `https://github.com/${userStat.username}.png`
@@ -75,7 +72,6 @@ const TopThreeContributors: FC = () => {
 
           console.log('Mapped contributors data:', mappedData)
 
-          // Only set contributors if we have valid data
           if (mappedData.length > 0) {
             setContributors(mappedData)
           }
@@ -99,7 +95,6 @@ const TopThreeContributors: FC = () => {
     fetchContributors()
   }, [])
 
-  // Don't render anything if there's no data
   if (!contributors.length) {
     return null
   }
@@ -119,7 +114,6 @@ const TopThreeContributors: FC = () => {
               className='px-1'
               unoptimized
               onError={e => {
-                // If image fails to load, replace with default GitHub avatar
                 const imgElement = e.currentTarget as HTMLImageElement
                 imgElement.src = `https://github.com/${contributor.name}.png`
               }}
