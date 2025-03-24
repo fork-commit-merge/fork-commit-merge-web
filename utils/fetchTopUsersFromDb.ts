@@ -53,6 +53,3 @@ export async function storeTopThreeUsersInDb(data: any[]) {
     throw error;
   }
 }
-
-
-

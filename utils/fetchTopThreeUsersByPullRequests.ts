@@ -10,16 +10,21 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
 
     let url = `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`;
     const userContributions = new Map();
+    let requestCount = 0;
+    const MAX_REQUESTS = 10;
 
-    while (url) {
-      const response = await axios.get(url, { headers });
-      console.log(`Fetched ${response.data.length} pull requests`);
+    while (url && requestCount < MAX_REQUESTS) {
+      const response = await axios.get(url, {
+        headers,
+        timeout: 10000
+      });
+      requestCount++;
+      console.log(`Fetched ${response.data.length} pull requests (Request ${requestCount}/${MAX_REQUESTS})`);
 
       const pullRequests = response.data;
       pullRequests.forEach((pr: any) => {
         const username = pr.user.login;
         if (username === "dependabot" || username === "dependabot[bot]" || username === "nikohoffren") {
-          console.log(`Skipping contribution from ${username}`);
           return;
         }
 
@@ -41,7 +46,7 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
       .map(([username, count]) => ({
         username,
         contributions: count,
-        avatarUrl: `https://avatars.githubusercontent.com/${username}`,
+        avatarUrl: `https://avatars.githubusercontent.com//${username}`,
       }));
 
     console.log('Final sorted users:', sortedUsers);
@@ -56,12 +61,3 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     return [];
   }
 }
-
-
-
-
-
-
-
-
-

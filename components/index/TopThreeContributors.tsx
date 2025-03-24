@@ -136,12 +136,3 @@ const TopThreeContributors: FC = () => {
 }
 
 export { TopThreeContributors }
-
-
-
-
-
-
-
-
-
