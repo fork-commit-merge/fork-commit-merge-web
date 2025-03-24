@@ -10,7 +10,7 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
       console.log('Using GitHub token for authentication')
     }
 
-    let url = `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`
+    let url: string | null = `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`
     const userContributions = new Map()
     let requestCount = 0
     const MAX_REQUESTS = 10
@@ -20,7 +20,7 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
         const controller = new AbortController()
         const timeout = setTimeout(() => controller.abort(), 15000)
 
-        const response = await fetch(url, {
+        const response: Response = await fetch(url, {
           headers,
           signal: controller.signal
         })
@@ -54,13 +54,13 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
         const nextLink = linkHeader
           ? linkHeader.split(',').find((s: string) => s.includes('rel="next"'))
           : null
-        url = nextLink ? nextLink.match(/<(.*)>/)?.[1] : null
+        url = nextLink ? (RegExp(/<(.*)>/).exec(nextLink)?.[1] ?? null) : null
 
         if (url) {
           await new Promise(resolve => setTimeout(resolve, 1000))
         }
       } catch (error) {
-        if (error.name === 'AbortError') {
+        if (error instanceof Error && error.name === 'AbortError') {
           console.log('Request timed out')
         } else if (error instanceof Response && error.status === 403) {
           console.log('Rate limit hit, pausing for 10 seconds before retry')
@@ -88,4 +88,3 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     return []
   }
 }
-
