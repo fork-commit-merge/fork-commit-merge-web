@@ -1,5 +1,3 @@
-import axios, { AxiosError } from 'axios'
-
 export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
   try {
     console.log('Starting fetchTopThreeUsersByPullRequests...')
@@ -10,10 +8,6 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     if (process.env.GITHUB_TOKEN) {
       headers.Authorization = `token ${process.env.GITHUB_TOKEN}`
       console.log('Using GitHub token for authentication')
-    } else {
-      console.log(
-        'No GitHub token found, proceeding with unauthenticated request'
-      )
     }
 
     let url = `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`
@@ -23,23 +17,28 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
 
     while (url && requestCount < MAX_REQUESTS) {
       try {
-        const response = await axios.get(url, {
-          headers,
-          timeout: 15000
-        })
-        requestCount++
-        console.log(
-          `Fetched ${response.data.length} pull requests (Request ${requestCount}/${MAX_REQUESTS})`
-        )
+        const controller = new AbortController()
+        const timeout = setTimeout(() => controller.abort(), 15000)
 
-        const pullRequests = response.data
-        pullRequests.forEach((pr: any) => {
+        const response = await fetch(url, {
+          headers,
+          signal: controller.signal
+        })
+        clearTimeout(timeout)
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        }
+
+        const data = await response.json()
+        requestCount++
+        console.log(`Fetched ${data.length} pull requests (Request ${requestCount}/${MAX_REQUESTS})`)
+
+        data.forEach((pr: any) => {
           const username = pr.user.login
-          if (
-            username === 'dependabot' ||
-            username === 'dependabot[bot]' ||
-            username === 'nikohoffren'
-          ) {
+          if (username === 'dependabot' ||
+              username === 'dependabot[bot]' ||
+              username === 'nikohoffren') {
             return
           }
 
@@ -51,7 +50,7 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
           }
         })
 
-        const linkHeader = response.headers.link
+        const linkHeader = response.headers.get('link')
         const nextLink = linkHeader
           ? linkHeader.split(',').find((s: string) => s.includes('rel="next"'))
           : null
@@ -61,7 +60,9 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
           await new Promise(resolve => setTimeout(resolve, 1000))
         }
       } catch (error) {
-        if (error instanceof AxiosError && error.response?.status === 403) {
+        if (error.name === 'AbortError') {
+          console.log('Request timed out')
+        } else if (error instanceof Response && error.status === 403) {
           console.log('Rate limit hit, pausing for 10 seconds before retry')
           await new Promise(resolve => setTimeout(resolve, 10000))
         } else {
@@ -84,11 +85,7 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     return sortedUsers
   } catch (error) {
     console.error('API Error in fetchTopThreeUsersByPullRequests:', error)
-    if (error instanceof AxiosError) {
-      console.error('Error details:', error.response?.data || error.message)
-    } else {
-      console.error('Error details:', error)
-    }
     return []
   }
 }
+

@@ -44,11 +44,7 @@ const Header = () => {
   }
 
   useEffect(() => {
-    fetch('https://api.github.com/repos/fork-commit-merge/fork-commit-merge', {
-      headers: {
-        Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`
-      }
-    })
+    fetch('/api/repo-stats')
       .then(response => response.json())
       .then(data => {
         setStarCount(data.stargazers_count)
@@ -723,4 +719,5 @@ const Header = () => {
 }
 
 export default Header
+
 
