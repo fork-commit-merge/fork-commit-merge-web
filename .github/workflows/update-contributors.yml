@@ -2,7 +2,7 @@ name: Update Top Contributors
 
 on:
   schedule:
-    - cron: '5 0 * * *'  # Runs at 00:05 UTC every day
+    - cron: '5 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,14 +12,26 @@ jobs:
     steps:
       - name: Update Contributors
         run: |
-          response=$(curl -X POST ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors \
+          echo "Making request to: ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors"
+          echo "Token present: ${{ secrets.FCM_GITHUB_TOKEN != '' }}"
+
+          response=$(curl -v -X POST ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors \
           -H "Authorization: Bearer ${{ secrets.FCM_GITHUB_TOKEN }}" \
           -H "Content-Type: application/json" \
           -w "\n%{http_code}")
-          echo "Response: $response"
-          if [[ $(echo "$response" | tail -n1) != 2* ]]; then
-            echo "Error: API call failed"
+
+          echo "Full response:"
+          echo "$response"
+
+          status_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | head -n1)
+
+          echo "Status code: $status_code"
+          echo "Response body: $body"
+
+          if [[ $status_code != 2* ]]; then
+            echo "Error: API call failed with status: $status_code"
             exit 1
           fi
         env:
-          GITHUB_TOKEN: ${{ secrets.FCM_GITHUB_TOKEN }}
+          FCM_GITHUB_TOKEN: ${{ secrets.FCM_GITHUB_TOKEN }}
