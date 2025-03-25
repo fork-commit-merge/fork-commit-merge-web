@@ -3,15 +3,21 @@ name: Update Top Contributors
 on:
   schedule:
     - cron: '5 0 * * *'  # Runs at 00:05 UTC every day
-  workflow_dispatch:      # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   update-contributors:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Update Contributors
         run: |
-          curl -X POST ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors \
+          response=$(curl -X POST ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors \
           -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-          -H "Content-Type: application/json"
+          -H "Content-Type: application/json" \
+          -w "\n%{http_code}")
+          echo "Response: $response"
+          if [[ $(echo "$response" | tail -n1) != 2* ]]; then
+            echo "Error: API call failed"
+            exit 1
+          fi
