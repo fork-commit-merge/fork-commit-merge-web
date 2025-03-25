@@ -5,7 +5,7 @@ import {
 import { fetchTopThreeUsersByPullRequests } from '../../utils/fetchTopThreeUsersByPullRequests'
 
 export default async function handler(req, res) {
-  res.setTimeout(30000);
+  res.setTimeout(60000);
 
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET')
