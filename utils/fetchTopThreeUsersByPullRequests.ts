@@ -1,13 +1,26 @@
 export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
   try {
-    console.log('Starting fetchTopThreeUsersByPullRequests...')
     const headers: Record<string, string> = {
       Accept: 'application/vnd.github.v3+json'
     }
 
     if (process.env.GITHUB_TOKEN) {
       headers.Authorization = `token ${process.env.GITHUB_TOKEN}`
-      console.log('Using GitHub token for authentication')
+      console.log('Token present and being used') // Debug log
+    } else {
+      console.log('No GitHub token found') // Debug log
+    }
+
+    const testUrl = `https://api.github.com/repos/${repoPath}/pulls?state=closed&per_page=100`
+
+    // Test the token
+    const testResponse = await fetch(testUrl, { headers })
+    if (!testResponse.ok) {
+      console.error('GitHub API Error:', {
+        status: testResponse.status,
+        statusText: testResponse.statusText,
+        headers: Object.fromEntries(testResponse.headers)
+      })
     }
 
     let url: string | null = `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`
@@ -84,7 +97,8 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     console.log('Final sorted users:', sortedUsers)
     return sortedUsers
   } catch (error) {
-    console.error('API Error in fetchTopThreeUsersByPullRequests:', error)
-    return []
+    console.error('Detailed error in fetchTopThreeUsersByPullRequests:', error)
+    throw error
   }
 }
+
