@@ -13,7 +13,7 @@ jobs:
       - name: Update Contributors
         run: |
           response=$(curl -X POST ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors \
-          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Authorization: Bearer ${{ secrets.FCM_GITHUB_TOKEN }}" \
           -H "Content-Type: application/json" \
           -w "\n%{http_code}")
           echo "Response: $response"
@@ -22,4 +22,4 @@ jobs:
             exit 1
           fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.FCM_GITHUB_TOKEN }}

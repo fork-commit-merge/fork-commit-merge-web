@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   }
 
   const token = authHeader.split(' ')[1];
-  if (!token || token !== process.env.GITHUB_TOKEN) {
+  if (!token || token !== process.env.FCM_GITHUB_TOKEN) {
     console.error('Invalid authorization token');
     return res.status(401).json({ error: 'Unauthorized' });
   }
