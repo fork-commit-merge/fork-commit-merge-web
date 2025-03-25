@@ -10,7 +10,8 @@ export default async function handler(req, res) {
     return res.status(401).json({ error: 'No authorization header' });
   }
 
-  if (authHeader !== `Bearer ${process.env.GITHUB_TOKEN}`) {
+  const token = authHeader.split(' ')[1];
+  if (!token || token !== process.env.GITHUB_TOKEN) {
     console.error('Invalid authorization token');
     return res.status(401).json({ error: 'Unauthorized' });
   }
@@ -34,4 +35,5 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Internal server error', details: error.message });
   }
 }
+
 
