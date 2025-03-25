@@ -95,10 +95,16 @@ export default authMiddleware({
     '/roadmaps/open-source-licenses',
     '/roadmaps/overview-of-documentation',
     '/roadmaps/legal-and-ethical-considerations',
-    '/roadmaps/open-source-terminology'
+    '/roadmaps/open-source-terminology',
+    '/api/repo-stats',
+    '/api/topThreeUsers',
+    '/api/closedPullRequests',
+    '/api/getStoredPullRequests',
+    '/api/topUsers'
   ]
 })
 
 export const config = {
   matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)']
 }
+
