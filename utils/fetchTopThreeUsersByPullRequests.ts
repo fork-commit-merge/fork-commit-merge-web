@@ -5,22 +5,26 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     }
 
     if (process.env.GITHUB_TOKEN) {
-      headers.Authorization = `token ${process.env.GITHUB_TOKEN}`
-      console.log('Token present and being used') // Debug log
+      headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`
+      console.log('Token present and being used')
     } else {
-      console.log('No GitHub token found') // Debug log
+      console.log('No GitHub token found')
     }
 
     const testUrl = `https://api.github.com/repos/${repoPath}/pulls?state=closed&per_page=100`
 
-    // Test the token
     const testResponse = await fetch(testUrl, { headers })
+    console.log('GitHub API Response Status:', testResponse.status)
+
     if (!testResponse.ok) {
+      const responseText = await testResponse.text()
       console.error('GitHub API Error:', {
         status: testResponse.status,
         statusText: testResponse.statusText,
-        headers: Object.fromEntries(testResponse.headers)
+        headers: Object.fromEntries(testResponse.headers),
+        body: responseText
       })
+      throw new Error(`GitHub API Error: ${testResponse.status} ${testResponse.statusText}`)
     }
 
     let url: string | null = `https://api.github.com/repos/fork-commit-merge/fork-commit-merge/pulls?state=closed&per_page=100`
@@ -101,4 +105,3 @@ export async function fetchTopThreeUsersByPullRequests(repoPath: string) {
     throw error
   }
 }
-
