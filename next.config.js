@@ -29,6 +29,14 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'github.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.clerk.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.clerk.dev'
       }
     ],
     dangerouslyAllowSVG: true,
@@ -38,5 +46,6 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
 
 
