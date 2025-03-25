@@ -3,8 +3,6 @@ import { storeTopThreeUsersInDb } from '../../utils/fetchTopUsersFromDb';
 
 export default async function handler(req, res) {
   console.log('Update contributors API called');
-  console.log('Auth header present:', !!req.headers.authorization);
-  console.log('Expected token:', process.env.FCM_GITHUB_TOKEN?.substring(0, 5) + '...');
 
   const authHeader = req.headers.authorization;
   if (!authHeader) {
@@ -13,12 +11,19 @@ export default async function handler(req, res) {
   }
 
   const token = authHeader.split(' ')[1];
-  console.log('Received token:', token?.substring(0, 5) + '...');
+
+  // Debug logging (first 5 chars only for security)
+  console.log('Environment token length:', process.env.FCM_GITHUB_TOKEN?.length);
+  console.log('Received token length:', token?.length);
+  console.log('Environment token prefix:', process.env.FCM_GITHUB_TOKEN?.substring(0, 5));
+  console.log('Received token prefix:', token?.substring(0, 5));
 
   if (!token || token !== process.env.FCM_GITHUB_TOKEN) {
-    console.error('Invalid authorization token');
-    console.log('Token match:', token === process.env.FCM_GITHUB_TOKEN);
-    return res.status(401).json({ error: 'Unauthorized' });
+    console.error('Token validation failed');
+    return res.status(401).json({
+      error: 'Unauthorized',
+      details: 'Token validation failed'
+    });
   }
 
   try {
@@ -40,3 +45,4 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Internal server error', details: error.message });
   }
 }
+

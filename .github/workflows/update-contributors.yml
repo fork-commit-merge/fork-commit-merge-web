@@ -12,16 +12,15 @@ jobs:
     steps:
       - name: Update Contributors
         run: |
-          echo "Making request to: ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors"
-          echo "Token present: ${{ secrets.FCM_GITHUB_TOKEN != '' }}"
+          # Ensure token is properly formatted
+          TOKEN="${FCM_GITHUB_TOKEN}"
+          echo "Token length: ${#TOKEN}"
+          echo "Token prefix: ${TOKEN:0:5}..."
 
           response=$(curl -v -X POST ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors \
-          -H "Authorization: Bearer ${{ secrets.FCM_GITHUB_TOKEN }}" \
+          -H "Authorization: Bearer ${TOKEN}" \
           -H "Content-Type: application/json" \
           -w "\n%{http_code}")
-
-          echo "Full response:"
-          echo "$response"
 
           status_code=$(echo "$response" | tail -n1)
           body=$(echo "$response" | head -n1)
