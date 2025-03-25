@@ -25,6 +25,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'robohash.org'
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com'
       }
     ],
     dangerouslyAllowSVG: true,
@@ -34,4 +38,5 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
 

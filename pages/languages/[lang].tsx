@@ -38,7 +38,7 @@ import CrystalLanguage from '../../components/languageComponents/CrystalLanguage
 import GroovyLanguage from '../../components/languageComponents/GroovyLanguage'
 import DLanguage from '../../components/languageComponents/DLanguage'
 import ElmLanguage from '../../components/languageComponents/ElmLanguage'
-import NimLanguage from '../../components/languageComponents/NimLangauge'
+import NimLanguage from '../../components/languageComponents/NimLanguage'
 import OctaveLanguage from '../../components/languageComponents/OctaveLanguage'
 import RescriptLanguage from '../../components/languageComponents/RescriptLanguage'
 import ScratchLanguage from '../../components/languageComponents/ScratchLanguage'
@@ -184,3 +184,4 @@ const LanguagePage = () => {
 }
 
 export default LanguagePage
+

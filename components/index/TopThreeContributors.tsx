@@ -1,13 +1,11 @@
 import React, { useState, useEffect, FC } from 'react'
-import axios, { AxiosError } from 'axios'
 import Image from 'next/image'
 import { StarFilled } from '@ant-design/icons'
 
 export type Contributor = {
-  id: string
-  url: string
-  avatar: string
-  name: string
+  username: string
+  contributions: number
+  avatarUrl: string
   rank?: number
 }
 
@@ -19,73 +17,35 @@ const TopThreeContributors: FC = () => {
   useEffect(() => {
     const fetchContributors = async () => {
       setIsLoading(true)
-      setIsError(false)
-      console.log('Starting to fetch top three users...')
-
       try {
-        const response = await axios.get('/api/topThreeUsers', {
-          timeout: 60000
+        const response = await fetch('/api/topThreeUsers', {
+          headers: {
+            'Content-Type': 'application/json'
+          }
         })
 
-        for (let i = 1; i <= 5; i++) {
-          const message = response.headers[`x-debug-message${i ? '-' + i : ''}`]
-          if (message) {
-            console.log(message)
-          }
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
         }
 
-        console.log('Raw API response:', response.data)
-        const fetchedData = response.data
+        const fetchedData = await response.json()
+        console.log('Raw API response:', fetchedData)
 
         if (Array.isArray(fetchedData) && fetchedData.length > 0) {
-          //* Sort the data by contributions in descending order
-          const sortedData = [...fetchedData].sort(
-            (a, b) => b.contributions - a.contributions
-          )
-
-          const mappedData: Contributor[] = sortedData
-            .filter((userStat: { username: string }) => {
-              const shouldFilter =
-                sortedData.length > 3 &&
-                (userStat.username === 'dependabot' ||
-                  userStat.username === 'dependabot[bot]' ||
-                  userStat.username === 'nikohoffren')
-              console.log(`Filtering ${userStat.username}: ${shouldFilter}`)
-              return !shouldFilter
-            })
-            .map(
-              (userStat: { username: any; avatarUrl: any }, index: number) => {
-                let avatar = userStat.avatarUrl
-                if (!avatar || !avatar.startsWith('http')) {
-                  avatar = `https://github.com/${userStat.username}.png`
-                }
-
-                return {
-                  id: userStat.username,
-                  url: `https://github.com/${userStat.username}`,
-                  avatar,
-                  name: userStat.username,
-                  rank: index + 1
-                }
-              }
-            )
+          const mappedData = fetchedData.map((contributor, index) => ({
+            ...contributor,
+            rank: index + 1
+          }))
 
           console.log('Mapped contributors data:', mappedData)
-
-          if (mappedData.length > 0) {
-            setContributors(mappedData)
-          }
+          setContributors(mappedData)
         }
       } catch (error) {
         console.error('Error fetching data:', error)
-        if (error instanceof AxiosError) {
-          console.error('Error details:', error.response?.data || error.message)
-        } else {
-          console.error(
-            'Error details:',
-            error instanceof Error ? error.message : 'Unknown error'
-          )
-        }
+        console.error(
+          'Error details:',
+          error instanceof Error ? error.message : 'Unknown error'
+        )
         setIsError(true)
       } finally {
         setIsLoading(false)
@@ -95,7 +55,7 @@ const TopThreeContributors: FC = () => {
     fetchContributors()
   }, [])
 
-  if (!contributors.length) {
+  if (isLoading || isError || !contributors.length) {
     return null
   }
 
@@ -104,18 +64,22 @@ const TopThreeContributors: FC = () => {
   return (
     <div className='flex flex-wrap justify-center'>
       {contributors.map(contributor => (
-        <div key={contributor.id} className='contributor-images relative'>
-          <a href={contributor.url} target='_blank' rel='noopener noreferrer'>
+        <div key={contributor.username} className='contributor-images relative'>
+          <a
+            href={`https://github.com/${contributor.username}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <Image
-              src={contributor.avatar}
+              src={contributor.avatarUrl}
               width={80}
               height={80}
-              alt={contributor.name}
+              alt={`GitHub avatar of ${contributor.username}`}
               className='px-1'
               unoptimized
               onError={e => {
                 const imgElement = e.currentTarget as HTMLImageElement
-                imgElement.src = `https://github.com/${contributor.name}.png`
+                imgElement.src = `https://github.com/${contributor.username}.png`
               }}
             />
           </a>
