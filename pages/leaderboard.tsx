@@ -48,4 +48,3 @@ const LeaderBoardPage: React.FC = () => {
 }
 
 export default LeaderBoardPage
-
