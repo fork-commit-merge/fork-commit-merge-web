@@ -1,0 +1,17 @@
+name: Update Top Contributors
+
+on:
+  schedule:
+    - cron: '5 0 * * *'  # Runs at 00:05 UTC every day
+  workflow_dispatch:      # Allows manual trigger
+
+jobs:
+  update-contributors:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Update Contributors
+        run: |
+          curl -X POST ${{ secrets.VERCEL_DEPLOYMENT_URL }}/api/updateTopContributors \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Content-Type: application/json"
