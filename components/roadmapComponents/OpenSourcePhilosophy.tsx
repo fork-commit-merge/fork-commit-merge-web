@@ -1,79 +1,114 @@
 /* eslint-disable @next/next/no-img-element */
 import { openSourcePrinciples } from "../data/openSourcePrinciples";
 
+const philosophyTopics = [
+  {
+    name: 'Freedom and Transparency',
+    description: 'Open source software grants users the freedom to view, modify, and distribute the source code, promoting transparency and trust.',
+    features: [
+      'Access to source code',
+      'Freedom to modify',
+      'Right to redistribute',
+      'Transparency in development',
+      'Community oversight'
+    ]
+  },
+  {
+    name: 'Collaborative Innovation',
+    description: 'The open source model enables global collaboration, leading to rapid innovation and improvement through diverse perspectives.',
+    features: [
+      'Global participation',
+      'Diverse perspectives',
+      'Rapid iteration',
+      'Knowledge sharing',
+      'Collective problem-solving'
+    ]
+  },
+  {
+    name: 'Community-Driven Development',
+    description: 'Open source thrives on community participation, where developers worldwide contribute to improve and maintain the software.',
+    features: [
+      'Community governance',
+      'Shared ownership',
+      'Democratic decision-making',
+      'Inclusive participation',
+      'Collaborative maintenance'
+    ]
+  },
+  {
+    name: 'Knowledge Sharing',
+    description: 'Open source promotes the free exchange of knowledge and expertise, benefiting both individual developers and the broader community.',
+    features: [
+      'Educational resources',
+      'Code examples',
+      'Best practices',
+      'Documentation',
+      'Mentorship opportunities'
+    ]
+  }
+]
+
 const OpenSourcePhilosophy = () => {
   return (
-    <div className='bg-primary flex items-center justify-center py-10'>
-      <div className='max-w-2xl text-center'>
-        <h1 className='mb-6 text-3xl font-bold'>
-          Understanding Open Source and Its Philosophy
-        </h1>
-        <p className='mb-4'>
-          The term &quot;open source&quot; denotes software that&apos;s
-          accompanied by a special kind of license, which grants individuals the
-          freedom to peruse, adapt, and disseminate the software without any
-          encumbrances. But if you delve deeper, open source is much more than a
-          licensing methodology—it represents a paradigm shift in how we think
-          about creation, ownership, and collaboration.
-        </p>
-        <p className='mb-4'>
-          Born out of the belief that knowledge should be accessible and shared,
-          the open-source movement champions transparency. It negates the
-          concept of closely guarded secrets, instead inviting a global
-          community to inspect, question, and enhance the work. This collective
-          contribution has proven time and again to drive innovation at an
-          unparalleled pace, fueled by diverse perspectives and expertise.
-        </p>
-        <p className='mb-4'>
-          Beyond software, the ethos of open source permeates various domains.
-          It&apos;s an embodiment of a world where collaboration trumps
-          competition, where sharing and building together fosters more
-          advanced, robust, and impactful outcomes. In this spirit, projects
-          aren&apos;t just built by a handful of individuals but are nurtured by
-          an entire community vested in its growth and evolution.
-        </p>
-        <p className='mb-4'>
-          However, to ensure that this community-driven approach flourishes
-          while safeguarding the rights and intentions of creators, certain
-          principles have been established. These principles not only define the
-          operational mechanics of open-source software but also elucidate the
-          philosophical underpinnings that make open source such a
-          transformative movement.
-        </p>
-        <p className='mb-6'>
-          Let&apos;s explore the foundational principles that underlie open
-          source:
-        </p>
-        <table className='min-w-full bg-slate-900'>
-          <thead>
-            <tr>
-              <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider'>
-                Principle
-              </th>
-              <th className='border-b border-gray-200 bg-gray-900 px-4 py-2 text-left text-xs font-medium uppercase leading-4 tracking-wider'>
-                Description
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {openSourcePrinciples.map((principle, index) => (
-              <tr
-                key={index}
-                className={index % 2 === 0 ? 'bg-gray-900' : 'bg-gray-800'}
-              >
-                <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5'>
-                  {principle.name}
-                </td>
-                <td className='whitespace-no-wrap px-4 py-4 text-sm leading-5'>
-                  {principle.description}
-                </td>
-              </tr>
+    <div className='bg-white'>
+      <div className='modern-container'>
+        <div className='py-16 sm:py-24'>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
+              Understanding <span className='text-modern-purple'>Open Source</span>
+            </h1>
+            <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-600'>
+              Explore the fundamental principles and philosophy behind the open source movement and its impact on software development.
+            </p>
+          </div>
+
+          <div className='mt-16 grid w-full max-w-4xl gap-8 md:grid-cols-2 mx-auto'>
+            {philosophyTopics.map((topic, index) => (
+              <div key={index} className='rounded-lg bg-gray-800 p-6 shadow-lg'>
+                <h2 className='mb-4 text-2xl font-semibold text-white'>{topic.name}</h2>
+                <p className='mb-4 text-gray-300'>{topic.description}</p>
+                <h3 className='mb-2 text-xl text-white'>Key Aspects:</h3>
+                <ul className='mb-4 list-disc pl-5 text-gray-300'>
+                  {topic.features.map((feature, featureIndex) => (
+                    <li key={featureIndex}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </tbody>
-        </table>
+          </div>
+
+          <div className='mt-16 rounded-lg bg-gray-50 p-8 shadow-sm'>
+            <h2 className='mb-6 text-2xl font-bold text-gray-900'>Core Open Source Principles</h2>
+            <div className='grid gap-4 text-gray-600 sm:grid-cols-2'>
+              {openSourcePrinciples.map((principle, index) => (
+                <div key={index} className='flex items-start'>
+                  <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <h3 className='font-semibold'>{principle.name}</h3>
+                    <p className='text-sm'>{principle.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className='mt-16 text-center'>
+            <a
+              href='https://opensource.org/osd/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='themed-button inline-block transform rounded-md px-8 py-3 text-sm font-semibold tracking-wider shadow-lg transition-all duration-300 ease-in-out hover:scale-105'
+            >
+              LEARN MORE ABOUT OPEN SOURCE
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   )
-};
+}
 
-export default OpenSourcePhilosophy;
+export default OpenSourcePhilosophy
+

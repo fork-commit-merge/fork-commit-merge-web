@@ -12,24 +12,21 @@ const Git = () => {
   const { git } = router.query
 
   const renderContent = () => {
-    const commonHeaderStyle = {
-      backgroundImage: "url('/fcm-background-image.png')",
-    }
 
     const getComponent = () => {
       switch (git) {
         case 'git-commands':
-          return <GitCommandsSelection headerStyle={commonHeaderStyle} />
+          return <GitCommandsSelection />
         case 'git-branching':
-          return <GitBranchingSelection headerStyle={commonHeaderStyle} />
+          return <GitBranchingSelection />
         case 'git-conflicts':
-          return <GitConflicts headerStyle={commonHeaderStyle} />
+          return <GitConflicts />
         case 'git-configuration':
-          return <GitConfiguration headerStyle={commonHeaderStyle} />
+          return <GitConfiguration />
         case 'git-workflow':
-          return <GitWorkflow headerStyle={commonHeaderStyle} />
+          return <GitWorkflow />
         case 'conventional-commits':
-          return <ConventionalCommits headerStyle={commonHeaderStyle} />
+          return <ConventionalCommits />
         default:
           return <SelectionNotSupported />
       }
@@ -42,4 +39,3 @@ const Git = () => {
 }
 
 export default Git
-

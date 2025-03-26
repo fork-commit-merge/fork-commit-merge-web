@@ -8,7 +8,7 @@ function Coffee() {
       href="https://www.buymeacoffee.com/nikohoffren"
     >
       <img
-        className="coffeeImage"
+        className="coffeeImage h-6"
         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
         alt="Buy me a coffee"
       />

@@ -1,111 +1,54 @@
 import AIContent from '../components/ai/AIContent'
 
 export default function AI() {
-  const editorExtensions = [
-    {
-      name: 'Augment Code',
-      editor: 'Multiple IDEs',
-      description: 'AI-powered code assistant that enhances developer productivity with intelligent code completion, refactoring suggestions, and documentation generation across various development environments.',
-      installSteps: [
-        'Visit augmentcode.com',
-        'Choose your preferred IDE',
-        'Follow the IDE-specific installation guide',
-        'Install the Augment Code extension',
-        'Sign in with your Augment Code account'
-      ],
-      link: 'https://www.augmentcode.com/'
-    },
-    {
-      name: 'Cursor',
-      editor: 'Standalone Editor',
-      description: 'AI-first code editor built for pair programming with AI.',
-      installSteps: [
-        'Visit cursor.sh',
-        'Download the appropriate version for your OS',
-        'Install and launch the application',
-        'Sign up for a Cursor account'
-      ],
-      link: 'https://cursor.sh'
-    },
-    {
-      name: 'Tabnine',
-      editor: 'Multiple IDEs',
-      description: 'AI code completion tool that supports multiple programming languages and IDEs.',
-      installSteps: [
-        'Visit tabnine.com',
-        'Choose your IDE',
-        'Follow IDE-specific installation instructions',
-        'Create or sign in to Tabnine account'
-      ],
-      link: 'https://www.tabnine.com'
-    }
-  ]
-
   return (
-    <div className='bg-primary min-h-screen'>
-      <div
-        className='page-header-background'
-        style={{ backgroundImage: "url('/fcm-background-image.png')" }}
-      >
-        <div className='page-header-content'>
-          <h1 className='mb-6 text-center text-4xl font-bold'>
-            AI in Development
-          </h1>
-        </div>
-      </div>
-      <div className='flex flex-col items-center justify-center px-5 py-10'>
-        <h2 className='mb-6 text-3xl font-bold'>What is AI in Development?</h2>
-        <p className='mb-8 max-w-3xl text-center'>
-          Artificial Intelligence (AI) has revolutionized software development by providing powerful tools
-          that can assist with coding, debugging, and documentation. AI-powered development tools can help
-          developers write better code faster, understand complex codebases, and automate repetitive tasks.
-        </p>
-
-        <h2 className='mb-6 text-3xl font-bold'>Popular AI Coding Assistants</h2>
-        <AIContent />
-
-        <div className='mt-12 max-w-4xl w-full'>
-          <h2 className='mb-6 text-3xl font-bold text-center'>AI-Powered Editor Extensions</h2>
-          <div className='grid md:grid-cols-2 gap-8'>
-            {editorExtensions.map((ext, index) => (
-              <div key={index} className='rounded-lg bg-gray-800 p-6 shadow-lg'>
-                <h3 className='mb-2 text-2xl font-semibold'>{ext.name}</h3>
-                <p className='mb-2 text-sm text-gray-400'>For {ext.editor}</p>
-                <p className='mb-4'>{ext.description}</p>
-                <h4 className='mb-2 text-xl'>Installation Steps:</h4>
-                <ol className='mb-4 list-decimal pl-5'>
-                  {ext.installSteps.map((step, stepIndex) => (
-                    <li key={stepIndex} className='mb-1'>{step}</li>
-                  ))}
-                </ol>
-                <a
-                  href={ext.link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='cursor-pointer text-blue-400 hover:underline'
-                >
-                  Install {ext.name}
-                </a>
-              </div>
-            ))}
+    <div className='bg-white'>
+      <div className='modern-container'>
+        <div className='py-16 sm:py-24'>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
+              AI Development <span className='text-modern-purple'>Tools</span>
+            </h1>
+            <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-600'>
+              Discover powerful AI tools and best practices to enhance your development workflow.
+            </p>
           </div>
-        </div>
 
-        <div className='mt-12 max-w-3xl text-center'>
-          <h2 className='mb-6 text-3xl font-bold'>Best Practices for Using AI Tools</h2>
-          <ul className='list-disc text-left pl-5'>
-            <li className='mb-3'>Always review and understand AI-generated code before using it</li>
-            <li className='mb-3'>Use AI tools as assistants, not replacements for understanding</li>
-            <li className='mb-3'>Keep security in mind when sharing code with AI services</li>
-            <li className='mb-3'>Verify licenses and terms of use for AI-generated code</li>
-            <li className='mb-3'>Combine multiple AI tools for better results</li>
-            <li className='mb-3'>Keep your AI tools and extensions updated for the latest features</li>
-            <li className='mb-3'>Use project-specific settings to maintain consistency</li>
-            <li className='mb-3'>Be mindful of token usage and API rate limits</li>
-          </ul>
+          <div className='mt-16 flex justify-center'>
+            <AIContent />
+          </div>
+
+          <div className='mt-16 rounded-lg bg-gray-50 p-8 shadow-sm'>
+            <h2 className='mb-6 text-2xl font-bold text-gray-900'>Best Practices for Using AI Tools</h2>
+            <ul className='grid gap-4 text-gray-600 sm:grid-cols-2'>
+              <li className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Always review and understand AI-generated code
+              </li>
+              <li className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Use AI tools as assistants, not replacements
+              </li>
+              <li className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Keep security in mind when sharing code
+              </li>
+              <li className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Verify licenses and terms of use
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   )
 }
-

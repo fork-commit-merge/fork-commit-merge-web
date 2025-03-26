@@ -1,145 +1,127 @@
-import React from "react";
+import React from "react"
+import { motion } from "framer-motion"
+
+interface TutorialResource {
+  title: string
+  description: string
+  url: string
+  channel: string
+}
+
+const tutorials: TutorialResource[] = [
+  {
+    title: "Complete Guide to Open Source",
+    description: "A comprehensive guide covering everything you need to know about contributing to open source projects.",
+    url: "https://www.youtube.com/watch?v=yzeVMecydCE",
+    channel: "freeCodeCamp"
+  },
+  {
+    title: "First Time Open Source Contribution",
+    description: "Learn the basics of making your first contribution to open source projects with practical examples.",
+    url: "https://www.youtube.com/watch?v=c6b6B9oN4Vg",
+    channel: "Meta Open Source"
+  },
+  {
+    title: "How to Contribute to Open Source",
+    description: "A practical guide to finding and contributing to open source projects effectively.",
+    url: "https://www.youtube.com/watch?v=2L0sxPx4C18",
+    channel: "strager"
+  },
+  {
+    title: "Open Source Project Contributions",
+    description: "Step-by-step tutorial on how to find, evaluate, and contribute to open source projects.",
+    url: "https://www.youtube.com/watch?v=LxdyX9p0wrM",
+    channel: "Tiff In Tech"
+  },
+  {
+    title: "Open Source Career Impact",
+    description: "Learn how contributing to open source can enhance your career and development skills.",
+    url: "https://www.youtube.com/watch?v=CML6vfKjQss",
+    channel: "Ask Cloud Architect"
+  },
+  {
+    title: "Getting Started with Open Source",
+    description: "A beginner-friendly guide to making your first steps in the open source community.",
+    url: "https://www.youtube.com/watch?v=RGd5cOXpCQw",
+    channel: "AssemblyAI"
+  },
+  {
+    title: "Open Source Like a Pro",
+    description: "Advanced techniques and best practices for contributing to open source projects.",
+    url: "https://www.youtube.com/watch?v=MT6M_sqAuZo",
+    channel: "Ben Awad"
+  },
+  {
+    title: "First Pull Request Guide",
+    description: "Detailed walkthrough of creating your first pull request on GitHub.",
+    url: "https://www.youtube.com/watch?v=nkuYH40cjo4",
+    channel: "DigitalOcean"
+  }
+]
 
 const ContributingResources: React.FC = () => {
   return (
-    <>
-      <div className="w-full md:w-1/2 mb-20">
-        <div className="max-w-md mx-auto">
-          <h2 className="text-2xl font-semibold mb-2">
-            Contributing Video Tutorials
-          </h2>
-          <p className="mb-4 max-w-prose">
-            Here you&apos;ll find a collection of video tutorials on a wide
-            range of topics related to open-source contributions. From
-            comprehensive guides to first-time experiences, these resources will
-            help you understand and navigate the world of open source.
-          </p>
-          <ul className="space-y-2">
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=yzeVMecydCE"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">Complete Guide to Open Source - How to Contribute (freeCodeCamp.org)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=c6b6B9oN4Vg"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">Contributing to Open Source for the first time (Meta Open Source)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=2L0sxPx4C18"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How to contribute to open source (strager)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=LxdyX9p0wrM"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How to Contribute to Open Source Projects? (Tiff In Tech)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=CML6vfKjQss"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">Contributing to Open Source Can Change Your Life - Here&apos;s How to Do It (Ask Cloud Architech)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=RGd5cOXpCQw"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How to Get Started with Contributing to Open Source (AssemblyAI)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=MT6M_sqAuZo"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How to Open Source Like a Pro (Ben Awad)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=GbqSvJs-6W4"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How To Get Started With Open Source (Web Dev Simplified)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=uQLNFRviB6Q"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How To Get Started With Open Source | Make Your First Contribution. (Zero To Mastery)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=dLRA1lffWBw"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How to Contribute to Open Source Projects (Web Dev Cody)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=nkuYH40cjo4"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How to Do Your First Pull Request (DigitalOcean)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=RzYJvSnzlMk"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">Teamwork & Git (Computerphile)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </>
-  );
-};
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="rounded-2xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl"
+    >
+      <h2 className="mb-4 text-2xl font-bold text-gray-900">
+        Contributing Resources
+      </h2>
+      <p className="mb-6 text-gray-600">
+        Comprehensive video tutorials to help you understand and start contributing to open source projects.
+      </p>
 
-export default ContributingResources;
+      <div className="space-y-4">
+        {tutorials.map((tutorial, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            <a
+              href={tutorial.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block overflow-hidden rounded-xl bg-gradient-to-r from-gray-800 to-gray-900 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-lg font-semibold text-white">
+                  {tutorial.title}
+                </h3>
+                <span className="rounded-full bg-modern-purple/10 px-3 py-1 text-xs font-medium text-modern-purple">
+                  {tutorial.channel}
+                </span>
+              </div>
+              <p className="mt-2 text-sm text-gray-300 opacity-90 transition-opacity group-hover:opacity-100">
+                {tutorial.description}
+              </p>
+              <div className="mt-4 flex items-center text-sm text-modern-purple">
+                <span className="font-medium">Watch Tutorial</span>
+                <svg
+                  className="ml-2 h-4 w-4 transform transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </a>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  )
+}
+
+export default ContributingResources
+
+

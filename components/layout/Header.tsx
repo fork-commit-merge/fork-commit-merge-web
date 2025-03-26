@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Coffee from '../buttons/Coffee'
 import styles from '../../styles/Coffee.module.css'
 import React from 'react'
@@ -33,15 +33,6 @@ const Header = () => {
   const router = useRouter()
   const [starCount, setStarCount] = useState<number | null>(null)
   const { user, isLoaded } = useUser()
-
-  const handleLeaderboardClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    if (user) {
-      router.push('/leaderboard')
-    } else {
-      router.push('/dashboard')
-    }
-  }
 
   useEffect(() => {
     fetch('/api/repo-stats')
@@ -139,604 +130,481 @@ const Header = () => {
   }
 
   return (
-    <>
-      <nav className='bg-secondary'>
-        <div className='mx-auto max-w-5xl py-3'>
-          <div className='flex items-center justify-between'>
-            <div></div>
-            <div className='mr-6 md:hidden'>
-              <button onClick={toggleSideNav}>
-                {isOpen ? (
-                  <XIcon className='h-6 w-6' />
-                ) : (
-                  <MenuIcon className='h-6 w-6' />
-                )}
-              </button>
-            </div>
-            <nav className='hidden md:block'>
-              <ul className='items-center space-x-3 md:flex md:gap-2'>
-                <li>
-                  <Link
-                    href='/resources'
-                    onClick={() => setIsOpen(false)}
-                    className='hover:/75 block cursor-pointer px-4 py-2 text-sm font-medium hover:text-gray-300'
-                  >
-                    Resources
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='/ai'
-                    onClick={() => setIsOpen(false)}
-                    className='hover:/75 block cursor-pointer px-4 py-2 text-sm font-medium hover:text-gray-300'
-                  >
-                    AI Tools
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/ide' onClick={() => setIsOpen(false)}>
-                    <div className='hover:/75 block cursor-pointer px-4 py-2 text-sm font-medium hover:text-gray-300'>
-                      IDE:s
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='/faq'
-                    onClick={() => setIsOpen(false)}
-                    className='hover:/75 block cursor-pointer px-4 py-2 text-sm font-medium hover:text-gray-300'
-                  >
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href='/leaderboard'
-                    onClick={handleLeaderboardClick}
-                    className='hover:/75 block cursor-pointer px-4 py-2 text-sm font-medium hover:text-gray-300'
-                  >
-                    Leaderboard
-                  </a>
-                </li>
-                <li>
-                  <Link
-                    className='flex rounded-lg bg-white p-0.5 px-2 transition-transform hover:scale-105'
-                    href='https://www.buymeacoffee.com/nikohoffren'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    title='Buy me a coffee'
-                  >
-                    <span className='sr-only'>Buy me a coffee</span>
-
-                    <img
-                      className=''
-                      src='https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg'
-                      alt='Buy me a coffee'
-                      width='20px'
-                      height='20px'
-                    />
-                  </Link>
-                </li>
-
-                <li className='inline-flex overflow-hidden rounded-md bg-white shadow-sm'>
-                  <div className='inline-block border-e px-2 py-1 text-sm font-medium text-black hover:bg-gray-50 focus:relative'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      className='icon icon-tabler icon-tabler-heart'
-                      width='24'
-                      height='24'
-                      viewBox='0 0 24 24'
-                      strokeWidth='2'
-                      stroke='currentColor'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    >
-                      <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
-                      <path d='M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572'></path>
-                    </svg>
-                    <span className='sr-only'>heart icon</span>
-                  </div>
-
-                  <Link
-                    href={'https://github.com/sponsors/fork-commit-merge?o=esb'}
-                    target='blank'
-                    className='flex items-center gap-x-1 px-2 py-1 text-sm font-bold text-black hover:bg-gray-200 focus:relative'
-                  >
-                    Sponsor
-                  </Link>
-                </li>
-
-                <li className='inline-flex overflow-hidden rounded-md bg-white shadow-sm'>
-                  <div className='inline-block border-e px-2 py-0.5 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:relative'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      className='icon icon-tabler icon-tabler-brand-github'
-                      width='28'
-                      height='28'
-                      viewBox='0 0 24 24'
-                      strokeWidth='2'
-                      stroke='currentColor'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    >
-                      <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
-                      <path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5'></path>
-                    </svg>
-                    <span className='sr-only'>github icon</span>
-                  </div>
-
-                  <Link
-                    href={
-                      'https://github.com/fork-commit-merge/fork-commit-merge'
-                    }
-                    target='blank'
-                    className='flex items-center gap-x-1 px-2 py-0.5 text-sm font-bold text-black hover:bg-gray-200 focus:relative'
-                  >
-                    {starCount !== null ? (
-                      <>
-                        {starCount}
-                        <StarFilled color='currentColor' />
-                      </>
-                    ) : (
-                      ''
-                    )}
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </nav>
-
-      {isOpen && (
-        <div className='fixed left-0 top-0 z-20 h-full w-64 overflow-auto bg-transparent px-1 pt-6 backdrop-blur-md md:hidden [&>a>div]:font-bold [&>li>div]:font-bold [&>li>div]:transition-all'>
-          {isLoaded && user && (
-            <>
-              <Link
-                href='/dashboard'
-                onClick={() => setIsOpen(false)}
-                className='group relative mb-2 block rounded-md px-6 text-sm font-medium text-black focus:outline-none'
-              >
-                <span className='relative block rounded bg-slate-100 px-4 py-2 text-sm font-semibold transition-colors hover:bg-slate-300'>
-                  Dashboard
-                </span>
-              </Link>
-              <div className='ml-6 flex flex-col items-start gap-2 pt-2'>
-                <UserButton afterSignOutUrl='/' />
-                <ThemeSelector />
-              </div>
-            </>
-          )}
-
-          {!user && (
-            <Link
-              href='/sign-in'
-              onClick={() => setIsOpen(false)}
-              className='group relative mb-2 block rounded-md px-6 text-sm font-medium text-black focus:outline-none'
-            >
-              <span className='relative block rounded bg-slate-100 px-4 py-2 text-sm font-semibold transition-colors hover:bg-slate-300'>
-                Login
-              </span>
-            </Link>
-          )}
-
-          <Link href='/' onClick={() => setIsOpen(false)}>
-            <div className='mb-3 mt-4 block cursor-pointer px-6 text-sm transition-transform hover:scale-105'>
-              <Image
+    <nav className='border-b border-gray-200 bg-white shadow-md'>
+      <div className='modern-container'>
+        <div className='flex h-16 items-center justify-between'>
+          <div className='flex items-center space-x-8'>
+            <Link href='/' className='flex items-center'>
+              <img
                 src='/fork-commit-merge-logo.jpg'
-                alt='Fork, Commit, Merge -logo'
-                width={40}
-                height={40}
-                unoptimized
+                alt='Logo'
+                className='h-10 w-auto'
               />
-            </div>
-          </Link>
+            </Link>
 
-          <li ref={node} className='list-none'>
-            <div
-              className='hover:/75 block cursor-pointer px-6 py-2 text-sm'
-              onClick={toggleLanguageDropdown}
-            >
-              Languages
-            </div>
-            {isLanguageDropdownOpen && (
-              <ul className='bg-primary absolute z-[100] mt-2 w-48 rounded-md py-1 shadow-lg'>
-                {languageList.map((lang, index) => (
-                  <li
-                    key={index}
-                    onClick={() => {
-                      navigateToLanguage(lang.link)
-                      setIsOpen(false)
-                    }}
+            <div className='hidden md:block'>
+              <div className='flex items-center space-x-6'>
+                <div
+                  className='relative'
+                  ref={node as React.RefObject<HTMLDivElement>}
+                >
+                  <button
+                    onClick={toggleLanguageDropdown}
+                    className='flex items-center transition-colors hover:text-modern-purple'
+                    style={{ color: 'var(--fc-primary)' }}
                   >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                      {lang.name}
+                    <span className='font-medium'>Languages</span>
+                    <svg
+                      className={`ml-1 h-4 w-4 transition-transform ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M19 9l-7 7-7-7'
+                      />
+                    </svg>
+                  </button>
+                  {isLanguageDropdownOpen && (
+                    <div
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      style={{
+                        backgroundColor: 'var(--bg-secondary)',
+                        color: 'var(--fc-primary)'
+                      }}
+                    >
+                      {languageList.map(language => (
+                        <button
+                          key={language.name}
+                          onClick={() => navigateToLanguage(language.link)}
+                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          style={{
+                            color: 'var(--fc-primary)',
+                            backgroundColor: 'var(--bg-secondary)'
+                          }}
+                        >
+                          {language.name}
+                        </button>
+                      ))}
                     </div>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-          <li ref={frameworkNode} className='list-none'>
-            <div
-              className='hover:/75 block cursor-pointer px-6 py-2 text-sm'
-              onClick={toggleFrameworkDropdown}
-            >
-              Frameworks | Libraries
-            </div>
-            {isFrameworkDropdownOpen && (
-              <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
-                {frameworkList.map((framework, index) => (
-                  <li
-                    key={index}
-                    onClick={() => {
-                      navigateToFramework(framework.link)
-                      setIsOpen(false)
-                    }}
-                  >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                      {framework.name}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-          <li ref={gitSelectionNode} className='list-none'>
-            <div
-              className='hover:/75 block cursor-pointer px-6 py-2 text-sm'
-              onClick={toggleGitSelectionDropdown}
-            >
-              Git
-            </div>
-            {isGitSelectionDropdownOpen && (
-              <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
-                {gitList.map((git, index) => (
-                  <li
-                    key={index}
-                    onClick={() => {
-                      navigateToGitSelection(git.link)
-                      setIsOpen(false)
-                    }}
-                  >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                      {git.name}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-          <li ref={roadmapNode} className='list-none'>
-            <div
-              className='cursor-pointerhover:/75 block px-6 py-2 text-sm'
-              onClick={toggleRoadmapDropdown}
-            >
-              Roadmaps
-            </div>
-            {isRoadmapDropdownOpen && (
-              <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
-                {roadmapList.map((roadmap, index) => (
-                  <li
-                    key={index}
-                    onClick={() => {
-                      navigateToRoadmap(roadmap.link)
-                      setIsOpen(false)
-                    }}
-                  >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                      {roadmap.name}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-          <li ref={communityNode} className='list-none'>
-            <div
-              className='hover:/75 block cursor-pointer px-6 py-2 text-sm'
-              onClick={toggleCommunityDropdown}
-            >
-              Community
-            </div>
-            {isCommunityDropdownOpen && (
-              <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
-                {communityList.map((community, index) => (
-                  <li
-                    key={index}
-                    onClick={() => {
-                      navigateToCommunity(community.link)
-                      setIsOpen(false)
-                    }}
-                  >
-                    <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                      {community.name}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
+                  )}
+                </div>
 
-          <Link href='/ide' onClick={() => setIsOpen(false)}>
-            <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
-              IDE:s
-            </div>
-          </Link>
-          <Link href='/faq' onClick={() => setIsOpen(false)}>
-            <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
-              FAQ
-            </div>
-          </Link>
-          <Link href='/resources' onClick={() => setIsOpen(false)}>
-            <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
-              Resources
-            </div>
-          </Link>
-          <Link href='/ai' onClick={() => setIsOpen(false)}>
-            <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
-              AI Tools
-            </div>
-          </Link>
+                <div
+                  className='relative'
+                  ref={frameworkNode as React.RefObject<HTMLDivElement>}
+                >
+                  <button
+                    onClick={toggleFrameworkDropdown}
+                    className='flex items-center transition-colors hover:text-modern-purple'
+                    style={{ color: 'var(--fc-primary)' }}
+                  >
+                    <span className='font-medium'>Frameworks</span>
+                    <svg
+                      className={`ml-1 h-4 w-4 transition-transform ${isFrameworkDropdownOpen ? 'rotate-180' : ''}`}
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M19 9l-7 7-7-7'
+                      />
+                    </svg>
+                  </button>
+                  {isFrameworkDropdownOpen && (
+                    <div
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      style={{
+                        backgroundColor: 'var(--bg-secondary)',
+                        color: 'var(--fc-primary)'
+                      }}
+                    >
+                      {frameworkList.map(framework => (
+                        <button
+                          key={framework.name}
+                          onClick={() => navigateToFramework(framework.link)}
+                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          style={{
+                            color: 'var(--fc-primary)',
+                            backgroundColor: 'var(--bg-secondary)'
+                          }}
+                        >
+                          {framework.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
-          <a href='/leaderboard' onClick={handleLeaderboardClick}>
-            <div className='hover:/75 block cursor-pointer px-6 py-2 text-sm'>
-              Leaderboard
-            </div>
-          </a>
+                <div
+                  className='relative'
+                  ref={gitSelectionNode as React.RefObject<HTMLDivElement>}
+                >
+                  <button
+                    onClick={toggleGitSelectionDropdown}
+                    className='flex items-center transition-colors hover:text-modern-purple'
+                    style={{ color: 'var(--fc-primary)' }}
+                  >
+                    <span className='font-medium'>Git</span>
+                    <svg
+                      className={`ml-1 h-4 w-4 transition-transform ${isGitSelectionDropdownOpen ? 'rotate-180' : ''}`}
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M19 9l-7 7-7-7'
+                      />
+                    </svg>
+                  </button>
+                  {isGitSelectionDropdownOpen && (
+                    <div
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      style={{
+                        backgroundColor: 'var(--bg-secondary)',
+                        color: 'var(--fc-primary)'
+                      }}
+                    >
+                      {gitList.map(git => (
+                        <button
+                          key={git.name}
+                          onClick={() => navigateToGitSelection(git.link)}
+                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          style={{
+                            color: 'var(--fc-primary)',
+                            backgroundColor: 'var(--bg-secondary)'
+                          }}
+                        >
+                          {git.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
-          <li className='ml-6 mt-4 inline-flex overflow-hidden rounded-md bg-white shadow-sm'>
-            <div className='inline-block border-e px-2 py-0.5 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:relative'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                className='icon icon-tabler icon-tabler-brand-github'
-                width='28'
-                height='28'
-                viewBox='0 0 24 24'
-                strokeWidth='2'
-                stroke='currentColor'
-                fill='none'
-                strokeLinecap='round'
-                strokeLinejoin='round'
+                <div
+                  className='relative'
+                  ref={roadmapNode as React.RefObject<HTMLDivElement>}
+                >
+                  <button
+                    onClick={toggleRoadmapDropdown}
+                    className='flex items-center transition-colors hover:text-modern-purple'
+                    style={{ color: 'var(--fc-primary)' }}
+                  >
+                    <span className='font-medium'>Roadmap</span>
+                    <svg
+                      className={`ml-1 h-4 w-4 transition-transform ${isRoadmapDropdownOpen ? 'rotate-180' : ''}`}
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M19 9l-7 7-7-7'
+                      />
+                    </svg>
+                  </button>
+                  {isRoadmapDropdownOpen && (
+                    <div
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      style={{
+                        backgroundColor: 'var(--bg-secondary)',
+                        color: 'var(--fc-primary)'
+                      }}
+                    >
+                      {roadmapList.map(roadmap => (
+                        <button
+                          key={roadmap.name}
+                          onClick={() => navigateToRoadmap(roadmap.link)}
+                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          style={{
+                            color: 'var(--fc-primary)',
+                            backgroundColor: 'var(--bg-secondary)'
+                          }}
+                        >
+                          {roadmap.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                <div
+                  className='relative'
+                  ref={communityNode as React.RefObject<HTMLDivElement>}
+                >
+                  <button
+                    onClick={toggleCommunityDropdown}
+                    className='flex items-center transition-colors hover:text-modern-purple'
+                    style={{ color: 'var(--fc-primary)' }}
+                  >
+                    <span className='font-medium'>Community</span>
+                    <svg
+                      className={`ml-1 h-4 w-4 transition-transform ${isCommunityDropdownOpen ? 'rotate-180' : ''}`}
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M19 9l-7 7-7-7'
+                      />
+                    </svg>
+                  </button>
+                  {isCommunityDropdownOpen && (
+                    <div
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      style={{
+                        backgroundColor: 'var(--bg-secondary)',
+                        color: 'var(--fc-primary)'
+                      }}
+                    >
+                      {communityList.map(community => (
+                        <button
+                          key={community.name}
+                          onClick={() => navigateToCommunity(community.link)}
+                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          style={{
+                            color: 'var(--fc-primary)',
+                            backgroundColor: 'var(--bg-secondary)'
+                          }}
+                        >
+                          {community.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='hidden items-center md:flex'>
+            <div className='flex items-center space-x-4'>
+              <Link
+                href='/resources'
+                className='mx-2 font-medium text-gray-700 transition-colors hover:text-modern-purple'
               >
-                <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
-                <path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5'></path>
-              </svg>
-              <span className='sr-only'>github icon</span>
+                Resources
+              </Link>
+              <Link
+                href='/ai'
+                className='mx-2 font-medium text-gray-700 transition-colors hover:text-modern-purple'
+              >
+                AI Tools
+              </Link>
+
+              <div className='h-5 border-r border-gray-300'></div>
+
+              <a
+                href='https://github.com/fork-commit-merge/fork-commit-merge'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex items-center text-gray-700 transition-colors hover:text-modern-purple'
+              >
+                <svg
+                  className='mr-1 h-5 w-5'
+                  viewBox='0 0 24 24'
+                  fill='currentColor'
+                >
+                  <path d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z' />
+                </svg>
+                {starCount !== null && (
+                  <span className='text-sm font-medium'>{starCount}</span>
+                )}
+              </a>
+
+              <ThemeSelector />
+
+              {isLoaded &&
+                (user ? (
+                  <UserButton afterSignOutUrl='/' />
+                ) : (
+                  <Link href='/dashboard' className='modern-button text-sm'>
+                    Sign In
+                  </Link>
+                ))}
+            </div>
+          </div>
+
+          <div className='md:hidden'>
+            <button
+              onClick={toggleSideNav}
+              className='text-gray-700 hover:text-modern-purple'
+            >
+              {isOpen ? (
+                <XMarkIcon className='h-6 w-6' />
+              ) : (
+                <Bars3Icon className='h-6 w-6' />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className='z-50 bg-white shadow-lg md:hidden'>
+          <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
+            <div className='block px-3 py-2 text-base font-medium text-gray-700'>
+              <button
+                onClick={toggleLanguageDropdown}
+                className='flex w-full items-center justify-between'
+              >
+                <span>Languages</span>
+                <svg
+                  className={`ml-1 h-5 w-5 transition-transform ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M19 9l-7 7-7-7'
+                  />
+                </svg>
+              </button>
+              {isLanguageDropdownOpen && (
+                <div className='space-y-2 pl-4 pt-2'>
+                  {languageList.map(language => (
+                    <button
+                      key={language.name}
+                      onClick={() => navigateToLanguage(language.link)}
+                      className='block w-full py-1 text-left text-sm text-gray-600 hover:text-modern-purple'
+                    >
+                      {language.name}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className='block px-3 py-2 text-base font-medium text-gray-700'>
+              <button
+                onClick={toggleFrameworkDropdown}
+                className='flex w-full items-center justify-between'
+              >
+                <span>Frameworks</span>
+                <svg
+                  className={`ml-1 h-5 w-5 transition-transform ${isFrameworkDropdownOpen ? 'rotate-180' : ''}`}
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M19 9l-7 7-7-7'
+                  />
+                </svg>
+              </button>
+              {isFrameworkDropdownOpen && (
+                <div className='space-y-2 pl-4 pt-2'>
+                  {frameworkList.map(framework => (
+                    <button
+                      key={framework.name}
+                      onClick={() => navigateToFramework(framework.link)}
+                      className='block w-full py-1 text-left text-sm text-gray-600 hover:text-modern-purple'
+                    >
+                      {framework.name}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className='block px-3 py-2 text-base font-medium text-gray-700'>
+              <button
+                onClick={toggleGitSelectionDropdown}
+                className='flex w-full items-center justify-between'
+              >
+                <span>Git</span>
+                <svg
+                  className={`ml-1 h-5 w-5 transition-transform ${isGitSelectionDropdownOpen ? 'rotate-180' : ''}`}
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M19 9l-7 7-7-7'
+                  />
+                </svg>
+              </button>
+              {isGitSelectionDropdownOpen && (
+                <div className='space-y-2 pl-4 pt-2'>
+                  {gitList.map(git => (
+                    <button
+                      key={git.name}
+                      onClick={() => navigateToGitSelection(git.link)}
+                      className='block w-full py-1 text-left text-sm text-gray-600 hover:text-modern-purple'
+                    >
+                      {git.name}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             <Link
-              href={'https://github.com/fork-commit-merge/fork-commit-merge'}
-              target='blank'
-              className='flex items-center gap-x-1 px-2 py-0.5 text-sm font-bold text-black hover:bg-gray-200 focus:relative'
+              href='/resources'
+              onClick={() => setIsOpen(false)}
+              className='block px-3 py-2 text-base font-medium text-gray-700 hover:text-modern-purple'
             >
-              {starCount !== null ? (
-                <>
-                  {starCount}
-                  <StarFilled color='currentColor' />
-                </>
-              ) : (
-                ''
-              )}
+              Resources
             </Link>
-          </li>
-          <div className='flex-column mt-2'>
-            <li className='ml-6 inline-flex overflow-hidden rounded-md bg-white shadow-sm'>
-              <div className='inline-block border-e px-2 py-1 text-sm font-medium text-black hover:bg-gray-50 focus:relative'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='icon icon-tabler icon-tabler-heart'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  strokeWidth='2'
-                  stroke='currentColor'
-                  fill='none'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                >
-                  <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
-                  <path d='M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572'></path>
-                </svg>
-                <span className='sr-only'>heart icon</span>
-              </div>
 
-              <Link
-                href={'https://github.com/sponsors/nikohoffren?o=esb'}
-                target='blank'
-                className='flex items-center gap-x-1 px-2 py-1 text-sm font-bold text-black hover:bg-gray-200 focus:relative'
-              >
-                Sponsor
-              </Link>
-            </li>
-          </div>
-          <div className='mb-10 ml-6 mt-2'>
-            <div className={styles.buyButton}>
-              <Coffee />
-            </div>
-          </div>
-        </div>
-      )}
+            <Link
+              href='/ai'
+              onClick={() => setIsOpen(false)}
+              className='block px-3 py-2 text-base font-medium text-gray-700 hover:text-modern-purple'
+            >
+              AI Tools
+            </Link>
 
-      <header className='sticky top-0 z-10 mb-6 hidden w-full bg-transparent shadow-bottom backdrop-blur md:block'>
-        <div className='shadow-top mx-auto max-w-5xl py-2'>
-          <div className='items-center justify-between md:flex'>
-            <div className='flex flex-1 items-center space-x-1'>
-              <Link
-                href='/'
-                onClick={() => setIsOpen(false)}
-                className='block cursor-pointer text-sm transition-transform hover:scale-105'
-              >
-                <Image
-                  src='/fork-commit-merge-logo.jpg'
-                  alt='Fork, Commit, Merge Logo'
-                  width={50}
-                  height={50}
-                  priority={true}
-                  loading='eager'
-                  quality={75}
-                  className='rounded'
-                />
-              </Link>
-            </div>
+            <Link
+              href='/faq'
+              onClick={() => setIsOpen(false)}
+              className='block px-3 py-2 text-base font-medium text-gray-700 hover:text-modern-purple'
+            >
+              FAQ
+            </Link>
 
-            <div className='flex items-center space-x-1 [&>li>div]:font-semibold [&>li>div]:transition-all'>
-              <li ref={node} className='list-none'>
-                <div
-                  className='hover:/75 block cursor-pointer px-4 py-2 text-sm transition-all hover:text-gray-300'
-                  onClick={toggleLanguageDropdown}
-                >
-                  Languages
-                </div>
-                {isLanguageDropdownOpen && (
-                  <ul className='scrollable-dropdown bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg backdrop-blur-lg'>
-                    {languageList.map((lang, index) => (
-                      <li
-                        key={index}
-                        onClick={() => navigateToLanguage(lang.link)}
-                      >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                          {lang.name}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-              <li ref={frameworkNode} className='list-none'>
-                <div
-                  className='hover:/75 block cursor-pointer px-4 py-2 text-sm hover:text-gray-300'
-                  onClick={toggleFrameworkDropdown}
-                >
-                  Frameworks | Libraries
-                </div>
-                {isFrameworkDropdownOpen && (
-                  <ul className='scrollable-dropdown bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
-                    {frameworkList.map((framework, index) => (
-                      <li
-                        key={index}
-                        onClick={() => navigateToFramework(framework.link)}
-                      >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                          {framework.name}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-              <li ref={gitSelectionNode} className='list-none'>
-                <div
-                  className='hover:/75 block cursor-pointer px-4 py-2 text-sm hover:text-gray-300'
-                  onClick={toggleGitSelectionDropdown}
-                >
-                  Git
-                </div>
-                {isGitSelectionDropdownOpen && (
-                  <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
-                    {gitList.map((git, index) => (
-                      <li
-                        key={index}
-                        onClick={() => {
-                          navigateToGitSelection(git.link)
-                          setIsOpen(false)
-                        }}
-                      >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                          {git.name}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-              <li ref={roadmapNode} className='list-none'>
-                <div
-                  className='hover:/75 block cursor-pointer px-4 py-2 text-sm hover:text-gray-300'
-                  onClick={toggleRoadmapDropdown}
-                >
-                  Roadmaps
-                </div>
-                {isRoadmapDropdownOpen && (
-                  <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
-                    {roadmapList.map((roadmap, index) => (
-                      <li
-                        key={index}
-                        onClick={() => {
-                          navigateToRoadmap(roadmap.link)
-                          setIsOpen(false)
-                        }}
-                      >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                          {roadmap.name}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-              <li ref={communityNode} className='list-none'>
-                <div
-                  className='hover:/75 block cursor-pointer px-4 py-2 text-sm hover:text-gray-300'
-                  onClick={toggleCommunityDropdown}
-                >
-                  Community
-                </div>
-                {isCommunityDropdownOpen && (
-                  <ul className='bg-primary absolute mt-2 w-48 rounded-md py-1 shadow-lg'>
-                    {communityList.map((community, index) => (
-                      <li
-                        key={index}
-                        onClick={() => {
-                          navigateToCommunity(community.link)
-                          setIsOpen(false)
-                        }}
-                      >
-                        <div className='cursor-pointer px-4 py-2 text-sm text-gray-100 transition-colors duration-150 hover:bg-[#1a1a1a]'>
-                          {community.name}
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-              {isLoaded && user && (
-                <>
-                  <Link
-                    href='/dashboard'
-                    className='group relative block rounded-md pl-4 text-sm font-medium text-black focus:outline-none'
-                  >
-                    <span className='relative block rounded bg-slate-100 px-4 py-1 text-sm font-semibold transition-colors hover:bg-slate-300'>
-                      Dashboard
-                    </span>
-                  </Link>
-                  <div className='flex items-center gap-2 pl-4'>
-                    <ThemeSelector />
-                    <UserButton afterSignOutUrl='/' />
-                  </div>
-                </>
-              )}
-
-              {!user && (
+            <div className='flex items-center space-x-2 px-3 py-2'>
+              <ThemeSelector />
+              {isLoaded && !user && (
                 <Link
-                  href='/sign-in'
-                  className='group relative block rounded-md pl-4 text-sm font-medium text-black focus:outline-none'
+                  href='/dashboard'
+                  className='modern-button w-full text-center text-sm'
+                  onClick={() => setIsOpen(false)}
                 >
-                  <span className='relative block rounded bg-slate-100 px-4 py-1 text-sm font-semibold transition-colors hover:bg-slate-300'>
-                    Login
-                  </span>
+                  Sign In
                 </Link>
               )}
             </div>
           </div>
         </div>
-      </header>
-    </>
+      )}
+    </nav>
   )
 }
 
 export default Header
-
-

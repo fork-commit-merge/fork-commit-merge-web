@@ -1,69 +1,70 @@
-import { useState, useEffect } from 'react';
-import { ColorSwatchIcon } from '@heroicons/react/outline';
+import { SunIcon, MoonIcon } from '@heroicons/react/24/outline'
+import { useState, useEffect } from 'react'
+import { ForwardRefExoticComponent, RefAttributes, SVGProps } from 'react'
 
-const themes = [
-  { name: 'Blue', value: 'blue' },
-  { name: 'Green', value: 'green' },
-  { name: 'Red', value: 'red' },
-  { name: 'Yellow', value: 'yellow' },
-  { name: 'Purple', value: 'purple' },
-  { name: 'Black', value: 'black' },
-];
+type Theme = {
+  name: string
+  icon: ForwardRefExoticComponent<
+    Omit<SVGProps<SVGSVGElement>, 'ref'> & RefAttributes<SVGSVGElement>
+  >
+}
+
+const themes: Theme[] = [
+  { name: 'light', icon: SunIcon },
+  { name: 'dark', icon: MoonIcon }
+]
 
 const ThemeSelector = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState('blue');
+  const [isOpen, setIsOpen] = useState(false)
+  const [theme, setTheme] = useState('dark')
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') ?? 'blue';
-    setCurrentTheme(savedTheme);
-    document.documentElement.className = `theme-${savedTheme}`;
-  }, []);
+    const savedTheme = localStorage.getItem('theme') || 'dark'
+    setTheme(savedTheme)
+    document.documentElement.classList.add(`theme-${savedTheme}`)
+  }, [])
 
-  const handleThemeChange = (theme: string) => {
-    setCurrentTheme(theme);
-    localStorage.setItem('theme', theme);
-    document.documentElement.className = `theme-${theme}`;
-    setIsOpen(false);
-  };
+  const handleThemeChange = (newTheme: string) => {
+    setTheme(newTheme)
+    localStorage.setItem('theme', newTheme)
+    document.documentElement.classList.remove(`theme-${theme}`)
+    document.documentElement.classList.add(`theme-${newTheme}`)
+    setIsOpen(false)
+  }
 
-  useEffect(() => {
-    const handleDropdownChange = () => {
-      setIsOpen(false);
-    };
-
-    window.addEventListener('dropdownOpened', handleDropdownChange);
-    return () => window.removeEventListener('dropdownOpened', handleDropdownChange);
-  }, []);
+  const currentTheme = themes.find(t => t.name === theme)
+  const CurrentIcon = currentTheme?.icon
 
   return (
-    <div className="relative inline-block">
+    <div className='relative'>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-center rounded-full p-2 text-white hover:text-white focus:outline-none"
-        title="Change theme"
+        className='focus:ring-modern-purple flex items-center space-x-2 rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2'
       >
-        <ColorSwatchIcon className="h-5 w-5" />
+        {CurrentIcon && <CurrentIcon className='h-5 w-5' />}
+        <span className='capitalize'>{theme}</span>
       </button>
 
       {isOpen && (
-        <div className="absolute md:right-0 md:mt-2 mt-2 w-36 rounded-md bg-primary py-1 shadow-lg ring-1 ring-black ring-opacity-5 md:left-auto left-0">
-          {themes.map((theme) => (
-            <button
-              key={theme.value}
-              onClick={() => handleThemeChange(theme.value)}
-              className={`block w-full px-4 py-2 text-left text-sm text-gray-100
-                ${currentTheme === theme.value ? 'bg-secondary' : ''}
-                hover:bg-[#1a1a1a] transition-colors duration-150`}
-            >
-              {theme.name}
-            </button>
-          ))}
+        <div className='absolute left-0 md:left-auto md:right-0 mt-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+          {themes.map(t => {
+            const Icon = t.icon
+            return (
+              <button
+                key={t.name}
+                onClick={() => handleThemeChange(t.name)}
+                className='flex w-full items-center space-x-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
+              >
+                <Icon className='h-5 w-5' />
+                <span className='capitalize'>{t.name}</span>
+              </button>
+            )
+          })}
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default ThemeSelector;
+export default ThemeSelector
 

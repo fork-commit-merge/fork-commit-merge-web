@@ -13,7 +13,7 @@ const RoadmapPage = () => {
   const { roadmap } = router.query
 
   const commonHeaderStyle = {
-    backgroundImage: "url('/fcm-background-image.png')",
+    backgroundImage: "url('/fcm-background-image.png')"
   }
 
   const renderContent = () => {
@@ -21,91 +21,42 @@ const RoadmapPage = () => {
       case 'how-to-contribute':
         return (
           <div className='bg-primary min-h-screen'>
-            <div className='page-header-background' style={commonHeaderStyle}>
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>
-                  Roadmaps
-                </h1>
-              </div>
-            </div>
             <HowToContribute />
           </div>
         )
       case 'contribution-management':
         return (
           <div className='bg-primary min-h-screen'>
-            <div className='page-header-background' style={commonHeaderStyle}>
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>
-                  Roadmaps
-                </h1>
-              </div>
-            </div>
             <ContributionManagement />
           </div>
         )
       case 'open-source-philosophy':
         return (
           <div className='bg-primary min-h-screen'>
-            <div className='page-header-background' style={commonHeaderStyle}>
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>
-                  Roadmaps
-                </h1>
-              </div>
-            </div>
             <OpenSourcePhilosophy />
           </div>
         )
       case 'open-source-licenses':
         return (
           <div className='bg-primary min-h-screen'>
-            <div className='page-header-background' style={commonHeaderStyle}>
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>
-                  Roadmaps
-                </h1>
-              </div>
-            </div>
             <OpenSourceLicenses />
           </div>
         )
       case 'overview-of-documentation':
         return (
           <div className='bg-primary min-h-screen'>
-            <div className='page-header-background' style={commonHeaderStyle}>
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>
-                  Roadmaps
-                </h1>
-              </div>
-            </div>
             <DocumentationOverview />
           </div>
         )
       case 'legal-and-ethical-considerations':
         return (
           <div className='bg-primary min-h-screen'>
-            <div className='page-header-background' style={commonHeaderStyle}>
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>
-                  Roadmaps
-                </h1>
-              </div>
-            </div>
             <LegalEthicalConsiderations />
           </div>
         )
       case 'open-source-terminology':
         return (
           <div className='bg-primary min-h-screen'>
-            <div className='page-header-background' style={commonHeaderStyle}>
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>
-                  Roadmaps
-                </h1>
-              </div>
-            </div>
             <OpenSourceTerminology />
           </div>
         )
@@ -118,4 +69,3 @@ const RoadmapPage = () => {
 }
 
 export default RoadmapPage
-

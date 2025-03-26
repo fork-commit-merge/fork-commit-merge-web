@@ -14,24 +14,12 @@ const CommunityPage = () => {
       case 'discussions':
         return (
           <div className='bg-primary min-h-screen'>
-            <PageBackground imagePath="/fcm-background-image.png">
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>
-                  Discussions
-                </h1>
-              </div>
-            </PageBackground>
             <Discussions />
           </div>
         )
       case 'events':
         return (
           <div className='bg-primary min-h-screen'>
-            <PageBackground imagePath="/fcm-background-image.png">
-              <div className='page-header-content'>
-                <h1 className='mb-6 text-center text-4xl font-bold'>Events</h1>
-              </div>
-            </PageBackground>
             <Events />
           </div>
         )
@@ -45,4 +33,3 @@ const CommunityPage = () => {
 }
 
 export default CommunityPage
-

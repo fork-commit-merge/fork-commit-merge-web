@@ -1,181 +1,133 @@
 import Link from 'next/link'
 
+const contributionSteps = [
+  {
+    name: 'Finding Projects',
+    description: 'Identify projects that interest you and match your skill level. Many projects specifically mark issues as "good for beginners" or "good first issue" to help newcomers get started.',
+    features: [
+      'Browse goodfirstissues.com',
+      'Check Awesome for Beginners repository',
+      'Look for documentation improvements',
+      'Find typos or broken links',
+      'Search project issue trackers'
+    ],
+    link: 'https://goodfirstissues.com'
+  },
+  {
+    name: 'Understanding the Process',
+    description: 'Before contributing, familiarize yourself with the project\'s guidelines and contribution process. Each project may have specific requirements and workflows.',
+    features: [
+      'Read CONTRIBUTING.md file',
+      'Review code of conduct',
+      'Check coding standards',
+      'Understand issue guidelines',
+      'Learn commit message format'
+    ],
+    link: 'https://github.com/fork-commit-merge/fork-commit-merge#setup-instructions'
+  },
+  {
+    name: 'Making Contributions',
+    description: 'Follow the standard Git workflow to make your contributions. This involves creating a fork, making changes, and submitting a pull request.',
+    features: [
+      'Fork the repository',
+      'Create feature branch',
+      'Make necessary changes',
+      'Write tests if required',
+      'Submit pull request'
+    ],
+    link: 'https://github.com/fork-commit-merge/fork-commit-merge#submitting-your-changes'
+  },
+  {
+    name: 'Best Practices',
+    description: 'Follow these best practices to ensure your contributions are valuable and more likely to be accepted by project maintainers.',
+    features: [
+      'Keep changes focused',
+      'Write clear commit messages',
+      'Follow project guidelines',
+      'Test your changes',
+      'Respond to feedback'
+    ],
+    link: 'https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CONTRIBUTING.md'
+  }
+]
+
 const HowToContribute = () => {
   return (
-    <div className='bg-primary flex flex-col items-center justify-center px-5 py-10'>
-      <div className='mx-auto max-w-2xl pb-10'>
-        <h2 className='my-4 text-center text-3xl font-bold'>
-          How to make an Open Source Contribution?
-        </h2>
-        <p className='pt-8 leading-6'>
-          Contributing to open-source projects is a collaborative effort that
-          offers the opportunity to learn, grow, and engage with the community.
-          <br />
-          Here&apos;s how you can get started:
-          <br />
-          <br />
-          <strong>1. Find a Project:</strong>
-          <br />
-          <br />
-          Identify a project that interests you. Many projects specifically mark
-          issues as &quot;good for beginners&quot;, &quot;good first issue&quot;
-          or similar to that to help you find a starting point. Some excellent
-          places for looking these kind of issues are for example{' '}
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://goodfirstissues.com'
-            className='text-blue-400 hover:underline'
-          >
-            goodfirstissues.com.
-          </a>{' '}
-          and{' '}
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://github.com/MunGell/awesome-for-beginners'
-            className='text-blue-400 hover:underline'
-          >
-            Awesome for Beginners - GitHub repository
-          </a>
-          .
-          <br />
-          <br />
-          However, you don&apos;t necessary have to start looking for issues,
-          you can also start really small with just finding typos or broken
-          links in the documentation such as in the README or CONTRIBUTING files
-          on different repositories and making a pull request. This is a great
-          way to get started with open source contributions.
-          <br />
-          <br />
-          Just remember that the contributions should be meaningful and add some
-          value to the project. Don&apos;t just make a pull request for the sake
-          of making a pull request. Make sure that the changes you are making
-          are actually useful and meaningful, and that you are following the
-          guidelines and coding standards of the project. Maintainers of the
-          project are usually very busy and they don&apos;t have time to review
-          pull requests that are not meaningful for the project.
-          <br />
-          <br />
-          <strong>2. Understand the Contribution Process:</strong> <br />
-          <br />
-          Review the project&apos;s README and CONTRIBUTING files, if available,
-          to understand the contribution process, code of conduct, and
-          requirements as the repository might have specific instructions on how
-          to contribute to that project. Some projects might also have different
-          rules. For example, some projects might require you to create an issue
-          first before making a pull request. If you are unsure about anything,
-          you can always ask the maintainers of the project.
-          <br />
-          <br />
-          <strong>3. Fork and Clone:</strong>
-          <br />
-          <br />
-          Fork the repository to your account, and clone it to your local
-          machine. Create a new branch for your changes.
-          <br />
-          <br />
-          <strong>4. Make Your Changes:</strong>
-          <br />
-          <br />
-          Make the necessary changes or additions to the code, following the
-          project&apos;s coding standards and guidelines.
-          <br />
-          <br />
-          <strong>5. Test Your Changes:</strong>
-          <br />
-          <br />
-          Ensure that your changes do not break existing functionality by
-          running any available tests.
-          <br />
-          <br />
-          <strong>6. Commit and Push:</strong>
-          <br />
-          <br />
-          Commit your changes with a clear and concise message describing what
-          you did. Push the changes to your fork on GitHub.
-          <br />
-          <br />
-          <strong>7. Create a Pull Request:</strong>
-          <br />
-          <br />
-          Open a pull request (PR) in the original repository, providing details
-          of the changes and why they were made. Follow any further instructions
-          or requests from the maintainers.
-          <br />
-          <br />
-          <strong>8. Stay Engaged:</strong>
-          <br />
-          <br />
-          Respond to any comments or feedback on your PR and be ready to make
-          additional changes if requested. You should also get email from GitHub
-          each time someone comments on your pull request. You can also
-          subscribe to the repository to get notifications about new issues and
-          pull requests.
-          <br />
-          Also, we recommend downloading the GitHub mobile app to your phone.
-          <br />
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://play.google.com/store/apps/details?id=com.github.android&hl=en&gl=US'
-            className='text-blue-400 hover:underline'
-          >
-            Download GitHub app for Android
-          </a>
-          <br />
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://apps.apple.com/us/app/github/id1477376905'
-            className='text-blue-400 hover:underline'
-          >
-            Download GitHub app for iOS
-          </a>
-          .<br />
-          It&apos;s a great way to stay up to date with your notifications and
-          you can also use it to merge pull requests and do other things on the
-          go.
-          <br />
-          <br />
-          <hr className='my-6' />
-          To find more detailed info about the contribution process, check out
-          the Fork, Commit, Merge repository README
-          <span className='mr-2'></span>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://github.com/fork-commit-merge/fork-commit-merge#setup-instructions'
-            className='text-blue-400 hover:underline'
-          >
-            Setup Instructions
-          </a>{' '}
-          and{' '}
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://github.com/fork-commit-merge/fork-commit-merge#submitting-your-changes'
-            className='text-blue-400 hover:underline'
-          >
-            Submitting Your Changes
-          </a>
-          <span className='mr-2'></span>
-          sections. You can also check out the{' '}
-          <Link href='/resources' className='text-blue-400 hover:underline'>
-            Resources
-          </Link>{' '}
-          section in this website for videos and other documentation about open
-          source contributions.
-          <br />
-          <br />
-          Remember, every contribution, no matter how small, adds value. Be
-          patient, respectful, and open to feedback. Open-source contributions
-          foster community, collaboration, and continuous learning. Happy
-          coding!
-        </p>
+    <div className='bg-white'>
+      <div className='modern-container'>
+        <div className='py-16 sm:py-24'>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
+              How to <span className='text-modern-purple'>Contribute</span>
+            </h1>
+            <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-600'>
+              Learn the essential steps and best practices for making meaningful contributions to open source projects.
+            </p>
+          </div>
+
+          <div className='mt-16 grid w-full max-w-4xl gap-8 md:grid-cols-2 mx-auto'>
+            {contributionSteps.map((step, index) => (
+              <div key={index} className='rounded-lg bg-gray-800 p-6 shadow-lg'>
+                <h2 className='mb-4 text-2xl font-semibold text-white'>{step.name}</h2>
+                <p className='mb-4 text-gray-300'>{step.description}</p>
+                <h3 className='mb-2 text-xl text-white'>Key Points:</h3>
+                <ul className='mb-4 list-disc pl-5 text-gray-300'>
+                  {step.features.map((feature, featureIndex) => (
+                    <li key={featureIndex}>{feature}</li>
+                  ))}
+                </ul>
+                <a
+                  href={step.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='cursor-pointer text-blue-400 hover:underline'
+                >
+                  Learn More
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <div className='mt-16 rounded-lg bg-gray-50 p-8 shadow-sm'>
+            <h2 className='mb-6 text-2xl font-bold text-gray-900'>Stay Connected</h2>
+            <p className='text-gray-600 mb-6'>
+              Download the GitHub mobile app to stay updated with your contributions and repository activities:
+            </p>
+            <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+              <a
+                href='https://play.google.com/store/apps/details?id=com.github.android'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='themed-button inline-block transform rounded-md px-8 py-3 text-sm font-semibold tracking-wider shadow-lg transition-all duration-300 ease-in-out hover:scale-105'
+              >
+                Android App
+              </a>
+              <a
+                href='https://apps.apple.com/us/app/github/id1477376905'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='themed-button inline-block transform rounded-md px-8 py-3 text-sm font-semibold tracking-wider shadow-lg transition-all duration-300 ease-in-out hover:scale-105'
+              >
+                iOS App
+              </a>
+            </div>
+          </div>
+
+          <div className='mt-16 text-center'>
+            <a
+              href='https://github.com/fork-commit-merge/fork-commit-merge#getting-started'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='themed-button inline-block transform rounded-md px-8 py-3 text-sm font-semibold tracking-wider shadow-lg transition-all duration-300 ease-in-out hover:scale-105'
+            >
+              START CONTRIBUTING
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   )
 }
 
 export default HowToContribute
+

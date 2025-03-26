@@ -1,82 +1,140 @@
+const managementTopics = [
+  {
+    name: 'Code Review Process',
+    description: 'Effective code reviews are crucial for maintaining code quality and knowledge sharing within the project.',
+    features: [
+      'Understand context and purpose',
+      'Check code style and standards',
+      'Review for security vulnerabilities',
+      'Ensure proper test coverage',
+      'Verify documentation updates'
+    ],
+    link: 'https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CONTRIBUTING.md#code-review-process'
+  },
+  {
+    name: 'Feedback Guidelines',
+    description: 'Providing constructive feedback helps contributors grow while maintaining a positive community atmosphere.',
+    features: [
+      'Be specific and clear',
+      'Focus on code, not the person',
+      'Suggest improvements',
+      'Acknowledge good practices',
+      'Use a respectful tone'
+    ],
+    link: 'https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CODE_OF_CONDUCT.md'
+  },
+  {
+    name: 'CI/CD Pipeline',
+    description: 'Continuous Integration and Deployment ensures code quality and streamlines the contribution process.',
+    features: [
+      'Automated testing',
+      'Code quality checks',
+      'Build verification',
+      'Deployment automation',
+      'Performance monitoring'
+    ],
+    link: 'https://github.com/fork-commit-merge/fork-commit-merge/actions'
+  },
+  {
+    name: 'Issue Management',
+    description: 'Effective issue tracking and management helps organize and prioritize project work.',
+    features: [
+      'Issue templates',
+      'Label organization',
+      'Priority assignment',
+      'Milestone tracking',
+      'Regular triage'
+    ],
+    link: 'https://github.com/fork-commit-merge/fork-commit-merge/issues'
+  }
+]
+
 const ContributionManagement = () => {
   return (
-    <div className='bg-primary flex items-center justify-center'>
-      <div className='max-w-2xl py-10 text-center'>
-        <h1 className='mb-6 text-3xl font-bold'>
-          Reviewing and Managing Contributions
-        </h1>
-        <p className='mb-4'>
-          The heartbeat of any open-source project lies in its contributions.
-          Ensuring the quality and relevance of these contributions is
-          paramount. This not only guarantees the robustness and reliability of
-          the software but also nurtures a culture of excellence within the
-          community. Let&apos;s delve into the core aspects of managing
-          contributions.
-        </p>
+    <div className='bg-white'>
+      <div className='modern-container'>
+        <div className='py-16 sm:py-24'>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
+              Managing <span className='text-modern-purple'>Contributions</span>
+            </h1>
+            <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-600'>
+              Learn how to effectively review, manage, and maintain quality contributions in open source projects.
+            </p>
+          </div>
 
-        <h2 className='mb-4 text-2xl font-semibold'>
-          Best Practices for Code Reviews
-        </h2>
-        <p className='mb-4'>
-          Code reviews serve as the gateway to quality. They facilitate
-          knowledge transfer, prevent bugs, and ensure consistency. When
-          reviewing, it&apos;s essential to:
-          <ul className='mt-2 list-disc pl-5'>
-            <li>Understand the context and purpose of the contribution.</li>
-            <li>
-              Ensure code aligns with the project&apos;s style and standards.
-            </li>
-            <li>Check for potential security vulnerabilities.</li>
-            <li>Encourage simplicity and readability over cleverness.</li>
-          </ul>
-        </p>
+          <div className='mt-16 grid w-full max-w-4xl gap-8 md:grid-cols-2 mx-auto'>
+            {managementTopics.map((topic, index) => (
+              <div key={index} className='rounded-lg bg-gray-800 p-6 shadow-lg'>
+                <h2 className='mb-4 text-2xl font-semibold text-white'>{topic.name}</h2>
+                <p className='mb-4 text-gray-300'>{topic.description}</p>
+                <h3 className='mb-2 text-xl text-white'>Key Aspects:</h3>
+                <ul className='mb-4 list-disc pl-5 text-gray-300'>
+                  {topic.features.map((feature, featureIndex) => (
+                    <li key={featureIndex}>{feature}</li>
+                  ))}
+                </ul>
+                <a
+                  href={topic.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='cursor-pointer text-blue-400 hover:underline'
+                >
+                  Learn More
+                </a>
+              </div>
+            ))}
+          </div>
 
-        <h2 className='mb-4 text-2xl font-semibold'>
-          Providing Constructive Feedback
-        </h2>
-        <p className='mb-4'>
-          Feedback bridges the gap between the present and potential. When
-          offering feedback:
-          <ul className='mt-2 list-disc pl-5'>
-            <li>Be specific and clear in your comments.</li>
-            <li>Highlight the positives along with areas of improvement.</li>
-            <li>Ask questions instead of giving direct orders.</li>
-            <li>Remember the human aspect – be kind and empathetic.</li>
-          </ul>
-        </p>
+          <div className='mt-16 rounded-lg bg-gray-50 p-8 shadow-sm'>
+            <h2 className='mb-6 text-2xl font-bold text-gray-900'>Best Practices Summary</h2>
+            <p className='text-gray-600 mb-6'>
+              Successful contribution management relies on clear communication, consistent processes, and automated tooling.
+              Remember to:
+            </p>
+            <ul className='grid gap-4 text-gray-600 sm:grid-cols-2'>
+              <li className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Maintain clear contribution guidelines
+              </li>
+              <li className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Automate quality checks where possible
+              </li>
+              <li className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Provide constructive feedback
+              </li>
+              <li className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Keep documentation up to date
+              </li>
+            </ul>
+          </div>
 
-        <h2 className='mb-4 text-2xl font-semibold'>
-          Continuous Integration (CI) and Continuous Deployment (CD)
-        </h2>
-        <p className='mb-6'>
-          CI/CD pipelines automate the process of testing and deploying code,
-          ensuring that contributions are continuously merged and delivered to
-          the production environment. In open source:
-          <ul className='mt-2 list-disc pl-5'>
-            <li>
-              CI helps maintain code quality by automatically testing
-              contributions against predefined criteria.
-            </li>
-            <li>
-              CD ensures that validated contributions are smoothly integrated
-              into the live environment.
-            </li>
-            <li>
-              Together, they reduce manual efforts, speed up the release
-              process, and amplify the reliability of the software.
-            </li>
-          </ul>
-        </p>
-
-        <p>
-          In conclusion, effectively managing contributions is the linchpin to a
-          thriving open-source project. It upholds the project&apos;s quality
-          while fostering a culture of collaboration, respect, and continuous
-          improvement.
-        </p>
+          <div className='mt-16 text-center'>
+            <a
+              href='https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CONTRIBUTING.md'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='themed-button inline-block transform rounded-md px-8 py-3 text-sm font-semibold tracking-wider shadow-lg transition-all duration-300 ease-in-out hover:scale-105'
+            >
+              VIEW CONTRIBUTION GUIDELINES
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   )
-};
+}
 
-export default ContributionManagement;
+export default ContributionManagement
+

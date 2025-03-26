@@ -1,92 +1,124 @@
+const legalEthicalTopics = [
+  {
+    name: 'Copyright Considerations',
+    description: 'Understanding copyright is fundamental in open source development. While open-source licenses grant extensive permissions, copyright ownership remains with the original creators.',
+    features: [
+      'Original creators retain their rights',
+      'Licenses grant specific permissions',
+      'Copyright registration not required',
+      'Automatic protection upon creation',
+      'International copyright recognition'
+    ]
+  },
+  {
+    name: 'Patent Implications',
+    description: 'Patents in software can affect both developers and users of open source projects. Understanding patent claims and licenses is crucial for project sustainability.',
+    features: [
+      'Patent claim awareness',
+      'License patent grants',
+      'Patent infringement risks',
+      'Cross-licensing considerations',
+      'Patent pool participation'
+    ]
+  },
+  {
+    name: 'Ethical Guidelines',
+    description: 'Ethical considerations go beyond legal requirements, focusing on creating a responsible and trustworthy open source ecosystem.',
+    features: [
+      'Respect for original creators',
+      'Transparency in contributions',
+      'Community inclusivity',
+      'Responsible code distribution',
+      'Fair attribution practices'
+    ]
+  },
+  {
+    name: 'Compliance Requirements',
+    description: 'Ensuring compliance with licenses and regulations is essential for maintaining legal and ethical standards in open source projects.',
+    features: [
+      'License compliance checks',
+      'Attribution requirements',
+      'Distribution guidelines',
+      'Modified code handling',
+      'Commercial use considerations'
+    ]
+  }
+]
+
 const LegalEthicalConsiderations = () => {
   return (
-    <div className='bg-primary flex items-center justify-center py-10'>
-      <div className='max-w-2xl text-center'>
-        <h1 className='mb-6 text-3xl font-bold'>
-          Legal and Ethical Considerations in Open Source
-        </h1>
-        <p className='mb-4'>
-          Navigating the legal landscape of open source can be intricate, but
-          it&apos;s an essential aspect of managing and contributing to these
-          projects. Beyond the legalities, ethical considerations also play a
-          vital role in shaping the open-source community&apos;s trustworthiness
-          and reputation.
-        </p>
+    <div className='bg-white'>
+      <div className='modern-container'>
+        <div className='py-16 sm:py-24'>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
+              Legal & Ethical <span className='text-modern-purple'>Considerations</span>
+            </h1>
+            <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-600'>
+              Navigate the complex landscape of legal and ethical considerations in open source development while maintaining trust and compliance.
+            </p>
+          </div>
 
-        <h2 className='mb-4 text-2xl font-semibold'>Understanding Copyright</h2>
-        <p className='mb-4'>
-          In the open-source realm, copyright revolves around the right to
-          reproduce, distribute, and make derivative works. While open-source
-          licenses grant users extensive permissions, it doesn&apos;t mean
-          copyright is relinquished:
-          <ul className='list-disc pl-5'>
-            <li>
-              Original creators retain their rights but offer certain
-              permissions through licenses.
-            </li>
-            <li>
-              Adherence to license terms is crucial to avoid legal
-              complications.
-            </li>
-            <li>
-              Even in open source, unauthorized use or distribution without
-              proper licensing can lead to infringements.
-            </li>
-          </ul>
-        </p>
+          <div className='mt-16 grid w-full max-w-4xl gap-8 md:grid-cols-2 mx-auto'>
+            {legalEthicalTopics.map((topic, index) => (
+              <div key={index} className='rounded-lg bg-gray-800 p-6 shadow-lg'>
+                <h2 className='mb-4 text-2xl font-semibold text-white'>{topic.name}</h2>
+                <p className='mb-4 text-gray-300'>{topic.description}</p>
+                <h3 className='mb-2 text-xl text-white'>Key Points:</h3>
+                <ul className='mb-4 list-disc pl-5 text-gray-300'>
+                  {topic.features.map((feature, featureIndex) => (
+                    <li key={featureIndex}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
 
-        <h2 className='mb-4 text-2xl font-semibold'>
-          Awareness of Patent Claims
-        </h2>
-        <p className='mb-4'>
-          Patents grant exclusive rights for inventions, and in software, they
-          can pertain to algorithms, features, or general methods of operation:
-          <ul className='list-disc pl-5'>
-            <li>
-              It&apos;s essential to ensure that open-source contributions
-              don&apos;t infringe on existing patents.
-            </li>
-            <li>
-              Some open-source licenses include explicit patent grants, while
-              others do not.
-            </li>
-            <li>
-              Being aware of potential patent landmines helps in avoiding legal
-              pitfalls down the road.
-            </li>
-          </ul>
-        </p>
+          <div className='mt-16 rounded-lg bg-gray-50 p-8 shadow-sm'>
+            <h2 className='mb-6 text-2xl font-bold text-gray-900'>Best Practices for Legal & Ethical Compliance</h2>
+            <div className='grid gap-4 text-gray-600 sm:grid-cols-2'>
+              <div className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p>Regularly review license compliance</p>
+              </div>
+              <div className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p>Maintain clear attribution records</p>
+              </div>
+              <div className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p>Document all third-party code usage</p>
+              </div>
+              <div className='flex items-start'>
+                <svg className="h-6 w-6 mr-2 text-modern-purple flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p>Foster inclusive community practices</p>
+              </div>
+            </div>
+          </div>
 
-        <h2 className='mb-4 text-2xl font-semibold'>
-          Ethical Implications in Open Source
-        </h2>
-        <p className='mb-6'>
-          Beyond legalities, open source carries a weight of ethical
-          considerations:
-          <ul className='list-disc pl-5'>
-            <li>
-              Respect for original creators, even when forking or modifying
-              their work.
-            </li>
-            <li>
-              Transparency in intentions and avoiding hidden malicious intent,
-              like inserting malware or spyware.
-            </li>
-            <li>
-              Promoting inclusivity, diversity, and fairness within the
-              open-source community.
-            </li>
-          </ul>
-        </p>
-
-        <p>
-          As open-source continues to grow and evolve, understanding and
-          adhering to both legal and ethical guidelines ensures a healthy,
-          vibrant, and trusted ecosystem.
-        </p>
+          <div className='mt-16 text-center'>
+            <a
+              href='https://opensource.guide/legal/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='themed-button inline-block transform rounded-md px-8 py-3 text-sm font-semibold tracking-wider shadow-lg transition-all duration-300 ease-in-out hover:scale-105'
+            >
+              LEARN MORE ABOUT LEGAL CONSIDERATIONS
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   )
-};
+}
 
-export default LegalEthicalConsiderations;
+export default LegalEthicalConsiderations
+

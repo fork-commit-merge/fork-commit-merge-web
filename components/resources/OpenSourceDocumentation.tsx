@@ -1,96 +1,107 @@
-import React from "react";
+import React from "react"
+import { motion } from "framer-motion"
+
+interface Documentation {
+  title: string
+  description: string
+  url: string
+}
+
+const documentations: Documentation[] = [
+  {
+    title: "Introduction to Open Source",
+    description: "A comprehensive guide to understanding open source software, its principles, and benefits.",
+    url: "https://opensource.guide/"
+  },
+  {
+    title: "First Contributions on GitHub",
+    description: "Step-by-step guide to making your first open source contribution on GitHub.",
+    url: "https://github.com/firstcontributions/first-contributions"
+  },
+  {
+    title: "What is Open Source?",
+    description: "Detailed explanation of open source software, its history, and importance in modern development.",
+    url: "https://www.codecademy.com/articles/what-is-open-source"
+  },
+  {
+    title: "Open Source Initiative Resources",
+    description: "Official resources from OSI about open source software and licensing.",
+    url: "https://opensource.org/resources"
+  },
+  {
+    title: "Getting Started With Contributing",
+    description: "Comprehensive guide on how to start contributing to open source projects effectively.",
+    url: "https://stackoverflow.blog/2020/08/03/getting-started-with-contributing-to-open-source/"
+  },
+  {
+    title: "How to Contribute to Open Source",
+    description: "Practical tips and strategies for contributing to open source projects.",
+    url: "https://www.makeuseof.com/how-to-contribute-to-open-source-projects/"
+  },
+  {
+    title: "Open Source Agenda",
+    description: "Discover and explore the best free open source software projects available.",
+    url: "https://www.opensourceagenda.com/"
+  }
+]
 
 const OpenSourceDocumentation: React.FC = () => {
   return (
-    <>
-      <div className="w-full md:w-1/2 mb-8">
-        <div className="max-w-md mx-auto">
-          <h2 className="text-2xl font-semibold mb-2">
-            Open Source Contribution
-          </h2>
-          <p className="mb-4 max-w-prose">
-            Open source refers to a type of software where the source code is
-            available for anyone to view, modify, and distribute. Contributing
-            to open source projects is a great way to improve your coding
-            skills, work on real-world projects, and potentially make a
-            meaningful impact in the software that people use every day.
-          </p>
-          <ul className="space-y-2">
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://opensource.guide/"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">Introduction to Open Source</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/firstcontributions/first-contributions"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">First Contributions on GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.codecademy.com/articles/what-is-open-source"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">What is Open Source?</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://opensource.org/resources"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">Open Source Initiative Resources</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://stackoverflow.blog/2020/08/03/getting-started-with-contributing-to-open-source/"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">Getting Started With Contributing to Open Source</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.makeuseof.com/how-to-contribute-to-open-source-projects//"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">How to Contribute to Open Source Projects</span>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.opensourceagenda.com/"
-                className="block p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg text-center"
-              >
-                <span className="font-medium">Open Source Agenda. Discover the best free open source software projects</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </>
-  );
-};
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="rounded-2xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl"
+    >
+      <h2 className="mb-4 text-2xl font-bold text-gray-900">
+        Open Source Documentation
+      </h2>
+      <p className="mb-6 text-gray-600">
+        Essential resources and documentation to help you understand and contribute to open source projects effectively.
+      </p>
 
-export default OpenSourceDocumentation;
+      <div className="space-y-4">
+        {documentations.map((doc, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            <a
+              href={doc.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block overflow-hidden rounded-xl bg-gradient-to-r from-gray-800 to-gray-900 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
+              <h3 className="text-lg font-semibold text-white">
+                {doc.title}
+              </h3>
+              <p className="mt-2 text-sm text-gray-300 opacity-90 transition-opacity group-hover:opacity-100">
+                {doc.description}
+              </p>
+              <div className="mt-4 flex items-center text-sm text-modern-purple">
+                <span className="font-medium">Read Documentation</span>
+                <svg
+                  className="ml-2 h-4 w-4 transform transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </a>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  )
+}
+
+export default OpenSourceDocumentation
+
