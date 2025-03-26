@@ -150,33 +150,8 @@ export default function FAQ() {
               />
             ))}
           </div>
-
-          {/* Bottom CTA */}
-          <div className="mt-16 text-center">
-            <p className="text-gray-600">
-              Still have questions? Feel free to{' '}
-              <a
-                href="https://github.com/your-repo/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-modern-purple hover:underline"
-              >
-                open an issue
-              </a>{' '}
-              or join our{' '}
-              <a
-                href="https://discord.gg/your-server"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-modern-purple hover:underline"
-              >
-                Discord community
-              </a>
-            </p>
-          </div>
         </div>
       </div>
     </div>
   )
 }
-
