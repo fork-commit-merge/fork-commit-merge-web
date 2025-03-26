@@ -1,27 +1,24 @@
-import Dashboard from '../components/Dashboard'
+import { useUser } from '@clerk/nextjs'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import LoadingPage from '../components/LoadingPage'
 
 export default function DashboardPage() {
-  return (
-    <div className='bg-primary min-h-screen'>
-      <div
-        className='page-header-background'
-        style={{
-          backgroundImage: "url('/fcm-background-image.png')",
-          backgroundPosition: 'center',
-          backgroundSize: 'cover'
-        }}
-      >
-        <div className='page-header-content'>
-          <h1 className='mb-6 text-center text-4xl font-bold'>Dashboard</h1>
-        </div>
-      </div>
-      <div className='bg-primary min-h-screen'>
-        <Dashboard />
-      </div>
-    </div>
-  )
+  const { isLoaded, isSignedIn } = useUser()
+  const router = useRouter()
+
+  // If not loaded yet, show loading page
+  if (!isLoaded) {
+    return <LoadingPage />
+  }
+
+  // If user is not signed in, redirect to sign-in
+  if (!isSignedIn) {
+    router.push('/sign-in')
+    return null
+  }
+
+  // If user is signed in, show loading page (which will redirect to home)
+  return <LoadingPage />
 }
-
-
-
 

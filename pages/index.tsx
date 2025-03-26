@@ -1,3 +1,4 @@
+
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import Hero from '../components/Hero'
@@ -6,6 +7,22 @@ import Testimonials from '../components/Testimonials'
 import { useEffect, useState } from 'react'
 import { getTopContributors, getOtherContributors } from '../utils/contributors'
 import { Contributor } from '../types/contributor'
+import { motion } from 'framer-motion'
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 }
+}
 
 export default function Home() {
   const [topContributors, setTopContributors] = useState<Contributor[]>([])
@@ -43,12 +60,30 @@ export default function Home() {
       </Head>
 
       <main>
-        <Hero />
-        <Features />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Hero />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          <Features />
+        </motion.div>
 
         {/* About Section */}
-        <section className='bg-gray-50 pb-16'>
-          <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+        <motion.section
+          className='bg-gray-50 pb-16'
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.div variants={item} className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
             <div className='px-20 text-center'>
               <h2 className='text-2xl font-semibold leading-7 text-modern-purple'>
                 Become a part of our community of over 700 inspiring developers
@@ -56,7 +91,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className='prose prose-lg mx-auto mt-12 text-center px-20'>
+            <motion.div variants={item} className='prose prose-lg mx-auto mt-12 text-center px-20'>
               <p>
                 Fork, Commit, Merge is your one-stop resource hub for mastering
                 GitHub contributions! Whether you're a novice coder or an
@@ -72,20 +107,25 @@ export default function Home() {
                 confidently and effectively to the open-source world.
               </p>
               <p>Let's code, collaborate, and create together!</p>
-            </div>
-          </div>
-        </section>
+            </motion.div>
+          </motion.div>
+        </motion.section>
 
         {/* Project Description Section */}
-        <section className='py-16'>
-          <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+        <motion.section
+          className='bg-white py-16'
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.div variants={item} className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
             <div className='text-center'>
               <h2 className='text-3xl font-bold text-gray-900 sm:text-4xl'>
                 About the Fork, Commit, Merge project
               </h2>
             </div>
 
-            <div className='prose prose-lg mx-auto mt-12'>
+            <motion.div variants={item} className='prose prose-lg mx-auto mt-12'>
               <p>
                 "Fork, Commit, Merge" is an educational and practical project
                 aimed at helping developers - both newcomers and seasoned -
@@ -102,9 +142,9 @@ export default function Home() {
                 find the issues in the Issues section of the repository. Issues
                 are divided into three categories; Easy, Medium and Hard.
               </p>
-            </div>
-          </div>
-        </section>
+            </motion.div>
+          </motion.div>
+        </motion.section>
 
         {/* Contributors Section */}
         <section className='bg-gray-50 py-16'>
@@ -116,14 +156,15 @@ export default function Home() {
             </div>
 
             {/* Top 3 Contributors */}
-            <div className='mt-12 grid gap-8 md:grid-cols-3'>
+            <motion.div variants={item} className='mt-12 grid gap-8 md:grid-cols-3'>
               {topContributors.map((contributor, index) => (
-                <a
+                <motion.a
                   key={contributor.id}
                   href={contributor.html_url}
                   target='_blank'
                   rel='noopener noreferrer'
                   className='transform rounded-lg bg-white p-6 shadow-lg transition-transform duration-200 hover:scale-105'
+                  variants={item}
                 >
                   <div className='flex items-center'>
                     <img
@@ -140,9 +181,9 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                </a>
+                </motion.a>
               ))}
-            </div>
+            </motion.div>
 
             {/* Other Contributors */}
             <div className='mt-16'>
@@ -193,3 +234,6 @@ export default function Home() {
     </>
   )
 }
+
+
+

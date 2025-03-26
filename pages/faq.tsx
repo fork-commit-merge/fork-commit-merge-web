@@ -33,7 +33,6 @@ const faqs: FAQItem[] = [
     answer: 'Always follow the project\'s contribution guidelines. Create a new branch for each feature or fix, keep your code clean, and make your commit messages descriptive.',
     category: 'Best Practices'
   },
-  // Add all other FAQ items here...
 ]
 
 const categories = Array.from(new Set(faqs.map(faq => faq.category)))
