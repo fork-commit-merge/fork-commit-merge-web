@@ -6,7 +6,7 @@ const LoadingPage = () => {
   const router = useRouter()
 
   useEffect(() => {
-    //* Redirect to home page after 2 seconds
+    //* Redirect to home page after 3 seconds
     const timeout = setTimeout(() => {
       router.push('/')
     }, 3000)
