@@ -1,4 +1,3 @@
-
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import Hero from '../components/Hero'
@@ -8,6 +7,7 @@ import { useEffect, useState } from 'react'
 import { getTopContributors, getOtherContributors } from '../utils/contributors'
 import { Contributor } from '../types/contributor'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const container = {
   hidden: { opacity: 0 },
@@ -80,10 +80,13 @@ export default function Home() {
         <motion.section
           className='bg-gray-50 pb-16'
           variants={container}
-          initial="hidden"
-          animate="show"
+          initial='hidden'
+          animate='show'
         >
-          <motion.div variants={item} className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+          <motion.div
+            variants={item}
+            className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'
+          >
             <div className='px-20 text-center'>
               <h2 className='text-2xl font-semibold leading-7 text-modern-purple'>
                 Become a part of our community of over 700 inspiring developers
@@ -91,7 +94,10 @@ export default function Home() {
               </h2>
             </div>
 
-            <motion.div variants={item} className='prose prose-lg mx-auto mt-12 text-center px-20'>
+            <motion.div
+              variants={item}
+              className='prose prose-lg mx-auto mt-12 px-20 text-center'
+            >
               <p>
                 Fork, Commit, Merge is your one-stop resource hub for mastering
                 GitHub contributions! Whether you're a novice coder or an
@@ -115,17 +121,23 @@ export default function Home() {
         <motion.section
           className='bg-white py-16'
           variants={container}
-          initial="hidden"
-          animate="show"
+          initial='hidden'
+          animate='show'
         >
-          <motion.div variants={item} className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+          <motion.div
+            variants={item}
+            className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'
+          >
             <div className='text-center'>
               <h2 className='text-3xl font-bold text-gray-900 sm:text-4xl'>
                 About the Fork, Commit, Merge project
               </h2>
             </div>
 
-            <motion.div variants={item} className='prose prose-lg mx-auto mt-12'>
+            <motion.div
+              variants={item}
+              className='prose prose-lg mx-auto mt-12'
+            >
               <p>
                 "Fork, Commit, Merge" is an educational and practical project
                 aimed at helping developers - both newcomers and seasoned -
@@ -156,7 +168,10 @@ export default function Home() {
             </div>
 
             {/* Top 3 Contributors */}
-            <motion.div variants={item} className='mt-12 grid gap-8 md:grid-cols-3'>
+            <motion.div
+              variants={item}
+              className='mt-12 grid gap-8 md:grid-cols-3'
+            >
               {topContributors.map((contributor, index) => (
                 <motion.a
                   key={contributor.id}
@@ -184,6 +199,29 @@ export default function Home() {
                 </motion.a>
               ))}
             </motion.div>
+
+            <div className='mt-8 text-center'>
+              <Link
+                href='/contributors'
+                className='inline-flex items-center justify-center rounded-md bg-modern-purple px-6 py-3 text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-modern-purple/90'
+              >
+                View All Contributors
+                <svg
+                  className='ml-2 h-5 w-5'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M13 7l5 5m0 0l-5 5m5-5H6'
+                  />
+                </svg>
+              </Link>
+            </div>
 
             {/* Other Contributors */}
             <div className='mt-16'>
@@ -234,6 +272,3 @@ export default function Home() {
     </>
   )
 }
-
-
-
