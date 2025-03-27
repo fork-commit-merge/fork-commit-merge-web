@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { StarFilled } from '@ant-design/icons'
 import { useEffect, useState } from 'react'
 import Coffee from '../buttons/Coffee'
+import Sponsor from '../buttons/Sponsor'
 
 const Footer = () => {
   const [starCount, setStarCount] = useState<number | null>(null)
@@ -46,7 +47,7 @@ const Footer = () => {
                 href='https://github.com/fork-commit-merge/fork-commit-merge'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='hover:text-modern-purple text-gray-400'
+                className='text-gray-400 hover:text-modern-purple'
                 aria-label='GitHub'
               >
                 <svg
@@ -62,6 +63,7 @@ const Footer = () => {
                 </svg>
               </a>
               <Coffee />
+              <Sponsor />
             </div>
           </div>
 
@@ -73,7 +75,7 @@ const Footer = () => {
                   href='https://nextjs.org/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Next.js
                 </a>
@@ -83,7 +85,7 @@ const Footer = () => {
                   href='https://vercel.com/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Vercel
                 </a>
@@ -93,7 +95,7 @@ const Footer = () => {
                   href='https://mongodb.com/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   MongoDB
                 </a>
@@ -103,7 +105,7 @@ const Footer = () => {
                   href='https://github.com/fork-commit-merge/fork-commit-merge'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple group flex items-center text-sm text-gray-600'
+                  className='group flex items-center text-sm text-gray-600 hover:text-modern-purple'
                 >
                   <span>GitHub Stars</span>
                   {starCount !== null ? (
@@ -126,7 +128,7 @@ const Footer = () => {
                   href='https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CONTRIBUTING.md'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Contributing
                 </Link>
@@ -134,7 +136,7 @@ const Footer = () => {
               <li>
                 <Link
                   href='/privacy-policy'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Privacy Policy
                 </Link>
@@ -144,7 +146,7 @@ const Footer = () => {
                   href='https://github.com/nikohoffren'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Contact
                 </Link>
@@ -154,7 +156,7 @@ const Footer = () => {
                   href='https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CODE_OF_CONDUCT.md'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Code of Conduct
                 </Link>
@@ -168,7 +170,7 @@ const Footer = () => {
               <li>
                 <Link
                   href='/faq'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   FAQ
                 </Link>
@@ -176,7 +178,7 @@ const Footer = () => {
               <li>
                 <Link
                   href='/resources'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Resources
                 </Link>
@@ -184,7 +186,7 @@ const Footer = () => {
               <li>
                 <Link
                   href='/ai'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   AI Tools
                 </Link>
@@ -194,7 +196,7 @@ const Footer = () => {
                   href='https://opensource.org/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple text-sm text-gray-600'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   opensource.org
                 </Link>

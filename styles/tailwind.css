@@ -33,25 +33,25 @@
 }
 
 .modern-card {
-  @apply shadow-modern hover:shadow-modern-hover rounded-lg p-6 transition-all duration-200;
+  @apply rounded-lg p-6 shadow-modern transition-all duration-200 hover:shadow-modern-hover;
   background-color: var(--bg-secondary);
 }
 
 .modern-button {
-  @apply bg-modern-purple hover:bg-modern-darkPurple focus:ring-modern-purple inline-flex items-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply inline-flex items-center rounded-md border border-transparent bg-modern-purple px-4 py-2 text-sm font-medium text-white transition-colors duration-200 hover:bg-modern-darkPurple focus:outline-none focus:ring-2 focus:ring-modern-purple focus:ring-offset-2;
 }
 
 .hero-button {
-  @apply bg-modern-purple hover:bg-modern-darkPurple focus:ring-modern-purple inline-flex items-center rounded-md border border-transparent px-6 py-3 text-2xl font-medium text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply inline-flex items-center rounded-md border border-transparent bg-modern-purple px-6 py-3 text-2xl font-medium text-white transition-colors duration-200 hover:bg-modern-darkPurple focus:outline-none focus:ring-2 focus:ring-modern-purple focus:ring-offset-2;
 }
 
 .modern-button-outline {
-  @apply border-modern-purple text-modern-purple hover:bg-modern-purple focus:ring-modern-purple inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium transition-colors duration-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply inline-flex items-center rounded-md border border-modern-purple px-4 py-2 text-sm font-medium text-modern-purple transition-colors duration-200 hover:bg-modern-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-modern-purple focus:ring-offset-2;
   background-color: var(--bg-primary);
 }
 
 .hero-button-outline {
-  @apply border-modern-purple text-modern-purple hover:bg-modern-purple focus:ring-modern-purple inline-flex items-center rounded-md border px-6 py-3 text-2xl font-medium transition-colors duration-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply inline-flex items-center rounded-md border border-modern-purple px-6 py-3 text-2xl font-medium text-modern-purple transition-colors duration-200 hover:bg-modern-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-modern-purple focus:ring-offset-2;
   background-color: var(--bg-primary);
 }
 
@@ -125,11 +125,21 @@ body {
 
 /* Buy me a coffee button */
 .buyButton {
-  @apply relative inline-block transition-transform duration-200 hover:scale-110;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 0.2rem;
+  box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5);
+  width: 1.5rem;
 }
 
-.buyButton img {
-  @apply transition-opacity duration-200;
+.buyButton:hover,
+.buyButton:active,
+.buyButton:focus {
+  box-shadow: 0px 1px 2px 2px rgb(248, 178, 87);
+  opacity: 0.85;
+  color: #ffffff;
 }
 
 /* Theme-specific styles */
@@ -188,8 +198,3 @@ body {
 .theme-dark .hover\:text-gray-700:hover {
   @apply hover:text-gray-200;
 }
-
-.theme-dark .buyButton img {
-  filter: brightness(0) invert(1);
-}
-
