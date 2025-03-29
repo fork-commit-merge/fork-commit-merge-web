@@ -124,7 +124,6 @@ This project is the repo of
 - [Contributing](#contributing)
 - [Questions](#questions)
 - [License](#license)
-- [Disabled Features](#disabled-features)
 - [List of Contributors](#list-of-contributors)
 
 ## Features
@@ -154,7 +153,6 @@ This project is the repo of
 - Next.js
 - TypeScript
 - Tailwind CSS
-- MongoDB Atlas
 - Clerk (Authentication)
 - GitHub API
 
@@ -189,11 +187,6 @@ Follow these steps to run the application in your local environment:
 
    You will need to replace the placeholder values in this file with your actual
    credentials.
-
-   - For [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), you will need to
-     replace `MONGODB_URI` with your MongoDB connection string. You can get this
-     from the MongoDB Atlas dashboard. Also, remember to add `0.0.0.0/0` to the
-     Network Access to allow connections from all IP addresses.
 
    - For Github you need to replace `GITHUB_ID` and `GITHUB_SECRET` with your on
      credentials by creating a GitHub OAuth Application:
