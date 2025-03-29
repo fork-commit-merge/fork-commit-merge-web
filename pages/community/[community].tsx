@@ -3,7 +3,6 @@ import React from 'react'
 import Discussions from '../../components/communityComponents/Discussions'
 import Events from '../../components/communityComponents/Events'
 import CommunityNotSupported from '../../components/communityComponents/CommunityNotSupported'
-import PageBackground from '../../components/common/PageBackground'
 
 const CommunityPage = () => {
   const router = useRouter()
