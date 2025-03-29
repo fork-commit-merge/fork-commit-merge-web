@@ -92,16 +92,6 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href='https://mongodb.com/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
-                >
-                  MongoDB
-                </a>
-              </li>
-              <li>
-                <a
                   href='https://github.com/fork-commit-merge/fork-commit-merge'
                   target='_blank'
                   rel='noopener noreferrer'

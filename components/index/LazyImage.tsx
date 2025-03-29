@@ -35,4 +35,3 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, alt, width, height }) => {
 }
 
 export default LazyImage
-
