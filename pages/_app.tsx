@@ -8,6 +8,7 @@ import BackToTopButton from '../components/buttons/BackToTopButton'
 import { Ubuntu } from 'next/font/google'
 import { Ysabeau } from 'next/font/google'
 import { useEffect } from 'react'
+import TawkToChat from '../components/chat/TawkToChat'
 
 const ysabeau = Ysabeau({
   subsets: ['latin'],
@@ -58,6 +59,7 @@ function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
         </div>
         <Footer />
         <BackToTopButton />
+        <TawkToChat />
       </main>
     </ClerkProvider>
   )
