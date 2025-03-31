@@ -13,7 +13,7 @@
     "@clerk/nextjs": "^4.31.5",
     "@clerk/themes": "^2.2.3",
     "@heroicons/react": "^2.0.18",
-    "@mui/icons-material": "^6.4.1",
+    "@mui/icons-material": "^7.0.1",
     "@types/node": "22.13.13",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
