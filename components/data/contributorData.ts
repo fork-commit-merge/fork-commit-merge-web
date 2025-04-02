@@ -5495,4 +5495,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/113528799?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "slow-connect"
   },
+  {
+    id: "netscrawler",
+    url: "https://github.com/netscrawler",
+    avatar: "https://avatars.githubusercontent.com/u/128107374?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "netscrawler"
+  },
 ]
