@@ -5489,4 +5489,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/182400170?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Damini-12"
   },
+  {
+    id: "slow-connect",
+    url: "https://github.com/slow-connect",
+    avatar: "https://avatars.githubusercontent.com/u/113528799?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "slow-connect"
+  },
 ]
