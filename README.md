@@ -116,7 +116,7 @@ _Find awesome badges for your project in this repository:
 ## Table of Contents
 
 This project is the repo of
-[Fork, Commit, Merge -website](https://forkcommitmerge.vercel.app).
+[Fork, Commit, Merge -website](https://forkcommitmerge.dev).
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
