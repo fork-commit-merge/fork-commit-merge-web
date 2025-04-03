@@ -56,7 +56,6 @@ export default function Home() {
           name='description'
           content='Learn how to contribute to open source projects and explore comprehensive coding resources. Start your journey in open source development today.'
         />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main>
