@@ -12,7 +12,7 @@ export default class DocumentExtension extends Document {
           />
           <script
             async
-            src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9765110233243602'
+            src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3482752082453171'
             crossOrigin='anonymous'
           ></script>
           {/* Preload critical background images */}
@@ -31,7 +31,3 @@ export default class DocumentExtension extends Document {
     )
   }
 }
-
-
-
-
