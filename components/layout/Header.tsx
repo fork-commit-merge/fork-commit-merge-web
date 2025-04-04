@@ -2,13 +2,9 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Coffee from '../buttons/Coffee'
-import styles from '../../styles/Coffee.module.css'
 import React from 'react'
 import { useRouter } from 'next/router'
-import { StarFilled } from '@ant-design/icons'
 import { languageList } from '../data/languageList'
 import { frameworkList } from '../data/frameworkList'
 import { gitList } from '../data/gitList'
