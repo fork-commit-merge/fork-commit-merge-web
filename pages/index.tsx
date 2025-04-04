@@ -75,47 +75,6 @@ export default function Home() {
           <Features />
         </motion.div>
 
-        {/* About Section */}
-        <motion.section
-          className='bg-gray-50 pb-16'
-          variants={container}
-          initial='hidden'
-          animate='show'
-        >
-          <motion.div
-            variants={item}
-            className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'
-          >
-            <div className='px-20 text-center'>
-              <h2 className='text-2xl font-semibold leading-7 text-modern-purple'>
-                Become a part of our community of over 700 inspiring developers
-                who have already contributed to this project!
-              </h2>
-            </div>
-
-            <motion.div
-              variants={item}
-              className='prose prose-lg mx-auto mt-12 px-20 text-center'
-            >
-              <p>
-                Fork, Commit, Merge is your one-stop resource hub for mastering
-                GitHub contributions! Whether you're a novice coder or an
-                experienced developer, our comprehensive guides are designed to
-                streamline your GitHub journey. We delve into everything from
-                basic Git commands to intricate pull request processes, making
-                collaboration seamless and efficient.
-              </p>
-              <p>
-                Learn the ins and outs of forking, committing, and merging with
-                our easy-to-follow tutorials and expert advice. At Fork Commit
-                Merge, we're passionate about empowering you to contribute
-                confidently and effectively to the open-source world.
-              </p>
-              <p>Let's code, collaborate, and create together!</p>
-            </motion.div>
-          </motion.div>
-        </motion.section>
-
         {/* Project Description Section */}
         <motion.section
           className='bg-white py-16'
@@ -127,9 +86,10 @@ export default function Home() {
             variants={item}
             className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'
           >
-            <div className='text-center'>
-              <h2 className='text-3xl font-bold text-gray-900 sm:text-4xl'>
-                About the Fork, Commit, Merge project
+            <div className='px-20 text-center'>
+              <h2 className='text-3xl font-semibold leading-7 text-modern-purple'>
+                Become a part of our community of over 700 inspiring developers
+                who have already contributed to this project!
               </h2>
             </div>
 
@@ -141,9 +101,10 @@ export default function Home() {
                 "Fork, Commit, Merge" is an educational and practical project
                 aimed at helping developers - both newcomers and seasoned -
                 improve their skills in open-source contribution,
-                problem-solving, finding bugs, testing, and much more in 135
-                individual issues encompassing various programming languages,
-                libraries and frameworks.
+                problem-solving, finding bugs, testing, and much more in{' '}
+                <span className='text-green-400'>135</span> individual issues
+                encompassing various programming languages, libraries and
+                frameworks.
               </p>
               <p>
                 The project is open to everyone and anyone who wants to learn
@@ -199,38 +160,8 @@ export default function Home() {
               ))}
             </motion.div>
 
-            <div className='mt-8 text-center'>
-              <Link
-                href='/contributors'
-                className='inline-flex items-center justify-center rounded-md bg-modern-purple px-6 py-3 text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-modern-purple/90'
-              >
-                View All Contributors
-                <svg
-                  className='ml-2 h-5 w-5'
-                  fill='none'
-                  stroke='currentColor'
-                  viewBox='0 0 24 24'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M13 7l5 5m0 0l-5 5m5-5H6'
-                  />
-                </svg>
-              </Link>
-            </div>
-
             {/* Other Contributors */}
             <div className='mt-16'>
-              <h3 className='mb-8 text-center text-2xl font-bold text-gray-900'>
-                Join Our Community
-              </h3>
-              <p className='mb-8 text-center text-gray-600'>
-                Be part of our growing community of developers who are learning
-                and contributing to open source
-              </p>
               <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
                 {otherContributors.map((contributor, index) => (
                   <a
@@ -261,6 +192,28 @@ export default function Home() {
                   <div className='rounded-lg bg-white p-4 opacity-0 shadow'></div>
                 )}
               </div>
+            </div>
+            <div className='mt-8 text-center'>
+              <Link
+                href='/contributors'
+                className='inline-flex items-center justify-center rounded-md bg-modern-purple px-6 py-3 text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-modern-purple/90'
+              >
+                View All Contributors
+                <svg
+                  className='ml-2 h-5 w-5'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M13 7l5 5m0 0l-5 5m5-5H6'
+                  />
+                </svg>
+              </Link>
             </div>
           </div>
         </section>

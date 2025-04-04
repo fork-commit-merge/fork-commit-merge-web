@@ -13,7 +13,6 @@ import { languageList } from '../data/languageList'
 import { frameworkList } from '../data/frameworkList'
 import { gitList } from '../data/gitList'
 import { roadmapList } from '../data/roadmapList'
-import { communityList } from '../data/communityList'
 import { UserButton, useUser } from '@clerk/nextjs'
 import ThemeSelector from '../ThemeSelector'
 
@@ -24,12 +23,10 @@ const Header = () => {
   const [isGitSelectionDropdownOpen, setGitSelectionDropdownOpen] =
     useState(false)
   const [isRoadmapDropdownOpen, setRoadmapDropdownOpen] = useState(false)
-  const [isCommunityDropdownOpen, setCommunityDropdownOpen] = useState(false)
   const node = useRef<HTMLLIElement | null>(null)
   const frameworkNode = useRef<HTMLLIElement | null>(null)
   const gitSelectionNode = useRef<HTMLLIElement | null>(null)
   const roadmapNode = useRef<HTMLLIElement | null>(null)
-  const communityNode = useRef<HTMLLIElement | null>(null)
   const router = useRouter()
   const [starCount, setStarCount] = useState<number | null>(null)
   const { user, isLoaded } = useUser()
@@ -69,11 +66,6 @@ const Header = () => {
     setRoadmapDropdownOpen(false)
   }
 
-  const navigateToCommunity = (link: string) => {
-    router.push(link)
-    setCommunityDropdownOpen(false)
-  }
-
   const toggleLanguageDropdown = () => {
     setLanguageDropdownOpen(!isLanguageDropdownOpen)
     if (!isLanguageDropdownOpen) {
@@ -82,7 +74,6 @@ const Header = () => {
     setFrameworkDropdownOpen(false)
     setGitSelectionDropdownOpen(false)
     setRoadmapDropdownOpen(false)
-    setCommunityDropdownOpen(false)
   }
 
   const toggleFrameworkDropdown = () => {
@@ -93,7 +84,6 @@ const Header = () => {
     setLanguageDropdownOpen(false)
     setGitSelectionDropdownOpen(false)
     setRoadmapDropdownOpen(false)
-    setCommunityDropdownOpen(false)
   }
 
   const toggleGitSelectionDropdown = () => {
@@ -104,7 +94,6 @@ const Header = () => {
     setLanguageDropdownOpen(false)
     setFrameworkDropdownOpen(false)
     setRoadmapDropdownOpen(false)
-    setCommunityDropdownOpen(false)
   }
 
   const toggleRoadmapDropdown = () => {
@@ -115,18 +104,6 @@ const Header = () => {
     setLanguageDropdownOpen(false)
     setFrameworkDropdownOpen(false)
     setGitSelectionDropdownOpen(false)
-    setCommunityDropdownOpen(false)
-  }
-
-  const toggleCommunityDropdown = () => {
-    setCommunityDropdownOpen(!isCommunityDropdownOpen)
-    if (!isCommunityDropdownOpen) {
-      window.dispatchEvent(new Event('dropdownOpened'))
-    }
-    setLanguageDropdownOpen(false)
-    setFrameworkDropdownOpen(false)
-    setGitSelectionDropdownOpen(false)
-    setRoadmapDropdownOpen(false)
   }
 
   return (
@@ -339,55 +316,6 @@ const Header = () => {
                     </div>
                   )}
                 </div>
-
-                <div
-                  className='relative'
-                  ref={communityNode as React.RefObject<HTMLDivElement>}
-                >
-                  <button
-                    onClick={toggleCommunityDropdown}
-                    className='flex items-center transition-colors hover:text-modern-purple'
-                    style={{ color: 'var(--fc-primary)' }}
-                  >
-                    <span className='font-medium'>Community</span>
-                    <svg
-                      className={`ml-1 h-4 w-4 transition-transform ${isCommunityDropdownOpen ? 'rotate-180' : ''}`}
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth={2}
-                        d='M19 9l-7 7-7-7'
-                      />
-                    </svg>
-                  </button>
-                  {isCommunityDropdownOpen && (
-                    <div
-                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
-                      style={{
-                        backgroundColor: 'var(--bg-secondary)',
-                        color: 'var(--fc-primary)'
-                      }}
-                    >
-                      {communityList.map(community => (
-                        <button
-                          key={community.name}
-                          onClick={() => navigateToCommunity(community.link)}
-                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
-                          style={{
-                            color: 'var(--fc-primary)',
-                            backgroundColor: 'var(--bg-secondary)'
-                          }}
-                        >
-                          {community.name}
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
               </div>
             </div>
           </div>
@@ -399,6 +327,12 @@ const Header = () => {
                 className='mx-2 font-medium text-gray-700 transition-colors hover:text-modern-purple'
               >
                 Resources
+              </Link>
+              <Link
+                href='/contributors'
+                className='mx-2 font-medium text-gray-700 transition-colors hover:text-modern-purple'
+              >
+                Contributors
               </Link>
               <Link
                 href='/ai'
@@ -570,6 +504,14 @@ const Header = () => {
               className='block px-3 py-2 text-base font-medium text-gray-700 hover:text-modern-purple'
             >
               Resources
+            </Link>
+
+            <Link
+              href='/contributors'
+              onClick={() => setIsOpen(false)}
+              className='block px-3 py-2 text-base font-medium text-gray-700 hover:text-modern-purple'
+            >
+              Contributors
             </Link>
 
             <Link
