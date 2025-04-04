@@ -5519,4 +5519,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/165710775?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Federico-Vichachi"
   },
+  {
+    id: "wurtz-codez",
+    url: "https://github.com/wurtz-codez",
+    avatar: "https://avatars.githubusercontent.com/u/156505860?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "wurtz-codez"
+  },
 ]
