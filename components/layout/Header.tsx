@@ -39,7 +39,7 @@ const Header = () => {
   }, [])
 
   useEffect(() => {
-    // Close all dropdowns when route changes
+    //* Close all dropdowns when route changes
     const handleRouteChange = () => {
       setLanguageDropdownOpen(false)
       setFrameworkDropdownOpen(false)
