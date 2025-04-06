@@ -19,5 +19,7 @@ export const roadmapList = [
     link: '/roadmaps/open-source-terminology'
   },
   { name: 'Discussions', link: '/community/discussions' },
-  { name: 'Events', link: '/community/events' }
+  { name: 'Events', link: '/community/events' },
+  { name: 'Resources', link: '/resources' },
+  { name: 'AI Tools', link: '/ai' }
 ]
