@@ -21,9 +21,9 @@
 
 .theme-dark {
   --fc-primary: #ffffff;
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #2d2d2d;
-  --bg-hover: #3d3d3d;
+  --bg-primary: #2d2d3d;
+  --bg-secondary: #363646;
+  --bg-hover: #44445c;
   --accent-color: #844fba;
 }
 

@@ -38,6 +38,21 @@ const Header = () => {
       })
   }, [])
 
+  useEffect(() => {
+    // Close all dropdowns when route changes
+    const handleRouteChange = () => {
+      setLanguageDropdownOpen(false)
+      setFrameworkDropdownOpen(false)
+      setGitSelectionDropdownOpen(false)
+      setRoadmapDropdownOpen(false)
+    }
+
+    router.events.on('routeChangeStart', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange)
+    }
+  }, [router])
+
   const toggleSideNav = () => {
     setIsOpen(!isOpen)
   }
@@ -103,7 +118,7 @@ const Header = () => {
   }
 
   return (
-    <nav className='border-b border-gray-200 bg-white shadow-md'>
+    <nav className='border-b border-gray-200 bg-[var(--bg-primary)] shadow-md dark:border-gray-700'>
       <div className='modern-container'>
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center space-x-8'>
@@ -123,12 +138,12 @@ const Header = () => {
                 >
                   <button
                     onClick={toggleLanguageDropdown}
-                    className='flex items-center transition-colors hover:text-modern-purple'
+                    className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
                     <span className='font-medium'>Languages</span>
                     <svg
-                      className={`ml-1 h-4 w-4 transition-transform ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
+                      className={`ml-1 h-4 w-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -143,7 +158,7 @@ const Header = () => {
                   </button>
                   {isLanguageDropdownOpen && (
                     <div
-                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg transition-all duration-200'
                       style={{
                         backgroundColor: 'var(--bg-secondary)',
                         color: 'var(--fc-primary)'
@@ -153,10 +168,9 @@ const Header = () => {
                         <button
                           key={language.name}
                           onClick={() => navigateToLanguage(language.link)}
-                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          className='block w-full px-4 py-2 text-left text-sm transition-all duration-200 hover:bg-[var(--bg-hover)] hover:text-[var(--accent-color)]'
                           style={{
-                            color: 'var(--fc-primary)',
-                            backgroundColor: 'var(--bg-secondary)'
+                            color: 'var(--fc-primary)'
                           }}
                         >
                           {language.name}
@@ -172,12 +186,12 @@ const Header = () => {
                 >
                   <button
                     onClick={toggleFrameworkDropdown}
-                    className='flex items-center transition-colors hover:text-modern-purple'
+                    className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
                     <span className='font-medium'>Frameworks</span>
                     <svg
-                      className={`ml-1 h-4 w-4 transition-transform ${isFrameworkDropdownOpen ? 'rotate-180' : ''}`}
+                      className={`ml-1 h-4 w-4 transition-transform duration-200 ${isFrameworkDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -192,7 +206,7 @@ const Header = () => {
                   </button>
                   {isFrameworkDropdownOpen && (
                     <div
-                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg transition-all duration-200'
                       style={{
                         backgroundColor: 'var(--bg-secondary)',
                         color: 'var(--fc-primary)'
@@ -202,10 +216,9 @@ const Header = () => {
                         <button
                           key={framework.name}
                           onClick={() => navigateToFramework(framework.link)}
-                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          className='block w-full px-4 py-2 text-left text-sm transition-all duration-200 hover:bg-[var(--bg-hover)] hover:text-[var(--accent-color)]'
                           style={{
-                            color: 'var(--fc-primary)',
-                            backgroundColor: 'var(--bg-secondary)'
+                            color: 'var(--fc-primary)'
                           }}
                         >
                           {framework.name}
@@ -221,12 +234,12 @@ const Header = () => {
                 >
                   <button
                     onClick={toggleGitSelectionDropdown}
-                    className='flex items-center transition-colors hover:text-modern-purple'
+                    className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
                     <span className='font-medium'>Git</span>
                     <svg
-                      className={`ml-1 h-4 w-4 transition-transform ${isGitSelectionDropdownOpen ? 'rotate-180' : ''}`}
+                      className={`ml-1 h-4 w-4 transition-transform duration-200 ${isGitSelectionDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -241,7 +254,7 @@ const Header = () => {
                   </button>
                   {isGitSelectionDropdownOpen && (
                     <div
-                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg transition-all duration-200'
                       style={{
                         backgroundColor: 'var(--bg-secondary)',
                         color: 'var(--fc-primary)'
@@ -251,10 +264,9 @@ const Header = () => {
                         <button
                           key={git.name}
                           onClick={() => navigateToGitSelection(git.link)}
-                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          className='block w-full px-4 py-2 text-left text-sm transition-all duration-200 hover:bg-[var(--bg-hover)] hover:text-[var(--accent-color)]'
                           style={{
-                            color: 'var(--fc-primary)',
-                            backgroundColor: 'var(--bg-secondary)'
+                            color: 'var(--fc-primary)'
                           }}
                         >
                           {git.name}
@@ -270,12 +282,12 @@ const Header = () => {
                 >
                   <button
                     onClick={toggleRoadmapDropdown}
-                    className='flex items-center transition-colors hover:text-modern-purple'
+                    className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
                     <span className='font-medium'>Roadmap</span>
                     <svg
-                      className={`ml-1 h-4 w-4 transition-transform ${isRoadmapDropdownOpen ? 'rotate-180' : ''}`}
+                      className={`ml-1 h-4 w-4 transition-transform duration-200 ${isRoadmapDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -290,7 +302,7 @@ const Header = () => {
                   </button>
                   {isRoadmapDropdownOpen && (
                     <div
-                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg'
+                      className='scrollable-dropdown absolute z-50 mt-2 w-60 rounded-md py-1 shadow-lg transition-all duration-200'
                       style={{
                         backgroundColor: 'var(--bg-secondary)',
                         color: 'var(--fc-primary)'
@@ -300,10 +312,9 @@ const Header = () => {
                         <button
                           key={roadmap.name}
                           onClick={() => navigateToRoadmap(roadmap.link)}
-                          className='block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-[var(--bg-hover)]'
+                          className='block w-full px-4 py-2 text-left text-sm transition-all duration-200 hover:bg-[var(--bg-hover)] hover:text-[var(--accent-color)]'
                           style={{
-                            color: 'var(--fc-primary)',
-                            backgroundColor: 'var(--bg-secondary)'
+                            color: 'var(--fc-primary)'
                           }}
                         >
                           {roadmap.name}
@@ -381,12 +392,13 @@ const Header = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className='z-50 bg-white shadow-lg md:hidden'>
+        <div className='z-50 bg-[var(--bg-primary)] shadow-lg md:hidden'>
           <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
-            <div className='block px-3 py-2 text-base font-medium text-gray-700'>
+            <div className='block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200'>
               <button
                 onClick={toggleLanguageDropdown}
-                className='flex w-full items-center justify-between'
+                className='flex w-full items-center justify-between hover:text-modern-purple dark:text-gray-200'
+                style={{ color: 'var(--fc-primary)' }}
               >
                 <span>Languages</span>
                 <svg
@@ -409,7 +421,8 @@ const Header = () => {
                     <button
                       key={language.name}
                       onClick={() => navigateToLanguage(language.link)}
-                      className='block w-full py-1 text-left text-sm text-gray-600 hover:text-modern-purple'
+                      className='block w-full py-1 text-left text-sm hover:text-modern-purple dark:text-gray-200'
+                      style={{ color: 'var(--fc-primary)' }}
                     >
                       {language.name}
                     </button>
@@ -418,10 +431,11 @@ const Header = () => {
               )}
             </div>
 
-            <div className='block px-3 py-2 text-base font-medium text-gray-700'>
+            <div className='block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200'>
               <button
                 onClick={toggleFrameworkDropdown}
-                className='flex w-full items-center justify-between'
+                className='flex w-full items-center justify-between hover:text-modern-purple dark:text-gray-200'
+                style={{ color: 'var(--fc-primary)' }}
               >
                 <span>Frameworks</span>
                 <svg
@@ -444,7 +458,8 @@ const Header = () => {
                     <button
                       key={framework.name}
                       onClick={() => navigateToFramework(framework.link)}
-                      className='block w-full py-1 text-left text-sm text-gray-600 hover:text-modern-purple'
+                      className='block w-full py-1 text-left text-sm hover:text-modern-purple dark:text-gray-200'
+                      style={{ color: 'var(--fc-primary)' }}
                     >
                       {framework.name}
                     </button>
@@ -453,10 +468,11 @@ const Header = () => {
               )}
             </div>
 
-            <div className='block px-3 py-2 text-base font-medium text-gray-700'>
+            <div className='block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200'>
               <button
                 onClick={toggleGitSelectionDropdown}
-                className='flex w-full items-center justify-between'
+                className='flex w-full items-center justify-between hover:text-modern-purple dark:text-gray-200'
+                style={{ color: 'var(--fc-primary)' }}
               >
                 <span>Git</span>
                 <svg
@@ -479,7 +495,8 @@ const Header = () => {
                     <button
                       key={git.name}
                       onClick={() => navigateToGitSelection(git.link)}
-                      className='block w-full py-1 text-left text-sm text-gray-600 hover:text-modern-purple'
+                      className='block w-full py-1 text-left text-sm hover:text-modern-purple dark:text-gray-200'
+                      style={{ color: 'var(--fc-primary)' }}
                     >
                       {git.name}
                     </button>
@@ -488,10 +505,11 @@ const Header = () => {
               )}
             </div>
 
-            <div className='block px-3 py-2 text-base font-medium text-gray-700'>
+            <div className='block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200'>
               <button
                 onClick={toggleRoadmapDropdown}
-                className='flex w-full items-center justify-between'
+                className='flex w-full items-center justify-between hover:text-modern-purple dark:text-gray-200'
+                style={{ color: 'var(--fc-primary)' }}
               >
                 <span>Roadmap</span>
                 <svg
@@ -514,7 +532,8 @@ const Header = () => {
                     <button
                       key={roadmap.name}
                       onClick={() => navigateToRoadmap(roadmap.link)}
-                      className='block w-full py-1 text-left text-sm text-gray-600 hover:text-modern-purple'
+                      className='block w-full py-1 text-left text-sm hover:text-modern-purple dark:text-gray-200'
+                      style={{ color: 'var(--fc-primary)' }}
                     >
                       {roadmap.name}
                     </button>
