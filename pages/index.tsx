@@ -86,35 +86,32 @@ export default function Home() {
             variants={item}
             className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'
           >
-            <div className='px-20 text-center'>
-              <h2 className='text-3xl font-semibold leading-7 text-modern-purple'>
-                Become a part of our community of over 700 inspiring developers
-                who have already contributed to this project!
-              </h2>
+            <div className='modern-container'>
+              <div className='mx-auto max-w-2xl lg:text-center'>
+                <h2 className='text-3xl font-semibold leading-7 text-modern-purple'>
+                  Become a part of our community of over 700 inspiring
+                  developers who have already contributed to this project!
+                </h2>
+                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                  "Fork, Commit, Merge" is an educational and practical project
+                  aimed at helping developers - both newcomers and seasoned -
+                  improve their skills in open-source contribution,
+                  problem-solving, finding bugs, testing, and much more in{' '}
+                  <span className='text-green-400'>135</span> individual issues
+                  encompassing various programming languages, libraries and
+                  frameworks.
+                </p>
+                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                  The project is open to everyone and anyone who wants to learn
+                  and improve their skills in open-source contribution. The
+                  issues are designed to be beginner-friendly and are
+                  accompanied by detailed guides and resources to help you solve
+                  them. You can find the issues in the Issues section of the
+                  repository. Issues are divided into three categories; Easy,
+                  Medium and Hard.
+                </p>
+              </div>
             </div>
-
-            <motion.div
-              variants={item}
-              className='prose prose-lg mx-auto mt-12'
-            >
-              <p>
-                "Fork, Commit, Merge" is an educational and practical project
-                aimed at helping developers - both newcomers and seasoned -
-                improve their skills in open-source contribution,
-                problem-solving, finding bugs, testing, and much more in{' '}
-                <span className='text-green-400'>135</span> individual issues
-                encompassing various programming languages, libraries and
-                frameworks.
-              </p>
-              <p>
-                The project is open to everyone and anyone who wants to learn
-                and improve their skills in open-source contribution. The issues
-                are designed to be beginner-friendly and are accompanied by
-                detailed guides and resources to help you solve them. You can
-                find the issues in the Issues section of the repository. Issues
-                are divided into three categories; Easy, Medium and Hard.
-              </p>
-            </motion.div>
           </motion.div>
         </motion.section>
 
