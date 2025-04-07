@@ -2,11 +2,9 @@ import { useEffect } from 'react'
 
 const TawkToChat = () => {
   useEffect(() => {
-    // Initialize Tawk.to API
     const Tawk_API: any = window.Tawk_API || {}
     const Tawk_LoadStart = new Date()
 
-    // Create and append the script
     const s1 = document.createElement('script')
     const s0 = document.getElementsByTagName('script')[0]
 
@@ -17,23 +15,28 @@ const TawkToChat = () => {
 
     s0.parentNode?.insertBefore(s1, s0)
 
-    // Add custom CSS to position the widget
     const style = document.createElement('style')
     style.textContent = `
-      #tawkto-container {
-        right: 80px !important;
+      body #tawkto-container,
+      body #tawkto-container iframe,
+      body .tawk-minimized,
+      body .tawk-button,
+      body .tawk-button-container,
+      body .tawk-chat-container,
+      body .tawk-chat-iframe {
+        right: 150px !important;
+        margin-right: 150px !important;
       }
     `
     document.head.appendChild(style)
 
-    // Cleanup function to remove the script and style when component unmounts
     return () => {
       s1.remove()
       style.remove()
     }
-  }, []) // Empty dependency array means this effect runs once on mount
+  }, [])
 
-  return null // This component doesn't render anything
+  return null
 }
 
 export default TawkToChat
