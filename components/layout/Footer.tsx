@@ -99,7 +99,7 @@ const Footer = () => {
                 >
                   <span>GitHub Stars</span>
                   {starCount !== null ? (
-                    <span className='ml-2 rounded-full bg-gray-100 px-2 py-1 text-xs text-gray-700 group-hover:bg-gray-200'>
+                    <span className='ml-2 rounded-full bg-gray-100 px-2 py-1 text-xs text-gray-700'>
                       {starCount}
                     </span>
                   ) : (

@@ -118,7 +118,7 @@ const Header = () => {
   }
 
   return (
-    <nav className='border-b border-gray-200 bg-[var(--bg-primary)] shadow-md dark:border-gray-700'>
+    <nav className='border-b border-gray-200 bg-gray-50 shadow-md dark:border-gray-700'>
       <div className='modern-container'>
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center space-x-8'>
