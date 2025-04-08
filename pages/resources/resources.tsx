@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
-import CodingChallenges from '../components/resources/CodingChallenges'
-import CommunityAndNetworking from '../components/resources/CommunityAndNetworking'
-import ContributingResources from '../components/resources/ContributingResources'
-import GitAndGitHubDocumentation from '../components/resources/GitAndGitHubDocumentation'
-import InteractiveLearningPlatforms from '../components/resources/InteractiveLearningPlatforms'
-import JobSearchingPlatforms from '../components/resources/JobSearchingPlatforms'
-import OnlineCodingBootcamps from '../components/resources/OnlineCodingBootcamps'
-import OpenSourceDocumentation from '../components/resources/OpenSourceDocumentation'
-import VideoTutorialResources from '../components/resources/VideoTutorialResources'
+import CodingChallenges from '../../components/resources/CodingChallenges'
+import CommunityAndNetworking from '../../components/resources/CommunityAndNetworking'
+import ContributingResources from '../../components/resources/ContributingResources'
+import GitAndGitHubDocumentation from '../../components/resources/GitAndGitHubDocumentation'
+import InteractiveLearningPlatforms from '../../components/resources/InteractiveLearningPlatforms'
+import JobSearchingPlatforms from '../../components/resources/JobSearchingPlatforms'
+import OnlineCodingBootcamps from '../../components/resources/OnlineCodingBootcamps'
+import OpenSourceDocumentation from '../../components/resources/OpenSourceDocumentation'
+import VideoTutorialResources from '../../components/resources/VideoTutorialResources'
 
 const container = {
   hidden: { opacity: 0 },
@@ -26,29 +26,30 @@ const item = {
 
 export default function Resources() {
   return (
-    <div className="min-h-screen bg-primary">
-      <div className="modern-container">
-        <div className="py-16 sm:py-24">
+    <div className='bg-primary min-h-screen'>
+      <div className='modern-container'>
+        <div className='py-16 sm:py-24'>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center"
+            className='text-center'
           >
-            <h1 className="text-4xl font-bold tracking-tight text-fc-primary sm:text-5xl">
-              Learning <span className="text-modern-purple">Resources</span>
+            <h1 className='text-fc-primary text-4xl font-bold tracking-tight sm:text-5xl'>
+              Learning <span className='text-modern-purple'>Resources</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-fc-primary/80">
-              Comprehensive collection of tools, platforms, and materials to help you master software development and open source contribution.
+            <p className='text-fc-primary/80 mx-auto mt-6 max-w-2xl text-lg'>
+              Comprehensive collection of tools, platforms, and materials to
+              help you master software development and open source contribution.
             </p>
           </motion.div>
 
           <motion.div
             variants={container}
-            initial="hidden"
-            animate="show"
-            className="mt-16"
+            initial='hidden'
+            animate='show'
+            className='mt-16'
           >
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
               <motion.div variants={item}>
                 <ContributingResources />
               </motion.div>
@@ -83,8 +84,3 @@ export default function Resources() {
     </div>
   )
 }
-
-
-
-
-

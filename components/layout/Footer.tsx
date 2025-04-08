@@ -159,15 +159,15 @@ const Footer = () => {
             <ul className='mt-4 space-y-2'>
               <li>
                 <Link
-                  href='/faq'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  href='/help/faq'
+                  className='text-gray-300 hover:text-white'
                 >
                   FAQ
                 </Link>
               </li>
               <li>
                 <Link
-                  href='/resources'
+                  href='/resources/resources'
                   className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Resources
@@ -175,7 +175,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href='/ai'
+                  href='/ai/ai'
                   className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   AI Tools

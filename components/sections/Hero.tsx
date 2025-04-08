@@ -24,7 +24,7 @@ const Hero = () => {
               >
                 Get Started
               </Link>
-              <Link href='/faq' className='hero-button-outline'>
+              <Link href='/help/faq' className='hero-button-outline'>
                 FAQ
               </Link>
             </div>

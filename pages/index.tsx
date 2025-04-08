@@ -192,7 +192,7 @@ export default function Home() {
             </div>
             <div className='mt-8 text-center'>
               <Link
-                href='/contributors'
+                href='/community/contributors'
                 className='inline-flex items-center justify-center rounded-md bg-modern-purple px-6 py-3 text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-modern-purple/90'
               >
                 View All Contributors

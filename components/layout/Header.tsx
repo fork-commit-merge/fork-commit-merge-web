@@ -330,14 +330,14 @@ const Header = () => {
           <div className='hidden items-center md:flex'>
             <div className='flex items-center space-x-4'>
               <Link
-                href='/contributors'
-                className='mx-2 font-medium text-gray-700 transition-colors hover:text-modern-purple'
+                href='/community/contributors'
+                className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
               >
                 Contributors
               </Link>
               <Link
-                href='/faq'
-                className='mx-2 font-medium text-gray-700 transition-colors hover:text-modern-purple'
+                href='/help/faq'
+                className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
               >
                 FAQ
               </Link>
@@ -543,17 +543,14 @@ const Header = () => {
             </div>
 
             <Link
-              href='/contributors'
-              onClick={() => setIsOpen(false)}
-              className='block px-3 py-2 text-base font-medium text-gray-700 hover:text-modern-purple'
+              href='/community/contributors'
+              className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
             >
               Contributors
             </Link>
-
             <Link
-              href='/faq'
-              onClick={() => setIsOpen(false)}
-              className='block px-3 py-2 text-base font-medium text-gray-700 hover:text-modern-purple'
+              href='/help/faq'
+              className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
             >
               FAQ
             </Link>

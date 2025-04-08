@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ides } from '../components/data/IDEInfo'
+import { ides } from '../../components/data/IDEInfo'
 
 export default function IDE() {
   return (
@@ -98,4 +98,3 @@ export default function IDE() {
     </div>
   )
 }
-

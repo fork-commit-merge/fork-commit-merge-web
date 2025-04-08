@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { contributorData } from '../components/data/contributorData'
+import { contributorData } from '../../components/data/contributorData'
 
 const Contributors: FC = () => {
   return (

@@ -20,6 +20,6 @@ export const roadmapList = [
   },
   { name: 'Discussions', link: '/community/discussions' },
   { name: 'Events', link: '/community/events' },
-  { name: 'Resources', link: '/resources' },
-  { name: 'AI Tools', link: '/ai' }
+  { name: 'Resources', link: '/resources/resources' },
+  { name: 'AI Tools', link: '/ai/ai' }
 ]
