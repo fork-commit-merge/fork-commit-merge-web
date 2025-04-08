@@ -1,7 +1,7 @@
 import { useUser } from '@clerk/nextjs'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import LoadingPage from '../components/LoadingPage'
+import LoadingPage from '../components/layout/LoadingPage'
 
 export default function DashboardPage() {
   const { isLoaded, isSignedIn } = useUser()
@@ -18,4 +18,3 @@ export default function DashboardPage() {
 
   return <LoadingPage />
 }
-

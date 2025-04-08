@@ -1,4 +1,4 @@
-import { testimonials } from './data/testimonials'
+import { testimonials } from '../data/testimonials'
 
 const Testimonials = () => {
   return (
@@ -30,7 +30,7 @@ const Testimonials = () => {
                   href={testimonial.url}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-modern-purple font-semibold text-gray-900'
+                  className='font-semibold text-gray-900 hover:text-modern-purple'
                 >
                   {testimonial.name}
                 </a>

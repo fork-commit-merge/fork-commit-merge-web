@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import Hero from '../components/Hero'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
+import Hero from '../components/sections/Hero'
+import Features from '../components/sections/Features'
+import Testimonials from '../components/sections/Testimonials'
 import { useEffect, useState } from 'react'
 import { getTopContributors, getOtherContributors } from '../utils/contributors'
 import { Contributor } from '../types/contributor'

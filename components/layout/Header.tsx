@@ -10,7 +10,7 @@ import { frameworkList } from '../data/frameworkList'
 import { gitList } from '../data/gitList'
 import { roadmapList } from '../data/roadmapList'
 import { UserButton, useUser } from '@clerk/nextjs'
-import ThemeSelector from '../ThemeSelector'
+import ThemeSelector from '../ui/ThemeSelector'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
