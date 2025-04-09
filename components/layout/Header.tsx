@@ -331,13 +331,13 @@ const Header = () => {
             <div className='flex items-center space-x-4'>
               <Link
                 href='/community/contributors'
-                className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+                className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-700 hover:text-white'
               >
                 Contributors
               </Link>
               <Link
                 href='/help/faq'
-                className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+                className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-700 hover:text-white'
               >
                 FAQ
               </Link>
@@ -544,13 +544,13 @@ const Header = () => {
 
             <Link
               href='/community/contributors'
-              className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+              className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-700 hover:text-white'
             >
               Contributors
             </Link>
             <Link
               href='/help/faq'
-              className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
+              className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-700 hover:text-white'
             >
               FAQ
             </Link>

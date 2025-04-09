@@ -115,16 +115,6 @@ const Footer = () => {
             <ul className='mt-4 space-y-2'>
               <li>
                 <Link
-                  href='https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CONTRIBUTING.md'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
-                >
-                  Contributing
-                </Link>
-              </li>
-              <li>
-                <Link
                   href='/privacy-policy'
                   className='text-sm text-gray-600 hover:text-modern-purple'
                 >
@@ -160,7 +150,7 @@ const Footer = () => {
               <li>
                 <Link
                   href='/help/faq'
-                  className='text-gray-300 hover:text-white'
+                  className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   FAQ
                 </Link>
@@ -171,14 +161,6 @@ const Footer = () => {
                   className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Resources
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/ai/ai'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
-                >
-                  AI Tools
                 </Link>
               </li>
               <li>
