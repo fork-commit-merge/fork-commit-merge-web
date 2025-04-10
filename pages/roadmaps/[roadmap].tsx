@@ -7,6 +7,7 @@ import DocumentationOverview from '../../components/roadmapComponents/Documentat
 import ContributionManagement from '../../components/roadmapComponents/ContributionManagement'
 import LegalEthicalConsiderations from '../../components/roadmapComponents/LegalEthicalConsiderations'
 import OpenSourceTerminology from '../../components/roadmapComponents/OpenSourceTerminology'
+import Portfolio from '../../components/roadmapComponents/Portfolio'
 
 const RoadmapPage = () => {
   const router = useRouter()
@@ -19,53 +20,27 @@ const RoadmapPage = () => {
   const renderContent = () => {
     switch (roadmap) {
       case 'how-to-contribute':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <HowToContribute />
-          </div>
-        )
+        return <HowToContribute />
       case 'contribution-management':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <ContributionManagement />
-          </div>
-        )
+        return <ContributionManagement />
       case 'open-source-philosophy':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <OpenSourcePhilosophy />
-          </div>
-        )
+        return <OpenSourcePhilosophy />
       case 'open-source-licenses':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <OpenSourceLicenses />
-          </div>
-        )
+        return <OpenSourceLicenses />
       case 'overview-of-documentation':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <DocumentationOverview />
-          </div>
-        )
+        return <DocumentationOverview />
       case 'legal-and-ethical-considerations':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <LegalEthicalConsiderations />
-          </div>
-        )
+        return <LegalEthicalConsiderations />
       case 'open-source-terminology':
-        return (
-          <div className='bg-primary min-h-screen'>
-            <OpenSourceTerminology />
-          </div>
-        )
+        return <OpenSourceTerminology />
+      case 'portfolio':
+        return <Portfolio />
       default:
         return <RoadmapNotSupported />
     }
   }
 
-  return <div className='bg-primary pb-10'>{renderContent()}</div>
+  return <div>{renderContent()}</div>
 }
 
 export default RoadmapPage
