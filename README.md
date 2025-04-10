@@ -173,23 +173,19 @@ Follow these steps to run the application in your local environment:
    npm i
    ```
 
-3. If you're working with features regarding anything database related, you need
-   to set up your environment variables locally and create a Github MongoDB
-   Atlas cluster and an AWS S3 bucket. If you're working with some other
-   features, you can skip this step.
-
-   First, make a copy of the `.env.local.example` file and rename it to
-   `.env.local`.
+3. Set up your environment variables locally. Make a copy of the
+   `.env.local.example` file and rename it to `.env.local`.
 
    ```bash
    cp .env.local.example .env.local
    ```
 
    You will need to replace the placeholder values in this file with your actual
-   credentials.
+   credentials:
 
-   - For Github you need to replace `GITHUB_ID` and `GITHUB_SECRET` with your on
-     credentials by creating a GitHub OAuth Application:
+   - For GitHub authentication, you need to replace `GITHUB_ID` and
+     `GITHUB_SECRET` with your own credentials by creating a GitHub OAuth
+     Application:
 
      - Go to your GitHub account settings.
      - Navigate to "Developer settings" > "OAuth Apps" > "New OAuth App."
@@ -199,6 +195,25 @@ Follow these steps to run the application in your local environment:
 
    After registering the application, you will receive a client ID and client
    secret.
+
+   - For GitHub API access, you need to create a personal access token:
+
+     - Go to your GitHub account settings.
+     - Navigate to "Developer settings" > "Personal access tokens" > "Tokens
+       (classic)" > "Generate new token".
+     - Select the necessary scopes (at minimum: `repo`, `read:user`,
+       `user:email`).
+     - Copy the generated token and use it for `GITHUB_TOKEN`,
+       `FCM_GITHUB_TOKEN`, and `NEXT_PUBLIC_GITHUB_TOKEN`.
+
+   - For Clerk authentication, you need to create a Clerk account and get your
+     API keys:
+
+     - Sign up at [Clerk.dev](https://clerk.dev/).
+     - Create a new application.
+     - Get your publishable key and secret key from the Clerk dashboard.
+     - Replace `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` with
+       your actual keys.
 
    - You also need to replace NEXTAUTH_SECRET with a random string. You can
      generate one simply in terminal:
