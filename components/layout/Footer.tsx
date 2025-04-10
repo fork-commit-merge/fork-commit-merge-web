@@ -115,7 +115,7 @@ const Footer = () => {
             <ul className='mt-4 space-y-2'>
               <li>
                 <Link
-                  href='/privacy-policy'
+                  href='/legal/privacy-policy'
                   className='text-sm text-gray-600 hover:text-modern-purple'
                 >
                   Privacy Policy
