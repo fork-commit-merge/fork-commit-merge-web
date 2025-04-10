@@ -5549,4 +5549,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/145899916?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Ehsan2009"
   },
+  {
+    id: "yogaraj-saravanan",
+    url: "https://github.com/yogaraj-saravanan",
+    avatar: "https://avatars.githubusercontent.com/u/29971733?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "yogaraj-saravanan"
+  },
 ]
