@@ -348,7 +348,7 @@ const Header = () => {
                 href='https://github.com/fork-commit-merge/fork-commit-merge'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex items-center text-gray-700 transition-colors hover:text-modern-purple'
+                className='flex items-center text-gray-700 transition-colors hover:text-modern-purple pl-3'
               >
                 <svg
                   className='mr-1 h-5 w-5'
