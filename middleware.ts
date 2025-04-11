@@ -1,9 +1,9 @@
 import { authMiddleware } from '@clerk/nextjs'
 
 export default authMiddleware({
-  // Make all routes public by default
+  //* Make all routes public by default
   publicRoutes: ['/((?!community/contributors).*)'],
-  // Only protect the contributors page
+  //* Only protect the contributors page
   ignoredRoutes: ['/((?!community/contributors).*)']
 })
 
