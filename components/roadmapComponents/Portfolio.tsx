@@ -490,37 +490,29 @@ const Portfolio = () => {
                   </h2>
                   <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
                     <div className='flex justify-between'>
-                      <span className='font-bold text-modern-purple'>
-                        English
-                      </span>
+                      <span className='font-bold text-gray-700'>English</span>
                       <span className='text-modern-purple'>Native</span>
                     </div>
                     <div className='flex justify-between'>
-                      <span className='font-bold text-modern-purple'>
-                        Spanish
-                      </span>
+                      <span className='font-bold text-gray-700'>Spanish</span>
                       <span className='text-modern-purple'>Intermediate</span>
                     </div>
                     <div className='flex justify-between'>
-                      <span className='font-bold text-modern-purple'>
-                        French
-                      </span>
+                      <span className='font-bold text-gray-700'>French</span>
                       <span className='text-modern-purple'>Basic</span>
                     </div>
                     <div className='flex justify-between'>
-                      <span className='font-bold text-modern-purple'>
-                        German
-                      </span>
+                      <span className='font-bold text-gray-700'>German</span>
                       <span className='text-modern-purple'>Basic</span>
                     </div>
                     <div className='flex justify-between'>
-                      <span className='font-bold text-modern-purple'>
+                      <span className='font-bold text-gray-700'>
                         Portuguese
                       </span>
                       <span className='text-modern-purple'>Intermediate</span>
                     </div>
                     <div className='flex justify-between'>
-                      <span className='font-bold text-modern-purple'>
+                      <span className='font-bold text-gray-700'>
                         Chinese (Mandarin)
                       </span>
                       <span className='text-modern-purple'>Basic</span>
