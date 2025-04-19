@@ -17,7 +17,7 @@ jobs:
       contents: read
       security-events: write
     name: StackHawk
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
