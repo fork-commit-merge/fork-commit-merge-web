@@ -97,7 +97,7 @@ export default function Home() {
                   aimed at helping developers - both newcomers and seasoned -
                   improve their skills in open-source contribution,
                   problem-solving, finding bugs, testing, and much more in{' '}
-                  <span className='text-green-400'>135</span> individual issues
+                  <span className='text-green-400'>134</span> individual issues
                   encompassing various programming languages, libraries and
                   frameworks.
                 </p>
