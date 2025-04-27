@@ -348,7 +348,7 @@ const Header = () => {
                 href='https://github.com/fork-commit-merge/fork-commit-merge'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex items-center text-gray-700 transition-colors hover:text-modern-purple pl-3'
+                className='flex items-center pl-3 text-gray-700 transition-colors hover:text-modern-purple'
               >
                 <svg
                   className='mr-1 h-5 w-5'
@@ -368,7 +368,7 @@ const Header = () => {
                 (user ? (
                   <UserButton afterSignOutUrl='/' />
                 ) : (
-                  <Link href='/dashboard' className='modern-button text-sm'>
+                  <Link href='/sign-in' className='modern-button text-sm'>
                     Sign In
                   </Link>
                 ))}
@@ -576,7 +576,7 @@ const Header = () => {
               <ThemeSelector />
               {isLoaded && !user && (
                 <Link
-                  href='/dashboard'
+                  href='/sign-in'
                   className='modern-button w-full text-center text-sm'
                   onClick={() => setIsOpen(false)}
                 >
