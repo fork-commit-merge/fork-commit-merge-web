@@ -126,6 +126,65 @@ export default function AI() {
               </div>
             </motion.div>
           </motion.div>
+
+          <motion.div
+            variants={container}
+            initial='hidden'
+            animate='show'
+            className='mt-16 flex justify-center'
+          >
+            <motion.div variants={item} className='w-full max-w-4xl'>
+              <div className='rounded-lg bg-gray-50 p-8 shadow-sm'>
+                <h2 className='mb-6 text-2xl font-bold text-gray-900'>
+                  AI Development Learning Resources
+                </h2>
+                <div className='grid gap-6 sm:grid-cols-2'>
+                  <div>
+                    <h3 className='mb-4 text-xl font-semibold text-gray-800'>Online Courses</h3>
+                    <ul className='space-y-3 text-gray-600'>
+                      <li className='flex items-start'>
+                        <svg className='mr-2 h-6 w-6 flex-shrink-0 text-modern-purple' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                          <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' />
+                        </svg>
+                        <a href='https://www.deeplearning.ai' target='_blank' rel='noopener noreferrer' className='hover:text-modern-purple'>
+                          DeepLearning.AI
+                        </a>
+                      </li>
+                      <li className='flex items-start'>
+                        <svg className='mr-2 h-6 w-6 flex-shrink-0 text-modern-purple' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                          <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' />
+                        </svg>
+                        <a href='https://www.fast.ai' target='_blank' rel='noopener noreferrer' className='hover:text-modern-purple'>
+                          Fast.ai
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className='mb-4 text-xl font-semibold text-gray-800'>Documentation & Guides</h3>
+                    <ul className='space-y-3 text-gray-600'>
+                      <li className='flex items-start'>
+                        <svg className='mr-2 h-6 w-6 flex-shrink-0 text-modern-purple' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                          <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' />
+                        </svg>
+                        <a href='https://huggingface.co/docs' target='_blank' rel='noopener noreferrer' className='hover:text-modern-purple'>
+                          Hugging Face Documentation
+                        </a>
+                      </li>
+                      <li className='flex items-start'>
+                        <svg className='mr-2 h-6 w-6 flex-shrink-0 text-modern-purple' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                          <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' />
+                        </svg>
+                        <a href='https://langchain.readthedocs.io' target='_blank' rel='noopener noreferrer' className='hover:text-modern-purple'>
+                          LangChain Documentation
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </div>

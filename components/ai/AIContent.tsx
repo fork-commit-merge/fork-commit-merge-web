@@ -221,6 +221,106 @@ const AIContent = () => {
     }
   ]
 
+  const aiDevelopmentFrameworks = [
+    {
+      name: 'LangChain',
+      description:
+        'A framework for developing applications powered by language models, making it easier to build complex AI applications.',
+      features: [
+        'Chain-based architecture',
+        'Multiple model integrations',
+        'Memory management',
+        'Agent-based systems',
+        'Document processing'
+      ],
+      link: 'https://www.langchain.com'
+    },
+    {
+      name: 'LlamaIndex',
+      description:
+        'A data framework for LLM applications, providing tools to connect custom data sources to large language models.',
+      features: [
+        'Data connectors',
+        'Query engines',
+        'Document processing',
+        'Vector storage',
+        'Retrieval augmentation'
+      ],
+      link: 'https://www.llamaindex.ai'
+    },
+    {
+      name: 'Hugging Face Transformers',
+      description:
+        'A popular library for state-of-the-art machine learning, providing thousands of pre-trained models.',
+      features: [
+        'Extensive model library',
+        'Easy model fine-tuning',
+        'Multiple framework support',
+        'Model sharing platform',
+        'Community-driven development'
+      ],
+      link: 'https://huggingface.co/transformers'
+    }
+  ]
+
+  const aiTestingTools = [
+    {
+      name: 'DeepEval',
+      description:
+        'A framework for evaluating LLM applications, providing metrics and tools for testing AI systems.',
+      features: [
+        'Multiple evaluation metrics',
+        'Automated testing',
+        'CI/CD integration',
+        'Custom test cases',
+        'Performance monitoring'
+      ],
+      link: 'https://deepeval.ai'
+    },
+    {
+      name: 'LangSmith',
+      description:
+        'A platform for debugging, testing, and monitoring LLM applications.',
+      features: [
+        'Tracing and debugging',
+        'Performance analytics',
+        'Prompt management',
+        'Team collaboration',
+        'Production monitoring'
+      ],
+      link: 'https://smith.langchain.com'
+    }
+  ]
+
+  const aiDeploymentPlatforms = [
+    {
+      name: 'Vercel AI SDK',
+      description:
+        'A toolkit for building AI-powered applications with streaming, edge functions, and more.',
+      features: [
+        'Streaming responses',
+        'Edge deployment',
+        'Multiple model support',
+        'TypeScript support',
+        'Easy integration'
+      ],
+      link: 'https://sdk.vercel.ai'
+    },
+    {
+      name: 'Modal',
+      description:
+        'A platform for running AI models and applications in the cloud with simple Python APIs.',
+      features: [
+        'Serverless deployment',
+        'GPU acceleration',
+        'Simple Python API',
+        'Automatic scaling',
+        'Cost optimization'
+      ],
+      link: 'https://modal.com'
+    }
+  ]
+
   const renderSection = (title: string, items: any[]) => (
     <div className='mb-12'>
       <h2 className='mb-6 text-3xl font-bold'>{title}</h2>
@@ -254,11 +354,14 @@ const AIContent = () => {
   )
 
   return (
-    <div className='container mx-auto px-4 py-8'>
+    <div className='space-y-12'>
       {renderSection('AI Code Editors', aiCodeEditors)}
       {renderSection('AI Coding Assistants', aiCodingAssistants)}
       {renderSection('Local AI Platforms', localAIPlatforms)}
       {renderSection('AI Models', aiModels)}
+      {renderSection('AI Development Frameworks', aiDevelopmentFrameworks)}
+      {renderSection('AI Testing Tools', aiTestingTools)}
+      {renderSection('AI Deployment Platforms', aiDeploymentPlatforms)}
     </div>
   )
 }
