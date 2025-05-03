@@ -5693,4 +5693,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/112274179?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Deku04-print"
   },
+  {
+    id: "ohad-ab",
+    url: "https://github.com/ohad-ab",
+    avatar: "https://avatars.githubusercontent.com/u/73171891?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "ohad-ab"
+  },
 ]
