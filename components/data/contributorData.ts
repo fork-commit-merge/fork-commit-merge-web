@@ -5687,4 +5687,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/64205269?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "shrujaya"
   },
+  {
+    id: "Deku04-print",
+    url: "https://github.com/Deku04-print",
+    avatar: "https://avatars.githubusercontent.com/u/112274179?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "Deku04-print"
+  },
 ]
