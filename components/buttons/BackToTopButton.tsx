@@ -28,7 +28,7 @@ const BackToTopButton = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className='fixed right-3 top-1/2 z-40 -translate-y-1/2 rounded-full bg-white p-3 text-gray-700 shadow-lg transition-all duration-500 hover:bg-white'
+        className='fixed right-3 top-1/2 z-40 -translate-y-1/2 rounded-full bg-white p-3 text-gray-700 shadow-lg transition-all duration-500 hover:bg-white hover:text-modern-black'
       >
         <ChevronUpIcon className='h-6 w-6' />
       </button>
