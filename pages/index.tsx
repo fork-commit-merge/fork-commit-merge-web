@@ -157,39 +157,6 @@ export default function Home() {
               ))}
             </motion.div>
 
-            {/* Other Contributors */}
-            <div className='mt-16'>
-              <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-                {otherContributors.map((contributor, index) => (
-                  <a
-                    key={`${contributor.id}-${index}`}
-                    href={contributor.html_url}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='rounded-lg bg-white p-4 shadow transition-all duration-200 hover:scale-105 hover:shadow-md'
-                  >
-                    <div className='flex items-center'>
-                      <img
-                        src={contributor.avatar_url}
-                        alt={contributor.login}
-                        className='h-10 w-10 rounded-full'
-                      />
-                      <div className='ml-3'>
-                        <h4 className='text-sm font-medium text-gray-900'>
-                          {contributor.login}
-                        </h4>
-                        <p className='text-xs text-gray-500'>
-                          {contributor.contributions} contributions
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                ))}
-                {otherContributors.length % 3 !== 0 && (
-                  <div className='rounded-lg bg-white p-4 opacity-0 shadow'></div>
-                )}
-              </div>
-            </div>
             <div className='mt-8 text-center'>
               <Link
                 href='/community/contributors'
