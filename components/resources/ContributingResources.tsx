@@ -91,7 +91,7 @@ const ContributingResources: React.FC = () => {
                 <h3 className="text-lg font-semibold text-white">
                   {tutorial.title}
                 </h3>
-                <span className="rounded-full bg-modern-purple/10 px-3 py-1 text-xs font-medium text-modern-purple">
+                <span className="rounded-full bg-modern-purple/10 px-3 py-1 text-xs font-medium text-modern-purple text-center">
                   {tutorial.channel}
                 </span>
               </div>

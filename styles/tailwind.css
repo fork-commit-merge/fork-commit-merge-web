@@ -175,6 +175,10 @@ body {
   @apply text-gray-200;
 }
 
+.theme-dark .text-gray-800 {
+  @apply text-gray-200
+}
+
 .theme-dark .border-gray-200 {
   @apply border-gray-700;
 }
