@@ -97,6 +97,12 @@ const faqs: FAQItem[] = [
     answer:
       'Essential tools include Git for version control, GitHub/GitLab for hosting, issue trackers for project management, CI/CD tools for testing, and communication platforms like Discord or Slack. Many projects also use specific linters and formatters.',
     category: 'Best Practices'
+  },
+  {
+    question: 'What’s the Difference Between Open Source and Free Software?',
+    answer:
+        'While often used interchangeably, "Free Software" emphasizes user freedom (as defined by the Free Software Foundation), while "Open Source" focuses on source code availability and collaborative development.',
+    category: 'Legal'
   }
 ]
 
