@@ -5753,4 +5753,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/101507567?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "oumseyoung"
   },
+  {
+    id: "AppiumMal",
+    url: "https://github.com/AppiumMal",
+    avatar: "https://avatars.githubusercontent.com/u/52282002?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "AppiumMal"
+  },
 ]
