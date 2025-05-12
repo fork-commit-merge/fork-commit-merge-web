@@ -285,7 +285,7 @@ const Header = () => {
                     className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
-                    <span className='font-medium'>Roadmap</span>
+                    <span className='font-medium hover:text-purple-400'>Roadmap</span>
                     <svg
                       className={`ml-1 h-4 w-4 transition-transform duration-200 ${isRoadmapDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
