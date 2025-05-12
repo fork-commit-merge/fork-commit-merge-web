@@ -21,7 +21,7 @@ const ThemeSelector = () => {
   return (
     <button
       onClick={toggleTheme}
-      className='text-text-1 hover:bg-background-2 focus:ring-primary flex items-center space-x-2 rounded-md px-3 py-2 text-sm font-medium focus:outline-none focus:ring-2'
+      className='text-text-1 hover:bg-background-2 focus:ring-primary flex items-center space-x-2 rounded-md px-3 py-2 text-sm font-medium focus:outline-none focus:ring-2 hover:text-purple-400'
     >
       {theme === 'dark' ? (
         <SunIcon className='h-5 w-5' />
