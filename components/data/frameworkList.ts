@@ -21,4 +21,5 @@ export const frameworkList = [
   { name: "Spring", link: "/frameworks/spring" },
   { name: "CherryPy", link: "/frameworks/cherrypy" },
   { name: "D3.js", link: "/frameworks/d3js" },
+  { name: "Solid.js", link: "/frameworks/solidjs"}
 ];

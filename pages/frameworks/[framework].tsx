@@ -23,6 +23,7 @@ import SpringFramework from "../../components/frameworkComponents/SpringFramewor
 import TailwindCSSFramework from "../../components/frameworkComponents/TailwindCSSFramework";
 import CherrypyFramework from "../../components/frameworkComponents/CherrypyFramework";
 import D3JSLibrary from "../../components/frameworkComponents/D3JS";
+import SolidJSFramework from "../../components/frameworkComponents/SolidJSFramework";
 
 const FrameworkPage = () => {
   const router = useRouter();
@@ -74,6 +75,8 @@ const FrameworkPage = () => {
         return <CherrypyFramework />;
       case "d3js":
         return <D3JSLibrary />;
+      case "solidjs":
+        return  <SolidJSFramework />
       default:
         return <FrameworkNotSupported />;
     }
