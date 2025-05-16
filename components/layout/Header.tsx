@@ -337,7 +337,7 @@ const Header = () => {
               </Link>
               <Link
                 href='/help/faq'
-                className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-purple-400'
               >
                 FAQ
               </Link>
