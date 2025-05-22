@@ -5783,4 +5783,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/131767292?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Dhanalakshmi23s"
   },
+  {
+    id: "Karthikanegouni",
+    url: "https://github.com/Karthikanegouni",
+    avatar: "https://avatars.githubusercontent.com/u/84900143?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "Karthikanegouni"
+  },
 ]
