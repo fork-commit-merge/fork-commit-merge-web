@@ -5916,4 +5916,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/178013839?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Muawiya-contact"
   },
+  {
+    id: "Nischayabeniwal",
+    url: "https://github.com/Nischayabeniwal",
+    avatar: "https://avatars.githubusercontent.com/u/70566340?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "Nischayabeniwal"
+  },
 ]
