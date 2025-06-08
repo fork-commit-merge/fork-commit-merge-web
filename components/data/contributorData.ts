@@ -5952,4 +5952,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/57855228?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "maduranga20"
   },
+  {
+    id: "xankush",
+    url: "https://github.com/xankush",
+    avatar: "https://avatars.githubusercontent.com/u/146610552?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "xankush"
+  },
 ]
