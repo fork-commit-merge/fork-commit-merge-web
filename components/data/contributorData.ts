@@ -5988,4 +5988,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/93009147?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "LBaquedanoCordova"
   },
+  {
+    id: "shivt-F5",
+    url: "https://github.com/shivt-F5",
+    avatar: "https://avatars.githubusercontent.com/u/54018320?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "shivt-F5"
+  },
 ]
