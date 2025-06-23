@@ -89,7 +89,7 @@ export default function Home() {
             <div className='modern-container'>
               <div className='mx-auto max-w-2xl lg:text-center'>
                 <h2 className='text-3xl font-semibold leading-snug text-modern-purple'>
-                  Become a part of our community of over 700 inspiring
+                  Become a part of our community of over 800 inspiring
                   developers who have already contributed to this project!
                 </h2>
                 <p className='mt-6 text-lg leading-8 text-gray-600'>
