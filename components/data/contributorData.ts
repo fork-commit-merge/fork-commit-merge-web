@@ -5994,4 +5994,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/54018320?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "shivt-F5"
   },
+  {
+    id: "mnmfullmetal",
+    url: "https://github.com/mnmfullmetal",
+    avatar: "https://avatars.githubusercontent.com/u/29268668?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "mnmfullmetal"
+  },
 ]
