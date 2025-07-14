@@ -2,7 +2,7 @@
 function Sponsor() {
   return (
     <a
-      className='inline-block transition-transform duration-200 hover:scale-105 hover:drop-shadow-lg'
+      className=' inline-block transition-all duration-300 ease-in-out hover:scale-[1.03] hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]'
       target='_blank'
       rel='noopener noreferrer'
       href='https://github.com/sponsors/nikohoffren?o=esc'
