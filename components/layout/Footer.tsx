@@ -8,6 +8,7 @@ import Sponsor from '../buttons/Sponsor'
 
 const Footer = () => {
   const [starCount, setStarCount] = useState<number | null>(null)
+  const hoverEffect = 'hover:text-blue-600';
 
   useEffect(() => {
     fetch('https://api.github.com/repos/fork-commit-merge/fork-commit-merge')
@@ -47,7 +48,7 @@ const Footer = () => {
                 href='https://github.com/fork-commit-merge/fork-commit-merge'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-gray-400 hover:text-modern-purple'
+                className='text-gray-400 hover:text-black'
                 aria-label='GitHub'
               >
                 <svg
@@ -75,7 +76,7 @@ const Footer = () => {
                   href='https://nextjs.org/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  className='text-sm text-gray-600 hover:text-blue-500'
                 >
                   Next.js
                 </a>
@@ -85,7 +86,7 @@ const Footer = () => {
                   href='https://vercel.com/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  className='text-sm text-gray-600 hover:text-blue-500'
                 >
                   Vercel
                 </a>
@@ -95,7 +96,7 @@ const Footer = () => {
                   href='https://github.com/fork-commit-merge/fork-commit-merge'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='group flex items-center text-sm text-gray-600 hover:text-modern-purple'
+                  className='group flex items-center text-sm text-gray-600 hover:text-blue-500'
                 >
                   <span>GitHub Stars</span>
                   {starCount !== null ? (
@@ -116,7 +117,7 @@ const Footer = () => {
               <li>
                 <Link
                   href='/legal/privacy-policy'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  className='text-sm text-gray-600 hover:text-blue-500'
                 >
                   Privacy Policy
                 </Link>
@@ -126,7 +127,7 @@ const Footer = () => {
                   href='https://github.com/nikohoffren'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  className='text-sm text-gray-600 hover:text-blue-500'
                 >
                   Contact
                 </Link>
@@ -136,7 +137,7 @@ const Footer = () => {
                   href='https://github.com/fork-commit-merge/fork-commit-merge/blob/main/CODE_OF_CONDUCT.md'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  className='text-sm text-gray-600 hover:text-blue-500'
                 >
                   Code of Conduct
                 </Link>
@@ -150,7 +151,7 @@ const Footer = () => {
               <li>
                 <Link
                   href='/help/faq'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  className='text-sm text-gray-600 hover:text-blue-500'
                 >
                   FAQ
                 </Link>
@@ -158,7 +159,7 @@ const Footer = () => {
               <li>
                 <Link
                   href='/resources/resources'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  className='text-sm text-gray-600 hover:text-blue-500'
                 >
                   Resources
                 </Link>
@@ -168,7 +169,7 @@ const Footer = () => {
                   href='https://opensource.org/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-sm text-gray-600 hover:text-modern-purple'
+                  className='text-sm text-gray-600 hover:text-blue-500'
                 >
                   opensource.org
                 </Link>
@@ -185,7 +186,7 @@ const Footer = () => {
                 href='https://nikohoffren.com/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='hover:text-modern-purple'
+                className='hover:text-gray-700'
               >
                 Niko Hoffrén
               </Link>{' '}
@@ -194,7 +195,7 @@ const Footer = () => {
                 href='https://github.com/fork-commit-merge/fork-commit-merge#list-of-contributors'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='hover:text-modern-purple'
+                className='hover:text-gray-700'
               >
                 GitHub community
               </Link>
