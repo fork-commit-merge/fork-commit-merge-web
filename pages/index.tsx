@@ -94,11 +94,10 @@ export default function Home() {
                 </h2>
                 <p className='mt-6 text-lg leading-8 text-gray-600'>
                   "Fork, Commit, Merge" is an educational and practical project
-                  aimed at helping developers - both newcomers and seasoned -
-                  improve their skills in open-source contribution,
+                  aimed at helping developers to improve their skills in open-source contribution,
                   problem-solving, finding bugs, testing, and much more in{' '}
                   <span className='text-green-400'>137</span> individual issues
-                  encompassing various programming languages, libraries and
+                  covering various programming languages, libraries and
                   frameworks.
                 </p>
                 <p className='mt-6 text-lg leading-8 text-gray-600'>
