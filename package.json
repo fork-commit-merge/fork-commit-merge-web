@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
     "@clerk/nextjs": "^4.31.5",
