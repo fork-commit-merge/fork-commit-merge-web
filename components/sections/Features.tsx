@@ -13,7 +13,7 @@ const features = [
   {
     name: 'Open Source Learning',
     description:
-      'Practice real-world open source contribution with 134+ beginner-friendly issues across various programming languages and frameworks.',
+      'Practice real-world open source contribution with 137 beginner-friendly issues across various programming languages and frameworks.',
     icon: CodeBracketIcon
   },
   {
@@ -72,7 +72,7 @@ const Features = () => {
             Master Open Source Development
           </p>
           <p className='mt-6 text-lg leading-8 text-gray-600'>
-            An educational platform designed to help both newcomers and seasoned developers
+            An educational platform designed to help developers
             improve their skills through practical open-source contribution, problem-solving,
             and hands-on learning.
           </p>
