@@ -49,7 +49,7 @@ const features = [
   {
     name: 'Comprehensive Resources',
     description:
-      'Access detailed guides, documentation, and learning materials to help you succeed in your contributions.',
+      'Access detailed documentation, and learning materials to help you succeed in your contributions.',
     icon: BookOpenIcon
   },
   {
