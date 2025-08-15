@@ -39,14 +39,36 @@ function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
       appearance={{
         baseTheme: dark,
         elements: {
-          //* Ensure Clerk elements use their default font
-          formButtonPrimary: 'font-sans',
-          card: 'font-sans',
+          //* Ensure all text is white and visible in dark mode
+          userButtonPopoverCard:
+            'text-white [&_svg]:text-white [&_*]:text-white',
+          userButtonPopoverActionButton: '[&_svg]:text-white [&_*]:text-white',
+          userButtonPopoverFooter: '[&_svg]:text-white [&_*]:text-white',
+          //* Dashboard and general text styling
+          pageScrollBox: 'text-white [&_*]:text-white',
+          card: 'font-sans text-white [&_*]:text-white',
           navbar: 'font-sans',
-          //* Ensure icons are visible in dark mode
-          userButtonPopoverCard: 'text-white [&_svg]:text-white',
-          userButtonPopoverActionButton: '[&_svg]:text-white',
-          userButtonPopoverFooter: '[&_svg]:text-white'
+          headerTitle: 'text-white',
+          headerSubtitle: 'text-white',
+          socialButtonsBlockButton: 'text-white',
+          formFieldLabel: 'text-white',
+          formFieldInput: 'text-white',
+          formFieldInputShowPasswordButton: 'text-white',
+          formResendCodeLink: 'text-white',
+          footerActionLink: 'text-white',
+          footerActionText: 'text-white',
+          identityPreviewText: 'text-white',
+          identityPreviewEditButton: 'text-white',
+          formButtonPrimary: 'font-sans text-white',
+          formButtonSecondary: 'text-white',
+          dividerLine: 'text-white',
+          dividerText: 'text-white',
+          alertText: 'text-white',
+          alert: 'text-white',
+          modalBackdrop: 'text-white',
+          modalContent: 'text-white [&_*]:text-white',
+          //* Ensure all text elements in Clerk components are white
+          '*': 'text-white'
         }
       }}
     >
