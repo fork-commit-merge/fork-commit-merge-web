@@ -54,6 +54,7 @@ our journey of coding, collaboration, and creativity!
 ![F#](https://img.shields.io/badge/F%23-378BBA.svg?style=for-the-badge&logo=fsharp&logoColor=fff)
 ![Ada](https://img.shields.io/badge/Ada-%23Clojure.svg?style=for-the-badge&logo=Ada&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/spring_boot-%23009639.svg?style=for-the-badge&logo=spring_boot&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Scala](https://img.shields.io/badge/scala-%23E32F26.svg?style=for-the-badge&logo=scala&logoColor=white)
 ![Groovy](https://img.shields.io/badge/Groovy-4298B8.svg?style=for-the-badge&logo=Apache+Groovy&logoColor=white)
