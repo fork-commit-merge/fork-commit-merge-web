@@ -17,7 +17,7 @@
     "@clerk/themes": "^2.2.3",
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^12.0.0",
-    "next": "^14.1.0",
+    "next": "^15.5.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-intersection-observer": "^9.15.1"
