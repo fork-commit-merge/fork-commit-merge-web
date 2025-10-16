@@ -27,7 +27,7 @@ export default function AI() {
             className='text-center'
           >
             <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
-              AI Development <span className='text-modern-purple'>Tools</span>
+              AI Development <span className='text-modern-blue'>Tools</span>
             </h1>
             <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-600'>
               Discover powerful AI tools and best practices to enhance your
@@ -60,7 +60,7 @@ export default function AI() {
                 <ul className='grid gap-4 text-gray-600 sm:grid-cols-2'>
                   <li className='flex items-start'>
                     <svg
-                      className='mr-2 h-6 w-6 flex-shrink-0 text-modern-purple'
+                      className='mr-2 h-6 w-6 flex-shrink-0 text-modern-blue'
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -76,7 +76,7 @@ export default function AI() {
                   </li>
                   <li className='flex items-start'>
                     <svg
-                      className='mr-2 h-6 w-6 flex-shrink-0 text-modern-purple'
+                      className='mr-2 h-6 w-6 flex-shrink-0 text-modern-blue'
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'
@@ -92,7 +92,7 @@ export default function AI() {
                   </li>
                   <li className='flex items-start'>
                     <svg
-                      className='mr-2 h-6 w-6 flex-shrink-0 text-modern-purple'
+                      className='mr-2 h-6 w-6 flex-shrink-0 text-modern-blue'
                       fill='none'
                       viewBox='0 0 24 24'
                       stroke='currentColor'

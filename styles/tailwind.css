@@ -7,7 +7,7 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-hover: #f1f3f5;
-  --accent-color: #844fba;
+  --accent-color: #4A90E2;
 }
 
 /* Theme definitions */
@@ -16,15 +16,15 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-hover: #f1f3f5;
-  --accent-color: #844fba;
+  --accent-color: #4A90E2;
 }
 
 .theme-dark {
-  --fc-primary: #ffffff;
-  --bg-primary: #2d2d3d;
-  --bg-secondary: #363646;
-  --bg-hover: #44445c;
-  --accent-color: #844fba;
+  --fc-primary: #E6EDF7;
+  --bg-primary: rgba(15, 31, 58, 0.71);
+  --bg-secondary: #1A3155;
+  --bg-hover: #22385F;
+  --accent-color: #4A90E2;
 }
 
 /* Modern modern-inspired styles */
@@ -38,20 +38,21 @@
 }
 
 .modern-button {
-  @apply inline-flex items-center rounded-md border border-transparent bg-modern-purple px-4 py-2 text-sm font-medium text-white transition-colors duration-200 hover:bg-modern-darkPurple focus:outline-none focus:ring-2 focus:ring-modern-purple focus:ring-offset-2;
+  @apply inline-flex items-center rounded-md border border-transparent bg-modern-blue px-4 py-2 text-sm font-medium text-white transition-colors duration-200 hover:bg-modern-lightBlue focus:outline-none focus:ring-2 focus:ring-modern-blue focus:ring-offset-2;
 }
 
 .hero-button {
-  @apply inline-flex items-center rounded-md border border-transparent bg-modern-purple px-6 py-3 text-2xl font-medium text-white transition-colors duration-200 hover:bg-modern-darkPurple focus:outline-none focus:ring-2 focus:ring-modern-purple focus:ring-offset-2;
+  @apply inline-flex items-center rounded-md border border-transparent bg-modern-blue px-6 py-3 text-2xl font-medium text-white transition-colors duration-200 hover:bg-modern-lightBlue focus:outline-none focus:ring-2 focus:ring-modern-blue focus:ring-offset-2;
 }
 
+/* Outline кнопки */
 .modern-button-outline {
-  @apply inline-flex items-center rounded-md border border-modern-purple px-4 py-2 text-sm font-medium text-modern-purple transition-colors duration-200 hover:bg-modern-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-modern-purple focus:ring-offset-2;
+  @apply inline-flex items-center rounded-md border border-modern-blue px-4 py-2 text-sm font-medium text-modern-blue transition-colors duration-200 hover:bg-modern-lightBlue hover:text-white focus:outline-none focus:ring-2 focus:ring-modern-blue focus:ring-offset-2;
   background-color: var(--bg-primary);
 }
 
 .hero-button-outline {
-  @apply inline-flex items-center rounded-md border border-modern-purple px-6 py-3 text-2xl font-medium text-modern-purple transition-colors duration-200 hover:bg-modern-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-modern-purple focus:ring-offset-2;
+  @apply inline-flex items-center rounded-md border border-modern-blue px-6 py-3 text-2xl font-medium text-modern-blue transition-colors duration-200 hover:bg-modern-lightBlue hover:text-white focus:outline-none focus:ring-2 focus:ring-modern-blue focus:ring-offset-2;
   background-color: var(--bg-primary);
 }
 
@@ -144,23 +145,23 @@ body {
 
 /* Theme-specific styles */
 .theme-dark .bg-white {
-  @apply bg-gray-800;
+  @apply bg-[#1A3155];
 }
 
 .theme-dark .bg-gray-50 {
-  @apply bg-gray-900;
+  @apply bg-[#0F1F3A];
 }
 
 .theme-dark .text-gray-900 {
-  @apply text-white;
+  @apply text-[#E6EDF7];
 }
 
 .theme-dark .text-gray-600 {
-  @apply text-gray-300;
+  @apply text-[#A3B5D3];
 }
 
 .theme-dark .text-gray-500 {
-  @apply text-gray-400;
+  @apply text-[#7F95B5];
 }
 
 .theme-dark .shadow-sm {
@@ -188,17 +189,17 @@ body {
 }
 
 .theme-dark .hover\:bg-gray-50:hover {
-  @apply hover:bg-gray-800;
+  @apply hover:bg-slate-800;
 }
 
 .theme-dark .hover\:bg-gray-100:hover {
-  @apply hover:bg-gray-700;
+  @apply hover:bg-slate-700;
 }
 
 .theme-dark .hover\:text-gray-900:hover {
-  @apply hover:text-white;
+  @apply hover:text-slate-100;
 }
 
 .theme-dark .hover\:text-gray-700:hover {
-  @apply hover:text-gray-200;
+  @apply hover:text-slate-200;
 }

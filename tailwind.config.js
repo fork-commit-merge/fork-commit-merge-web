@@ -22,13 +22,13 @@ module.exports = {
       },
       colors: {
         modern: {
-          purple: '#844FBA',
-          darkPurple: '#27005D',
+          blue: 'rgba(2,104,225,0.88)',
+          darkBlue: '#0F1F3A',
           navy: '#000C2D',
-          lightNavy: '#101935',
+          lightBlue: '#6793E6',
           white: '#FFFFFF',
-          gray: '#F0F0F0',
-          lightGray: '#F5F5F5',
+          gray: '#F0F4F8',
+          lightGray: '#F8FAFC',
           black: '#000000'
         },
         themes: {

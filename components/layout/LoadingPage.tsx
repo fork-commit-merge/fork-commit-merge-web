@@ -44,7 +44,7 @@ const LoadingPage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="text-4xl font-bold mb-4 text-modern-purple"
+          className="text-4xl font-bold mb-4 text-modern-blue"
         >
           Welcome to Fork, Commit, Merge
         </motion.h1>
