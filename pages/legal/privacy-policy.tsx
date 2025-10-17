@@ -26,7 +26,7 @@ const PrivacyPolicy: React.FC = () => {
             className='text-center'
           >
             <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
-              Privacy <span className='text-modern-purple'>Policy</span>
+              Privacy <span className='text-modern-blue'>Policy</span>
             </h1>
             <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-600'>
               Learn about how we handle your data and protect your privacy.

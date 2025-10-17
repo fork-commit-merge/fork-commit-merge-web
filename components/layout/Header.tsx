@@ -141,7 +141,7 @@ const Header = () => {
                     className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
-                    <span className='font-medium hover:text-purple-400'>Languages</span>
+                    <span className='font-medium hover:text-blue-400'>Languages</span>
                     <svg
                       className={`ml-1 h-4 w-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
@@ -189,7 +189,7 @@ const Header = () => {
                     className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
-                    <span className='font-medium hover:text-purple-400'>Frameworks</span>
+                    <span className='font-medium hover:text-blue-400'>Frameworks</span>
                     <svg
                       className={`ml-1 h-4 w-4 transition-transform duration-200 ${isFrameworkDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
@@ -237,7 +237,7 @@ const Header = () => {
                     className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
-                    <span className='font-medium hover:text-purple-400'>Git</span>
+                    <span className='font-medium hover:text-blue-400'>Git</span>
                     <svg
                       className={`ml-1 h-4 w-4 transition-transform duration-200 ${isGitSelectionDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
@@ -285,7 +285,7 @@ const Header = () => {
                     className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
-                    <span className='font-medium hover:text-purple-400'>Roadmap</span>
+                    <span className='font-medium hover:text-blue-400'>Roadmap</span>
                     <svg
                       className={`ml-1 h-4 w-4 transition-transform duration-200 ${isRoadmapDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
@@ -331,13 +331,13 @@ const Header = () => {
             <div className='flex items-center space-x-4'>
               <Link
                 href='/community/contributors'
-                className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-purple-400'
+                className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400'
               >
                 Contributors
               </Link>
               <Link
                 href='/help/faq'
-                className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-purple-400'
+                className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400'
               >
                 FAQ
               </Link>
@@ -348,7 +348,7 @@ const Header = () => {
                 href='https://github.com/fork-commit-merge/fork-commit-merge'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex items-center pl-3 text-gray-700 transition-colors hover:text-modern-purple'
+                className='flex items-center pl-3 text-gray-700 transition-colors hover:text-modern-blue'
               >
                 <svg
                   className='mr-1 h-5 w-5'

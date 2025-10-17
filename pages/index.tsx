@@ -88,7 +88,7 @@ export default function Home() {
           >
             <div className='modern-container'>
               <div className='mx-auto max-w-2xl lg:text-center'>
-                <h2 className='text-3xl font-semibold leading-snug text-modern-purple'>
+                <h2 className='text-3xl font-semibold leading-snug text-modern-blue'>
                   Become a part of our community of over 900 developers who have already contributed to this project!
                 </h2>
                 <p className='mt-6 text-lg leading-8 text-gray-600'>
@@ -158,7 +158,7 @@ export default function Home() {
             <div className='mt-8 text-center'>
               <Link
                 href='/community/contributors'
-                className='inline-flex items-center justify-center rounded-md bg-modern-purple px-6 py-3 text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-modern-purple/90'
+                className='inline-flex items-center justify-center rounded-md bg-modern-blue px-6 py-3 text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-modern-blue'
               >
                 View All Contributors
                 <svg

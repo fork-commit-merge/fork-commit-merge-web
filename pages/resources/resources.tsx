@@ -35,7 +35,7 @@ export default function Resources() {
             className='text-center'
           >
             <h1 className='text-fc-primary text-4xl font-bold tracking-tight sm:text-5xl'>
-              Learning <span className='text-modern-purple'>Resources</span>
+              Learning <span className='text-modern-blue'>Resources</span>
             </h1>
             <p className='text-fc-primary/80 mx-auto mt-6 max-w-2xl text-lg'>
               Comprehensive collection of tools, platforms, and materials to

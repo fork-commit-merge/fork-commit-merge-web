@@ -125,7 +125,7 @@ const FAQAccordion = ({
       >
         <h3 className='text-xl font-semibold text-gray-900'>{faq.question}</h3>
         <svg
-          className={`h-6 w-6 text-modern-purple transition-transform duration-200 ${
+          className={`h-6 w-6 text-modern-blue transition-transform duration-200 ${
             isOpen ? 'rotate-180' : ''
           }`}
           fill='none'
@@ -183,7 +183,7 @@ export default function FAQ() {
           <div className='text-center'>
             <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
               Frequently Asked{' '}
-              <span className='text-modern-purple'>Questions</span>
+              <span className='text-modern-blue'>Questions</span>
             </h1>
             <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-600'>
               Find answers to common questions about open source contribution
@@ -197,7 +197,7 @@ export default function FAQ() {
               onClick={() => setActiveCategory('All')}
               className={`rounded-full px-6 py-2 text-sm font-medium transition-all duration-200 ${
                 activeCategory === 'All'
-                  ? 'bg-modern-purple text-white'
+                  ? 'bg-modern-blue text-white'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
