@@ -6738,4 +6738,28 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/98661733?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "PsydoV2"
   },
+  {
+    id: "KubanjaElijahEldred",
+    url: "https://github.com/KubanjaElijahEldred",
+    avatar: "https://avatars.githubusercontent.com/u/185238919?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "KubanjaElijahEldred"
+  },
+  {
+    id: "4eab",
+    url: "https://github.com/4eab",
+    avatar: "https://avatars.githubusercontent.com/u/193944771?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "4eab"
+  },
+  {
+    id: "nabayousuf27",
+    url: "https://github.com/nabayousuf27",
+    avatar: "https://avatars.githubusercontent.com/u/171433928?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "nabayousuf27"
+  },
+  {
+    id: "arch92",
+    url: "https://github.com/arch92",
+    avatar: "https://avatars.githubusercontent.com/u/3901126?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "arch92"
+  },
 ]

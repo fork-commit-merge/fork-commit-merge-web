@@ -101,7 +101,7 @@ const faqs: FAQItem[] = [
   {
     question: 'What’s the Difference Between Open Source and Free Software?',
     answer:
-        'While often used interchangeably, "Free Software" emphasizes user freedom (as defined by the Free Software Foundation), while "Open Source" focuses on source code availability and collaborative development.',
+      'While often used interchangeably, "Free Software" emphasizes user freedom (as defined by the Free Software Foundation), while "Open Source" focuses on source code availability and collaborative development.',
     category: 'Legal'
   }
 ]
@@ -209,7 +209,7 @@ export default function FAQ() {
                 onClick={() => setActiveCategory(category)}
                 className={`rounded-full px-6 py-2 text-sm font-medium transition-all duration-200 ${
                   activeCategory === category
-                    ? 'bg-modern-purple text-white'
+                    ? 'bg-modern-blue text-white'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >

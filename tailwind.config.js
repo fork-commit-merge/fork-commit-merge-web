@@ -23,6 +23,7 @@ module.exports = {
       colors: {
         modern: {
           blue: 'rgba(2,104,225,0.88)',
+          purple: '#844FBA',
           darkBlue: '#0F1F3A',
           navy: '#000C2D',
           lightBlue: '#6793E6',
