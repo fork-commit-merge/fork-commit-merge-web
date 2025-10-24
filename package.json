@@ -15,6 +15,7 @@
     "@ant-design/icons": "^6.0.0",
     "@clerk/nextjs": "^4.31.5",
     "@clerk/themes": "^2.2.3",
+    "@eslint/eslintrc": "^3.3.1",
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^12.0.0",
     "next": "^14.1.0",
@@ -26,13 +27,13 @@
     "@types/node": "24.7.2",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
-    "typescript": "5.9.3",
+    "autoprefixer": "10.4.21",
     "eslint": "9.38.0",
     "eslint-config-next": "15.5.6",
+    "postcss": "8.5.6",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwindcss": "3.4.15",
-    "postcss": "8.5.6",
-    "autoprefixer": "10.4.21"
+    "typescript": "5.9.3"
   }
 }
