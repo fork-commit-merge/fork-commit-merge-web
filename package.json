@@ -16,7 +16,6 @@
     "@ant-design/icons": "^6.0.0",
     "@clerk/nextjs": "^4.31.5",
     "@clerk/themes": "^2.2.3",
-    "@eslint/eslintrc": "^3.3.1",
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^12.0.0",
     "next": "^14.1.0",
@@ -25,16 +24,29 @@
     "react-intersection-observer": "^9.15.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@eslint/eslintrc": "^3.3.1",
+    "@jest/globals": "^29.7.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
     "@types/node": "24.7.2",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.21",
+    "babel-jest": "^29.7.0",
     "eslint": "9.38.0",
     "eslint-config-next": "15.5.6",
+    "expect": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "postcss": "8.5.6",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwindcss": "3.4.15",
+    "ts-jest": "^29.4.5",
     "typescript": "5.9.3"
   }
 }

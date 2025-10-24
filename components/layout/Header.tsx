@@ -118,7 +118,7 @@ const Header = () => {
   }
 
   return (
-    <nav className='border-b border-gray-200 bg-gray-100  shadow-md dark:border-gray-900'>
+    <nav className='border-b border-gray-200 bg-gray-100 shadow-md dark:border-gray-900'>
       <div className='modern-container'>
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center space-x-8'>
@@ -141,7 +141,9 @@ const Header = () => {
                     className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
-                    <span className='font-medium hover:text-blue-400'>Languages</span>
+                    <span className='font-medium hover:text-blue-400'>
+                      Languages
+                    </span>
                     <svg
                       className={`ml-1 h-4 w-4 transition-transform duration-200 ${isLanguageDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
@@ -189,7 +191,9 @@ const Header = () => {
                     className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
-                    <span className='font-medium hover:text-blue-400'>Frameworks</span>
+                    <span className='font-medium hover:text-blue-400'>
+                      Frameworks
+                    </span>
                     <svg
                       className={`ml-1 h-4 w-4 transition-transform duration-200 ${isFrameworkDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
@@ -285,7 +289,9 @@ const Header = () => {
                     className='flex items-center transition-colors duration-200 hover:text-[var(--accent-color)]'
                     style={{ color: 'var(--fc-primary)' }}
                   >
-                    <span className='font-medium hover:text-blue-400'>Roadmap</span>
+                    <span className='font-medium hover:text-blue-400'>
+                      Roadmap
+                    </span>
                     <svg
                       className={`ml-1 h-4 w-4 transition-transform duration-200 ${isRoadmapDropdownOpen ? 'rotate-180' : ''}`}
                       fill='none'
@@ -377,8 +383,9 @@ const Header = () => {
 
           <div className='md:hidden'>
             <button
+              data-testid='mobile-menu-button'
               onClick={toggleSideNav}
-              className='text-gray-700 hover:text-modern-purple'
+              className='hover:text-modern-purple text-gray-700'
             >
               {isOpen ? (
                 <XMarkIcon className='h-6 w-6' />
@@ -397,7 +404,7 @@ const Header = () => {
             <div className='block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200'>
               <button
                 onClick={toggleLanguageDropdown}
-                className='flex w-full items-center justify-between hover:text-modern-purple dark:text-gray-200'
+                className='hover:text-modern-purple flex w-full items-center justify-between dark:text-gray-200'
                 style={{ color: 'var(--fc-primary)' }}
               >
                 <span>Languages</span>
@@ -421,7 +428,7 @@ const Header = () => {
                     <button
                       key={language.name}
                       onClick={() => navigateToLanguage(language.link)}
-                      className='block w-full py-1 text-left text-sm hover:text-modern-purple dark:text-gray-200'
+                      className='hover:text-modern-purple block w-full py-1 text-left text-sm dark:text-gray-200'
                       style={{ color: 'var(--fc-primary)' }}
                     >
                       {language.name}
@@ -434,7 +441,7 @@ const Header = () => {
             <div className='block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200'>
               <button
                 onClick={toggleFrameworkDropdown}
-                className='flex w-full items-center justify-between hover:text-modern-purple dark:text-gray-200'
+                className='hover:text-modern-purple flex w-full items-center justify-between dark:text-gray-200'
                 style={{ color: 'var(--fc-primary)' }}
               >
                 <span>Frameworks</span>
@@ -458,7 +465,7 @@ const Header = () => {
                     <button
                       key={framework.name}
                       onClick={() => navigateToFramework(framework.link)}
-                      className='block w-full py-1 text-left text-sm hover:text-modern-purple dark:text-gray-200'
+                      className='hover:text-modern-purple block w-full py-1 text-left text-sm dark:text-gray-200'
                       style={{ color: 'var(--fc-primary)' }}
                     >
                       {framework.name}
@@ -471,7 +478,7 @@ const Header = () => {
             <div className='block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200'>
               <button
                 onClick={toggleGitSelectionDropdown}
-                className='flex w-full items-center justify-between hover:text-modern-purple dark:text-gray-200'
+                className='hover:text-modern-purple flex w-full items-center justify-between dark:text-gray-200'
                 style={{ color: 'var(--fc-primary)' }}
               >
                 <span>Git</span>
@@ -495,7 +502,7 @@ const Header = () => {
                     <button
                       key={git.name}
                       onClick={() => navigateToGitSelection(git.link)}
-                      className='block w-full py-1 text-left text-sm hover:text-modern-purple dark:text-gray-200'
+                      className='hover:text-modern-purple block w-full py-1 text-left text-sm dark:text-gray-200'
                       style={{ color: 'var(--fc-primary)' }}
                     >
                       {git.name}
@@ -508,7 +515,7 @@ const Header = () => {
             <div className='block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200'>
               <button
                 onClick={toggleRoadmapDropdown}
-                className='flex w-full items-center justify-between hover:text-modern-purple dark:text-gray-200'
+                className='hover:text-modern-purple flex w-full items-center justify-between dark:text-gray-200'
                 style={{ color: 'var(--fc-primary)' }}
               >
                 <span>Roadmap</span>
@@ -532,7 +539,7 @@ const Header = () => {
                     <button
                       key={roadmap.name}
                       onClick={() => navigateToRoadmap(roadmap.link)}
-                      className='block w-full py-1 text-left text-sm hover:text-modern-purple dark:text-gray-200'
+                      className='hover:text-modern-purple block w-full py-1 text-left text-sm dark:text-gray-200'
                       style={{ color: 'var(--fc-primary)' }}
                     >
                       {roadmap.name}
@@ -560,7 +567,7 @@ const Header = () => {
                 href='https://github.com/fork-commit-merge/fork-commit-merge'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex items-center text-gray-700 transition-colors hover:text-modern-purple'
+                className='hover:text-modern-purple flex items-center text-gray-700 transition-colors'
               >
                 <svg
                   className='mr-1 h-5 w-5'
