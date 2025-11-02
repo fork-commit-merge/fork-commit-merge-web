@@ -6774,4 +6774,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/232061426?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "vinothini19"
   },
+  {
+    id: "jcs-denverdev",
+    url: "https://github.com/jcs-denverdev",
+    avatar: "https://avatars.githubusercontent.com/u/63527561?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "jcs-denverdev"
+  },
 ]
