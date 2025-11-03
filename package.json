@@ -21,7 +21,7 @@
     "next": "^14.1.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-intersection-observer": "^9.15.1"
+    "react-intersection-observer": "^10.0.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.28.3",
