@@ -6780,4 +6780,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/63527561?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "jcs-denverdev"
   },
+  {
+    id: "MaelBallereau",
+    url: "https://github.com/MaelBallereau",
+    avatar: "https://avatars.githubusercontent.com/u/157124771?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "MaelBallereau"
+  },
 ]
