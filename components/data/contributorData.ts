@@ -6822,4 +6822,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/203651605?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "AkhilChowdary2222"
   },
+  {
+    id: "LuisoJSM",
+    url: "https://github.com/LuisoJSM",
+    avatar: "https://avatars.githubusercontent.com/u/132158051?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "LuisoJSM"
+  },
 ]
