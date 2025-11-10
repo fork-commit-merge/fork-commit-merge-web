@@ -5,7 +5,7 @@
 [![Version 2.0.0](https://img.shields.io/badge/Version-2.0.0-brightgreen.svg)](https://github.com/fork-commit-merge/fork-commit-merge-web/pulls)
 [![Issues](https://img.shields.io/github/issues/fork-commit-merge/fork-commit-merge-web.svg?style=flat)](https://github.com/fork-commit-merge/fork-commit-merge-web/issues)
 [![PR:s Welcome](https://img.shields.io/badge/PR:s-welcome-green.svg)](https://github.com/fork-commit-merge/fork-commit-merge-web/pulls)
-[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-green.svg)](https://github.com/fork-commit-merge/fork-commit-merge-web/pulls)
+[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-green.svg)](https://github.com/fork-commit-merge/fork-commit-merge-web/blob/main/CONTRIBUTING.md)
 ![GitHub repo size](https://img.shields.io/github/repo-size/fork-commit-merge/fork-commit-merge-web)
 
 "Fork, Commit, Merge" serves as a comprehensive resource for mastering GitHub
