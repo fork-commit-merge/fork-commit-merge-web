@@ -1,10 +1,11 @@
-import { authMiddleware } from '@clerk/nextjs'
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 
-export default authMiddleware({
-  //* Make all routes public by default
-  publicRoutes: ['/((?!community/contributors).*)'],
-  //* Only protect the contributors page
-  ignoredRoutes: ['/((?!community/contributors).*)']
+const isPublicRoute = createRouteMatcher(['/((?!community/contributors).*)'])
+
+export default clerkMiddleware(async (auth, req) => {
+  if (!isPublicRoute(req)) {
+    await auth.protect()
+  }
 })
 
 export const config = {
