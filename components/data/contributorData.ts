@@ -6906,4 +6906,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/194448323?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "blu3-bird"
   },
+  {
+    id: "akbar-kurnia1",
+    url: "https://github.com/akbar-kurnia1",
+    avatar: "https://avatars.githubusercontent.com/u/100073066?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "akbar-kurnia1"
+  },
 ]
