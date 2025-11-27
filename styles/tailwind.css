@@ -20,11 +20,11 @@
 }
 
 .theme-dark {
-  --fc-primary: #E6EDF7;
-  --bg-primary: rgba(15, 31, 58, 0.71);
-  --bg-secondary: #1A3155;
-  --bg-hover: #22385F;
-  --accent-color: #4A90E2;
+  --fc-primary: #f5f5f5;
+  --bg-primary: #050607;
+  --bg-secondary: #0b0d10;
+  --bg-hover: #15181e;
+  --accent-color: #5aa9ff;
 }
 
 /* Modern modern-inspired styles */
@@ -145,23 +145,23 @@ body {
 
 /* Theme-specific styles */
 .theme-dark .bg-white {
-  @apply bg-[#1A3155];
+  @apply bg-[#0b0d10];
 }
 
 .theme-dark .bg-gray-50 {
-  @apply bg-[#0F1F3A];
+  @apply bg-[#050607];
 }
 
 .theme-dark .text-gray-900 {
-  @apply text-[#E6EDF7];
+  @apply text-[#f5f5f5];
 }
 
 .theme-dark .text-gray-600 {
-  @apply text-[#A3B5D3];
+  @apply text-[#a8adba];
 }
 
 .theme-dark .text-gray-500 {
-  @apply text-[#7F95B5];
+  @apply text-[#8a8f9c];
 }
 
 .theme-dark .shadow-sm {
@@ -181,23 +181,23 @@ body {
 }
 
 .theme-dark .border-gray-200 {
-  @apply border-gray-700;
+  @apply border-[#1f232a];
 }
 
 .theme-dark .bg-gray-100 {
-  @apply bg-gray-800;
+  @apply bg-[#101319];
 }
 
 .theme-dark .hover\:bg-gray-50:hover {
-  @apply hover:bg-slate-800;
+  @apply hover:bg-[#15181e];
 }
 
 .theme-dark .hover\:bg-gray-100:hover {
-  @apply hover:bg-slate-700;
+  @apply hover:bg-[#1c2028];
 }
 
 .theme-dark .hover\:text-gray-900:hover {
-  @apply hover:text-slate-100;
+  @apply hover:text-[#f5f5f5];
 }
 
 .theme-dark .hover\:text-gray-700:hover {
