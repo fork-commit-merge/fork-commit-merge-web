@@ -7020,4 +7020,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/221009516?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "RamsaiPolisetti"
   },
+  {
+    id: "kl2400033266",
+    url: "https://github.com/kl2400033266",
+    avatar: "https://avatars.githubusercontent.com/u/201090206?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "kl2400033266"
+  },
 ]
