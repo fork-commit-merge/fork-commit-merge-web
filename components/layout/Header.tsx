@@ -18,7 +18,7 @@ const Header = () => {
   const [isFrameworkDropdownOpen, setFrameworkDropdownOpen] = useState(false)
   const [isGitSelectionDropdownOpen, setGitSelectionDropdownOpen] =
     useState(false)
-  const [isRoadmapDropdownOpen, setRoadmapDropdownOpen] = useState(false)
+  const [isRoadmapDropdownOpen,  setRoadmapDropdownOpen ] = useState(false)
   const node = useRef<HTMLLIElement | null>(null)
   const frameworkNode = useRef<HTMLLIElement | null>(null)
   const gitSelectionNode = useRef<HTMLLIElement | null>(null)
@@ -26,6 +26,12 @@ const Header = () => {
   const router = useRouter()
   const [starCount, setStarCount] = useState<number | null>(null)
   const { user, isLoaded } = useUser()
+  const [dropdownTimeouts, setDropdownTimeouts] = useState<Record<string, NodeJS.Timeout | null>>({
+    language: null,
+    framework: null,
+    git: null,
+    roadmap: null,
+  })
 
   useEffect(() => {
     fetch('/api/repo-stats')
@@ -117,6 +123,26 @@ const Header = () => {
     setGitSelectionDropdownOpen(false)
   }
 
+  const handleMouseEnter = (menu: string) => {
+    if (dropdownTimeouts[menu]) {
+      clearTimeout(dropdownTimeouts[menu]) // Cancel the collapse timeout for this menu
+    }
+    if (menu === 'language') setLanguageDropdownOpen(true)
+    if (menu === 'framework') setFrameworkDropdownOpen(true)
+    if (menu === 'git') setGitSelectionDropdownOpen(true)
+    if (menu === 'roadmap') setRoadmapDropdownOpen(true)
+  }
+
+  const handleMouseLeave = (menu: string) => {
+    const timeout = setTimeout(() => {
+      if (menu === 'language') setLanguageDropdownOpen(false)
+      if (menu === 'framework') setFrameworkDropdownOpen(false)
+      if (menu === 'git') setGitSelectionDropdownOpen(false)
+      if (menu === 'roadmap') setRoadmapDropdownOpen(false)
+    }, 100)
+    setDropdownTimeouts((prev) => ({ ...prev, [menu]: timeout }))
+  }
+
   return (
     <nav className='border-b border-gray-200 bg-gray-100 shadow-md dark:border-gray-900'>
       <div className='modern-container'>
@@ -135,6 +161,8 @@ const Header = () => {
                 <div
                   className='relative'
                   ref={node as React.RefObject<HTMLDivElement>}
+                  onMouseEnter={() => handleMouseEnter('language')}
+                  onMouseLeave={() => handleMouseLeave('language')}
                 >
                   <button
                     onClick={toggleLanguageDropdown}
@@ -185,6 +213,8 @@ const Header = () => {
                 <div
                   className='relative'
                   ref={frameworkNode as React.RefObject<HTMLDivElement>}
+                  onMouseEnter={() => handleMouseEnter('framework')}
+                  onMouseLeave={() => handleMouseLeave('framework')}
                 >
                   <button
                     onClick={toggleFrameworkDropdown}
@@ -235,6 +265,8 @@ const Header = () => {
                 <div
                   className='relative'
                   ref={gitSelectionNode as React.RefObject<HTMLDivElement>}
+                  onMouseEnter={() => handleMouseEnter('git')}
+                  onMouseLeave={() => handleMouseLeave('git')}
                 >
                   <button
                     onClick={toggleGitSelectionDropdown}
@@ -283,6 +315,8 @@ const Header = () => {
                 <div
                   className='relative'
                   ref={roadmapNode as React.RefObject<HTMLDivElement>}
+                  onMouseEnter={() => handleMouseEnter('roadmap')}
+                  onMouseLeave={() => handleMouseLeave('roadmap')}
                 >
                   <button
                     onClick={toggleRoadmapDropdown}
