@@ -8,8 +8,8 @@
 [![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-green.svg)](https://github.com/fork-commit-merge/fork-commit-merge-web/blob/main/CONTRIBUTING.md)
 ![GitHub repo size](https://img.shields.io/github/repo-size/fork-commit-merge/fork-commit-merge-web)
 
-Fork, Commit, Merge serves as a comprehensive resource hub for mastering GitHub
-contributions for both, beginners and seasoned developers. Our website features info about programming languages, frameworks, git, contributing, external resources and more. Join our community of developers!
+Fork, Commit, Merge serves as a comprehensive resource platform for mastering GitHub
+contributions for both, beginners and seasoned developers. Our website features info about  various programming languages, frameworks, version control, contributing, external resources and more!
 
 ![HTML](https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![HTMX](https://img.shields.io/badge/htmx-%2302569B.svg?style=for-the-badge&logo=htmx&logoColor=white)
