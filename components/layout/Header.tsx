@@ -32,6 +32,28 @@ const Header = () => {
     git: null,
     roadmap: null,
   })
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      lastScrollY.current = currentScrollY;
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
 
   useEffect(() => {
     fetch('/api/repo-stats')
@@ -58,6 +80,8 @@ const Header = () => {
       router.events.off('routeChangeStart', handleRouteChange)
     }
   }, [router])
+
+
 
   const toggleSideNav = () => {
     setIsOpen(!isOpen)
@@ -144,7 +168,7 @@ const Header = () => {
   }
 
   return (
-    <nav className='border-b border-gray-200 bg-gray-100 shadow-md dark:border-gray-900'>
+    <nav className={`border-b border-gray-200 bg-gray-100 shadow-md dark:border-gray-900 sticky top-0 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className='modern-container'>
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center space-x-8'>
