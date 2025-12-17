@@ -95,7 +95,7 @@ export default function Home() {
                   "Fork, Commit, Merge" is an educational and practical project
                   aimed at helping developers to improve their skills in open-source contribution,
                   problem-solving, finding bugs, testing, and much more in{' '}
-                  <span className='text-green-400'>141</span> individual issues
+                  <span className='text-green-400'>142</span> individual issues
                   covering various programming languages, libraries and
                   frameworks.
                 </p>
