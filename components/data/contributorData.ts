@@ -7248,4 +7248,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/89444638?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "MasterYoav"
   },
+  {
+    id: "younes-alhyan",
+    url: "https://github.com/younes-alhyan",
+    avatar: "https://avatars.githubusercontent.com/u/140889727?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "younes-alhyan"
+  },
 ]
