@@ -89,7 +89,7 @@ export default function Home() {
             <div className='modern-container'>
               <div className='mx-auto max-w-2xl lg:text-center'>
                 <h2 className='text-3xl font-semibold leading-snug text-modern-blue'>
-                  Become a part of our community of over 900 developers who have already contributed to this project!
+                  Become a part of our community of over 1000 developers who have already contributed to this project!
                 </h2>
                 <p className='mt-6 text-lg leading-8 text-gray-600'>
                   "Fork, Commit, Merge" is an educational and practical project

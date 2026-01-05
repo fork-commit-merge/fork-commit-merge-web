@@ -13,7 +13,7 @@ const features = [
   {
     name: 'Open Source Learning',
     description:
-      'Practice real-world open source contribution with 138 beginner-friendly issues across various programming languages and frameworks.',
+      'Practice real-world open source contribution with 143 beginner-friendly issues across various programming languages and frameworks.',
     icon: CodeBracketIcon
   },
   {
