@@ -7446,4 +7446,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/256362674?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "lemmargo"
   },
+  {
+    id: "2d-game-dev",
+    url: "https://github.com/2d-game-dev",
+    avatar: "https://avatars.githubusercontent.com/u/203641036?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "2d-game-dev"
+  },
 ]
