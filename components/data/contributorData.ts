@@ -7452,4 +7452,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/203641036?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "2d-game-dev"
   },
+  {
+    id: "Rubick65",
+    url: "https://github.com/Rubick65",
+    avatar: "https://avatars.githubusercontent.com/u/201750178?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "Rubick65"
+  },
 ]
