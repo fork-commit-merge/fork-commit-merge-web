@@ -7728,4 +7728,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/208685185?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "geozar26"
   },
+  {
+    id: "Aakif-Kohari",
+    url: "https://github.com/Aakif-Kohari",
+    avatar: "https://avatars.githubusercontent.com/u/159609181?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "Aakif-Kohari"
+  },
 ]
