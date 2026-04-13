@@ -7752,4 +7752,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/154278999?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "aelaraby6"
   },
+  {
+    id: "Athish-frontend",
+    url: "https://github.com/Athish-frontend",
+    avatar: "https://avatars.githubusercontent.com/u/180030978?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "Athish-frontend"
+  },
 ]
