@@ -7836,4 +7836,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/200455304?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Mohanapriya-sparks"
   },
+  {
+    id: "ik-awais",
+    url: "https://github.com/ik-awais",
+    avatar: "https://avatars.githubusercontent.com/u/213292982?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "ik-awais"
+  },
 ]
