@@ -8028,4 +8028,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/111784276?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "ELITE-DEV-22"
   },
+  {
+    id: "maitriupadhyay03-cell",
+    url: "https://github.com/maitriupadhyay03-cell",
+    avatar: "https://avatars.githubusercontent.com/u/238037247?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "maitriupadhyay03-cell"
+  },
 ]
