@@ -8034,4 +8034,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/238037247?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "maitriupadhyay03-cell"
   },
+  {
+    id: "veronica-foltz",
+    url: "https://github.com/veronica-foltz",
+    avatar: "https://avatars.githubusercontent.com/u/233627866?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "veronica-foltz"
+  },
 ]
