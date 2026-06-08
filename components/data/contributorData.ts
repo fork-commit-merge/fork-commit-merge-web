@@ -8052,4 +8052,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/288685405?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "5tjrtddt4k-cloud"
   },
+  {
+    id: "HimathKc",
+    url: "https://github.com/HimathKc",
+    avatar: "https://avatars.githubusercontent.com/u/245803271?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "HimathKc"
+  },
 ]
