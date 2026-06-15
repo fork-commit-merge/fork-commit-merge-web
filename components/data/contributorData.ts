@@ -8076,4 +8076,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/293635915?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "dejan-joksimovich"
   },
+  {
+    id: "dev-AbhinavNair",
+    url: "https://github.com/dev-AbhinavNair",
+    avatar: "https://avatars.githubusercontent.com/u/226652729?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "dev-AbhinavNair"
+  },
 ]
