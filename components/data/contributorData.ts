@@ -8094,4 +8094,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/181753556?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "nancy-patel-157"
   },
+  {
+    id: "priyanshu6m",
+    url: "https://github.com/priyanshu6m",
+    avatar: "https://avatars.githubusercontent.com/u/248350285?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "priyanshu6m"
+  },
 ]
