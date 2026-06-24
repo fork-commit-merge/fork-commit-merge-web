@@ -8106,4 +8106,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/72125200?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "adela320"
   },
+  {
+    id: "gauravsd-git",
+    url: "https://github.com/gauravsd-git",
+    avatar: "https://avatars.githubusercontent.com/u/118895821?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "gauravsd-git"
+  },
 ]
