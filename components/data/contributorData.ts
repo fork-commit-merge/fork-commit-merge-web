@@ -8112,4 +8112,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/118895821?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "gauravsd-git"
   },
+  {
+    id: "mew1allison",
+    url: "https://github.com/mew1allison",
+    avatar: "https://avatars.githubusercontent.com/u/225532318?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "mew1allison"
+  },
 ]
