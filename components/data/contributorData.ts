@@ -8154,4 +8154,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/120275262?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "amerulalimi"
   },
+  {
+    id: "InukaWijerathna",
+    url: "https://github.com/InukaWijerathna",
+    avatar: "https://avatars.githubusercontent.com/u/180553425?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "InukaWijerathna"
+  },
 ]
