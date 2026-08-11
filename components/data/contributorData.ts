@@ -8376,4 +8376,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/277478855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "prvthmpcypher"
   },
+  {
+    id: "DurgaTharshini26",
+    url: "https://github.com/DurgaTharshini26",
+    avatar: "https://avatars.githubusercontent.com/u/185788424?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "DurgaTharshini26"
+  },
 ]
