@@ -8370,4 +8370,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/231468549?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "tripathishambhavi656-sketch"
   },
+  {
+    id: "prvthmpcypher",
+    url: "https://github.com/prvthmpcypher",
+    avatar: "https://avatars.githubusercontent.com/u/277478855?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "prvthmpcypher"
+  },
 ]
