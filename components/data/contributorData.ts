@@ -8418,4 +8418,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/317476762?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "zhenxun00"
   },
+  {
+    id: "tralethe-dev",
+    url: "https://github.com/tralethe-dev",
+    avatar: "https://avatars.githubusercontent.com/u/320086206?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "tralethe-dev"
+  },
 ]
