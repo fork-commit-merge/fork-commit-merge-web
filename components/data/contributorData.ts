@@ -8502,4 +8502,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/223339411?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Videirafoo"
   },
+  {
+    id: "saaim-exe",
+    url: "https://github.com/saaim-exe",
+    avatar: "https://avatars.githubusercontent.com/u/173693430?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "saaim-exe"
+  },
 ]
