@@ -8616,4 +8616,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/179311133?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Sumitlone"
   },
+  {
+    id: "siddhantpatil688-cmd",
+    url: "https://github.com/siddhantpatil688-cmd",
+    avatar: "https://avatars.githubusercontent.com/u/242214110?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "siddhantpatil688-cmd"
+  },
 ]
