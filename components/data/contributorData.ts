@@ -8754,4 +8754,10 @@ export const contributorData = [
     avatar: "https://avatars.githubusercontent.com/u/178795252?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
     name: "Jaleel805"
   },
+  {
+    id: "anubose1002-ai",
+    url: "https://github.com/anubose1002-ai",
+    avatar: "https://avatars.githubusercontent.com/u/255046827?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d",
+    name: "anubose1002-ai"
+  },
 ]
